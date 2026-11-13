@@ -3,8 +3,8 @@
 @page 96
 # Nabr (penekanan) dalam al-Qur'an ({{a النَّبرُ في القرآنِ الكريم}})
 ## Definisi
-= Secara bahasa | Menekan atau suara yang keras.
-= Secara istilah | Penekanan pada suku kata atau huruf tertentu sehingga suaranya sedikit lebih tinggi dibandingkan huruf-huruf yang ada di sekitarnya.
+= Secara bahasa | menekan atau suara yang keras.
+= Secara istilah | penekanan pada suku kata atau huruf tertentu sehingga suaranya sedikit lebih tinggi dibandingkan huruf-huruf yang ada di sekitarnya.
 ## Tempat-tempat nabr
 1) Ketika melafalkan huruf wawu atau ya yang bertasydid, contoh: {{q ?|إِ[يَّ]اكَ}}, {{q ?|مِّن قُ[وَّ]ةٍ}}, {{q 4:135|يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَ[وَّ]ٰمِينَ بِٱلْقِسْطِ}}.
 2) Ketika berpindah dari huruf mad ke huruf setelahnya yang bertasydid, contoh: {{q 1:7|غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآ[لِّ]ينَ}}, {{q 80:33|فَإِذَا جَآءَتِ ٱلصَّآ[خَّ]ةُ}}, {{q ?|وَمَا مِن دَآ[بَّ]ةٍ فِى ٱلْأَرْضِ}}.

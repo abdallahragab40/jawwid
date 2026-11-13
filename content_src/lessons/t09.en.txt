@@ -3,90 +3,90 @@
 @page 37
 # The most prominent mistakes when pronouncing the letters of the alphabet ({{a أبرزُ الأخطاءِ عِندَ نُطقِ حروفِ الهجاءِ}})
 ### Mistakes made when pronouncing Alif
-1) Not opening the mouth as required, like: {{q ?|مُوسَ[ىٰ]}}.
-2) Making it heavy where it should be light, like: {{q ?|ٱلنَّهَ[ا]رَ}}, {{q ?|ٱلنَّ[ا]رِ}}.
-3) Making it light where it should be heavy, like: {{q ?|[خَٰ]لِدِينَ}}.
+1) Not opening mouth as required like: {{q ?|مُوسَ[ىٰ]}}.
+2) Making it heavy where it should be light like: {{q ?|ٱلنَّهَ[ا]رَ}}, {{q ?|ٱلنَّ[ا]رِ}}.
+3) Making it light where it should be heavy like: {{q ?|[خَٰ]لِدِينَ}}.
 ### Mistakes made when pronouncing Hamzah ({{a ء}})
-1) Making it heavy, like: {{q ?|[أَ]صَابَهَا}}.
-2) Making it weak (by not applying nabr [stress]) when stopping, like: {{q ?|ٱلسَّمَآ[ءِ]}}.
+1) Making it heavy like: {{q ?|[أَ]صَابَهَا}}.
+2) Making it weak (by not applying nabr [stress]) when stopping like: {{q ?|ٱلسَّمَآ[ءِ]}}.
 ### Mistakes made when pronouncing Haa ({{a هـ}})
-1) Making it heavy, like: {{q ?|ٱلنَّ[هَ]ارِ}}.
-2) Weakening the sound of haa, like: {{q ?|ٱ[هْ]دِنَا}}.
-3) Weakening its sound (by not applying hams [whisper]) when stopping, like: {{q ?|مِّن مِّثْلِ[هِۦ]}}, {{q ?|مَّا فَعَلُو[هُ]}}.
+1) Making it heavy like: {{q ?|ٱلنَّ[هَ]ارِ}}.
+2) Weakening the sound of haa like: {{q ?|ٱ[هْ]دِنَا}}.
+3) Weakening its sound (by not applying hams [whisper]) when stopping like: {{q ?|مِّن مِّثْلِ[هِۦ]}}, {{q ?|مَّا فَعَلُو[هُ]}}.
 ### Mistakes made when pronouncing Ain ({{a ع}})
-1) Cutting off the sound of ain when it is sakinah, like: {{q ?|يَ[عْ]لَمُونَ}}.
+1) Cutting off the sound of ain when it comes sakinah like: {{q ?|يَ[عْ]لَمُونَ}}.
 ### Mistakes made when pronouncing Haa ({{a ح}})
-1) Weakening the characteristic of hams, like: {{q ?|ٱلرَّ[حْ]مَٰنِ ٱلرَّ[حِ]يمِ}}.
+1) Weakening the characteristic of hams like: {{q ?|ٱلرَّ[حْ]مَٰنِ ٱلرَّ[حِ]يمِ}}.
 2) Replacing it with haa ({{a هـ}}), like: {{q ?|ٱلْ[حَ]مْدُ}}.
 ### Mistakes made when pronouncing Ghain ({{a غ}})
-1) Changing it into khaa, like: {{q ?|يَ[غْ]شَىٰ}}.
-2) Applying qalqalah, like: {{q ?|ٱلْمَ[غْ]ضُوبِ}}.
+1) Exachanging it into khaa, like: {{q ?|يَ[غْ]شَىٰ}}.
+2) Applying qalqalah like: {{q ?|ٱلْمَ[غْ]ضُوبِ}}.
 
 @page 38
 ### Mistakes made when pronouncing Qaaf ({{a ق}})
-1) Not applying qalqalah, like: {{q ?|ٱلْحَ[قُّ]}}.
-2) Mixing its sound with a hint of the sound of kaaf, like: {{q ?|[قَ]الُوا۟}}.
+1) Not applying qalqalah like: {{q ?|ٱلْحَ[قُّ]}}.
+2) Mixing its sound with a hint of the sound of kaaf like: {{q ?|[قَ]الُوا۟}}.
 ### Mistakes made when pronouncing Kaaf ({{a ك}})
-1) Not applying hams (whisper), especially when it is sakinah, like: {{q ?|أَ[كْ]بَرُ}}, {{q ?|صَدْرَ[كَ]}}.
+1) Not applying hams (whisper) especially when it is sakinah like: {{q ?|أَ[كْ]بَرُ}}, {{q ?|صَدْرَ[كَ]}}.
 ### Mistakes made when pronouncing Jeem ({{a ج}})
-1) Not applying qalqalah, like: {{q ?|أَ[جْ]رُهُمْ}}, {{q ?|ٱلْحَ[جَّ]}}.
-2) Pronouncing it with rakhawah (softness), like: {{q ?|[جَ]عَلُوا۟}}, {{q ?|وَ[جَ]نَّةٍ}}.
+1) Not applying qalqalah like: {{q ?|أَ[جْ]رُهُمْ}}, {{q ?|ٱلْحَ[جَّ]}}.
+2) Pronouncing it with Rakhawah (softness) like: {{q ?|[جَ]عَلُوا۟}}, {{q ?|وَ[جَ]نَّةٍ}}.
 ### Mistakes made when pronouncing Sheen ({{a ش}})
-1) Weakening the sound of sheen, like: {{q ?|أَ[شْ]تَاتًا}}, {{q ?|وَأَ[شْ]هِدُوا۟}}.
-2) Making it heavy when it is adjacent to a heavy letter, like: {{q ?|[شَ]طَطًا}}.
+1) Weakening the sound of Sheen like: {{q ?|أَ[شْ]تَاتًا}}, {{q ?|وَأَ[شْ]هِدُوا۟}}.
+2) Making it heavy when it is adjacent to a heavy letter like: {{q ?|[شَ]طَطًا}}.
 ### Mistakes made when pronouncing Yaa ({{a ي}})
-1) Mixing its sound with a hint of the sound of ghunnah (nasalization), like: {{q ?|ٱلْعَٰلَمِ[ي]نَ}}, {{q ?|ٱلْحَٰكِمِ[ي]نَ}}.
+1) Mixing its sound with a hint of the sound of ghunnah (nasalization) like: {{q ?|ٱلْعَٰلَمِ[ي]نَ}}, {{q ?|ٱلْحَٰكِمِ[ي]نَ}}.
 ### Mistakes made when pronouncing D'aad ({{a ض}})
-1) Converting it into th'aa, like: {{q ?|[ضَ]لَّ}}, {{q ?|[ضَ]لَٰلٍ}}.
-2) Converting it into daal, like: {{q ?|تُفِي[ضُ]ونَ}}.
-3) Applying qalqalah, like: {{q ?|وَعِنَبًا وَقَ[ضْ]بًا}}.
-4) Merging it into the following letter, like: {{q ?|ٱ[ضْ]طُرَّ}}, {{q ?|عَرَّ[ضْ]تُم}}.
+1) Converting it into th'aa like: {{q ?|[ضَ]لَّ}}, {{q ?|[ضَ]لَٰلٍ}}.
+2) Converting it into daal like: {{q ?|تُفِي[ضُ]ونَ}}.
+3) Applying qalqalah like: {{q ?|وَعِنَبًا وَقَ[ضْ]بًا}}.
+4) Merging it into the following letter like: {{q ?|ٱ[ضْ]طُرَّ}}, {{q ?|عَرَّ[ضْ]تُم}}.
 ### Mistakes made when pronouncing Laam ({{a ل}})
-1) Making it heavy where it should be light, like: {{q ?|تَعْ[لَ]مُونَ}}, {{q ?|زُ[لْ]زِلَتِ}}.
-2) Making it light where it should be heavy, like: {{q ?|عَبْدُ [ٱللَّهِ]}}, {{q ?|عِبَادَ [ٱللَّهِ]}}.
-3) Merging it into the next letter (not pronouncing it clearly), like: {{q ?|وَجَعَ[لْ]نَا}}.
-4) Merging laam qamariyyah (lunar laam) into jeem, like: {{q ?|ٱ[لْ]جَنَّةِ}}, {{q ?|ٱ[لْ]جِبَالُ}}.
+1) Making it heavy where it should be light like: {{q ?|تَعْ[لَ]مُونَ}}, {{q ?|زُ[لْ]زِلَتِ}}.
+2) Making it light where it should be heavy like: {{q ?|عَبْدُ [ٱللَّهِ]}}, {{q ?|عِبَادَ [ٱللَّهِ]}}.
+3) Merging it into the next letter (not pronounced clearly) like: {{q ?|وَجَعَ[لْ]نَا}}.
+4) Merging laam qamaryyiah (lunar laam) into Jeem like: {{q ?|ٱ[لْ]جَنَّةِ}}, {{q ?|ٱ[لْ]جِبَالُ}}.
 
 @page 39
 ### Mistakes made when pronouncing Noon ({{a ن}})
-1) Not giving it its right of ghunnah when stopping, like: {{q ?|ٱلْعَٰلَمِي[نَ]}}.
-2) Vibrating (tantheen) the sound of ghunnah when noon comes with shaddah, like: {{q ?|مِنَ ٱلْجِ[نَّ]ةِ وَٱل[نَّ]اسِ}}, by waving and trembling its sound when articulating it.
+1) Not giving its right of ghunnah when stopping like: {{q ?|ٱلْعَٰلَمِي[نَ]}}.
+2) Vibrating (Tant'neen) the sound of ghunnah when noon comes with shaddah like: {{q ?|مِنَ ٱلْجِ[نَّ]ةِ وَٱل[نَّ]اسِ}}, by waving and trembling its sound when articulating it.
 ### Mistakes made when pronouncing Raa ({{a ر}})
-1) Making it heavy where it should be light, like: {{q ?|فِ[رْ]عَوْنَ}}.
-2) Making it light where it should be heavy, like: {{q ?|مَ[رْ]يَمَ}}, {{q ?|ٱلْقُ[رْ]ءَانُ}}.
-3) Exaggerating the repetition of raa if it is mushaddadah or sakinah, like: {{q ?|إِنِ ٱ[رْ]تَبْتُمْ}}.
-4) Not pronouncing it clearly when it is sakinah because of stopping, like: {{q ?|نَصِي[رٍ]}}.
+1) Making it heavy where it should be light like: {{q ?|فِ[رْ]عَوْنَ}}.
+2) Making it light where it should be heavy like: {{q ?|مَ[رْ]يَمَ}}, {{q ?|ٱلْقُ[رْ]ءَانُ}}.
+3) Exaggrating repitition of raa if it is mushaddadah or sakinah like: {{q ?|إِنِ ٱ[رْ]تَبْتُمْ}}.
+4) Not pronouncing clearly when it is sakinah due to stopping like: {{q ?|نَصِي[رٍ]}}.
 ### Mistakes made when pronouncing T'aa ({{a ط}})
-1) Making it light, like: {{q ?|[طِ]بَاقًا}}.
+1) Making it light like: {{q ?|[طِ]بَاقًا}}.
 ### Mistakes made when pronouncing Daal ({{a د}})
-1) Mixing its sound with a hint of the sound of taa, like: {{q ?|ٱل[دِّ]ينِ}}.
-2) Making it heavy, like: {{q ?|صُ[دُ]ورِ}}.
+1) Mixing its sound with a hint of a sound taa like: {{q ?|ٱل[دِّ]ينِ}}.
+2) Making it heavy like: {{q ?|صُ[دُ]ورِ}}.
 ### Mistakes made when pronouncing Taa ({{a ت}})
-1) Exaggerating the hams of taa when it is voweled, like: {{q ?|[تَ]تَفَكَّرُونَ}}.
-2) Making it heavy, like: {{q ?|[تَ]طْمَئِنُّ}}.
-3) Not applying hams, especially when it is sakinah, like: {{q ?|طَلَعَ[ت]}}, {{q ?|غَرَبَ[ت]}}.
+1) Exaggrating hams of taa when it is voweled, like: {{q ?|[تَ]تَفَكَّرُونَ}}.
+2) Making it heavy like: {{q ?|[تَ]طْمَئِنُّ}}.
+3) Not applying hams especially when it is sakinah like: {{q ?|طَلَعَ[ت]}}, {{q ?|غَرَبَ[ت]}}.
 ### Mistakes made when pronouncing the letters of Safir (whistle) ({{a ص، ز، س}})
-1) Weakening the characteristic of safir (whistle), like: {{q ?|ٱل[صَّ]مَدُ}}, {{q ?|ٱلْمِ[سْ]كِينِ}}, {{q ?|يَ[زَّ]كَّىٰ}}.
-2) Circling the lips when pronouncing s'aad, like: {{q ?|ٱل[صَّ]ٰلِحَٰتِ}}.
-3) Making s'aad light, like: {{q ?|ٱلْمَ[صِ]يرُ}}.
-4) Making seen heavy, like: {{q ?|يَ[سْ]طُرُونَ}}.
-5) Mixing the sound of seen with a hint of the sound of zaay, like: {{q ?|رِجْ[سٌ]}}.
+1) Weakening the characteristic of Safir (whistle) like: {{q ?|ٱل[صَّ]مَدُ}}, {{q ?|ٱلْمِ[سْ]كِينِ}}, {{q ?|يَ[زَّ]كَّىٰ}}.
+2) Circling lips when pronouncing S'aad like: {{q ?|ٱل[صَّ]ٰلِحَٰتِ}}.
+3) Making S'aad light like: {{q ?|ٱلْمَ[صِ]يرُ}}.
+4) Making seen heavy like: {{q ?|يَ[سْ]طُرُونَ}}.
+5) Mixing the sound of seen with a hint of the sound of zaay like: {{q ?|رِجْ[سٌ]}}.
 
 @page 40
 ### Mistakes made when pronouncing the gum letters ({{a ظ، ذ، ث}})
 1) Putting the tip of the tongue out of the mouth more than necessary, like: {{q ?|وَٱل[ظَّ]ٰلِمِينَ}}.
-2) Placing the tip of the tongue on the gum or on the inner plate of the upper incisors.
-3) Changing thaal into zaay, like: {{q ?|وَٱل[ذَّ]ٰكِرِينَ}}.
-4) Changing thaa into seen or taa, like: {{q ?|فَكَ[ثَّ]رَكُمْ}}.
+2) Placing the tip of the tongue upon gum or the inner plate of upper incisors.
+3) Changing thaal into zaay like: {{q ?|وَٱل[ذَّ]ٰكِرِينَ}}.
+4) Changing thaa into seen or taa like: {{q ?|فَكَ[ثَّ]رَكُمْ}}.
 ### Mistakes made when pronouncing Faa ({{a ف}})
-1) Not pronouncing it clearly because of weak hams (whisper), like: {{q ?|تَ[فْ]عَلُونَ}}.
+1) Not pronouncing clearly because of weak hams (Whisper) like: {{q ?|تَ[فْ]عَلُونَ}}.
 ### Mistakes made when pronouncing Waaw ({{a و}})
-1) Not circling the lips as required, like: {{q ?|[وَ]ٱللَّهُ}}, {{q ?|ٱلْمُفْلِحُ[و]نَ}}.
-2) Mixing its sound with a hint of the sound of ghunnah, like: {{q ?|يُوقِنُ[و]نَ}}.
+1) Not circling lips as required like: {{q ?|[وَ]ٱللَّهُ}}, {{q ?|ٱلْمُفْلِحُ[و]نَ}}.
+2) Mixing its sound with a hint of the sound of ghunnah like: {{q ?|يُوقِنُ[و]نَ}}.
 ### Mistakes made when pronouncing Baa ({{a ب}})
-1) Making it heavy when it is adjacent to a heavy letter, like: {{q ?|ٱلْ[بَ]صَرَ}}, {{q ?|بِٱلْ[بَ]ٰطِلِ}}.
-2) Not applying qalqalah when it comes with sukoon, like: {{q ?|وَيُ[بْ]صِرُونَ}}, {{q ?|وَيُ[بْ]طِلَ}}.
+1) Making it heavy when it is adjacent to heavy letter like: {{q ?|ٱلْ[بَ]صَرَ}}, {{q ?|بِٱلْ[بَ]ٰطِلِ}}.
+2) Not applying qalqalah when it comes with Sukoon like: {{q ?|وَيُ[بْ]صِرُونَ}}, {{q ?|وَيُ[بْ]طِلَ}}.
 ### Mistakes made when pronouncing Meem ({{a م}})
-1) Cutting off its sound when stopping, like: {{q ?|ٱلرَّحِي[مِ]}}, {{q ?|ٱلْحَكِي[مُ]}}.
-2) Making it heavy when it is adjacent to a heavy letter, like: {{q ?|[مَ]خْ[مَ]صَةٍ}}.
-3) Applying qalqalah when meem comes with sukoon, like: {{q ?|يَ[مْ]تَرُونَ}}, {{q ?|يُ[مْ]سِكُهُنَّ}}.
+1) Cutting off its sound when stopping like: {{q ?|ٱلرَّحِي[مِ]}}, {{q ?|ٱلْحَكِي[مُ]}}.
+2) Making it heavy when it is adjacent to heavy letter like: {{q ?|[مَ]خْ[مَ]صَةٍ}}.
+3) Doing qalqalah when meem comes with Sukoon like: {{q ?|يَ[مْ]تَرُونَ}}, {{q ?|يُ[مْ]سِكُهُنَّ}}.

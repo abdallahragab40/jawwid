@@ -3,10 +3,10 @@
 @page 73
 # Tingkatan kekuatan mad dan penerapannya dengan kaidah sebab terkuat ({{a أقوى المُدُودِ والعملُ بقاعدةِ أقوى السَّببين}})
 - Jika terdapat dua sebab mad pada satu huruf, di mana salah satu sebab lebih kuat dan yang lain lebih lemah, maka sebab yang lebih kuat digunakan, dan sebab yang lebih lemah diabaikan.
-- Mad far'i memiliki lima tingkatan dari segi kekuatan dan kelemahannya. Berikut adalah urutannya dari yang terkuat hingga yang terlemah. Syekh As-Samannudi berkata:
+- Mad far'i memiliki lima tingkatan dari segi kekuatan dan kelemahannya. Berikut adalah urutannya dari yang terkuat hingga yang terlemah.  Sheikh As-Samannudi berkata:
 > {{a أقْوَى المُدُودِ: لَازِمٌ فَمَا اتَّصَلْ ... فَعَارِضٌ فَذُو انفِصَالٍ فَبَدَلْ}}
 > {{a وَسَبَبَا مَدٍّ إذا مَا وُجِدَا ... فَإِنَّ أقْوَى السَّبَبَيْنِ انْفَرَدَا}}
-"Mad yang paling kuat adalah lazim, kemudian muttashil, kemudian 'aridh, munfashil, dan badal. Dua sebab mad apabila ditemukan, maka sebab terkuatlah yang didahulukan."
+"Mad yang paling kuat adalah Lazim, kemudian Muttashil Kemudian 'Aridh, Munfashil, dan Badal. Dua sebab mad apabila ditemukan Maka sebab terkuatlah yang didahulukan."
 | Mad | Panjang (harakat) |
 | 1 – Lazim | 6 |
 | 2 – Muttashil | 4 – 5 |
@@ -20,7 +20,7 @@
 2) **Pertemuan muttashil dan badal**, contoh: {{q ?|رِئَ[آءَ] ٱلنَّاسِ}}; **muttashil** lebih didahulukan.
 3) **Pertemuan 'aridh dan badal**, contoh: {{q ?|شَنَـَٔ[ا]نُ}}, {{q ?|يُرَآءُ[و]نَ}}, {{q ?|خَٰسِـِٔ[ي]نَ}}; **'aridh** lebih didahulukan.
 4) **Pertemuan munfashil dan badal**, contoh: {{q 12:16|وَجَآءُ[وٓ أَ]بَاهُمْ}}; **munfashil** lebih didahulukan.
-5) **Pertemuan muttashil, badal, dan 'aridh lissukun**, contoh: {{q ?|رِئَ[آءَ]}}; maka badal diabaikan karena kelemahannya, dan yang tersisa adalah muttashil dan 'aridh lissukun, sehingga berlaku pada keduanya apa yang telah dijelaskan dalam kaidah-kaidah sebelumnya.
+5) **Pertemuan muttashil, badal, dan 'aridh lissukun**, contoh: {{q ?|رِئَ[آءَ]}}; maka badal diabaikan karena kelemahannya, dan yang tersisa adalah muttashil dan 'aridh lis-sukun, sehingga berlaku pada keduanya apa yang telah dijelaskan dalam kaidah-kaidah sebelumnya.
 6) **Pertemuan muttashil dan 'aridh lissukun**, contoh: {{q ?|ٱلسَّمَ[آءُ]}}.
 ### Keadaan nomor 5 dan 6
 | Muttashil | 'Aridh lissukun | Didahulukan |

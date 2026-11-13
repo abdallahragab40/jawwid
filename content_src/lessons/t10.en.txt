@@ -88,8 +88,8 @@ Sign of Noon sakinah or Tanween in the case of (Incomplete Idgham) into letters 
 
 @page 46
 ### Two notes
-1) Noon sakinah is not merged into (**waaw or Yaa**) if they met in one word. They are only 4 words in the Qur'an: {{q 6:99|قِ[نْوَ]انٌ}}، {{q 13:4|صِ[نْوَ]انٌ}}، {{q ?|ٱلدُّ[نْيَ]ا}} wherever it occurs، {{q ?|بُ[نْيَ]ٰنٌ}} wherever it occurs. Merging is not applied to these words to follow (Imam Hafs) in this narration and keep their meanings away from confusion and misunderstanding.
-2) Hafs on the authority of Asim by the way of Ash_shaatibiyyah doesn't merge Noon into waaw in continuing recitation between two words: {{q 36:1|يس}} {{q 36:2|وَٱلْقُرْءَانِ ٱلْحَكِيمِ}} [Yasin: 1-2]. Noon is pronounced clearly ({{a يَا سِينْ وَالقُرآنِ}}). {{q 68:1|[ن] وَٱلْقَلَمِ وَمَا يَسْطُرُونَ}} [Al-Qalam: 1]. Noon is pronounced clearly ({{a نُونْ وَالقَلَمِ وما يَسْطُرُون}}).
+1) Noon sakinah is not merged into (**waaw or Yaa**) if they met in one word They are only 4 words in the Qur'an: {{q 6:99|قِ[نْوَ]انٌ}}، {{q 13:4|صِ[نْوَ]انٌ}}، {{q ?|ٱلدُّ[نْيَ]ا}} wherever it occurs، {{q ?|بُ[نْيَ]ٰنٌ}} wherever it occurs. Merging is not applied to these words to follow (Imam Hafs) in this narration and keep their meanings away from confusion and misunderstanding.
+2) Hafs on the authority of Asim by the way of Ash-shaatibiyyah doesn't merge Noon into waaw in continuing recitation between two words: {{q 36:1|يس}} {{q 36:2|وَٱلْقُرْءَانِ ٱلْحَكِيمِ}} [Yasin: 1-2]. Noon is pronounced clearly ({{a يَا سِينْ وَالقُرآنِ}}). {{q 68:1|[ن] وَٱلْقَلَمِ وَمَا يَسْطُرُونَ}} [Al-Qalam: 1]. Noon is pronounced clearly ({{a نُونْ وَالقَلَمِ وما يَسْطُرُون}}).
 Noon is not merged into raa in Almighty's word: {{q 75:27|وَقِيلَ مَ[نْ رَ]اقٍ}} Because of Sakt (slight pause without taking breath) that prevents Idgham, according to the narration.
 
 @page 47
@@ -115,7 +115,7 @@ In Tanween: putting tiny meem instead of the second vowel (that vowel refers to 
 = In linguistics | hiding.
 = In applied definition | pronouncing noon sakinah or tanween in a way so that the sound is between Ithhar and Idgham, stripped of any Shaddah with a ghunnah remaining in the first letter.
 ### Letters of Ikhfaa
-Noon sakinah or tanween is hidden and accompanied by a ghunnah when it is followed by one of the 15 letters. They are the rest of the alphabetical letters after excluding letters of Ithhar, idgham and iqlab. The regulator collected them in the first letter of each word in the following verse:
+Noon sakinah or tanween is hidden and accompanied by a ghunnah when it is followed by one of the 15 letters. They are the rest of the alphabetical letters after excluding letters of Ithhar, idgham and iqlab The regulator collected them in the first letter of each word in the following verse:
 {{a صِفْ ذَا ثَنَا كَمْ جَادَ شَخْصٌ قَدْ سَمَا ... دُمْ طَيِّبًا زِدْ فِي تُقًى ضَعْ ظَالِمَا}}
 - Hiding noon sakinah and tanween is called as real hiding.
 - **The method of pronunciation**: Placing the Tongue in a position close to the articulation point of the next letter.
@@ -124,7 +124,7 @@ Ikhfaa has different levels of strength depending on the closeness or farness of
 1) **The heighest level of Ikhfaa** with ({{a ط، د، ت}}).
 2) **The intermediate level of Ikhfaa** with 10 letters: ({{a ص، ذ، ث، ج، ش، س، ز، ف، ض، ظ}}).
 3) **The lowest level of Ikhfaa** (closer to Ithhar) with ({{a ق، ك}}).
-- Special care with ghunnah to be heavy or light according to the following letter: If Noon sakinah or Tanween is followed by heavy letter, Gunnah should be heavy, If they are followed by light letter, Gunnah should be light.
+- Special care with ghunnah to be heavy or light according to the following letter If Noon sakinah or Tanween is followed by heavy letter, Gunnah should be heavy, If they are followed by light letter, Gunnah should be light.
 | Gunnah is followed by heavy letter | Gunnah is followed by light letter |
 | {{q ?|بِرِي[حٍ صَ]رْصَرٍ}} | {{q ?|مَّ[نثُ]ورًا}} |
 | {{q ?|مِ[ن ضَ]رِيعٍ}} | {{q ?|إِ[ن كَ]انَ}} |

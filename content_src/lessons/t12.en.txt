@@ -3,14 +3,14 @@
 @page 52
 # Noon and Meem Mushaddad ({{a النُّونُ والمِيمُ المُشدَّدَتين}})
 ### What must be known
-- **Ghunnah** ({{a الغُنَّة}}): a sound emitted from the nasal cavity that accompanies **noon** and **meem** in all cases.
-- When the reciter pronounces noon or meem mushaddad, he must lengthen the timing of ghunnah (the most complete ghunnah), both when continuing the recitation and when stopping.
+- **Ghunnah** ({{a الغُنَّة}}): a sound emitted from the nasal cavity accompanying **noon** and **meem** in all cases.
+- When the reciter pronounces noon or meem mushaddad, he must lengthen the timing of ghunnah (most complete ghunnah) in continuing recitation or stopping.
 ### Examples
 - {{q ?|مِنَ ٱلْجِ[نَّ]ةِ وَٱل[نَّ]اسِ}}, {{q 8:43|وَلَٰكِ[نَّ] ٱللَّهَ سَلَّمَ}}, {{q 36:68|وَمَن [نُّ]عَمِّرْهُ}}.
 - {{q ?|حَ[مَّ]الَةَ ٱلْحَطَبِ}}, {{q ?|ثُ[مَّ] كَلَّا سَيَعْلَمُونَ}}, {{q ?|مِن [مَّ]الٍ وَبَنِينَ}}.
 - {{q 2:124|وَإِذِ ٱبْتَلَىٰٓ إِبْرَٰهِۦمَ رَبُّهُۥ بِكَلِمَٰتٍ فَأَتَ[مَّ]هُ[نَّ]}}.
 - {{q ?|إِ[نَّ] ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ}}.
 ### Note
-If we want to start with {{q 36:68|[نُّ]عَمِّرْهُ}} or {{q ?|[مَّ]الٍ}} in the previous examples, we omit the shaddah and start with the meem or noon with no extra ghunnah, because the shaddah comes from idgham, and when we start with these letters there is no idgham.
+If we want to start with {{q 36:68|[نُّ]عَمِّرْهُ}} or {{q ?|[مَّ]الٍ}} In the previous examples, we omit shaddah and Start with meem and noon with no excessive ghunnah, shaddah also comes from Idgham and when we start with these letters, there is no Idgham.
 ### Pictograms
 !crop 158 582 502 734

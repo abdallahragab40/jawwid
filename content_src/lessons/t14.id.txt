@@ -2,29 +2,29 @@
 
 @page 55
 # Tebal dan tipis ({{a التَّفْخِيمُ والتَّرقِيقُ}})
-Pembahasan ini memiliki keterkaitan yang erat dengan makhraj (tempat keluarnya) huruf dan sifat-sifatnya. Topiknya adalah pembagian huruf-huruf Arab ke dalam kategori tebal (mufakhkhamah) atau tipis (muraqqaqah), kemudian mengucapkan huruf tersebut dengan sifat yang sesuai, baik tebal maupun tipis.
+Pembahasan ini memiliki keterkaitan yang erat dengan makhraj (tempat keluarnya) huruf dan sifat-sifatnya. Topiknya adalah pembagian huruf-huruf Arab ke dalam kategori tebal (mufakhkhamah) atau tipis (muraqqaqah), kemudian mengucapkan huruf tersebut dengan sifat yang sesuai, baik itu dengan tebal atau tipis.
 ## Tebal
 = Secara bahasa | Penebalan (membuat sesuatu menjadi tebal).
-= Secara istilah | Penebalan yang masuk ke dalam huruf sehingga memenuhi mulut dengan gema huruf tersebut.
+= Secara istilah | penebalan yang masuk ke dalam huruf sehingga memenuhi mulut dengan gema huruf tersebut.
 = Contoh | {{q ?|ٱلْ[غَ]يْبِ}}, {{q ?|[خَا]لِصَةً}}, {{q ?|بَ[قْ]لِهَا}}.
 !crop 391 201 547 351
 ## Tipis
 = Secara bahasa | Penipisan (membuat sesuatu menjadi tipis).
-= Secara istilah | Penipisan yang masuk ke dalam huruf sehingga mulut tidak dipenuhi oleh gema huruf tersebut.
+= Secara istilah | penipisan yang masuk ke dalam huruf sehingga mulut tidak dipenuhi oleh gema huruf tersebut.
 = Contoh | {{q ?|أَ[كْ]ثَرُهُمْ}}, {{q ?|أَ[تْ]رَابًا}}, {{q ?|أَ[شْ]تَاتًا}}.
 !crop 394 431 550 581
 ### Pembagian huruf dari segi tebal dan tipis
 - Huruf yang selalu ditebalkan: ({{a خُصَّ ضَغْطٍ قِظْ}}).
-- Huruf yang kadang ditebalkan dan kadang ditipiskan: (**alif**, **lam** pada lafzhul jalalah Allah, **ra**).
+- Huruf yang kadang ditebalkan dan kadang ditipiskan: (**alif**, **lam** pada lafadzul jalalah Allah, **ra**).
 - Huruf yang selalu ditipiskan: (**sisa huruf hijaiyah**).
 
 @page 56
 # Huruf yang selalu ditebalkan ({{a حروفٌ مُفخَّمَةٌ دائمًا}})
 Para ulama tajwid sepakat bahwa huruf-huruf yang selalu ditebalkan adalah huruf-huruf isti'la' ({{a خُصَّ ضَغْطٍ قِظْ}}) tanpa pengecualian apa pun, baik dalam keadaan berharakat maupun sukun, serta baik berdekatan dengan huruf mustafil (tipis) atau tidak. Namun, ada perbedaan tingkat ketebalan di antara huruf-huruf tersebut. Penebalan setiap huruf tergantung pada tingkat isti'la'-nya; semakin tinggi tingkat isti'la'-nya, semakin tebal pula penebalannya.
-- **Urutan huruf isti'la' berdasarkan kekuatan penebalan**: yang paling kuat huruf {{a ط}}, diikuti oleh {{a ض}}, kemudian {{a ص}}, selanjutnya {{a ظ}}, lalu {{a ق}}, disusul oleh {{a غ}}, dan yang paling lemah {{a خ}}.
+- **Urutan huruf isti'la' berdasarkan kekuatan penebalan**: Yang paling kuat huruf {{a ط}}, diikuti oleh {{a ض}}, kemudian {{a ص}}, selanjutnya {{a ظ}}, lalu {{a ق}}, disusul oleh {{a غ}}, dan yang paling lemah {{a خ}}.
 ### Tingkatan ketebalan huruf-huruf isti'la'
-= Pendapat pertama | Sebagian ulama membagi penebalan huruf isti'la' menjadi tiga tingkatan, sebagaimana pendapat Ibnu Thahhan al-Andalusi: huruf yang berharakat fathah, huruf yang berharakat dhammah, dan huruf yang berharakat kasrah. Huruf yang sukun tidak memiliki tingkatan tersendiri, tetapi mengikuti tingkatan harakat huruf yang mendahuluinya.
-= Pendapat kedua | Sebagian ulama lainnya membagi ketebalan huruf isti'la' menjadi lima tingkatan, sebagaimana pendapat Ibnu al-Jazari.
+= Pendapat pertama | sebagian ulama membagi penebalan huruf isti'la' menjadi tiga tingkatan, sebagaimana pendapat Ibnu Thahhan al-Andalusi: - Huruf yang berharakat fathah. - Huruf yang berharakat dhammah. - Huruf yang berharakat kasrah. Huruf yang sukun tidak memiliki tingkatan tersendiri, tetapi mengikuti tingkatan harakat huruf yang mendahuluinya.
+= Pendapat kedua | sebagian ulama lainnya membagi ketebalan huruf isti'la' menjadi lima tingkatan, sebagaimana pendapat Ibnu al-Jazari.
 
 @page 57
 ### Pendapat kedua
@@ -37,7 +37,7 @@ Para ulama tajwid sepakat bahwa huruf-huruf yang selalu ditebalkan adalah huruf-
 | Ghain | {{q ?|بِ[غَٰ]فِلٍ}} | {{q ?|ٱلْ[غَ]يْبِ}} | {{q ?|[غُ]رْفَةً}} | {{q ?|ٱلْمَ[غْ]رِبِ}} | {{q ?|[غِ]شَٰوَةٌ}} |
 | Kha | {{q ?|[خَا]لِصَةً}} | {{q ?|[خَ]لِيفَةً}} | {{q ?|[خُ]لَّةٌ}} | {{q ?|يَ[خْ]تَصُّ}} | {{q ?|أَ[خِ]يهِ}} |
 # Huruf-huruf yang selalu ditipiskan ({{a حروفٌ مرقَّقةٌ دائمًا}})
-Huruf-huruf ini adalah huruf-huruf istifal (rendah), kecuali alif, lam (pada lafzhul jalalah) dan ra yang kadang ditipiskan dan kadang ditebalkan.
+Huruf-huruf ini adalah huruf-huruf istifal (rendah), kecuali: alif, lam (pada lafzhul jalalah), ra yang kadang ditipiskan dan kadang ditebalkan.
 
 @page 58
 # Huruf-huruf yang kadang ditebalkan dan kadang ditipiskan ({{a حروفٌ تُفخَّمُ أحيانًا وتُرقَّقُ أحيانًا}})
@@ -50,43 +50,43 @@ Alif mengikuti sifat huruf sebelumnya, baik dari segi tebal (tafkhim) maupun tip
 ### Lam lafzhul jalalah ditebalkan, jika
 1) Di awal kalimat, contoh: {{q ?|[ٱللَّهُ] لَآ إِلَٰهَ إِلَّا هُوَ}}.
 2) Sebelumnya fathah, contoh: {{q ?|عِبَا[دَ ٱللَّهِ]}}.
-3) Sebelumnya sukun, sebelumnya fathah, contoh: {{q ?|وَإِ[لَى ٱللَّهِ]}}.
+3) Sebelumnya sukun sebelumnya fathah, contoh: {{q ?|وَإِ[لَى ٱللَّهِ]}}.
 4) Sebelumnya dhammah, contoh: {{q ?|عَبْ[دُ ٱللَّهِ]}}.
-5) Sebelumnya sukun, sebelumnya dhammah, contoh: {{q ?|قَا[لُوا۟ ٱللَّهُمَّ]}}.
+5) Sebelumnya sukun sebelumnya dhammah, contoh: {{q ?|قَا[لُوا۟ ٱللَّهُمَّ]}}.
 !crop 406 538 542 667
 
 @page 59
 ### Lam lafzhul jalalah ditipiskan, jika
 1) Sebelumnya kasrah, contoh: {{q ?|بِسْ[مِ ٱللَّهِ]}}.
-2) Sebelumnya sukun, sebelumnya kasrah, contoh: {{q 39:61|وَيُنَ[جِّى ٱللَّهُ]}}.
+2) Sebelumnya sukun sebelumnya kasrah, contoh: {{q 39:61|وَيُنَ[جِّى ٱللَّهُ]}}.
 3) Sebelumnya tanwin, contoh: {{q 7:164|قَوْ[مًا ٱللَّهُ]}}.
 !crop 410 127 535 250
-> **Catatan**: Lam pada kata selain lafzhul jalalah tetap pada sifat asalnya, yaitu tipis (tarqiq), contoh: {{q ?|فَ[لْ]يَعْبُدُوا۟}}, {{q ?|تَعْ[لَ]مُونَ}}, {{q ?|[لِ]رَبِّكَ}}, {{q ?|زُ[لْ]زِلَتِ}}, {{q ?|أَنزَ[لْ]نَٰهُ}}.
+> **Catatan**: lam pada kata selain Lafzhul Jalalah tetap pada sifat asalnya, yaitu tipis (tarqiq), contoh: {{q ?|فَ[لْ]يَعْبُدُوا۟}}, {{q ?|تَعْ[لَ]مُونَ}}, {{q ?|[لِ]رَبِّكَ}}, {{q ?|زُ[لْ]زِلَتِ}}, {{q ?|أَنزَ[لْ]نَٰهُ}}.
 ## 3- Ra
-Ra tebal ada (**8**) keadaan, ra tipis ada (**4**) keadaan, dan ra tebal dan tipis ada (**2**) keadaan.
+Ra tebal ada (**8**) keadaan, ra tipis ada (**4**) keadaan Raa tebal dan tipis ada (**2**) keadaan.
 
 @page 60
 ### Keadaan ra tebal, jika
 1) Ra fathah, contoh: {{q ?|[رَ]مَضَانَ}}, {{q ?|ٱلْقُ[رَ]ىٰ}}.
-2) Ra sukun, sebelumnya fathah, contoh: {{q ?|مَ[رْ]يَمَ}}, {{q ?|نَ[رْ]فَعُ}}.
-3) Ra sukun, sebelumnya sukun (bukan huruf ya), sebelumnya fathah, contoh: {{q ?|وَٱلْفَجْ[رِ]}}, {{q ?|وَٱلْوَتْ[رِ]}}.
+2) Ra sukun sebelumnya fathah, contoh: {{q ?|مَ[رْ]يَمَ}}, {{q ?|نَ[رْ]فَعُ}}.
+3) Ra sukun sebelumnya sukun (bukan huruf Ya), sebelumnya fathah, contoh: {{q ?|وَٱلْفَجْ[رِ]}}, {{q ?|وَٱلْوَتْ[رِ]}}.
 4) Ra dhammah, contoh: {{q ?|[رُ]زِقُوا۟}}, {{q ?|تَعْبُ[رُ]ونَ}}.
-5) Ra sukun, sebelumnya dhammah, contoh: {{q ?|ٱلْقُ[رْ]ءَانُ}}.
-6) Ra sukun, sebelumnya sukun, sebelumnya dhammah, contoh: {{q ?|ٱلْغَفُو[رُ]}}, {{q ?|خُضْ[رٍ]}}.
-7) Ra sukun, sebelumnya kasrah, tetapi setelahnya huruf isti'la' (huruf tebal) yang tidak kasrah dalam satu kata; terdapat pada lima kata: {{q ?|قِ[رْ]طَاسٍ}}, {{q ?|وَإِ[رْ]صَادًا}}, {{q ?|مِ[رْ]صَادًا}}, {{q ?|لَبِٱلْمِ[رْ]صَادِ}}, {{q ?|فِ[رْ]قَةٍ}}.
-8) Ra sukun, sebelumnya kasrah 'aridhah, baik yang dilafalkan maupun yang diperkirakan, contoh: {{q ?|ٱ[رْ]جِعُوٓا۟}}, {{q ?|ٱ[رْ]تَبْتُمْ}}, {{q ?|أَمِ ٱ[رْ]تَابُوٓا۟}}, {{q ?|رَّبِّ ٱ[رْ]حَمْهُمَا}}.
-**Kesimpulan keadaan kedelapan**: ra sukun ditebalkan jika sebelumnya terdapat hamzah washal.
+5) Ra sukun sebelumnya dhammah, contoh: {{q ?|ٱلْقُ[رْ]ءَانُ}}.
+6) Ra sukun sebelumnya sukun, sebelumnya dhammah, contoh: {{q ?|ٱلْغَفُو[رُ]}}, {{q ?|خُضْ[رٍ]}}.
+7) Ra sukun sebelumnya kasrah, tetapi setelahnya huruf isti'la' (huruf tebal) yang tidak kasrah dalam satu kata, dan terdapat pada lima kata: {{q ?|قِ[رْ]طَاسٍ}}, {{q ?|وَإِ[رْ]صَادًا}}, {{q ?|مِ[رْ]صَادًا}}, {{q ?|لَبِٱلْمِ[رْ]صَادِ}}, {{q ?|فِ[رْ]قَةٍ}}.
+8) Ra sukun sebelumnya kasrah aridhah, baik yang dilafalkan maupun yang diperkirakan, contoh: {{q ?|ٱ[رْ]جِعُوٓا۟}}, {{q ?|ٱ[رْ]تَبْتُمْ}}, {{q ?|أَمِ ٱ[رْ]تَابُوٓا۟}}, {{q ?|رَّبِّ ٱ[رْ]حَمْهُمَا}}.
+**Kesimpulan keadaan kedelapan**: Ra sukun ditebalkan jika sebelumnya terdapat hamzah washal.
 ### Keadaan ra tipis, jika
 1) Ra kasrah, contoh: {{q ?|[رِ]يحٌ}}, {{q ?|يَعْ[رِ]فُونَهَا}}.
-2) Ra sukun, sebelumnya kasrah, serta tidak ada huruf isti'la' setelahnya, contoh: {{q ?|فِ[رْ]عَوْنَ}}, {{q ?|يَغْفِ[رْ]}}.
-3) Ra sukun, sebelumnya sukun, sebelumnya kasrah, contoh: {{q ?|حِجْ[رٍ]}}, {{q ?|ٱلسِّحْ[رَ]}}.
-4) Ra sukun, sebelumnya ya sukun (baik ya mad atau ya layyinah), contoh: {{q ?|بَصِي[رٌ]}}, {{q ?|خَيْ[رٌ]}}.
+2) Ra sukun sebelumnya kasrah, serta tidak ada huruf isti'la' setelahnya, contoh: {{q ?|فِ[رْ]عَوْنَ}}, {{q ?|يَغْفِ[رْ]}}.
+3) Ra sukun sebelumnya sukun sebelumnya kasrah, contoh: {{q ?|حِجْ[رٍ]}}, {{q ?|ٱلسِّحْ[رَ]}}.
+4) Ra sukun sebelumnya ya sukun (baik ya mad atau ya layyinah), contoh: {{q ?|بَصِي[رٌ]}}, {{q ?|خَيْ[رٌ]}}.
 
 @page 61
 ### Bisa memilih antara dilafalkan tebal dan tipis
 ### {{q 26:63|فِرْقٍ}} dalam keadaan washal
 Jika ra sukun, sebelumnya kasrah, dan setelahnya terdapat huruf isti'la' yang juga kasrah, sebagaimana dalam firman Allah Ta'ala: {{q 26:63|فَكَانَ كُلُّ فِ[رْ]قٍ كَٱلطَّوْدِ ٱلْعَظِيمِ}} [Asy-Syu'ara: 63]. Keadaan ini hanya terdapat dalam satu tempat saja.
-- **Catatan 1**: Ketika ra dihentikan dengan sukun (waqaf), maka ra ditebalkan (tafkhim) tanpa pengecualian, karena alasan penipisan (kasrah pada huruf isti'la', yakni qaf) sudah hilang.
+- **Catatan 1**: ketika ra dihentikan dengan sukun (waqaf), maka ra ditebalkan (tafkhim) tanpa pengecualian, karena alasan penipisan (kasrah pada huruf *isti'la', yakni qaaf) sudah hilang.
 - **Catatan 2**: Ketika berhenti pada ra dengan raum, dibolehkan untuk menebalkan (tafkhim) atau menipiskan (tarqiq).
 ### {{q 12:99|مِصْرَ}}, {{q 34:12|ٱلْقِطْرِ}} dalam keadaan waqaf (berhenti)
 Jika ra sukun dan sebelumnya ada huruf isti'la' yang sukun, serta huruf sebelum isti'la' tersebut kasrah, sebagaimana firman Allah Ta'ala:
@@ -96,11 +96,11 @@ Jika ra sukun dan sebelumnya ada huruf isti'la' yang sukun, serta huruf sebelum 
 - **Catatan 2**: Imam Ibnu al-Jazari memilih untuk menebalkan (tafkhim) ra ketika berhenti dengan sukun pada {{q 12:99|مِصْ[رَ]}}, dan menipiskan (tarqiq) ra pada {{q 34:12|ٱلْقِطْ[رِ]}}, dengan mempertimbangkan keadaan saat bersambung (washal).
 
 @page 62
-- **Catatan 3**: Sebagian ulama memperbolehkan dua cara (jawaz al-wajhain) untuk ra pada tiga kata berikut ketika berhenti (waqaf): {{q 54:16|وَنُذُ[رِ]}}, {{q 89:4|يَسْ[رِ]}}, {{q 26:52|أَسْ[رِ]}}. Namun dilafalkan tipis (tarqiq) lebih utama dalam pelafalan, pada:
+- **Catatan 3**: Sebagian ulama memperbolehkan dua cara (jawaz al-wajhain) untuk ra pada tiga kata berikut ketika berhenti (waqaf): {{q 54:16|وَنُذُ[رِ]}}, {{q 89:4|يَسْ[رِ]}}, {{q 26:52|أَسْ[رِ]}}. Namun dilafalkan tipis, (tarqiq) lebih utama dalam pelafalan, pada:
 - {{q 54:16|فَكَيْفَ كَانَ عَذَابِى وَنُذُ[رِ]}} [Al-Qamar: 16].
 - {{q 89:4|وَٱلَّيْلِ إِذَا يَسْ[رِ]}} [Al-Fajr: 4].
 - {{q 26:52|وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَسْ[رِ] بِعِبَادِىٓ إِنَّكُم مُّتَّبَعُونَ}} [Asy-Syu'ara: 52].
-Ra yang dihentikan (waqaf) dalam kata-kata tersebut memiliki huruf ya yang dihapus setelahnya. **Bagi yang menipiskan ra**: mereka mempertimbangkan asal kata, yaitu adanya huruf ya yang dihapus, dan keadaan saat bersambung (washal), di mana ra tersebut ditipiskan. **Dan bagi yang menebalkan ra**: mereka tidak mempertimbangkan asal kata maupun keadaan saat bersambung (washal), maka ra ditebalkan sesuai dengan kaidah umum.
+Ra yang dihentikan (waqf) dalam kata-kata tersebut memiliki huruf ya yang dihapus setelahnya. **Bagi yang menipiskan ra**: mereka mempertimbangkan asal kata, yaitu adanya huruf ya yang dihapus, dan keadaan saat bersambung (washl), di mana ra tersebut ditipiskan. **Dan bagi yang menebalkan ra**: Mereka tidak mempertimbangkan asal kata maupun keadaan saat bersambung (washl). Maka, ra ditebalkan sesuai dengan kaidah umum.
 ## 4- Ghunnah ({{a الغُنَّة}})
 Ghunnah mengikuti sifat huruf setelahnya, baik tebal (tafkhim) maupun tipis (tarqiq).
 ### Ghunnah ditebalkan ketika bertemu dengan huruf-huruf tebal (mufakhkhamah): tha', dhad, shad, zha' dan qaf, contoh

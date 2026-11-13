@@ -27,3 +27,9 @@
 - t20 ar p83: the قلى example (2:191) is cited as [الفرقان: ١٩١]; written البقرة.
 - t21 ckb p94: the third «ugly start» example (عُزَيْرٌ ٱبْنُ ٱللَّهِ, 9:30) is absent from the Kurdish edition; the lesson follows the page.
 - t25 ar p88: بِمُصَيْطِرٍ is cited as [البقرة: ٢٤٥]; it is Al-Ghashiyah 88:22 (written so).
+
+## English and Indonesian wording (2026-11-13)
+
+The English and Indonesian lessons follow the printed text of their edition word for word: wording, spelling, grammar and punctuation as printed (restored with `tools/restore_wording.py` after a comparison with the PDF text layer found reworded passages; see `docs/review/lesson-proofreading-en-id.md`). Printed errors are kept in the lesson and listed here for the author and translators, for example:
+- en t20 p86 «Optional stopg»; t18 p81 «clarity (Ithhar)If … pronounced clearly b.»; t15 p65 the sign line repeats «tiny waaw … tiny yaa»; t08 p35 «letters, , highlighting»; t09 «Exachanging», «Exaggrating repitition»; t14 p54 «lingustics»; t30 «ryhme»; t15 p69 «preferrable», «prefereable».
+Only artefacts of the PDF text layer are not copied (page headers, lost apostrophes such as «isti la», «_» for «-», spaces the text layer dropped). Headings drawn as images, table cells and figure labels were not changed by the tool.

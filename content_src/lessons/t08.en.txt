@@ -6,20 +6,20 @@
 = In linguistics | Describing something with physical or abstract meanings.
 = In applied definition | A way is used to describe the letter when it occurs at its articulation point.
 ### Benefits of knowing characteristics
-1) **To distinguish among letters that share the same articulation point**: if these letters didn't have different characteristics, they would be the same letter. Without isti'laa and itbaq (elevation and adhesion), s'aad would sound like seen, and without jahr (appearance), zaay would sound like seen.
-2) **To beautify the pronunciation of the letter**: giving every letter its required characteristics makes the pronunciation more fluent, perfect and superior, whereas neglecting the characteristics makes the letters overlapped and similar or not clear in pronunciation.
-3) **To know strong and weak letters**: the letter that is characterized by strong qualities is strong and the letter that is characterized by weak qualities is weak. The letter may also have both strong and weak qualities at the same time, so we judge it according to the majority of its characteristics.
+1) **To distinguish among letters that share the same articulation point**: If these letters don't have different characteristics, they will be the same letter. If there is no isti'laa or itbaq (elevation or adhesion) with s'aad, it will be seen and with no jahr (appearence) with zaay, it will be seen.
+2) **To beautify the pronunciation of the letter**: Giving every letter its required characteristics makes the pronunciation more fluent, perfect and superior, whereas neglecting the characteristics makes the letters overlapped and similar or not clear in pronunciation.
+3) **To know strong and weak letters**: The letter that is characterized by strong qualities, is strong and the letter that is characterized by weak qualities is weak, The letter also may have both strong and weak qualities at the same time so, we judge upon it according to the majority of its characteristics.
 
 @page 26
 ### Divisions of characteristics ({{a أقسامُ الصِّفات}})
-1) **Permanent characteristics** ({{a صفاتٌ لازمَةٌ}}): they always accompany the letter in all cases, but they may not appear clearly when pronouncing the letter. For example, qalqalah and hams (vibration and whisper) only appear when pronouncing a non-voweled letter.
-2) **Temporary characteristics** ({{a صفاتٌ عارضةٌ}}): they do not accompany the letter except in certain cases for a reason, and they are removed if the reason is removed.
+1) **Permanent characteristics** ({{a صفاتٌ لازمَةٌ}}): They always accompany the letter in all cases, but they may not appear clearly when pronouncing the letter For example : qalqalah and hams (Vibration and whisper) only appear when pronouncing non-voweled letter.
+2) **Temporary characteristics** ({{a صفاتٌ عارضةٌ}}): They do not accompany the letter except in certain cases for a reason and they will be removed if the reason is removed.
 Temporary characteristics are 11:
 - Idgham (merging) ({{a الإدغام}}).
 - Ithhar (clarity) ({{a الإظهار}}).
 - Qalb (converting) ({{a القَلْب}}).
 - Ikhfaa (hiding) ({{a الإخفاء}}).
-- Madd (lengthening) ({{a المَدّ}}).
+- Madd (lenghtening) ({{a المَدّ}}).
 - Qasr (shortening) ({{a القَصر}}).
 - Tahrik (with a vowel) ({{a التَّحريك}}).
 - Sukoon (with a sukoon) ({{a السُّكون}}).
@@ -27,43 +27,43 @@ Temporary characteristics are 11:
 - Tafkheem (heaviness) ({{a التَّفخيم}}).
 - Tarqiq (lightness) ({{a التَّرقيق}}).
 ### Number of permanent characteristics ({{a عددُ الصِّفاتِ اللَّازمة}})
-Scholars have different opinions about the number of characteristics of the letters. The majority of scholars, and Ibn Al-Gazari in the introduction of Al-Gazariah and Taybat Annashr, chose that they are **17 characteristics**, and this is the common opinion.
+Scholars have different opinions about the number of characteristics of the letters, The majority of scholars and Ibn Al-Gazari chose in the introduction of Al-Gazariah and Taybat Annshr that they are **17 characteristics**, and this is the common opinion.
 
 @page 27
 # 1- Hams VS Jahr ({{a الهَمسُ وضِدُّهُ الجَهرُ}})
 ## Hams
 = In linguistics | Whisper.
-= In applied definition | Continuation of breath when pronouncing the letter because of its weakness that originated from depending on the letter at its articulation point.
-= Its letters | 10 letters collected by Ibn Al-Gazari in the phrase ({{a فَحَثَّهُ شَخْصٌ سَكَتْ}}).
-= The reason for this name | Its letters are called (whispered) because they are articulated by a concealed sound.
+= In applied definition | continuation of breath when pronouncing the letter because of its weakness that originated from depending on the letter at its articulation point.
+= Its letters | 10 letters are collected by Ibn Al-Gazari in the phrase ({{a فَحَثَّهُ شَخْصٌ سَكَتْ}}).
+= The reason for this name | Its letters are called (Whispered) because they are articulated by a concealed sound.
 = Examples | {{q ?|أَ[فْ]وَاجًا}}, {{q ?|ٱلرَّ[حْ]مَٰنُ}}, {{q ?|مِ[ثْ]قَالَ}}, {{q ?|ٱ[هْ]دِنَا}}, {{q ?|ٱ[شْ]تَرَوُا۟}}, {{q ?|سَيَ[صْ]لَىٰ}}, {{q ?|ٱ[سْ]كُنْ}}, {{q ?|أَ[كْ]بَرُ}}, {{q ?|كُوِّرَ[تْ]}}.
 ## Jahr
 = In linguistics | To be apparent.
-= In applied definition | Discontinuation of breath when pronouncing the letter because of its strength that originated from depending on the letter at its articulation point.
-= Its letters | 19: the rest of the Arabic alphabet except the letters of hams.
+= In applied definition | discontinuation of breath when pronouncing the letter because of its strength that originated from depending on the letter at its articulation point.
+= Its letters | 19: The rest of the Arabic alphabet except letters of hams.
 = The reason for this name | Its letters are called apparent because they are articulated by a strong and audible sound.
 = Examples | {{q ?|تَ[قْ]رَبَا}}, {{q ?|ٱلْعِ[جْ]لَ}}, {{q ?|ٱ[ذْ]كُرُوا۟}}, {{q ?|ٱلْأَ[رْ]ضِ}}, {{q ?|عَ[دْ]لٌ}}.
 ### The difference between breath ({{a النَّفَس}}) and sound ({{a الصَّوت}})
 - **Breath**: the air that is emitted from the lungs by nature (inhale and exhale).
-- **Sound**: the air that is emitted from the lungs, causing vibration as a result of the colliding of two objects, or narrowing or closing the passage completely and after that releasing it.
+- **Sound**: The air that is emitted from lungs, causing vibration as a result of the colliding of two objects or narrowing or closing the passage completely and after that releasing it.
 
 @page 28
 # 2- Shiddah VS Rakhawah, and Tawassut (moderation) is between them ({{a الشِّدَّةُ وضِدُّها الرَّخاوةُ وبينهُما التَّوسُّطُ (البينيَّة)}})
 ## Shiddah
 = In linguistics | Strength.
-= In applied definition | Discontinuation of the sound when pronouncing the letter because of its complete reliance on its articulation point.
+= In applied definition | discontinuation of the sound when pronouncing the letter because its complete reliance on its articulation point.
 = Its letters | 8 letters collected in the phrase ({{a أجِدْ قَطٍ بَكَتْ}}).
 = Examples | {{q ?|تَ[أْ]مُرُونِّى}}, {{q ?|تَ[جْ]رِى}}, {{q ?|عَ[دْ]لٌ}}, {{q ?|يَ[قْ]بَلُ}}, {{q ?|يَ[طْ]بَعُ}}, {{q ?|يَ[بْ]تَغُونَ}}, {{q ?|يَ[كْ]تُبُونَ}}, {{q ?|أَ[تْ]قَىٰكُمْ}}.
 !crop 386 141 540 296
 ## Rakhawah
 = In linguistics | Softness.
-= In applied definition | Continuation of the sound when pronouncing the letter because of its weak reliance on its articulation point.
-= Its letters | 16 letters: all letters except the letters of Shiddah and Tawassut.
+= In applied definition | continuation of the sound when pronouncing the letter because its weak reliance on its articulation point.
+= Its letters | They are 16 letters except letters of Shiddah and Tawassut.
 = Examples | {{q ?|أَ[شْ]تَاتًا}}, {{q ?|تَ[حْ]مِلُ}}, {{q ?|فَيَ[ذْ]هَبُ}}.
 !crop 390 403 544 557
 ## Tawassut (moderation)
 = In linguistics | Moderation.
-= In applied definition | The sound is moderate between Shiddah and Rakhawah when pronouncing its letters, because it is partially imprisoned as in Shiddah and partially running as in Rakhawah.
+= In applied definition | The sound is moderate between Shiddah and Rakhawah when pronouncing its letters because It's partially (imprisoned) as in Shiddah and partially (running) as in Rakhawah.
 = Its letters | 5 letters collected in the phrase ({{a لِنْ عُمَرْ}}).
 = Examples | {{q ?|عِ[لْ]مٍ}}, {{q ?|وَءَا[خَرَ]}}, {{q ?|تَ[عْ]لَمُونَ}}, {{q ?|ٱلْحَ[مْ]دُ}}, {{q ?|وَٱ[رْ]كَعُوا۟}}.
 
@@ -77,14 +77,14 @@ Scholars have different opinions about the number of characteristics of the lett
 # 3- Ist'laa VS Istifaal ({{a الإستِعلاءُ وضِدُّهُ الإستِفال}})
 ## Ist'laa
 = In linguistics | Raising and elevating.
-= In applied definition | Raising the furthest part of the tongue to the roof of the mouth when pronouncing the letter, so the sound is also raised.
+= In applied definition | Raising the furthest part of the tongue to the roof of the mouth when pronouncing the letter so, the sound is also raised.
 = Its letters | 7 letters collected by the regulator in ({{a خُصَّ ضَغْطٍ قِظْ}}).
 = Examples | {{q ?|نَن[سَخْ]}}, {{q ?|وَٱ[صْ]فَحُوا۟}}, {{q ?|يَ[ضْ]رِبَ}}, {{q ?|نَّ[غْ]فِرْ}}, {{q ?|شَ[طْ]رَ}}, {{q ?|وَٱرْزُ[قْ]}}, {{q ?|أَ[ظْ]لَمُ}}.
 !crop 384 210 545 367
 ## Istifaal
 = In linguistics | Lowering.
-= In applied definition | Lowering the furthest part of the tongue to the floor of the mouth when pronouncing the letter.
-= Its letters | 22 letters: all letters except the letters of elevation.
+= In applied definition | lowering the furthest part of the tongue to the floor of the mouth when pronouncing the letter.
+= Its letters | They are 22 letters except letters of elevation.
 = Examples | {{q ?|تَ[كْ]سِبُونَ}}, {{q ?|تُ[تْ]لَىٰ}}.
 !crop 375 468 537 625
 
@@ -92,14 +92,14 @@ Scholars have different opinions about the number of characteristics of the lett
 # 4- It'baq VS Infitah ({{a الإطباقُ وضِدُّهُ الإنفتاح}})
 ## It'baq
 = In linguistics | Adhesion.
-= In applied definition | Compression of the sound of the letter between the tongue and the roof of the mouth when pronouncing the letter.
+= In applied definition | compression of the sound of the letter between the tongue and the roof of the mouth when pronouncing the letter.
 = Its letters | 4 letters ({{a ص، ض، ط، ظ}}).
 = Examples | {{q ?|أَ[صْ]حَٰبُ}}, {{q ?|فَ[ضْ]لِ}}, {{q ?|شَ[طْ]رَ}}, {{q ?|أَ[ظْ]لَمُ}}.
 !crop 383 224 541 384
 ## Infitah
 = In linguistics | Separation.
-= In applied definition | Absence of the compression of the sound as a result of separating the tongue from the roof of the mouth.
-= Its letters | The rest of the alphabetical letters except the letters of It'baq.
+= In applied definition | Absence of the compression of the sound as a result of Separating between the tongue and the roof of the mouth.
+= Its letters | the rest of the alphabetical letters except letters of It'baq.
 = Examples | {{q ?|أَ[شْ]تَاتًا}}, {{q ?|ٱلْأَ[سْ]وَدِ}}, {{q ?|بَ[عَثْ]نَا}}.
 !crop 382 482 532 637
 > **Note**: The elevated and closed letter ({{a ص، ض، ط، ظ}}) is heavier than the elevated and opened letter ({{a غ، خ، ق}}): {{q ?|[ضَ]احِكَةٌ}} is heavier than {{q ?|[غَ]اسِقٍ}}; {{q ?|وَ[طُ]بِعَ}} is heavier than {{q ?|وَ[قُ]ومُوا۟}}; {{q ?|عَ[ظِ]يمٌ}} is heavier than {{q ?|[قِ]يلَ}}, {{q ?|وَ[غِ]يضَ}}, {{q ?|وَ[خِ]يفَةً}}.
@@ -114,41 +114,41 @@ Scholars have different opinions about the number of characteristics of the lett
 ## Is'mat
 = In linguistics | Prevention.
 = In applied definition | Heavy and difficult pronunciation of the letter because its articulation point is away from the tip of the tongue and the lips.
-= Its letters | The rest of the letters except the letters of Ithlaq.
+= Its letters | the rest of the letters except letters of Ithlaq.
 > **Note**: These two characteristics are derived from morphology and they have no influence on pronunciation.
 
 @page 33
 # Characteristics with no opposites ({{a صفاتٌ ليسَ لها ضِدّ}})
 ## 1- S'afir
-= In linguistics | A whistle that sounds like a bird.
-= In applied definition | A whistle accompanies the letters of S'afir, which refers to their sharp sound.
+= In linguistics | A whistle that looks like the sound of bird.
+= In applied definition | A Whistle accompanies letters of Safir that refers to its sharp sound.
 = Its letters | 3 letters ({{a ص، ز، س}}).
-= It is called by this name | Because when the letters of s'afir are pronounced, a sound like the whistle of a bird can be heard.
+= It is called by this name | Because when letters of safir are pronounced, It can be heard a sound like the whistle of bird.
 = Examples | {{q ?|ٱلْفَ[صْ]لِ}}, {{q ?|وَٱ[صْ]فَحُوا۟}}, {{q ?|رِ[زْ]قَهُ}}, {{q ?|بِٱلْهَ[زْ]لِ}}, {{q ?|يَ[سْ]مَعُونَ}}.
-> **Note**: Amongst common mistakes when pronouncing s'aad is circling the lips. The lips do not play any role in emitting s'aad, neither in the articulation point nor in the characteristic.
+> **Note**: Amongst common mistakes when pronouncing S'aad is circling lips, Lips do not play any role in emitting S'aad neither from the articulation point nor the characteristic.
 ## 2- Qalqalah
 = In linguistics | Disturbance.
-= In applied definition | The letter is disturbed at its articulation point when it is pronounced with sukoon, producing a strong tone.
+= In applied definition | The letter is disturbed at its articulation point when it is pronounced with Sukoon, producing a strong tone.
 = Its letters | 5 letters collected in ({{a قُطْبُ جَدٍّ}}).
 = Examples | {{q ?|ٱلْحَ[قُّ]}}, {{q ?|أَ[طْ]عَمَهُم}}, {{q ?|وَتَ[بَّ]}}, {{q ?|نَ[جْ]عَل}}, {{q ?|لَمْ يَلِ[دْ]}}.
 ### Qalqalah has 3 ranks
-1) **Major qalqalah**: when the letter of qalqalah comes at the end of the word with a shaddah sign and we stop on it: {{q ?|ٱلْحَ[قُّ]}}, {{q ?|وَتَ[بَّ]}}, {{q ?|ٱلْحَ[جَّ]}}, {{q ?|أَ[شَدُّ]}}.
-2) **Medium qalqalah**: when the letter of qalqalah comes at the end of the word with no shaddah sign and we stop on it: {{q ?|تَخْلُ[قُ]}}, {{q ?|بِٱلْقِسْ[طِ]}}, {{q 26:63|ٱضْرِ[ب]}}, {{q ?|بَهِي[جٍ]}}, {{q ?|يُولَ[دْ]}}.
-3) **Minor qalqalah**: when the letter of qalqalah comes in the middle of the word or words with a sukoon sign: {{q ?|نَ[قْ]عًا}}, {{q ?|أَ[طْ]عَمَهُم}}, {{q ?|حَ[بْ]لٌ}}, {{q ?|نَ[جْ]عَل}}, {{q ?|يَ[دْ]خُلُونَ}}, {{q 89:8|يُخْلَ[قْ] مِثْلُهَا}}, {{q ?|تُسَٰ[قِطْ] عَلَيْكِ}}, {{q ?|ٱذْهَ[بْ] إِلَىٰ}}, {{q ?|تَخْرُ[جْ] بَيْضَآءَ}}, {{q ?|قَ[دْ] أَفْلَحَ}}.
+1) **Major qalqalah**: When the letter of qalqalah comes at the end of the word with shaddah sign and we stop on it: {{q ?|ٱلْحَ[قُّ]}}, {{q ?|وَتَ[بَّ]}}, {{q ?|ٱلْحَ[جَّ]}}, {{q ?|أَ[شَدُّ]}}.
+2) **Medium qalqalah**: When the letter of qalqalah comes at the end of the word with no shaddah sign and we stop on it: {{q ?|تَخْلُ[قُ]}}, {{q ?|بِٱلْقِسْ[طِ]}}, {{q 26:63|ٱضْرِ[ب]}}, {{q ?|بَهِي[جٍ]}}, {{q ?|يُولَ[دْ]}}.
+3) **Minor qalqalah**: When the letter of qalqalah comes in the middle of the word or words with sukoon sign: {{q ?|نَ[قْ]عًا}}, {{q ?|أَ[طْ]عَمَهُم}}, {{q ?|حَ[بْ]لٌ}}, {{q ?|نَ[جْ]عَل}}, {{q ?|يَ[دْ]خُلُونَ}}, {{q 89:8|يُخْلَ[قْ] مِثْلُهَا}}, {{q ?|تُسَٰ[قِطْ] عَلَيْكِ}}, {{q ?|ٱذْهَ[بْ] إِلَىٰ}}, {{q ?|تَخْرُ[جْ] بَيْضَآءَ}}, {{q ?|قَ[دْ] أَفْلَحَ}}.
 > **Note**: Qalqalah is not applied to the merged letter, like: {{q ?|ٱضْرِ[ب] بِّعَصَاكَ}}, {{q ?|وَقَ[د] دَّخَلُوا۟}}, {{q ?|قَ[د] تَّبَيَّنَ}}, {{q ?|بَسَ[طت]}}, {{q 12:80|فَرَّ[طت]مْ}}.
 
 @page 34
 ## 3- Leen
 = In linguistics | Ease.
 = In applied definition | Emitting the letter from its articulation point easily and with no effort from the tongue.
-= Its letters | 2 letters ({{a و، ي}}): waaw and yaa sakinah preceded by fathah.
+= Its letters | 2 letters ({{a و، ي}}): Waaw and Yaa sakinah are preceded by fathah.
 = It is called by this name | Because its letters are emitted with softness and ease and with no effort from the tongue.
 = Examples | {{q ?|خَ[وْ]فٍ}}, {{q ?|يَ[وْ]مِ}}, {{q ?|ٱلْبَ[يْ]تِ}}, {{q ?|عَ[يْ]نٍ}}.
 ## 4- Inhiraf
 = In linguistics | Deviation.
-= In applied definition | Drifting of the sound of the letter when it is articulated, because of incomplete running where the tongue blocks its path.
+= In applied definition | Drifting the sound of the letter when it is articulated because of Incomplete running where the tongue blocks its path.
 = Its letters | ({{a ل، ر}}).
-= It is called by this name | Because after emitting its letters from their articulation points, their sounds drift until they connect to the articulation points of other letters.
+= It is called by this name | Because after emitting its letters from their articulation points, their sounds drift until they connect to the articulation point of the other letters.
 = Examples | {{q ?|فَ[لْ]يَعْبُدُوا۟}}, {{q ?|فَ[لْ]يَدْعُ}}, {{q ?|ٱ[رْ]جِعِىٓ}}, {{q ?|يَ[رْ]ضَىٰ}}.
 !crop 95 474 475 686
 
@@ -156,41 +156,41 @@ Scholars have different opinions about the number of characteristics of the lett
 ## 5- Takrir
 = In linguistics | Repetition.
 = In applied definition | The trilling of the tip of the tongue when pronouncing the letter.
-= Its letters | Only one letter ({{a ر}}).
+= Its letters | only letter ({{a ر}}).
 = It is called by this name | Because the tip of the tongue trills when pronouncing the letter.
 = Examples | {{q ?|ٱلْقُ[رْ]ءَانَ}}, {{q ?|وَمَ[رْ]يَمَ}}, {{q ?|قَ[رْ]ضًا}}.
-> **Note**: The reciter must pay attention not to exaggerate the repetition, because he may produce more than one raa.
+> **Note**: The reciter must Pay attention not to exaggrate the repitition because he may produce more than one raa.
 ## 6- Tafashy
 = In linguistics | Spreading out.
 = In applied definition | Spreading out the breath through the mouth when pronouncing the letter until it reaches the inner plates of the upper incisors.
-= Its letters | Only one letter ({{a ش}}).
+= Its letters | only letter ({{a ش}}).
 = It is called by this name | Because the breath is spread out through the mouth when pronouncing the letter.
 = Examples | {{q ?|نَ[شْ]هَدُ}}, {{q ?|وَأَ[شْ]هِدُوا۟}}, {{q ?|تَ[شْ]كُرُونَ}}.
 ## 7- Istitalah
 = In linguistics | Lengthening.
-= In applied definition | Lengthening the sound of d'aad at its articulation point along the edge of the tongue (from the back to the front) until it touches the articulation point of laam (where the tip of the tongue slightly touches the gum of the central incisors, lateral incisors, canines and premolars).
-= Its letters | Only one letter ({{a ض}}).
+= In applied definition | Lengthening the sound of d'aad at its articulation point from the edge of the tongue (from the back to the front) until it touches the articulation point of laam (where the tip of the tongue slightly touches the gum of the central incisors, lateral incisors, canines and premolars).
+= Its letters | only letter ({{a ض}}).
 = It is called by this name | Because its letter is lengthened at its articulation point from the back part of the edge of the tongue to its tip.
 = Examples | {{q ?|ٱل[ضَّ]آلِّينَ}}, {{q ?|أَ[ضْ]عَفُ}}, {{q ?|ٱلْأَرْ[ضِ]}}.
-> **Note**: Some scholars added other characteristics of the letters, most importantly ghunnah (nasalization) with meem and noon. We will explain it in the subject of timings of letters on page 50.
+> **Note**: Some scholars added another characteristics of the letters, , highlighting ghunnah (nasalization) with (meem and noon), We will explain it in the subject of timings of letters in Page 50.
 
 @page 36
 # Strong and weak characteristics ({{a الصِّفاتُ القويَّةُ والصِّفاتُ الضَّعيفةُ}})
 According to strength and weakness, characteristics can be divided into 3 sections:
-= Strong characteristics | They are 11: Jahr, Shiddah, Isti'laa, It'baq, Safir, Qalqalah, Inhiraf, Takrir, Tafashy, Istitalah and Ghunnah (appearance, strength, elevation, adhesion, whistle, disturbance, deviation, repetition, spreading out, lengthening and nasalization).
-= Weak characteristics | They are 6: Hams, Rakhawah, Istifaal, Infitah, Leen and Khafaa (whisper, softness, lowering, separation, ease and hiding).
+= Strong characteristics | They are 11: Jahr, Shiddah, Isti'laa, It'baq, Safir, Qalqalah, Inhiraf, Takrir, Tafashy, Istitalah and Ghunnah (Appearence, strength, elevation, adhesion, whistle, disturbance, deviation, Repitition, spreading out, lengthening and nasalization).
+= Weak characteristics | They are 6: Hams, Rakhawah, Istifaal, Infitah, Leen and Khafaa (whisper, softness, lowering, Separating, ease and hiding).
 = Characteristics that are neither strong nor weak | They are 3: Is'mat, Ithlaq and Tawassut (prevention, fluency and moderation).
-- According to strength and weakness, letters can be divided into 5 sections:
-1) **Strongest**: all its characteristics are strong.
-2) **Strong**: most of its characteristics are strong.
-3) **Moderate**: its strong characteristics are equal to its weak characteristics.
-4) **Weak**: most of its characteristics are weak.
-5) **Weakest**: all its characteristics are weak.
+- According to strength and weakness, Letters can be divided into 5 sections:
+1) **Strongest**: All its characteristics are strong.
+2) **Strong**: Most its characteristics are strong.
+3) **Moderate**: Its strong characteristics are equal to the weak characteristics.
+4) **Weak**: Most its characteristics are weak.
+5) **Weakest**: All its characteristics are weak.
 ### Question: How do you find out the characteristics of a letter?
 **Answer**:
-1) For the characteristics with opposites: try to find one of them in the letter; otherwise, the letter is characterized by its opposite.
-2) Then, for the characteristics with no opposites: if the letter is characterized by one of them, we count this characteristic in addition to the five previous ones.
-3) And then, we look at the degree of the letter through its characteristics, and according to this it will be strong or weak.
+1) For the characteristics with Opposites: Try to find one of them otherwise, the letter is characterized by one of their opposites.
+2) Then, For the characteristics with no opposites: IF the letter is characterized by one of them, we count this characteristic added to the five previous ones.
+3) And then, We look at the degree of the letter through its characteristics and according to this, It will be strong or weak.
 ### Note
 1) Any of the alphabetical letters must be characterized by five of the characteristics with opposites, and then it may have one, two or none of the characteristics with no opposites.
-2) A single letter has 7 characteristics at most and 5 characteristics at least.
+2) The single letter has 7 characteristics as maximum and have 5 characteristics as minimum.

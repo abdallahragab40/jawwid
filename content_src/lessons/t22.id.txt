@@ -3,14 +3,14 @@
 @page 94
 # Sakt ({{a السَّكتُ}})
 = Sakt | Menghentikan suara untuk waktu tertentu tanpa mengambil napas, dengan niat melanjutkan bacaan.
-- Sakt menurut riwayat Hafsh terbagi menjadi dua jenis, yaitu **wajib** dan **jaiz** (boleh).
+- Sakt menurut riwayat Hafsh terbagi menjadi dua jenis yaitu **wajib** dan **jaiz** (boleh).
 ## Sakt wajib
-Terdapat di empat tempat dalam al-Qur'an:
-1) {{q 18:1|ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَٰبَ وَلَمْ يَجْعَل لَّهُۥ [عِوَجَا]}} {{q 18:2|قَيِّمًا}} [Al-Kahf: 1–2]. Sakt ini wajib dalam keadaan washal (penyambungan), dan diperbolehkan bagi qari untuk berhenti padanya karena itu adalah akhir ayat.
+terdapat di empat tempat dalam al-Qur'an:
+1) {{q 18:1|ٱلْحَمْدُ لِلَّهِ ٱلَّذِىٓ أَنزَلَ عَلَىٰ عَبْدِهِ ٱلْكِتَٰبَ وَلَمْ يَجْعَل لَّهُۥ [عِوَجَا]}} {{q 18:2|قَيِّمًا}} [Al-Kahf: 1–2]. Sakt ini wajib dalam keadaan washal (penyambungan), dan diperbolehkan bagi qari (pembaca) untuk berhenti padanya karena itu adalah akhir ayat.
 2) {{q 36:52|قَالُوا۟ يَٰوَيْلَنَا مَنۢ بَعَثَنَا مِن [مَّرْقَدِنَا] هَٰذَا مَا وَعَدَ ٱلرَّحْمَٰنُ}} [Yasin: 52]. Sakt ini wajib dalam keadaan washal, dan diperbolehkan berhenti padanya karena berhenti di sini sempurna (menyelesaikan makna).
 3) {{q 75:27|وَقِيلَ [مَنْ] رَاقٍ}} [Al-Qiyamah: 27]. Nun sukun tidak dilafalkan idgham, dan diwajibkan izhar. Tidak seharusnya waqaf pada (**مَن**) karena maknanya belum sempurna.
-4) {{q 83:14|كَلَّا [بَلْ] رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ}} [Al-Muthaffifin: 14]. Idgham huruf lam ke dalam ra juga dihilangkan, dan tidak seharusnya waqaf pada (**بَل**) karena maknanya belum sempurna.
+4) {{q 83:14|كَلَّا [بَلْ] رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ}} [Al-Muthaffifin: 14]. Idgham huruf lam ke dalam namun dihilangkan, dan tidak seharusnya waqaf pada (**بَل**) karena maknanya belum sempurna.
 ## Sakt jaiz (boleh)
-Ia berada pada dua tempat:
+ia berada pada dua tempat:
 1) Jika qari menyambung akhir Surat al-Anfal dengan awal Surat at-Taubah, maka dibolehkan tiga cara, salah satu di antaranya adalah sakt: {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ [عَلِيمٌۢ]}} (**sakt**) {{q 9:1|بَرَآءَةٌ مِّنَ ٱللَّهِ وَرَسُولِهِۦٓ}}.
-2) Jika qari menyambung firman Allah: {{q 69:28|مَآ أَغْنَىٰ عَنِّى [مَالِيَهْ]}} {{q 69:29|[هَ]لَكَ عَنِّى سُلْطَٰنِيَهْ}}, maka diperbolehkan sakt (berhenti sejenak tanpa napas), atau idgham (menggabungkan), dan hal ini termasuk dalam kategori idgham mutamatsilain (penggabungan dua huruf yang sama).
+2) Jika qari berada pada firman Allah: {{q 69:28|مَآ أَغْنَىٰ عَنِّى [مَالِيَهْ]}} {{q 69:29|[هَ]لَكَ عَنِّى سُلْطَٰنِيَهْ}}, maka diperbolehkan sakt (berhenti sejenak tanpa napas), atau idgham (menggabungkan), dan hal ini termasuk dalam kategori idgham mutamatsilain (penggabungan dua huruf yang sama).

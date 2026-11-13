@@ -3,16 +3,16 @@
 @page 26
 # Sifat-sifat huruf ({{a صِفاتُ الحُروف}})
 ### Definisi sifat
-= Secara bahasa | Sesuatu yang mempunyai makna secara fisik atau maknawi.
-= Secara istilah | Cara yang digunakan untuk mendeskripsikan huruf ketika ia berada di makhrajnya.
+= Secara bahasa | sesuatu yang mempunyai makna secara fisik atau maknawi.
+= Secara istilah | cara yang digunakan untuk mendeskripsikan huruf ketika ia berada di makhrajnya.
 ### Manfaat mengetahui sifat-sifat
-1) **Untuk membedakan antara huruf yang sama makhrajnya**: seandainya tidak ada perbedaan sifat di antara mereka, maka huruf-huruf itu akan menjadi satu huruf yang sama. Sin, shad dan za adalah huruf yang makhrajnya sama dan sifatnya berbeda; seandainya bukan karena istila' dan ithbaq yang terdapat pada shad, maka dia akan menjadi sin, dan seandainya bukan karena jahr yang terdapat pada za, maka dia akan menjadi sin.
+1) **Untuk membedakan antara huruf yang sama makhrajnya**: seandainya tidak memiliki perbedaan sifat antara mereka maka akan menjadi satu huruf yang sama, sebagaimana sin, shad dan za adalah huruf yang makhrajnya sama dan sifatnya berbeda, seandainya bukan karena istila' dan ithbaq yang terdapat pada shad maka dia akan menjadi sin, dan seandainya bukan karena jahr yang terdapat pada za maka dia akan menjadi sin.
 2) **Memperindah pengucapan huruf**: memberikan setiap huruf sifat-sifat yang melekat padanya menjadikan pengucapan lebih fasih, lebih sempurna dan lebih baik, sedangkan tanpa memperhatikan sifat-sifatnya, huruf-huruf akan tumpang tindih dan mirip, atau tidak jelas pengucapannya.
-3) **Mengetahui huruf-huruf yang kuat dan lemah**: huruf yang sifat penyusunnya adalah sifat-sifat kuat maka ia kuat, dan huruf yang sifat penyusunnya adalah sifat-sifat lemah maka ia lemah. Suatu huruf bisa saja memiliki sifat kuat dan sifat lemah, sehingga huruf tersebut dinilai berdasarkan sebagian besar sifatnya.
+3) **Mengetahui huruf-huruf yang kuat dan lemah**: huruf yang sifat penyusunnya adalah sifat-sifat kuat maka ia kuat, dan huruf yang sifat-sifat penyusunnya adalah lemah maka ia lemah. Suatu huruf bisa saja memiliki sifat kuat dan sifat lemah, sehingga huruf tersebut dinilai berdasarkan sebagian besar sifatnya.
 
 @page 27
 ### Pembagian sifat ({{a أقسامُ الصِّفات}})
-1) **Sifat lazimah** ({{a صفاتٌ لازمَةٌ}}): sifat yang selalu melekat pada huruf dalam segala keadaannya, hanya saja sifat tersebut bisa tidak tampak sepenuhnya pada huruf, seperti qalqalah dan hams yang tidak muncul pada huruf kecuali dalam keadaan sukun.
+1) **Sifat lazimah** ({{a صفاتٌ لازمَةٌ}}): sifat yang selalu melekat pada huruf dalam segala keadaannya, hanya saja sifat tersebut tidak boleh muncul seluruhnya pada huruf, seperti qalqalah dan hams yang tidak muncul dalam huruf kecuali sukun.
 2) **Sifat 'aridhah** ({{a صفاتٌ عارضةٌ}}): sifat yang muncul pada huruf dalam keadaan tertentu karena suatu sebab, dan hilang jika sebabnya hilang. Sifat-sifat 'aridhah ada 11 sifat, yaitu:
 - Idgham ({{a الإدغام}}).
 - Izhar ({{a الإظهار}}).
@@ -26,25 +26,25 @@
 - Tafkhim ({{a التَّفخيم}}).
 - Tarqiq ({{a التَّرقيق}}).
 ### Jumlah sifat lazimah ({{a عددُ الصِّفاتِ اللَّازمة}})
-Para ulama berbeda pendapat mengenai jumlah sifat-sifat huruf. Sebagian besar ulama, dan pendapat yang dipilih oleh Ibnu al-Jazari dalam kitab al-Muqaddimah dan Thayyibah an-Nasyr, mengatakan bahwa ada **tujuh belas sifat**, dan itu adalah pendapat yang masyhur.
+Para ulama berbeda pendapat mengenai jumlah sifat-sifat huruf, sebagian besar ulama dan pendapat yang dipilih oleh Ibnu al-Jazari dalam kitab al-Muqaddimah dan Tayyibah an-Nashr, mengatakan bahwa ada **tujuh belas sifat**, dan itu adalah pendapat yang masyhur.
 
 @page 28
 # 1- Hams dan lawannya Jahr ({{a الهَمسُ وضِدُّهُ الجَهرُ}})
 ## Hams
 = Secara bahasa | Samar.
-= Secara istilah | Aliran napas saat mengucapkan huruf, karena lemahnya sandaran pada tempat keluarnya huruf.
+= Secara istilah | aliran napas saat mengucapkan huruf, karena terlalu lemahnya sandaran pada tempat keluarnya huruf.
 = Huruf-hurufnya | Ada sepuluh, yang dirangkai oleh Imam Ibnu al-Jazari: {{a فَحَثَّهُ شَخْصٌ سَكَتْ}}.
-= Alasan penamaan | Disebut huruf hams karena keluar dengan suara yang samar.
+= Alasan penamaan | disebut huruf hams karena keluar dengan suara yang samar.
 = Contoh | {{q ?|أَ[فْ]وَاجًا}}, {{q ?|ٱلرَّ[حْ]مَٰنُ}}, {{q ?|مِ[ثْ]قَالَ}}, {{q ?|ٱ[هْ]دِنَا}}, {{q ?|ٱ[شْ]تَرَوُا۟}}, {{q ?|سَيَ[صْ]لَىٰ}}, {{q ?|ٱ[سْ]كُنْ}}, {{q ?|أَ[كْ]بَرُ}}, {{q ?|كُوِّرَ[تْ]}}.
 ## Jahr
 = Secara bahasa | Jelas.
 = Secara istilah | Terhentinya aliran napas ketika mengucapkan huruf, karena kuatnya sandaran pada tempat keluarnya huruf (makhraj).
-= Huruf-hurufnya | Sembilan belas, yaitu semua huruf kecuali huruf-huruf hams.
-= Alasan penamaan | Disebut huruf jahr ({{a مجهورة}}) karena diucapkan dengan suara yang kuat dan jelas.
+= Huruf-hurufnya | sembilan belas, yaitu semua huruf kecuali huruf-huruf hams.
+= Alasan penamaan | disebut huruf jhar ({{a مجهورة}}) karena diucapkan dengan suara yang kuat dan jelas.
 = Contoh | {{q ?|تَ[قْ]رَبَا}}, {{q ?|ٱلْعِ[جْ]لَ}}, {{q ?|ٱ[ذْ]كُرُوا۟}}, {{q ?|ٱلْأَ[رْ]ضِ}}, {{q ?|عَ[دْ]لٌ}}.
 ### Perbedaan antara napas ({{a النَّفَس}}) dan suara ({{a الصَّوت}})
 - **Napas**: udara yang keluar dari bagian dalam tubuh seseorang secara alami.
-- **Suara**: udara yang keluar dari bagian dalam tubuh seseorang dan bergetar karena tabrakan dua benda, atau karena penyempitan jalurnya, atau karena jalurnya ditutup sepenuhnya kemudian dilepaskan.
+- **Suara**: udara yang keluar dari bagian dalam tubuh seseorang, dan disebabkan oleh tabrakan dua benda atau penyempitan jalurnya atau dengan menutupnya sepenuhnya dan kemudian melepaskannya.
 
 @page 29
 # 2- Syiddah lawannya Rakhawah, dan di antara keduanya Tawassuth (Bainiyyah) ({{a الشِّدَّةُ وضِدُّها الرَّخاوةُ وبينهُما التَّوسُّطُ (البينيَّة)}})
@@ -57,129 +57,129 @@ Para ulama berbeda pendapat mengenai jumlah sifat-sifat huruf. Sebagian besar ul
 ## Rakhawah
 = Secara bahasa | Lembut.
 = Secara istilah | Mengalirnya suara saat mengucapkan suatu huruf, karena tekanan yang lemah pada tempat keluarnya huruf (makhraj).
-= Huruf-hurufnya | Ada enam belas, yaitu semua huruf kecuali huruf-huruf syiddah dan tawassuth.
+= Huruf-hurufnya | ada enam belas, yaitu semua huruf kecuali huruf-huruf yang memiliki sifat kuat (syiddah) dan tawassuth.
 = Contoh | {{q ?|أَ[شْ]تَاتًا}}, {{q ?|تَ[حْ]مِلُ}}, {{q ?|فَيَ[ذْ]هَبُ}}.
 !crop 390 384 544 538
 ## Tawassuth (bainiyyah)
 = Secara bahasa | Pertengahan.
-= Secara istilah | Keseimbangan suara antara syiddah dan rakhawah saat melafalkan huruf-hurufnya, karena tidak adanya penahanan yang sempurna seperti pada syiddah, dan tidak adanya aliran yang sempurna seperti pada rakhawah.
-= Huruf-hurufnya | Ada lima, yang terangkai dalam kata {{a لِنْ عُمَرْ}}.
+= Secara istilah | keseimbangan suara antara syiddah dan rakhawah saat melafalkan huruf-hurufnya, karena tidak adanya penghalang yang sempurna seperti pada syiddah, dan tidak adanya aliran yang sempurna seperti pada rakhawah.
+= Huruf-hurufnya | ada lima, yang terangkai dalam kata {{a لِنْ عُمَرْ}}.
 = Contoh | {{q ?|عِ[لْ]مٍ}}, {{q ?|وَءَا[خَرَ]}}, {{q ?|تَ[عْ]لَمُونَ}}, {{q ?|ٱلْحَ[مْ]دُ}}, {{q ?|وَٱ[رْ]كَعُوا۟}}.
 
 @page 30
 # Pengukuran tempo huruf yang benar
-- **Huruf berharakat**: tempo huruf berharakat adalah sama, contoh: {{q ?|كُتُبٌ}}.
-- **Huruf sukun**: tempo huruf **rakhawah** lebih lama daripada tempo huruf **bainiyyah**, dan tempo huruf **bainiyyah** lebih lama daripada tempo huruf **syiddah**.
+- **Huruf berharakat**: Tempo huruf berharakat adalah sama, contoh: {{q ?|كُتُبٌ}}.
+- **Huruf sukun**: Tempo Huruf **rakhawah** lebih lama daripada tempo huruf **bainiyyah**, dan tempo huruf **bainiyyah** lebih lama daripada tempo huruf **syiddah**.
 !crop 62 258 545 680
 
 @page 31
 # 3- Istila' dan lawannya Istifal ({{a الإستِعلاءُ وضِدُّهُ الإستِفال}})
 ## Istila'
-= Secara bahasa | Tinggi dan terangkat.
-= Secara istilah | Terangkatnya pangkal lidah ke langit-langit mulut bagian atas ketika mengucapkan huruf, sehingga suara menjadi terangkat.
-= Huruf-hurufnya | Ada tujuh, yang terangkai dalam {{a خُصَّ ضَغْطٍ قِظْ}}.
+= Secara bahasa | tinggi dan terangkat.
+= Secara istilah | terangkatnya pangkal lidah ke langit-langit mulut bagian atas ketika mengucapkan huruf, sehingga suara menjadi terangkat.
+= Huruf-hurufnya | ada tujuh, yang terangkai dalam {{a خُصَّ ضَغْطٍ قِظْ}}.
 = Contoh | {{q ?|نَن[سَخْ]}}, {{q ?|وَٱ[صْ]فَحُوا۟}}, {{q ?|يَ[ضْ]رِبَ}}, {{q ?|نَّ[غْ]فِرْ}}, {{q ?|شَ[طْ]رَ}}, {{q ?|وَٱرْزُ[قْ]}}, {{q ?|أَ[ظْ]لَمُ}}.
 !crop 384 231 545 388
 ## Istifal
 = Secara bahasa | Turun.
-= Secara istilah | Turunnya pangkal lidah ke dasar mulut saat mengucapkan suatu huruf.
-= Huruf-hurufnya | Ada 22, yaitu semua huruf selain huruf-huruf istila'.
+= Secara istilah | menurunkan pangkal lidah ke dasar mulut saat mengucapkan suatu huruf.
+= Huruf-hurufnya | ada 22, yaitu semua huruf selain huruf-huruf istila'.
 = Contoh | {{q ?|تَ[كْ]سِبُونَ}}, {{q ?|تُ[تْ]لَىٰ}}.
 !crop 375 521 537 679
 
 @page 32
 # 4- Ithbaq dan lawannya Infitah ({{a الإطباقُ وضِدُّهُ الإنفتاح}})
 ## Ithbaq
-= Secara bahasa | Melekat atau menempel.
-= Secara istilah | Menempelnya sebagian lidah pada langit-langit mulut yang berhadapan dengannya, sehingga suara terkurung di antara keduanya saat mengucapkan huruf.
-= Huruf-hurufnya | Ada empat, yaitu ({{a ص، ض، ط، ظ}}).
+= Secara bahasa | melekat atau menempel.
+= Secara istilah | menempelnya sebagian lidah pada langit-langit mulut yang berhadapan dan dengannya suara terkurung di antara keduanya saat mengucapkan huruf.
+= Huruf-hurufnya | ada empat, yaitu ({{a ص، ض، ط، ظ}}).
 = Contoh | {{q ?|أَ[صْ]حَٰبُ}}, {{q ?|فَ[ضْ]لِ}}, {{q ?|شَ[طْ]رَ}}, {{q ?|أَ[ظْ]لَمُ}}.
 !crop 375 241 528 396
 ## Infitah
 = Secara bahasa | Terbuka.
-= Secara istilah | Terbukanya ruang di antara lidah dan langit-langit mulut saat mengucapkan huruf, sehingga suara tidak terkurung di antara keduanya.
-= Huruf-hurufnya | Semua huruf hijaiyah selain huruf-huruf ithbaq.
+= Secara istilah | terbukanya ruang di antara lidah dan langit-langit mulut saat mengucapkan huruf, sehingga suara tidak terkurung di antara keduanya.
+= Huruf-hurufnya | semua huruf hijaiyah selain huruf-huruf ithbaq.
 = Contoh | {{q ?|أَ[شْ]تَاتًا}}, {{q ?|ٱلْأَ[سْ]وَدِ}}, {{q ?|بَ[عَثْ]نَا}}.
 !crop 385 482 526 624
-> **Catatan**: Huruf yang istila' dan ithbaq ({{a ص، ض، ط، ظ}}) lebih tebal daripada huruf yang istila' dan infitah ({{a غ، خ، ق}}): {{q ?|[ضَ]احِكَةٌ}} lebih tebal dari {{q ?|[غَ]اسِقٍ}}; {{q ?|وَ[طُ]بِعَ}} lebih tebal dari {{q ?|وَ[قُ]ومُوا۟}}; {{q ?|عَ[ظِ]يمٌ}} lebih tebal dari {{q ?|[قِ]يلَ}}, {{q ?|وَ[غِ]يضَ}}, {{q ?|وَ[خِ]يفَةً}}.
+> **Catatan**: huruf yang istila dan ithbaq ({{a ص، ض، ط، ظ}}) lebih tebal daripada huruf yang istila' dan infitah ({{a غ، خ، ق}}): {{q ?|[ضَ]احِكَةٌ}} lebih tebal dari {{q ?|[غَ]اسِقٍ}}; {{q ?|وَ[طُ]بِعَ}} lebih tebal dari {{q ?|وَ[قُ]ومُوا۟}}; {{q ?|عَ[ظِ]يمٌ}} lebih tebal dari {{q ?|[قِ]يلَ}}, {{q ?|وَ[غِ]يضَ}}, {{q ?|وَ[خِ]يفَةً}}.
 
 @page 33
 # 5- Idzlaq dan lawannya Ishmat ({{a الإذلاقُ وضِدُّهُ الإصمات}})
 ## Idzlaq
-= Secara bahasa | Kejelasan dan kelancaran lidah.
-= Secara istilah | Ringan dan cepatnya pengucapan suatu huruf karena keluarnya dari ujung lidah atau bibir.
-= Huruf-hurufnya | Ada enam, yaitu {{a فِرَّ مِنْ لُبِّ}}.
+= Secara bahasa | kejelasan dan kelancaran lidah.
+= Secara istilah | ringan dan cepatnya pengucapan suatu huruf karena keluarnya dari ujung lidah atau bibir.
+= Huruf-hurufnya | ada enam, yaitu {{a فِرَّ مِنْ لُبِّ}}.
 = Contoh | {{q ?|تَ[فْ]عَلُوا۟}}, {{q ?|أَ[بْ]صَٰرِهِمْ}}.
 ## Ishmat
 = Secara bahasa | Sulit.
-= Secara istilah | Berat dan sulitnya pengucapan suatu huruf karena keluarnya jauh dari ujung lidah atau bibir.
-= Huruf-hurufnya | Seluruh huruf hijaiyah selain huruf-huruf idzlaq.
-> **Catatan**: Kedua sifat ini berasal dari ilmu sharaf (ilmu tentang bentuk-bentuk kata dalam bahasa Arab) dan tidak memiliki pengaruh pada pengucapan.
+= Secara istilah | berat dan sulitnya pengucapan suatu huruf karena keluarnya jauh dari ujung lidah atau bibir.
+= Huruf-hurufnya | seluruh huruf hijaiyah selain huruf-huruf idzlaq.
+> **Catatan**: kedua sifat ini berasal dari ilmu sharaf (ilmu tentang bentuk-bentuk kata dalam bahasa Arab) dan tidak memiliki pengaruh pada pengucapan.
 
 @page 34
 # Sifat-sifat yang tidak memiliki lawan ({{a صفاتٌ ليسَ لها ضِدّ}})
 ## 1- Shafir ({{a الصَّفير}})
-= Secara bahasa | Suara yang menyerupai suara burung.
-= Secara istilah | Suara yang menyertai huruf shafir, yang menunjukkan kekuatannya pada pendengaran.
+= Secara bahasa | suara yang menyerupai suara burung.
+= Secara istilah | suara yang menyertai huruf shafir, yang menunjukkan kekuatannya pada pendengaran.
 = Huruf-hurufnya | Shad ({{a ص}}), za ({{a ز}}) dan sin ({{a س}}).
-= Alasan dinamakan demikian | Karena saat mengucapkan huruf-huruf ini, akan terdengar suara yang menyerupai kicauan burung.
+= Alasan dinamakan demikian | karena saat mengucapkan huruf-huruf ini, akan terdengar suara menyerupai kicauan burung.
 = Contoh | {{q ?|ٱلْفَ[صْ]لِ}}, {{q ?|وَٱ[صْ]فَحُوا۟}}, {{q ?|رِ[زْ]قَهُ}}, {{q ?|بِٱلْهَ[زْ]لِ}}, {{q ?|يَ[سْ]مَعُونَ}}.
-> **Catatan**: Kesalahan umum saat mengucapkan huruf shad ({{a ص}}) adalah membulatkan kedua bibir. Huruf {{a ص}} tidak melibatkan gerakan bibir, baik dari segi tempat keluarnya maupun sifatnya.
+> **Catatan**: kesalahan umum saat mengucapkan huruf shad ({{a ص}}) adalah membulatkan kedua bibir, huruf {{a ص}} tidak melibatkan gerakan bibir, baik dari segi tempat keluarnya suara maupun sifatnya.
 ## 2- Qalqalah ({{a القَلقَلة}})
 = Secara bahasa | Goncangan.
 = Secara istilah | Goncangan huruf pada makhrajnya ketika diucapkan dalam keadaan sukun, sehingga terdengar darinya letupan (pantulan) suara yang kuat.
-= Huruf-hurufnya | Ada lima, terangkai dalam {{a قُطْبُ جَدٍّ}}.
+= Huruf-hurufnya | ada lima, terangkai dalam {{a قُطْبُ جَدٍّ}}.
 = Contoh | {{q ?|ٱلْحَ[قُّ]}}, {{q ?|أَ[طْ]عَمَهُم}}, {{q ?|وَتَ[بَّ]}}, {{q ?|نَ[جْ]عَل}}, {{q ?|لَمْ يَلِ[دْ]}}.
 ### Tingkatan qalqalah ada tiga
-1) **Qalqalah kubra**: terjadi pada huruf yang bertasydid di akhir kata, contoh: {{q ?|ٱلْحَ[قُّ]}}, {{q ?|وَتَ[بَّ]}}, {{q ?|ٱلْحَ[جَّ]}}, {{q ?|أَ[شَدُّ]}}.
+1) **Qalqalah kubra**: terjadi pada huruf yang bertasydid dan di akhir kata, contoh: {{q ?|ٱلْحَ[قُّ]}}, {{q ?|وَتَ[بَّ]}}, {{q ?|ٱلْحَ[جَّ]}}, {{q ?|أَ[شَدُّ]}}.
 2) **Qalqalah wustha**: terjadi pada huruf akhir yang tidak bertasydid saat di akhir kata, contoh: {{q ?|تَخْلُ[قُ]}}, {{q ?|بِٱلْقِسْ[طِ]}}, {{q 26:63|ٱضْرِ[ب]}}, {{q ?|بَهِي[جٍ]}}, {{q ?|يُولَ[دْ]}}.
 3) **Qalqalah sughra**: terjadi pada huruf yang sukun di tengah kata, contoh: {{q ?|نَ[قْ]عًا}}, {{q ?|أَ[طْ]عَمَهُم}}, {{q ?|حَ[بْ]لٌ}}, {{q ?|ٱذْهَ[بْ] إِلَىٰ}}, {{q ?|تَخْرُ[جْ] بَيْضَآءَ}}.
-> **Catatan**: Qalqalah tidak terjadi pada huruf yang diidghamkan, contoh: {{q ?|ٱضْرِ[ب] بِّعَصَاكَ}}, {{q ?|وَقَ[د] دَّخَلُوا۟}}, {{q ?|قَ[د] تَّبَيَّنَ}}, {{q ?|بَسَ[طت]}}, {{q 12:80|فَرَّ[طت]مْ}}.
+> **Catatan**: qalqalah tidak terjadi pada huruf yang idgham, contoh: {{q ?|ٱضْرِ[ب] بِّعَصَاكَ}}, {{q ?|وَقَ[د] دَّخَلُوا۟}}, {{q ?|قَ[د] تَّبَيَّنَ}}, {{q ?|بَسَ[طت]}}, {{q 12:80|فَرَّ[طت]مْ}}.
 
 @page 35
 ## 3- Lin ({{a اللِّين}})
 = Secara bahasa | Mudah.
-= Secara istilah | Mengeluarkan huruf dari tempat keluarnya dengan mudah dan tanpa kesulitan pada lidah.
-= Huruf-hurufnya | Ada dua, yaitu waw dan ya sukun yang sebelumnya berharakat fathah.
-= Disebut demikian | Karena kedua huruf ini diucapkan dengan lembut dan mudah, tanpa kesulitan pada lidah.
+= Secara istilah | mengeluarkan huruf dari tempat keluarnya dengan mudah dan tanpa kesulitan pada lidah.
+= Huruf-hurufnya | ada dua, yaitu waw dan ya sukun sebelumnya fathah.
+= Disebut demikian | karena kedua huruf ini diucapkan dengan lembut dan mudah, tanpa kesulitan pada lidah.
 = Contoh | {{q ?|خَ[وْ]فٍ}}, {{q ?|يَ[وْ]مِ}}, {{q ?|ٱلْبَ[يْ]تِ}}, {{q ?|عَ[يْ]نٍ}}.
 ## 4- Inhiraf ({{a الانحِراف}})
 = Secara bahasa | Penyimpangan.
-= Secara istilah | Penyimpangan suara huruf saat keluar karena tidak sempurna alirannya, disebabkan oleh lidah yang menghalangi jalannya.
-= Huruf-hurufnya | Lam dan ra.
-= Disebut demikian | Karena kedua huruf ini menyimpang saat keluar hingga bersambung dengan makhraj huruf lain.
+= Secara istilah | penyimpangan suara huruf saat keluar karena tidak sempurna alirannya, disebabkan oleh lidah yang menghalangi jalannya.
+= Huruf-hurufnya | lam dan ra.
+= Disebut demikian | karena kedua huruf ini menyimpang saat keluar hingga melewati makhraj huruf lain.
 = Contoh | {{q ?|فَ[لْ]يَعْبُدُوا۟}}, {{q ?|فَ[لْ]يَدْعُ}}, {{q ?|ٱ[رْ]جِعِىٓ}}, {{q ?|يَ[رْ]ضَىٰ}}.
 !crop 95 459 475 672
 
 @page 36
 ## 5- Takrir ({{a التَّكرير}})
 = Secara bahasa | Pengulangan.
-= Secara istilah | Getaran ujung lidah saat mengucapkan huruf.
-= Hurufnya | Ada satu, yaitu ra.
-= Disebut demikian | Karena ujung lidah bergetar saat mengucapkan huruf tersebut.
+= Secara istilah | getaran ujung lidah saat mengucapkan huruf.
+= Hurufnya | ada satu, yaitu ra.
+= Disebut demikian | karena ujung lidah bergetar saat mengucapkan huruf tersebut.
 = Contoh | {{q ?|ٱلْقُ[رْ]ءَانَ}}, {{q ?|وَمَ[رْ]يَمَ}}, {{q ?|قَ[رْ]ضًا}}.
-> **Catatan**: Pembaca harus berhati-hati agar tidak berlebihan dalam takrir yang dapat menghasilkan lebih dari satu ra.
+> **Catatan**: pembaca harus berhati-hati agar tidak berlebihan dalam takrir yang dapat menghasilkan lebih dari satu ra.
 ## 6- Tafasysyi ({{a التَّفشِّي}})
 = Secara bahasa | Menyebar.
-= Secara istilah | Menyebarnya udara di dalam mulut saat mengucapkan huruf, hingga mencapai bagian dalam gigi seri atas.
-= Hurufnya | Ada satu, yaitu syin.
-= Disebut demikian | Karena udara menyebar di dalam mulut saat mengucapkan huruf tersebut.
+= Secara istilah | menyebarnya udara di dalam mulut saat mengucapkan huruf, hingga menabrak bagian dalam gigi seri atas.
+= Hurufnya | ada satu, yaitu syin.
+= Disebut demikian | karena udara menyebar di dalam mulut saat mengucapkan huruf tersebut.
 = Contoh | {{q ?|نَ[شْ]هَدُ}}, {{q ?|وَأَ[شْ]هِدُوا۟}}, {{q ?|تَ[شْ]كُرُونَ}}.
 ## 7- Istithalah ({{a الإستِطالة}})
 = Secara bahasa | Memanjang.
-= Secara istilah | Memanjangnya suara huruf dhad di makhrajnya dari awal tepi lidah hingga bersambung ke tempat keluarnya huruf lam.
-= Hurufnya | Ada satu, yaitu dhad.
-= Disebut demikian | Karena huruf ini memanjang di makhrajnya dari awal tepi lidah hingga akhirnya.
+= Secara istilah | memanjangnya suara huruf dhad di makhrajnya dari awal tepi lidah hingga menyambung ke tempat keluarnya huruf lam.
+= Hurufnya | ada satu, yaitu dhad.
+= Disebut demikian | karena huruf ini meregang dan memanjang di makhrajnya dari awal ujung lidah hingga akhir ujung lidah.
 = Contoh | {{q ?|ٱل[ضَّ]آلِّينَ}}, {{q ?|أَ[ضْ]عَفُ}}, {{q ?|ٱلْأَرْ[ضِ]}}.
-> **Catatan**: Beberapa ulama menyebutkan sifat-sifat huruf lainnya; yang paling penting adalah ghunnah (sengau) pada huruf mim dan nun. Ini akan dijelaskan dalam pembahasan tentang tempo huruf shahih.
+> **Catatan**: beberapa ulama menyebutkan sifat-sifat huruf lainnya, yang paling penting adalah ghunnah (sengau) pada huruf mim dan nun, ini akan dijelaskan dalam pembahasan tentang zaman huruf shahih.
 
 @page 37
 # Sifat-sifat kuat dan lemah ({{a الصِّفاتُ القويَّةُ والصِّفاتُ الضَّعيفةُ}})
 Sifat-sifat huruf dalam ilmu tajwid dibagi menjadi tiga kelompok berdasarkan kekuatan dan kelemahannya:
-= Sifat-sifat kuat | Ada sebelas: jahr, syiddah, isti'la', ithbaq, shafir, qalqalah, inhiraf, takrir, tafasysyi, istithalah dan ghunnah.
-= Sifat-sifat lemah | Ada enam: hams, rakhawah, istifal, infitah, lin dan khafa'.
+= Sifat-sifat kuat | ada sebelas sifat kuat, seperti: jahr, syiddah, isti'la, ithbaq, shafir, qalqalah, inhiraf, takrir, tafasysyi, istithalah, ghunnah.
+= Sifat-sifat lemah | ada enam sifat lemah, yaitu: hams, rakhawah, istifal, infitah, liin, khafa'.
 = Sifat-sifat yang tidak kuat dan tidak lemah | Ada tiga: ishmat, idzlaq dan tawassuth.
-- Huruf-huruf hijaiyah dikategorikan berdasarkan sifat kuat atau lemahnya:
+- Huruf-huruf dalam abjad Arab dikategorikan berdasarkan sifat kuat atau lemahnya:
 1) **Terkuat**: seluruh sifatnya kuat.
 2) **Kuat**: lebih banyak sifat kuatnya.
 3) **Sedang**: sifat kuat dan lemahnya seimbang.
@@ -187,9 +187,9 @@ Sifat-sifat huruf dalam ilmu tajwid dibagi menjadi tiga kelompok berdasarkan kek
 5) **Terlemah**: seluruh sifatnya lemah.
 ### Pertanyaan: bagaimana cara menentukan sifat-sifat huruf?
 **Jawaban**:
-1) Huruf dilihat berdasarkan sifat-sifat yang berlawanan; jika huruf memiliki salah satu sifat, maka sifat itu ditetapkan untuknya. Jika tidak, huruf diberi sifat lawannya.
+1) Huruf dilihat berdasarkan sifat-sifat yang berlawanan, jika huruf memiliki salah satu sifat, maka sifat itu ditetapkan untuknya. Jika tidak, huruf diberi sifat yang berlawanan dengan sifat tersebut.
 2) Kemudian, huruf dilihat pada sifat-sifat yang tidak memiliki lawan. Jika memiliki salah satu sifat tersebut, sifat itu juga ditetapkan untuk huruf tersebut, selain lima sifat yang telah ditentukan sebelumnya.
 3) Setelah itu, tingkat kekuatan huruf dilihat berdasarkan sifat-sifat penyusunnya, lalu ditentukan apakah huruf tersebut kuat atau lemah.
 ### Kesimpulan
-1) Setiap huruf hijaiyah pasti memiliki lima sifat yang memiliki lawan. Kemudian, bisa jadi huruf tersebut memiliki satu atau dua sifat tambahan, atau tidak memiliki sifat tambahan sama sekali selain sifat-sifat yang memiliki lawan.
-2) Maka, jumlah maksimal sifat yang dapat dimiliki oleh satu huruf adalah tujuh sifat, dan jumlah minimalnya adalah lima sifat.
+1) setiap huruf dari huruf-huruf hijaiyah pasti memiliki lima sifat yang memiliki lawan. Kemudian, bisa jadi huruf tersebut memiliki satu atau dua sifat tambahan, atau tidak memiliki sifat tambahan sama sekali selain sifat-sifat yang memiliki lawan.
+2) Maka, jumlah maksimal sifat yang dapat dimiliki oleh satu huruf adalah tujuh sifat, dan jumlah sifat minimal yang dimiliki oleh huruf adalah lima sifat.

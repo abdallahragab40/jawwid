@@ -2,8 +2,8 @@
 
 @page 51
 # Hukum mim sukun ({{a أحكامُ المِيمِ السَّاكِنةِ}})
-= Definisi | Mim sukun adalah huruf mim yang tidak memiliki salah satu dari tiga harakat (fathah, dhammah, atau kasrah), dan tetap sukun baik dalam keadaan washal (menyambung) maupun waqaf (berhenti). Mim sukun bisa asli atau tambahan, terletak di tengah kata atau di akhir kata.
-= Penjelasan | Mim yang dimaksud di sini adalah mim yang tidak memiliki harakat (tidak berharakat). Ada dua keadaan:
+= Definisi | mim sukun adalah huruf mim yang tidak memiliki salah satu dari tiga harakat (fathah, dhammah, atau kasrah), dan tetap sukun baik dalam keadaan washal (menyambung) maupun waqaf (berhenti). Mim sukun bisa asli atau tambahan, terletak di tengah kata atau di akhir kata.
+= Penjelasan | mim yang dimaksud di sini adalah mim yang tidak memiliki harakat (tidak berharakat). Ada dua keadaan:
 - Mim kosong dari tanda harakat (mim tanpa tanda apa pun, hanya dalam keadaan sukun), contoh: {{q ?|وَلَكُ[م] مَّا كَسَبْتُمْ}}.
 - Mim yang diberi tanda sukun, contoh: {{q ?|أَنْعَ[مْ]تَ}}, {{q ?|عَلَيْكُ[مْ] أَنفُسَكُمْ}}.
 ### Hukum mim sukun
@@ -11,25 +11,25 @@
 2) **Ikhfa syafawi** ({{a الإخفاءُ الشَّفَوي}}): ({{a ب}}) ba.
 3) **Izhhar syafawi** ({{a الإظهارُ الشَّفَوي}}): (selain mim dan ba).
 ## 1- Idgham syafawi
-Mim sukun diidghamkan (dileburkan) apabila setelahnya terdapat satu huruf, yaitu **mim**, dengan memberikan ghunnah (sengau) yang dipanjangkan dengan sempurna.
+Mim sukun diidghamkan (dileburkan) apabila setelahnya terdapat satu huruf, yaitu **mim**, Dengan memberikan ghunnah (sengau) yang dipanjangkan dengan sempurna.
 - {{q 106:4|ٱلَّذِىٓ أَطْعَمَهُ[م مِّ]ن جُوعٍ وَءَامَنَهُ[م مِّ]نْ خَوْفٍۭ}} [Quraisy: 4].
 - {{q 2:10|فِى قُلُوبِهِ[م مَّ]رَضٌ}} [Al-Baqarah: 10].
 - {{q 5:15|جَآءَكُ[م مِّ]نَ}} [Al-Ma'idah: 15].
-- **Dinamakan syafawi**: karena huruf mim keluar dari dua bibir (syafatain), dan untuk membedakannya dari idgham nun yang melibatkan huruf-huruf lain.
+- **Dinamakan syafawi**: Karena huruf mim keluar dari dua bibir (syafatain), dan untuk membedakannya dari idgham nun yang melibatkan huruf-huruf lain.
 - **Dan dinamakan idgham mitslain shaghir dengan ghunnah**: karena mim pertama dan mim kedua memiliki tempat keluar (makhraj) dan sifat yang sama, dan karena huruf pertama dalam keadaan sukun sedangkan huruf kedua berharakat.
 ### Tanda pada mushaf
-Tandanya adalah menghilangkan tanda sukun pada mim pertama dan memberikan tanda tasydid pada mim kedua, contoh: {{q 106:4|أَطْعَمَهُ[م مِّ]ن}}.
+tandanya adalah menghilangkan tanda sukun pada mim pertama dan memberikan tanda tasydid pada mim kedua, contoh: {{q 106:4|أَطْعَمَهُ[م مِّ]ن}}.
 
 @page 52
 ## 2- Ikhfa syafawi
 Mim sukun di-ikhfa-kan (disamarkan) dengan ghunnah (sengau) apabila setelahnya terdapat satu huruf, yaitu **ba**. Hanya terdapat pada dua kata.
-- **Caranya**: dengan menutup kedua bibir tanpa membuat jarak antar bibir serta tidak menekan kuat, disertai ghunnah (sengau), sebagaimana yang dilakukan oleh qari' dalam hukum iqlab.
+- **Caranya**: Dengan menutup kedua bibir tanpa membuat jarak antar bibir serta tidak menekan kuat dengan disertai ghunnah (sengau), sebagaimana yang dilakukan oleh qari' dalam hukum iqlab.
 ### Contoh
 - {{q ?|أَ[م بِ]ظَٰهِرٍ}}, {{q ?|وَمَن يَعْتَصِ[م بِ]ٱللَّهِ}}.
 - {{q 100:11|إِنَّ رَبَّهُ[م بِ]هِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ}}.
 - **Dan dinamakan syafawi**: karena huruf mim dan ba keluar dari kedua bibir.
 ### Tanda pada mushaf
-Membuang sukun pada mim tanpa memberikan tasydid pada huruf setelahnya, contoh: {{q ?|أَ[م بِ]ظَٰهِرٍ}}.
+membuang sukun pada mim tanpa memberikan tasydid pada huruf setelahnya, contoh: {{q ?|أَ[م بِ]ظَٰهِرٍ}}.
 ## 3- Izhhar syafawi
 Mim sukun dibaca secara jelas (izhhar) apabila setelahnya terdapat salah satu huruf hijaiyah selain mim dan ba.
 ### Contoh
@@ -37,5 +37,5 @@ Mim sukun dibaca secara jelas (izhhar) apabila setelahnya terdapat salah satu hu
 - {{q ?|لَهُ[مْ] جَنَّٰتٌ}}, {{q 44:37|أَهُ[مْ] خَيْرٌ}}, {{q ?|وَهُ[مْ] فَرِحُونَ}}.
 - **Disebut syafawi**: karena huruf mim keluar dari kedua bibir (syafatain).
 ### Tanda pada mushaf
-Meletakkan tanda sukun di atas huruf mim, contoh: {{q ?|تُ[مْ]سُونَ}}, {{q ?|لَهُ[مْ] جَنَّٰتٌ}}.
-> **Peringatan**: Seorang qari' harus berhati-hati agar tidak meng-ikhfa-kan mim sukun apabila setelahnya terdapat huruf **wawu** atau **fa**, contoh: {{q ?|هُ[مْ فِ]يهَا خَٰلِدُونَ}}, {{q ?|وَهُ[مْ فَ]رِحُونَ}}, {{q ?|هُ[مْ وَ]أَزْوَٰجُهُمْ فِى ظِلَٰلٍ}}, {{q 2:255|أَيْدِيهِ[مْ وَ]مَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ}}. Karena qari' sering terburu-buru meng-ikhfa-kan mim pada dua posisi ini (mim diikuti wawu atau fa) karena kemudahannya, disebabkan kedekatan mim dengan fa dalam makhraj (tempat keluarnya huruf), dan kesamaan makhraj mim dengan wawu, yaitu sama-sama keluar dari kedua bibir (syafatain).
+meletakkan tanda sukun di atas huruf mim, contoh: {{q ?|تُ[مْ]سُونَ}}, {{q ?|لَهُ[مْ] جَنَّٰتٌ}}.
+> **Peringatan**: seorang qari' harus berhati-hati agar tidak meng-ikhfa-kan mim sukun apabila setelahnya terdapat huruf **wawu** atau **fa**, contoh: {{q ?|هُ[مْ فِ]يهَا خَٰلِدُونَ}}, {{q ?|وَهُ[مْ فَ]رِحُونَ}}, {{q ?|هُ[مْ وَ]أَزْوَٰجُهُمْ فِى ظِلَٰلٍ}}, {{q 2:255|أَيْدِيهِ[مْ وَ]مَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ}}. Karena qari' sering terburu-buru meng-ikhfa-kan mim pada dua posisi ini (mim diikuti wawu atau fa) karena kemudahannya, disebabkan kedekatan mim dengan fa dalam makhraj (tempat keluarnya huruf), dan kesamaan makhraj mim dengan wawu, yaitu sama-sama keluar dari kedua bibir (syafatain).

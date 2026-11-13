@@ -2,7 +2,7 @@
 
 @page 16
 # Huruf Arab ({{a الحُروفُ العَربيَّة}})
-Al-Qur'an terdiri dari surat-surat, surat-surat al-Qur'an terdiri dari ayat-ayat, ayat-ayat terdiri dari kata-kata, dan setiap kata terdiri dari huruf-huruf, satuan terkecil dalam al-Qur’an adalah huruf.
+Al-Qur'an terdiri dari surat-surat, surat-surat al-Qur’an terdiri dari ayat-ayat, ayat-ayat terdiri dari kata-kata, dan setiap kata terdiri dari huruf-huruf, satuan terkecil dalam al-Qur’an adalah huruf.
 | | | | | | | | | | |
 | {{a ا}} | {{a ب}} | {{a ت}} | {{a ث}} | {{a ج}} | {{a ح}} | {{a خ}} | {{a د}} | {{a ذ}} | {{a ر}} |
 | {{a ز}} | {{a س}} | {{a ش}} | {{a ص}} | {{a ض}} | {{a ط}} | {{a ظ}} | {{a ع}} | {{a غ}} | {{a ف}} |

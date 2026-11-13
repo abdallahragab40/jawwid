@@ -3,22 +3,22 @@
 @page 96
 # Rawm, ishmam and sukoon mahd ({{a الرَّومُ والإشمامُ والسُّكونُ المحضُ}})
 ## 1- Sukoon mahd (pure sukoon)
-= Its definition | It is a sukoon devoid of any harakah (vowel); it is used to stop on a letter with **fathah**, **dammah** and **kasrah**.
+= Its definition | It is a sukoon that is devoid of harakah (vowel), It is used to stop on letter with **fathah**, **dammah** and **kasrah**.
 = Examples | {{q ?|ٱلْعَٰلَمِي[نَ]}}, {{q ?|ٱلرَّحِي[مُ]}}, {{q ?|ٱلدِّي[نِ]}}.
 ## 2- Rawm
 = Its definition | To pronounce part of the vowel (nearly **one third of the harakah**) when stopping on **dammah** or **kasrah**; it can be heard by someone near, not far.
 = Examples | {{q ?|نَسْتَعِي[نُ]}}, {{q ?|ٱلرَّحِي[مُ]}}, {{q ?|ٱلدِّي[نِ]}}, {{q 105:1|ٱلْفِي[لِ]}}.
 = Rule | When rawm is applied, we follow the same rules of lengthening as when we continue the recitation (the letter of madd is prolonged for 2 counts).
 ## 3- Ishmam
-= Its definition | To circle the lips directly after giving sukoon to the letter with **dammah**, in the same shape as pronouncing a dammah, without any sound; it is not perceived by the blind.
+= Its definition | to circle the lips after giving sukoon to the letter with **dammah**, dammah directly by the same shape as pronouncing dammah with a voiceless manner and is not perceived by the blind.
 = Examples | {{q ?|نَسْتَعِي[نُ]}}, {{q 11:87|يَٰشُعَيْ[بُ]}}, {{q ?|أَلِي[مٌ]}}.
 = Rule | When ishmam is applied, we follow the same rules of lengthening as when we stop with pure sukoon (the letter of madd is prolonged for 2, 4 or 6 counts).
 
 @page 97
 ### Notice
-For Hafs, rawm and ishmam originally occur when stopping at the end of the word; there is neither rawm nor ishmam when continuing the recitation or in the middle of a word, except one word: {{q 12:11|قَالُوا۟ يَٰٓأَبَانَا مَا لَكَ لَا [تَأْمَ۫نَّا] عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ}} [Yusuf: 11]. In the narration of Hafs on the authority of 'Asim, it may be pronounced in two ways:
-= A- Ishmam | Pronouncing the first noon without a vowel and merging it into the second, circling the lips without a sound directly after starting to pronounce the merged noon, like: ({{a تَأْمَنَّا}}).
-= B- Rawm | Keeping the dammah on the first noon and lowering its sound slightly, quickly compared with the neighbouring letters, like: ({{a تَأْمَنُنَا}}).
+For Hafs, rawm and ishmam is when stopping at the end of the word; there is neither rawm nor ishmam when continuing the recitation or in the middle of a word, except one word: {{q 12:11|قَالُوا۟ يَٰٓأَبَانَا مَا لَكَ لَا [تَأْمَ۫نَّا] عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ}} [Yusuf: 11]. In the narration of Hafs on the authority of 'Asim, it may be pronounced in two ways:
+= A- Ishmam | pronouncing non-voweled noon and merging it into the second with circling the two lips without a sound directly after pronouncing the merged noon like: ({{a تَأْمَنَّا}}).
+= B- Rawm | Remaining dammah above the first noon and lowering its sound slightly with a quick manner if it is compared to the neighbouring letters like: ({{a تَأْمَنُنَا}}).
 # How to stop at the end of Qur'anic words – briefly ({{a كيفيَّةُ الوقوفِ على أواخرِ الكلماتِ القرآنيَّةِ – باختِصارٍ}})
 | Vowel | Example | The way of stopping |
 | Original sukoon | {{q 93:10|فَلَا تَنْهَ[رْ]}} | Only with sukoon |
@@ -29,7 +29,7 @@ For Hafs, rawm and ishmam originally occur when stopping at the end of the word;
 
 @page 98
 # How to stop at the end of Qur'anic words – in detail ({{a كيفيَّةُ الوقوفِ على أواخرِ الكلماتِ القرآنيَّةِ – بالتَّفصيلِ}})
-To simplify this subject, the types of words that can be stopped on in several ways are limited to 9 types, as follows:
+For simplifying this subject, the types of utterances that can be stopped on them by several ways are limited to 9 types as follows:
 
 @page 98
 ### 1- Letter with an original sukoon

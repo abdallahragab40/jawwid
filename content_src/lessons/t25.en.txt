@@ -6,20 +6,20 @@
 - {{q 2:245|وَٱللَّهُ يَقْبِضُ وَيَبْ[صُۜ]طُ وَإِلَيْهِ تُرْجَعُونَ}} [Al-Baqarah: 245], {{q 7:69|وَزَادَكُمْ فِى ٱلْخَلْقِ بَ[صْۜ]طَةً}} [Al-A'raf: 69]: these two words are recited only with **seen**.
 - {{q 88:22|لَّسْتَ عَلَيْهِم بِمُ[صَ]يْطِرٍ}} [Al-Ghashiyah: 22]: it is recited only with **s'aad**.
 - {{q 52:37|أَمْ عِندَهُمْ خَزَآئِنُ رَبِّكَ أَمْ هُمُ ٱلْمُ[صَۣ]يْطِرُونَ}} [At-Tur: 37]: it can be recited with **s'aad or seen**, but the first is more common.
-2) **In the Almighty's saying** {{q 3:1|[الٓمٓ]}} {{q 3:2|[ٱللَّهُ] لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ}} **at the beginning of Surat Al 'Imran**: the meem is pronounced with fathah when continuing the recitation, because two sakin letters meet: the first is the last meem when spelling (**ميمْ**) and the second is the first laam of the exalted name of Allah. Two ways are allowed for the yaa of the word:
-- It can be prolonged as a compulsory lengthening of 6 counts, considering its origin (the original sukoon) and disregarding the temporary vowel (fathah), like: ({{a أَلِفْ لَآمْ مِّيـــمَ اللهُ}}).
-- It can be shortened as a natural lengthening of 2 counts, considering the temporary vowel (fathah), like: ({{a أَلِفْ لَآمْ مِّيمَ اللهُ}}).
+2) **In the Almighty's saying** {{q 3:1|[الٓمٓ]}} {{q 3:2|[ٱللَّهُ] لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ}} **at the beginning of Surat Al 'Imran**: the meem is pronounced with fathah when continuing the recitation, due to meeting two sakin letters meet: the first is the last meem when spelling (**ميمْ**) and the second is the first laam of the exalted name of Allah. Two ways are allowed for the yaa of the word:
+- It can be prolonged as compulsory lengthening for 6 counts, considering its origin (original sukoon) and neglecting temporary vowel (fathah) like: ({{a أَلِفْ لَآمْ مِّيـــمَ اللهُ}}).
+- It can be shortened as natural lengthening for 2 counts, considering temporary vowel (fathah) like: ({{a أَلِفْ لَآمْ مِّيمَ اللهُ}}).
 3) **The word** {{q 27:36|فَمَآ ءَاتَىٰ[نِۦَ] ٱللَّهُ خَيْرٌ مِّمَّآ ءَاتَىٰكُم}} [An-Naml: 36] **can be pronounced in two ways when stopping**:
 - The yaa sakinah is pronounced, like: ({{a فَمَآ ءَاتَىٰنِي}}).
-- The yaa sakinah is omitted and the noon is pronounced with sukoon or rawm (pronouncing part of the kasrah), like: ({{a فَمَآ ءَاتَىٰنْ}}).
+- The Yaa sakinah is omitted and noon is pronounced with sukoon or rawm (Rawm to pronounce part of kasrah) like: ({{a فَمَآ ءَاتَىٰنْ}}).
 
 @page 95
-4) **The two words** ({{a ضَعْفٍ}}), ({{a ضَعْفًا}}) in the three positions of Surat Ar-Rum: the d'aad is pronounced with **fathah** (which is preferred) or **dammah**, like: {{q 30:54|ٱللَّهُ ٱلَّذِى خَلَقَكُم مِّن [ضَ]عْفٍ ثُمَّ جَعَلَ مِنۢ بَعْدِ [ضَ]عْفٍ قُوَّةً ثُمَّ جَعَلَ مِنۢ بَعْدِ قُوَّةٍ [ضَ]عْفًا وَشَيْبَةً}}.
-> **Note**: During recitation, the three positions must be read with the same harakah: all three with fathah or all three with dammah.
-5) **When starting with the word** {{q 26:176|[لْـَٔيْكَةِ]}}, it is pronounced with a linking hamzah with fathah, like: ({{a ٱلْأَيْكَةِ}}).
+4) **The two words** ({{a ضَعْفٍ}}), ({{a ضَعْفًا}}) in the three positions of Surat Ar-Rum: the d'aad is pronounced with **fathah** (It is preferred) or **dammah**, like: {{q 30:54|ٱللَّهُ ٱلَّذِى خَلَقَكُم مِّن [ضَ]عْفٍ ثُمَّ جَعَلَ مِنۢ بَعْدِ [ضَ]عْفٍ قُوَّةً ثُمَّ جَعَلَ مِنۢ بَعْدِ قُوَّةٍ [ضَ]عْفًا وَشَيْبَةً}}.
+> **Note**: During recitation, the three positions must be read with the same harakah Three positions are with fathah or Three positions are with dammah.
+5) **When starting with the word** {{q 26:176|[لْـَٔيْكَةِ]}}, It is pronounced with a linking hamzah with fathah Like: ({{a ٱلْأَيْكَةِ}}).
 - {{q 26:176|كَذَّبَ أَصْحَٰبُ [لْـَٔيْكَةِ] ٱلْمُرْسَلِينَ}} [Ash-Shu'ara': 176].
 - {{q 38:13|وَثَمُودُ وَقَوْمُ لُوطٍ وَأَصْحَٰبُ [لْـَٔيْكَةِ] أُو۟لَٰٓئِكَ ٱلْأَحْزَابُ}} [Sad: 13].
-6) **Tilting the alif and the fathah before it** in the word {{q 11:41|مَجْ[ر۪ىٰ]هَا}}, in the Almighty's saying: {{q 11:41|وَقَالَ ٱرْكَبُوا۟ فِيهَا بِسْمِ ٱللَّهِ مَجْ[ر۪ىٰ]هَا وَمُرْسَىٰهَآ}} [Hud: 41].
-= Imalah (tilting) | To make the sound of the fathah close to kasrah and the alif close to yaa, without a full conversion and without excessive lengthening.
-- For Hafs, there is no imalah except in this word.
+6) **Tilting the alif and the fathah before it** in the word {{q 11:41|مَجْ[ر۪ىٰ]هَا}}, In Almighty's saying: {{q 11:41|وَقَالَ ٱرْكَبُوا۟ فِيهَا بِسْمِ ٱللَّهِ مَجْ[ر۪ىٰ]هَا وَمُرْسَىٰهَآ}} [Hud: 41].
+= Imalah (tilting) | To make the sound of the fathah close to kasrah and the alif close to yaa, without a pure converting nor excessive lengthening.
+- For Hafs, there is no Imalah except this word.
 7) **The word** {{q 37:130|[إِلْ يَاسِينَ]}} is considered by Hafs as one word when stopping: ({{a إِلْيَاسِين}}).

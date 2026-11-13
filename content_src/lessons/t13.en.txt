@@ -2,7 +2,7 @@
 
 @page 53
 # Timings of ghunnah ({{a أزمِنةُ الغُنَن}})
-1) **Most complete ghunnah**: with noon and meem mushaddad, and with merged noon and meem in the case of idgham with ghunnah or idgham shafawi, like: {{q 8:43|وَلَٰكِ[نَّ] ٱللَّهَ سَلَّمَ}}, {{q 28:7|فِى ٱلْيَ[مِّ] وَلَا تَخَافِى}}, {{q ?|مَلِكِ ٱل[نَّ]اسِ}}, {{q 87:9|إِ[ن نَّ]فَعَتِ}}, {{q ?|وَمَ[ن يَ]عْمَلْ}}, {{q 10:27|مَّا لَهُ[م مِّ]نَ ٱللَّهِ}}.
-2) **Complete ghunnah**: with hidden noon and meem in the case of ikhfaa haqiqi, ikhfaa shafawi and iqlab, like: {{q ?|ٱلْإِ[ن]سَٰنُ}}, {{q ?|وَمَن يَعْتَصِ[م بِ]ٱللَّهِ}}, {{q ?|مِ[نۢ بَ]عْدِ}}.
-3) **Incomplete ghunnah**: with noon and meem sakinah when they are recited with ithhar, like: {{q ?|أَ[نْ]عَمْتَ}}, {{q ?|حَكِي[مٌ عَ]لِيمٌ}}, {{q ?|وَهُ[مْ فَ]رِحُونَ}}.
-4) **Most incomplete ghunnah**: with voweled noon and meem, like: {{q 2:93|بِئْسَ[مَ]ا يَأْ[مُ]رُكُم بِهِۦٓ إِي[مَٰنُ]كُمْ إِن كُنتُم مُّؤْ[مِنِ]ينَ}}.
+1) **Most complete ghunnah**: With noon and meem mushaddad, With merged noon and meem in the case of Idgham with ghunnah or Idgham shafawi Like: {{q 8:43|وَلَٰكِ[نَّ] ٱللَّهَ سَلَّمَ}}, {{q 28:7|فِى ٱلْيَ[مِّ] وَلَا تَخَافِى}}, {{q ?|مَلِكِ ٱل[نَّ]اسِ}}, {{q 87:9|إِ[ن نَّ]فَعَتِ}}, {{q ?|وَمَ[ن يَ]عْمَلْ}}, {{q 10:27|مَّا لَهُ[م مِّ]نَ ٱللَّهِ}}.
+2) **Complete ghunnah**: With hidden noon and meem in the case of Ikhfaa Haqiqy, ikhfaa shafawi and Iqlab like: {{q ?|ٱلْإِ[ن]سَٰنُ}}, {{q ?|وَمَن يَعْتَصِ[م بِ]ٱللَّهِ}}, {{q ?|مِ[نۢ بَ]عْدِ}}.
+3) **Incomplete ghunnah**: with noon and meem sakinah when they are recited with Ithhar like: {{q ?|أَ[نْ]عَمْتَ}}, {{q ?|حَكِي[مٌ عَ]لِيمٌ}}, {{q ?|وَهُ[مْ فَ]رِحُونَ}}.
+4) **Most incomplete ghunnah**: with noon and meem with vowels like: {{q 2:93|بِئْسَ[مَ]ا يَأْ[مُ]رُكُم بِهِۦٓ إِي[مَٰنُ]كُمْ إِن كُنتُم مُّؤْ[مِنِ]ينَ}}.

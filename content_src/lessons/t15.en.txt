@@ -3,35 +3,35 @@
 @page 60
 # Madd and Qasr (lengthening and shortening) ({{a المَدُّ وَالقَصر}})
 ## Definition of Madd
-= In linguistics | Increase and prolongation. Allah says: {{q 71:12|وَيُ[مْ]دِدْكُم بِأَمْوَٰلٍ وَبَنِينَ}} [Nuh: 12].
-= In applied definition | Stretching the sound with one of the lengthening and soft letters, exceeding the amount of the natural madd (more than two counts), because of hamzah or sukoon.
+= In linguistics | Increase and prolongation, Allah says: {{q 71:12|وَيُ[مْ]دِدْكُم بِأَمْوَٰلٍ وَبَنِينَ}} [Nuh: 12].
+= In applied definition | Stretching the sound with one of the lengthening and soft letters, exceeding the amount of natural madd (more than two counts) because of hamzah or sukoon.
 ## Letters of Madd
-**Alif** sakinah, **waaw** sakinah and **yaa** sakinah preceded by vowels similar to them.
-- **Alif** sakinah preceded by a letter with fathah, like: {{q ?|قَ[ا]لَ}}, {{q 11:43|وَحَ[ا]لَ}}, {{q ?|أَندَ[ا]دًا}}.
-- **Waaw** sakinah preceded by a letter with dammah, like: {{q ?|يَقُ[و]لُ}}, {{q 8:24|يَحُ[و]لُ}}, {{q ?|تَتَّقُ[و]نَ}}.
-- **Yaa** sakinah preceded by a letter with kasrah, like: {{q ?|قِ[ي]لَ}}, {{q 34:54|وَحِ[ي]لَ}}, {{q ?|صَٰدِقِ[ي]نَ}}.
-- The three madd letters with their conditions are collected in the following words: ({{a نُوحِيهَا، أُوتِينَا، أُوذِينَا}}).
+**Alif** sakinah, **waaw** sakinah and **yaa** sakinah are preceded by similar letters to them.
+- **Alif** sakinah is preceded by letter with fathah like: {{q ?|قَ[ا]لَ}}, {{q 11:43|وَحَ[ا]لَ}}, {{q ?|أَندَ[ا]دًا}}.
+- **Waaw** sakinah is preceded by letter with dammah like: {{q ?|يَقُ[و]لُ}}, {{q 8:24|يَحُ[و]لُ}}, {{q ?|تَتَّقُ[و]نَ}}.
+- **Yaa** sakinah is preceded by letter with kasrah like: {{q ?|قِ[ي]لَ}}, {{q 34:54|وَحِ[ي]لَ}}, {{q ?|صَٰدِقِ[ي]نَ}}.
+- The Three madd letters with their conditions are collected in the following words: ({{a نُوحِيهَا، أُوتِينَا، أُوذِينَا}}).
 - **They are called letters of madd** because they can be stretched and prolonged.
 ## Two letters of leen
-**Waaw** sakinah and **yaa** sakinah preceded by a letter with fathah, like: {{q ?|قَ[وْ]لَ}}, {{q ?|يَ[وْ]مَ}}, {{q ?|قُرَ[يْ]شٍ}}.
-- **They are called letters of leen** because they are emitted lengthily and softly, with no effort from the tongue.
+**Waaw** sakinah and **yaa** sakinah are preceded by letter with fathah like: {{q ?|قَ[وْ]لَ}}, {{q ?|يَ[وْ]مَ}}, {{q ?|قُرَ[يْ]شٍ}}.
+- **They are called letters of leen** because they are emitted lengthily and softly with no effort from the tongue.
 
 @page 61
 ## Definition of Qasr
-= In linguistics | Imprisonment and withholding.
+= In linguistics | imprisonment and withholding.
 = In applied definition | Pronouncing the letter of madd with the amount of the natural madd (only two counts).
 > **Note**: The meaning of qasr is to avoid prolonging the letter of madd more than two counts, not to avoid madd as a whole. Madd is what exceeds this amount (more than two counts).
 # Types of madd in the Qur'an ({{a أنواعُ المَدِّ في القُرآنِ الكريم}})
-1) **Original madd (natural)**: it is a madd without which the letter is not realized, and it does not rely on a cause of hamzah or sukoon.
+1) **Original madd (natural)**: It is a madd where the letter is not realized except with it, It doesn't rely on a cause of hamzah or sukoon.
 - **It is called original** because it is primary and unchangeable.
-- **It is called natural** because sound human nature neither shortens nor prolongs it beyond two counts.
-- **Amount of madd**: it is neither prolonged nor shortened beyond two counts, in all its different forms, by all reciters.
+- **It is called natural** because sound human nature requires not to shorten nor prolong it beyond two counts.
+- **Amount of madd**: Not to prolong nor shorten it more than two counts, in all its different shapes, by all reciters.
 - The duration of lengthening is measured by a count:
 = The count | The period of time needed to pronounce a voweled letter, like: ({{a بَ  بُ  بِ}}).
-= Its amount is 2 counts | The period of time needed to pronounce two voweled letters one after the other, like: ({{a بَ بَ}}) or ({{a بُ بُ}}) or ({{a بِ بِ}}).
+= Its amount is 2 counts | It is a period of time needed to pronounce two voweled letters respectively like: ({{a بَ بَ}}) or ({{a بُ بُ}}) or ({{a بِ بِ}}).
 = Durations of lengthening | They are proportional to the speed of recitation: tahqiq (realization), tadwir (moderation) or hadr (reciting quickly).
-2) **Secondary lengthening**: prolonging the sound with one of the letters of madd because of a hamzah or sukoon after the letter of madd.
-- **It is called secondary** because it branches out from the original lengthening and depends on a cause.
+2) **Secondary lengthening**: prolonging the sound with one of the letters of madd due to hamzah or sukoon after the letter of madd.
+- **It is called secondary** because it is branched out from the original lengthening and depends on a cause.
 
 @page 62
 ### Chart of the types of madd in the Qur'an
@@ -43,17 +43,17 @@
 @page 63
 # What follows natural lengthening
 ## a- Madd al-Badal (exchange lengthening)
-= Its definition | Hamzah precedes the lengthening letter in a word.
+= Its definition | Hamzah precedes lengthening letter in a word.
 = Examples | {{q ?|ءَ[ا]مَنُوا۟}}, {{q ?|أُ[و]تُوا۟}}, {{q ?|إِ[ي]مَٰنًا}}, {{q ?|ءَ[ا]دَمَ}}.
 ### Note
-1) It is called badal because its origin is two hamzahs: the first is voweled and the second is non-voweled, so the second hamzah is converted into a lengthening letter matching the vowel of the preceding letter, like: {{q ?|ءَامَنُوا۟}} its origin ({{a ءَأْمَنُوا}}), {{q ?|أُوتُوا۟}} its origin ({{a أُؤْتُوا}}), {{q ?|إِيمَٰنًا}} its origin ({{a إِئْمَانًا}}).
-2) In some words the lengthening letter is not converted from a hamzah; they are also called madd al-badal, or, as some classifiers call them, **similar to badal**, like: {{q ?|ٱلْقُرْءَ[ا]نُ}}, {{q ?|وَجَآءُ[و]}}, {{q 12:29|ٱلْخَاطِـِٔ[ي]نَ}}, {{q ?|مَسْـُٔ[و]لًا}}.
-3) Some classifiers place exchange lengthening in the secondary section, because it is preceded by hamzah and is lengthened more than two counts by some reciters.
+1) It is called badal because its origin is two hamazahs: The first is voweled and the second is non-voweled so, the last hamzah is converted into a lengthening letter similar to the vowel of the preceding letter like: {{q ?|ءَامَنُوا۟}} its origin ({{a ءَأْمَنُوا}}), {{q ?|أُوتُوا۟}} its origin ({{a أُؤْتُوا}}), {{q ?|إِيمَٰنًا}} its origin ({{a إِئْمَانًا}}).
+2) In some words, A Lengthening letter is not converted from hamzah, They are also called madd al-badal or as the classifiers called them, **similar to badal**, like: {{q ?|ٱلْقُرْءَ[ا]نُ}}, {{q ?|وَجَآءُ[و]}}, {{q 12:29|ٱلْخَاطِـِٔ[ي]نَ}}, {{q ?|مَسْـُٔ[و]لًا}}.
+3) Some classifiers make Exchange Lengthening follow secondary section because it is preceded by hamzah and lengthened more than two counts by some reciters.
 ## b- Madd al-Ewad (substitute lengthening)
-= Its definition | Substituting an alif for tanween with fathah when stopping on it.
+= Its definition | Substituting an Alif for tanween with fathah when stopping on it.
 = Examples | {{q ?|عَلِي[مًا]}}, {{q ?|حَكِي[مًا]}}, {{q ?|سَوَآ[ءً]}}, {{q 56:35|إِنشَآ[ءً]}}, {{q ?|شَيْـً[ٔا]}}.
-= It is called ewad | Because we substitute an alif for the tanween.
-> **Notice**: Tanween with fathah is not substituted by alif when stopping on the feminine taa; instead it becomes haa with sukoon: {{q ?|وَشَجَرَ[ةً]}} when stopping ({{a وَشَجَرَهْ}}), {{q ?|جَنَّ[ةً]}} when stopping ({{a جَنَّهْ}}).
+= It is called ewad | because we Substitute an Alif for tanween.
+> **Notice**: Tanween with fathah is not Substituted by Alif when stopping on feminine haa, but it is pronounced with sukoon: {{q ?|وَشَجَرَ[ةً]}} when stopping ({{a وَشَجَرَهْ}}), {{q ?|جَنَّ[ةً]}} when stopping ({{a جَنَّهْ}}).
 ## c- Madd as-Silah as-Sughra (lesser connecting lengthening)
 It will be clarified later.
 
@@ -62,53 +62,53 @@ It will be clarified later.
 ## a- Madd Wajib Muttasil (required joined lengthening)
 = Its definition | A letter of madd is followed by hamzah in the same word.
 = Examples | {{q 35:37|وَجَ[آءَ]كُمُ ٱلنَّذِيرُ}}, {{q ?|سُ[وٓءَ] ٱلْعَذَابِ}}, {{q ?|هَنِ[يٓـًٔ]ۢا بِمَا}}, {{q 69:19|هَ[آؤُ]مُ}}, {{q ?|ٱلسَّمَ[آءِ]}}, {{q ?|هَٰٓؤُلَ[آءِ]}}.
-= It is called muttasil (joined) | Because the letter of madd is followed directly by hamzah in the same word.
+= It is called muttasil (joined) | because a letter of madd is followed by hamzah directly in the same word.
 = The duration of lengthening | 4 or 5 counts.
 ## b- Madd Ja'iz Munfasil (separate allowed lengthening)
-= Its definition | A letter of madd comes at the end of the first word, followed by hamzah at the beginning of the next word.
+= Its definition | A letter of madd comes at the end of the first word followed by hamzah at the beginning of the next word.
 = Examples | {{q 108:1|إِنَّ[آ أَ]عْطَيْنَٰكَ}}, {{q 24:31|وَتُوبُ[وٓا۟ إِ]لَى ٱللَّهِ}}, {{q ?|فِ[ىٓ أَ]نفُسِكُمْ}}, {{q ?|[يَٰٓأَ]يُّهَا}}, {{q ?|[هَٰٓأَ]نتُمْ هَٰٓؤُلَآءِ}}.
-= It is called munfasil (separate) | Because the letter of madd is in one word and the hamzah in another, so they are separated from each other.
+= It is called munfasil (separate) | because a letter of madd comes in a word and hamzah comes in another word so, they are separated from each other.
 = The duration of lengthening | 4 or 5 counts.
 - **Notice 1**: There are two types of separation:
-= Haqiqi (real) | The letter of madd is present in writing and pronunciation, like: {{q ?|بِمَ[آ أُ]نزِلَ}}, {{q 66:6|قُ[وٓا۟ أَ]نفُسَكُمْ}}, {{q ?|فِ[ىٓ أَ]نفُسِكُمْ}}.
-= Hukmi (judgmental) | The letter of madd is omitted in writing but present in pronunciation, like: {{q ?|[يَٰٓأَ]يُّهَا ٱلَّذِينَ ءَامَنُوا۟}}, {{q ?|[هَٰٓأَ]نتُمْ [هَٰٓ]ؤُلَآءِ}}.
-- **Notice 2**: It is prolonged for 2 counts by the way of Tayyibat an-Nashr.
+= Haqiqi (real) | The letter of madd is constant in writing and pronouncing like: {{q ?|بِمَ[آ أُ]نزِلَ}}, {{q 66:6|قُ[وٓا۟ أَ]نفُسَكُمْ}}, {{q ?|فِ[ىٓ أَ]نفُسِكُمْ}}.
+= Hukmi (judgmental) | A letter of madd is omitted in writing - and constant in pronouncing like: {{q ?|[يَٰٓأَ]يُّهَا ٱلَّذِينَ ءَامَنُوا۟}}, {{q ?|[هَٰٓأَ]نتُمْ [هَٰٓ]ؤُلَآءِ}}.
+- **Notice 2**: It is prolonged for 2 counts as for the way of Taybat Annshr.
 ## c- Madd as-Silah al-Kubra (greater connecting lengthening)
-It will be clarified on the next page.
+It will be clarified on next page.
 
 @page 65
 # Madd as-Silah (connecting lengthening) ({{a مَدُّ الصِّلة}})
-= Connecting lengthening | Connecting the pronoun haa ({{a ـه}}) to a **waaw** if the haa has dammah, and to a **yaa** if the haa has kasrah, provided that the haa occurs between two voweled letters.
-= Pronoun haa (allusion) ({{a هاءُ الضَّميرِ (الكِناية)}}) | An extra haa, not part of the root of the word, indicating the masculine third person singular.
+= Connecting lengthening | Connecting the pronoun haa ({{a ـه}}) to a **waaw** if the haa has dammah, and to a **yaa** if haa has kasrah provided that haa occurs between two voweled letters.
+= Pronoun haa (allusion) ({{a هاءُ الضَّميرِ (الكِناية)}}) | an extra haa and not from the origin of the word, indicating to a masculin third person singular.
 ## Madd as-Silah as-Sughra (lesser connecting lengthening)
-There is no hamzah after the pronoun haa.
-= The duration of lengthening | It is prolonged for 2 counts and follows the natural lengthening.
+There is no hamzah after pronoun haa.
+= The duration of lengthening | It is prolonged for 2 counts and it follows natural lengthening.
 = Examples | {{q 84:15|بَلَىٰٓ إِنَّ رَبَّ[هُۥ] كَانَ بِ[هِۦ] بَصِيرًا}}.
-= Its sign in the Qur'an | A tiny waaw or tiny yaa after the pronoun haa: {{q 86:8|إِنَّ[هُۥ] عَلَىٰ رَجْعِ[هِۦ] لَقَادِرٌ}}.
+= Its sign in the Qur'an | Tiny waaw or tiny yaa after pronoun haa: {{q 86:8|إِنَّ[هُۥ] عَلَىٰ رَجْعِ[هِۦ] لَقَادِرٌ}}.
 ## Madd as-Silah al-Kubra (greater connecting lengthening)
-There is a hamzah after the pronoun haa.
-= The duration of lengthening | It is prolonged for 4 or 5 counts and follows madd munfasil (separate lengthening).
+There is hamzah after pronoun haa.
+= The duration of lengthening | It is prolonged for 4 or 5 counts and follows madd munfasil (separated lengthening).
 = Examples | {{q 104:3|يَحْسَبُ أَنَّ مَالَ[هُۥٓ أَ]خْلَدَهُۥ}}, {{q 83:12|وَمَا يُكَذِّبُ بِ[هِۦٓ إِ]لَّا كُلُّ}}.
-= Its sign in the Qur'an | A tiny waaw or tiny yaa with the madd sign above it, after the pronoun haa: {{q 104:3|مَالَ[هُۥٓ] أَخْلَدَهُۥ}}, {{q 83:12|بِ[هِۦٓ] إِلَّا كُلُّ}}.
+= Its sign in the Qur'an | tiny waaw with wave sign above it or tiny yaa tiny waaw or tiny yaa with wave sign above after pronoun haa: {{q 104:3|مَالَ[هُۥٓ] أَخْلَدَهُۥ}}, {{q 83:12|بِ[هِۦٓ] إِلَّا كُلُّ}}.
 
 @page 66
-- **Remark 1**: Connecting lengthening occurs only when continuing the recitation; when stopping, we stop with sukoon.
-- **Remark 2**: Two words are excluded from this rule in the narration of Hafs:
+- **Remark 1**: Connecting Lengthening occurs only when continuing recitation, but when stopping, we stop with sukoon.
+- **Remark 2**: Two words are excluded from this rule according to the narration of Hafs:
 = There is a madd although the conditions are not met | {{q 25:69|وَيَخْلُدْ فِي[هِۦ] مُهَانًا}} [Al-Furqan: 69].
 = There is no madd although the conditions are met | {{q 39:7|يَرْضَ[هُ] لَكُمْ}} [Az-Zumar: 7].
-- **Remark 3**: The haa of the demonstrative pronoun (**هذه**) belongs to connecting lengthening, like: {{q ?|هَٰذِ[هِۦ] نَاقَةُ ٱللَّهِ}}, {{q 12:65|هَٰذِ[هِۦ] بِضَٰعَتُنَا}}, {{q 21:92|إِنَّ هَٰذِ[هِۦٓ] أُمَّتُكُمْ}}.
+- **Remark 3**: The haa of the demonstrative pronoun (**هذه**) is belonged to connecting lengthening, like: {{q ?|هَٰذِ[هِۦ] نَاقَةُ ٱللَّهِ}}, {{q 12:65|هَٰذِ[هِۦ] بِضَٰعَتُنَا}}, {{q 21:92|إِنَّ هَٰذِ[هِۦٓ] أُمَّتُكُمْ}}.
 
 @page 67
 # Secondary lengthening caused by sukoon
 ## a- Madd al-Lazim (compulsory lengthening)
-= Its definition | A lengthening letter is followed by a letter with an original sukoon, both when continuing the recitation and when stopping.
+= Its definition | A lengthening letter is followed by a letter with an original sukoon when continuing recitation or stopping.
 = Examples | {{q 1:7|ٱل[ضَّآ]لِّينَ}}, {{q 10:91|ءَ[آ]لْـَٰٔنَ}}, {{q 26:1|طسٓمٓ}}, {{q 38:1|صٓ}}.
-= The duration of lengthening | It is prolonged for 6 counts in all its divisions and by all reciters.
+= The duration of lengthening | It is prolonged for 6 counts for all its divisions and for all reciters.
 Compulsory lengthening is divided into two types:
 ### Compulsory lengthening in a word
 A lengthening letter is followed by a letter with an original sukoon in a word.
-= Compulsory heavy lengthening in a word | A lengthening letter is followed by a letter with sukoon merged into the next (a mushaddad letter) in the same word, like: {{q 1:7|ٱل[ضَّآ]لِّينَ}}, {{q 6:80|أَتُحَٰ[ٓجُّ]وٓنِّى}}, {{q 5:2|ءَ[آ]مِّينَ}}, {{q ?|ءَ[آ]للَّهُ}}, {{q ?|ءَ[آ]لذَّكَرَيْنِ}}. Yaa does not occur as a compulsory lengthening of this kind in the Qur'an.
-= Compulsory light lengthening in a word | A lengthening letter is followed by a letter with sukoon not merged into the next, in the same word, like: {{q 10:51|ءَ[آ]لْـَٰٔنَ}}. It occurs twice in Surat Yunus (verses 51 and 91), with no third position in the Qur'an.
+= Compulsory heavy lengthening in a word | A lengthening letter is followed by a letter with sukoon merged into the next (mushaddad letter) in the same word like: {{q 1:7|ٱل[ضَّآ]لِّينَ}}, {{q 6:80|أَتُحَٰ[ٓجُّ]وٓنِّى}}, {{q 5:2|ءَ[آ]مِّينَ}}, {{q ?|ءَ[آ]للَّهُ}}, {{q ?|ءَ[آ]لذَّكَرَيْنِ}}. Yaa was not mentioned as a Compulsory lengthening in the Qur'an.
+= Compulsory light lengthening in a word | A lengthening letter is followed by a letter with sukoon and not merged into the next in the same word like: {{q 10:51|ءَ[آ]لْـَٰٔنَ}}. It was mentioned twice in Surat Yunus (verses 51 and 91), with no third position in the Qur'an.
 ### Compulsory lengthening in a letter
 A lengthening letter is followed by a letter with an original sukoon. It is restricted to the separate letters at the beginning of the surahs; its letters are seven, collected in (**سَنَقُصُّ لَكُم**).
 = Compulsory heavy lengthening in a letter | One of the separate letters at the beginning of some surahs consists of three letters: the middle is a lengthening letter and the third is merged into the next letter, like **laam** in {{q 2:1|الٓمٓ}}, pronounced ({{a ألف لام مّيم}}), and **seen** in {{q 26:1|طسٓمٓ}}, pronounced ({{a طا سين مّيم}}).
@@ -116,33 +116,33 @@ A lengthening letter is followed by a letter with an original sukoon. It is rest
 
 @page 68
 # Rules of lengthening at the beginning of the surahs ({{a أحكامُ المَدِّ في فَواتِحِ السُّوَرِ}})
-29 surahs in the Qur'an begin with separate letters. They are 14 letters, collected in the saying (**صَحَّ طَرِيقُكَ مَعَ السُّنَّه**): "Your path is right as long as you follow the Sunnah."
+29 surahs in the Qur'an began with separate letters, They are 14 letters collected in their saying (**صَحَّ طَرِيقُكَ مَعَ السُّنَّه**): "Your path is right as long as you follow Sunnah."
 These separate letters appear in 14 forms: {{q 2:1|الٓمٓ}}, {{q 7:1|الٓمٓصٓ}}, {{q 10:1|الٓر}}, {{q 13:1|الٓمٓر}}, {{q 19:1|كٓهيعٓصٓ}}, {{q 20:1|طه}}, {{q 26:1|طسٓمٓ}}, {{q 27:1|طسٓ}}, {{q 36:1|يسٓ}}, {{q 38:1|صٓ}}, {{q 40:1|حمٓ}}, {{q 42:1|حمٓ}} {{q 42:2|عٓسٓقٓ}}, {{q 50:1|قٓ}}, {{q 68:1|نٓ}}.
 These separate letters are divided into four groups according to madd:
-1) **A group that is not prolonged at all (alif)**: because there is no lengthening letter in it, as it is read ({{a أَلِف}}), like {{q 2:1|الٓمٓ}}, read ({{a أَلِف لام ميم}}).
-2) **A group prolonged naturally (2 counts)**: each letter is read as a two-letter word whose second letter is a lengthening letter. They are 5 letters collected in (**حَيٌّ طَهُرَ**), read ({{a حَا، يَا، طَا، هَا، رَا}}).
-3) **A group prolonged compulsorily (6 counts)**: each letter is read as a three-letter word whose middle letter is a lengthening letter followed by a letter with an original sukoon. They are 7 letters collected in (**سَنَقُصُّ لَكُم**), like this: ({{a سِين، نُون، قَاف، صَاد، لَام، كَاف، مِيم}}).
-4) **A group that may be prolonged for 4 or 6 counts**: each letter is read as a three-letter word whose middle letter is a leen (soft) letter. It is the **'ain** at the beginning of Surat Maryam, {{q 19:1|كٓهيعٓصٓ}}, read ({{a كَاف هَا يَا عَيْن صَاد}}), and Surat Ash-Shura, {{q 42:1|حمٓ}} {{q 42:2|عٓسٓقٓ}}, read ({{a حَا مِيم عَيْن سِين قَاف}}).
+1) **A group that is not prolonged at all (alif)**: due to the absence of lengthening letter in it, as it is read ({{a أَلِف}}), like {{q 2:1|الٓمٓ}}, read ({{a أَلِف لام ميم}}).
+2) **A group prolonged naturally (2 counts)**: Each letter is read as a two-letter word, the second is a lengthening letter, They are 5 letters collected in (**حَيٌّ طَهُرَ**), read ({{a حَا، يَا، طَا، هَا، رَا}}).
+3) **A group prolonged compulsorily (6 counts)**: Each letter is read as a three-letter word, the middle is a lengthening letter followed by a letter with an original sukoon. They are 7 letters collected in (**سَنَقُصُّ لَكُم**), Like this: ({{a سِين، نُون، قَاف، صَاد، لَام، كَاف، مِيم}}).
+4) **A group that may be prolonged for 4 or 6 counts**: Each letter is read as a three-letter word, the middle is a leen letter (soft letter), It is the **'ain** at the beginning of Surat Mariam, {{q 19:1|كٓهيعٓصٓ}}, read ({{a كَاف هَا يَا عَيْن صَاد}}), And surat A'Shura, {{q 42:1|حمٓ}} {{q 42:2|عٓسٓقٓ}}, read ({{a حَا مِيم عَيْن سِين قَاف}}).
 - This group follows soft lengthening because they are close to each other.
 
 @page 69
 ## b- Madd al-'Arid lis-Sukoon (lengthening because of a conditional sukoon)
 = Its definition | A lengthening letter is followed by a conditional sukoon due to stopping.
 = Examples | {{q ?|بِٱلْعِبَ[ا]دِ}}, {{q ?|ٱلْفَآئِزُ[و]نَ}}, {{q ?|ٱلْعَٰلَمِ[ي]نَ}}.
-= The duration of lengthening | It is prolonged for 2, 4 or 6 counts when stopping; when we continue the recitation, it becomes a natural lengthening (2 counts).
-- It is preferable to keep the duration of madd 'arid lis-sukoon equal if it is repeated in the same verse or passage: if the reciter lengthened it, for example, for 4 counts, he should continue with 4 counts until he finishes the recitation, and likewise with the other durations.
-- It is preferable to make it 2 counts when reciting with hadr (quickly), 4 counts with tadwir (moderation) and 6 counts with tahqiq (realization), so the recitation will be more harmonious and beautiful.
+= The duration of lengthening | It is prolonged for 2, 4 or 6 counts when stopping; when we continue the recitation, it will be a natural lengthening (2 counts).
+- It is preferable to keep the duration of madd 'arid lis-sukoon equal if it is repeated in the same verse or chapter: if the reciter lengthened it, for example, for 4 counts, he must continue with 4 counts until finishing recitation, and also with the other durations.
+- It is preferrable to shorten it for 2 counts when reciting with hadr (quickly), 4 counts when reciting with tadwir (moderation) and 6 counts when reciting with tahqiq (realization), so the recitation will be more suitable and beautiful.
 ## c- Madd al-Leen (soft lengthening)
 = Its definition | A soft letter is followed by a conditional sukoon due to stopping.
 = Examples | {{q ?|خَ[وْ]فٍ}}, {{q ?|قُرَ[يْ]شٍ}}, {{q ?|ٱلْبَ[يْ]تِ}}.
-= The duration of lengthening | It is prolonged for 2, 4 or 6 counts.
-- This madd applies when stopping on the letter after the soft letter; when we continue the recitation it is not prolonged, like: {{q 106:3|هَٰذَا ٱلْبَ[يْ]تِ}} {{q 106:4|ٱلَّذِىٓ}}.
+= The duration of lengthening | It is prolonged for(2 or 4 or 6) counts.
+- This madd is applied when stopping on the letter after the soft letter, but when we continue recitation, it won't be prolonged. Like: {{q 106:3|هَٰذَا ٱلْبَ[يْ]تِ}} {{q 106:4|ٱلَّذِىٓ}}.
 - It is preferable to keep the duration of madd leen equal, as we mentioned for madd 'arid lis-sukoon.
-- It is preferable to make it 2 counts with hadr, 4 counts with tadwir and 6 counts with tahqiq, so the recitation will be more harmonious and beautiful.
+- It is preferable to make it 2 counts with hadr, 4 counts with tadwir and 6 counts with tahqiq, so the recitation will be more suitable and beautiful.
 ### Note: secondary lengthening has three rules
 1) **Compulsory**: all reciters agree on its prolongation and its duration; it is **compulsory lengthening**.
-2) **Required**: all reciters agree on its prolongation but differ on its duration; it is **joined lengthening**.
-3) **Allowed**: the reciters differ on prolonging or shortening it and on its duration; these are **separate lengthening**, **greater connecting lengthening**, **lengthening due to a conditional sukoon** and **soft lengthening**.
+2) **Required**: all reciters agree on its prolongation and disagreed on its duration; it is **joined lengthening**.
+3) **Allowed**: The reciters disagreed on its prolongation or shortness **separate lengthening**, **greater connecting lengthening**, **lengthening due to a conditional sukoon** and **soft lengthening**.
 
 @page 70
 # Chart of the types of madd, their rules and durations ({{a جدولٌ يوضِحُ أنواعَ المُدودِ وحُكمِهِ ومقدارِ مَدِّه}})
@@ -158,4 +158,4 @@ These separate letters are divided into four groups according to madd:
 | Natural | Al-Ewad (substitute) | 2 counts | Required |
 | Natural | As-Silah as-Sughra (lesser connecting) | 2 counts | Required |
 # The sign of madd in the Qur'an ({{a علامةُ المَدِّ في ضَبطِ المُصحفِ}})
-This sign ({{a ـٓ}}) is placed above the letter of madd, indicating that it is prolonged beyond the natural length (more than 2 counts). It is placed above **compulsory** lengthening, **joined required**, **separate allowed** and **greater connecting** lengthening.
+This sign ({{a ـٓ}}) is placed above the letter of madd, indicating to its prolongation more than natural (more than 2 counts) This sign is placed above **compulsory** lengthening, **joined required**, **separate allowed** and **greater connecting** lengthening.

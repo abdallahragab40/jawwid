@@ -3,7 +3,7 @@
 @page 53
 # Nun dan mim bertasydid ({{a النُّونُ والمِيمُ المُشدَّدَتين}})
 ### Hal yang perlu diketahui
-- **Ghunnah** ({{a الغُنَّة}}): suara sengau yang keluar dari rongga hidung (khaisyum) yang selalu menyertai huruf **nun** dan **mim** dalam semua keadaan.
+- **Ghunnah** ({{a الغُنَّة}}): suara sengau yang keluar dari rongga hidung (khaysyum) yang selalu menyertai huruf **nun** dan **mim** dalam semua keadaan.
 - Wajib bagi qari' saat mengucapkan nun atau mim bertasydid untuk memanjangkan ghunnah pada kedua huruf tersebut dengan sempurna, baik dalam keadaan washal (sambung) maupun waqaf (berhenti).
 ### Contoh
 - {{q ?|مِنَ ٱلْجِ[نَّ]ةِ وَٱل[نَّ]اسِ}}, {{q 8:43|وَلَٰكِ[نَّ] ٱللَّهَ سَلَّمَ}}, {{q 36:68|وَمَن [نُّ]عَمِّرْهُ}}.
