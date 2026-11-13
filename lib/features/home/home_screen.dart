@@ -64,7 +64,7 @@ class HomeScreen extends ConsumerWidget {
                           size: 14,
                           color: dark
                               ? RattilColors.goldLight
-                              : RattilColors.gold,
+                              : RattilColors.goldText,
                           weight: FontWeight.w600,
                         ),
                       ),

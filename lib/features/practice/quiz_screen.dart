@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,8 +15,13 @@ import '../../widgets/quran_excerpt_view.dart';
 import '../study/study_state.dart';
 import '../../core/haptics.dart';
 
+/// Source of randomness for option order; overridden in tests.
+final quizRandomProvider = Provider<Random>((_) => Random());
+
 /// A practice session over the visible questions (optionally one lesson or
-/// one rule). Unanswered and previously missed questions come first.
+/// one rule). Unanswered and previously missed questions come first. The
+/// options of each question are shown in a random order, so the position of
+/// the right answer gives nothing away.
 class QuizScreen extends ConsumerStatefulWidget {
   const QuizScreen({super.key, this.topicId, this.ruleId});
   final String? topicId;
@@ -26,6 +33,9 @@ class QuizScreen extends ConsumerStatefulWidget {
 
 class _QuizScreenState extends ConsumerState<QuizScreen> {
   late final List<Question> _questions;
+
+  /// Display order of each question's options (indices into its options).
+  late final List<List<int>> _order;
   int _index = 0;
   int _correct = 0;
   Object? _choice; // String rule id, int index, or bool
@@ -60,6 +70,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         final c = rank(a).compareTo(rank(b));
         return c != 0 ? c : a.id.compareTo(b.id);
       });
+    final random = ref.read(quizRandomProvider);
+    _order = [
+      for (final q in _questions)
+        List<int>.generate(switch (q.type) {
+          QuestionType.identify => q.ruleOptions.length,
+          QuestionType.choice => q.choices.length,
+          QuestionType.trueFalse => 0,
+        }, (i) => i)..shuffle(random),
+    ];
   }
 
   bool _isCorrect(Question q, Object? choice) => switch (q.type) {
@@ -137,6 +156,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     final q = _questions[_index];
     final dark = context.isDark;
+    final brightness = Theme.of(context).brightness;
+    final correctColor = LessonColors.correctFor(brightness);
+    final incorrectColor = LessonColors.incorrectFor(brightness);
     final ok = _answered && _isCorrect(q, _choice);
 
     Widget option({
@@ -148,9 +170,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       final isAnswer = _answered && _isCorrect(q, value);
       final wrongPick = _answered && selected && !isAnswer;
       final border = isAnswer
-          ? LessonColors.correct
+          ? correctColor
           : wrongPick
-          ? LessonColors.incorrect
+          ? incorrectColor
           : (dark ? RattilColors.nightLine : RattilColors.line);
       return Padding(
         padding: const EdgeInsets.only(bottom: 10),
@@ -179,10 +201,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               child: Row(
                 children: [
                   Expanded(child: child),
-                  if (isAnswer)
-                    const Icon(Icons.check_circle, color: LessonColors.correct),
-                  if (wrongPick)
-                    const Icon(Icons.cancel, color: LessonColors.incorrect),
+                  if (isAnswer) Icon(Icons.check_circle, color: correctColor),
+                  if (wrongPick) Icon(Icons.cancel, color: incorrectColor),
                 ],
               ),
             ),
@@ -194,7 +214,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final options = <Widget>[];
     switch (q.type) {
       case QuestionType.identify:
-        for (final id in q.ruleOptions) {
+        for (final i in _order[_index]) {
+          final id = q.ruleOptions[i];
           final r = content.rule(id);
           if (r == null) continue;
           final title = r.title.of(lang.code);
@@ -223,7 +244,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           );
         }
       case QuestionType.choice:
-        for (final (i, c) in q.choices.indexed) {
+        for (final i in _order[_index]) {
+          final c = q.choices[i];
           final String text;
           final bool arabic;
           if (c.arabic != null) {
@@ -350,8 +372,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
                   color: ok
-                      ? LessonColors.correct.withValues(alpha: 0.08)
-                      : LessonColors.incorrect.withValues(alpha: 0.08),
+                      ? correctColor.withValues(alpha: dark ? 0.14 : 0.08)
+                      : incorrectColor.withValues(alpha: dark ? 0.14 : 0.08),
                   borderRadius: BorderRadius.circular(14),
                 ),
                 child: Column(
@@ -361,9 +383,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                       children: [
                         Icon(
                           ok ? Icons.check_circle : Icons.info,
-                          color: ok
-                              ? LessonColors.correct
-                              : LessonColors.incorrect,
+                          color: ok ? correctColor : incorrectColor,
                         ),
                         const SizedBox(width: 8),
                         Text(

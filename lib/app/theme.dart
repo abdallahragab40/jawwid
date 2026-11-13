@@ -11,6 +11,10 @@ abstract final class RattilColors {
   static const emerald100 = Color(0xFFDCEBE4);
   static const emerald50 = Color(0xFFEEF5F1);
   static const gold = Color(0xFFA9843A);
+
+  /// Gold for text and small marks on light surfaces: [gold] itself is only
+  /// 3.3:1 on paper, this is 5:1 (WCAG AA for body text).
+  static const goldText = Color(0xFF86662A);
   static const goldSoft = Color(0xFFE6D6AE);
   static const goldFaint = Color(0xFFF4ECD8);
   static const paper = Color(0xFFFBF8F1);
@@ -18,6 +22,9 @@ abstract final class RattilColors {
   static const ink = Color(0xFF1E2723);
   static const inkMuted = Color(0xFF55635D);
   static const line = Color(0xFFE2DACA);
+
+  /// Outline for controls that must stay visible (3:1 on paper).
+  static const lineStrong = Color(0xFF9A8E76);
 
   // Dark surfaces.
   static const night = Color(0xFF0F1513);
@@ -42,6 +49,13 @@ abstract final class LessonColors {
   static const highlightBgDark = Color(0x29FF8A80);
   static const correct = Color(0xFF1B7A4B);
   static const incorrect = Color(0xFFB3261E);
+  static const correctDark = Color(0xFF5CC08E);
+  static const incorrectDark = Color(0xFFF28B82);
+
+  static Color correctFor(Brightness b) =>
+      b == Brightness.dark ? correctDark : correct;
+  static Color incorrectFor(Brightness b) =>
+      b == Brightness.dark ? incorrectDark : incorrect;
 }
 
 /// Typography roles. Arabic-script text is set larger with taller lines so its
@@ -205,8 +219,23 @@ ThemeData buildTheme(AppLanguage language, Brightness brightness) {
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: dark ? RattilColors.nightRaised : Colors.white,
       indicatorColor: dark ? const Color(0xFF23423A) : RattilColors.emerald100,
-      labelTextStyle: WidgetStatePropertyAll(
-        type.ui(size: 12.5, weight: FontWeight.w600),
+      iconTheme: WidgetStateProperty.resolveWith(
+        (states) => IconThemeData(
+          color: states.contains(WidgetState.selected)
+              ? (dark ? RattilColors.emeraldLight : RattilColors.emerald700)
+              : (dark ? RattilColors.nightMuted : RattilColors.inkMuted),
+        ),
+      ),
+      labelTextStyle: WidgetStateProperty.resolveWith(
+        (states) => states.contains(WidgetState.selected)
+            ? type.ui(
+                size: 12.5,
+                weight: FontWeight.w700,
+                color: dark
+                    ? RattilColors.emeraldLight
+                    : RattilColors.emerald700,
+              )
+            : type.ui(size: 12.5, weight: FontWeight.w600, color: type._muted),
       ),
       height: 68,
     ),

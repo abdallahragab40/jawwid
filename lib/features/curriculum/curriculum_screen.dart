@@ -97,12 +97,12 @@ class _TopicTile extends ConsumerWidget {
       ),
       TopicProgress.read => (
         Icons.radio_button_checked,
-        dark ? RattilColors.goldLight : RattilColors.gold,
+        dark ? RattilColors.goldLight : RattilColors.goldText,
         l10n.statusRead,
       ),
       TopicProgress.none => (
         Icons.radio_button_unchecked,
-        dark ? RattilColors.nightMuted : RattilColors.line,
+        dark ? RattilColors.nightMuted : RattilColors.lineStrong,
         l10n.statusNotStarted,
       ),
     };

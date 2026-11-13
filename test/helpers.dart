@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,6 +11,7 @@ import 'package:rattil/content/content_repository.dart';
 import 'package:rattil/content/models.dart';
 import 'package:rattil/core/json_store.dart';
 import 'package:rattil/core/reminder.dart';
+import 'package:rattil/features/practice/quiz_screen.dart';
 import 'package:rattil/features/reader/reader_screen.dart';
 import 'package:rattil/features/study/study_state.dart';
 
@@ -78,6 +80,7 @@ Future<ProviderContainer> pumpApp(
   StudyState? initial,
   Size size = const Size(400, 860),
   FakeReminders? reminders,
+  Random? random,
 }) async {
   tester.view.physicalSize = size * 3;
   tester.view.devicePixelRatio = 3;
@@ -95,6 +98,7 @@ Future<ProviderContainer> pumpApp(
       if (probe != null)
         pageViewSubstituteProvider.overrideWithValue(probe.build),
       reminderServiceProvider.overrideWithValue(reminders ?? FakeReminders()),
+      if (random != null) quizRandomProvider.overrideWithValue(random),
     ],
   );
   addTearDown(container.dispose);

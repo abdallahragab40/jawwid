@@ -293,7 +293,7 @@ class _PointDetail extends ConsumerWidget {
                         weight: FontWeight.w700,
                         color: context.isDark
                             ? RattilColors.goldLight
-                            : RattilColors.gold,
+                            : RattilColors.goldText,
                       ),
                     ),
                   ),
