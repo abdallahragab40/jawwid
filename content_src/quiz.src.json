@@ -6344,32 +6344,6 @@
    "generated": "tools/gen_identify_questions.py"
   },
   {
-   "id": "q213",
-   "type": "identify",
-   "topic": "t18",
-   "example": {
-    "ref": "2:32",
-    "pattern": "ا[لع]ليم"
-   },
-   "options": [
-    "r11",
-    "r13",
-    "r14",
-    "r12"
-   ],
-   "answer": "r11",
-   "explanation": {
-    "ar": "لام «ال» تلاها حرف (ع)، وهو من الحروف القمرية، فتُظهَر اللام.",
-    "ckb": "لامی «ال» پیتی (ع)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
-    "en": "The laam of «ال» is followed by (ع), a lunar letter, so the laam is pronounced clearly.",
-    "id": "Lam pada «ال» diikuti huruf (ع), huruf qamariyah, sehingga lam dibaca jelas."
-   },
-   "review": {
-    "status": "draft"
-   },
-   "generated": "tools/gen_identify_questions.py"
-  },
-  {
    "id": "q214",
    "type": "identify",
    "topic": "t18",
@@ -7377,6 +7351,1518 @@
     "ckb": "لەکاتی وەستان لە کۆتایی ئایەتەکە پیتی کۆتایی ساکن دەبێت لەدوای پیتی لیینی (و) ساکن کە فەتحەی لەپێشە، بۆیە مەدی لیینە.",
     "en": "Stopping at the end of the verse makes the last letter sakin after the leen letter (و), which follows a fathah, so it is Madd al-Leen.",
     "id": "Saat waqaf di akhir ayat, huruf terakhir menjadi sukun setelah huruf lin (و) yang didahului fathah, sehingga ini mad lin."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q253",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ا)؟",
+    "ckb": "پیتی (ا) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ا) articulated?",
+    "id": "Dari mana huruf (ا) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو",
+      "en": "Al-Jawf",
+      "id": "Al-Jauf"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الجوف: هو خلاءُ الحلقِ والفم، وتخرجُ منه حروفُ المدِّ الثَّلاثة (ا – و – ي).",
+    "ckb": "هەناو: بریتیە لە بۆشایی گەروو و دەم، کە هەرسێ پیتی (ا ـ و ـ ي) مەدی لێوە دەردەچێت.",
+    "en": "Al-Jawf: In applied definition: The empty space in the throat and mouth. Its letters: three letters of madd (3 lengthening letters).",
+    "id": "Al-Jauf: Al-jauf secara istilah: rongga kosong yang terdapat di mulut dan tenggorokan. Hurufnya: tiga huruf mad."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q254",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ء)؟",
+    "ckb": "پیتی (ء) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ء) articulated?",
+    "id": "Dari mana huruf (ء) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أقصى الحلق: يخرجانِ من أقصى الحلق (منطقةُ الأوتارِ الصَّوتيَّة).",
+    "ckb": "ئەوپەڕی گەروو: لەبەشی خوارەوەی گەرووەوە دەردەچن، ناوچەی دەنگەژێکان (منطقةُ الأوتارِ الصوتيّة).",
+    "en": "The bottom of the throat: Hamzah (ء), Haa (هـ): They are articulated from the furthest part of the throat (The area of the vocal cords).",
+    "id": "Pangkal tenggorokan: Hamzah (ء), ha (هـ): Keluar dari pangkal tenggorokan (daerah pita suara)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q255",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ه)؟",
+    "ckb": "پیتی (ه) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ه) articulated?",
+    "id": "Dari mana huruf (ه) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "باطن الشفة",
+      "ckb": "ناوەوەی لێو",
+      "en": "The inside of the lip",
+      "id": "Bibir bagian dalam"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أقصى الحلق: يخرجانِ من أقصى الحلق (منطقةُ الأوتارِ الصَّوتيَّة).",
+    "ckb": "ئەوپەڕی گەروو: لەبەشی خوارەوەی گەرووەوە دەردەچن، ناوچەی دەنگەژێکان (منطقةُ الأوتارِ الصوتيّة).",
+    "en": "The bottom of the throat: Hamzah (ء), Haa (هـ): They are articulated from the furthest part of the throat (The area of the vocal cords).",
+    "id": "Pangkal tenggorokan: Hamzah (ء), ha (هـ): Keluar dari pangkal tenggorokan (daerah pita suara)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q256",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ع)؟",
+    "ckb": "پیتی (ع) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ع) articulated?",
+    "id": "Dari mana huruf (ع) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "وسط الحلق: يخرجانِ من وسطِ الحلق (منطقةُ لسانِ المزمار).",
+    "ckb": "ناوەڕاستی گەروو: لەبەشی ناوەڕاستی گەرووەوە دەردەچن، ناوچەی زمانە بچکۆلە (منطقةُ لِسانِ المِزمار).",
+    "en": "The middle part of the throat: Ain (ع), Haa (ح): They are articulated from the middle part of the throat (The area of the epiglottis).",
+    "id": "Tengah tenggorokan: Ain (ع), ha (ح): Keluar dari tengah tenggorokan (daerah epiglotis)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q257",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ح)؟",
+    "ckb": "پیتی (ح) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ح) articulated?",
+    "id": "Dari mana huruf (ح) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو",
+      "en": "Al-Jawf",
+      "id": "Al-Jauf"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "وسط الحلق: يخرجانِ من وسطِ الحلق (منطقةُ لسانِ المزمار).",
+    "ckb": "ناوەڕاستی گەروو: لەبەشی ناوەڕاستی گەرووەوە دەردەچن، ناوچەی زمانە بچکۆلە (منطقةُ لِسانِ المِزمار).",
+    "en": "The middle part of the throat: Ain (ع), Haa (ح): They are articulated from the middle part of the throat (The area of the epiglottis).",
+    "id": "Tengah tenggorokan: Ain (ع), ha (ح): Keluar dari tengah tenggorokan (daerah epiglotis)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q258",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (غ)؟",
+    "ckb": "پیتی (غ) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (غ) articulated?",
+    "id": "Dari mana huruf (غ) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أدنى الحلق: يخرجانِ من أدنى الحلق (منطقةُ جذرِ اللِّسان).",
+    "ckb": "نزیکترینی گەروو: لەبەشی سەرەوەی گەرووەوە دەردەچن، ناوچەی ڕەگی زمان (منطقةُ جَذْرِ اللِّسانِ).",
+    "en": "The top of the throat: Ghain (غ), Khaa (خ): They are articulated from the closest part of the throat (The area of the root of the tongue).",
+    "id": "Ujung tenggorokan: Ghain (غ), kha (خ): Keluar dari ujung tenggorokan (daerah akar lidah)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q259",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (خ)؟",
+    "ckb": "پیتی (خ) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (خ) articulated?",
+    "id": "Dari mana huruf (خ) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أدنى الحلق: يخرجانِ من أدنى الحلق (منطقةُ جذرِ اللِّسان).",
+    "ckb": "نزیکترینی گەروو: لەبەشی سەرەوەی گەرووەوە دەردەچن، ناوچەی ڕەگی زمان (منطقةُ جَذْرِ اللِّسانِ).",
+    "en": "The top of the throat: Ghain (غ), Khaa (خ): They are articulated from the closest part of the throat (The area of the root of the tongue).",
+    "id": "Ujung tenggorokan: Ghain (غ), kha (خ): Keluar dari ujung tenggorokan (daerah akar lidah)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q260",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ق)؟",
+    "ckb": "پیتی (ق) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ق) articulated?",
+    "id": "Dari mana huruf (ق) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الخيشوم",
+      "ckb": "برناخ",
+      "en": "Khayshoom (the nasal cavity)",
+      "id": "Rongga hidung"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أقصى اللسان: تخرجُ من أقصى اللِّسانِ مع ما يحاذيه من الحنكِ الأعلى من المنطقةِ الرِّخوة (الحنكُ اللَّحمي).",
+    "ckb": "ئەوپەڕی زمان: لە بنی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە مەڵاشو (بەشە گۆشتینەکەی).",
+    "en": "The furthest part of the tongue: Qaaf (ق) is emitted from the furthest part of the tongue with the soft palate (The soft area of the gum of the upper molars).",
+    "id": "Pangkal lidah: Qaf (ق) keluar dari pangkal lidah dengan langit-langit atas bagian lunak (langit-langit berdaging)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q261",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ك)؟",
+    "ckb": "پیتی (ك) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ك) articulated?",
+    "id": "Dari mana huruf (ك) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    },
+    {
+     "text": {
+      "ar": "باطن الشفة",
+      "ckb": "ناوەوەی لێو",
+      "en": "The inside of the lip",
+      "id": "Bibir bagian dalam"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أقصى اللسان: تخرجُ من أقصى اللِّسانِ مع ما يحاذيه من الحنكِ الأعلى من المنطقةِ القاسيةِ والرِّخوةِ معًا (الحنكُ اللَّحميُّ والعظميّ).",
+    "ckb": "ئەوپەڕی زمان: لە بنی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە مەڵاشو (بەشە گۆشتینەکەی و بەشە ئێسکینەکەی پێکەوە).",
+    "en": "The furthest part of the tongue: Kaaf (ك) is emitted from the furthest part of the tongue with the hard and soft palate together (The hard and soft area of the upper palate).",
+    "id": "Pangkal lidah: Kaf (ك) keluar dari pangkal lidah langit-langit lunak dan keras yang berhadapan dengannya (langit-langit berdaging dan tulang keras)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q262",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ج)؟",
+    "ckb": "پیتی (ج) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ج) articulated?",
+    "id": "Dari mana huruf (ج) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الخيشوم",
+      "ckb": "برناخ",
+      "en": "Khayshoom (the nasal cavity)",
+      "id": "Rongga hidung"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "وسط اللسان: تخرجُ من وسطِ اللِّسانِ مع ما يحاذيها من الحنكِ الأعلى. (والياءُ هنا غيرُ المدِّيَّة).",
+    "ckb": "ناوەڕاستی زمان: لە ناوەڕاستی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە مەڵاشو. (یا لێرەدا نا مەدییە).",
+    "en": "The middle of the tongue: Jeem (ج), Sheen (ش), Non lengthening Yaa (ي) are emitted from the middle of the tongue with the middle of the upper palate.",
+    "id": "Tengah lidah: Jim (ج), syin (ش), ya bukan mad (ي) keluar dari tengah lidah pada langit-langit atas yang berhadapan dengannya."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q263",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ش)؟",
+    "ckb": "پیتی (ش) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ش) articulated?",
+    "id": "Dari mana huruf (ش) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "وسط اللسان: تخرجُ من وسطِ اللِّسانِ مع ما يحاذيها من الحنكِ الأعلى. (والياءُ هنا غيرُ المدِّيَّة).",
+    "ckb": "ناوەڕاستی زمان: لە ناوەڕاستی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە مەڵاشو. (یا لێرەدا نا مەدییە).",
+    "en": "The middle of the tongue: Jeem (ج), Sheen (ش), Non lengthening Yaa (ي) are emitted from the middle of the tongue with the middle of the upper palate.",
+    "id": "Tengah lidah: Jim (ج), syin (ش), ya bukan mad (ي) keluar dari tengah lidah pada langit-langit atas yang berhadapan dengannya."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q264",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ض)؟",
+    "ckb": "پیتی (ض) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ض) articulated?",
+    "id": "Dari mana huruf (ض) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "حافة اللسان: تخرجُ من إحدى حافتَي اللِّسانِ اليمنى أو اليسرى أو منهما معًا مع ما يحاذيها من الأضراسِ العليا.",
+    "ckb": "لێواری زمان: لە یەکێک لە کەنار و لێوارەکانی لای ڕاست یان چەپی زمانەوە یان لە هەردووکیانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە کاکیلەکانی سەرەوە.",
+    "en": "The edge of the tongue: D'add (ض) is emitted from one of the edges of the tongue right or left or the two edges together with the upper molars.",
+    "id": "Sisi lidah: Dhad (ض) keluar dari salah satu tepi lidah sebelah kanan atau sebelah kiri atau dari keduanya secara bersamaan pada gigi geraham bagian atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q265",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ل)؟",
+    "ckb": "پیتی (ل) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ل) articulated?",
+    "id": "Dari mana huruf (ل) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "حافة اللسان: تخرجُ من أدنى حافتَي اللِّسانِ الأماميَّةِ إلى منتهى طرفِ اللِّسانِ مع ما يليها من لثةِ الأسنانِ العليا.",
+    "ckb": "لێواری زمان: لە هەردوو لێواری پێشەوەی زمان تا کۆتایی قەراغی زمانەوە دەردەچێت لەگەڵ پووکی ددانەکانی سەرەوە.",
+    "en": "The edge of the tongue: Laam (ل) is emitted from the closest part of both edges of the tongue to the utmost tip and what lies opposite to it from the gum of the upper central incisors, lateral incisors, canines and premolars.",
+    "id": "Sisi lidah: Lam (ل) keluar dari ujung dua sisi lidah bagian depan sampai akhir ujung lidah pada gusi gigi-gigi atas yang berhadapan dengannya."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q266",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ن)؟",
+    "ckb": "پیتی (ن) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ن) articulated?",
+    "id": "Dari mana huruf (ن) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    },
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو",
+      "en": "Al-Jawf",
+      "id": "Al-Jauf"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من لثةِ الأسنانِ العليا تحتَ مخرجِ اللَّام، ويصاحبُها غُنَّةٌ من الخيشوم.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە پووکی ددانەکانی سەرەوە لەژێر دەرچەی پیتی (ل) و دەنگی مینگەی تێدایە لە برناخدا.",
+    "en": "The tip of the tongue: Noon (ن) is emitted from the tip of the tongue and what lies opposite to it from the gum of the upper incisors, below the articulation point of laam, It is accompanied by ghunnah from the nasal cavity.",
+    "id": "Ujung lidah: Nun (ن) keluar dari ujung lidah pada gusi gigi-gigi bagian atas diatas makhraj huruf lam dan melekat padanya ghunnah dari rongga hidung."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q267",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ر)؟",
+    "ckb": "پیتی (ر) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ر) articulated?",
+    "id": "Dari mana huruf (ر) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "باطن الشفة",
+      "ckb": "ناوەوەی لێو",
+      "en": "The inside of the lip",
+      "id": "Bibir bagian dalam"
+     }
+    },
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع شيءٍ من ظهرِه مع ما يحاذيه من لثةِ الأسنانِ العليا، قريبًا من مخرجِ النُّون.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمانەوە و بەشێک لەپشتی زمان دەردەچێت لەگەڵ بەشی بەرامبەری لە پووکی ددانەکانی سەرەوەی نزیک لە دەرچەی پیتی (ن).",
+    "en": "The tip of the tongue: Raa (ر) is emitted from the tip of the tongue from the top and what lies opposite to it from the gum of the upper incisors, close to the articulation point of noon.",
+    "id": "Ujung lidah: Ra (ر) keluar dari ujung lidah di daerah punggungnya pada gusi gigi-gigi bagian atas, dekat dari makhraj huruf nun."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q268",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ط)؟",
+    "ckb": "پیتی (ط) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ط) articulated?",
+    "id": "Dari mana huruf (ط) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الخيشوم",
+      "ckb": "برناخ",
+      "en": "Khayshoom (the nasal cavity)",
+      "id": "Rongga hidung"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من أصولِ الثَّنايا العليا.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە ڕەگی ددانەکانی بڕەری سەرەوە.",
+    "en": "The tip of the tongue: T'aa (ط), daal (د), taa (ت) are emitted from the tip of the tongue and what lies opposite to it from the gum line of the upper central incisors.",
+    "id": "Ujung lidah: Tha (ط), dal (د), ta (ت) keluar dari ujung lidah pada pangkal dua gigi seri bagian atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q269",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (د)؟",
+    "ckb": "پیتی (د) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (د) articulated?",
+    "id": "Dari mana huruf (د) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "باطن الشفة",
+      "ckb": "ناوەوەی لێو",
+      "en": "The inside of the lip",
+      "id": "Bibir bagian dalam"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من أصولِ الثَّنايا العليا.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە ڕەگی ددانەکانی بڕەری سەرەوە.",
+    "en": "The tip of the tongue: T'aa (ط), daal (د), taa (ت) are emitted from the tip of the tongue and what lies opposite to it from the gum line of the upper central incisors.",
+    "id": "Ujung lidah: Tha (ط), dal (د), ta (ت) keluar dari ujung lidah pada pangkal dua gigi seri bagian atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q270",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ت)؟",
+    "ckb": "پیتی (ت) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ت) articulated?",
+    "id": "Dari mana huruf (ت) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو",
+      "en": "Al-Jawf",
+      "id": "Al-Jauf"
+     }
+    },
+    {
+     "text": {
+      "ar": "باطن الشفة",
+      "ckb": "ناوەوەی لێو",
+      "en": "The inside of the lip",
+      "id": "Bibir bagian dalam"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من أصولِ الثَّنايا العليا.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمانەوە دەردەچێت لەگەڵ بەشی بەرامبەری لە ڕەگی ددانەکانی بڕەری سەرەوە.",
+    "en": "The tip of the tongue: T'aa (ط), daal (د), taa (ت) are emitted from the tip of the tongue and what lies opposite to it from the gum line of the upper central incisors.",
+    "id": "Ujung lidah: Tha (ط), dal (د), ta (ت) keluar dari ujung lidah pada pangkal dua gigi seri bagian atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q271",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ص)؟",
+    "ckb": "پیتی (ص) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ص) articulated?",
+    "id": "Dari mana huruf (ص) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع أسفلِ الصَّفحةِ الدَّاخليَّةِ للثَّنايا السُّفلى.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمان دەردەچێت لەگەڵ بەشی ناوەوەی بڕەری خوارەوە.",
+    "en": "The tip of the tongue: S'aad (ص), seen (س), zaay (ز) are emitted from the tip of the tongue with the bottom of the inner plates of the lower incisors, The sound is articulated slightly above them passing between the upper and lower incisors.",
+    "id": "Ujung lidah: Shad (ص), sin (س), za (ز) keluar dari ujung lidah pada dinding dalam gigi seri bagian bawah maka keluar suara dari atasnya, mengalir antara dua gigi seri atas dan bawah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q272",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ز)؟",
+    "ckb": "پیتی (ز) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ز) articulated?",
+    "id": "Dari mana huruf (ز) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع أسفلِ الصَّفحةِ الدَّاخليَّةِ للثَّنايا السُّفلى.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمان دەردەچێت لەگەڵ بەشی ناوەوەی بڕەری خوارەوە.",
+    "en": "The tip of the tongue: S'aad (ص), seen (س), zaay (ز) are emitted from the tip of the tongue with the bottom of the inner plates of the lower incisors, The sound is articulated slightly above them passing between the upper and lower incisors.",
+    "id": "Ujung lidah: Shad (ص), sin (س), za (ز) keluar dari ujung lidah pada dinding dalam gigi seri bagian bawah maka keluar suara dari atasnya, mengalir antara dua gigi seri atas dan bawah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q273",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (س)؟",
+    "ckb": "پیتی (س) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (س) articulated?",
+    "id": "Dari mana huruf (س) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو",
+      "en": "Al-Jawf",
+      "id": "Al-Jauf"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع أسفلِ الصَّفحةِ الدَّاخليَّةِ للثَّنايا السُّفلى.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمان دەردەچێت لەگەڵ بەشی ناوەوەی بڕەری خوارەوە.",
+    "en": "The tip of the tongue: S'aad (ص), seen (س), zaay (ز) are emitted from the tip of the tongue with the bottom of the inner plates of the lower incisors, The sound is articulated slightly above them passing between the upper and lower incisors.",
+    "id": "Ujung lidah: Shad (ص), sin (س), za (ز) keluar dari ujung lidah pada dinding dalam gigi seri bagian bawah maka keluar suara dari atasnya, mengalir antara dua gigi seri atas dan bawah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q274",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ظ)؟",
+    "ckb": "پیتی (ظ) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ظ) articulated?",
+    "id": "Dari mana huruf (ظ) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The top of the throat",
+      "id": "Ujung tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من أطرافِ الثَّنايا العليا.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمان دەردەچێت لەگەڵ بەشی بەرامبەری لە نووکی ددانەکانی بڕەری سەرەوە.",
+    "en": "The tip of the tongue: Th'aa (ظ), thaal (ذ), thaa (ث) are emitted from the tip of the tongue with the tip of the upper central incisors.",
+    "id": "Ujung lidah: Dza (ظ), dzal (ذ), tsa (ث) keluar dari ujung lidah pada ujung dua gigi seri atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q275",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ذ)؟",
+    "ckb": "پیتی (ذ) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ذ) articulated?",
+    "id": "Dari mana huruf (ذ) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من أطرافِ الثَّنايا العليا.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمان دەردەچێت لەگەڵ بەشی بەرامبەری لە نووکی ددانەکانی بڕەری سەرەوە.",
+    "en": "The tip of the tongue: Th'aa (ظ), thaal (ذ), thaa (ث) are emitted from the tip of the tongue with the tip of the upper central incisors.",
+    "id": "Ujung lidah: Dza (ظ), dzal (ذ), tsa (ث) keluar dari ujung lidah pada ujung dua gigi seri atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q276",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ث)؟",
+    "ckb": "پیتی (ث) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ث) articulated?",
+    "id": "Dari mana huruf (ث) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو",
+      "en": "Al-Jawf",
+      "id": "Al-Jauf"
+     }
+    },
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طرف اللسان: تخرجُ من طرفِ اللِّسانِ مع ما يحاذيه من أطرافِ الثَّنايا العليا.",
+    "ckb": "پێشەوەی زمان: لە پێشەوەی زمان دەردەچێت لەگەڵ بەشی بەرامبەری لە نووکی ددانەکانی بڕەری سەرەوە.",
+    "en": "The tip of the tongue: Th'aa (ظ), thaal (ذ), thaa (ث) are emitted from the tip of the tongue with the tip of the upper central incisors.",
+    "id": "Ujung lidah: Dza (ظ), dzal (ذ), tsa (ث) keluar dari ujung lidah pada ujung dua gigi seri atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q277",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ف)؟",
+    "ckb": "پیتی (ف) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ف) articulated?",
+    "id": "Dari mana huruf (ف) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "باطن الشفة",
+      "ckb": "ناوەوەی لێو",
+      "en": "The inside of the lip",
+      "id": "Bibir bagian dalam"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle part of the throat",
+      "id": "Tengah tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "باطن الشفة: تخرجُ من باطنِ الشَّفةِ السُّفلى مع أطرافِ الثَّنايا العليا.",
+    "ckb": "ناوەوەی لێو: لەبەشی ناوەوەی لێوی خوارەوە دەردەچێت لەگەڵ نووکی ددانەکانی بڕەری سەرەوە.",
+    "en": "The inside of the lip: Faa (ف) is emitted from the inside of the lower lip with the tip of the upper central incisors.",
+    "id": "Bibir bagian dalam: Fa (ف) keluar dari bibir dalam bagian bawah pada ujung dua gigi seri atas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q278",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (ب)؟",
+    "ckb": "پیتی (ب) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (ب) articulated?",
+    "id": "Dari mana huruf (ب) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The bottom of the throat",
+      "id": "Pangkal tenggorokan"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الشفتان: تخرجُ من بينِ الشَّفتين بانضمامِ الشَّفتين مع الواوِ وانطباقِهما مع الباءِ والميم. (والواوُ هنا غيرُ المدِّيَّة).",
+    "ckb": "دوو لێوەکان: لەنێوان هەردوو لێودا دەردەچێت بەکۆکردنەوەی هەردوو لێو لەگەڵ پیتی (و) و لکاندنیان بەیەکەوە لەگەڵ پیتەکانی (ب ـ م)دا.",
+    "en": "The two lips: Non lengthening waaw (و), baa (ب) and meem (م) are emitted from the two lips by circling the two lips with waaw and closing them with baa and meem, Meem is also accompanied by ghunnah from the nasal cavity.",
+    "id": "Dua bibir: Wawu bukan mad (و), ba (ب) dan mim (م) keluar dari antara dua bibir dengan membulatkannya untuk wawu dan merapatkannya untuk ba dan mim, dan pada mim melekat padanya suara sengau dari rongga hidung."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q279",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج حرف (م)؟",
+    "ckb": "پیتی (م) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter (م) articulated?",
+    "id": "Dari mana huruf (م) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "دوو لێوەکان",
+      "en": "The two lips",
+      "id": "Dua bibir"
+     }
+    },
+    {
+     "text": {
+      "ar": "أقصى اللسان",
+      "ckb": "ئەوپەڕی زمان",
+      "en": "The furthest part of the tongue",
+      "id": "Pangkal lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان",
+      "ckb": "پێشەوەی زمان",
+      "en": "The tip of the tongue",
+      "id": "Ujung lidah"
+     }
+    },
+    {
+     "text": {
+      "ar": "حافة اللسان",
+      "ckb": "لێواری زمان",
+      "en": "The edge of the tongue",
+      "id": "Sisi lidah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الشفتان: تخرجُ من بينِ الشَّفتين بانضمامِ الشَّفتين مع الواوِ وانطباقِهما مع الباءِ والميم. (والواوُ هنا غيرُ المدِّيَّة).",
+    "ckb": "دوو لێوەکان: لەنێوان هەردوو لێودا دەردەچێت بەکۆکردنەوەی هەردوو لێو لەگەڵ پیتی (و) و لکاندنیان بەیەکەوە لەگەڵ پیتەکانی (ب ـ م)دا.",
+    "en": "The two lips: Non lengthening waaw (و), baa (ب) and meem (م) are emitted from the two lips by circling the two lips with waaw and closing them with baa and meem, Meem is also accompanied by ghunnah from the nasal cavity.",
+    "id": "Dua bibir: Wawu bukan mad (و), ba (ب) dan mim (م) keluar dari antara dua bibir dengan membulatkannya untuk wawu dan merapatkannya untuk ba dan mim, dan pada mim melekat padanya suara sengau dari rongga hidung."
    },
    "review": {
     "status": "draft"

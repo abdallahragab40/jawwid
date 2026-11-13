@@ -237,8 +237,8 @@ void main() {
         for (final q in c.questions) ?q.example,
       ];
       // 22 rule cards, 21 hand-written identify questions, 17 concept
-      // questions with an example, and 152 drafted identify questions.
-      expect(excerpts.length, 22 + 21 + 17 + 152);
+      // questions with an example, and 151 drafted identify questions.
+      expect(excerpts.length, 22 + 21 + 17 + 151);
       for (final e in excerpts) {
         expect(e.highlights, isNotEmpty);
         for (final (s, end) in e.highlights) {
@@ -286,7 +286,8 @@ void main() {
     });
 
     test('questions reference existing rules and have valid answers', () {
-      expect(c.questions.length, 99 + 152);
+      // 99 hand-written, 151 drafted identify, 27 drafted articulation.
+      expect(c.questions.length, 99 + 151 + 27);
       expect({for (final q in c.questions) q.id}.length, c.questions.length);
       for (final q in c.questions) {
         switch (q.type) {

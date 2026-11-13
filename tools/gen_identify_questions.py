@@ -270,10 +270,84 @@ def fill(rule, case):
     return {lang: t[lang].format(L=case or '') for lang in ('ar', 'ckb', 'en', 'id')}
 
 
+MAKHARIJ = os.path.join(ROOT, 'assets', 'content', 'makharij.json')
+LANGS = ('ar', 'ckb', 'en', 'id')
+WHERE = {
+    'ar': 'من أين يخرج حرف ({L})؟',
+    'ckb': 'پیتی ({L}) لە کوێوە دەردەچێت؟',
+    'en': 'Where is the letter ({L}) articulated?',
+    'id': 'Dari mana huruf ({L}) keluar?',
+}
+
+
+def makharij_questions(first_id):
+    """'Where is this letter articulated?' for every letter with a single
+    articulation point. Options are point names from the articulation data
+    (all distinct from the answer); the explanation is the book's own
+    description of the point."""
+    points = json.load(open(MAKHARIJ, encoding='utf-8'))['points']
+    owners = {}
+    for p in points:
+        for letter in p['letters'].split():
+            owners.setdefault(letter, []).append(p)
+    out, n = [], first_id
+    for p in points:
+        for letter in p['letters'].split():
+            if len(owners[letter]) != 1 or len(letter) != 1:
+                continue  # و ي (also madd letters), and ghunnah
+            name = p['name']
+            others = []
+            seen = {name['ar']}
+            rng = random.Random(f'makhraj|{letter}')
+            for q in rng.sample(points, len(points)):
+                if q['name']['ar'] not in seen:
+                    seen.add(q['name']['ar'])
+                    others.append(q['name'])
+                if len(others) == 3:
+                    break
+            out.append({
+                'id': f'q{n}',
+                'type': 'choice',
+                'topic': 't06',
+                'prompt': {l: WHERE[l].format(L=letter) for l in LANGS},
+                'options': [{'text': dict(name)}] + [{'text': dict(o)} for o in others],
+                'answer': 0,
+                'explanation': {l: f"{name[l]}: {p['text'][l]['text']}" for l in LANGS},
+                'review': {'status': 'draft'},
+                'generated': 'tools/gen_identify_questions.py',
+            })
+            n += 1
+    return out
+
+
+def identity(q):
+    if q['type'] == 'identify':
+        e = q['example']
+        return ('identify', e['ref'], e['pattern'])
+    return ('where', q['prompt']['ar'])
+
+
+def assign_ids(questions, old_ids):
+    used = set(old_ids.values())
+    next_n = max([FIRST_ID - 1] + [int(i[1:]) for i in used]) + 1
+    for q in questions:
+        old = old_ids.get(identity(q))
+        if old:
+            q['id'] = old
+        else:
+            q['id'] = f'q{next_n}'
+            next_n += 1
+    questions.sort(key=lambda q: int(q['id'][1:]))
+
+
 def main():
     quiz = json.load(open(QUIZ, encoding='utf-8'))
     rules = {r['id']: r for r in json.load(open(RULES, encoding='utf-8'))['rules']}
     manual = [q for q in quiz['questions'] if int(q['id'][1:]) < FIRST_ID]
+    previous = [q for q in quiz['questions'] if int(q['id'][1:]) >= FIRST_ID]
+    # Ids stay stable across runs (saved practice results are keyed by id):
+    # a question keeps its id; new questions take the next free number.
+    old_ids = {identity(q): q['id'] for q in previous}
 
     def key(ref, pattern):
         return (ref, ''.join(FOLD.get(c, c) for c, _, _ in base_letters(pattern) if c != ' '))
@@ -304,14 +378,19 @@ def main():
             'generated': 'tools/gen_identify_questions.py',
         })
         n += 1
+    out += makharij_questions(n)
+    assign_ids(out, old_ids)
     quiz['questions'] = manual + out
     with open(QUIZ, 'w', encoding='utf-8') as f:
         json.dump(quiz, f, ensure_ascii=False, indent=1)
         f.write('\n')
     by_rule = {}
     for q in out:
+        if q['type'] != 'identify':
+            continue
         by_rule[q['answer']] = by_rule.get(q['answer'], 0) + 1
-    print(f'{len(out)} drafted questions:', dict(sorted(by_rule.items())))
+    print(f'{len(out)} drafted questions:', dict(sorted(by_rule.items())),
+          '+', sum(1 for q in out if q['type'] == 'choice'), 'articulation questions')
 
 
 if __name__ == '__main__':
