@@ -131,6 +131,18 @@
   "@welcomeStart": {
     "description": "First launch: continue button"
   },
+  "unitCompleted": "أتممت الوحدة {number}: {title}. بارك الله فيك!",
+  "@unitCompleted": {
+    "description": "Celebration when every lesson of a unit is completed. {number} is localized",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
   "homeProgressTitle": "تقدّمك",
   "@homeProgressTitle": {
     "description": "Home: progress tile heading"

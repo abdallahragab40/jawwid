@@ -117,6 +117,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get welcomeStart => 'دەست بە فێربوون بکە';
 
   @override
+  String unitCompleted(String number, String title) {
+    return 'بەشی $numberت تەواو کرد: $title. دەستخۆش!';
+  }
+
+  @override
   String get homeProgressTitle => 'پێشکەوتنت';
 
   @override

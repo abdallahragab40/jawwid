@@ -32,6 +32,7 @@
   "welcomeChooseLanguage": "Pilih bahasamu",
   "welcomeLanguageLater": "Kamu bisa mengubahnya nanti di Pengaturan.",
   "welcomeStart": "Mulai belajar",
+  "unitCompleted": "Unit {number} selesai: {title}. Bagus sekali!",
   "homeProgressTitle": "Kemajuanmu",
   "homeLessonsDone": "{done} dari {total} selesai",
   "homePracticeAccuracy": "{percent}% benar",

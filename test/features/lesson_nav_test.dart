@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rattil/app/routes.dart';
+import 'package:rattil/features/study/study_state.dart';
 import 'package:rattil/l10n/generated/app_localizations.dart';
 
 import '../helpers.dart';
@@ -32,5 +33,22 @@ void main() {
     await tester.tap(find.byTooltip(ar.lessonPrevSection));
     await tester.pumpAndSettle();
     expect(offset(), lessThan(first + 1));
+  });
+
+  testWidgets('completing every lesson of a unit is celebrated once', (
+    tester,
+  ) async {
+    final ar = lookupAppLocalizations(const Locale('ar'));
+    final container = await pumpApp(tester);
+    final ctl = container.read(studyProvider.notifier);
+    final message = ar.unitCompleted('١', 'مقدمات علم التجويد');
+    ctl.setTopicCompleted('t01', true);
+    ctl.setTopicCompleted('t02', true);
+    await tester.pump();
+    expect(find.text(message), findsNothing);
+    ctl.setTopicCompleted('t03', true);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(find.text(message), findsOneWidget);
   });
 }

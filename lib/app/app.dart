@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../content/language.dart';
+import '../core/numerals.dart';
 import '../core/reminder.dart';
 import '../features/study/study_state.dart';
 import '../features/welcome/welcome_screen.dart';
@@ -11,6 +12,9 @@ import '../l10n/generated/app_localizations.dart';
 import 'branding.dart';
 import 'shell.dart';
 import 'theme.dart';
+
+/// Shows app-wide messages (unit completed) above any screen.
+final appMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 class RattilApp extends ConsumerWidget {
   const RattilApp({super.key, this.home});
@@ -23,8 +27,43 @@ class RattilApp extends ConsumerWidget {
     final language = ref.watch(languageProvider);
     final appTheme = ref.watch(studyProvider.select((s) => s.appTheme));
     final welcomed = ref.watch(studyProvider.select((s) => s.welcomed));
+    ref.listen(studyProvider.select((s) => s.topicProgress), (prev, next) {
+      if (prev == null) return;
+      final content = ref.read(contentProvider);
+      bool done(Map<String, TopicProgress> p, String id) =>
+          p[id] == TopicProgress.completed;
+      for (final (i, g) in content.groups.indexed) {
+        final now = g.topicIds.every((t) => done(next, t));
+        final before = g.topicIds.every((t) => done(prev, t));
+        if (now && !before) {
+          final l10n = lookupAppLocalizations(language.locale);
+          appMessengerKey.currentState
+            ?..hideCurrentSnackBar()
+            ..showSnackBar(
+              SnackBar(
+                content: Row(
+                  children: [
+                    const Icon(Icons.celebration, color: Colors.white),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        l10n.unitCompleted(
+                          formatInt(i + 1, language.code),
+                          g.title.of(language.code),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                duration: const Duration(seconds: 4),
+              ),
+            );
+        }
+      }
+    });
     ref.watch(reminderSyncProvider);
     return MaterialApp(
+      scaffoldMessengerKey: appMessengerKey,
       onGenerateTitle: (_) => Branding.name(language),
       debugShowCheckedModeBanner: false,
       locale: language.locale,

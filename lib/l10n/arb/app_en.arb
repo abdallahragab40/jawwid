@@ -32,6 +32,7 @@
   "welcomeChooseLanguage": "Choose your language",
   "welcomeLanguageLater": "You can change it later in Settings.",
   "welcomeStart": "Start learning",
+  "unitCompleted": "Unit {number} complete: {title}. Well done!",
   "homeProgressTitle": "Your progress",
   "homeLessonsDone": "{done} of {total} completed",
   "homePracticeAccuracy": "{percent}% correct",

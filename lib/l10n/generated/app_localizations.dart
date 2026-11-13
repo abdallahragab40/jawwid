@@ -294,6 +294,12 @@ abstract class AppLocalizations {
   /// **'ابدأ التعلّم'**
   String get welcomeStart;
 
+  /// Celebration when every lesson of a unit is completed. {number} is localized
+  ///
+  /// In ar, this message translates to:
+  /// **'أتممت الوحدة {number}: {title}. بارك الله فيك!'**
+  String unitCompleted(String number, String title);
+
   /// Home: progress tile heading
   ///
   /// In ar, this message translates to:

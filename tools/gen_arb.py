@@ -41,6 +41,7 @@ S = {
  'welcomeChooseLanguage': ('First launch: language picker heading', 'اختر لغتك', 'زمانەکەت هەڵبژێرە', 'Choose your language', 'Pilih bahasamu'),
  'welcomeLanguageLater': ('', 'يمكنك تغييرها لاحقًا من الإعدادات.', 'دەتوانیت دواتر لە ڕێکخستنەکانەوە بیگۆڕیت.', 'You can change it later in Settings.', 'Kamu bisa mengubahnya nanti di Pengaturan.'),
  'welcomeStart': ('First launch: continue button', 'ابدأ التعلّم', 'دەست بە فێربوون بکە', 'Start learning', 'Mulai belajar'),
+ 'unitCompleted': ('Celebration when every lesson of a unit is completed. {number} is localized', 'أتممت الوحدة {number}: {title}. بارك الله فيك!', 'بەشی {number}ت تەواو کرد: {title}. دەستخۆش!', 'Unit {number} complete: {title}. Well done!', 'Unit {number} selesai: {title}. Bagus sekali!'),
  'homeProgressTitle': ('Home: progress tile heading', 'تقدّمك', 'پێشکەوتنت', 'Your progress', 'Kemajuanmu'),
  'homeLessonsDone': ('{done} and {total} are localized', 'أكملت {done} من {total}', '{done} لە {total} تەواوکراون', '{done} of {total} completed', '{done} dari {total} selesai'),
  'homePracticeAccuracy': ('{percent} is localized', '{percent}٪ إجابات صحيحة', '{percent}٪ وەڵامی ڕاست', '{percent}% correct', '{percent}% benar'),

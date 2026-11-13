@@ -115,6 +115,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get welcomeStart => 'ابدأ التعلّم';
 
   @override
+  String unitCompleted(String number, String title) {
+    return 'أتممت الوحدة $number: $title. بارك الله فيك!';
+  }
+
+  @override
   String get homeProgressTitle => 'تقدّمك';
 
   @override

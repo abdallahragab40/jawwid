@@ -117,6 +117,11 @@ class AppLocalizationsId extends AppLocalizations {
   String get welcomeStart => 'Mulai belajar';
 
   @override
+  String unitCompleted(String number, String title) {
+    return 'Unit $number selesai: $title. Bagus sekali!';
+  }
+
+  @override
   String get homeProgressTitle => 'Kemajuanmu';
 
   @override
