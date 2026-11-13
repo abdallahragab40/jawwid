@@ -440,6 +440,8 @@ def main():
     # Ids stay stable across runs (saved practice results are keyed by id):
     # a question keeps its id; new questions take the next free number.
     old_ids = {identity(q): q['id'] for q in previous}
+    # Review decisions survive regeneration too.
+    old_review = {identity(q): q.get('review') for q in previous}
 
     def key(ref, pattern):
         return (ref, ''.join(FOLD.get(c, c) for c, _, _ in base_letters(pattern) if c != ' '))
@@ -473,6 +475,9 @@ def main():
     out += makharij_questions(n)
     out += sort_questions()
     assign_ids(out, old_ids)
+    for q in out:
+        if old_review.get(identity(q)):
+            q['review'] = old_review[identity(q)]
     quiz['questions'] = manual + out
     with open(QUIZ, 'w', encoding='utf-8') as f:
         json.dump(quiz, f, ensure_ascii=False, indent=1)
