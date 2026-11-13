@@ -764,7 +764,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get settingsOffline =>
-      'هەر چوار کتێبەکە و هەموو تایبەتمەندییەکان بەبێ ئینتەرنێت کار دەکەن و پێویست بە دروستکردنی هەژمار ناکات.';
+      'هەر چوار کتێبەکە و ئامرازەکانی خوێندن بەبێ ئینتەرنێت کار دەکەن. پێویست بە هەژمار نییە. ناردنی تێبینی و پارەی پشتگیری خزمەتگوزاریی دەرەکی بەکار دەهێنن.';
 
   @override
   String get lessonRead => 'وانەکە بخوێنەوە';
@@ -851,7 +851,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'ئەپەکە هیچ زانیارییەک کۆ ناکاتەوە و پەیوەندی بە ئینتەرنێتەوە ناکات. ڕێکخستن و پێشکەوتن و تێبینییەکانت تەنها لەسەر ئامێرەکەت پاشەکەوت دەکرێن و بە سڕینەوەی ئەپەکە دەسڕدرێنەوە.';
+      'جەووید داتای شیکاریی بەکارهێنان کۆ ناکاتەوە. ڕێکخستن و پێشکەوتن و تێبینییەکانت لەسەر ئامێرەکەت دەمێننەوە و بە سڕینەوەی ئەپ دەسڕێنەوە. ناردنی تێبینی ئەپی ئیمەیڵ دەکاتەوە؛ بەستەرەکانی پشتگیری ئەپی پارەدان یان ماڵپەڕێکی دەرەکی دەکەنەوە. ئەو خزمەتگوزارییانە بە پێی سیاسەتی تایبەتمەندیی خۆیان مامەڵە لەگەڵ زانیارییە نێردراوەکان دەکەن.';
 
   @override
   String get aboutQuranText => 'دەقی قورئان';
@@ -881,4 +881,70 @@ class AppLocalizationsCkb extends AppLocalizations {
   String aboutContentVersion(String version) {
     return 'وەشانی ناوەڕۆک: $version';
   }
+
+  @override
+  String get feedbackTitle => 'ناردنی تێبینی';
+
+  @override
+  String get feedbackIntro =>
+      'کێشەیەکت دۆزیوەتەوە یان بیرۆکەیەکت هەیە؟ بۆ پەرەپێدەر بنووسە. ئەپی ئیمەیڵ دەکرێتەوە بۆ پێداچوونەوە و ناردنی نامەکەت.';
+
+  @override
+  String get feedbackSubject => 'بابەت';
+
+  @override
+  String get feedbackMessage => 'تێبینییەکەت';
+
+  @override
+  String get feedbackRequired => 'تکایە ئەم خانەیە پڕ بکەرەوە.';
+
+  @override
+  String get feedbackSend => 'کردنەوەی ئەپی ئیمەیڵ';
+
+  @override
+  String get feedbackFallback =>
+      'ئەپی ئیمەیڵ نەکرایەوە. نامەکەت کۆپی بکە و بۆ ناونیشانی خوارەوە بینێرە.';
+
+  @override
+  String get feedbackCopy => 'کۆپیکردنی نامە';
+
+  @override
+  String get contactCopyEmail => 'کۆپیکردنی ئیمەیڵ';
+
+  @override
+  String get contactCopied => 'کۆپی کرا';
+
+  @override
+  String get supportTitle => 'قاوەیەکم بۆ بکڕە';
+
+  @override
+  String get supportIntro =>
+      'ئەگەر جەووید یارمەتیت دەدات، دەتوانیت دیارییەکی ئارەزوومەندانە بۆ پەرەپێدەر بنێریت. هەموو تایبەتمەندییەکانی فێربوون بەخۆڕایی دەمێننەوە؛ دیاری هیچ ناوەڕۆک یان سوودێک ناکاتەوە.';
+
+  @override
+  String get supportTransfer =>
+      'InstaPay هەڵبژێرە یان بۆ یەکێک لە دوو جزدانی مۆبایلی میسری خوارەوە بنێرە.';
+
+  @override
+  String get supportVerify =>
+      'پێش پشتڕاستکردنەوە ناوی وەرگر و کرێکان لە ئەپی پارەدان بپشکنە. گواستنەوەکان لەلایەن دابینکەری پارەدانەوە ئەنجام دەدرێن؛ جەووید ناتوانێت پشتڕاستیان بکاتەوە یان پارەکە بگەڕێنێتەوە.';
+
+  @override
+  String get supportCopyNumber => 'کۆپیکردنی ژمارە';
+
+  @override
+  String get supportOpenInstapay => 'کردنەوەی InstaPay';
+
+  @override
+  String get supportCopyAddress => 'کۆپیکردنی ناونیشانی پارەدان';
+
+  @override
+  String get supportLinkFailed =>
+      'InstaPay نەکرایەوە. ناونیشانی پارەدان کۆپی بکە و لە ئەپی پارەدان بەکاری بهێنە.';
+
+  @override
+  String get supportEtisalat => 'Etisalat Cash';
+
+  @override
+  String get supportVodafone => 'Vodafone Cash';
 }

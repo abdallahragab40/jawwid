@@ -763,7 +763,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsOffline =>
-      'All four books and every feature work offline. No account is needed.';
+      'All four books and study tools work offline. No account is needed. Sending feedback and making support payments use external services.';
 
   @override
   String get lessonRead => 'Read the lesson';
@@ -849,7 +849,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'The app collects no data and makes no internet connections. Your settings, progress and notes stay on your device only and are deleted with the app.';
+      'Jawwid does not collect analytics. Your settings, progress and notes stay on your device and are removed when you uninstall the app. Sending feedback opens your email app; support links open an external payment app or website. These services handle the information you choose to send under their own privacy policies.';
 
   @override
   String get aboutQuranText => 'Qur’anic text';
@@ -879,4 +879,70 @@ class AppLocalizationsEn extends AppLocalizations {
   String aboutContentVersion(String version) {
     return 'Content version: $version';
   }
+
+  @override
+  String get feedbackTitle => 'Send feedback';
+
+  @override
+  String get feedbackIntro =>
+      'Found a problem or have an idea? Write to the developer. Your email app opens so you can review and send your message.';
+
+  @override
+  String get feedbackSubject => 'Subject';
+
+  @override
+  String get feedbackMessage => 'Your feedback';
+
+  @override
+  String get feedbackRequired => 'Please fill in this field.';
+
+  @override
+  String get feedbackSend => 'Open email app';
+
+  @override
+  String get feedbackFallback =>
+      'Could not open an email app. Copy your message and email it to the address below.';
+
+  @override
+  String get feedbackCopy => 'Copy message';
+
+  @override
+  String get contactCopyEmail => 'Copy email address';
+
+  @override
+  String get contactCopied => 'Copied';
+
+  @override
+  String get supportTitle => 'Buy me a coffee';
+
+  @override
+  String get supportIntro =>
+      'If Jawwid helps you, you can send an optional gift to support the developer. All learning features remain free; gifts unlock no content or benefits.';
+
+  @override
+  String get supportTransfer =>
+      'Choose InstaPay or send to either Egyptian mobile wallet below.';
+
+  @override
+  String get supportVerify =>
+      'Check the recipient name and any fees in your payment app before confirming. Transfers are handled by your payment provider; Jawwid cannot confirm or refund them.';
+
+  @override
+  String get supportCopyNumber => 'Copy number';
+
+  @override
+  String get supportOpenInstapay => 'Open InstaPay';
+
+  @override
+  String get supportCopyAddress => 'Copy payment address';
+
+  @override
+  String get supportLinkFailed =>
+      'Could not open InstaPay. Copy the payment address and use it in your payment app.';
+
+  @override
+  String get supportEtisalat => 'Etisalat Cash';
+
+  @override
+  String get supportVodafone => 'Vodafone Cash';
 }

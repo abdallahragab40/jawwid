@@ -763,7 +763,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get settingsOffline =>
-      'Keempat buku dan semua fitur berfungsi tanpa internet. Tidak perlu akun.';
+      'Keempat buku dan alat belajar berfungsi offline. Tidak perlu akun. Pengiriman masukan dan pembayaran dukungan menggunakan layanan eksternal.';
 
   @override
   String get lessonRead => 'Baca pelajaran';
@@ -849,7 +849,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'Aplikasi ini tidak mengumpulkan data dan tidak terhubung ke internet. Pengaturan, kemajuan, dan catatan Anda hanya tersimpan di perangkat Anda dan terhapus bersama aplikasi.';
+      'Jawwid tidak mengumpulkan analitik penggunaan. Pengaturan, kemajuan, dan catatan disimpan di perangkat Anda dan dihapus saat aplikasi dihapus. Mengirim masukan membuka aplikasi email; tautan dukungan membuka aplikasi pembayaran atau situs eksternal. Layanan tersebut menangani informasi yang Anda kirim sesuai kebijakan privasinya sendiri.';
 
   @override
   String get aboutQuranText => 'Teks Al-Qur’an';
@@ -879,4 +879,70 @@ class AppLocalizationsId extends AppLocalizations {
   String aboutContentVersion(String version) {
     return 'Versi konten: $version';
   }
+
+  @override
+  String get feedbackTitle => 'Kirim masukan';
+
+  @override
+  String get feedbackIntro =>
+      'Menemukan masalah atau punya ide? Tulis kepada pengembang. Aplikasi email akan terbuka agar Anda dapat meninjau dan mengirim pesan.';
+
+  @override
+  String get feedbackSubject => 'Subjek';
+
+  @override
+  String get feedbackMessage => 'Masukan Anda';
+
+  @override
+  String get feedbackRequired => 'Harap isi kolom ini.';
+
+  @override
+  String get feedbackSend => 'Buka aplikasi email';
+
+  @override
+  String get feedbackFallback =>
+      'Tidak dapat membuka aplikasi email. Salin pesan dan kirim ke alamat di bawah.';
+
+  @override
+  String get feedbackCopy => 'Salin pesan';
+
+  @override
+  String get contactCopyEmail => 'Salin alamat email';
+
+  @override
+  String get contactCopied => 'Disalin';
+
+  @override
+  String get supportTitle => 'Traktir saya kopi';
+
+  @override
+  String get supportIntro =>
+      'Jika Jawwid membantu Anda, Anda dapat mengirim hadiah sukarela untuk mendukung pengembang. Semua fitur belajar tetap gratis; hadiah tidak membuka konten atau manfaat apa pun.';
+
+  @override
+  String get supportTransfer =>
+      'Pilih InstaPay atau kirim ke salah satu dompet seluler Mesir di bawah.';
+
+  @override
+  String get supportVerify =>
+      'Periksa nama penerima dan biaya di aplikasi pembayaran sebelum mengonfirmasi. Transfer ditangani penyedia pembayaran; Jawwid tidak dapat mengonfirmasi atau mengembalikannya.';
+
+  @override
+  String get supportCopyNumber => 'Salin nomor';
+
+  @override
+  String get supportOpenInstapay => 'Buka InstaPay';
+
+  @override
+  String get supportCopyAddress => 'Salin alamat pembayaran';
+
+  @override
+  String get supportLinkFailed =>
+      'Tidak dapat membuka InstaPay. Salin alamat pembayaran dan gunakan di aplikasi pembayaran.';
+
+  @override
+  String get supportEtisalat => 'Etisalat Cash';
+
+  @override
+  String get supportVodafone => 'Vodafone Cash';
 }

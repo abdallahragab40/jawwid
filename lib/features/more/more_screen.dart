@@ -11,6 +11,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
 import '../../widgets/ornaments.dart';
 import '../study/study_state.dart';
+import 'contact_screen.dart';
 import '../../widgets/text_size_control.dart';
 
 class MoreScreen extends ConsumerWidget {
@@ -90,6 +91,20 @@ class MoreScreen extends ConsumerWidget {
                   l10n.settingsTitle,
                   null,
                   () => push(const SettingsScreen(), 'settings'),
+                ),
+                const Divider(indent: 56),
+                tile(
+                  Icons.feedback_outlined,
+                  l10n.feedbackTitle,
+                  null,
+                  () => push(const FeedbackScreen(), 'feedback'),
+                ),
+                const Divider(indent: 56),
+                tile(
+                  Icons.local_cafe_outlined,
+                  l10n.supportTitle,
+                  null,
+                  () => push(const SupportScreen(), 'support'),
                 ),
                 const Divider(indent: 56),
                 tile(
@@ -567,15 +582,6 @@ class AboutScreen extends ConsumerWidget {
           const OrnamentDivider(),
           SectionHeading(l10n.aboutFonts),
           Text(l10n.aboutFontsBody, style: context.type.ui(size: 13.5)),
-          const SizedBox(height: 10),
-          OutlinedButton(
-            onPressed: () => showLicensePage(
-              context: context,
-              applicationName: Branding.name(lang),
-              applicationVersion: content.contentVersion,
-            ),
-            child: Text(l10n.aboutLicenses),
-          ),
           const SizedBox(height: 10),
           Text(
             l10n.aboutContentVersion(content.contentVersion),

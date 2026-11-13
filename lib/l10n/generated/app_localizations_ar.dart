@@ -756,7 +756,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get settingsOffline =>
-      'تعمل الكتب الأربعة وكل المزايا دون اتصال بالإنترنت، ولا يلزم إنشاء حساب.';
+      'تعمل الكتب الأربعة وأدوات الدراسة دون اتصال بالإنترنت، ولا يلزم إنشاء حساب. إرسال الملاحظات وتحويل مبالغ الدعم يتمّان عبر خدمات خارجية.';
 
   @override
   String get lessonRead => 'اقرأ الدرس';
@@ -842,7 +842,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'لا يجمع التطبيق أي بيانات ولا يتصل بالإنترنت. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق.';
+      'لا يجمع جوِّد بيانات تحليلات الاستخدام. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق. إرسال الملاحظات يفتح تطبيق بريدك، وروابط الدعم تفتح تطبيق دفع أو موقعًا خارجيًا. تتعامل هذه الخدمات مع المعلومات التي تختار إرسالها وفق سياسات الخصوصية الخاصة بها.';
 
   @override
   String get aboutQuranText => 'النص القرآني';
@@ -872,4 +872,70 @@ class AppLocalizationsAr extends AppLocalizations {
   String aboutContentVersion(String version) {
     return 'إصدار المحتوى: $version';
   }
+
+  @override
+  String get feedbackTitle => 'أرسل ملاحظاتك';
+
+  @override
+  String get feedbackIntro =>
+      'وجدت مشكلة أو لديك اقتراح؟ اكتب للمطوّر. سيُفتح تطبيق بريدك لتراجع الرسالة وترسلها بنفسك.';
+
+  @override
+  String get feedbackSubject => 'الموضوع';
+
+  @override
+  String get feedbackMessage => 'ملاحظاتك';
+
+  @override
+  String get feedbackRequired => 'يرجى ملء هذا الحقل.';
+
+  @override
+  String get feedbackSend => 'فتح تطبيق البريد';
+
+  @override
+  String get feedbackFallback =>
+      'تعذّر فتح تطبيق البريد. انسخ رسالتك وأرسلها إلى العنوان أدناه.';
+
+  @override
+  String get feedbackCopy => 'نسخ الرسالة';
+
+  @override
+  String get contactCopyEmail => 'نسخ عنوان البريد';
+
+  @override
+  String get contactCopied => 'تم النسخ';
+
+  @override
+  String get supportTitle => 'ادعمني بفنجان قهوة';
+
+  @override
+  String get supportIntro =>
+      'إذا أفادك جوِّد، يمكنك إرسال هدية اختيارية لدعم المطوّر. تظل جميع مزايا التعلّم مجانية، ولا تفتح الهدايا أي محتوى أو مزايا إضافية.';
+
+  @override
+  String get supportTransfer =>
+      'اختر إنستاباي أو أرسل إلى إحدى محفظتي الهاتف في مصر أدناه.';
+
+  @override
+  String get supportVerify =>
+      'تحقّق من اسم المستلم وأي رسوم في تطبيق الدفع قبل التأكيد. تتم التحويلات عبر مزوّد الدفع؛ لا يستطيع جوِّد تأكيدها أو استردادها.';
+
+  @override
+  String get supportCopyNumber => 'نسخ الرقم';
+
+  @override
+  String get supportOpenInstapay => 'فتح إنستاباي';
+
+  @override
+  String get supportCopyAddress => 'نسخ عنوان الدفع';
+
+  @override
+  String get supportLinkFailed =>
+      'تعذّر فتح إنستاباي. انسخ عنوان الدفع واستخدمه في تطبيق الدفع.';
+
+  @override
+  String get supportEtisalat => 'اتصالات كاش';
+
+  @override
+  String get supportVodafone => 'فودافون كاش';
 }

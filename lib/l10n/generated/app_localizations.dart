@@ -1381,7 +1381,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsOffline.
   ///
   /// In ar, this message translates to:
-  /// **'تعمل الكتب الأربعة وكل المزايا دون اتصال بالإنترنت، ولا يلزم إنشاء حساب.'**
+  /// **'تعمل الكتب الأربعة وأدوات الدراسة دون اتصال بالإنترنت، ولا يلزم إنشاء حساب. إرسال الملاحظات وتحويل مبالغ الدعم يتمّان عبر خدمات خارجية.'**
   String get settingsOffline;
 
   /// Primary button: open the native lesson text
@@ -1525,7 +1525,7 @@ abstract class AppLocalizations {
   /// No description provided for @aboutPrivacy.
   ///
   /// In ar, this message translates to:
-  /// **'لا يجمع التطبيق أي بيانات ولا يتصل بالإنترنت. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق.'**
+  /// **'لا يجمع جوِّد بيانات تحليلات الاستخدام. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق. إرسال الملاحظات يفتح تطبيق بريدك، وروابط الدعم تفتح تطبيق دفع أو موقعًا خارجيًا. تتعامل هذه الخدمات مع المعلومات التي تختار إرسالها وفق سياسات الخصوصية الخاصة بها.'**
   String get aboutPrivacy;
 
   /// No description provided for @aboutQuranText.
@@ -1575,6 +1575,126 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'إصدار المحتوى: {version}'**
   String aboutContentVersion(String version);
+
+  /// No description provided for @feedbackTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'أرسل ملاحظاتك'**
+  String get feedbackTitle;
+
+  /// No description provided for @feedbackIntro.
+  ///
+  /// In ar, this message translates to:
+  /// **'وجدت مشكلة أو لديك اقتراح؟ اكتب للمطوّر. سيُفتح تطبيق بريدك لتراجع الرسالة وترسلها بنفسك.'**
+  String get feedbackIntro;
+
+  /// No description provided for @feedbackSubject.
+  ///
+  /// In ar, this message translates to:
+  /// **'الموضوع'**
+  String get feedbackSubject;
+
+  /// No description provided for @feedbackMessage.
+  ///
+  /// In ar, this message translates to:
+  /// **'ملاحظاتك'**
+  String get feedbackMessage;
+
+  /// No description provided for @feedbackRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'يرجى ملء هذا الحقل.'**
+  String get feedbackRequired;
+
+  /// No description provided for @feedbackSend.
+  ///
+  /// In ar, this message translates to:
+  /// **'فتح تطبيق البريد'**
+  String get feedbackSend;
+
+  /// No description provided for @feedbackFallback.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعذّر فتح تطبيق البريد. انسخ رسالتك وأرسلها إلى العنوان أدناه.'**
+  String get feedbackFallback;
+
+  /// No description provided for @feedbackCopy.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسخ الرسالة'**
+  String get feedbackCopy;
+
+  /// No description provided for @contactCopyEmail.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسخ عنوان البريد'**
+  String get contactCopyEmail;
+
+  /// No description provided for @contactCopied.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم النسخ'**
+  String get contactCopied;
+
+  /// No description provided for @supportTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'ادعمني بفنجان قهوة'**
+  String get supportTitle;
+
+  /// No description provided for @supportIntro.
+  ///
+  /// In ar, this message translates to:
+  /// **'إذا أفادك جوِّد، يمكنك إرسال هدية اختيارية لدعم المطوّر. تظل جميع مزايا التعلّم مجانية، ولا تفتح الهدايا أي محتوى أو مزايا إضافية.'**
+  String get supportIntro;
+
+  /// No description provided for @supportTransfer.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر إنستاباي أو أرسل إلى إحدى محفظتي الهاتف في مصر أدناه.'**
+  String get supportTransfer;
+
+  /// No description provided for @supportVerify.
+  ///
+  /// In ar, this message translates to:
+  /// **'تحقّق من اسم المستلم وأي رسوم في تطبيق الدفع قبل التأكيد. تتم التحويلات عبر مزوّد الدفع؛ لا يستطيع جوِّد تأكيدها أو استردادها.'**
+  String get supportVerify;
+
+  /// No description provided for @supportCopyNumber.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسخ الرقم'**
+  String get supportCopyNumber;
+
+  /// No description provided for @supportOpenInstapay.
+  ///
+  /// In ar, this message translates to:
+  /// **'فتح إنستاباي'**
+  String get supportOpenInstapay;
+
+  /// No description provided for @supportCopyAddress.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسخ عنوان الدفع'**
+  String get supportCopyAddress;
+
+  /// No description provided for @supportLinkFailed.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعذّر فتح إنستاباي. انسخ عنوان الدفع واستخدمه في تطبيق الدفع.'**
+  String get supportLinkFailed;
+
+  /// No description provided for @supportEtisalat.
+  ///
+  /// In ar, this message translates to:
+  /// **'اتصالات كاش'**
+  String get supportEtisalat;
+
+  /// No description provided for @supportVodafone.
+  ///
+  /// In ar, this message translates to:
+  /// **'فودافون كاش'**
+  String get supportVodafone;
 }
 
 class _AppLocalizationsDelegate

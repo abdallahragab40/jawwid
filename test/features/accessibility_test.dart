@@ -7,6 +7,7 @@ import 'package:rattil/app/shell.dart';
 import 'package:rattil/content/language.dart';
 import 'package:rattil/content/models.dart';
 import 'package:rattil/features/more/more_screen.dart';
+import 'package:rattil/features/more/contact_screen.dart';
 import 'package:rattil/features/study/study_state.dart';
 import 'package:rattil/l10n/generated/app_localizations.dart';
 
@@ -72,6 +73,16 @@ void main() {
         'settings',
         () =>
             nav.push(MaterialPageRoute(builder: (_) => const SettingsScreen())),
+      );
+      await screen(
+        'feedback',
+        () =>
+            nav.push(MaterialPageRoute(builder: (_) => const FeedbackScreen())),
+      );
+      await screen(
+        'support',
+        () =>
+            nav.push(MaterialPageRoute(builder: (_) => const SupportScreen())),
       );
       expect(problems, isEmpty, reason: problems.join('\n\n'));
       expect(l.navHome, isNotEmpty);
