@@ -323,6 +323,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           child: LinearProgressIndicator(
             value: (_index + (_answered ? 1 : 0)) / _questions.length,
             minHeight: 3,
+            backgroundColor: dark
+                ? RattilColors.nightLine
+                : RattilColors.emerald50,
           ),
         ),
       ),
