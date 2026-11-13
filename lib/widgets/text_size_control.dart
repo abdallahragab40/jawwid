@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../app/theme.dart';
+import '../core/numerals.dart';
 import '../features/study/study_state.dart';
 import '../l10n/generated/app_localizations.dart';
 
@@ -19,6 +20,13 @@ class LessonTextSizeControl extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final code = Localizations.localeOf(context).languageCode;
+    // ٪ and Arabic-Indic digits in Arabic and Kurdish.
+    String percent(double v) {
+      final digits = formatInt((v * 100).round(), code);
+      return code == 'ar' || code == 'ckb' ? '$digits٪' : '$digits%';
+    }
+
     double clamp(double v) => v.clamp(lessonTextScaleMin, lessonTextScaleMax);
     return Row(
       children: [
@@ -39,8 +47,8 @@ class LessonTextSizeControl extends StatelessWidget {
             max: lessonTextScaleMax,
             divisions: ((lessonTextScaleMax - lessonTextScaleMin) / _step)
                 .round(),
-            label: '${(value * 100).round()}%',
-            semanticFormatterCallback: (v) => '${(v * 100).round()}%',
+            label: percent(value),
+            semanticFormatterCallback: percent,
             onChanged: onChanged,
           ),
         ),

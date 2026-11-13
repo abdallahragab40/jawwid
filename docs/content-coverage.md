@@ -84,7 +84,7 @@ Landmark coordinates are the book's own vector marker positions (identical in AR
 * **Lesson text** in all four languages (the native lessons above), so Arabic and Kurdish learners can now search the full content of their own edition; a hit opens the lesson at the matching section.
 
 ## Interface strings
-208 keys × 4 languages (`lib/l10n/arb`). Arabic, English and Indonesian written for the app; Kurdish written for the app and **needs fluent Sorani review**, as do the Kurdish framework localisations in `lib/l10n/ckb_localizations.dart`.
+245 keys × 4 languages (`lib/l10n/arb`). Arabic, English and Indonesian written for the app; Kurdish written for the app and **needs fluent Sorani review**, as do the Kurdish framework localisations in `lib/l10n/ckb_localizations.dart`.
 
 ## What is shown where
 * **Preview channel** (debug/profile builds, or `--dart-define=RATTIL_CONTENT_CHANNEL=preview`): everything above, with draft cards/questions marked "Development preview".

@@ -28,13 +28,17 @@ Future<List<String>> _check(WidgetTester tester, String where) async {
 }
 
 void main() {
-  for (final lang in AppLanguage.values) {
-    testWidgets('${lang.code}: main screens meet the accessibility '
-        'guidelines', (tester) async {
+  for (final (lang, theme) in [
+    for (final l in AppLanguage.values) (l, AppThemeChoice.light),
+    (AppLanguage.ar, AppThemeChoice.dark),
+    (AppLanguage.en, AppThemeChoice.dark),
+  ]) {
+    testWidgets('${lang.code} (${theme.name}): main screens meet the '
+        'accessibility guidelines', (tester) async {
       final handle = tester.ensureSemantics();
       await pumpApp(
         tester,
-        initial: StudyState(language: lang, welcomed: true),
+        initial: StudyState(language: lang, welcomed: true, appTheme: theme),
       );
       final l = lookupAppLocalizations(lang.locale);
       final problems = <String>[];

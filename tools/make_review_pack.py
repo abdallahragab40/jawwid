@@ -137,6 +137,21 @@ def main():
                 + '</section>')
         sections.append(''.join(parts))
 
+    # Interface strings (for the language reviewers, Kurdish above all).
+    arb = {c: json.load(open(os.path.join(ROOT, 'lib', 'l10n', 'arb', f'app_{c}.arb'), encoding='utf-8'))
+           for c, _, _ in LANGS}
+    keys = [k for k in arb['en'] if not k.startswith('@')]
+    string_rows = []
+    for k in keys:
+        rows.append({'id': k, 'kind': 'string', 'topic': '', 'type': 'interface', 'status': ''})
+        cells = ''.join(f'<td dir="{d}">{esc(arb[c].get(k, ""))}</td>' for c, _, d in LANGS)
+        string_rows.append(f'<tr><th><code>{esc(k)}</code></th>{cells}</tr>')
+    toc.append(f'<li><a href="#strings">Interface strings</a> ({len(keys)})</li>')
+    sections.append('<h2 id="strings">Interface strings</h2><p>Words on buttons, tabs and messages. '
+                    'Wording fixes go in the <i>note</i> / <i>kurdish_note</i> columns of the row with the same key.</p>'
+                    '<table class="strings"><tr><th>key</th>' + ''.join(f'<th>{n}</th>' for _, n, _ in LANGS) + '</tr>'
+                    + ''.join(string_rows) + '</table>')
+
     os.makedirs(OUT, exist_ok=True)
     page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -160,12 +175,14 @@ def main():
  .prompt {{ font-weight: 600; margin: 0 0 4px; }} .expl {{ color: #3c4a44; margin: 4px 0 0; }}
  ul.opts, ul.sort {{ margin: 0; padding-inline-start: 18px; }} ul.opts li.ok {{ color: #1b7a4b; font-weight: 700; }}
  .src {{ color: #86662a; font-size: 12px; }}
+ table.strings {{ border-collapse: collapse; font-size: 14px; }}
+ table.strings th, table.strings td {{ border: 1px solid #e2daca; padding: 4px 6px; vertical-align: top; text-align: start; }}
  .how {{ background: #eef5f1; border-radius: 12px; padding: 12px 16px; }}
  @media print {{ body {{ background: #fff; }} .item {{ border-color: #bbb; }} }}
 </style></head><body>
 <h1>Jawwid — review pack</h1>
 <div class="how">
-<p><b>{len(rows)} items</b>: {sum(1 for r in rows if r["kind"] == "rule card")} rule cards and {sum(1 for r in rows if r["kind"] == "question")} practice questions, grouped by topic. Everything is <b>draft</b> until approved; only approved items appear in the released app.</p>
+<p><b>{sum(1 for r in rows if r["kind"] == "rule card")} rule cards and {sum(1 for r in rows if r["kind"] == "question")} practice questions</b>, grouped by topic, then the <b>{sum(1 for r in rows if r["kind"] == "string")} interface strings</b>. Everything is <b>draft</b> until approved; only approved items appear in the released app.</p>
 <p><b>How to review:</b> open <code>review.csv</code> (Excel or Google Sheets). For each id, write <code>ok</code> in <i>decision</i>, or <code>change</code> with what to change in <i>note</i>. A Kurdish reviewer writes wording fixes in <i>kurdish_note</i>. Then send the file back; <code>tools/apply_review.py</code> approves the <code>ok</code> rows and lists the changes.</p>
 <p><b>What to check:</b> the highlighted letters and the rule; that the marked answer is right and the others wrong; that each explanation matches the book; that the four languages say the same thing. Qur'anic text is copied verbatim from Tanzil and checked automatically.</p>
 </div>

@@ -42,6 +42,10 @@ def main():
         kind, rid = r.get('kind', '').strip(), r.get('id', '').strip()
         decision = r.get('decision', '').strip().lower()
         note, knote = r.get('note', '').strip(), r.get('kurdish_note', '').strip()
+        if kind == 'string':  # interface wording: notes only
+            if note or knote:
+                changes.append((rid, kind, '', decision or '—', note, knote))
+            continue
         item = index.get(kind, {}).get(rid)
         if item is None:
             if decision or note or knote:

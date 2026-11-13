@@ -76,7 +76,8 @@ class WelcomeScreen extends ConsumerWidget {
             const SizedBox(height: 18),
             feature(Icons.menu_book_outlined, l10n.welcomeLessons),
             feature(Icons.auto_stories_outlined, l10n.welcomeBook),
-            feature(Icons.bolt, l10n.welcomePractice),
+            if (ref.watch(contentProvider).questions.isNotEmpty)
+              feature(Icons.bolt, l10n.welcomePractice),
             const SizedBox(height: 22),
             Text(
               l10n.welcomeChooseLanguage,

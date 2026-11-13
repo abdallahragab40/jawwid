@@ -99,8 +99,11 @@ class HomeScreen extends ConsumerWidget {
                       language: lang,
                     ),
                   ),
-                  const SizedBox(width: 12),
-                  Expanded(child: _PracticeTile(language: lang)),
+                  // Release builds show practice only once it is reviewed.
+                  if (content.questions.isNotEmpty) ...[
+                    const SizedBox(width: 12),
+                    Expanded(child: _PracticeTile(language: lang)),
+                  ],
                 ],
               ),
             ),

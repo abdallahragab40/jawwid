@@ -454,6 +454,11 @@ void main() {
   ) async {
     await pumpApp(tester, channel: ContentChannel.release);
     final ar = l10nOf('ar');
+    // Home: progress, but no practice tile until questions are reviewed.
+    expect(find.text(ar.homeProgressTitle), findsOneWidget);
+    expect(find.text(ar.practiceQuick), findsNothing);
+    expect(find.text(ar.homePracticeTeaser), findsNothing);
+    expect(tester.takeException(), isNull);
     await tester.tap(find.text(ar.navRules).last);
     await tester.pumpAndSettle();
     expect(find.text(ar.rulesAwaitingReview), findsOneWidget);
@@ -461,6 +466,14 @@ void main() {
     await tester.tap(find.text(ar.navPractice).last);
     await tester.pumpAndSettle();
     expect(find.text(ar.practiceAwaitingReview), findsOneWidget);
+  });
+
+  testWidgets('release channel: the welcome screen does not promise '
+      'practice that is not available yet', (tester) async {
+    await pumpApp(tester, channel: ContentChannel.release, welcomed: false);
+    final ar = l10nOf('ar');
+    expect(find.text(ar.welcomeLessons), findsOneWidget);
+    expect(find.text(ar.welcomePractice), findsNothing);
   });
 
   for (final lang in AppLanguage.values) {
