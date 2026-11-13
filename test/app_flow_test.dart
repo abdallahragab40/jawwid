@@ -59,8 +59,13 @@ void main() {
       tester.platformDispatcher.localesTestValue = const [Locale('en', 'US')];
       tester.platformDispatcher.localeTestValue = const Locale('en', 'US');
       addTearDown(tester.platformDispatcher.clearAllTestValues);
-      await pumpApp(tester);
+      await pumpApp(tester, welcomed: false);
       final ar = l10nOf('ar');
+      // The welcome screen comes first, already in Arabic.
+      expect(find.text(ar.welcomeChooseLanguage), findsOneWidget);
+      final wctx = tester.element(find.text(ar.welcomeStart));
+      expect(Directionality.of(wctx), TextDirection.rtl);
+      await tapText(tester, ar.welcomeStart);
       expect(find.text(ar.navHome), findsWidgets);
       expect(find.text(ar.homeStartTitle), findsOneWidget);
       final ctx = tester.element(find.text(ar.navHome).first);
@@ -68,6 +73,22 @@ void main() {
       expect(Localizations.localeOf(ctx), const Locale('ar'));
     },
   );
+
+  testWidgets('choosing a language on the welcome screen switches the app; '
+      'data saved before the welcome screen existed skips it', (tester) async {
+    final container = await pumpApp(tester, welcomed: false);
+    await tapText(tester, 'English');
+    final en = l10nOf('en');
+    expect(find.text(en.welcomeChooseLanguage), findsOneWidget);
+    await tapText(tester, en.welcomeStart);
+    expect(find.text(en.navHome), findsWidgets);
+    final saved = container.read(studyProvider);
+    expect(saved.welcomed, isTrue);
+    expect(saved.language, AppLanguage.en);
+    expect(StudyState.fromJson(saved.toJson()).welcomed, isTrue);
+    expect(StudyState.fromJson({'language': 'ar'}).welcomed, isTrue);
+    expect(StudyState.fromJson({'schemaVersion': 1}).welcomed, isFalse);
+  });
 
   testWidgets(
     'Arabic flow: home → topics → lesson → its book page → rule card → practice → saved progress',

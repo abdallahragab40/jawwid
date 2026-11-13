@@ -92,6 +92,31 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String welcomeIntro(String book) {
+    return 'Belajar tajwid langkah demi langkah bersama buku «$book».';
+  }
+
+  @override
+  String get welcomeLessons => 'Pelajaran jelas dari teks buku itu sendiri';
+
+  @override
+  String get welcomeBook => 'Halaman asli buku selalu tersedia';
+
+  @override
+  String get welcomePractice =>
+      'Latihan singkat dengan penjelasan setiap jawaban';
+
+  @override
+  String get welcomeChooseLanguage => 'Pilih bahasamu';
+
+  @override
+  String get welcomeLanguageLater =>
+      'Kamu bisa mengubahnya nanti di Pengaturan.';
+
+  @override
+  String get welcomeStart => 'Mulai belajar';
+
+  @override
   String get homeProgressTitle => 'Kemajuanmu';
 
   @override

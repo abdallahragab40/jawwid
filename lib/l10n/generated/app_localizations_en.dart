@@ -92,6 +92,30 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String welcomeIntro(String book) {
+    return 'Learn Tajweed step by step with the book «$book».';
+  }
+
+  @override
+  String get welcomeLessons => 'Clear lessons from the book’s own text';
+
+  @override
+  String get welcomeBook => 'The original book pages, always at hand';
+
+  @override
+  String get welcomePractice =>
+      'Short practice sessions that explain every answer';
+
+  @override
+  String get welcomeChooseLanguage => 'Choose your language';
+
+  @override
+  String get welcomeLanguageLater => 'You can change it later in Settings.';
+
+  @override
+  String get welcomeStart => 'Start learning';
+
+  @override
   String get homeProgressTitle => 'Your progress';
 
   @override

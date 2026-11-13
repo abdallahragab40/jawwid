@@ -92,6 +92,31 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String welcomeIntro(String book) {
+    return 'فێربوونی تەجوید هەنگاو بە هەنگاو لەگەڵ کتێبی «$book».';
+  }
+
+  @override
+  String get welcomeLessons => 'وانەی ڕوون لە دەقی خودی کتێبەکەوە';
+
+  @override
+  String get welcomeBook => 'لاپەڕە ڕەسەنەکانی کتێب هەمیشە لە بەردەستتن';
+
+  @override
+  String get welcomePractice =>
+      'ڕاهێنانی کورت لەگەڵ ڕوونکردنەوە بۆ هەر وەڵامێک';
+
+  @override
+  String get welcomeChooseLanguage => 'زمانەکەت هەڵبژێرە';
+
+  @override
+  String get welcomeLanguageLater =>
+      'دەتوانیت دواتر لە ڕێکخستنەکانەوە بیگۆڕیت.';
+
+  @override
+  String get welcomeStart => 'دەست بە فێربوون بکە';
+
+  @override
   String get homeProgressTitle => 'پێشکەوتنت';
 
   @override

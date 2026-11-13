@@ -101,6 +101,36 @@
       }
     }
   },
+  "welcomeIntro": "تعلّم التجويد خطوة بخطوة مع كتاب «{book}».",
+  "@welcomeIntro": {
+    "description": "First launch: one-line introduction. {book} is the edition title",
+    "placeholders": {
+      "book": {
+        "type": "String"
+      }
+    }
+  },
+  "welcomeLessons": "دروس واضحة من نصّ الكتاب نفسه",
+  "@welcomeLessons": {
+    "description": "First launch: feature"
+  },
+  "welcomeBook": "صفحات الكتاب الأصلية دائمًا في متناولك",
+  "@welcomeBook": {
+    "description": "First launch: feature"
+  },
+  "welcomePractice": "تدريبات قصيرة مع شرح لكل إجابة",
+  "@welcomePractice": {
+    "description": "First launch: feature"
+  },
+  "welcomeChooseLanguage": "اختر لغتك",
+  "@welcomeChooseLanguage": {
+    "description": "First launch: language picker heading"
+  },
+  "welcomeLanguageLater": "يمكنك تغييرها لاحقًا من الإعدادات.",
+  "welcomeStart": "ابدأ التعلّم",
+  "@welcomeStart": {
+    "description": "First launch: continue button"
+  },
   "homeProgressTitle": "تقدّمك",
   "@homeProgressTitle": {
     "description": "Home: progress tile heading"

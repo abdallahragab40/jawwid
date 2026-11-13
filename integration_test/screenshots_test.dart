@@ -65,8 +65,10 @@ void main() {
 
     final ctl = container.read(studyProvider.notifier);
 
-    // First launch is Arabic.
+    // First launch is Arabic and opens on the welcome screen.
     await shot('ar_00_first_launch');
+    ctl.setWelcomed();
+    await settle();
 
     // Scrolling in the real viewer updates the remembered position.
     openReader(nav.context, edition: 'ar', page: 41);

@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../content/language.dart';
 import '../core/reminder.dart';
 import '../features/study/study_state.dart';
+import '../features/welcome/welcome_screen.dart';
 import '../l10n/ckb_localizations.dart';
 import '../l10n/generated/app_localizations.dart';
 import 'branding.dart';
@@ -21,6 +22,7 @@ class RattilApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final language = ref.watch(languageProvider);
     final appTheme = ref.watch(studyProvider.select((s) => s.appTheme));
+    final welcomed = ref.watch(studyProvider.select((s) => s.welcomed));
     ref.watch(reminderSyncProvider);
     return MaterialApp(
       onGenerateTitle: (_) => Branding.name(language),
@@ -46,7 +48,12 @@ class RattilApp extends ConsumerWidget {
         AppThemeChoice.dark => ThemeMode.dark,
       },
       themeAnimationDuration: const Duration(milliseconds: 250),
-      home: home ?? const RootShell(),
+      home:
+          home ??
+          AnimatedSwitcher(
+            duration: const Duration(milliseconds: 350),
+            child: welcomed ? const RootShell() : const WelcomeScreen(),
+          ),
     );
   }
 }

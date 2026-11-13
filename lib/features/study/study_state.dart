@@ -173,6 +173,7 @@ class StudyState {
     this.reminderMinutes = 20 * 60,
     this.appTheme = AppThemeChoice.system,
     this.lessonTextScale = 1.0,
+    this.welcomed = false,
   });
 
   /// Arabic on first launch, regardless of device language.
@@ -208,6 +209,9 @@ class StudyState {
   /// Extra scale for lesson text, on top of the system text size.
   final double lessonTextScale;
 
+  /// The welcome screen has been seen (first launch only).
+  final bool welcomed;
+
   StudyState copyWith({
     AppLanguage? language,
     ReaderTheme? readerTheme,
@@ -225,6 +229,7 @@ class StudyState {
     int? reminderMinutes,
     AppThemeChoice? appTheme,
     double? lessonTextScale,
+    bool? welcomed,
   }) => StudyState(
     language: language ?? this.language,
     readerTheme: readerTheme ?? this.readerTheme,
@@ -242,6 +247,7 @@ class StudyState {
     reminderMinutes: reminderMinutes ?? this.reminderMinutes,
     appTheme: appTheme ?? this.appTheme,
     lessonTextScale: lessonTextScale ?? this.lessonTextScale,
+    welcomed: welcomed ?? this.welcomed,
   );
 
   TopicProgress progressOf(String topicId) =>
@@ -290,6 +296,7 @@ class StudyState {
     'reminder': {'enabled': reminderEnabled, 'minutes': reminderMinutes},
     'appTheme': appTheme.name,
     'lessonTextScale': lessonTextScale,
+    'welcomed': welcomed,
   };
 
   static StudyState fromJson(Map<String, dynamic> j) {
@@ -342,6 +349,9 @@ class StudyState {
         (t) => t.name == j['appTheme'],
         orElse: () => AppThemeChoice.system,
       ),
+      // Data saved before the welcome screen existed means it is not a
+      // first launch.
+      welcomed: j['welcomed'] as bool? ?? j.containsKey('language'),
       lessonTextScale: ((j['lessonTextScale'] as num?)?.toDouble() ?? 1.0)
           .clamp(lessonTextScaleMin, lessonTextScaleMax),
     );
@@ -412,6 +422,8 @@ class StudyController extends Notifier<StudyState> {
       _set(state.copyWith(hapticsEnabled: enabled));
   void setReminder({bool? enabled, int? minutes}) =>
       _set(state.copyWith(reminderEnabled: enabled, reminderMinutes: minutes));
+
+  void setWelcomed() => _set(state.copyWith(welcomed: true));
 
   void setAppTheme(AppThemeChoice theme) =>
       _set(state.copyWith(appTheme: theme));

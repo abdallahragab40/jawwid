@@ -81,15 +81,18 @@ Future<ProviderContainer> pumpApp(
   Size size = const Size(400, 860),
   FakeReminders? reminders,
   Random? random,
+  bool welcomed = true,
 }) async {
   tester.view.physicalSize = size * 3;
   tester.view.devicePixelRatio = 3;
   addTearDown(tester.view.reset);
-  final loaded =
+  final stored =
       initial ??
       (store == null
           ? const StudyState()
           : StudyState.fromJson(store.loadSync()));
+  // Tests start past the first-launch welcome unless they ask for it.
+  final loaded = welcomed ? stored.copyWith(welcomed: true) : stored;
   final container = ProviderContainer(
     overrides: [
       contentProvider.overrideWithValue(loadContent(channel: channel)),

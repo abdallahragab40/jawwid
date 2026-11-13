@@ -252,6 +252,48 @@ abstract class AppLocalizations {
   /// **'{topics} موضوعًا في {groups} وحدات'**
   String homeCurriculumSummary(String topics, String groups);
 
+  /// First launch: one-line introduction. {book} is the edition title
+  ///
+  /// In ar, this message translates to:
+  /// **'تعلّم التجويد خطوة بخطوة مع كتاب «{book}».'**
+  String welcomeIntro(String book);
+
+  /// First launch: feature
+  ///
+  /// In ar, this message translates to:
+  /// **'دروس واضحة من نصّ الكتاب نفسه'**
+  String get welcomeLessons;
+
+  /// First launch: feature
+  ///
+  /// In ar, this message translates to:
+  /// **'صفحات الكتاب الأصلية دائمًا في متناولك'**
+  String get welcomeBook;
+
+  /// First launch: feature
+  ///
+  /// In ar, this message translates to:
+  /// **'تدريبات قصيرة مع شرح لكل إجابة'**
+  String get welcomePractice;
+
+  /// First launch: language picker heading
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر لغتك'**
+  String get welcomeChooseLanguage;
+
+  /// No description provided for @welcomeLanguageLater.
+  ///
+  /// In ar, this message translates to:
+  /// **'يمكنك تغييرها لاحقًا من الإعدادات.'**
+  String get welcomeLanguageLater;
+
+  /// First launch: continue button
+  ///
+  /// In ar, this message translates to:
+  /// **'ابدأ التعلّم'**
+  String get welcomeStart;
+
   /// Home: progress tile heading
   ///
   /// In ar, this message translates to:

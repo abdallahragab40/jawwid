@@ -33,7 +33,9 @@ void main() {
           storeProvider.overrideWithValue(
             JsonStore(Directory.systemTemp.createTempSync('rattil_it_')),
           ),
-          initialStudyStateProvider.overrideWithValue(const StudyState()),
+          initialStudyStateProvider.overrideWithValue(
+            const StudyState(welcomed: true),
+          ),
         ],
       );
       addTearDown(container.dispose);

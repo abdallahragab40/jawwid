@@ -92,6 +92,29 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String welcomeIntro(String book) {
+    return 'تعلّم التجويد خطوة بخطوة مع كتاب «$book».';
+  }
+
+  @override
+  String get welcomeLessons => 'دروس واضحة من نصّ الكتاب نفسه';
+
+  @override
+  String get welcomeBook => 'صفحات الكتاب الأصلية دائمًا في متناولك';
+
+  @override
+  String get welcomePractice => 'تدريبات قصيرة مع شرح لكل إجابة';
+
+  @override
+  String get welcomeChooseLanguage => 'اختر لغتك';
+
+  @override
+  String get welcomeLanguageLater => 'يمكنك تغييرها لاحقًا من الإعدادات.';
+
+  @override
+  String get welcomeStart => 'ابدأ التعلّم';
+
+  @override
   String get homeProgressTitle => 'تقدّمك';
 
   @override
