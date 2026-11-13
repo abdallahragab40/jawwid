@@ -581,6 +581,27 @@
       }
     }
   },
+  "lessonCheckTitle": "اختبر فهمك",
+  "@lessonCheckTitle": {
+    "description": "Card at the end of a lesson"
+  },
+  "lessonCheckBody": "{count} أسئلة قصيرة على هذا الدرس",
+  "@lessonCheckBody": {
+    "description": "{count} is localized",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonCheckStart": "ابدأ",
+  "@lessonCheckStart": {
+    "description": "Button: start the end-of-lesson check"
+  },
+  "quizLessonCompleted": "أحسنت! سُجّل الدرس مكتملًا.",
+  "@quizLessonCompleted": {
+    "description": "Shown after the learner marks the lesson completed from the quiz result"
+  },
   "quizPracticeAgain": "جولة أخرى",
   "@quizPracticeAgain": {
     "description": "Button: start another practice session"

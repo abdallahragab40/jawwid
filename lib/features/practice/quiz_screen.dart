@@ -30,10 +30,14 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.topicId,
     this.ruleId,
     this.mistakesOnly = false,
+    this.limit = quizSessionSize,
   });
   final String? topicId;
   final String? ruleId;
   final bool mistakesOnly;
+
+  /// Number of questions in the session.
+  final int limit;
 
   @override
   ConsumerState<QuizScreen> createState() => _QuizScreenState();
@@ -79,6 +83,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       quiz,
       random,
       mistakesOnly: widget.mistakesOnly,
+      limit: widget.limit,
     );
     _order = [
       for (final q in _questions)
@@ -137,6 +142,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         correct: _correct,
         total: _questions.length,
         missed: _missed,
+        topicId: widget.topicId,
         onAgain: () => Navigator.of(context).pushReplacement(
           MaterialPageRoute(
             settings: const RouteSettings(name: 'quiz'),
@@ -144,6 +150,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               topicId: widget.topicId,
               ruleId: widget.ruleId,
               mistakesOnly: widget.mistakesOnly,
+              limit: widget.limit,
             ),
           ),
         ),
@@ -468,10 +475,14 @@ class _SessionEnd extends ConsumerWidget {
     required this.total,
     required this.missed,
     required this.onAgain,
+    this.topicId,
   });
   final int correct;
   final int total;
   final List<Question> missed;
+
+  /// Set for a session on one lesson: offers to mark it completed.
+  final String? topicId;
   final VoidCallback onAgain;
 
   @override
@@ -592,6 +603,50 @@ class _SessionEnd extends ConsumerWidget {
               ),
               const SizedBox(height: 10),
             ],
+          ],
+          if (topicId != null) ...[
+            const SizedBox(height: 18),
+            Consumer(
+              builder: (context, ref, _) {
+                final done =
+                    ref.watch(
+                      studyProvider.select((s) => s.progressOf(topicId!)),
+                    ) ==
+                    TopicProgress.completed;
+                return done
+                    ? Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.check_circle,
+                            color: LessonColors.correctFor(
+                              Theme.of(context).brightness,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Flexible(
+                            child: Text(
+                              l10n.quizLessonCompleted,
+                              style: context.type.ui(
+                                size: 14.5,
+                                weight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    : FilledButton.tonalIcon(
+                        icon: const Icon(Icons.check_circle_outline),
+                        label: Text(l10n.topicMarkCompleted),
+                        onPressed: () {
+                          ref.read(hapticsProvider).success();
+                          ref
+                              .read(studyProvider.notifier)
+                              .setTopicCompleted(topicId!, true);
+                        },
+                      );
+              },
+            ),
           ],
           const SizedBox(height: 18),
           FilledButton.icon(

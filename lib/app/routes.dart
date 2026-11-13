@@ -5,6 +5,7 @@ import '../features/curriculum/topic_screen.dart';
 import '../features/lessons/lesson_screen.dart';
 import '../features/makharij/makharij_screen.dart';
 import '../features/practice/quiz_screen.dart';
+import '../features/practice/session.dart';
 import '../features/reader/reader_screen.dart';
 import '../features/rules/rule_card_screen.dart';
 import '../features/search/search_screen.dart';
@@ -64,6 +65,7 @@ Future<void> openQuiz(
   String? topicId,
   String? ruleId,
   bool mistakesOnly = false,
+  int limit = quizSessionSize,
 }) => Navigator.of(context).push(
   MaterialPageRoute(
     settings: const RouteSettings(name: 'quiz'),
@@ -71,6 +73,7 @@ Future<void> openQuiz(
       topicId: topicId,
       ruleId: ruleId,
       mistakesOnly: mistakesOnly,
+      limit: limit,
     ),
   ),
 );

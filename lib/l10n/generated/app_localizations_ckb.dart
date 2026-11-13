@@ -600,6 +600,20 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get lessonCheckTitle => 'تێگەیشتنت تاقی بکەرەوە';
+
+  @override
+  String lessonCheckBody(String count) {
+    return '$count پرسیاری کورت لەسەر ئەم وانەیە';
+  }
+
+  @override
+  String get lessonCheckStart => 'دەست پێبکە';
+
+  @override
+  String get quizLessonCompleted => 'دەستخۆش! وانەکە وەک تەواوکراو تۆمارکرا.';
+
+  @override
   String get quizPracticeAgain => 'خولێکی تر';
 
   @override

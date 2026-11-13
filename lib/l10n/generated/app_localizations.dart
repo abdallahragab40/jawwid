@@ -1102,6 +1102,30 @@ abstract class AppLocalizations {
   /// **'راجع أخطائي ({count})'**
   String practiceMistakes(String count);
 
+  /// Card at the end of a lesson
+  ///
+  /// In ar, this message translates to:
+  /// **'اختبر فهمك'**
+  String get lessonCheckTitle;
+
+  /// {count} is localized
+  ///
+  /// In ar, this message translates to:
+  /// **'{count} أسئلة قصيرة على هذا الدرس'**
+  String lessonCheckBody(String count);
+
+  /// Button: start the end-of-lesson check
+  ///
+  /// In ar, this message translates to:
+  /// **'ابدأ'**
+  String get lessonCheckStart;
+
+  /// Shown after the learner marks the lesson completed from the quiz result
+  ///
+  /// In ar, this message translates to:
+  /// **'أحسنت! سُجّل الدرس مكتملًا.'**
+  String get quizLessonCompleted;
+
   /// Button: start another practice session
   ///
   /// In ar, this message translates to:

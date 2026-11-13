@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rattil/content/language.dart';
+import 'package:rattil/app/routes.dart';
 import 'package:rattil/content/models.dart';
 import 'package:rattil/features/practice/quiz_screen.dart';
 import 'package:rattil/features/practice/session.dart';
@@ -43,6 +44,57 @@ void main() {
       expect(find.text(ar.quizFeedbackCorrect), findsOneWidget);
     }
     expect(positions.length, greaterThan(1));
+  });
+
+  testWidgets('a lesson ends with a 3-question check that can mark the '
+      'lesson completed', (tester) async {
+    final container = await pumpApp(tester, random: Random(5));
+    final content = loadContent();
+    final nav = tester.state<NavigatorState>(find.byType(Navigator).first);
+    openLesson(nav.context, 't11');
+    await tester.pumpAndSettle();
+    final check = find.text(ar.lessonCheckStart);
+    await tester.scrollUntilVisible(
+      check,
+      600,
+      scrollable: find.byType(Scrollable).last,
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(check);
+    await tester.pumpAndSettle();
+    for (var i = 0; i < 3; i++) {
+      final state = tester.state(find.byType(QuizScreen)) as dynamic;
+      final q = state.currentQuestion as Question;
+      expect(q.topicId, 't11');
+      await tester.tap(
+        find.text(answerLabel(q, content, AppLanguage.ar, ar)).first,
+      );
+      await tester.pumpAndSettle();
+      final next = find.text(i < 2 ? ar.quizNext : ar.quizSeeResult);
+      await tester.scrollUntilVisible(
+        next,
+        300,
+        scrollable: find.byType(Scrollable).last,
+      );
+      await tester.pumpAndSettle();
+      await tester.tap(next);
+      await tester.pumpAndSettle();
+    }
+    expect(find.text(ar.quizPerfect), findsOneWidget);
+    final mark = find.text(ar.topicMarkCompleted);
+    await tester.scrollUntilVisible(
+      mark,
+      300,
+      scrollable: find.byType(Scrollable).last,
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(mark);
+    await tester.pumpAndSettle();
+    expect(
+      container.read(studyProvider).progressOf('t11'),
+      TopicProgress.completed,
+    );
+    expect(find.text(ar.quizLessonCompleted), findsOneWidget);
   });
 
   group('sessions', () {

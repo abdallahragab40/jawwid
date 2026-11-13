@@ -595,6 +595,20 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get lessonCheckTitle => 'اختبر فهمك';
+
+  @override
+  String lessonCheckBody(String count) {
+    return '$count أسئلة قصيرة على هذا الدرس';
+  }
+
+  @override
+  String get lessonCheckStart => 'ابدأ';
+
+  @override
+  String get quizLessonCompleted => 'أحسنت! سُجّل الدرس مكتملًا.';
+
+  @override
   String get quizPracticeAgain => 'جولة أخرى';
 
   @override

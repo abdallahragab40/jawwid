@@ -600,6 +600,20 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get lessonCheckTitle => 'Uji pemahamanmu';
+
+  @override
+  String lessonCheckBody(String count) {
+    return '$count soal singkat tentang pelajaran ini';
+  }
+
+  @override
+  String get lessonCheckStart => 'Mulai';
+
+  @override
+  String get quizLessonCompleted => 'Bagus! Pelajaran ditandai selesai.';
+
+  @override
   String get quizPracticeAgain => 'Satu putaran lagi';
 
   @override

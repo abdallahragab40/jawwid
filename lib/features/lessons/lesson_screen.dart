@@ -398,11 +398,14 @@ class _LessonEnd extends ConsumerWidget {
             ),
           ),
           if (hasPractice) ...[
-            const SizedBox(height: 8),
-            OutlinedButton.icon(
-              icon: const Icon(Icons.task_alt),
-              label: Text(l10n.practiceThisLesson),
-              onPressed: () => openQuiz(context, topicId: topicId),
+            const SizedBox(height: 10),
+            _LessonCheckCard(
+              count: content
+                  .questionsForTopic(topicId)
+                  .length
+                  .clamp(1, lessonCheckSize),
+              onStart: () =>
+                  openQuiz(context, topicId: topicId, limit: lessonCheckSize),
             ),
           ],
           if (rules.isNotEmpty) ...[
@@ -1043,6 +1046,64 @@ class _LessonTextState extends ConsumerState<LessonText> {
       child: Text.rich(
         TextSpan(style: base, children: children),
         textAlign: widget.textAlign,
+      ),
+    );
+  }
+}
+
+/// Questions in the check at the end of a lesson.
+const lessonCheckSize = 3;
+
+class _LessonCheckCard extends ConsumerWidget {
+  const _LessonCheckCard({required this.count, required this.onStart});
+  final int count;
+  final VoidCallback onStart;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final lang = ref.watch(languageProvider);
+    final dark = context.isDark;
+    final gold = dark ? RattilColors.goldLight : RattilColors.goldText;
+    return Material(
+      color: (dark ? RattilColors.goldLight : RattilColors.gold).withValues(
+        alpha: dark ? 0.14 : 0.12,
+      ),
+      borderRadius: BorderRadius.circular(18),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(18),
+        onTap: onStart,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.psychology_alt_outlined, size: 30, color: gold),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      l10n.lessonCheckTitle,
+                      style: context.type.heading(size: 17),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              Text(
+                l10n.lessonCheckBody(n(count, lang)),
+                style: context.type.muted(size: 13),
+              ),
+              const SizedBox(height: 10),
+              FilledButton.icon(
+                icon: const Icon(Icons.play_arrow),
+                onPressed: onStart,
+                label: Text(l10n.lessonCheckStart),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
