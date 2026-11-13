@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/routes.dart';
 import '../../app/theme.dart';
+import '../../content/content_repository.dart';
 import '../../content/language.dart';
 import '../../content/models.dart';
 import '../../core/numerals.dart';
@@ -14,18 +15,25 @@ import '../../widgets/ornaments.dart';
 import '../../widgets/quran_excerpt_view.dart';
 import '../study/study_state.dart';
 import '../../core/haptics.dart';
+import 'session.dart';
 
 /// Source of randomness for option order; overridden in tests.
 final quizRandomProvider = Provider<Random>((_) => Random());
 
-/// A practice session over the visible questions (optionally one lesson or
-/// one rule). Unanswered and previously missed questions come first. The
-/// options of each question are shown in a random order, so the position of
-/// the right answer gives nothing away.
+/// A short practice session (see [buildSession]) over the visible questions,
+/// optionally of one lesson or one rule, or only the questions missed last
+/// time. The options of each question are shown in a random order, so the
+/// position of the right answer gives nothing away.
 class QuizScreen extends ConsumerStatefulWidget {
-  const QuizScreen({super.key, this.topicId, this.ruleId});
+  const QuizScreen({
+    super.key,
+    this.topicId,
+    this.ruleId,
+    this.mistakesOnly = false,
+  });
   final String? topicId;
   final String? ruleId;
+  final bool mistakesOnly;
 
   @override
   ConsumerState<QuizScreen> createState() => _QuizScreenState();
@@ -38,6 +46,12 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   late final List<List<int>> _order;
   int _index = 0;
   int _correct = 0;
+  final _missed = <Question>[];
+
+  /// The question on screen, or null on the result page.
+  @visibleForTesting
+  Question? get currentQuestion =>
+      _index < _questions.length ? _questions[_index] : null;
   Object? _choice; // String rule id, int index, or bool
   bool _answered = false;
 
@@ -59,18 +73,13 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           if (q.relatedRuleId == widget.ruleId) q,
       ];
     }
-    int rank(Question q) {
-      final r = quiz[q.id];
-      if (r == null) return 0;
-      return r.lastCorrect ? 2 : 1;
-    }
-
-    _questions = [...qs]
-      ..sort((a, b) {
-        final c = rank(a).compareTo(rank(b));
-        return c != 0 ? c : a.id.compareTo(b.id);
-      });
     final random = ref.read(quizRandomProvider);
+    _questions = buildSession(
+      qs,
+      quiz,
+      random,
+      mistakesOnly: widget.mistakesOnly,
+    );
     _order = [
       for (final q in _questions)
         List<int>.generate(switch (q.type) {
@@ -94,7 +103,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     setState(() {
       _choice = choice;
       _answered = true;
-      if (ok) _correct++;
+      if (ok) {
+        _correct++;
+      } else {
+        _missed.add(q);
+      }
     });
     ref.read(studyProvider.notifier).recordAnswer(q.id, ok);
     final h = ref.read(hapticsProvider);
@@ -120,34 +133,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       );
     }
     if (_index >= _questions.length) {
-      return Scaffold(
-        appBar: AppBar(title: Text(l10n.practiceTitle)),
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(28),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Rosette(size: 44),
-                const SizedBox(height: 16),
-                Text(l10n.quizFinished, style: context.type.heading(size: 22)),
-                const SizedBox(height: 8),
-                Text(
-                  l10n.quizScore(n(_correct, lang), n(_questions.length, lang)),
-                  style: context.type.ui(size: 16),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  l10n.quizFinishedHint,
-                  style: context.type.muted(size: 13.5),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 20),
-                FilledButton(
-                  onPressed: () => Navigator.pop(context),
-                  child: Text(l10n.actionDone),
-                ),
-              ],
+      return _SessionEnd(
+        correct: _correct,
+        total: _questions.length,
+        missed: _missed,
+        onAgain: () => Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            settings: const RouteSettings(name: 'quiz'),
+            builder: (_) => QuizScreen(
+              topicId: widget.topicId,
+              ruleId: widget.ruleId,
+              mistakesOnly: widget.mistakesOnly,
             ),
           ),
         ),
@@ -437,6 +433,178 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
               ),
             ),
           ],
+        ],
+      ),
+    );
+  }
+}
+
+/// The correct answer of [q], as shown to the learner.
+String answerLabel(
+  Question q,
+  ContentRepository content,
+  AppLanguage lang,
+  AppLocalizations l10n,
+) {
+  switch (q.type) {
+    case QuestionType.identify:
+      return content.rule(q.answerRuleId!)?.title.of(lang.code) ?? '';
+    case QuestionType.trueFalse:
+      return q.answerBool! ? l10n.quizTrue : l10n.quizFalse;
+    case QuestionType.choice:
+      final c = q.choices[q.answerIndex!];
+      if (c.text != null) return c.text!.of(lang.code);
+      if (c.arabic != null) return c.arabic!;
+      if (c.counts != null) {
+        return l10n.quizCounts(localizeDigits(c.counts!, lang.code));
+      }
+      return localizeDigits(c.number!, lang.code);
+  }
+}
+
+class _SessionEnd extends ConsumerWidget {
+  const _SessionEnd({
+    required this.correct,
+    required this.total,
+    required this.missed,
+    required this.onAgain,
+  });
+  final int correct;
+  final int total;
+  final List<Question> missed;
+  final VoidCallback onAgain;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final lang = ref.watch(languageProvider);
+    final content = ref.watch(contentProvider);
+    final dark = context.isDark;
+    final scheme = Theme.of(context).colorScheme;
+    final ratio = total == 0 ? 0.0 : correct / total;
+    return Scaffold(
+      appBar: AppBar(title: Text(l10n.practiceTitle)),
+      body: ListView(
+        padding: const EdgeInsets.fromLTRB(16, 20, 16, 28),
+        children: [
+          Center(
+            child: TweenAnimationBuilder<double>(
+              tween: Tween(begin: 0, end: ratio),
+              duration: const Duration(milliseconds: 900),
+              curve: Curves.easeOutCubic,
+              builder: (context, v, _) => SizedBox(
+                width: 132,
+                height: 132,
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    SizedBox.expand(
+                      child: CircularProgressIndicator(
+                        value: v,
+                        strokeWidth: 10,
+                        strokeCap: StrokeCap.round,
+                        backgroundColor: dark
+                            ? RattilColors.nightLine
+                            : RattilColors.emerald50,
+                        color: dark
+                            ? RattilColors.emeraldLight
+                            : RattilColors.emerald700,
+                      ),
+                    ),
+                    Text(
+                      '${n(correct, lang)}/${n(total, lang)}',
+                      style: context.type.heading(size: 28),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            missed.isEmpty ? l10n.quizPerfect : l10n.quizFinished,
+            style: context.type.heading(size: 22),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 6),
+          Text(
+            l10n.quizScore(n(correct, lang), n(total, lang)),
+            style: context.type.ui(size: 16),
+            textAlign: TextAlign.center,
+          ),
+          if (missed.isNotEmpty) ...[
+            const SizedBox(height: 4),
+            Text(
+              l10n.quizFinishedHint,
+              style: context.type.muted(size: 13.5),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 18),
+            SectionHeading(l10n.quizMissedHeading),
+            for (final q in missed) ...[
+              Card(
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(18),
+                  onTap: () => openTopic(context, q.topicId),
+                  child: Padding(
+                    padding: const EdgeInsets.all(14),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (q.example != null)
+                          QuranExcerptView(excerpt: q.example!, size: 24)
+                        else if (q.prompt != null)
+                          Text(
+                            q.prompt!.of(lang.code),
+                            style: context.type.ui(size: 14.5),
+                          ),
+                        const SizedBox(height: 6),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.check_circle,
+                              size: 18,
+                              color: LessonColors.correctFor(
+                                Theme.of(context).brightness,
+                              ),
+                            ),
+                            const SizedBox(width: 6),
+                            Expanded(
+                              child: Text(
+                                answerLabel(q, content, lang, l10n),
+                                style: context.type.ui(
+                                  size: 15,
+                                  weight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          q.explanation.of(lang.code),
+                          style: context.type.muted(size: 13.5),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+            ],
+          ],
+          const SizedBox(height: 18),
+          FilledButton.icon(
+            icon: const Icon(Icons.replay),
+            label: Text(l10n.quizPracticeAgain),
+            onPressed: onAgain,
+          ),
+          const SizedBox(height: 8),
+          OutlinedButton(
+            style: OutlinedButton.styleFrom(foregroundColor: scheme.primary),
+            onPressed: () => Navigator.pop(context),
+            child: Text(l10n.actionDone),
+          ),
         ],
       ),
     );

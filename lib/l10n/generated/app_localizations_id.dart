@@ -539,6 +539,28 @@ class AppLocalizationsId extends AppLocalizations {
       'Soal yang terlewat akan muncul lebih dulu lain kali.';
 
   @override
+  String get practiceQuick => 'Latihan cepat';
+
+  @override
+  String practiceQuickHint(String count) {
+    return '$count soal dari semua pelajaran, dimulai dari kesalahan sebelumnya.';
+  }
+
+  @override
+  String practiceMistakes(String count) {
+    return 'Ulangi kesalahan saya ($count)';
+  }
+
+  @override
+  String get quizPracticeAgain => 'Satu putaran lagi';
+
+  @override
+  String get quizMissedHeading => 'Untuk diulang';
+
+  @override
+  String get quizPerfect => 'Semua benar. Luar biasa!';
+
+  @override
   String get searchTitle => 'Cari';
 
   @override

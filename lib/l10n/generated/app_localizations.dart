@@ -1000,6 +1000,42 @@ abstract class AppLocalizations {
   /// **'ستظهر الأسئلة التي أخطأت فيها أولًا في المرة القادمة.'**
   String get quizFinishedHint;
 
+  /// Button: a short practice session across all lessons
+  ///
+  /// In ar, this message translates to:
+  /// **'تدريب سريع'**
+  String get practiceQuick;
+
+  /// {count} is localized
+  ///
+  /// In ar, this message translates to:
+  /// **'{count} أسئلة من كل الدروس، تبدأ بما أخطأت فيه سابقًا.'**
+  String practiceQuickHint(String count);
+
+  /// Button: practise only questions answered wrongly last time. {count} is localized
+  ///
+  /// In ar, this message translates to:
+  /// **'راجع أخطائي ({count})'**
+  String practiceMistakes(String count);
+
+  /// Button: start another practice session
+  ///
+  /// In ar, this message translates to:
+  /// **'جولة أخرى'**
+  String get quizPracticeAgain;
+
+  /// Heading above the questions missed in this session
+  ///
+  /// In ar, this message translates to:
+  /// **'للمراجعة'**
+  String get quizMissedHeading;
+
+  /// Shown when every answer in the session was correct
+  ///
+  /// In ar, this message translates to:
+  /// **'كلها صحيحة، أحسنت!'**
+  String get quizPerfect;
+
   /// No description provided for @searchTitle.
   ///
   /// In ar, this message translates to:

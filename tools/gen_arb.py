@@ -167,6 +167,12 @@ S = {
  'quizFinished': ('', 'أحسنت المتابعة', 'دەستخۆش', 'Well done for practising', 'Bagus, terus berlatih'),
  'quizScore': ('', 'أصبت في {correct} من {total}', '{correct} لە {total} دروست بوون', '{correct} of {total} correct', '{correct} dari {total} benar'),
  'quizFinishedHint': ('', 'ستظهر الأسئلة التي أخطأت فيها أولًا في المرة القادمة.', 'جاری داهاتوو ئەو پرسیارانەی هەڵەت تێدا کردوون یەکەم دەردەکەون.', 'Questions you missed will come first next time.', 'Soal yang terlewat akan muncul lebih dulu lain kali.'),
+ 'practiceQuick': ('Button: a short practice session across all lessons', 'تدريب سريع', 'ڕاهێنانی خێرا', 'Quick practice', 'Latihan cepat'),
+ 'practiceQuickHint': ('{count} is localized', '{count} أسئلة من كل الدروس، تبدأ بما أخطأت فيه سابقًا.', '{count} پرسیار لە هەموو وانەکان، سەرەتا ئەوانەی پێشتر هەڵەت تێدا کردوون.', '{count} questions from all lessons, starting with your earlier mistakes.', '{count} soal dari semua pelajaran, dimulai dari kesalahan sebelumnya.'),
+ 'practiceMistakes': ('Button: practise only questions answered wrongly last time. {count} is localized', 'راجع أخطائي ({count})', 'پێداچوونەوەی هەڵەکانم ({count})', 'Review my mistakes ({count})', 'Ulangi kesalahan saya ({count})'),
+ 'quizPracticeAgain': ('Button: start another practice session', 'جولة أخرى', 'خولێکی تر', 'Another round', 'Satu putaran lagi'),
+ 'quizMissedHeading': ('Heading above the questions missed in this session', 'للمراجعة', 'بۆ پێداچوونەوە', 'To review', 'Untuk diulang'),
+ 'quizPerfect': ('Shown when every answer in the session was correct', 'كلها صحيحة، أحسنت!', 'هەمووی ڕاستە، دەستخۆش!', 'All correct. Excellent!', 'Semua benar. Luar biasa!'),
 
  'searchTitle': ('', 'البحث', 'گەڕان', 'Search', 'Cari'),
  'searchHint': ('', 'ابحث عن موضوع أو قاعدة أو مصطلح', 'بە دوای بابەت یان ڕێسا یان زاراوەدا بگەڕێ', 'Search topics, rules and terms', 'Cari topik, kaidah, dan istilah'),

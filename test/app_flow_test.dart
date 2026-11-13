@@ -5,7 +5,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:rattil/app/routes.dart';
 import 'package:rattil/content/content_repository.dart';
 import 'package:rattil/content/language.dart';
+import 'package:rattil/content/models.dart';
 import 'package:rattil/core/json_store.dart';
+import 'package:rattil/features/practice/quiz_screen.dart';
 import 'package:rattil/features/study/study_state.dart';
 import 'package:rattil/l10n/ckb_localizations.dart';
 import 'package:rattil/l10n/generated/app_localizations.dart';
@@ -31,6 +33,18 @@ Future<void> tapText(
   await tester.pumpAndSettle();
   await tester.tap(f.first);
   await tester.pumpAndSettle();
+}
+
+/// Taps the right answer of the question on screen and returns it.
+Future<Question> answerCurrentCorrectly(
+  WidgetTester tester,
+  AppLanguage lang,
+) async {
+  final state = tester.state(find.byType(QuizScreen)) as dynamic;
+  final q = state.currentQuestion as Question;
+  final label = answerLabel(q, loadContent(), lang, l10nOf(lang.code));
+  await tapText(tester, label);
+  return q;
 }
 
 Future<void> goBack(WidgetTester tester) async {
@@ -108,10 +122,10 @@ void main() {
 
       // Rule card → practice → answer correctly.
       await tapText(tester, ar.rulePractice);
-      expect(find.text(ar.quizIdentifyPrompt), findsOneWidget);
-      await tapText(tester, 'الإخفاء الحقيقي');
+      final asked = await answerCurrentCorrectly(tester, AppLanguage.ar);
+      expect(asked.relatedRuleId, 'r05');
       expect(find.text(ar.quizFeedbackCorrect), findsOneWidget);
-      expect(container.read(studyProvider).quiz['q05']?.lastCorrect, isTrue);
+      expect(container.read(studyProvider).quiz[asked.id]?.lastCorrect, isTrue);
 
       // Mark the lesson completed at the end of the lesson.
       await goBack(tester);
@@ -132,7 +146,7 @@ void main() {
       expect(restored.language, AppLanguage.ar);
       expect(restored.positions['ar'], 46);
       expect(restored.progressOf('t10'), TopicProgress.completed);
-      expect(restored.quiz['q05']?.lastCorrect, isTrue);
+      expect(restored.quiz[asked.id]?.lastCorrect, isTrue);
     },
   );
 
@@ -453,8 +467,8 @@ void main() {
         await goBack(tester);
         await tester.tap(find.text(l.navPractice).last);
         await tester.pumpAndSettle();
-        await tapText(tester, l.practiceStart);
-        expect(find.text(l.quizIdentifyPrompt), findsOneWidget);
+        await tapText(tester, l.practiceQuick);
+        expect(find.byType(QuizScreen), findsOneWidget);
         expect(tester.takeException(), isNull);
         // Lessons with the widest tables, figures and the most examples.
         // The lesson lays out every block at once, so any overflow anywhere

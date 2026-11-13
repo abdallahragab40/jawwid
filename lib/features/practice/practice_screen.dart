@@ -7,6 +7,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
 import '../../widgets/ornaments.dart';
 import '../study/study_state.dart';
+import 'session.dart';
 
 class PracticeScreen extends ConsumerWidget {
   const PracticeScreen({super.key});
@@ -22,6 +23,7 @@ class PracticeScreen extends ConsumerWidget {
     final correct = questions
         .where((q) => quiz[q.id]?.lastCorrect ?? false)
         .length;
+    final mistakes = mistakeCount(questions, quiz);
     final topicIds = <String>{for (final q in questions) q.topicId}.toList()
       ..sort(
         (a, b) => content.topic(a).order.compareTo(content.topic(b).order),
@@ -78,16 +80,29 @@ class PracticeScreen extends ConsumerWidget {
                           l10n.practiceSeparateFromReading,
                           style: context.type.muted(size: 12.5),
                         ),
-                        const SizedBox(height: 12),
+                        const SizedBox(height: 14),
                         FilledButton.icon(
-                          icon: const Icon(Icons.play_arrow),
-                          label: Text(
-                            answered == 0
-                                ? l10n.practiceStart
-                                : l10n.practiceContinue,
-                          ),
+                          icon: const Icon(Icons.bolt),
+                          label: Text(l10n.practiceQuick),
                           onPressed: () => openQuiz(context),
                         ),
+                        const SizedBox(height: 6),
+                        Text(
+                          l10n.practiceQuickHint(n(quizSessionSize, lang)),
+                          style: context.type.muted(size: 12.5),
+                          textAlign: TextAlign.center,
+                        ),
+                        if (mistakes > 0) ...[
+                          const SizedBox(height: 10),
+                          OutlinedButton.icon(
+                            icon: const Icon(Icons.history),
+                            label: Text(
+                              l10n.practiceMistakes(n(mistakes, lang)),
+                            ),
+                            onPressed: () =>
+                                openQuiz(context, mistakesOnly: true),
+                          ),
+                        ],
                       ],
                     ),
                   ),

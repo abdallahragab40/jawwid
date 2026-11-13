@@ -534,6 +534,28 @@ class AppLocalizationsAr extends AppLocalizations {
       'ستظهر الأسئلة التي أخطأت فيها أولًا في المرة القادمة.';
 
   @override
+  String get practiceQuick => 'تدريب سريع';
+
+  @override
+  String practiceQuickHint(String count) {
+    return '$count أسئلة من كل الدروس، تبدأ بما أخطأت فيه سابقًا.';
+  }
+
+  @override
+  String practiceMistakes(String count) {
+    return 'راجع أخطائي ($count)';
+  }
+
+  @override
+  String get quizPracticeAgain => 'جولة أخرى';
+
+  @override
+  String get quizMissedHeading => 'للمراجعة';
+
+  @override
+  String get quizPerfect => 'كلها صحيحة، أحسنت!';
+
+  @override
   String get searchTitle => 'البحث';
 
   @override

@@ -2,40 +2,87 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:rattil/content/language.dart';
+import 'package:rattil/content/models.dart';
+import 'package:rattil/features/practice/quiz_screen.dart';
+import 'package:rattil/features/practice/session.dart';
+import 'package:rattil/features/study/study_state.dart';
 import 'package:rattil/l10n/generated/app_localizations.dart';
 
 import '../helpers.dart';
 
 void main() {
+  final ar = lookupAppLocalizations(const Locale('ar'));
+
   // Every bundled identify/choice question lists its answer first, so the
   // quiz must shuffle: otherwise "always tap the top option" scores 100%.
   testWidgets('quiz options are shown in a random order', (tester) async {
-    final ar = lookupAppLocalizations(const Locale('ar'));
     final content = loadContent();
-    final first = content.questions.reduce(
-      (a, b) => a.id.compareTo(b.id) <= 0 ? a : b,
-    );
-    final titles = [
-      for (final id in first.ruleOptions) content.rule(id)!.title.of('ar'),
-    ];
-    final answer = content.rule(first.answerRuleId!)!.title.of('ar');
-
     final positions = <int>{};
-    for (var seed = 0; seed < 8; seed++) {
+    for (var seed = 0; seed < 12; seed++) {
       await tester.pumpWidget(const SizedBox());
       await pumpApp(tester, random: Random(seed));
       await tester.tap(find.text(ar.navPractice).last);
       await tester.pumpAndSettle();
-      await tester.tap(find.text(ar.practiceStart));
+      await tester.tap(find.text(ar.practiceQuick));
       await tester.pumpAndSettle();
-      final ys = [for (final t in titles) tester.getCenter(find.text(t)).dy]
-        ..sort();
-      positions.add(ys.indexOf(tester.getCenter(find.text(answer)).dy));
+      final state = tester.state(find.byType(QuizScreen)) as dynamic;
+      final q = state.currentQuestion as Question;
+      final answer = answerLabel(q, content, AppLanguage.ar, ar);
+      if (q.type == QuestionType.identify) {
+        final titles = [
+          for (final id in q.ruleOptions) content.rule(id)!.title.of('ar'),
+        ];
+        final ys = [for (final t in titles) tester.getCenter(find.text(t)).dy]
+          ..sort();
+        positions.add(ys.indexOf(tester.getCenter(find.text(answer)).dy));
+      }
       // Answering still works whatever the order.
-      await tester.tap(find.text(answer));
+      await tester.tap(find.text(answer).first);
       await tester.pumpAndSettle();
       expect(find.text(ar.quizFeedbackCorrect), findsOneWidget);
     }
     expect(positions.length, greaterThan(1));
+  });
+
+  group('sessions', () {
+    final content = loadContent();
+    final pool = content.questions;
+
+    test('are short and mix lessons instead of filling up with one', () {
+      final s = buildSession(pool, const {}, Random(1));
+      expect(s.length, quizSessionSize);
+      expect({for (final q in s) q.id}.length, s.length);
+      // Topic 10 holds over a third of the bank but not of a session.
+      expect(s.where((q) => q.topicId == 't10').length, lessThan(5));
+    });
+
+    test('put earlier mistakes first; mistakes mode has only those', () {
+      final missed = pool.skip(40).take(3).toList();
+      final results = {
+        for (final q in pool.take(30))
+          q.id: QuizRecord(
+            attempts: 1,
+            correct: 1,
+            lastCorrect: true,
+            lastAt: DateTime(2026),
+          ),
+        for (final q in missed)
+          q.id: QuizRecord(
+            attempts: 1,
+            correct: 0,
+            lastCorrect: false,
+            lastAt: DateTime(2026),
+          ),
+      };
+      final s = buildSession(pool, results, Random(2));
+      expect(s.take(3).map((q) => q.id).toSet(), {
+        for (final q in missed) q.id,
+      });
+      expect(s.skip(3).every((q) => results[q.id] == null), isTrue);
+      final m = buildSession(pool, results, Random(3), mistakesOnly: true);
+      expect(m.map((q) => q.id).toSet(), {for (final q in missed) q.id});
+      expect(mistakeCount(pool, results), 3);
+    });
   });
 }

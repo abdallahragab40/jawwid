@@ -63,10 +63,15 @@ Future<void> openQuiz(
   BuildContext context, {
   String? topicId,
   String? ruleId,
+  bool mistakesOnly = false,
 }) => Navigator.of(context).push(
   MaterialPageRoute(
     settings: const RouteSettings(name: 'quiz'),
-    builder: (_) => QuizScreen(topicId: topicId, ruleId: ruleId),
+    builder: (_) => QuizScreen(
+      topicId: topicId,
+      ruleId: ruleId,
+      mistakesOnly: mistakesOnly,
+    ),
   ),
 );
 

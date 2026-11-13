@@ -539,6 +539,28 @@ class AppLocalizationsEn extends AppLocalizations {
       'Questions you missed will come first next time.';
 
   @override
+  String get practiceQuick => 'Quick practice';
+
+  @override
+  String practiceQuickHint(String count) {
+    return '$count questions from all lessons, starting with your earlier mistakes.';
+  }
+
+  @override
+  String practiceMistakes(String count) {
+    return 'Review my mistakes ($count)';
+  }
+
+  @override
+  String get quizPracticeAgain => 'Another round';
+
+  @override
+  String get quizMissedHeading => 'To review';
+
+  @override
+  String get quizPerfect => 'All correct. Excellent!';
+
+  @override
   String get searchTitle => 'Search';
 
   @override

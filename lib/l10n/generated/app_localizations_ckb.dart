@@ -539,6 +539,28 @@ class AppLocalizationsCkb extends AppLocalizations {
       'جاری داهاتوو ئەو پرسیارانەی هەڵەت تێدا کردوون یەکەم دەردەکەون.';
 
   @override
+  String get practiceQuick => 'ڕاهێنانی خێرا';
+
+  @override
+  String practiceQuickHint(String count) {
+    return '$count پرسیار لە هەموو وانەکان، سەرەتا ئەوانەی پێشتر هەڵەت تێدا کردوون.';
+  }
+
+  @override
+  String practiceMistakes(String count) {
+    return 'پێداچوونەوەی هەڵەکانم ($count)';
+  }
+
+  @override
+  String get quizPracticeAgain => 'خولێکی تر';
+
+  @override
+  String get quizMissedHeading => 'بۆ پێداچوونەوە';
+
+  @override
+  String get quizPerfect => 'هەمووی ڕاستە، دەستخۆش!';
+
+  @override
   String get searchTitle => 'گەڕان';
 
   @override

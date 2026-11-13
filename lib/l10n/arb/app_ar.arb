@@ -491,6 +491,40 @@
     }
   },
   "quizFinishedHint": "ستظهر الأسئلة التي أخطأت فيها أولًا في المرة القادمة.",
+  "practiceQuick": "تدريب سريع",
+  "@practiceQuick": {
+    "description": "Button: a short practice session across all lessons"
+  },
+  "practiceQuickHint": "{count} أسئلة من كل الدروس، تبدأ بما أخطأت فيه سابقًا.",
+  "@practiceQuickHint": {
+    "description": "{count} is localized",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "practiceMistakes": "راجع أخطائي ({count})",
+  "@practiceMistakes": {
+    "description": "Button: practise only questions answered wrongly last time. {count} is localized",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "quizPracticeAgain": "جولة أخرى",
+  "@quizPracticeAgain": {
+    "description": "Button: start another practice session"
+  },
+  "quizMissedHeading": "للمراجعة",
+  "@quizMissedHeading": {
+    "description": "Heading above the questions missed in this session"
+  },
+  "quizPerfect": "كلها صحيحة، أحسنت!",
+  "@quizPerfect": {
+    "description": "Shown when every answer in the session was correct"
+  },
   "searchTitle": "البحث",
   "searchHint": "ابحث عن موضوع أو قاعدة أو مصطلح",
   "searchCoverage": "يبحث في عناوين الموضوعات وأسماء القواعد والمصطلحات بالّلغات الأربع. أما نص الصفحات فيُبحث فيه في النسختين الإنجليزية والإندونيسية فقط، لأن نص النسختين العربية والكردية لا يُستخرج بدقة.",
