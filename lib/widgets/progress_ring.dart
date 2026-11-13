@@ -35,18 +35,22 @@ class ProgressRing extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               SizedBox.expand(
-                child: CircularProgressIndicator(
-                  value: v,
-                  strokeWidth: stroke,
-                  strokeCap: StrokeCap.round,
-                  backgroundColor: dark
-                      ? RattilColors.nightLine
-                      : RattilColors.emerald50,
-                  color:
-                      color ??
-                      (dark
-                          ? RattilColors.emeraldLight
-                          : RattilColors.emerald700),
+                // The label carries the meaning; a raw percentage would
+                // only confuse a screen reader.
+                child: ExcludeSemantics(
+                  child: CircularProgressIndicator(
+                    value: v,
+                    strokeWidth: stroke,
+                    strokeCap: StrokeCap.round,
+                    backgroundColor: dark
+                        ? RattilColors.nightLine
+                        : RattilColors.emerald50,
+                    color:
+                        color ??
+                        (dark
+                            ? RattilColors.emeraldLight
+                            : RattilColors.emerald700),
+                  ),
                 ),
               ),
               ?child,

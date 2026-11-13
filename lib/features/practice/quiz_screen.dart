@@ -337,12 +337,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         ),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(4),
-          child: LinearProgressIndicator(
-            value: (_index + (_answered ? 1 : 0)) / _questions.length,
-            minHeight: 3,
-            backgroundColor: dark
-                ? RattilColors.nightLine
-                : RattilColors.emerald50,
+          // The title already says which question this is.
+          child: ExcludeSemantics(
+            child: LinearProgressIndicator(
+              value: (_index + (_answered ? 1 : 0)) / _questions.length,
+              minHeight: 3,
+              backgroundColor: dark
+                  ? RattilColors.nightLine
+                  : RattilColors.emerald50,
+            ),
           ),
         ),
       ),

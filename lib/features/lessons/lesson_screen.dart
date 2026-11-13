@@ -688,33 +688,39 @@ class LessonBlockView extends StatelessWidget {
       case LessonBlockType.ol:
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 3),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                margin: const EdgeInsets.only(top: 4),
-                constraints: const BoxConstraints(minWidth: 26),
-                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(13),
-                  border: Border.all(
-                    color: dark
-                        ? RattilColors.nightLine
-                        : RattilColors.goldSoft,
+          // Number and text are read as one item.
+          child: MergeSemantics(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 4),
+                  constraints: const BoxConstraints(minWidth: 26),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 6,
+                    vertical: 1,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(13),
+                    border: Border.all(
+                      color: dark
+                          ? RattilColors.nightLine
+                          : RattilColors.goldSoft,
+                    ),
+                  ),
+                  child: Text(
+                    localizeDigits(
+                      block.number ?? '',
+                      Localizations.localeOf(context).languageCode,
+                    ),
+                    textAlign: TextAlign.center,
+                    style: context.type.ui(size: 13, weight: FontWeight.w600),
                   ),
                 ),
-                child: Text(
-                  localizeDigits(
-                    block.number ?? '',
-                    Localizations.localeOf(context).languageCode,
-                  ),
-                  textAlign: TextAlign.center,
-                  style: context.type.ui(size: 13, weight: FontWeight.w600),
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(child: LessonText(block.spans)),
-            ],
+                const SizedBox(width: 10),
+                Expanded(child: LessonText(block.spans)),
+              ],
+            ),
           ),
         );
       case LessonBlockType.note:

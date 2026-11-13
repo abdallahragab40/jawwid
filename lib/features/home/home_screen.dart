@@ -263,77 +263,80 @@ class _ContinueCard extends StatelessWidget {
           ? () => openLesson(context, id)
           : () => openReader(context, edition: t.edition, page: t.page);
     }
-    return Material(
-      color: Colors.transparent,
-      borderRadius: BorderRadius.circular(22),
-      clipBehavior: Clip.antiAlias,
-      child: Ink(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: AlignmentDirectional.topStart,
-            end: AlignmentDirectional.bottomEnd,
-            colors: dark
-                ? const [Color(0xFF1A4A3D), Color(0xFF0F2C24)]
-                : const [RattilColors.emerald500, RattilColors.emerald900],
+    return Semantics(
+      button: true,
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(22),
+        clipBehavior: Clip.antiAlias,
+        child: Ink(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: AlignmentDirectional.topStart,
+              end: AlignmentDirectional.bottomEnd,
+              colors: dark
+                  ? const [Color(0xFF1A4A3D), Color(0xFF0F2C24)]
+                  : const [RattilColors.emerald500, RattilColors.emerald900],
+            ),
           ),
-        ),
-        child: InkWell(
-          onTap: onTap,
-          child: Stack(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(18),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            title,
-                            style: context.type.heading(
-                              size: 21,
-                              color: Colors.white,
-                            ),
-                          ),
-                          const SizedBox(height: 6),
-                          Text(
-                            subtitle,
-                            style: context.type.ui(
-                              size: 14,
-                              color: const Color(0xFFE3EFE9),
-                            ),
-                          ),
-                          if (notice != null) ...[
-                            const SizedBox(height: 6),
+          child: InkWell(
+            onTap: onTap,
+            child: Stack(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(18),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
                             Text(
-                              notice,
-                              style: context.type.ui(
-                                size: 12.5,
-                                color: RattilColors.goldSoft,
+                              title,
+                              style: context.type.heading(
+                                size: 21,
+                                color: Colors.white,
                               ),
                             ),
+                            const SizedBox(height: 6),
+                            Text(
+                              subtitle,
+                              style: context.type.ui(
+                                size: 14,
+                                color: const Color(0xFFE3EFE9),
+                              ),
+                            ),
+                            if (notice != null) ...[
+                              const SizedBox(height: 6),
+                              Text(
+                                notice,
+                                style: context.type.ui(
+                                  size: 12.5,
+                                  color: RattilColors.goldSoft,
+                                ),
+                              ),
+                            ],
                           ],
-                        ],
+                        ),
                       ),
-                    ),
-                    const SizedBox(width: 12),
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: const BoxDecoration(
-                        color: RattilColors.gold,
-                        shape: BoxShape.circle,
+                      const SizedBox(width: 12),
+                      Container(
+                        width: 48,
+                        height: 48,
+                        decoration: const BoxDecoration(
+                          color: RattilColors.gold,
+                          shape: BoxShape.circle,
+                        ),
+                        child: const Icon(
+                          Icons.auto_stories,
+                          color: Colors.white,
+                        ),
                       ),
-                      child: const Icon(
-                        Icons.auto_stories,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
@@ -460,39 +463,50 @@ class _ProgressTile extends StatelessWidget {
       n(completed, language),
       n(total, language),
     );
-    return Card(
-      child: InkWell(
-        borderRadius: BorderRadius.circular(18),
-        onTap: () => RootShell.of(context)?.selectTab(Tabs.lessons),
-        child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(l10n.homeProgressTitle, style: context.type.muted(size: 13)),
-              const SizedBox(height: 10),
-              ProgressRing(
-                value: total == 0 ? 0 : completed / total,
-                size: 60,
-                semanticsLabel: label,
-                child: ExcludeSemantics(
-                  child: Text(
-                    n(completed, language),
-                    style: context.type.heading(size: 20),
+    return MergeSemantics(
+      child: Semantics(
+        button: true,
+        child: Card(
+          child: InkWell(
+            borderRadius: BorderRadius.circular(18),
+            onTap: () => RootShell.of(context)?.selectTab(Tabs.lessons),
+            child: Padding(
+              padding: const EdgeInsets.all(14),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.homeProgressTitle,
+                    style: context.type.muted(size: 13),
                   ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ExcludeSemantics(
-                child: Text(
-                  l10n.homeLessonsDone(
-                    n(completed, language),
-                    n(total, language),
+                  const SizedBox(height: 10),
+                  ProgressRing(
+                    value: total == 0 ? 0 : completed / total,
+                    size: 60,
+                    semanticsLabel: label,
+                    child: ExcludeSemantics(
+                      child: Text(
+                        n(completed, language),
+                        style: context.type.heading(size: 20),
+                      ),
+                    ),
                   ),
-                  style: context.type.ui(size: 13.5, weight: FontWeight.w600),
-                ),
+                  const SizedBox(height: 10),
+                  ExcludeSemantics(
+                    child: Text(
+                      l10n.homeLessonsDone(
+                        n(completed, language),
+                        n(total, language),
+                      ),
+                      style: context.type.ui(
+                        size: 13.5,
+                        weight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),
@@ -516,52 +530,57 @@ class _PracticeTile extends ConsumerWidget {
     final correct = pool.where((q) => quiz[q.id]?.lastCorrect ?? false).length;
     final mistakes = mistakeCount(pool, quiz);
     final gold = dark ? RattilColors.goldLight : RattilColors.goldText;
-    return Card(
-      child: InkWell(
-        borderRadius: BorderRadius.circular(18),
-        onTap: () => openQuiz(context),
-        child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(l10n.practiceTitle, style: context.type.muted(size: 13)),
-              const SizedBox(height: 10),
-              Container(
-                width: 60,
-                height: 60,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: (dark ? RattilColors.goldLight : RattilColors.gold)
-                      .withValues(alpha: 0.16),
-                ),
-                child: Icon(Icons.bolt, size: 32, color: gold),
+    return MergeSemantics(
+      child: Semantics(
+        button: true,
+        child: Card(
+          child: InkWell(
+            borderRadius: BorderRadius.circular(18),
+            onTap: () => openQuiz(context),
+            child: Padding(
+              padding: const EdgeInsets.all(14),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(l10n.practiceTitle, style: context.type.muted(size: 13)),
+                  const SizedBox(height: 10),
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: (dark ? RattilColors.goldLight : RattilColors.gold)
+                          .withValues(alpha: 0.16),
+                    ),
+                    child: Icon(Icons.bolt, size: 32, color: gold),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    answered == 0
+                        ? l10n.homePracticeTeaser
+                        : l10n.homePracticeAccuracy(
+                            n((correct * 100 / answered).round(), language),
+                          ),
+                    style: context.type.ui(size: 13.5, weight: FontWeight.w600),
+                  ),
+                  if (mistakes > 0)
+                    Text(
+                      l10n.practiceMistakes(n(mistakes, language)),
+                      style: context.type.ui(size: 12.5, color: gold),
+                    ),
+                  const Spacer(),
+                  const SizedBox(height: 6),
+                  Text(
+                    l10n.practiceQuick,
+                    style: context.type.ui(
+                      size: 14,
+                      weight: FontWeight.w700,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 10),
-              Text(
-                answered == 0
-                    ? l10n.homePracticeTeaser
-                    : l10n.homePracticeAccuracy(
-                        n((correct * 100 / answered).round(), language),
-                      ),
-                style: context.type.ui(size: 13.5, weight: FontWeight.w600),
-              ),
-              if (mistakes > 0)
-                Text(
-                  l10n.practiceMistakes(n(mistakes, language)),
-                  style: context.type.ui(size: 12.5, color: gold),
-                ),
-              const Spacer(),
-              const SizedBox(height: 6),
-              Text(
-                l10n.practiceQuick,
-                style: context.type.ui(
-                  size: 14,
-                  weight: FontWeight.w700,
-                  color: Theme.of(context).colorScheme.primary,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
@@ -613,46 +632,54 @@ class _UnitStrip extends StatelessWidget {
                       child: InkWell(
                         borderRadius: BorderRadius.circular(18),
                         onTap: () => openTopic(context, next),
-                        child: Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                l10n.homeUnitLabel(n(i + 1, language)),
-                                style: context.type.ui(
-                                  size: 12.5,
-                                  weight: FontWeight.w700,
-                                  color: accent,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                g.title.of(language.code),
-                                style: context.type.ui(
-                                  size: 14.5,
-                                  weight: FontWeight.w600,
-                                ),
-                              ),
-                              const Spacer(),
-                              const SizedBox(height: 10),
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(4),
-                                child: LinearProgressIndicator(
-                                  value: done / g.topicIds.length,
-                                  minHeight: 5,
-                                  color: accent,
-                                  backgroundColor: accent.withValues(
-                                    alpha: 0.18,
+                        child: Semantics(
+                          button: true,
+                          excludeSemantics: true,
+                          label:
+                              '${l10n.homeUnitLabel(n(i + 1, language))}, '
+                              '${g.title.of(language.code)}, '
+                              '${l10n.homeLessonsDone(n(done, language), n(g.topicIds.length, language))}',
+                          child: Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  l10n.homeUnitLabel(n(i + 1, language)),
+                                  style: context.type.ui(
+                                    size: 12.5,
+                                    weight: FontWeight.w700,
+                                    color: accent,
                                   ),
                                 ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                '${n(done, language)} / ${n(g.topicIds.length, language)}',
-                                style: context.type.muted(size: 12),
-                              ),
-                            ],
+                                const SizedBox(height: 4),
+                                Text(
+                                  g.title.of(language.code),
+                                  style: context.type.ui(
+                                    size: 14.5,
+                                    weight: FontWeight.w600,
+                                  ),
+                                ),
+                                const Spacer(),
+                                const SizedBox(height: 10),
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(4),
+                                  child: LinearProgressIndicator(
+                                    value: done / g.topicIds.length,
+                                    minHeight: 5,
+                                    color: accent,
+                                    backgroundColor: accent.withValues(
+                                      alpha: 0.18,
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  '${n(done, language)} / ${n(g.topicIds.length, language)}',
+                                  style: context.type.muted(size: 12),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),
