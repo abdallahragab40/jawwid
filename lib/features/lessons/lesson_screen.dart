@@ -894,6 +894,35 @@ class LessonTable extends StatelessWidget {
       color: border,
       borderRadius: BorderRadius.circular(10),
     );
+    Widget table() => _tableOf(context, cols, narrow, tableRows, tableBorder);
+    // A table with a header row turns into one card per row when its text
+    // columns would be too narrow to read (most tables on a phone).
+    final wideCols = [
+      for (var k = 0; k < cols; k++)
+        if (!narrow(k)) k,
+    ].length;
+    if (headerEmpty || cols < 3 || body.length < 2) return table();
+    return LayoutBuilder(
+      builder: (context, c) {
+        final scale = MediaQuery.textScalerOf(context).scale(1);
+        final perCol = c.maxWidth / (wideCols == 0 ? 1 : wideCols);
+        if (perCol >= 150 * scale) return table();
+        return _StackedTable(
+          header: body.first,
+          rows: body.skip(1).toList(),
+          cols: cols,
+        );
+      },
+    );
+  }
+
+  Widget _tableOf(
+    BuildContext context,
+    int cols,
+    bool Function(int) narrow,
+    List<TableRow> Function({required bool fixed}) tableRows,
+    TableBorder tableBorder,
+  ) {
     if (cols <= 3) {
       // Fits the screen: text wraps inside the cells.
       return Table(
@@ -1226,6 +1255,99 @@ class _SectionBar extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// A table shown as one card per row: the first cell is the card's title and
+/// every other cell sits under its column heading.
+class _StackedTable extends StatelessWidget {
+  const _StackedTable({
+    required this.header,
+    required this.rows,
+    required this.cols,
+  });
+  final List<List<LessonSpan>> header;
+  final List<List<List<LessonSpan>>> rows;
+  final int cols;
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = context.isDark;
+    final border = dark ? RattilColors.nightLine : const Color(0xFFCFC6B2);
+    final titleBg = dark ? const Color(0xFF22302B) : const Color(0xFFE9E4D4);
+    List<LessonSpan> at(List<List<LessonSpan>> r, int k) =>
+        k < r.length ? r[k] : const [];
+    bool empty(List<LessonSpan> c) => c.every((s) => s.plain.trim().isEmpty);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (final r in rows)
+          Container(
+            margin: const EdgeInsets.only(bottom: 10),
+            decoration: BoxDecoration(
+              color: dark ? RattilColors.nightRaised : Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: border),
+            ),
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                if (!empty(at(r, 0)))
+                  Container(
+                    color: titleBg,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 8,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (!empty(header[0]))
+                          LessonText(
+                            header[0],
+                            style: context.type.muted(size: 12.5),
+                          ),
+                        LessonText(
+                          at(r, 0),
+                          style: context.type.ui(
+                            size: 15,
+                            weight: FontWeight.w700,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                for (var k = 1; k < cols; k++)
+                  if (!empty(at(r, k)))
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (k < header.length && !empty(header[k]))
+                            LessonText(
+                              header[k],
+                              style: context.type.ui(
+                                size: 12.5,
+                                weight: FontWeight.w600,
+                                color: dark
+                                    ? RattilColors.goldLight
+                                    : RattilColors.goldText,
+                              ),
+                            ),
+                          LessonText(
+                            at(r, k),
+                            style: context.type.prose(size: 15.5),
+                          ),
+                        ],
+                      ),
+                    ),
+              ],
+            ),
+          ),
+      ],
     );
   }
 }
