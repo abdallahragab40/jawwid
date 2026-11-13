@@ -39,9 +39,9 @@ void main() {
         positions.add(ys.indexOf(tester.getCenter(find.text(answer)).dy));
       }
       // Answering still works whatever the order.
-      await tester.tap(find.text(answer).first);
-      await tester.pumpAndSettle();
+      await answerCurrentCorrectly(tester, AppLanguage.ar);
       expect(find.text(ar.quizFeedbackCorrect), findsOneWidget);
+      expect(answer, isNotEmpty);
     }
     expect(positions.length, greaterThan(1));
   });
@@ -49,7 +49,6 @@ void main() {
   testWidgets('a lesson ends with a 3-question check that can mark the '
       'lesson completed', (tester) async {
     final container = await pumpApp(tester, random: Random(5));
-    final content = loadContent();
     final nav = tester.state<NavigatorState>(find.byType(Navigator).first);
     openLesson(nav.context, 't11');
     await tester.pumpAndSettle();
@@ -63,13 +62,8 @@ void main() {
     await tester.tap(check);
     await tester.pumpAndSettle();
     for (var i = 0; i < 3; i++) {
-      final state = tester.state(find.byType(QuizScreen)) as dynamic;
-      final q = state.currentQuestion as Question;
+      final q = await answerCurrentCorrectly(tester, AppLanguage.ar);
       expect(q.topicId, 't11');
-      await tester.tap(
-        find.text(answerLabel(q, content, AppLanguage.ar, ar)).first,
-      );
-      await tester.pumpAndSettle();
       final next = find.text(i < 2 ? ar.quizNext : ar.quizSeeResult);
       await tester.scrollUntilVisible(
         next,

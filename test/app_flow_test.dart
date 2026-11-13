@@ -5,7 +5,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:rattil/app/routes.dart';
 import 'package:rattil/content/content_repository.dart';
 import 'package:rattil/content/language.dart';
-import 'package:rattil/content/models.dart';
 import 'package:rattil/core/json_store.dart';
 import 'package:rattil/features/practice/quiz_screen.dart';
 import 'package:rattil/features/study/study_state.dart';
@@ -33,18 +32,6 @@ Future<void> tapText(
   await tester.pumpAndSettle();
   await tester.tap(f.first);
   await tester.pumpAndSettle();
-}
-
-/// Taps the right answer of the question on screen and returns it.
-Future<Question> answerCurrentCorrectly(
-  WidgetTester tester,
-  AppLanguage lang,
-) async {
-  final state = tester.state(find.byType(QuizScreen)) as dynamic;
-  final q = state.currentQuestion as Question;
-  final label = answerLabel(q, loadContent(), lang, l10nOf(lang.code));
-  await tapText(tester, label);
-  return q;
 }
 
 Future<void> goBack(WidgetTester tester) async {

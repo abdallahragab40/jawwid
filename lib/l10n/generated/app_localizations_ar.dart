@@ -643,6 +643,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get quizLessonCompleted => 'أحسنت! سُجّل الدرس مكتملًا.';
 
   @override
+  String get quizSortHint => 'اختر حرفًا ثم المجموعة التي ينتمي إليها.';
+
+  @override
+  String get quizCheck => 'تحقّق';
+
+  @override
+  String get quizSortReturn => 'اضغط لإعادته';
+
+  @override
   String get quizPracticeAgain => 'جولة أخرى';
 
   @override

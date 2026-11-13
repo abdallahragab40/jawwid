@@ -650,6 +650,15 @@ class AppLocalizationsId extends AppLocalizations {
   String get quizLessonCompleted => 'Bagus! Pelajaran ditandai selesai.';
 
   @override
+  String get quizSortHint => 'Ketuk sebuah huruf, lalu kelompoknya.';
+
+  @override
+  String get quizCheck => 'Periksa';
+
+  @override
+  String get quizSortReturn => 'Ketuk untuk mengembalikan';
+
+  @override
   String get quizPracticeAgain => 'Satu putaran lagi';
 
   @override

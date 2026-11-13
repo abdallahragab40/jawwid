@@ -286,8 +286,9 @@ void main() {
     });
 
     test('questions reference existing rules and have valid answers', () {
-      // 99 hand-written, 151 drafted identify, 27 drafted articulation.
-      expect(c.questions.length, 99 + 151 + 27);
+      // 99 hand-written, 151 drafted identify, 27 drafted articulation,
+      // 15 drafted sort.
+      expect(c.questions.length, 99 + 151 + 27 + 15);
       expect({for (final q in c.questions) q.id}.length, c.questions.length);
       for (final q in c.questions) {
         switch (q.type) {
@@ -301,6 +302,17 @@ void main() {
             expect(q.prompt, isNotNull);
           case QuestionType.trueFalse:
             expect(q.answerBool, isNotNull);
+          case QuestionType.sort:
+            expect(q.groups.length, greaterThanOrEqualTo(2), reason: q.id);
+            expect(q.prompt, isNotNull);
+            final letters = [for (final i in q.items) i.arabic];
+            expect(letters.toSet().length, letters.length, reason: q.id);
+            for (var g = 0; g < q.groups.length; g++) {
+              expect(q.items.where((i) => i.group == g), isNotEmpty);
+              for (final l in editions) {
+                expect(q.groups[g][l], isNotEmpty, reason: '${q.id} $l');
+              }
+            }
         }
         for (final l in editions) {
           expect(q.explanation[l], isNotNull, reason: '${q.id} $l');

@@ -650,6 +650,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get quizLessonCompleted => 'دەستخۆش! وانەکە وەک تەواوکراو تۆمارکرا.';
 
   @override
+  String get quizSortHint => 'پیتێک هەڵبژێرە، پاشان ئەو گرووپەی کە سەر بەوە.';
+
+  @override
+  String get quizCheck => 'پشکنین';
+
+  @override
+  String get quizSortReturn => 'دەست لێبدە بۆ گەڕاندنەوەی';
+
+  @override
   String get quizPracticeAgain => 'خولێکی تر';
 
   @override

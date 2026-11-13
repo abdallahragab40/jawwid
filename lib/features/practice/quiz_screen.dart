@@ -16,6 +16,7 @@ import '../../widgets/quran_excerpt_view.dart';
 import '../study/study_state.dart';
 import '../../core/haptics.dart';
 import 'session.dart';
+import 'sort_board.dart';
 
 /// Source of randomness for option order; overridden in tests.
 final quizRandomProvider = Provider<Random>((_) => Random());
@@ -91,6 +92,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           QuestionType.identify => q.ruleOptions.length,
           QuestionType.choice => q.choices.length,
           QuestionType.trueFalse => 0,
+          QuestionType.sort => q.items.length,
         }, (i) => i)..shuffle(random),
     ];
   }
@@ -99,6 +101,11 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     QuestionType.identify => choice == q.answerRuleId,
     QuestionType.choice => choice == q.answerIndex,
     QuestionType.trueFalse => choice == q.answerBool,
+    QuestionType.sort =>
+      choice is Map<int, int> &&
+          [
+            for (final (i, it) in q.items.indexed) choice[i] == it.group,
+          ].every((ok) => ok),
   };
 
   void _answer(Object choice) {
@@ -307,6 +314,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             ),
           ),
         );
+      case QuestionType.sort:
+        options.add(
+          SortBoard(
+            key: ValueKey(q.id),
+            question: q,
+            order: _order[_index],
+            result: _answered ? _choice as Map<int, int>? : null,
+            onCheck: _answer,
+          ),
+        );
     }
 
     final related = q.relatedRuleId == null
@@ -354,6 +371,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             QuestionType.identify => l10n.quizIdentifyPrompt,
             QuestionType.trueFalse => l10n.quizTrueFalsePrompt,
             QuestionType.choice => q.prompt!.of(lang.code),
+            QuestionType.sort => q.prompt!.of(lang.code),
           }, style: context.type.heading(size: 20)),
           if (q.type == QuestionType.trueFalse) ...[
             const SizedBox(height: 8),
@@ -469,6 +487,12 @@ String answerLabel(
         return l10n.quizCounts(localizeDigits(c.counts!, lang.code));
       }
       return localizeDigits(c.number!, lang.code);
+    case QuestionType.sort:
+      return [
+        for (final (g, label) in q.groups.indexed)
+          '${label.of(lang.code)}: ${[for (final it in q.items)
+            if (it.group == g) it.arabic].join(' ')}',
+      ].join(' · ');
   }
 }
 

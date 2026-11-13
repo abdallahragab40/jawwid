@@ -320,10 +320,102 @@ def makharij_questions(first_id):
     return out
 
 
+ALPHABET = 'ء ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي'.split()
+
+
+def L(ar, ckb, en, id_):
+    return {'ar': ar, 'ckb': ckb, 'en': en, 'id': id_}
+
+
+# Letter groups exactly as the books list them (Arabic lessons t08, t14, t18).
+SORTS = [
+    dict(topic='t14',
+         groups=[('خ ص ض غ ط ق ظ', L('مفخّمة دائمًا', 'هەمیشە قەڵەو', 'Always heavy', 'Selalu tebal')),
+                 ('REST-ر-ل', L('مرقّقة دائمًا', 'هەمیشە ناسک', 'Always light', 'Selalu tipis'))],
+         prompt=L('صنّف الحروف: مفخّمة دائمًا أم مرقّقة دائمًا؟', 'پیتەکان پۆلێن بکە: هەمیشە قەڵەو یان هەمیشە ناسک؟',
+                  'Sort the letters: always heavy or always light?', 'Kelompokkan huruf: selalu tebal atau selalu tipis?'),
+         explanation=L('الحروف المفخّمة دائمًا حروف الاستعلاء (خُصَّ ضَغْطٍ قِظْ)، والمرقّقة دائمًا باقي الحروف عدا الألف واللام والراء.',
+                       'پیتە هەمیشە قەڵەوەکان پیتەکانی ئیستیعلان (خُصَّ ضَغْطٍ قِظْ)، و پیتەکانی تر هەمیشە ناسکن جگە لە ئەلیف و لام و ڕا.',
+                       'The always-heavy letters are the elevated letters (خُصَّ ضَغْطٍ قِظْ); the rest are always light, except alif, laam and raa.',
+                       "Huruf yang selalu tebal adalah huruf isti'la' (خُصَّ ضَغْطٍ قِظْ); sisanya selalu tipis, kecuali alif, lam, dan ra.")),
+    dict(topic='t18',
+         groups=[('ء ب غ ح ج ك و خ ف ع ق ي م ه', L('قمرية (تُظهر اللام)', 'قەمەری (لام ئاشکرا دەکرێت)', 'Lunar (laam pronounced)', 'Qamariyah (lam dibaca jelas)')),
+                 ('ط ث ص ر ت ض ذ ن د س ظ ز ش ل', L('شمسية (تُدغم اللام)', 'شەمسی (لام تێهەڵکێش دەکرێت)', 'Solar (laam merged)', 'Syamsiyah (lam diidghamkan)'))],
+         prompt=L('صنّف الحروف: إذا جاء الحرف بعد «ال» فهل اللام قمرية أم شمسية؟',
+                  'پیتەکان پۆلێن بکە: ئەگەر پیتەکە لەدوای «ال» بێت، لامەکە قەمەرییە یان شەمسی؟',
+                  'Sort the letters: when the letter follows «ال», is the laam lunar or solar?',
+                  'Kelompokkan huruf: jika huruf ini terletak setelah «ال», apakah lamnya qamariyah atau syamsiyah?'),
+         explanation=L('الحروف القمرية مجموعة في (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)، والشمسية باقي الحروف.',
+                       'پیتە قەمەرییەکان لە (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)دا کۆکراونەتەوە، و پیتەکانی تر شەمسین.',
+                       'The lunar letters are gathered in (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); the other letters are solar.',
+                       'Huruf qamariyah terkumpul dalam (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); huruf lainnya syamsiyah.')),
+    dict(topic='t08',
+         groups=[('ف ح ث ه ش خ ص س ك ت', L('الهمس', 'چرپە (الهمس)', 'Hams (whisper)', 'Hams')),
+                 ('REST', L('الجهر', 'ئاشکرا (الجهر)', 'Jahr (appearance)', 'Jahr'))],
+         prompt=L('صنّف الحروف بحسب صفتي الهمس والجهر.', 'پیتەکان بەپێی چرپە و ئاشکرا پۆلێن بکە.',
+                  'Sort the letters into hams and jahr.', 'Kelompokkan huruf menurut sifat hams dan jahr.'),
+         explanation=L('حروف الهمس عشرة (فَحَثَّهُ شَخْصٌ سَكَتْ)، والباقي حروف جهر.',
+                       'پیتەکانی چرپە دەن (فَحَثَّهُ شَخْصٌ سَكَتْ)، و ئەوانی تر پیتی ئاشکران.',
+                       'The ten hams letters are (فَحَثَّهُ شَخْصٌ سَكَتْ); the others are jahr letters.',
+                       'Sepuluh huruf hams adalah (فَحَثَّهُ شَخْصٌ سَكَتْ); sisanya huruf jahr.')),
+    dict(topic='t08',
+         groups=[('ء ج د ق ط ب ك ت', L('الشدة', 'توندی (الشدة)', 'Shiddah (strength)', 'Syiddah')),
+                 ('ل ن ع م ر', L('التوسط', 'مامناوەند (التوسط)', 'Tawassut (moderation)', 'Tawassuth')),
+                 ('REST', L('الرخاوة', 'خاوی (الرخاوة)', 'Rakhawah (softness)', 'Rakhawah'))],
+         prompt=L('صنّف الحروف: شدة أم توسط أم رخاوة؟', 'پیتەکان پۆلێن بکە: توندی، مامناوەند یان خاوی؟',
+                  'Sort the letters: shiddah, tawassut or rakhawah?', 'Kelompokkan huruf: syiddah, tawassuth, atau rakhawah?'),
+         explanation=L('حروف الشدة (أجِدْ قَطٍ بَكَتْ)، وحروف التوسط (لِنْ عُمَرْ)، والباقي حروف رخاوة.',
+                       'پیتەکانی توندی (أجِدْ قَطٍ بَكَتْ)، پیتەکانی مامناوەند (لِنْ عُمَرْ)، و ئەوانی تر پیتی خاوین.',
+                       'Shiddah letters: (أجِدْ قَطٍ بَكَتْ); tawassut letters: (لِنْ عُمَرْ); the rest are rakhawah letters.',
+                       'Huruf syiddah: (أجِدْ قَطٍ بَكَتْ); huruf tawassuth: (لِنْ عُمَرْ); sisanya huruf rakhawah.')),
+    dict(topic='t08',
+         groups=[('ق ط ب ج د', L('حرف قلقلة', 'پیتی قەلقەلە', 'Qalqalah letter', 'Huruf qalqalah')),
+                 ('REST', L('ليس من حروف القلقلة', 'پیتی قەلقەلە نییە', 'Not a qalqalah letter', 'Bukan huruf qalqalah'))],
+         prompt=L('أيّ هذه الحروف من حروف القلقلة؟', 'کام لەم پیتانە پیتی قەلقەلەن؟',
+                  'Which of these letters are qalqalah letters?', 'Manakah di antara huruf ini yang termasuk huruf qalqalah?'),
+         explanation=L('حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).', 'پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.',
+                       'The five qalqalah letters are gathered in (قُطْبُ جَدٍّ).', 'Lima huruf qalqalah terkumpul dalam (قُطْبُ جَدٍّ).')),
+]
+SORT_ROUNDS = 3
+SORT_ITEMS = 6
+
+
+def sort_questions():
+    out = []
+    for spec in SORTS:
+        named = [set(g.split()) for g, _ in spec['groups'] if not g.startswith('REST')]
+        sets = []
+        for g, _ in spec['groups']:
+            if g.startswith('REST'):
+                rest = set(ALPHABET) - set().union(*named) - set(g.split('-')[1:])
+                sets.append(sorted(rest, key=ALPHABET.index))
+            else:
+                sets.append(g.split())
+        per = SORT_ITEMS // len(sets)
+        rng = random.Random(f"sort|{spec['topic']}|{spec['prompt']['en']}")
+        for _ in range(SORT_ROUNDS):
+            items = [{'arabic': letter, 'group': gi}
+                     for gi, letters in enumerate(sets) for letter in rng.sample(letters, per)]
+            out.append({
+                'id': '',
+                'type': 'sort',
+                'topic': spec['topic'],
+                'prompt': spec['prompt'],
+                'groups': [label for _, label in spec['groups']],
+                'items': items,
+                'explanation': spec['explanation'],
+                'review': {'status': 'draft'},
+                'generated': 'tools/gen_identify_questions.py',
+            })
+    return out
+
+
 def identity(q):
     if q['type'] == 'identify':
         e = q['example']
         return ('identify', e['ref'], e['pattern'])
+    if q['type'] == 'sort':
+        return ('sort', q['topic'], tuple(i['arabic'] for i in q['items']))
     return ('where', q['prompt']['ar'])
 
 
@@ -379,6 +471,7 @@ def main():
         })
         n += 1
     out += makharij_questions(n)
+    out += sort_questions()
     assign_ids(out, old_ids)
     quiz['questions'] = manual + out
     with open(QUIZ, 'w', encoding='utf-8') as f:
@@ -390,7 +483,8 @@ def main():
             continue
         by_rule[q['answer']] = by_rule.get(q['answer'], 0) + 1
     print(f'{len(out)} drafted questions:', dict(sorted(by_rule.items())),
-          '+', sum(1 for q in out if q['type'] == 'choice'), 'articulation questions')
+          '+', sum(1 for q in out if q['type'] == 'choice'), 'articulation questions',
+          '+', sum(1 for q in out if q['type'] == 'sort'), 'sort questions')
 
 
 if __name__ == '__main__':

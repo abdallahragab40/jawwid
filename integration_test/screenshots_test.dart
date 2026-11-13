@@ -20,6 +20,7 @@ import 'package:rattil/content/content_repository.dart';
 import 'package:rattil/content/language.dart';
 import 'package:rattil/content/models.dart';
 import 'package:rattil/core/json_store.dart';
+import 'package:rattil/features/practice/quiz_screen.dart';
 import 'package:rattil/features/reader/reader_screen.dart';
 import 'package:rattil/features/study/study_state.dart';
 
@@ -132,6 +133,26 @@ void main() {
         await shot('${code}_07_feedback');
       }
       await popAll();
+
+      // A sort question: answer everything else so it comes first.
+      for (final q in content.questions) {
+        if (q.type != QuestionType.sort) ctl.recordAnswer(q.id, true);
+      }
+      openQuiz(nav.context);
+      await settle(10);
+      await shot('${code}_15_sort');
+      final sortQ =
+          (tester.state(find.byType(QuizScreen)) as dynamic).currentQuestion
+              as Question;
+      for (final item in sortQ.items.take(3)) {
+        await tester.tap(find.text(item.arabic).first);
+        await settle(3);
+        await tester.tap(find.text(sortQ.groups[item.group].of(code)).first);
+        await settle(3);
+      }
+      await shot('${code}_16_sort_placing');
+      await popAll();
+      ctl.resetPractice();
 
       // Native lessons: the opening, a figure cropped from the book,
       // a rebuilt table, and the section index.

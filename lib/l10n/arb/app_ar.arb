@@ -652,6 +652,18 @@
   "@quizLessonCompleted": {
     "description": "Shown after the learner marks the lesson completed from the quiz result"
   },
+  "quizSortHint": "اختر حرفًا ثم المجموعة التي ينتمي إليها.",
+  "@quizSortHint": {
+    "description": "Sort questions: how to play"
+  },
+  "quizCheck": "تحقّق",
+  "@quizCheck": {
+    "description": "Button: check a sort answer"
+  },
+  "quizSortReturn": "اضغط لإعادته",
+  "@quizSortReturn": {
+    "description": "Semantics hint on a placed letter"
+  },
   "quizPracticeAgain": "جولة أخرى",
   "@quizPracticeAgain": {
     "description": "Button: start another practice session"

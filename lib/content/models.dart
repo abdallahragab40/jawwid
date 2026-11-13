@@ -303,7 +303,15 @@ class RuleCard {
   );
 }
 
-enum QuestionType { identify, choice, trueFalse }
+enum QuestionType { identify, choice, trueFalse, sort }
+
+/// One tile of a [QuestionType.sort] question: an Arabic letter or term and
+/// the index of the group it belongs to.
+class SortItem {
+  const SortItem(this.arabic, this.group);
+  final String arabic;
+  final int group;
+}
 
 /// One answer option for a [QuestionType.choice] question.
 class ChoiceOption {
@@ -331,6 +339,8 @@ class Question {
     required this.answerBool,
     required this.explanation,
     required this.review,
+    this.groups = const [],
+    this.items = const [],
   });
 
   final String id;
@@ -347,6 +357,10 @@ class Question {
   final Localized<String> explanation;
   final ReviewStatus review;
 
+  /// Sort questions: the group labels, and the tiles to place in them.
+  final List<Localized<String>> groups;
+  final List<SortItem> items;
+
   /// Rule card this question practises (the answer for identify questions).
   String? get relatedRuleId => answerRuleId ?? ruleId;
 
@@ -354,6 +368,7 @@ class Question {
     final type = switch (j['type']) {
       'identify' => QuestionType.identify,
       'truefalse' => QuestionType.trueFalse,
+      'sort' => QuestionType.sort,
       _ => QuestionType.choice,
     };
     return Question(
@@ -386,6 +401,18 @@ class Question {
           ? (j['answer'] as num).toInt()
           : null,
       answerBool: type == QuestionType.trueFalse ? j['answer'] as bool : null,
+      groups: type == QuestionType.sort
+          ? [for (final g in j['groups'] as List) Localized.strings(g)]
+          : const [],
+      items: type == QuestionType.sort
+          ? [
+              for (final i in j['items'] as List)
+                SortItem(
+                  (i as Map)['arabic'] as String,
+                  (i['group'] as num).toInt(),
+                ),
+            ]
+          : const [],
       explanation: Localized.strings(j['explanation']),
       review: ReviewStatus.parse((j['review'] as Map?)?['status'] as String?),
     );

@@ -650,6 +650,15 @@ class AppLocalizationsEn extends AppLocalizations {
       'Well done! The lesson is marked as completed.';
 
   @override
+  String get quizSortHint => 'Tap a letter, then the group it belongs to.';
+
+  @override
+  String get quizCheck => 'Check';
+
+  @override
+  String get quizSortReturn => 'Tap to take it back';
+
+  @override
   String get quizPracticeAgain => 'Another round';
 
   @override

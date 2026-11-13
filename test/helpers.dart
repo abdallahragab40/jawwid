@@ -11,7 +11,9 @@ import 'package:rattil/content/content_repository.dart';
 import 'package:rattil/content/models.dart';
 import 'package:rattil/core/json_store.dart';
 import 'package:rattil/core/reminder.dart';
+import 'package:rattil/content/language.dart';
 import 'package:rattil/features/practice/quiz_screen.dart';
+import 'package:rattil/l10n/generated/app_localizations.dart';
 import 'package:rattil/features/reader/reader_screen.dart';
 import 'package:rattil/features/study/study_state.dart';
 
@@ -187,4 +189,39 @@ class FakeReminders implements ReminderService {
     scheduledMinutes = null;
     cancels++;
   }
+}
+
+/// Answers the question on screen correctly, whatever its type, and returns
+/// it. Sort questions are placed tile by tile, then checked.
+Future<Question> answerCurrentCorrectly(
+  WidgetTester tester,
+  AppLanguage lang,
+) async {
+  final state = tester.state(find.byType(QuizScreen)) as dynamic;
+  final q = state.currentQuestion as Question;
+  final l10n = lookupAppLocalizations(lang.locale);
+  Future<void> tapVisible(Finder f) async {
+    if (f.evaluate().isEmpty) {
+      await tester.scrollUntilVisible(
+        f,
+        200,
+        scrollable: find.byType(Scrollable).last,
+      );
+    }
+    await tester.ensureVisible(f.first);
+    await tester.pumpAndSettle();
+    await tester.tap(f.first);
+    await tester.pumpAndSettle();
+  }
+
+  if (q.type == QuestionType.sort) {
+    for (final item in q.items) {
+      await tapVisible(find.text(item.arabic));
+      await tapVisible(find.text(q.groups[item.group].of(lang.code)));
+    }
+    await tapVisible(find.text(l10n.quizCheck));
+  } else {
+    await tapVisible(find.text(answerLabel(q, loadContent(), lang, l10n)));
+  }
+  return q;
 }

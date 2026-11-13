@@ -11047,6 +11047,939 @@
     "status": "draft"
    },
    "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q280",
+   "type": "sort",
+   "topic": "t14",
+   "prompt": {
+    "ar": "صنّف الحروف: مفخّمة دائمًا أم مرقّقة دائمًا؟",
+    "ckb": "پیتەکان پۆلێن بکە: هەمیشە قەڵەو یان هەمیشە ناسک؟",
+    "en": "Sort the letters: always heavy or always light?",
+    "id": "Kelompokkan huruf: selalu tebal atau selalu tipis?"
+   },
+   "groups": [
+    {
+     "ar": "مفخّمة دائمًا",
+     "ckb": "هەمیشە قەڵەو",
+     "en": "Always heavy",
+     "id": "Selalu tebal"
+    },
+    {
+     "ar": "مرقّقة دائمًا",
+     "ckb": "هەمیشە ناسک",
+     "en": "Always light",
+     "id": "Selalu tipis"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ص",
+     "group": 0
+    },
+    {
+     "arabic": "ض",
+     "group": 0
+    },
+    {
+     "arabic": "غ",
+     "group": 0
+    },
+    {
+     "arabic": "د",
+     "group": 1
+    },
+    {
+     "arabic": "ه",
+     "group": 1
+    },
+    {
+     "arabic": "ن",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "الحروف المفخّمة دائمًا حروف الاستعلاء (خُصَّ ضَغْطٍ قِظْ)، والمرقّقة دائمًا باقي الحروف عدا الألف واللام والراء.",
+    "ckb": "پیتە هەمیشە قەڵەوەکان پیتەکانی ئیستیعلان (خُصَّ ضَغْطٍ قِظْ)، و پیتەکانی تر هەمیشە ناسکن جگە لە ئەلیف و لام و ڕا.",
+    "en": "The always-heavy letters are the elevated letters (خُصَّ ضَغْطٍ قِظْ); the rest are always light, except alif, laam and raa.",
+    "id": "Huruf yang selalu tebal adalah huruf isti'la' (خُصَّ ضَغْطٍ قِظْ); sisanya selalu tipis, kecuali alif, lam, dan ra."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q281",
+   "type": "sort",
+   "topic": "t14",
+   "prompt": {
+    "ar": "صنّف الحروف: مفخّمة دائمًا أم مرقّقة دائمًا؟",
+    "ckb": "پیتەکان پۆلێن بکە: هەمیشە قەڵەو یان هەمیشە ناسک؟",
+    "en": "Sort the letters: always heavy or always light?",
+    "id": "Kelompokkan huruf: selalu tebal atau selalu tipis?"
+   },
+   "groups": [
+    {
+     "ar": "مفخّمة دائمًا",
+     "ckb": "هەمیشە قەڵەو",
+     "en": "Always heavy",
+     "id": "Selalu tebal"
+    },
+    {
+     "ar": "مرقّقة دائمًا",
+     "ckb": "هەمیشە ناسک",
+     "en": "Always light",
+     "id": "Selalu tipis"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ض",
+     "group": 0
+    },
+    {
+     "arabic": "ص",
+     "group": 0
+    },
+    {
+     "arabic": "ط",
+     "group": 0
+    },
+    {
+     "arabic": "و",
+     "group": 1
+    },
+    {
+     "arabic": "د",
+     "group": 1
+    },
+    {
+     "arabic": "ج",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "الحروف المفخّمة دائمًا حروف الاستعلاء (خُصَّ ضَغْطٍ قِظْ)، والمرقّقة دائمًا باقي الحروف عدا الألف واللام والراء.",
+    "ckb": "پیتە هەمیشە قەڵەوەکان پیتەکانی ئیستیعلان (خُصَّ ضَغْطٍ قِظْ)، و پیتەکانی تر هەمیشە ناسکن جگە لە ئەلیف و لام و ڕا.",
+    "en": "The always-heavy letters are the elevated letters (خُصَّ ضَغْطٍ قِظْ); the rest are always light, except alif, laam and raa.",
+    "id": "Huruf yang selalu tebal adalah huruf isti'la' (خُصَّ ضَغْطٍ قِظْ); sisanya selalu tipis, kecuali alif, lam, dan ra."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q282",
+   "type": "sort",
+   "topic": "t14",
+   "prompt": {
+    "ar": "صنّف الحروف: مفخّمة دائمًا أم مرقّقة دائمًا؟",
+    "ckb": "پیتەکان پۆلێن بکە: هەمیشە قەڵەو یان هەمیشە ناسک؟",
+    "en": "Sort the letters: always heavy or always light?",
+    "id": "Kelompokkan huruf: selalu tebal atau selalu tipis?"
+   },
+   "groups": [
+    {
+     "ar": "مفخّمة دائمًا",
+     "ckb": "هەمیشە قەڵەو",
+     "en": "Always heavy",
+     "id": "Selalu tebal"
+    },
+    {
+     "ar": "مرقّقة دائمًا",
+     "ckb": "هەمیشە ناسک",
+     "en": "Always light",
+     "id": "Selalu tipis"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "خ",
+     "group": 0
+    },
+    {
+     "arabic": "غ",
+     "group": 0
+    },
+    {
+     "arabic": "ط",
+     "group": 0
+    },
+    {
+     "arabic": "ي",
+     "group": 1
+    },
+    {
+     "arabic": "ج",
+     "group": 1
+    },
+    {
+     "arabic": "ك",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "الحروف المفخّمة دائمًا حروف الاستعلاء (خُصَّ ضَغْطٍ قِظْ)، والمرقّقة دائمًا باقي الحروف عدا الألف واللام والراء.",
+    "ckb": "پیتە هەمیشە قەڵەوەکان پیتەکانی ئیستیعلان (خُصَّ ضَغْطٍ قِظْ)، و پیتەکانی تر هەمیشە ناسکن جگە لە ئەلیف و لام و ڕا.",
+    "en": "The always-heavy letters are the elevated letters (خُصَّ ضَغْطٍ قِظْ); the rest are always light, except alif, laam and raa.",
+    "id": "Huruf yang selalu tebal adalah huruf isti'la' (خُصَّ ضَغْطٍ قِظْ); sisanya selalu tipis, kecuali alif, lam, dan ra."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q283",
+   "type": "sort",
+   "topic": "t18",
+   "prompt": {
+    "ar": "صنّف الحروف: إذا جاء الحرف بعد «ال» فهل اللام قمرية أم شمسية؟",
+    "ckb": "پیتەکان پۆلێن بکە: ئەگەر پیتەکە لەدوای «ال» بێت، لامەکە قەمەرییە یان شەمسی؟",
+    "en": "Sort the letters: when the letter follows «ال», is the laam lunar or solar?",
+    "id": "Kelompokkan huruf: jika huruf ini terletak setelah «ال», apakah lamnya qamariyah atau syamsiyah?"
+   },
+   "groups": [
+    {
+     "ar": "قمرية (تُظهر اللام)",
+     "ckb": "قەمەری (لام ئاشکرا دەکرێت)",
+     "en": "Lunar (laam pronounced)",
+     "id": "Qamariyah (lam dibaca jelas)"
+    },
+    {
+     "ar": "شمسية (تُدغم اللام)",
+     "ckb": "شەمسی (لام تێهەڵکێش دەکرێت)",
+     "en": "Solar (laam merged)",
+     "id": "Syamsiyah (lam diidghamkan)"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ق",
+     "group": 0
+    },
+    {
+     "arabic": "ف",
+     "group": 0
+    },
+    {
+     "arabic": "ء",
+     "group": 0
+    },
+    {
+     "arabic": "ث",
+     "group": 1
+    },
+    {
+     "arabic": "ت",
+     "group": 1
+    },
+    {
+     "arabic": "ز",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "الحروف القمرية مجموعة في (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)، والشمسية باقي الحروف.",
+    "ckb": "پیتە قەمەرییەکان لە (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)دا کۆکراونەتەوە، و پیتەکانی تر شەمسین.",
+    "en": "The lunar letters are gathered in (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); the other letters are solar.",
+    "id": "Huruf qamariyah terkumpul dalam (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); huruf lainnya syamsiyah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q284",
+   "type": "sort",
+   "topic": "t18",
+   "prompt": {
+    "ar": "صنّف الحروف: إذا جاء الحرف بعد «ال» فهل اللام قمرية أم شمسية؟",
+    "ckb": "پیتەکان پۆلێن بکە: ئەگەر پیتەکە لەدوای «ال» بێت، لامەکە قەمەرییە یان شەمسی؟",
+    "en": "Sort the letters: when the letter follows «ال», is the laam lunar or solar?",
+    "id": "Kelompokkan huruf: jika huruf ini terletak setelah «ال», apakah lamnya qamariyah atau syamsiyah?"
+   },
+   "groups": [
+    {
+     "ar": "قمرية (تُظهر اللام)",
+     "ckb": "قەمەری (لام ئاشکرا دەکرێت)",
+     "en": "Lunar (laam pronounced)",
+     "id": "Qamariyah (lam dibaca jelas)"
+    },
+    {
+     "ar": "شمسية (تُدغم اللام)",
+     "ckb": "شەمسی (لام تێهەڵکێش دەکرێت)",
+     "en": "Solar (laam merged)",
+     "id": "Syamsiyah (lam diidghamkan)"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ب",
+     "group": 0
+    },
+    {
+     "arabic": "ف",
+     "group": 0
+    },
+    {
+     "arabic": "ع",
+     "group": 0
+    },
+    {
+     "arabic": "ن",
+     "group": 1
+    },
+    {
+     "arabic": "ظ",
+     "group": 1
+    },
+    {
+     "arabic": "ز",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "الحروف القمرية مجموعة في (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)، والشمسية باقي الحروف.",
+    "ckb": "پیتە قەمەرییەکان لە (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)دا کۆکراونەتەوە، و پیتەکانی تر شەمسین.",
+    "en": "The lunar letters are gathered in (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); the other letters are solar.",
+    "id": "Huruf qamariyah terkumpul dalam (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); huruf lainnya syamsiyah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q285",
+   "type": "sort",
+   "topic": "t18",
+   "prompt": {
+    "ar": "صنّف الحروف: إذا جاء الحرف بعد «ال» فهل اللام قمرية أم شمسية؟",
+    "ckb": "پیتەکان پۆلێن بکە: ئەگەر پیتەکە لەدوای «ال» بێت، لامەکە قەمەرییە یان شەمسی؟",
+    "en": "Sort the letters: when the letter follows «ال», is the laam lunar or solar?",
+    "id": "Kelompokkan huruf: jika huruf ini terletak setelah «ال», apakah lamnya qamariyah atau syamsiyah?"
+   },
+   "groups": [
+    {
+     "ar": "قمرية (تُظهر اللام)",
+     "ckb": "قەمەری (لام ئاشکرا دەکرێت)",
+     "en": "Lunar (laam pronounced)",
+     "id": "Qamariyah (lam dibaca jelas)"
+    },
+    {
+     "ar": "شمسية (تُدغم اللام)",
+     "ckb": "شەمسی (لام تێهەڵکێش دەکرێت)",
+     "en": "Solar (laam merged)",
+     "id": "Syamsiyah (lam diidghamkan)"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "و",
+     "group": 0
+    },
+    {
+     "arabic": "غ",
+     "group": 0
+    },
+    {
+     "arabic": "ب",
+     "group": 0
+    },
+    {
+     "arabic": "ز",
+     "group": 1
+    },
+    {
+     "arabic": "ت",
+     "group": 1
+    },
+    {
+     "arabic": "ظ",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "الحروف القمرية مجموعة في (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)، والشمسية باقي الحروف.",
+    "ckb": "پیتە قەمەرییەکان لە (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه)دا کۆکراونەتەوە، و پیتەکانی تر شەمسین.",
+    "en": "The lunar letters are gathered in (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); the other letters are solar.",
+    "id": "Huruf qamariyah terkumpul dalam (ابْغِ حَجَّكَ وَخَفْ عَقِيمَه); huruf lainnya syamsiyah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q286",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "صنّف الحروف بحسب صفتي الهمس والجهر.",
+    "ckb": "پیتەکان بەپێی چرپە و ئاشکرا پۆلێن بکە.",
+    "en": "Sort the letters into hams and jahr.",
+    "id": "Kelompokkan huruf menurut sifat hams dan jahr."
+   },
+   "groups": [
+    {
+     "ar": "الهمس",
+     "ckb": "چرپە (الهمس)",
+     "en": "Hams (whisper)",
+     "id": "Hams"
+    },
+    {
+     "ar": "الجهر",
+     "ckb": "ئاشکرا (الجهر)",
+     "en": "Jahr (appearance)",
+     "id": "Jahr"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ه",
+     "group": 0
+    },
+    {
+     "arabic": "ك",
+     "group": 0
+    },
+    {
+     "arabic": "ح",
+     "group": 0
+    },
+    {
+     "arabic": "ع",
+     "group": 1
+    },
+    {
+     "arabic": "ي",
+     "group": 1
+    },
+    {
+     "arabic": "ظ",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "حروف الهمس عشرة (فَحَثَّهُ شَخْصٌ سَكَتْ)، والباقي حروف جهر.",
+    "ckb": "پیتەکانی چرپە دەن (فَحَثَّهُ شَخْصٌ سَكَتْ)، و ئەوانی تر پیتی ئاشکران.",
+    "en": "The ten hams letters are (فَحَثَّهُ شَخْصٌ سَكَتْ); the others are jahr letters.",
+    "id": "Sepuluh huruf hams adalah (فَحَثَّهُ شَخْصٌ سَكَتْ); sisanya huruf jahr."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q287",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "صنّف الحروف بحسب صفتي الهمس والجهر.",
+    "ckb": "پیتەکان بەپێی چرپە و ئاشکرا پۆلێن بکە.",
+    "en": "Sort the letters into hams and jahr.",
+    "id": "Kelompokkan huruf menurut sifat hams dan jahr."
+   },
+   "groups": [
+    {
+     "ar": "الهمس",
+     "ckb": "چرپە (الهمس)",
+     "en": "Hams (whisper)",
+     "id": "Hams"
+    },
+    {
+     "ar": "الجهر",
+     "ckb": "ئاشکرا (الجهر)",
+     "en": "Jahr (appearance)",
+     "id": "Jahr"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ص",
+     "group": 0
+    },
+    {
+     "arabic": "ف",
+     "group": 0
+    },
+    {
+     "arabic": "ث",
+     "group": 0
+    },
+    {
+     "arabic": "ن",
+     "group": 1
+    },
+    {
+     "arabic": "ظ",
+     "group": 1
+    },
+    {
+     "arabic": "ض",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "حروف الهمس عشرة (فَحَثَّهُ شَخْصٌ سَكَتْ)، والباقي حروف جهر.",
+    "ckb": "پیتەکانی چرپە دەن (فَحَثَّهُ شَخْصٌ سَكَتْ)، و ئەوانی تر پیتی ئاشکران.",
+    "en": "The ten hams letters are (فَحَثَّهُ شَخْصٌ سَكَتْ); the others are jahr letters.",
+    "id": "Sepuluh huruf hams adalah (فَحَثَّهُ شَخْصٌ سَكَتْ); sisanya huruf jahr."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q288",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "صنّف الحروف بحسب صفتي الهمس والجهر.",
+    "ckb": "پیتەکان بەپێی چرپە و ئاشکرا پۆلێن بکە.",
+    "en": "Sort the letters into hams and jahr.",
+    "id": "Kelompokkan huruf menurut sifat hams dan jahr."
+   },
+   "groups": [
+    {
+     "ar": "الهمس",
+     "ckb": "چرپە (الهمس)",
+     "en": "Hams (whisper)",
+     "id": "Hams"
+    },
+    {
+     "ar": "الجهر",
+     "ckb": "ئاشکرا (الجهر)",
+     "en": "Jahr (appearance)",
+     "id": "Jahr"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ف",
+     "group": 0
+    },
+    {
+     "arabic": "ح",
+     "group": 0
+    },
+    {
+     "arabic": "ه",
+     "group": 0
+    },
+    {
+     "arabic": "ق",
+     "group": 1
+    },
+    {
+     "arabic": "ع",
+     "group": 1
+    },
+    {
+     "arabic": "ب",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "حروف الهمس عشرة (فَحَثَّهُ شَخْصٌ سَكَتْ)، والباقي حروف جهر.",
+    "ckb": "پیتەکانی چرپە دەن (فَحَثَّهُ شَخْصٌ سَكَتْ)، و ئەوانی تر پیتی ئاشکران.",
+    "en": "The ten hams letters are (فَحَثَّهُ شَخْصٌ سَكَتْ); the others are jahr letters.",
+    "id": "Sepuluh huruf hams adalah (فَحَثَّهُ شَخْصٌ سَكَتْ); sisanya huruf jahr."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q289",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "صنّف الحروف: شدة أم توسط أم رخاوة؟",
+    "ckb": "پیتەکان پۆلێن بکە: توندی، مامناوەند یان خاوی؟",
+    "en": "Sort the letters: shiddah, tawassut or rakhawah?",
+    "id": "Kelompokkan huruf: syiddah, tawassuth, atau rakhawah?"
+   },
+   "groups": [
+    {
+     "ar": "الشدة",
+     "ckb": "توندی (الشدة)",
+     "en": "Shiddah (strength)",
+     "id": "Syiddah"
+    },
+    {
+     "ar": "التوسط",
+     "ckb": "مامناوەند (التوسط)",
+     "en": "Tawassut (moderation)",
+     "id": "Tawassuth"
+    },
+    {
+     "ar": "الرخاوة",
+     "ckb": "خاوی (الرخاوة)",
+     "en": "Rakhawah (softness)",
+     "id": "Rakhawah"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ك",
+     "group": 0
+    },
+    {
+     "arabic": "ج",
+     "group": 0
+    },
+    {
+     "arabic": "ر",
+     "group": 1
+    },
+    {
+     "arabic": "ن",
+     "group": 1
+    },
+    {
+     "arabic": "ظ",
+     "group": 2
+    },
+    {
+     "arabic": "ذ",
+     "group": 2
+    }
+   ],
+   "explanation": {
+    "ar": "حروف الشدة (أجِدْ قَطٍ بَكَتْ)، وحروف التوسط (لِنْ عُمَرْ)، والباقي حروف رخاوة.",
+    "ckb": "پیتەکانی توندی (أجِدْ قَطٍ بَكَتْ)، پیتەکانی مامناوەند (لِنْ عُمَرْ)، و ئەوانی تر پیتی خاوین.",
+    "en": "Shiddah letters: (أجِدْ قَطٍ بَكَتْ); tawassut letters: (لِنْ عُمَرْ); the rest are rakhawah letters.",
+    "id": "Huruf syiddah: (أجِدْ قَطٍ بَكَتْ); huruf tawassuth: (لِنْ عُمَرْ); sisanya huruf rakhawah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q290",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "صنّف الحروف: شدة أم توسط أم رخاوة؟",
+    "ckb": "پیتەکان پۆلێن بکە: توندی، مامناوەند یان خاوی؟",
+    "en": "Sort the letters: shiddah, tawassut or rakhawah?",
+    "id": "Kelompokkan huruf: syiddah, tawassuth, atau rakhawah?"
+   },
+   "groups": [
+    {
+     "ar": "الشدة",
+     "ckb": "توندی (الشدة)",
+     "en": "Shiddah (strength)",
+     "id": "Syiddah"
+    },
+    {
+     "ar": "التوسط",
+     "ckb": "مامناوەند (التوسط)",
+     "en": "Tawassut (moderation)",
+     "id": "Tawassuth"
+    },
+    {
+     "ar": "الرخاوة",
+     "ckb": "خاوی (الرخاوة)",
+     "en": "Rakhawah (softness)",
+     "id": "Rakhawah"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ق",
+     "group": 0
+    },
+    {
+     "arabic": "ب",
+     "group": 0
+    },
+    {
+     "arabic": "ل",
+     "group": 1
+    },
+    {
+     "arabic": "ع",
+     "group": 1
+    },
+    {
+     "arabic": "ي",
+     "group": 2
+    },
+    {
+     "arabic": "ش",
+     "group": 2
+    }
+   ],
+   "explanation": {
+    "ar": "حروف الشدة (أجِدْ قَطٍ بَكَتْ)، وحروف التوسط (لِنْ عُمَرْ)، والباقي حروف رخاوة.",
+    "ckb": "پیتەکانی توندی (أجِدْ قَطٍ بَكَتْ)، پیتەکانی مامناوەند (لِنْ عُمَرْ)، و ئەوانی تر پیتی خاوین.",
+    "en": "Shiddah letters: (أجِدْ قَطٍ بَكَتْ); tawassut letters: (لِنْ عُمَرْ); the rest are rakhawah letters.",
+    "id": "Huruf syiddah: (أجِدْ قَطٍ بَكَتْ); huruf tawassuth: (لِنْ عُمَرْ); sisanya huruf rakhawah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q291",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "صنّف الحروف: شدة أم توسط أم رخاوة؟",
+    "ckb": "پیتەکان پۆلێن بکە: توندی، مامناوەند یان خاوی؟",
+    "en": "Sort the letters: shiddah, tawassut or rakhawah?",
+    "id": "Kelompokkan huruf: syiddah, tawassuth, atau rakhawah?"
+   },
+   "groups": [
+    {
+     "ar": "الشدة",
+     "ckb": "توندی (الشدة)",
+     "en": "Shiddah (strength)",
+     "id": "Syiddah"
+    },
+    {
+     "ar": "التوسط",
+     "ckb": "مامناوەند (التوسط)",
+     "en": "Tawassut (moderation)",
+     "id": "Tawassuth"
+    },
+    {
+     "ar": "الرخاوة",
+     "ckb": "خاوی (الرخاوة)",
+     "en": "Rakhawah (softness)",
+     "id": "Rakhawah"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ج",
+     "group": 0
+    },
+    {
+     "arabic": "ت",
+     "group": 0
+    },
+    {
+     "arabic": "م",
+     "group": 1
+    },
+    {
+     "arabic": "ن",
+     "group": 1
+    },
+    {
+     "arabic": "س",
+     "group": 2
+    },
+    {
+     "arabic": "ف",
+     "group": 2
+    }
+   ],
+   "explanation": {
+    "ar": "حروف الشدة (أجِدْ قَطٍ بَكَتْ)، وحروف التوسط (لِنْ عُمَرْ)، والباقي حروف رخاوة.",
+    "ckb": "پیتەکانی توندی (أجِدْ قَطٍ بَكَتْ)، پیتەکانی مامناوەند (لِنْ عُمَرْ)، و ئەوانی تر پیتی خاوین.",
+    "en": "Shiddah letters: (أجِدْ قَطٍ بَكَتْ); tawassut letters: (لِنْ عُمَرْ); the rest are rakhawah letters.",
+    "id": "Huruf syiddah: (أجِدْ قَطٍ بَكَتْ); huruf tawassuth: (لِنْ عُمَرْ); sisanya huruf rakhawah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q292",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "أيّ هذه الحروف من حروف القلقلة؟",
+    "ckb": "کام لەم پیتانە پیتی قەلقەلەن؟",
+    "en": "Which of these letters are qalqalah letters?",
+    "id": "Manakah di antara huruf ini yang termasuk huruf qalqalah?"
+   },
+   "groups": [
+    {
+     "ar": "حرف قلقلة",
+     "ckb": "پیتی قەلقەلە",
+     "en": "Qalqalah letter",
+     "id": "Huruf qalqalah"
+    },
+    {
+     "ar": "ليس من حروف القلقلة",
+     "ckb": "پیتی قەلقەلە نییە",
+     "en": "Not a qalqalah letter",
+     "id": "Bukan huruf qalqalah"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "د",
+     "group": 0
+    },
+    {
+     "arabic": "ق",
+     "group": 0
+    },
+    {
+     "arabic": "ج",
+     "group": 0
+    },
+    {
+     "arabic": "ت",
+     "group": 1
+    },
+    {
+     "arabic": "ث",
+     "group": 1
+    },
+    {
+     "arabic": "ء",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).",
+    "ckb": "پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.",
+    "en": "The five qalqalah letters are gathered in (قُطْبُ جَدٍّ).",
+    "id": "Lima huruf qalqalah terkumpul dalam (قُطْبُ جَدٍّ)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q293",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "أيّ هذه الحروف من حروف القلقلة؟",
+    "ckb": "کام لەم پیتانە پیتی قەلقەلەن؟",
+    "en": "Which of these letters are qalqalah letters?",
+    "id": "Manakah di antara huruf ini yang termasuk huruf qalqalah?"
+   },
+   "groups": [
+    {
+     "ar": "حرف قلقلة",
+     "ckb": "پیتی قەلقەلە",
+     "en": "Qalqalah letter",
+     "id": "Huruf qalqalah"
+    },
+    {
+     "ar": "ليس من حروف القلقلة",
+     "ckb": "پیتی قەلقەلە نییە",
+     "en": "Not a qalqalah letter",
+     "id": "Bukan huruf qalqalah"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ط",
+     "group": 0
+    },
+    {
+     "arabic": "ق",
+     "group": 0
+    },
+    {
+     "arabic": "د",
+     "group": 0
+    },
+    {
+     "arabic": "ع",
+     "group": 1
+    },
+    {
+     "arabic": "ف",
+     "group": 1
+    },
+    {
+     "arabic": "ء",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).",
+    "ckb": "پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.",
+    "en": "The five qalqalah letters are gathered in (قُطْبُ جَدٍّ).",
+    "id": "Lima huruf qalqalah terkumpul dalam (قُطْبُ جَدٍّ)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q294",
+   "type": "sort",
+   "topic": "t08",
+   "prompt": {
+    "ar": "أيّ هذه الحروف من حروف القلقلة؟",
+    "ckb": "کام لەم پیتانە پیتی قەلقەلەن؟",
+    "en": "Which of these letters are qalqalah letters?",
+    "id": "Manakah di antara huruf ini yang termasuk huruf qalqalah?"
+   },
+   "groups": [
+    {
+     "ar": "حرف قلقلة",
+     "ckb": "پیتی قەلقەلە",
+     "en": "Qalqalah letter",
+     "id": "Huruf qalqalah"
+    },
+    {
+     "ar": "ليس من حروف القلقلة",
+     "ckb": "پیتی قەلقەلە نییە",
+     "en": "Not a qalqalah letter",
+     "id": "Bukan huruf qalqalah"
+    }
+   ],
+   "items": [
+    {
+     "arabic": "ط",
+     "group": 0
+    },
+    {
+     "arabic": "د",
+     "group": 0
+    },
+    {
+     "arabic": "ب",
+     "group": 0
+    },
+    {
+     "arabic": "خ",
+     "group": 1
+    },
+    {
+     "arabic": "ض",
+     "group": 1
+    },
+    {
+     "arabic": "ذ",
+     "group": 1
+    }
+   ],
+   "explanation": {
+    "ar": "حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).",
+    "ckb": "پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.",
+    "en": "The five qalqalah letters are gathered in (قُطْبُ جَدٍّ).",
+    "id": "Lima huruf qalqalah terkumpul dalam (قُطْبُ جَدٍّ)."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
   }
  ]
 }

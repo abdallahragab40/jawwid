@@ -1186,6 +1186,24 @@ abstract class AppLocalizations {
   /// **'أحسنت! سُجّل الدرس مكتملًا.'**
   String get quizLessonCompleted;
 
+  /// Sort questions: how to play
+  ///
+  /// In ar, this message translates to:
+  /// **'اختر حرفًا ثم المجموعة التي ينتمي إليها.'**
+  String get quizSortHint;
+
+  /// Button: check a sort answer
+  ///
+  /// In ar, this message translates to:
+  /// **'تحقّق'**
+  String get quizCheck;
+
+  /// Semantics hint on a placed letter
+  ///
+  /// In ar, this message translates to:
+  /// **'اضغط لإعادته'**
+  String get quizSortReturn;
+
   /// Button: start another practice session
   ///
   /// In ar, this message translates to:
