@@ -92,6 +92,30 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get homeProgressTitle => 'Kemajuanmu';
+
+  @override
+  String homeLessonsDone(String done, String total) {
+    return '$done dari $total selesai';
+  }
+
+  @override
+  String homePracticeAccuracy(String percent) {
+    return '$percent% benar';
+  }
+
+  @override
+  String get homePracticeTeaser => 'Uji dirimu dalam dua menit';
+
+  @override
+  String homeUnitLabel(String number) {
+    return 'Unit $number';
+  }
+
+  @override
+  String get homeSeeAll => 'Semua topik';
+
+  @override
   String get homeRecentBookmarks => 'Penanda terbaru';
 
   @override
@@ -249,6 +273,30 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get readerChooseEdition => 'Baca di edisi lain';
+
+  @override
+  String get lessonSourceInfo => 'Tentang teks ini';
+
+  @override
+  String get settingsAppearance => 'Tampilan';
+
+  @override
+  String get themeSystem => 'Otomatis';
+
+  @override
+  String get themeLight => 'Terang';
+
+  @override
+  String get themeDark => 'Gelap';
+
+  @override
+  String get settingsTextSize => 'Ukuran teks pelajaran';
+
+  @override
+  String get textSmaller => 'Perkecil teks';
+
+  @override
+  String get textLarger => 'Perbesar teks';
 
   @override
   String get readerAppearance => 'Tampilan membaca';

@@ -10,6 +10,8 @@ import '../../content/language.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
 import '../../widgets/ornaments.dart';
+import '../../widgets/progress_ring.dart';
+import '../practice/session.dart';
 import '../reader/reader_screen.dart';
 import '../study/study_state.dart';
 
@@ -84,71 +86,36 @@ class HomeScreen extends ConsumerWidget {
             _ContinueCard(target: target, content: content, language: lang),
             const SizedBox(height: 14),
 
-            // Curriculum.
-            Card(
-              child: InkWell(
-                borderRadius: BorderRadius.circular(18),
-                onTap: () => RootShell.of(context)?.selectTab(Tabs.lessons),
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              l10n.homeCurriculum,
-                              style: context.type.heading(size: 19),
-                            ),
-                          ),
-                          Icon(
-                            Icons.chevron_right,
-                            textDirection: Directionality.of(context),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        l10n.homeCurriculumSummary(
-                          n(content.topics.length, lang),
-                          n(content.groups.length, lang),
-                        ),
-                        style: context.type.muted(size: 13.5),
-                      ),
-                      const SizedBox(height: 12),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(4),
-                        child: LinearProgressIndicator(
-                          value: content.topics.isEmpty
-                              ? 0
-                              : completed / content.topics.length,
-                          minHeight: 6,
-                          backgroundColor: dark
-                              ? RattilColors.nightLine
-                              : RattilColors.emerald50,
-                          semanticsLabel: l10n.curriculumProgress(
-                            n(started, lang),
-                            n(completed, lang),
-                            n(content.topics.length, lang),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        l10n.curriculumProgress(
-                          n(started, lang),
-                          n(completed, lang),
-                          n(content.topics.length, lang),
-                        ),
-                        style: context.type.ui(size: 13),
-                      ),
-                    ],
+            // Progress and practice, side by side.
+            IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(
+                    child: _ProgressTile(
+                      completed: completed,
+                      started: started,
+                      total: content.topics.length,
+                      language: lang,
+                    ),
                   ),
-                ),
+                  const SizedBox(width: 12),
+                  Expanded(child: _PracticeTile(language: lang)),
+                ],
               ),
             ),
             const SizedBox(height: 14),
+
+            // The units of the curriculum.
+            SectionHeading(
+              l10n.homeCurriculum,
+              trailing: TextButton(
+                onPressed: () => RootShell.of(context)?.selectTab(Tabs.lessons),
+                child: Text(l10n.homeSeeAll),
+              ),
+            ),
+            _UnitStrip(content: content, study: study, language: lang),
+            const SizedBox(height: 16),
 
             // The whole book, kept as the reference behind every lesson.
             Card(
@@ -297,56 +264,82 @@ class _ContinueCard extends StatelessWidget {
           : () => openReader(context, edition: t.edition, page: t.page);
     }
     return Material(
-      color: dark ? const Color(0xFF143A30) : RattilColors.emerald700,
-      borderRadius: BorderRadius.circular(20),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(20),
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(18),
-          child: Row(
+      color: Colors.transparent,
+      borderRadius: BorderRadius.circular(22),
+      clipBehavior: Clip.antiAlias,
+      child: Ink(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: AlignmentDirectional.topStart,
+            end: AlignmentDirectional.bottomEnd,
+            colors: dark
+                ? const [Color(0xFF1A4A3D), Color(0xFF0F2C24)]
+                : const [RattilColors.emerald500, RattilColors.emerald900],
+          ),
+        ),
+        child: InkWell(
+          onTap: onTap,
+          child: Stack(
             children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              PositionedDirectional(
+                end: -28,
+                bottom: -36,
+                child: Rosette(
+                  size: 140,
+                  color: Colors.white.withValues(alpha: 0.10),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(18),
+                child: Row(
                   children: [
-                    Text(
-                      title,
-                      style: context.type.heading(
-                        size: 21,
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            title,
+                            style: context.type.heading(
+                              size: 21,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          Text(
+                            subtitle,
+                            style: context.type.ui(
+                              size: 14,
+                              color: const Color(0xFFE3EFE9),
+                            ),
+                          ),
+                          if (notice != null) ...[
+                            const SizedBox(height: 6),
+                            Text(
+                              notice,
+                              style: context.type.ui(
+                                size: 12.5,
+                                color: RattilColors.goldSoft,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Container(
+                      width: 48,
+                      height: 48,
+                      decoration: const BoxDecoration(
+                        color: RattilColors.gold,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.auto_stories,
                         color: Colors.white,
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    Text(
-                      subtitle,
-                      style: context.type.ui(
-                        size: 14,
-                        color: const Color(0xFFE3EFE9),
-                      ),
-                    ),
-                    if (notice != null) ...[
-                      const SizedBox(height: 6),
-                      Text(
-                        notice,
-                        style: context.type.ui(
-                          size: 12.5,
-                          color: RattilColors.goldSoft,
-                        ),
-                      ),
-                    ],
                   ],
                 ),
-              ),
-              const SizedBox(width: 12),
-              Container(
-                width: 48,
-                height: 48,
-                decoration: const BoxDecoration(
-                  color: RattilColors.gold,
-                  shape: BoxShape.circle,
-                ),
-                child: const Icon(Icons.auto_stories, color: Colors.white),
               ),
             ],
           ),
@@ -448,6 +441,234 @@ class _ReviewSuggestion extends ConsumerWidget {
                 child: Text(actionLabel!),
               ),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ProgressTile extends StatelessWidget {
+  const _ProgressTile({
+    required this.completed,
+    required this.started,
+    required this.total,
+    required this.language,
+  });
+  final int completed;
+  final int started;
+  final int total;
+  final AppLanguage language;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final label = l10n.curriculumProgress(
+      n(started, language),
+      n(completed, language),
+      n(total, language),
+    );
+    return Card(
+      child: InkWell(
+        borderRadius: BorderRadius.circular(18),
+        onTap: () => RootShell.of(context)?.selectTab(Tabs.lessons),
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.homeProgressTitle, style: context.type.muted(size: 13)),
+              const SizedBox(height: 10),
+              ProgressRing(
+                value: total == 0 ? 0 : completed / total,
+                size: 60,
+                semanticsLabel: label,
+                child: ExcludeSemantics(
+                  child: Text(
+                    n(completed, language),
+                    style: context.type.heading(size: 20),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
+              ExcludeSemantics(
+                child: Text(
+                  l10n.homeLessonsDone(
+                    n(completed, language),
+                    n(total, language),
+                  ),
+                  style: context.type.ui(size: 13.5, weight: FontWeight.w600),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _PracticeTile extends ConsumerWidget {
+  const _PracticeTile({required this.language});
+  final AppLanguage language;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final content = ref.watch(contentProvider);
+    final quiz = ref.watch(studyProvider.select((s) => s.quiz));
+    final dark = context.isDark;
+    final pool = content.questions;
+    if (pool.isEmpty) return const SizedBox.shrink();
+    final answered = pool.where((q) => quiz.containsKey(q.id)).length;
+    final correct = pool.where((q) => quiz[q.id]?.lastCorrect ?? false).length;
+    final mistakes = mistakeCount(pool, quiz);
+    final gold = dark ? RattilColors.goldLight : RattilColors.goldText;
+    return Card(
+      child: InkWell(
+        borderRadius: BorderRadius.circular(18),
+        onTap: () => openQuiz(context),
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.practiceTitle, style: context.type.muted(size: 13)),
+              const SizedBox(height: 10),
+              Container(
+                width: 60,
+                height: 60,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: (dark ? RattilColors.goldLight : RattilColors.gold)
+                      .withValues(alpha: 0.16),
+                ),
+                child: Icon(Icons.bolt, size: 32, color: gold),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                answered == 0
+                    ? l10n.homePracticeTeaser
+                    : l10n.homePracticeAccuracy(
+                        n((correct * 100 / answered).round(), language),
+                      ),
+                style: context.type.ui(size: 13.5, weight: FontWeight.w600),
+              ),
+              if (mistakes > 0)
+                Text(
+                  l10n.practiceMistakes(n(mistakes, language)),
+                  style: context.type.ui(size: 12.5, color: gold),
+                ),
+              const Spacer(),
+              const SizedBox(height: 6),
+              Text(
+                l10n.practiceQuick,
+                style: context.type.ui(
+                  size: 14,
+                  weight: FontWeight.w700,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _UnitStrip extends StatelessWidget {
+  const _UnitStrip({
+    required this.content,
+    required this.study,
+    required this.language,
+  });
+  final ContentRepository content;
+  final StudyState study;
+  final AppLanguage language;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final brightness = Theme.of(context).brightness;
+    final dark = brightness == Brightness.dark;
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      clipBehavior: Clip.none,
+      child: IntrinsicHeight(
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            for (final (i, g) in content.groups.indexed) ...[
+              if (i > 0) const SizedBox(width: 10),
+              Builder(
+                builder: (context) {
+                  final accent = UnitColors.of(i, brightness);
+                  final done = g.topicIds
+                      .where(
+                        (t) => study.progressOf(t) == TopicProgress.completed,
+                      )
+                      .length;
+                  final next = g.topicIds.firstWhere(
+                    (t) => study.progressOf(t) != TopicProgress.completed,
+                    orElse: () => g.topicIds.first,
+                  );
+                  return SizedBox(
+                    width: 156,
+                    child: Material(
+                      color: accent.withValues(alpha: dark ? 0.16 : 0.09),
+                      borderRadius: BorderRadius.circular(18),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(18),
+                        onTap: () => openTopic(context, next),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                l10n.homeUnitLabel(n(i + 1, language)),
+                                style: context.type.ui(
+                                  size: 12.5,
+                                  weight: FontWeight.w700,
+                                  color: accent,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                g.title.of(language.code),
+                                style: context.type.ui(
+                                  size: 14.5,
+                                  weight: FontWeight.w600,
+                                ),
+                              ),
+                              const Spacer(),
+                              const SizedBox(height: 10),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(4),
+                                child: LinearProgressIndicator(
+                                  value: done / g.topicIds.length,
+                                  minHeight: 5,
+                                  color: accent,
+                                  backgroundColor: accent.withValues(
+                                    alpha: 0.18,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                '${n(done, language)} / ${n(g.topicIds.length, language)}',
+                                style: context.type.muted(size: 12),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ],
           ],
         ),
       ),

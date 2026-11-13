@@ -92,6 +92,30 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get homeProgressTitle => 'تقدّمك';
+
+  @override
+  String homeLessonsDone(String done, String total) {
+    return 'أكملت $done من $total';
+  }
+
+  @override
+  String homePracticeAccuracy(String percent) {
+    return '$percent٪ إجابات صحيحة';
+  }
+
+  @override
+  String get homePracticeTeaser => 'اختبر نفسك في دقيقتين';
+
+  @override
+  String homeUnitLabel(String number) {
+    return 'الوحدة $number';
+  }
+
+  @override
+  String get homeSeeAll => 'كل الموضوعات';
+
+  @override
   String get homeRecentBookmarks => 'أحدث العلامات';
 
   @override
@@ -249,6 +273,30 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get readerChooseEdition => 'القراءة في نسخة أخرى';
+
+  @override
+  String get lessonSourceInfo => 'عن مصدر النص';
+
+  @override
+  String get settingsAppearance => 'المظهر';
+
+  @override
+  String get themeSystem => 'تلقائي';
+
+  @override
+  String get themeLight => 'فاتح';
+
+  @override
+  String get themeDark => 'داكن';
+
+  @override
+  String get settingsTextSize => 'حجم نص الدروس';
+
+  @override
+  String get textSmaller => 'تصغير النص';
+
+  @override
+  String get textLarger => 'تكبير النص';
 
   @override
   String get readerAppearance => 'مظهر القراءة';

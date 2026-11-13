@@ -262,7 +262,16 @@ void main() {
     await tester.pumpAndSettle();
     await tapText(tester, ar.settingsTitle);
     final reminder = find.text(ar.settingsReminder);
-    await tester.ensureVisible(reminder);
+    await tester.scrollUntilVisible(
+      reminder,
+      200,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
     await tester.tap(reminder);
     await tester.pumpAndSettle();
     expect(container.read(studyProvider).reminderEnabled, isTrue);
@@ -296,14 +305,32 @@ void main() {
     await tester.pumpAndSettle();
     await tapText(tester, ar.settingsTitle);
     final reminder = find.text(ar.settingsReminder);
-    await tester.ensureVisible(reminder);
+    await tester.scrollUntilVisible(
+      reminder,
+      200,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
     await tester.tap(reminder);
     await tester.pumpAndSettle();
     expect(container.read(studyProvider).reminderEnabled, isFalse);
     expect(find.text(ar.settingsReminderDenied), findsOneWidget);
     expect(reminders.scheduledMinutes, isNull);
     final haptics = find.text(ar.settingsHaptics);
-    await tester.ensureVisible(haptics);
+    await tester.scrollUntilVisible(
+      haptics,
+      200,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
     await tester.tap(haptics);
     await tester.pumpAndSettle();
     expect(container.read(studyProvider).hapticsEnabled, isFalse);

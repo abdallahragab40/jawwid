@@ -92,6 +92,30 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get homeProgressTitle => 'پێشکەوتنت';
+
+  @override
+  String homeLessonsDone(String done, String total) {
+    return '$done لە $total تەواوکراون';
+  }
+
+  @override
+  String homePracticeAccuracy(String percent) {
+    return '$percent٪ وەڵامی ڕاست';
+  }
+
+  @override
+  String get homePracticeTeaser => 'لە دوو خولەکدا خۆت تاقی بکەرەوە';
+
+  @override
+  String homeUnitLabel(String number) {
+    return 'بەشی $number';
+  }
+
+  @override
+  String get homeSeeAll => 'هەموو بابەتەکان';
+
+  @override
   String get homeRecentBookmarks => 'دوایین نیشانەکان';
 
   @override
@@ -249,6 +273,30 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get readerChooseEdition => 'خوێندنەوە لە وەشانێکی تر';
+
+  @override
+  String get lessonSourceInfo => 'دەربارەی سەرچاوەی دەق';
+
+  @override
+  String get settingsAppearance => 'ڕووکار';
+
+  @override
+  String get themeSystem => 'خۆکار';
+
+  @override
+  String get themeLight => 'ڕوون';
+
+  @override
+  String get themeDark => 'تاریک';
+
+  @override
+  String get settingsTextSize => 'قەبارەی نووسینی وانەکان';
+
+  @override
+  String get textSmaller => 'بچووککردنەوەی نووسین';
+
+  @override
+  String get textLarger => 'گەورەکردنی نووسین';
 
   @override
   String get readerAppearance => 'ڕووکاری خوێندنەوە';

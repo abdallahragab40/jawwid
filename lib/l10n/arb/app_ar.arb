@@ -101,6 +101,48 @@
       }
     }
   },
+  "homeProgressTitle": "تقدّمك",
+  "@homeProgressTitle": {
+    "description": "Home: progress tile heading"
+  },
+  "homeLessonsDone": "أكملت {done} من {total}",
+  "@homeLessonsDone": {
+    "description": "{done} and {total} are localized",
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "homePracticeAccuracy": "{percent}٪ إجابات صحيحة",
+  "@homePracticeAccuracy": {
+    "description": "{percent} is localized",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "homePracticeTeaser": "اختبر نفسك في دقيقتين",
+  "@homePracticeTeaser": {
+    "description": "Home: practice tile when nothing has been answered yet"
+  },
+  "homeUnitLabel": "الوحدة {number}",
+  "@homeUnitLabel": {
+    "description": "Label of a curriculum unit. {number} is localized",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeeAll": "كل الموضوعات",
+  "@homeSeeAll": {
+    "description": "Link to the full topic list"
+  },
   "homeRecentBookmarks": "أحدث العلامات",
   "homeReviewSuggestion": "اقتراح للمراجعة",
   "reviewMissed": "أصبتَ في {correct} من {answered} من أسئلة «{topic}». راجع الدرس ثم أعد المحاولة.",
@@ -276,6 +318,32 @@
     }
   },
   "readerChooseEdition": "القراءة في نسخة أخرى",
+  "lessonSourceInfo": "عن مصدر النص",
+  "@lessonSourceInfo": {
+    "description": "Tooltip: about the source of this lesson text"
+  },
+  "settingsAppearance": "المظهر",
+  "@settingsAppearance": {
+    "description": "Settings section: app colours"
+  },
+  "themeSystem": "تلقائي",
+  "@themeSystem": {
+    "description": "App theme follows the device"
+  },
+  "themeLight": "فاتح",
+  "themeDark": "داكن",
+  "settingsTextSize": "حجم نص الدروس",
+  "@settingsTextSize": {
+    "description": "Slider: size of lesson text"
+  },
+  "textSmaller": "تصغير النص",
+  "@textSmaller": {
+    "description": "Tooltip: make text smaller"
+  },
+  "textLarger": "تكبير النص",
+  "@textLarger": {
+    "description": "Tooltip: make text larger"
+  },
   "readerAppearance": "مظهر القراءة",
   "readerThemeLight": "فاتح",
   "readerThemeSepia": "ورقي",

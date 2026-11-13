@@ -92,6 +92,30 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get homeProgressTitle => 'Your progress';
+
+  @override
+  String homeLessonsDone(String done, String total) {
+    return '$done of $total completed';
+  }
+
+  @override
+  String homePracticeAccuracy(String percent) {
+    return '$percent% correct';
+  }
+
+  @override
+  String get homePracticeTeaser => 'Test yourself in two minutes';
+
+  @override
+  String homeUnitLabel(String number) {
+    return 'Unit $number';
+  }
+
+  @override
+  String get homeSeeAll => 'All topics';
+
+  @override
   String get homeRecentBookmarks => 'Recent bookmarks';
 
   @override
@@ -249,6 +273,30 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get readerChooseEdition => 'Read in another edition';
+
+  @override
+  String get lessonSourceInfo => 'About this text';
+
+  @override
+  String get settingsAppearance => 'Appearance';
+
+  @override
+  String get themeSystem => 'Automatic';
+
+  @override
+  String get themeLight => 'Light';
+
+  @override
+  String get themeDark => 'Dark';
+
+  @override
+  String get settingsTextSize => 'Lesson text size';
+
+  @override
+  String get textSmaller => 'Smaller text';
+
+  @override
+  String get textLarger => 'Larger text';
 
   @override
   String get readerAppearance => 'Reading appearance';

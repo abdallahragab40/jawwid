@@ -252,6 +252,42 @@ abstract class AppLocalizations {
   /// **'{topics} موضوعًا في {groups} وحدات'**
   String homeCurriculumSummary(String topics, String groups);
 
+  /// Home: progress tile heading
+  ///
+  /// In ar, this message translates to:
+  /// **'تقدّمك'**
+  String get homeProgressTitle;
+
+  /// {done} and {total} are localized
+  ///
+  /// In ar, this message translates to:
+  /// **'أكملت {done} من {total}'**
+  String homeLessonsDone(String done, String total);
+
+  /// {percent} is localized
+  ///
+  /// In ar, this message translates to:
+  /// **'{percent}٪ إجابات صحيحة'**
+  String homePracticeAccuracy(String percent);
+
+  /// Home: practice tile when nothing has been answered yet
+  ///
+  /// In ar, this message translates to:
+  /// **'اختبر نفسك في دقيقتين'**
+  String get homePracticeTeaser;
+
+  /// Label of a curriculum unit. {number} is localized
+  ///
+  /// In ar, this message translates to:
+  /// **'الوحدة {number}'**
+  String homeUnitLabel(String number);
+
+  /// Link to the full topic list
+  ///
+  /// In ar, this message translates to:
+  /// **'كل الموضوعات'**
+  String get homeSeeAll;
+
   /// No description provided for @homeRecentBookmarks.
   ///
   /// In ar, this message translates to:
@@ -509,6 +545,54 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'القراءة في نسخة أخرى'**
   String get readerChooseEdition;
+
+  /// Tooltip: about the source of this lesson text
+  ///
+  /// In ar, this message translates to:
+  /// **'عن مصدر النص'**
+  String get lessonSourceInfo;
+
+  /// Settings section: app colours
+  ///
+  /// In ar, this message translates to:
+  /// **'المظهر'**
+  String get settingsAppearance;
+
+  /// App theme follows the device
+  ///
+  /// In ar, this message translates to:
+  /// **'تلقائي'**
+  String get themeSystem;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In ar, this message translates to:
+  /// **'فاتح'**
+  String get themeLight;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In ar, this message translates to:
+  /// **'داكن'**
+  String get themeDark;
+
+  /// Slider: size of lesson text
+  ///
+  /// In ar, this message translates to:
+  /// **'حجم نص الدروس'**
+  String get settingsTextSize;
+
+  /// Tooltip: make text smaller
+  ///
+  /// In ar, this message translates to:
+  /// **'تصغير النص'**
+  String get textSmaller;
+
+  /// Tooltip: make text larger
+  ///
+  /// In ar, this message translates to:
+  /// **'تكبير النص'**
+  String get textLarger;
 
   /// No description provided for @readerAppearance.
   ///

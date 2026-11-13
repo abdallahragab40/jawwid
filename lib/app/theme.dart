@@ -58,6 +58,35 @@ abstract final class LessonColors {
       b == Brightness.dark ? incorrectDark : incorrect;
 }
 
+/// One accent per curriculum unit (g1–g8), so units are easy to tell apart.
+/// Navigation aid only: never used to convey Tajweed meaning.
+abstract final class UnitColors {
+  static const _light = [
+    Color(0xFF1F6F5C),
+    Color(0xFF2A6C86),
+    Color(0xFF85661F),
+    Color(0xFFA4502E),
+    Color(0xFF7A3E6C),
+    Color(0xFF4A5296),
+    Color(0xFF5E6B24),
+    Color(0xFF8A4A4A),
+  ];
+  static const _dark = [
+    Color(0xFF6CC3A6),
+    Color(0xFF7EC0DA),
+    Color(0xFFD9B865),
+    Color(0xFFEB9B7A),
+    Color(0xFFD49BC6),
+    Color(0xFFA2A9EB),
+    Color(0xFFBAC97A),
+    Color(0xFFDDA0A0),
+  ];
+
+  /// Accent of the unit at [index] (0-based, wraps around).
+  static Color of(int index, Brightness b) =>
+      (b == Brightness.dark ? _dark : _light)[index % _light.length];
+}
+
 /// Typography roles. Arabic-script text is set larger with taller lines so its
 /// perceived size and weight match the Latin text beside it.
 class RattilType {

@@ -8,6 +8,12 @@ import '../../core/json_store.dart';
 
 enum ReaderTheme { light, sepia, night }
 
+const lessonTextScaleMin = 0.85;
+const lessonTextScaleMax = 1.5;
+
+/// App colour scheme: follow the device, or always light / dark.
+enum AppThemeChoice { system, light, dark }
+
 /// Reading progress is separate from quiz performance.
 enum TopicProgress { none, read, completed }
 
@@ -165,6 +171,8 @@ class StudyState {
     this.hapticsEnabled = true,
     this.reminderEnabled = false,
     this.reminderMinutes = 20 * 60,
+    this.appTheme = AppThemeChoice.system,
+    this.lessonTextScale = 1.0,
   });
 
   /// Arabic on first launch, regardless of device language.
@@ -195,6 +203,11 @@ class StudyState {
   /// Time of the reminder, in minutes after local midnight.
   final int reminderMinutes;
 
+  final AppThemeChoice appTheme;
+
+  /// Extra scale for lesson text, on top of the system text size.
+  final double lessonTextScale;
+
   StudyState copyWith({
     AppLanguage? language,
     ReaderTheme? readerTheme,
@@ -210,6 +223,8 @@ class StudyState {
     bool? hapticsEnabled,
     bool? reminderEnabled,
     int? reminderMinutes,
+    AppThemeChoice? appTheme,
+    double? lessonTextScale,
   }) => StudyState(
     language: language ?? this.language,
     readerTheme: readerTheme ?? this.readerTheme,
@@ -225,6 +240,8 @@ class StudyState {
     hapticsEnabled: hapticsEnabled ?? this.hapticsEnabled,
     reminderEnabled: reminderEnabled ?? this.reminderEnabled,
     reminderMinutes: reminderMinutes ?? this.reminderMinutes,
+    appTheme: appTheme ?? this.appTheme,
+    lessonTextScale: lessonTextScale ?? this.lessonTextScale,
   );
 
   TopicProgress progressOf(String topicId) =>
@@ -271,6 +288,8 @@ class StudyState {
     'streak': {'enabled': streakEnabled, 'days': (studyDays.toList()..sort())},
     'haptics': hapticsEnabled,
     'reminder': {'enabled': reminderEnabled, 'minutes': reminderMinutes},
+    'appTheme': appTheme.name,
+    'lessonTextScale': lessonTextScale,
   };
 
   static StudyState fromJson(Map<String, dynamic> j) {
@@ -319,6 +338,12 @@ class StudyState {
       hapticsEnabled: j['haptics'] as bool? ?? true,
       reminderEnabled: reminder['enabled'] as bool? ?? false,
       reminderMinutes: minutes.clamp(0, 24 * 60 - 1),
+      appTheme: AppThemeChoice.values.firstWhere(
+        (t) => t.name == j['appTheme'],
+        orElse: () => AppThemeChoice.system,
+      ),
+      lessonTextScale: ((j['lessonTextScale'] as num?)?.toDouble() ?? 1.0)
+          .clamp(lessonTextScaleMin, lessonTextScaleMax),
     );
   }
 }
@@ -387,6 +412,16 @@ class StudyController extends Notifier<StudyState> {
       _set(state.copyWith(hapticsEnabled: enabled));
   void setReminder({bool? enabled, int? minutes}) =>
       _set(state.copyWith(reminderEnabled: enabled, reminderMinutes: minutes));
+
+  void setAppTheme(AppThemeChoice theme) =>
+      _set(state.copyWith(appTheme: theme));
+
+  void setLessonTextScale(double scale) => _set(
+    state.copyWith(
+      lessonTextScale: scale.clamp(lessonTextScaleMin, lessonTextScaleMax),
+    ),
+    debounce: true,
+  );
 
   /// Records the visible page. Marks the page's topic as read the first time
   /// it is opened (never downgrades "completed").

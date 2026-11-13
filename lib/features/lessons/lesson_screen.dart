@@ -11,6 +11,7 @@ import '../../widgets/labels.dart';
 import '../../widgets/ornaments.dart';
 import '../../widgets/quran_excerpt_view.dart';
 import '../study/study_state.dart';
+import '../../widgets/text_size_control.dart';
 import '../../core/haptics.dart';
 
 /// Unicode isolates keep Arabic runs intact inside left-to-right paragraphs
@@ -36,10 +37,27 @@ class LessonScreen extends ConsumerStatefulWidget {
 
 class _LessonScreenState extends ConsumerState<LessonScreen> {
   final _keys = <int, GlobalKey>{};
+  final _scroll = ScrollController();
+  final _progress = ValueNotifier<double>(0);
+
+  void _onScroll() {
+    final p = _scroll.position;
+    _progress.value = p.maxScrollExtent <= 0
+        ? 1
+        : (p.pixels / p.maxScrollExtent).clamp(0, 1);
+  }
+
+  @override
+  void dispose() {
+    _scroll.dispose();
+    _progress.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
     super.initState();
+    _scroll.addListener(_onScroll);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(studyProvider.notifier).recordLessonOpened(widget.topicId);
       final target = widget.scrollToBlock;
@@ -62,35 +80,63 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final topic = content.topic(widget.topicId);
     final ed = lang.editionId;
     final lesson = content.lesson(widget.topicId, lang.code);
+    final textScale = ref.watch(studyProvider.select((s) => s.lessonTextScale));
     if (lesson == null) {
       return Scaffold(
         appBar: AppBar(),
         body: Center(child: Text(l10n.rulesAwaitingReview)),
       );
     }
+    final group = content.groupOf(topic);
+    final unitIndex = content.groups.indexOf(group);
+    final accent = UnitColors.of(unitIndex, Theme.of(context).brightness);
+    final draft = content.isPreview && lesson.review == ReviewStatus.draft;
     final children = <Widget>[
-      Text(
-        content.groupOf(topic).title.of(lang.code),
-        style: context.type.muted(size: 13),
+      // One compact line: the unit, plus a tap target for the source notes.
+      Row(
+        children: [
+          Expanded(
+            child: Wrap(
+              spacing: 6,
+              runSpacing: 6,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: accent.withValues(
+                      alpha: context.isDark ? 0.18 : 0.10,
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    '${l10n.homeUnitLabel(n(unitIndex + 1, lang))} · ${group.title.of(lang.code)}',
+                    style: context.type.ui(
+                      size: 12.5,
+                      weight: FontWeight.w600,
+                      color: accent,
+                    ),
+                  ),
+                ),
+                if (draft) PreviewBadge(l10n.previewBadge),
+              ],
+            ),
+          ),
+          IconButton(
+            tooltip: l10n.lessonSourceInfo,
+            visualDensity: VisualDensity.compact,
+            icon: const Icon(Icons.info_outline, size: 20),
+            onPressed: () => _showSourceInfo(
+              l10n.lessonSourceNote(editionName(l10n, ed)),
+              draft ? l10n.lessonUnderReview : null,
+            ),
+          ),
+        ],
       ),
-      const SizedBox(height: 6),
-      Text(
-        l10n.lessonSourceNote(editionName(l10n, ed)),
-        style: context.type.muted(size: 12.5),
-      ),
-      if (content.isPreview && lesson.review == ReviewStatus.draft) ...[
-        const SizedBox(height: 8),
-        Wrap(
-          spacing: 8,
-          runSpacing: 4,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            PreviewBadge(l10n.previewBadge),
-            Text(l10n.lessonUnderReview, style: context.type.muted(size: 12)),
-          ],
-        ),
-      ],
-      const SizedBox(height: 8),
+      const SizedBox(height: 4),
     ];
     int? lastPage;
     for (final (i, b) in lesson.blocks.indexed) {
@@ -119,7 +165,24 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(3),
+          child: ValueListenableBuilder<double>(
+            valueListenable: _progress,
+            builder: (_, v, _) => LinearProgressIndicator(
+              value: v,
+              minHeight: 3,
+              color: accent,
+              backgroundColor: Colors.transparent,
+            ),
+          ),
+        ),
         actions: [
+          IconButton(
+            tooltip: l10n.settingsTextSize,
+            icon: const Icon(Icons.text_fields),
+            onPressed: _showTextSize,
+          ),
           if (sections.length > 1)
             IconButton(
               tooltip: l10n.lessonContents,
@@ -135,18 +198,86 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
             ),
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.fromLTRB(16, 4, 16, 40),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: children,
+      body: MediaQuery(
+        data: MediaQuery.of(context).copyWith(
+          textScaler: _scaled(MediaQuery.textScalerOf(context), textScale),
+        ),
+        child: Scrollbar(
+          controller: _scroll,
+          child: SingleChildScrollView(
+            controller: _scroll,
+            padding: const EdgeInsets.fromLTRB(16, 4, 16, 40),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: children,
+            ),
+          ),
         ),
       ),
     );
   }
 }
 
+TextScaler _scaled(TextScaler base, double factor) =>
+    factor == 1 ? base : TextScaler.linear(base.scale(1) * factor);
+
 extension on _LessonScreenState {
+  void _showSourceInfo(String note, String? review) {
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (sheet) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(note, style: context.type.ui(size: 15)),
+              if (review != null) ...[
+                const SizedBox(height: 10),
+                Text(review, style: context.type.muted(size: 13.5)),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _showTextSize() {
+    final l10n = AppLocalizations.of(context);
+    showModalBottomSheet<void>(
+      context: context,
+      showDragHandle: true,
+      builder: (sheet) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 16),
+          child: Consumer(
+            builder: (context, ref, _) => Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  l10n.settingsTextSize,
+                  style: context.type.heading(size: 18),
+                ),
+                LessonTextSizeControl(
+                  value: ref.watch(
+                    studyProvider.select((s) => s.lessonTextScale),
+                  ),
+                  onChanged: ref
+                      .read(studyProvider.notifier)
+                      .setLessonTextScale,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   void _showContents(List<(int, LessonBlock)> sections) {
     final l10n = AppLocalizations.of(context);
     showModalBottomSheet<void>(

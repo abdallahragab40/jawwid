@@ -11,6 +11,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
 import '../../widgets/ornaments.dart';
 import '../study/study_state.dart';
+import '../../widgets/text_size_control.dart';
 
 class MoreScreen extends ConsumerWidget {
   const MoreScreen({super.key});
@@ -330,6 +331,38 @@ class SettingsScreen extends ConsumerWidget {
                 ],
               ],
             ),
+          ),
+          const SizedBox(height: 16),
+          SectionHeading(l10n.settingsAppearance),
+          SegmentedButton<AppThemeChoice>(
+            segments: [
+              ButtonSegment(
+                value: AppThemeChoice.system,
+                icon: const Icon(Icons.brightness_auto_outlined),
+                label: Text(l10n.themeSystem),
+              ),
+              ButtonSegment(
+                value: AppThemeChoice.light,
+                icon: const Icon(Icons.light_mode_outlined),
+                label: Text(l10n.themeLight),
+              ),
+              ButtonSegment(
+                value: AppThemeChoice.dark,
+                icon: const Icon(Icons.dark_mode_outlined),
+                label: Text(l10n.themeDark),
+              ),
+            ],
+            selected: {s.appTheme},
+            onSelectionChanged: (v) => ctl.setAppTheme(v.first),
+          ),
+          const SizedBox(height: 14),
+          Text(
+            l10n.settingsTextSize,
+            style: context.type.ui(size: 15, weight: FontWeight.w600),
+          ),
+          LessonTextSizeControl(
+            value: s.lessonTextScale,
+            onChanged: ctl.setLessonTextScale,
           ),
           const SizedBox(height: 16),
           SectionHeading(l10n.readerAppearance),

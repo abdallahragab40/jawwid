@@ -20,6 +20,7 @@ class RattilApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final language = ref.watch(languageProvider);
+    final appTheme = ref.watch(studyProvider.select((s) => s.appTheme));
     ref.watch(reminderSyncProvider);
     return MaterialApp(
       onGenerateTitle: (_) => Branding.name(language),
@@ -39,7 +40,12 @@ class RattilApp extends ConsumerWidget {
       localeResolutionCallback: (_, _) => language.locale,
       theme: buildFullTheme(language, Brightness.light),
       darkTheme: buildFullTheme(language, Brightness.dark),
-      themeMode: ThemeMode.system,
+      themeMode: switch (appTheme) {
+        AppThemeChoice.system => ThemeMode.system,
+        AppThemeChoice.light => ThemeMode.light,
+        AppThemeChoice.dark => ThemeMode.dark,
+      },
+      themeAnimationDuration: const Duration(milliseconds: 250),
       home: home ?? const RootShell(),
     );
   }
