@@ -74,6 +74,8 @@
   "goToPageFieldLabel": "ژمارەی چاپکراوی لاپەڕە",
   "goToPageInvalid": "ژمارەیەک لە نێوان {min} و {max} بنووسە.",
   "readerChooseEdition": "خوێندنەوە لە وەشانێکی تر",
+  "lessonPrevSection": "بەشی پێشوو",
+  "lessonNextSection": "بەشی دواتر",
   "lessonSourceInfo": "دەربارەی سەرچاوەی دەق",
   "settingsAppearance": "ڕووکار",
   "themeSystem": "خۆکار",

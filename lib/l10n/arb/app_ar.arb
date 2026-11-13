@@ -318,6 +318,14 @@
     }
   },
   "readerChooseEdition": "القراءة في نسخة أخرى",
+  "lessonPrevSection": "القسم السابق",
+  "@lessonPrevSection": {
+    "description": "Tooltip"
+  },
+  "lessonNextSection": "القسم التالي",
+  "@lessonNextSection": {
+    "description": "Tooltip"
+  },
   "lessonSourceInfo": "عن مصدر النص",
   "@lessonSourceInfo": {
     "description": "Tooltip: about the source of this lesson text"

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -40,17 +41,49 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   final _scroll = ScrollController();
   final _progress = ValueNotifier<double>(0);
 
+  /// Index into [_sections] of the section at the top of the screen.
+  final _section = ValueNotifier<int>(0);
+  List<(int, LessonBlock)> _sections = const [];
+
   void _onScroll() {
     final p = _scroll.position;
     _progress.value = p.maxScrollExtent <= 0
         ? 1
         : (p.pixels / p.maxScrollExtent).clamp(0, 1);
+    final top = MediaQuery.paddingOf(context).top + kToolbarHeight + 48;
+    var current = 0;
+    for (final (i, (block, _)) in _sections.indexed) {
+      final box = _keys[block]?.currentContext?.findRenderObject();
+      if (box is! RenderBox || !box.attached) continue;
+      if (box.localToGlobal(Offset.zero).dy <= top) {
+        current = i;
+      } else {
+        break;
+      }
+    }
+    if (p.pixels >= p.maxScrollExtent - 4 && _sections.isNotEmpty) {
+      current = _sections.length - 1;
+    }
+    _section.value = current;
+  }
+
+  void _jumpToBlock(int block) {
+    final ctx = _keys[block]?.currentContext;
+    if (ctx != null) {
+      Scrollable.ensureVisible(
+        ctx,
+        alignment: 0.02,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOutCubic,
+      );
+    }
   }
 
   @override
   void dispose() {
     _scroll.dispose();
     _progress.dispose();
+    _section.dispose();
     super.dispose();
   }
 
@@ -158,6 +191,7 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         if (b.type == LessonBlockType.h1 || b.type == LessonBlockType.h2)
           (i, b),
     ];
+    _sections = sections;
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -198,6 +232,14 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
             ),
         ],
       ),
+      bottomNavigationBar: sections.length < 3
+          ? null
+          : _SectionBar(
+              sections: sections,
+              current: _section,
+              onJump: _jumpToBlock,
+              onContents: () => _showContents(sections),
+            ),
       body: MediaQuery(
         data: MediaQuery.of(context).copyWith(
           textScaler: _scaled(MediaQuery.textScalerOf(context), textScale),
@@ -1102,6 +1144,85 @@ class _LessonCheckCard extends ConsumerWidget {
                 label: Text(l10n.lessonCheckStart),
               ),
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Bottom bar of a lesson: the section being read, with buttons to move to
+/// the previous or next section; the title opens the contents.
+class _SectionBar extends StatelessWidget {
+  const _SectionBar({
+    required this.sections,
+    required this.current,
+    required this.onJump,
+    required this.onContents,
+  });
+  final List<(int, LessonBlock)> sections;
+  final ValueListenable<int> current;
+  final ValueChanged<int> onJump;
+  final VoidCallback onContents;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final scheme = Theme.of(context).colorScheme;
+    return SafeArea(
+      top: false,
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(12, 4, 12, 8),
+        child: Material(
+          color: scheme.surfaceContainerHigh,
+          borderRadius: BorderRadius.circular(28),
+          child: ValueListenableBuilder<int>(
+            valueListenable: current,
+            builder: (context, i, _) => Row(
+              children: [
+                IconButton(
+                  tooltip: l10n.lessonPrevSection,
+                  icon: Icon(
+                    Icons.chevron_left,
+                    textDirection: Directionality.of(context),
+                  ),
+                  onPressed: i > 0 ? () => onJump(sections[i - 1].$1) : null,
+                ),
+                Expanded(
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(20),
+                    onTap: onContents,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: AnimatedSwitcher(
+                        duration: const Duration(milliseconds: 200),
+                        child: Text(
+                          _isolated(sections[i].$2.plain),
+                          key: ValueKey(i),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
+                          style: context.type.ui(
+                            size: 14,
+                            weight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                IconButton(
+                  tooltip: l10n.lessonNextSection,
+                  icon: Icon(
+                    Icons.chevron_right,
+                    textDirection: Directionality.of(context),
+                  ),
+                  onPressed: i < sections.length - 1
+                      ? () => onJump(sections[i + 1].$1)
+                      : null,
+                ),
+              ],
+            ),
           ),
         ),
       ),

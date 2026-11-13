@@ -74,6 +74,8 @@
   "goToPageFieldLabel": "Nomor halaman tercetak",
   "goToPageInvalid": "Masukkan angka antara {min} dan {max}.",
   "readerChooseEdition": "Baca di edisi lain",
+  "lessonPrevSection": "Bagian sebelumnya",
+  "lessonNextSection": "Bagian berikutnya",
   "lessonSourceInfo": "Tentang teks ini",
   "settingsAppearance": "Tampilan",
   "themeSystem": "Otomatis",

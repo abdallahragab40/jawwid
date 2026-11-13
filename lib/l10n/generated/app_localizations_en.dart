@@ -275,6 +275,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readerChooseEdition => 'Read in another edition';
 
   @override
+  String get lessonPrevSection => 'Previous section';
+
+  @override
+  String get lessonNextSection => 'Next section';
+
+  @override
   String get lessonSourceInfo => 'About this text';
 
   @override

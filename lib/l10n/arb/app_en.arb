@@ -74,6 +74,8 @@
   "goToPageFieldLabel": "Printed page number",
   "goToPageInvalid": "Enter a number between {min} and {max}.",
   "readerChooseEdition": "Read in another edition",
+  "lessonPrevSection": "Previous section",
+  "lessonNextSection": "Next section",
   "lessonSourceInfo": "About this text",
   "settingsAppearance": "Appearance",
   "themeSystem": "Automatic",

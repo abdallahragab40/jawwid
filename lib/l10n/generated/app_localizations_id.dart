@@ -275,6 +275,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get readerChooseEdition => 'Baca di edisi lain';
 
   @override
+  String get lessonPrevSection => 'Bagian sebelumnya';
+
+  @override
+  String get lessonNextSection => 'Bagian berikutnya';
+
+  @override
   String get lessonSourceInfo => 'Tentang teks ini';
 
   @override

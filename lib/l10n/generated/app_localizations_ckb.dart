@@ -275,6 +275,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get readerChooseEdition => 'خوێندنەوە لە وەشانێکی تر';
 
   @override
+  String get lessonPrevSection => 'بەشی پێشوو';
+
+  @override
+  String get lessonNextSection => 'بەشی دواتر';
+
+  @override
   String get lessonSourceInfo => 'دەربارەی سەرچاوەی دەق';
 
   @override

@@ -275,6 +275,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get readerChooseEdition => 'القراءة في نسخة أخرى';
 
   @override
+  String get lessonPrevSection => 'القسم السابق';
+
+  @override
+  String get lessonNextSection => 'القسم التالي';
+
+  @override
   String get lessonSourceInfo => 'عن مصدر النص';
 
   @override

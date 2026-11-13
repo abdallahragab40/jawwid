@@ -86,6 +86,8 @@ S = {
  'goToPageFieldLabel': ('', 'رقم الصفحة المطبوع', 'ژمارەی چاپکراوی لاپەڕە', 'Printed page number', 'Nomor halaman tercetak'),
  'goToPageInvalid': ('', 'أدخل رقمًا بين {min} و{max}.', 'ژمارەیەک لە نێوان {min} و {max} بنووسە.', 'Enter a number between {min} and {max}.', 'Masukkan angka antara {min} dan {max}.'),
  'readerChooseEdition': ('', 'القراءة في نسخة أخرى', 'خوێندنەوە لە وەشانێکی تر', 'Read in another edition', 'Baca di edisi lain'),
+ 'lessonPrevSection': ('Tooltip', 'القسم السابق', 'بەشی پێشوو', 'Previous section', 'Bagian sebelumnya'),
+ 'lessonNextSection': ('Tooltip', 'القسم التالي', 'بەشی دواتر', 'Next section', 'Bagian berikutnya'),
  'lessonSourceInfo': ('Tooltip: about the source of this lesson text', 'عن مصدر النص', 'دەربارەی سەرچاوەی دەق', 'About this text', 'Tentang teks ini'),
  'settingsAppearance': ('Settings section: app colours', 'المظهر', 'ڕووکار', 'Appearance', 'Tampilan'),
  'themeSystem': ('App theme follows the device', 'تلقائي', 'خۆکار', 'Automatic', 'Otomatis'),

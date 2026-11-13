@@ -546,6 +546,18 @@ abstract class AppLocalizations {
   /// **'القراءة في نسخة أخرى'**
   String get readerChooseEdition;
 
+  /// Tooltip
+  ///
+  /// In ar, this message translates to:
+  /// **'القسم السابق'**
+  String get lessonPrevSection;
+
+  /// Tooltip
+  ///
+  /// In ar, this message translates to:
+  /// **'القسم التالي'**
+  String get lessonNextSection;
+
   /// Tooltip: about the source of this lesson text
   ///
   /// In ar, this message translates to:
