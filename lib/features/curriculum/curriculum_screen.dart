@@ -6,7 +6,6 @@ import '../../app/theme.dart';
 import '../../content/models.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
-import '../../widgets/ornaments.dart';
 import '../study/study_state.dart';
 
 /// The 30 Level-2 topics in the order of the books' topic list. Nothing is
@@ -54,9 +53,16 @@ class CurriculumScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 4),
           Text(l10n.curriculumGroupsNote, style: context.type.muted(size: 12)),
-          for (final g in content.groups) ...[
-            const SizedBox(height: 14),
-            SectionHeading(g.title.of(lang.code)),
+          for (final (gi, g) in content.groups.indexed) ...[
+            const SizedBox(height: 18),
+            _UnitHeader(
+              index: gi,
+              title: g.title.of(lang.code),
+              done: g.topicIds
+                  .where((t) => progress[t] == TopicProgress.completed)
+                  .length,
+              total: g.topicIds.length,
+            ),
             Card(
               child: Column(
                 children: [
@@ -140,6 +146,65 @@ class _TopicTile extends ConsumerWidget {
         textDirection: Directionality.of(context),
       ),
       onTap: () => openTopic(context, topic.id),
+    );
+  }
+}
+
+class _UnitHeader extends ConsumerWidget {
+  const _UnitHeader({
+    required this.index,
+    required this.title,
+    required this.done,
+    required this.total,
+  });
+  final int index;
+  final String title;
+  final int done;
+  final int total;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final lang = ref.watch(languageProvider);
+    final accent = UnitColors.of(index, Theme.of(context).brightness);
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Row(
+        children: [
+          Container(
+            width: 4,
+            height: 40,
+            decoration: BoxDecoration(
+              color: accent,
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Semantics(
+              header: true,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.homeUnitLabel(n(index + 1, lang)),
+                    style: context.type.ui(
+                      size: 12.5,
+                      weight: FontWeight.w700,
+                      color: accent,
+                    ),
+                  ),
+                  Text(title, style: context.type.heading(size: 19)),
+                ],
+              ),
+            ),
+          ),
+          Text(
+            '${n(done, lang)} / ${n(total, lang)}',
+            style: context.type.muted(size: 13),
+          ),
+        ],
+      ),
     );
   }
 }

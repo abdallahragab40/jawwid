@@ -281,14 +281,6 @@ class _ContinueCard extends StatelessWidget {
           onTap: onTap,
           child: Stack(
             children: [
-              PositionedDirectional(
-                end: -28,
-                bottom: -36,
-                child: Rosette(
-                  size: 140,
-                  color: Colors.white.withValues(alpha: 0.10),
-                ),
-              ),
               Padding(
                 padding: const EdgeInsets.all(18),
                 child: Row(
