@@ -70,15 +70,26 @@ class RuleCardScreen extends ConsumerWidget {
               ),
             ),
           const SizedBox(height: 6),
-          InkWell(
-            onTap: () => openTopic(context, topic.id),
-            child: Text(
-              l10n.ruleFromLesson(topicTitle(topic, lang)),
-              style: context.type.ui(
-                size: 13.5,
-                color: dark
-                    ? RattilColors.emeraldLight
-                    : RattilColors.emerald700,
+          Semantics(
+            button: true,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(8),
+              onTap: () => openTopic(context, topic.id),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(minHeight: 48),
+                child: Align(
+                  alignment: AlignmentDirectional.centerStart,
+                  widthFactor: 1,
+                  child: Text(
+                    l10n.ruleFromLesson(topicTitle(topic, lang)),
+                    style: context.type.ui(
+                      size: 13.5,
+                      color: dark
+                          ? RattilColors.emeraldLight
+                          : RattilColors.emerald700,
+                    ),
+                  ),
+                ),
               ),
             ),
           ),

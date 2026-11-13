@@ -160,7 +160,6 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
           ),
           IconButton(
             tooltip: l10n.lessonSourceInfo,
-            visualDensity: VisualDensity.compact,
             icon: const Icon(Icons.info_outline, size: 20),
             onPressed: () => _showSourceInfo(
               l10n.lessonSourceNote(editionName(l10n, ed)),
@@ -1218,22 +1217,26 @@ class _SectionBar extends StatelessWidget {
                   onPressed: i > 0 ? () => onJump(sections[i - 1].$1) : null,
                 ),
                 Expanded(
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(20),
-                    onTap: onContents,
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      child: AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 200),
-                        child: Text(
-                          _isolated(sections[i].$2.plain),
-                          key: ValueKey(i),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          textAlign: TextAlign.center,
-                          style: context.type.ui(
-                            size: 14,
-                            weight: FontWeight.w600,
+                  child: Semantics(
+                    button: true,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(20),
+                      onTap: onContents,
+                      child: Container(
+                        constraints: const BoxConstraints(minHeight: 48),
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        child: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 200),
+                          child: Text(
+                            _isolated(sections[i].$2.plain),
+                            key: ValueKey(i),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            textAlign: TextAlign.center,
+                            style: context.type.ui(
+                              size: 14,
+                              weight: FontWeight.w600,
+                            ),
                           ),
                         ),
                       ),
