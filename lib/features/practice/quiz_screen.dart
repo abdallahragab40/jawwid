@@ -248,7 +248,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           final c = q.choices[i];
           final String text;
           final bool arabic;
-          if (c.arabic != null) {
+          if (c.text != null) {
+            text = c.text!.of(lang.code);
+            arabic = false;
+          } else if (c.arabic != null) {
             text = c.arabic!;
             arabic = true;
           } else if (c.counts != null) {

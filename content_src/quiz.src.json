@@ -753,6 +753,2685 @@
    }
   },
   {
+   "id": "q29",
+   "type": "choice",
+   "topic": "t01",
+   "prompt": {
+    "ar": "ما حكم الجانب العملي من التجويد (تطبيق قواعده أثناء التلاوة)؟",
+    "ckb": "حوکمی لایەنی کرداری تەجوید (پیادەکردنی ڕێساکانی لە کاتی قورئان خوێندندا) چییە؟",
+    "en": "What is the ruling of the practical side of Tajweed (applying its rules while reciting)?",
+    "id": "Apa hukum sisi praktis tajwid (mengamalkan kaidahnya ketika membaca al-Qur’an)?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "فرض عين",
+      "ckb": "فەرزی عەین",
+      "en": "Fard 'ain (an individual duty)",
+      "id": "Fardhu ain"
+     }
+    },
+    {
+     "text": {
+      "ar": "فرض كفاية",
+      "ckb": "فەرزی کیفایە",
+      "en": "Fard kifayah (a collective duty)",
+      "id": "Fardhu kifayah"
+     }
+    },
+    {
+     "text": {
+      "ar": "سنة",
+      "ckb": "سوننەت",
+      "en": "Sunnah",
+      "id": "Sunnah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الجانب العملي حكمه فرض عين، أما الجانب النظري (معرفة القواعد) فحكمه فرض كفاية.",
+    "ckb": "لایەنی کرداری فەرزی عەینە، بەڵام لایەنی تیۆری (زانینی ڕێساکان) فەرزی کیفایەیە.",
+    "en": "The practical side is fard 'ain; the theoretical side (knowing the rules) is fard kifayah.",
+    "id": "Sisi praktis hukumnya fardhu ain, sedangkan sisi teori (mengetahui kaidahnya) fardhu kifayah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q30",
+   "type": "truefalse",
+   "topic": "t01",
+   "prompt": {
+    "ar": "الإدغام والإخفاء والإظهار من «حقِّ» الحرف.",
+    "ckb": "ئیدغام و ئیخفاء و ئیزهار لە «مافی پیت» (حقُّ الحرف)ن.",
+    "en": "Idgham, ikhfaa and ithhar belong to a letter's «right» (haqq).",
+    "id": "Idgham, ikhfa, dan izhhar termasuk «hak» huruf."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ هي من «مستحقِّه»: صفات عرضية ناشئة عن الصفات اللازمة. أما «حقُّه» فصفاته اللازمة كالجهر والشدة.",
+    "ckb": "هەڵەیە؛ ئەمانە لە «ئەو مافەی بۆی دروست دەبێت» (مُستحقُّ الحرف)ن، واتە سیفاتی ڕوودەر. «مافی پیت» سیفاتە پەیوەستەکانیەتی وەکو ئاشکرا (الجهر) و توندی (الشدة).",
+    "en": "False. They are its «due» (mustahaqq): temporary characteristics. Its «right» is its permanent characteristics, such as jahr and shiddah.",
+    "id": "Salah. Semuanya termasuk «mustahaq»: sifat sementara. «Hak» huruf adalah sifat yang melekat seperti jahr dan syiddah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q31",
+   "type": "choice",
+   "topic": "t01",
+   "prompt": {
+    "ar": "أن يقرأ الطالب على الشيخ يُسمّى:",
+    "ckb": "خوێندنەوەی فێرخواز بۆ مامۆستاکەی پێی دەوترێت:",
+    "en": "When the student recites to the sheikh, this is called:",
+    "id": "Murid membacakan al-Qur’an kepada syaikh disebut:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "العرض",
+      "ckb": "عەرض",
+      "en": "'Ard (show)",
+      "id": "'Ard"
+     }
+    },
+    {
+     "text": {
+      "ar": "التلقين",
+      "ckb": "تەلقین",
+      "en": "Talqeen (repetition)",
+      "id": "Talqin"
+     }
+    },
+    {
+     "text": {
+      "ar": "الدراية",
+      "ckb": "زانیاری (الدراية)",
+      "en": "Dirayah (knowledge)",
+      "id": "Dirayah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "العرض: أن يقرأ الطالب على الشيخ، والتلقين: أن يقرأ الشيخ ثم يعيد الطالب.",
+    "ckb": "عەرض: فێرخواز بۆ مامۆستا دەخوێنێتەوە؛ تەلقین: مامۆستا دەخوێنێت و فێرخواز دووبارەی دەکاتەوە.",
+    "en": "'Ard: the student recites to the sheikh. Talqeen: the sheikh recites and the student repeats.",
+    "id": "'Ard: murid membacakan kepada syaikh. Talqin: syaikh membaca lalu murid menirukan."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q32",
+   "type": "choice",
+   "topic": "t02",
+   "prompt": {
+    "ar": "قراءة الحاء الملوّنة هاءً تُعدّ:",
+    "ckb": "وتنی (ح)ی ڕەنگکراو وەکو (ه) دەبێتە:",
+    "en": "Pronouncing the highlighted ح as ه is:",
+    "id": "Membaca ح yang ditandai sebagai ه termasuk:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "لحن جلي",
+      "ckb": "هەڵەی ئاشکرا (اللحن الجلي)",
+      "en": "Lahn jali (an obvious mistake)",
+      "id": "Lahn jaly (kesalahan jelas)"
+     }
+    },
+    {
+     "text": {
+      "ar": "لحن خفي",
+      "ckb": "هەڵەی شاراوە (اللحن الخفي)",
+      "en": "Lahn khafi (a hidden mistake)",
+      "id": "Lahn khafy (kesalahan tersembunyi)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "إبدال حرف مكان حرف من صور اللحن الجلي، لأنه يخلّ بمبنى الكلمة.",
+    "ckb": "گۆڕینی پیتێک بە پیتێکی تر یەکێکە لە وێنەکانی هەڵەی ئاشکرا، چونکە پێکهاتەی وشەکە تێک دەدات.",
+    "en": "Replacing one letter with another is a form of lahn jali, because it disturbs the make-up of the word.",
+    "id": "Mengganti huruf dengan huruf lain termasuk lahn jaly, karena merusak susunan kata."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "1:2",
+    "pattern": "ال[ح]مد لله"
+   }
+  },
+  {
+   "id": "q33",
+   "type": "choice",
+   "topic": "t02",
+   "prompt": {
+    "ar": "عدم ضبط مقادير المدود والغنة يُعدّ:",
+    "ckb": "ڕەچاونەکردنی ئەندازەی مەد و مینگە دەبێتە:",
+    "en": "Not giving madd and ghunnah their proper lengths is:",
+    "id": "Tidak memberikan panjang mad dan ghunnah yang tepat termasuk:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "لحن جلي",
+      "ckb": "هەڵەی ئاشکرا (اللحن الجلي)",
+      "en": "Lahn jali (an obvious mistake)",
+      "id": "Lahn jaly (kesalahan jelas)"
+     }
+    },
+    {
+     "text": {
+      "ar": "لحن خفي",
+      "ckb": "هەڵەی شاراوە (اللحن الخفي)",
+      "en": "Lahn khafi (a hidden mistake)",
+      "id": "Lahn khafy (kesalahan tersembunyi)"
+     }
+    }
+   ],
+   "answer": 1,
+   "explanation": {
+    "ar": "هذا من صور اللحن الخفي، وسُمّي خفيًّا لأنه لا يعرفه إلا علماء القرّاء.",
+    "ckb": "ئەمە لە وێنەکانی هەڵەی شاراوەیە، و پێی دەوترێت شاراوە چونکە تەنها زانایانی قورئان خوێن پێی دەزانن.",
+    "en": "This is a form of lahn khafi; it is called hidden because only scholars of recitation recognise it.",
+    "id": "Ini termasuk lahn khafy; disebut tersembunyi karena hanya ahli qira’ah yang mengetahuinya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q34",
+   "type": "choice",
+   "topic": "t02",
+   "prompt": {
+    "ar": "ما حكم اللحن الجلي إذا تعمّده القارئ أو تكاسل عن التعلّم مع قدرته عليه؟",
+    "ckb": "حوکمی هەڵەی ئاشکرا چییە ئەگەر خوێنەر بە ئەنقەست بیکات یان لە فێربوون کەمتەرخەم بێت لەکاتێکدا توانای هەیە؟",
+    "en": "What is the ruling of lahn jali when the reciter does it on purpose, or neglects learning though able to learn?",
+    "id": "Apa hukum lahn jaly jika qari’ sengaja melakukannya atau malas belajar padahal mampu?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "حرام",
+      "ckb": "حەرام",
+      "en": "Haram (forbidden)",
+      "id": "Haram"
+     }
+    },
+    {
+     "text": {
+      "ar": "مكروه",
+      "ckb": "مەکروه",
+      "en": "Makrooh (undesirable)",
+      "id": "Makruh"
+     }
+    },
+    {
+     "text": {
+      "ar": "جائز",
+      "ckb": "ڕێگەپێدراو",
+      "en": "Permissible",
+      "id": "Boleh"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "اللحن الجلي حرام شرعًا ويأثم به القارئ في هذه الحال.",
+    "ckb": "هەڵەی ئاشکرا لەڕووی شەرعەوە حەرامە و خوێنەر لەم حاڵەتەدا تاوانبار دەبێت.",
+    "en": "Lahn jali is haram, and the reciter is sinful in this case.",
+    "id": "Lahn jaly hukumnya haram dan pembacanya berdosa dalam keadaan ini."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q35",
+   "type": "choice",
+   "topic": "t03",
+   "prompt": {
+    "ar": "أيّ مراتب التلاوة يصلح في مقام التعليم؟",
+    "ckb": "کام پلەی خوێندنەوە بۆ فێربوون و فێرکردن گونجاوە؟",
+    "en": "Which rank of recitation is suitable for teaching?",
+    "id": "Tingkatan bacaan manakah yang cocok untuk pembelajaran?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "التحقيق",
+      "ckb": "خوێندنەوەی لەسەرخۆ (التحقيق)",
+      "en": "Tahqiq (slowness)",
+      "id": "Tahqiq (lambat)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الحدر",
+      "ckb": "خوێندنەوەی خێرا (الحدر)",
+      "en": "Hadr (quickness)",
+      "id": "Hadr (cepat)"
+     }
+    },
+    {
+     "text": {
+      "ar": "التدوير",
+      "ckb": "خوێندنەوەی مام ناوەند (التدوير)",
+      "en": "Tadwir (moderation)",
+      "id": "Tadwir (pertengahan)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "التحقيق: القراءة في أعلى درجات الإتقان والتأني، ويصلح في مقام التعليم.",
+    "ckb": "تەحقیق خوێندنەوەیە بەوپەڕی تەواوێتی و لەسەرخۆییەوە، و بۆ فێربوون و فێرکردن دەشێت.",
+    "en": "Tahqiq is recitation with the highest proficiency and care; it suits teaching.",
+    "id": "Tahqiq adalah bacaan dengan kemahiran dan ketelitian tertinggi; cocok untuk pembelajaran."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q36",
+   "type": "choice",
+   "topic": "t03",
+   "prompt": {
+    "ar": "القراءة المتوسطة بين التحقيق والحدر تُسمّى:",
+    "ckb": "خوێندنەوەی مامناوەند لەنێوان تەحقیق و حەدردا پێی دەوترێت:",
+    "en": "Recitation at a moderate pace between tahqiq and hadr is called:",
+    "id": "Bacaan pertengahan antara tahqiq dan hadr disebut:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "التدوير",
+      "ckb": "خوێندنەوەی مام ناوەند (التدوير)",
+      "en": "Tadwir (moderation)",
+      "id": "Tadwir (pertengahan)"
+     }
+    },
+    {
+     "text": {
+      "ar": "التحقيق",
+      "ckb": "خوێندنەوەی لەسەرخۆ (التحقيق)",
+      "en": "Tahqiq (slowness)",
+      "id": "Tahqiq (lambat)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الحدر",
+      "ckb": "خوێندنەوەی خێرا (الحدر)",
+      "en": "Hadr (quickness)",
+      "id": "Hadr (cepat)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "التدوير هو الإتيان بالقراءة متوسطة بين التحقيق والحدر.",
+    "ckb": "تەدویر خوێندنەوەیە بەشێوەیەک کە لەنێوان لەسەرخۆ و خێرادا بێت.",
+    "en": "Tadwir is recitation that is moderate, between tahqiq and hadr.",
+    "id": "Tadwir adalah bacaan pertengahan antara tahqiq dan hadr."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q37",
+   "type": "truefalse",
+   "topic": "t03",
+   "prompt": {
+    "ar": "الترتيل مرتبة رابعة مستقلة عن المراتب الثلاث.",
+    "ckb": "تەرتیل پلەیەکی چوارەمی جیاوازە لە سێ پلەکە.",
+    "en": "Tartil is a fourth rank, separate from the three ranks.",
+    "id": "Tartil adalah tingkatan keempat yang terpisah dari tiga tingkatan."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ الترتيل ليس له مرتبة خاصة، بل يكون مع المراتب الثلاث: قراءة بفهم وتدبّر مع إعطاء الحروف حقّها ومستحقّها.",
+    "ckb": "هەڵەیە؛ تەرتیل پلەیەکی تایبەتی نییە، بەڵکو لەگەڵ هەر سێ پلەکەدایە: خوێندنەوە بە تێگەیشتن و وردبوونەوە لەگەڵ پێدانی مافی پیتەکان.",
+    "en": "False. Tartil has no rank of its own; it goes with all three: reciting with understanding and reflection, giving the letters their rights and dues.",
+    "id": "Salah. Tartil tidak memiliki tingkatan tersendiri, tetapi melekat pada ketiganya: membaca dengan memahami dan mentadabburi serta memberikan hak dan mustahaq huruf."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q38",
+   "type": "choice",
+   "topic": "t04",
+   "prompt": {
+    "ar": "ما حكم الاستعاذة عند جمهور القرّاء والفقهاء (القول الراجح)؟",
+    "ckb": "حوکمی ئیستیعازە لای زۆرینەی زانایان و قورئان خوێنان (وتەی پەسەند) چییە؟",
+    "en": "What is the ruling of isti'adhah according to most reciters and jurists (the preponderant view)?",
+    "id": "Apa hukum isti'adzah menurut mayoritas ulama qira'at dan ahli fiqih (pendapat yang terpilih)?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "مستحبة",
+      "ckb": "سوننەتە",
+      "en": "Mustahabbah (recommended)",
+      "id": "Mustahabah (dianjurkan)"
+     }
+    },
+    {
+     "text": {
+      "ar": "واجبة",
+      "ckb": "واجبە",
+      "en": "Wajibah (required)",
+      "id": "Wajibah (wajib)"
+     }
+    },
+    {
+     "text": {
+      "ar": "مكروهة",
+      "ckb": "مەکروهە",
+      "en": "Makrooh (undesirable)",
+      "id": "Makruh"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الاستعاذة مستحبة عند الجمهور وهو الراجح، وقال عطاء والثوري بوجوبها.",
+    "ckb": "لای زۆرینە ئیستیعازە سوننەتە و ئەمە پەسەندە؛ عەطاء و ثەوری وتوویانە واجبە.",
+    "en": "Most scholars hold it is recommended, which is preponderant; 'Ata' and ath-Thawri held it is required.",
+    "id": "Mayoritas ulama berpendapat dianjurkan dan ini yang terpilih; 'Ataa' dan Ats-tsauri berpendapat wajib."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q39",
+   "type": "choice",
+   "topic": "t04",
+   "prompt": {
+    "ar": "كم وجهًا يجوز للاستعاذة مع البسملة مع أول السورة (غير سورة التوبة)؟",
+    "ckb": "چەند شێواز دروستە بۆ ئیستیعازە لەگەڵ بەسمەلە و سەرەتای سورەت (جگە لە سورەتی تەوبە)؟",
+    "en": "How many permissible ways are there of joining isti'adhah, basmalah and the beginning of a surah (other than at-Tawbah)?",
+    "id": "Ada berapa cara yang diperbolehkan untuk isti'adzah bersama basmallah dan awal surat (selain at-Taubah)?"
+   },
+   "options": [
+    {
+     "number": "4"
+    },
+    {
+     "number": "3"
+    },
+    {
+     "number": "2"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أربعة أوجه كلها جائزة: قطع الجميع، ووصل الاستعاذة بالبسملة مع الوقف عليها، والوقف على الاستعاذة ثم وصل البسملة بأول السورة، ووصل الجميع.",
+    "ckb": "چوار شێواز هەموویان دروستن: پچڕانی هەموویان، گەیاندنی ئیستیعازە بە بەسمەلە و وەستان، وەستان لەسەر ئیستیعازە و گەیاندنی بەسمەلە بە سورەتەکە، و گەیاندنی هەموویان.",
+    "en": "Four ways, all permissible: cutting off all; joining isti'adhah with basmalah then stopping; stopping on isti'adhah then joining basmalah with the surah; joining all.",
+    "id": "Empat cara, semuanya boleh: memutus semua; menyambung isti'adzah dengan basmallah lalu berhenti; berhenti pada isti'adzah lalu menyambung basmallah dengan surat; menyambung semua."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q40",
+   "type": "truefalse",
+   "topic": "t04",
+   "prompt": {
+    "ar": "إذا كان القارئ في الصلاة إمامًا أو مأمومًا يُستحبّ له الإسرار بالاستعاذة.",
+    "ckb": "ئەگەر قورئان خوێنەکە لە نوێژدا بێت، ئیمام بێت یان مەئموم، باشترە بە دەنگی نزم ئیستیعازە بکات.",
+    "en": "In prayer, whether imam or follower, it is recommended to say isti'adhah quietly.",
+    "id": "Dalam shalat, baik sebagai imam maupun makmum, dianjurkan melafalkan isti'adzah dengan suara pelan."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ من مواطن الإسرار بالاستعاذة أن يكون القارئ في الصلاة إمامًا أو مأمومًا.",
+    "ckb": "ڕاستە؛ یەکێک لەو حاڵەتانەی کە باشترە بە دەنگی نزم ئیستیعازە بکرێت، لەناو نوێژدایە.",
+    "en": "True. Being in prayer, as imam or follower, is one of the cases for saying it quietly.",
+    "id": "Benar. Membaca dalam shalat, sebagai imam atau makmum, termasuk keadaan untuk melafalkannya pelan."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q41",
+   "type": "truefalse",
+   "topic": "t04",
+   "prompt": {
+    "ar": "إذا قطع القارئ القراءة لعطاس أو سعال وجب عليه إعادة الاستعاذة.",
+    "ckb": "ئەگەر قورئان خوێن بەهۆی پژمین یان کۆکینەوە خوێندنەکەی پچڕاند، دەبێت ئیستیعازە دووبارە بکاتەوە.",
+    "en": "If the reciter stops for a sneeze or a cough, he must repeat isti'adhah.",
+    "id": "Jika qari' berhenti karena bersin atau batuk, ia harus mengulang isti'adzah."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ السكوت والكلام الطويل سبب لإعادتها، أما القطع لعطاس أو سعال أو لتصحيح خطأ فلا يُعيدها.",
+    "ckb": "هەڵەیە؛ بێدەنگی و قسەی درێژ هۆکاری دووبارەکردنەوەیەتی، بەڵام بۆ پژمین یان کۆکین یان ڕاستکردنەوەی هەڵە دووبارە ناکرێتەوە.",
+    "en": "False. Silence or a long conversation is a reason to repeat it; stopping for a sneeze, a cough or to correct a mistake is not.",
+    "id": "Salah. Diam atau pembicaraan panjang menjadi sebab mengulangnya; berhenti karena bersin, batuk, atau membetulkan kesalahan tidak."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q42",
+   "type": "choice",
+   "topic": "t05",
+   "prompt": {
+    "ar": "للبسملة بين السورتين أربعة أوجه، كم منها جائز؟",
+    "ckb": "بەسمەلە لەنێوان دوو سورەتدا چوار شێوازی هەیە، چەندیان دروستە؟",
+    "en": "There are four ways of saying basmalah between two surahs. How many are permissible?",
+    "id": "Ada empat cara membaca basmallah di antara dua surat. Berapa yang diperbolehkan?"
+   },
+   "options": [
+    {
+     "number": "3"
+    },
+    {
+     "number": "4"
+    },
+    {
+     "number": "2"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "ثلاثة جائزة وواحد ممنوع: وصل آخر السورة بالبسملة مع الوقف عليها ثم البدء بالسورة التالية.",
+    "ckb": "سێیان دروستن و یەکێکیان دروست نییە: گەیاندنی کۆتایی سورەت بە بەسمەلە و وەستان لەسەری و پاشان دەستپێکردن بە سورەتی دووەم.",
+    "en": "Three are permissible and one is not: joining the end of the surah with basmalah, stopping, then starting the next surah.",
+    "id": "Tiga diperbolehkan dan satu terlarang: menyambung akhir surat dengan basmallah, berhenti, lalu memulai surat berikutnya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q43",
+   "type": "choice",
+   "topic": "t05",
+   "prompt": {
+    "ar": "ما الوجه الممنوع في البسملة بين السورتين؟",
+    "ckb": "کام شێوازی بەسمەلە لەنێوان دوو سورەتدا دروست نییە؟",
+    "en": "Which way of saying basmalah between two surahs is not permitted?",
+    "id": "Cara manakah yang terlarang dalam membaca basmallah di antara dua surat?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "وصل آخر السورة بالبسملة ثم الوقف ثم البدء بالسورة التالية",
+      "ckb": "گەیاندنی کۆتایی سورەت بە بەسمەلە، وەستان، پاشان دەستپێکردن بە سورەتی دووەم",
+      "en": "Joining the end of the surah with basmalah, stopping, then starting the next surah",
+      "id": "Menyambung akhir surat dengan basmallah, berhenti, lalu memulai surat berikutnya"
+     }
+    },
+    {
+     "text": {
+      "ar": "قطع الجميع",
+      "ckb": "پچڕانی هەموویان",
+      "en": "Cutting off all of them",
+      "id": "Memutus semua"
+     }
+    },
+    {
+     "text": {
+      "ar": "وصل الجميع",
+      "ckb": "گەیاندنی هەموویان",
+      "en": "Joining all of them",
+      "id": "Menyambung semua"
+     }
+    },
+    {
+     "text": {
+      "ar": "الوقف على آخر السورة ثم وصل البسملة بأول التالية",
+      "ckb": "وەستان لەسەر کۆتایی سورەت و گەیاندنی بەسمەلە بە سەرەتای سورەتی دووەم",
+      "en": "Stopping at the end of the surah, then joining basmalah with the next surah",
+      "id": "Berhenti di akhir surat lalu menyambung basmallah dengan awal surat berikutnya"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "مُنع لئلا يُوهم السامعَ أن البسملة آية من السورة الأولى، والبسملة شُرعت في أوائل السور لا أواخرها.",
+    "ckb": "دروست نییە بۆ ئەوەی گوێگر وا تێنەگات کە بەسمەلە ئایەتێکە لە سورەتی یەکەم، چونکە بەسمەلە بۆ سەرەتای سورەتەکان دانراوە نەک کۆتاییان.",
+    "en": "It is not permitted so the listener does not think basmalah is a verse of the first surah; basmalah belongs to the beginnings of surahs, not their ends.",
+    "id": "Terlarang agar pendengar tidak mengira basmallah adalah ayat dari surat pertama; basmallah disyariatkan di awal surat, bukan di akhirnya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q44",
+   "type": "truefalse",
+   "topic": "t05",
+   "prompt": {
+    "ar": "من ابتدأ القراءة من أول سورة التوبة أتى بالبسملة.",
+    "ckb": "ئەوەی لە سەرەتای سورەتی تەوبەوە دەست بە خوێندن دەکات، بەسمەلە دەڵێت.",
+    "en": "Someone who starts reciting at the beginning of Surat at-Tawbah says the basmalah.",
+    "id": "Orang yang memulai bacaan dari awal surat at-Taubah membaca basmallah."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ تجب البسملة في ابتداء السور ما عدا سورة التوبة.",
+    "ckb": "هەڵەیە؛ بەسمەلە لە سەرەتای سورەتەکاندا پێویستە جگە لە سورەتی تەوبە.",
+    "en": "False. Basmalah is required at the beginning of every surah except at-Tawbah.",
+    "id": "Salah. Basmallah wajib dibaca di awal surat kecuali surat at-Taubah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q45",
+   "type": "choice",
+   "topic": "t05",
+   "prompt": {
+    "ar": "من وصل آخر سورة الأنفال بأول سورة التوبة، كم وجهًا يجوز له دون بسملة؟",
+    "ckb": "ئەوەی کۆتایی سورەتی ئەنفال بە سەرەتای سورەتی تەوبەوە دەلکێنێت، چەند شێوازی بۆ دروستە بەبێ بەسمەلە؟",
+    "en": "When joining the end of Surat al-Anfal to the beginning of Surat at-Tawbah, how many ways are permitted, without basmalah?",
+    "id": "Ketika menyambung akhir surat al-Anfal dengan awal surat at-Taubah, berapa cara yang diperbolehkan tanpa basmallah?"
+   },
+   "options": [
+    {
+     "number": "3"
+    },
+    {
+     "number": "1"
+    },
+    {
+     "number": "2"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "ثلاثة أوجه: القطع، والسكت، والوصل مع مراعاة حكم القلب.",
+    "ckb": "سێ شێواز: پچڕاندن، سەکت، و گەیاندن لەگەڵ ڕەچاوکردنی حوکمی ئیقلاب.",
+    "en": "Three ways: qat' (stopping), sakt (a slight pause), and wasl (joining, applying iqlab).",
+    "id": "Tiga cara: waqaf (berhenti), sakt (berhenti sebentar), dan wasl (menyambung dengan iqlab)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q46",
+   "type": "choice",
+   "topic": "t07",
+   "prompt": {
+    "ar": "ما لقب الحروف (ط د ت)؟",
+    "ckb": "لەقەبی پیتەکانی (ط د ت) چییە؟",
+    "en": "What is the title of the letters (ط د ت)?",
+    "id": "Apa julukan huruf (ط د ت)?"
+   },
+   "options": [
+    {
+     "arabic": "النِّطعيَّة"
+    },
+    {
+     "arabic": "الأَسَليَّة"
+    },
+    {
+     "arabic": "اللِّثويَّة"
+    },
+    {
+     "arabic": "الذَّلقيَّة"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الطاء والدال والتاء تخرج من طرف اللسان، ولقبها النِّطعيَّة.",
+    "ckb": "(ط د ت) لە سەری زمانەوە دەردەچن و لەقەبیان (النِّطعيَّة)یە.",
+    "en": "ط د ت come from the tip of the tongue; their title is an-nit'iyyah (النِّطعيَّة).",
+    "id": "Huruf ط د ت keluar dari ujung lidah; julukannya an-nith'iyyah (النِّطعيَّة)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q47",
+   "type": "choice",
+   "topic": "t07",
+   "prompt": {
+    "ar": "ما لقب الحروف (ظ ذ ث)؟",
+    "ckb": "لەقەبی پیتەکانی (ظ ذ ث) چییە؟",
+    "en": "What is the title of the letters (ظ ذ ث)?",
+    "id": "Apa julukan huruf (ظ ذ ث)?"
+   },
+   "options": [
+    {
+     "arabic": "اللِّثويَّة"
+    },
+    {
+     "arabic": "النِّطعيَّة"
+    },
+    {
+     "arabic": "الأَسَليَّة"
+    },
+    {
+     "arabic": "الشَّجْريَّة"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الظاء والذال والثاء تخرج من طرف اللسان، ولقبها اللِّثويَّة.",
+    "ckb": "(ظ ذ ث) لە سەری زمانەوە دەردەچن و لەقەبیان (اللِّثويَّة)یە.",
+    "en": "ظ ذ ث come from the tip of the tongue; their title is al-lithawiyyah (اللِّثويَّة).",
+    "id": "Huruf ظ ذ ث keluar dari ujung lidah; julukannya al-litsawiyyah (اللِّثويَّة)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q48",
+   "type": "choice",
+   "topic": "t07",
+   "prompt": {
+    "ar": "ما لقب الحرفين (ق ك)؟",
+    "ckb": "لەقەبی هەردوو پیتی (ق ك) چییە؟",
+    "en": "What is the title of the letters (ق ك)?",
+    "id": "Apa julukan huruf (ق ك)?"
+   },
+   "options": [
+    {
+     "arabic": "اللَّهويَّة"
+    },
+    {
+     "arabic": "الحَلْقيَّة"
+    },
+    {
+     "arabic": "الشَّجْريَّة"
+    },
+    {
+     "arabic": "الجوفيَّة"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "القاف والكاف تخرجان من أقصى اللسان، ولقبهما اللَّهويَّة.",
+    "ckb": "(ق ك) لە بنی زمانەوە دەردەچن و لەقەبیان (اللَّهويَّة)یە.",
+    "en": "ق and ك come from the back of the tongue; their title is al-lahawiyyah (اللَّهويَّة).",
+    "id": "Huruf ق dan ك keluar dari pangkal lidah; julukannya al-lahawiyyah (اللَّهويَّة)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q49",
+   "type": "truefalse",
+   "topic": "t07",
+   "prompt": {
+    "ar": "الحروف (ل ن ر) لقبها الذَّلقيَّة.",
+    "ckb": "لەقەبی پیتەکانی (ل ن ر) (الذَّلقيَّة)یە.",
+    "en": "The letters (ل ن ر) are titled adh-dhalaqiyyah (الذَّلقيَّة).",
+    "id": "Huruf (ل ن ر) dijuluki adz-dzalaqiyyah (الذَّلقيَّة)."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ اللام والنون والراء لقبها الذَّلقيَّة.",
+    "ckb": "ڕاستە؛ لەقەبی (ل ن ر) (الذَّلقيَّة)یە.",
+    "en": "True. ل ن ر are titled adh-dhalaqiyyah.",
+    "id": "Benar. ل ن ر dijuluki adz-dzalaqiyyah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q50",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "كم عدد المخارج الخاصة عند ابن الجزري وجمهور العلماء؟",
+    "ckb": "ژمارەی دەرچە تایبەتەکان لای ابن الجزري و زۆرینەی زانایان چەندە؟",
+    "en": "How many specific articulation points are there according to Ibn al-Jazari and most scholars?",
+    "id": "Berapa jumlah makhraj khusus menurut Ibnul Jazary dan mayoritas ulama?"
+   },
+   "options": [
+    {
+     "number": "17"
+    },
+    {
+     "number": "16"
+    },
+    {
+     "number": "14"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "سبعة عشر مخرجًا: في الجوف واحد، وفي الحلق ثلاثة، وفي اللسان عشرة، وفي الشفتين اثنان، وفي الخيشوم واحد. وعند سيبويه والشاطبي ستة عشر، وعند الفراء وقطرب أربعة عشر.",
+    "ckb": "حەڤدە دەرچە: یەک لە هەناو، سێ لە گەروو، دە لە زمان، دوو لە لێوەکان و یەک لە لووت (الخيشوم). لای سیبەوەیه و شاطبی شازدەیە و لای فەڕاء و قوطروب چواردەیە.",
+    "en": "17: one in the jawf, three in the throat, ten in the tongue, two in the lips and one in the nasal cavity. Sibawayh and ash-Shatibi count 16; al-Farra' and Qutrub count 14.",
+    "id": "Tujuh belas: 1 di al-jauf, 3 di al-halq, 10 di al-lisan, 2 di asy-syafatain, dan 1 di al-khaisyum. Menurut Sibawaih dan asy-Syatibi 16, menurut al-Farra' dan Qutrub 14."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q51",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أيّ مخرج تخرج حروف المد الثلاثة؟",
+    "ckb": "سێ پیتەکەی مەد لە کام دەرچەوە دەردەچن؟",
+    "en": "From which articulation point do the three madd letters come?",
+    "id": "Dari makhraj manakah tiga huruf mad keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الجوف",
+      "ckb": "هەناو (الجوف)",
+      "en": "Al-jawf (the empty space of the throat and mouth)",
+      "id": "Al-jauf"
+     }
+    },
+    {
+     "text": {
+      "ar": "الحلق",
+      "ckb": "گەروو (الحلق)",
+      "en": "The throat (al-halq)",
+      "id": "Al-halq (tenggorokan)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الخيشوم",
+      "ckb": "لووت (الخيشوم)",
+      "en": "The nasal cavity (al-khayshum)",
+      "id": "Al-khaisyum (rongga hidung)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الشفتان",
+      "ckb": "لێوەکان (الشفتان)",
+      "en": "The lips (ash-shafatan)",
+      "id": "Asy-syafatain (dua bibir)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الجوف هو خلاء الحلق والفم، وتخرج منه حروف المد: الألف والواو والياء المدّيّة.",
+    "ckb": "هەناو بۆشایی گەروو و دەمە، و پیتەکانی مەد (ا و ي)ی مەددار لێیەوە دەردەچن.",
+    "en": "The jawf is the empty space of the throat and mouth; the madd letters (ا و ي) come from it.",
+    "id": "Al-jauf adalah rongga tenggorokan dan mulut; huruf mad (ا و ي) keluar darinya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q52",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين يخرج الحرفان (ء ه)؟",
+    "ckb": "پیتەکانی (ء ه) لە کوێوە دەردەچن؟",
+    "en": "Where are the letters (ء ه) articulated?",
+    "id": "Dari mana huruf (ء ه) keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "أقصى الحلق",
+      "ckb": "ئەوپەڕی گەروو",
+      "en": "The furthest part of the throat",
+      "id": "Pangkal tenggorokan (aqshal halq)"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط الحلق",
+      "ckb": "ناوەڕاستی گەروو",
+      "en": "The middle of the throat",
+      "id": "Tengah tenggorokan (wasathul halq)"
+     }
+    },
+    {
+     "text": {
+      "ar": "أدنى الحلق",
+      "ckb": "نزیکترینی گەروو",
+      "en": "The closest part of the throat",
+      "id": "Ujung tenggorokan (adnal halq)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الهمزة والهاء من أقصى الحلق (منطقة الأوتار الصوتية)، والعين والحاء من وسطه، والغين والخاء من أدناه.",
+    "ckb": "(ء ه) لە ئەوپەڕی گەرووەوە دەردەچن، (ع ح) لە ناوەڕاستی و (غ خ) لە نزیکترینی.",
+    "en": "ء and ه come from the furthest part of the throat (the vocal cords); ع ح from its middle; غ خ from its closest part.",
+    "id": "ء dan ه dari pangkal tenggorokan (pita suara); ع ح dari tengahnya; غ خ dari ujungnya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q53",
+   "type": "choice",
+   "topic": "t06",
+   "prompt": {
+    "ar": "من أين تخرج الفاء؟",
+    "ckb": "پیتی (ف) لە کوێوە دەردەچێت؟",
+    "en": "Where is the letter ف articulated?",
+    "id": "Dari mana huruf ف keluar?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "باطن الشفة السفلى مع أطراف الثنايا العليا",
+      "ckb": "ناوەوەی لێوی خوارەوە لەگەڵ سەری ددانە پێشەوەکانی سەرەوە",
+      "en": "The inner lower lip with the tips of the upper front teeth",
+      "id": "Bagian dalam bibir bawah dengan ujung gigi seri atas"
+     }
+    },
+    {
+     "text": {
+      "ar": "من بين الشفتين بانطباقهما",
+      "ckb": "لەنێوان هەردوو لێو بە لێکنانیان",
+      "en": "Between the two lips, pressed together",
+      "id": "Di antara dua bibir yang dirapatkan"
+     }
+    },
+    {
+     "text": {
+      "ar": "طرف اللسان مع أطراف الثنايا العليا",
+      "ckb": "سەری زمان لەگەڵ سەری ددانە پێشەوەکانی سەرەوە",
+      "en": "The tip of the tongue with the tips of the upper front teeth",
+      "id": "Ujung lidah dengan ujung gigi seri atas"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الفاء تخرج من باطن الشفة السفلى مع أطراف الثنايا العليا، أما الباء والميم فبانطباق الشفتين.",
+    "ckb": "(ف) لە ناوەوەی لێوی خوارەوە لەگەڵ سەری ددانە پێشەوەکانی سەرەوە دەردەچێت؛ (ب م) بە لێکنانی هەردوو لێو.",
+    "en": "ف comes from the inner lower lip with the tips of the upper front teeth; ب and م come from pressing the lips together.",
+    "id": "ف keluar dari bagian dalam bibir bawah dengan ujung gigi seri atas; ب dan م dengan merapatkan dua bibir."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q54",
+   "type": "choice",
+   "topic": "t09",
+   "prompt": {
+    "ar": "من أخطاء نطق الضاد الملوّنة إبدالها حرفًا آخر. ما هو؟",
+    "ckb": "یەکێک لە هەڵەکانی وتنی (ض)ی ڕەنگکراو گۆڕینیەتی بۆ پیتێکی تر. کام پیتە؟",
+    "en": "One mistake with the highlighted ض is turning it into another letter. Which one?",
+    "id": "Salah satu kesalahan pada ض yang ditandai adalah menggantinya dengan huruf lain. Huruf apa?"
+   },
+   "options": [
+    {
+     "arabic": "ظ"
+    },
+    {
+     "arabic": "ق"
+    },
+    {
+     "arabic": "ك"
+    },
+    {
+     "arabic": "ث"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "من أخطاء الضاد إبدالها ظاءً، وإبدالها دالًا، وقلقلتها، وإدغامها فيما بعدها.",
+    "ckb": "لە هەڵەکانی (ض): گۆڕینی بۆ (ظ) یان (د)، قەلقەلەکردنی، و تێهەڵکێشکردنی لە پیتی دواتر.",
+    "en": "Mistakes with ض include turning it into ظ or د, giving it qalqalah, and merging it into the next letter.",
+    "id": "Kesalahan pada ض antara lain menggantinya dengan ظ atau د, memberinya qalqalah, dan mengidghamkannya ke huruf berikutnya."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "1:7",
+    "pattern": "ولا ال[ض]الين"
+   }
+  },
+  {
+   "id": "q55",
+   "type": "truefalse",
+   "topic": "t09",
+   "prompt": {
+    "ar": "قلقلة الغين الملوّنة خطأ.",
+    "ckb": "قەلقەلەکردنی (غ)ی ڕەنگکراو هەڵەیە.",
+    "en": "Giving the highlighted غ qalqalah is a mistake.",
+    "id": "Memberi qalqalah pada غ yang ditandai adalah kesalahan."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ الغين ليست من حروف القلقلة، وقلقلتها من الأخطاء الشائعة.",
+    "ckb": "ڕاستە؛ (غ) لە پیتەکانی قەلقەلە نییە و قەلقەلەکردنی هەڵەیە.",
+    "en": "True. غ is not a qalqalah letter; giving it qalqalah is a common mistake.",
+    "id": "Benar. غ bukan huruf qalqalah; memberinya qalqalah adalah kesalahan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "1:7",
+    "pattern": "الم[غ]ضوب"
+   }
+  },
+  {
+   "id": "q56",
+   "type": "truefalse",
+   "topic": "t09",
+   "prompt": {
+    "ar": "ترقيق الراء الملوّنة صحيح.",
+    "ckb": "ناسککردنی (ر)ی ڕەنگکراو ڕاستە.",
+    "en": "Making the highlighted raa light is correct.",
+    "id": "Membaca tipis ra yang ditandai adalah benar."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ الراء هنا تُفخَّم، وترقيقها ترقيق في محل التفخيم، وهو من الأخطاء.",
+    "ckb": "هەڵەیە؛ (ر) لێرەدا قەڵەو دەکرێت، و ناسککردنی هەڵەیە.",
+    "en": "False. This raa should be heavy; making it light is a mistake.",
+    "id": "Salah. Ra di sini seharusnya tebal; menipiskannya adalah kesalahan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "19:16",
+    "pattern": "م[ر]يم"
+   }
+  },
+  {
+   "id": "q57",
+   "type": "truefalse",
+   "topic": "t09",
+   "prompt": {
+    "ar": "إدغام اللام القمرية في الجيم هنا خطأ.",
+    "ckb": "تێهەڵکێشکردنی لامی قەمەری لە (ج)دا لێرەدا هەڵەیە.",
+    "en": "Merging the lunar laam into the jeem here is a mistake.",
+    "id": "Mengidghamkan lam qamariyah ke jim di sini adalah kesalahan."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ اللام هنا قمرية تُظهر، وإدغامها في الجيم من أخطاء نطق اللام.",
+    "ckb": "ڕاستە؛ لامەکە لێرەدا قەمەرییە و ئاشکرا دەکرێت، و تێهەڵکێشکردنی لە (ج)دا هەڵەیە.",
+    "en": "True. This laam is lunar and must be pronounced clearly; merging it into ج is a mistake.",
+    "id": "Benar. Lam di sini qamariyah dan dibaca jelas; mengidghamkannya ke ج adalah kesalahan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "2:35",
+    "pattern": "ا[ل][ج]نة"
+   }
+  },
+  {
+   "id": "q58",
+   "type": "choice",
+   "topic": "t13",
+   "prompt": {
+    "ar": "تكون الغنة أكمل ما تكون في:",
+    "ckb": "مینگە لە کوێدا لەهەموویان تەواوترە؟",
+    "en": "Ghunnah is at its most complete in:",
+    "id": "Ghunnah paling sempurna terdapat pada:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "النون والميم المشددتين والمدغمتين",
+      "ckb": "نون و میمی موشەددەد و تێهەڵکێشکراو",
+      "en": "Noon and meem with shaddah, or merged (idgham)",
+      "id": "Nun dan mim bertasydid atau diidghamkan"
+     }
+    },
+    {
+     "text": {
+      "ar": "النون والميم المخفاتين",
+      "ckb": "نون و میمی شاراوە",
+      "en": "Hidden noon and meem (ikhfaa)",
+      "id": "Nun dan mim yang diikhfakan"
+     }
+    },
+    {
+     "text": {
+      "ar": "النون والميم الساكنتين المظهرتين",
+      "ckb": "نون و میمی ساکنی ئیزهارکراو",
+      "en": "Sakin noon and meem pronounced clearly (ithhar)",
+      "id": "Nun dan mim sukun yang diizharkan"
+     }
+    },
+    {
+     "text": {
+      "ar": "النون والميم المتحركتين",
+      "ckb": "نون و میمی موتەحەریک",
+      "en": "Voweled noon and meem",
+      "id": "Nun dan mim berharakat"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "أكمل ما تكون في المشددتين والمدغمتين، ثم كاملة في المخفاتين، ثم ناقصة في الساكنتين المظهرتين، ثم أنقص ما تكون في المتحركتين.",
+    "ckb": "لە موشەددەد و تێهەڵکێشکراودا لەهەموویان تەواوترە، پاشان لە شاراوەدا تەواوە، لە ساکنی ئیزهارکراودا ناتەواوە، و لە موتەحەریکدا لەهەموویان ناتەواوترە.",
+    "en": "Most complete with shaddah or idgham; complete when hidden; incomplete in sakin letters with ithhar; most incomplete in voweled letters.",
+    "id": "Paling sempurna pada tasydid dan idgham; sempurna pada ikhfa; kurang sempurna pada sukun yang diizharkan; paling kurang pada yang berharakat."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q59",
+   "type": "choice",
+   "topic": "t13",
+   "prompt": {
+    "ar": "ما مرتبة الغنة في الحروف الملوّنة (إقلاب)؟",
+    "ckb": "پلەی مینگە لە پیتە ڕەنگکراوەکاندا (ئیقلاب) چییە؟",
+    "en": "What is the level of ghunnah in the highlighted letters (iqlab)?",
+    "id": "Apa tingkatan ghunnah pada huruf yang ditandai (iqlab)?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "كاملة",
+      "ckb": "تەواو (كاملة)",
+      "en": "Complete",
+      "id": "Sempurna"
+     }
+    },
+    {
+     "text": {
+      "ar": "أكمل ما تكون",
+      "ckb": "لەهەموویان تەواوتر (أكمل ما تكون)",
+      "en": "Most complete",
+      "id": "Paling sempurna"
+     }
+    },
+    {
+     "text": {
+      "ar": "ناقصة",
+      "ckb": "ناتەواو (ناقصة)",
+      "en": "Incomplete",
+      "id": "Kurang sempurna"
+     }
+    },
+    {
+     "text": {
+      "ar": "أنقص ما تكون",
+      "ckb": "لەهەموویان ناتەواوتر (أنقص ما تكون)",
+      "en": "Most incomplete",
+      "id": "Paling kurang"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الغنة كاملة في النون والميم المخفاتين، ومنه الإقلاب والإخفاء الحقيقي والشفوي.",
+    "ckb": "مینگە لە نون و میمی شاراوەدا تەواوە، کە ئیقلاب و ئیخفائی حەقیقی و لێوی دەگرێتەوە.",
+    "en": "Ghunnah is complete in hidden noon and meem: iqlab, ikhfaa haqiqi and ikhfaa shafawi.",
+    "id": "Ghunnah sempurna pada nun dan mim yang diikhfakan: iqlab, ikhfa haqiqi, dan ikhfa syafawi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "2:27",
+    "pattern": "م[ن] [ب]عد"
+   }
+  },
+  {
+   "id": "q60",
+   "type": "choice",
+   "topic": "t13",
+   "prompt": {
+    "ar": "ما مرتبة الغنة في النون الملوّنة (إظهار)؟",
+    "ckb": "پلەی مینگە لە نونی ڕەنگکراودا (ئیزهار) چییە؟",
+    "en": "What is the level of ghunnah in the highlighted noon (ithhar)?",
+    "id": "Apa tingkatan ghunnah pada nun yang ditandai (izhhar)?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "ناقصة",
+      "ckb": "ناتەواو (ناقصة)",
+      "en": "Incomplete",
+      "id": "Kurang sempurna"
+     }
+    },
+    {
+     "text": {
+      "ar": "كاملة",
+      "ckb": "تەواو (كاملة)",
+      "en": "Complete",
+      "id": "Sempurna"
+     }
+    },
+    {
+     "text": {
+      "ar": "أكمل ما تكون",
+      "ckb": "لەهەموویان تەواوتر (أكمل ما تكون)",
+      "en": "Most complete",
+      "id": "Paling sempurna"
+     }
+    },
+    {
+     "text": {
+      "ar": "أنقص ما تكون",
+      "ckb": "لەهەموویان ناتەواوتر (أنقص ما تكون)",
+      "en": "Most incomplete",
+      "id": "Paling kurang"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الغنة ناقصة في النون والميم الساكنتين المظهرتين.",
+    "ckb": "مینگە لە نون و میمی ساکنی ئیزهارکراودا ناتەواوە.",
+    "en": "Ghunnah is incomplete in sakin noon and meem pronounced with ithhar.",
+    "id": "Ghunnah kurang sempurna pada nun dan mim sukun yang diizharkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "1:7",
+    "pattern": "ا[ن]عمت"
+   }
+  },
+  {
+   "id": "q61",
+   "type": "choice",
+   "topic": "t16",
+   "prompt": {
+    "ar": "ما أقوى المدود؟",
+    "ckb": "بەهێزترینی مەددەکان کامەیە؟",
+    "en": "Which madd is the strongest?",
+    "id": "Mad manakah yang paling kuat?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "المد اللازم",
+      "ckb": "مەدی لازم",
+      "en": "Madd lazim (compulsory)",
+      "id": "Mad lazim"
+     }
+    },
+    {
+     "text": {
+      "ar": "المد المتصل",
+      "ckb": "مەدی موتصل",
+      "en": "Madd muttasil (joined)",
+      "id": "Mad muttashil"
+     }
+    },
+    {
+     "text": {
+      "ar": "المد العارض للسكون",
+      "ckb": "مەدی عارض للسکون",
+      "en": "Madd 'arid lissukoon",
+      "id": "Mad 'aridh lissukun"
+     }
+    },
+    {
+     "text": {
+      "ar": "المد المنفصل",
+      "ckb": "مەدی مونفصل",
+      "en": "Madd munfasil (separate)",
+      "id": "Mad munfashil"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "ترتيبها من الأقوى: اللازم، فالمتصل، فالعارض، فالمنفصل، فالبدل.",
+    "ckb": "ڕیزبەندییان لە بەهێزترەوە: لازم، موتصل، عارض، مونفصل، پاشان بەدەل.",
+    "en": "From strongest: lazim, then muttasil, then 'arid, then munfasil, then badal.",
+    "id": "Urutan dari yang terkuat: lazim, muttashil, 'aridh, munfashil, lalu badal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q62",
+   "type": "choice",
+   "topic": "t16",
+   "prompt": {
+    "ar": "اجتمع المتصل والبدل في الحروف الملوّنة. بأيّهما يُعمل؟",
+    "ckb": "موتصل و بەدەل لە پیتە ڕەنگکراوەکاندا کۆبوونەتەوە. کامیان پێش دەخرێت؟",
+    "en": "Muttasil and badal meet in the highlighted letters. Which one is applied?",
+    "id": "Muttashil dan badal bertemu pada huruf yang ditandai. Mana yang didahulukan?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "المد المتصل",
+      "ckb": "مەدی موتصل",
+      "en": "Madd muttasil (joined)",
+      "id": "Mad muttashil"
+     }
+    },
+    {
+     "text": {
+      "ar": "مد البدل",
+      "ckb": "مەدی بەدەل",
+      "en": "Madd al-badal",
+      "id": "Mad badal"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "إذا اجتمع سببان للمد عُمل بالأقوى وأُلغي الأضعف، والمتصل أقوى من البدل.",
+    "ckb": "کاتێک دوو هۆکاری مەد کۆدەبنەوە بە بەهێزترەکەیان کار دەکرێت، و موتصل بەهێزترە لە بەدەل.",
+    "en": "When two causes of madd meet, the stronger is applied and the weaker dropped; muttasil is stronger than badal.",
+    "id": "Jika dua sebab mad bertemu, yang terkuat diamalkan dan yang lemah diabaikan; muttashil lebih kuat daripada badal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "4:38",
+    "pattern": "ر[ياء] الناس"
+   }
+  },
+  {
+   "id": "q63",
+   "type": "choice",
+   "topic": "t16",
+   "prompt": {
+    "ar": "إذا وقفت على الكلمة الملوّنة ومددت المتصل ٤ حركات واخترت في العارض ٦، كم تمدّ؟",
+    "ckb": "ئەگەر لەسەر وشە ڕەنگکراوەکە بوەستیت و موتصل ٤ حەرەکە و عارض ٦ هەڵبژێریت، چەند درێژی دەکەیتەوە؟",
+    "en": "If you stop on the highlighted word, lengthening muttasil 4 counts and choosing 6 for 'arid, how long is the madd?",
+    "id": "Jika berhenti pada kata yang ditandai, dengan muttashil 4 harakat dan memilih 6 untuk 'aridh, berapa panjang madnya?"
+   },
+   "options": [
+    {
+     "counts": "6"
+    },
+    {
+     "counts": "4"
+    },
+    {
+     "counts": "5"
+    },
+    {
+     "counts": "2"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "في اجتماع المتصل والعارض يُقدَّم الأطول: ٤ مع ٦ يُمدّ ٦.",
+    "ckb": "لە کۆبوونەوەی موتصل و عارضدا درێژترەکە پێش دەخرێت: ٤ لەگەڵ ٦ دەبێتە ٦.",
+    "en": "When muttasil and 'arid meet, the longer is used: 4 with 6 gives 6.",
+    "id": "Pada pertemuan muttashil dan 'aridh, yang lebih panjang didahulukan: 4 dengan 6 menjadi 6."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "2:19",
+    "pattern": "من الس[ماء]"
+   }
+  },
+  {
+   "id": "q64",
+   "type": "truefalse",
+   "topic": "t16",
+   "prompt": {
+    "ar": "مد البدل أضعف المدود الفرعية.",
+    "ckb": "مەدی بەدەل لاوازترینی مەدە لاوەکییەکانە.",
+    "en": "Madd al-badal is the weakest of the secondary madds.",
+    "id": "Mad badal adalah mad far'i yang paling lemah."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ «أقوى المدود: لازم فما اتصل، فعارض فذو انفصال فبدل».",
+    "ckb": "ڕاستە؛ ڕیزبەندییەکە: لازم، موتصل، عارض، مونفصل، پاشان بەدەل.",
+    "en": "True: «the strongest madd is lazim, then muttasil, then 'arid, then munfasil, then badal».",
+    "id": "Benar: urutannya lazim, muttashil, 'aridh, munfashil, lalu badal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q65",
+   "type": "choice",
+   "topic": "t17",
+   "prompt": {
+    "ar": "متى يُدغم الحرفان المتماثلان؟",
+    "ckb": "دوو پیتی هاوشێوە کەی تێهەڵکێش دەکرێن؟",
+    "en": "When are two identical letters merged?",
+    "id": "Kapan dua huruf yang sama (mutamatsilain) diidghamkan?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "إذا كان أولهما ساكنًا وليس حرف مد",
+      "ckb": "ئەگەر یەکەمیان ساکن بێت و پیتی مەد نەبێت",
+      "en": "When the first is sakin and is not a madd letter",
+      "id": "Jika huruf pertama sukun dan bukan huruf mad"
+     }
+    },
+    {
+     "text": {
+      "ar": "إذا كانا متحركين",
+      "ckb": "ئەگەر هەردووکیان موتەحەریک بن",
+      "en": "When both are voweled",
+      "id": "Jika keduanya berharakat"
+     }
+    },
+    {
+     "text": {
+      "ar": "إذا كان أولهما حرف مد",
+      "ckb": "ئەگەر یەکەمیان پیتی مەد بێت",
+      "en": "When the first is a madd letter",
+      "id": "Jika huruf pertama huruf mad"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "شرط إدغام المتماثلين أن يكون أولهما ساكنًا وليس حرف مد؛ فإن تحرك أو كان حرف مد فلا إدغام.",
+    "ckb": "مەرجی تێهەڵکێشکردنی دوو پیتی هاوشێوە ئەوەیە یەکەمیان ساکن بێت و پیتی مەد نەبێت؛ ئەگەر موتەحەریک بوو یان پیتی مەد بوو تێهەڵکێش ناکرێت.",
+    "en": "The first must be sakin and not a madd letter; if it is voweled or a madd letter there is no idgham.",
+    "id": "Syaratnya huruf pertama sukun dan bukan huruf mad; jika berharakat atau huruf mad, tidak diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q66",
+   "type": "truefalse",
+   "topic": "t17",
+   "prompt": {
+    "ar": "يُقرأ لحفص عن عاصم بالإدغام الكبير.",
+    "ckb": "حەفص لە عاصمەوە بە ئیدغامی گەورە دەخوێنێت.",
+    "en": "Hafs from 'Asim reads with idgham kabir.",
+    "id": "Hafs dari 'Ashim membaca dengan idgham kabir."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ لا يُقرأ لحفص عن عاصم بالإدغام الكبير في جميع حالاته.",
+    "ckb": "هەڵەیە؛ حەفص لە عاصمەوە لە هیچ حاڵەتێکدا بە ئیدغامی گەورە ناخوێنێت.",
+    "en": "False. Hafs from 'Asim does not read with idgham kabir in any case.",
+    "id": "Salah. Hafs dari 'Ashim tidak membaca idgham kabir dalam semua keadaannya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q67",
+   "type": "choice",
+   "topic": "t17",
+   "prompt": {
+    "ar": "الحرفان المتفقان في المخرج والمختلفان في بعض الصفات يُسمّيان:",
+    "ckb": "دوو پیت کە لە دەرچەدا یەکن و لە هەندێ سیفەتدا جیاوازن پێیان دەوترێت:",
+    "en": "Two letters with the same articulation point but some different characteristics are called:",
+    "id": "Dua huruf yang sama makhrajnya tetapi berbeda sebagian sifatnya disebut:"
+   },
+   "options": [
+    {
+     "arabic": "مُتجانِسان"
+    },
+    {
+     "arabic": "مُتماثِلان"
+    },
+    {
+     "arabic": "مُتقارِبان"
+    },
+    {
+     "arabic": "مُتباعِدان"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "المتجانسان: متفقان في المخرج مختلفان في بعض الصفات، والمتماثلان: متفقان في المخرج والصفات.",
+    "ckb": "هاوڕەگەز (المتجانسان): لە دەرچەدا یەکن و لە هەندێ سیفەتدا جیاوازن؛ هاوشێوە (المتماثلان): لە دەرچە و سیفەتدا یەکن.",
+    "en": "Mutajanisan share the articulation point but differ in some characteristics; mutamathilan share both.",
+    "id": "Mutajanisain sama makhrajnya namun berbeda sebagian sifat; mutamatsilain sama makhraj dan sifatnya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q68",
+   "type": "choice",
+   "topic": "t17",
+   "prompt": {
+    "ar": "يقع الإدغام الناقص في النون الساكنة والتنوين عند حرفين، هما:",
+    "ckb": "ئیدغامی ناتەواو لە نونی ساکن و تەنویندا لەگەڵ دوو پیت ڕوودەدات، ئەوانیش:",
+    "en": "Incomplete idgham of noon sakinah and tanween happens with two letters. Which?",
+    "id": "Idgham naqish pada nun sukun dan tanwin terjadi pada dua huruf, yaitu:"
+   },
+   "options": [
+    {
+     "arabic": "ي و"
+    },
+    {
+     "arabic": "ل ر"
+    },
+    {
+     "arabic": "م ن"
+    },
+    {
+     "arabic": "ب م"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الإدغام الناقص يكون في النون الساكنة والتنوين عند الياء والواو (تبقى الغنة)، وفي الطاء عند التاء.",
+    "ckb": "ئیدغامی ناتەواو لە نونی ساکن و تەنویندا لەگەڵ (ي و)دایە (مینگە دەمێنێت)، و لە (ط) لەگەڵ (ت).",
+    "en": "Incomplete idgham is noon sakinah or tanween into ي and و (the ghunnah stays), and ط into ت.",
+    "id": "Idgham naqish terjadi pada nun sukun atau tanwin ke ي dan و (ghunnah tetap), dan ط ke ت."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q69",
+   "type": "choice",
+   "topic": "t19",
+   "prompt": {
+    "ar": "عند البدء بالكلمة الملوّنة تكون همزة الوصل:",
+    "ckb": "لەکاتی دەستپێکردن بە وشە ڕەنگکراوەکە هەمزەی وەسڵ:",
+    "en": "Starting with the highlighted word, hamzat al-wasl is read:",
+    "id": "Ketika memulai dengan kata yang ditandai, hamzah washal dibaca:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "تُضمّ",
+      "ckb": "بۆرە دەکرێت (ضەممە)",
+      "en": "With dammah",
+      "id": "Dhammah"
+     }
+    },
+    {
+     "text": {
+      "ar": "تُكسر",
+      "ckb": "ژێرە دەکرێت (کەسرە)",
+      "en": "With kasrah",
+      "id": "Kasrah"
+     }
+    },
+    {
+     "text": {
+      "ar": "تُفتح",
+      "ckb": "سەرە دەکرێت (فەتحە)",
+      "en": "With fathah",
+      "id": "Fathah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "تُضمّ همزة الوصل في الفعل إذا كان ثالثه مضمومًا ضمًّا لازمًا، وتُكسر إذا كان مكسورًا أو مفتوحًا أو مضمومًا ضمًّا عارضًا.",
+    "ckb": "هەمزەی وەسڵ لە کاردا بۆرە دەکرێت ئەگەر پیتی سێیەم ضەممەی لازمی هەبێت، و ژێرە دەکرێت ئەگەر کەسرە یان فەتحە یان ضەممەی عارضی هەبێت.",
+    "en": "In a verb it takes dammah when the third letter has a permanent dammah; it takes kasrah when the third letter has kasrah, fathah or a temporary dammah.",
+    "id": "Pada fi'il berharakat dhammah jika huruf ketiga berdhammah asli; berharakat kasrah jika huruf ketiga berkasrah, berfathah, atau berdhammah sementara."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "2:58",
+    "pattern": "[ا]دخلوا"
+   }
+  },
+  {
+   "id": "q70",
+   "type": "choice",
+   "topic": "t19",
+   "prompt": {
+    "ar": "عند البدء بالكلمة الملوّنة تكون همزة الوصل:",
+    "ckb": "لەکاتی دەستپێکردن بە وشە ڕەنگکراوەکە هەمزەی وەسڵ:",
+    "en": "Starting with the highlighted word, hamzat al-wasl is read:",
+    "id": "Ketika memulai dengan kata yang ditandai, hamzah washal dibaca:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "تُفتح",
+      "ckb": "سەرە دەکرێت (فەتحە)",
+      "en": "With fathah",
+      "id": "Fathah"
+     }
+    },
+    {
+     "text": {
+      "ar": "تُكسر",
+      "ckb": "ژێرە دەکرێت (کەسرە)",
+      "en": "With kasrah",
+      "id": "Kasrah"
+     }
+    },
+    {
+     "text": {
+      "ar": "تُضمّ",
+      "ckb": "بۆرە دەکرێت (ضەممە)",
+      "en": "With dammah",
+      "id": "Dhammah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "همزة الوصل في «ال» تكون مفتوحة عند البدء بها.",
+    "ckb": "هەمزەی وەسڵی «ال» لەکاتی دەستپێکردندا سەرە (فەتحە) دەکرێت.",
+    "en": "The hamzat al-wasl of «ال» takes fathah when starting.",
+    "id": "Hamzah washal pada «ال» dibaca fathah ketika memulai."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "2:32",
+    "pattern": "[ا]لعليم"
+   }
+  },
+  {
+   "id": "q71",
+   "type": "choice",
+   "topic": "t19",
+   "prompt": {
+    "ar": "عند البدء بالكلمة الملوّنة تكون همزة الوصل:",
+    "ckb": "لەکاتی دەستپێکردن بە وشە ڕەنگکراوەکە هەمزەی وەسڵ:",
+    "en": "Starting with the highlighted word, hamzat al-wasl is read:",
+    "id": "Ketika memulai dengan kata yang ditandai, hamzah washal dibaca:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "تُكسر",
+      "ckb": "ژێرە دەکرێت (کەسرە)",
+      "en": "With kasrah",
+      "id": "Kasrah"
+     }
+    },
+    {
+     "text": {
+      "ar": "تُفتح",
+      "ckb": "سەرە دەکرێت (فەتحە)",
+      "en": "With fathah",
+      "id": "Fathah"
+     }
+    },
+    {
+     "text": {
+      "ar": "تُضمّ",
+      "ckb": "بۆرە دەکرێت (ضەممە)",
+      "en": "With dammah",
+      "id": "Dhammah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "همزة الوصل في الأسماء القياسية والسماعية تُكسر عند البدء بها.",
+    "ckb": "هەمزەی وەسڵ لە ناوە قیاسی و سەماعییەکاندا ژێرە دەکرێت.",
+    "en": "In nouns, both regular and listed (sama'i), hamzat al-wasl takes kasrah when starting.",
+    "id": "Pada kata benda, baik qiyasi maupun sama'i, hamzah washal dibaca kasrah ketika memulai."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "example": {
+    "ref": "5:110",
+    "pattern": "[ا]بن"
+   }
+  },
+  {
+   "id": "q72",
+   "type": "truefalse",
+   "topic": "t19",
+   "prompt": {
+    "ar": "همزة الوصل تُنطق عند وصل الكلمة بما قبلها.",
+    "ckb": "هەمزەی وەسڵ لەکاتی گەیاندنی وشەکە بە پێش خۆیەوە دەخوێنرێتەوە.",
+    "en": "Hamzat al-wasl is pronounced when the word is joined to what comes before it.",
+    "id": "Hamzah washal dibaca ketika kata disambung dengan kata sebelumnya."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ همزة الوصل تثبت في الابتداء وتسقط في الوصل.",
+    "ckb": "هەڵەیە؛ هەمزەی وەسڵ لە دەستپێکردندا دەخوێنرێتەوە و لە گەیاندندا ناخوێنرێتەوە.",
+    "en": "False. It is pronounced when starting and dropped when joining.",
+    "id": "Salah. Hamzah washal dibaca saat memulai dan gugur saat disambung."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q73",
+   "type": "choice",
+   "topic": "t20",
+   "prompt": {
+    "ar": "قطع الصوت زمنًا دون زمن الوقف من غير تنفّس بنيّة متابعة القراءة يُسمّى:",
+    "ckb": "بڕینی دەنگ بە ماوەیەکی کەمتر لە وەقف بەبێ هەناسەدان بە نیەتی بەردەوامبوون پێی دەوترێت:",
+    "en": "Cutting off the sound briefly, shorter than a stop, without taking a breath, intending to continue, is called:",
+    "id": "Memotong suara sebentar, lebih singkat dari waqaf, tanpa mengambil napas dengan niat melanjutkan, disebut:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "السكت",
+      "ckb": "سەکت",
+      "en": "Sakt (slight pause)",
+      "id": "Sakt"
+     }
+    },
+    {
+     "text": {
+      "ar": "الوقف",
+      "ckb": "وەقف",
+      "en": "Waqf (stop)",
+      "id": "Waqaf"
+     }
+    },
+    {
+     "text": {
+      "ar": "القطع",
+      "ckb": "قەطع",
+      "en": "Qat' (cutting off)",
+      "id": "Qatha'"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "السكت بلا تنفّس وزمنه دون الوقف؛ والوقف يُتنفَّس فيه بنيّة استئناف القراءة؛ والقطع إنهاء القراءة.",
+    "ckb": "سەکت بەبێ هەناسەدانە و کەمترە لە وەقف؛ لە وەقفدا هەناسە دەدرێت بە نیەتی دەستپێکردنەوە؛ قەطع کۆتاییهێنانە بە خوێندن.",
+    "en": "Sakt has no breath and is shorter than waqf; in waqf one breathes, intending to resume; qat' ends the recitation.",
+    "id": "Sakt tanpa napas dan lebih singkat dari waqaf; pada waqaf qari' mengambil napas dengan niat melanjutkan; qatha' mengakhiri bacaan."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q74",
+   "type": "choice",
+   "topic": "t20",
+   "prompt": {
+    "ar": "أن يُطلب من القارئ الوقف على كلمة معيّنة لاختباره يُسمّى الوقف:",
+    "ckb": "ئەوەی داوا لە قورئان خوێن بکرێت لەسەر وشەیەکی دیاریکراو بوەستێت بۆ تاقیکردنەوەی، پێی دەوترێت وەقفی:",
+    "en": "When the reciter is asked to stop on a certain word to test him, this stop is called:",
+    "id": "Ketika qari' diminta berhenti pada kata tertentu untuk mengujinya, waqaf ini disebut:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الاختباري",
+      "ckb": "تاقیکردنەوە (الاختباري)",
+      "en": "Tested stop (ikhtibari)",
+      "id": "Ikhtibari (pengujian)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الاضطراري",
+      "ckb": "ناچاری (الاضطراري)",
+      "en": "Forced stop (idtirari)",
+      "id": "Idhthirari (darurat)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الانتظاري",
+      "ckb": "چاوەڕوانی (الانتظاري)",
+      "en": "Waiting stop (intizari)",
+      "id": "Intizhari (menunggu)"
+     }
+    },
+    {
+     "text": {
+      "ar": "الاختياري",
+      "ckb": "ئارەزوومەندانە (الاختياري)",
+      "en": "Optional stop (ikhtiyari)",
+      "id": "Ikhtiyari (pilihan)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الوقف الاختباري يُطلب لاختبار القارئ وللاطمئنان إلى جودة قراءته، وحكمه الجواز لأجل التعليم.",
+    "ckb": "وەقفی تاقیکردنەوە بۆ تاقیکردنەوەی قورئان خوێن و دڵنیابوون لە جوانی خوێندنەکەیەتی، و بۆ فێرکردن دروستە.",
+    "en": "The tested stop is requested to examine the reciter and check the quality of his recitation; it is permitted for teaching.",
+    "id": "Waqaf ikhtibari diminta untuk menguji qari' dan memastikan kualitas bacaannya; hukumnya boleh untuk pembelajaran."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q75",
+   "type": "choice",
+   "topic": "t20",
+   "prompt": {
+    "ar": "الوقف الذي تمّ معناه ولم يتعلّق بما بعده لا لفظًا ولا معنى هو:",
+    "ckb": "ئەو وەستانەی ماناکەی تەواوە و پەیوەندی بە دوای خۆیەوە نییە نە لە لەفز و نە لە مانادا:",
+    "en": "A stop whose meaning is complete and is not attached to what follows, neither in wording nor in meaning, is:",
+    "id": "Waqaf yang maknanya sempurna dan tidak berkaitan dengan setelahnya, baik lafaz maupun makna, adalah:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الوقف التام",
+      "ckb": "وەستانی تەواو (التام)",
+      "en": "The complete stop (tamm)",
+      "id": "Waqaf tam"
+     }
+    },
+    {
+     "text": {
+      "ar": "الوقف الكافي",
+      "ckb": "وەستانی کافی (الكافي)",
+      "en": "The sufficient stop (kafi)",
+      "id": "Waqaf kafi"
+     }
+    },
+    {
+     "text": {
+      "ar": "الوقف الحسن",
+      "ckb": "وەستانی باش (الحسن)",
+      "en": "The good stop (hasan)",
+      "id": "Waqaf hasan"
+     }
+    },
+    {
+     "text": {
+      "ar": "الوقف القبيح",
+      "ckb": "وەستانی خراپ (القبيح)",
+      "en": "The ugly stop (qabih)",
+      "id": "Waqaf qabih"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الوقف التام لم يتعلق بما بعده لفظًا ولا معنى، أما الكافي فيتعلق بما بعده معنى لا لفظًا.",
+    "ckb": "وەستانی تەواو نە لە لەفز و نە لە مانادا پەیوەندی بە دواییەوە نییە؛ کافی تەنها لە مانادا پەیوەندی هەیە.",
+    "en": "The complete stop is not attached to what follows in wording or meaning; the sufficient stop is attached in meaning only.",
+    "id": "Waqaf tam tidak berkaitan dengan setelahnya secara lafaz maupun makna; waqaf kafi berkaitan secara makna saja."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q76",
+   "type": "truefalse",
+   "topic": "t20",
+   "prompt": {
+    "ar": "علامة الوقف اللازم في المصحف (مـ).",
+    "ckb": "نیشانەی وەستانی لازم لە موصحەفدا (مـ)یە.",
+    "en": "The sign of the compulsory stop (waqf lazim) in the mushaf is (مـ).",
+    "id": "Tanda waqaf lazim dalam mushaf adalah (مـ)."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ الوقف اللازم من أنواع الوقف التام، يلزم الوقوف عليه ليظهر المعنى، وعلامته (مـ).",
+    "ckb": "ڕاستە؛ وەستانی لازم جۆرێکە لە وەستانی تەواو و بۆ ڕوونبوونەوەی مانا پێویستە، و نیشانەکەی (مـ)یە.",
+    "en": "True. The compulsory stop is a kind of complete stop that makes the meaning clear; its sign is (مـ).",
+    "id": "Benar. Waqaf lazim termasuk waqaf tam yang wajib untuk memperjelas makna; tandanya (مـ)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q77",
+   "type": "choice",
+   "topic": "t21",
+   "example": {
+    "ref": "10:68",
+    "pattern": "قالوا [ا]تخذ الله ولدا"
+   },
+   "prompt": {
+    "ar": "البدء بالقراءة من الكلمة الملوّنة (دون ما قبلها) هو ابتداء:",
+    "ckb": "دەستپێکردن بە خوێندن لە وشە ڕەنگکراوەکەوە (بەبێ ئەوەی پێشی) دەستپێکردنێکی:",
+    "en": "Starting the recitation at the highlighted word (leaving out the word before it) is:",
+    "id": "Memulai bacaan dari kata yang ditandai (tanpa kata sebelumnya) adalah ibtida':"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "قبيح",
+      "ckb": "خراپە (القبيح)",
+      "en": "An ugly start (qabih)",
+      "id": "Qabih (buruk)"
+     }
+    },
+    {
+     "text": {
+      "ar": "تام",
+      "ckb": "تەواوە (التام)",
+      "en": "A complete start (tamm)",
+      "id": "Tam (sempurna)"
+     }
+    },
+    {
+     "text": {
+      "ar": "كافٍ",
+      "ckb": "کافییە (الكافي)",
+      "en": "A sufficient start (kafi)",
+      "id": "Kafy (cukup)"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الابتداء القبيح هو الابتداء بما يُفسد المعنى أو يُوهم غير ما أراده الله تعالى، لشدة تعلّقه بما قبله.",
+    "ckb": "دەستپێکردنی خراپ ئەوەیە کە ماناکە تێکبدات یان وا دەربخات کە خوا مەبەستی نەبووە، چونکە زۆر پەیوەستە بە پێش خۆیەوە.",
+    "en": "An ugly start corrupts the meaning or suggests something other than what Allah meant, because it is tightly bound to what precedes it.",
+    "id": "Ibtida' qabih merusak makna atau memberi kesan selain yang dimaksud Allah, karena sangat terkait dengan sebelumnya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q78",
+   "type": "truefalse",
+   "topic": "t21",
+   "prompt": {
+    "ar": "البدء بأول السورة مثال على الابتداء التام.",
+    "ckb": "دەستپێکردن بە سەرەتای سورەت نمونەی دەستپێکردنی تەواوە.",
+    "en": "Starting at the beginning of a surah is an example of a complete start.",
+    "id": "Memulai dari awal surat adalah contoh ibtida' tam."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ الابتداء التام هو الابتداء بما ليس له علاقة بما قبله لفظًا ولا معنى، نحو البدء بأول السور.",
+    "ckb": "ڕاستە؛ دەستپێکردنی تەواو پەیوەندی بە پێش خۆیەوە نییە لە لەفز و ماناوە، وەکو دەستپێکردن بە سەرەتای سورەتەکان.",
+    "en": "True. A complete start has no link to what precedes it in wording or meaning, like starting a surah.",
+    "id": "Benar. Ibtida' tam tidak berkaitan dengan sebelumnya secara lafaz maupun makna, seperti memulai awal surat."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q79",
+   "type": "choice",
+   "topic": "t22",
+   "prompt": {
+    "ar": "في كم موضعًا يجب السكت لحفص؟",
+    "ckb": "سەکتی واجب بۆ حەفص لە چەند شوێندایە؟",
+    "en": "In how many places is sakt obligatory for Hafs?",
+    "id": "Di berapa tempat sakt wajib bagi Hafs?"
+   },
+   "options": [
+    {
+     "number": "4"
+    },
+    {
+     "number": "2"
+    },
+    {
+     "number": "7"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "السكت الواجب لحفص في أربعة مواضع، والجائز في موضعين.",
+    "ckb": "سەکتی واجب بۆ حەفص لە چوار شوێندایە، و سەکتی جائز لە دوو شوێندا.",
+    "en": "Obligatory sakt for Hafs is in four places; optional sakt is in two.",
+    "id": "Sakt wajib bagi Hafs ada di empat tempat, dan sakt jaiz di dua tempat."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q80",
+   "type": "truefalse",
+   "topic": "t22",
+   "example": {
+    "ref": "75:27",
+    "pattern": "م[ن]"
+   },
+   "prompt": {
+    "ar": "تُدغم النون الملوّنة في الراء التي بعدها.",
+    "ckb": "نونی ڕەنگکراو لە (ر)ی دوای خۆیدا تێهەڵکێش دەکرێت.",
+    "en": "The highlighted noon is merged into the raa after it.",
+    "id": "Nun yang ditandai diidghamkan ke ra setelahnya."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ هنا سكت واجب لحفص، فيسقط الإدغام ويجب الإظهار.",
+    "ckb": "هەڵەیە؛ لێرەدا سەکتی واجب هەیە بۆ حەفص، بۆیە ئیدغام لادەچێت و ئیزهار پێویستە.",
+    "en": "False. Here Hafs has an obligatory sakt, so the idgham is dropped and the noon is pronounced clearly.",
+    "id": "Salah. Di sini Hafs wajib sakt, sehingga idgham gugur dan nun dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q81",
+   "type": "choice",
+   "topic": "t22",
+   "prompt": {
+    "ar": "السكت عند وصل آخر الأنفال بأول التوبة:",
+    "ckb": "سەکت لەکاتی گەیاندنی کۆتایی ئەنفال بە سەرەتای تەوبە:",
+    "en": "Sakt when joining the end of al-Anfal to the beginning of at-Tawbah is:",
+    "id": "Sakt ketika menyambung akhir al-Anfal dengan awal at-Taubah hukumnya:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "جائز",
+      "ckb": "جائزە",
+      "en": "Optional (ja'iz)",
+      "id": "Jaiz (boleh)"
+     }
+    },
+    {
+     "text": {
+      "ar": "واجب",
+      "ckb": "واجبە",
+      "en": "Obligatory (wajib)",
+      "id": "Wajib"
+     }
+    },
+    {
+     "text": {
+      "ar": "ممنوع",
+      "ckb": "قەدەغەیە",
+      "en": "Not permitted",
+      "id": "Terlarang"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "هو من مواضع السكت الجائز: للقارئ فيه ثلاثة أوجه، أحدها السكت.",
+    "ckb": "یەکێکە لە شوێنەکانی سەکتی جائز: سێ شێوازی هەیە کە یەکێکیان سەکتە.",
+    "en": "It is one of the optional sakt places: the reciter has three ways there, one of which is sakt.",
+    "id": "Ini termasuk tempat sakt jaiz: qari' memiliki tiga cara, salah satunya sakt."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q82",
+   "type": "truefalse",
+   "topic": "t23",
+   "example": {
+    "ref": "109:4",
+    "pattern": "ولا ان[ا] عابد"
+   },
+   "prompt": {
+    "ar": "الألف الملوّنة تثبت وقفًا وتُحذف وصلًا.",
+    "ckb": "ئەلیفی ڕەنگکراو لە وەستاندا دەخوێنرێتەوە و لە گەیاندندا ناخوێنرێتەوە.",
+    "en": "The highlighted alif is pronounced when stopping and dropped when continuing.",
+    "id": "Alif yang ditandai dibaca saat waqaf dan dibuang saat washal."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ هذه من الألفات السبع في رواية حفص: تثبت وقفًا وتُحذف وصلًا.",
+    "ckb": "ڕاستە؛ ئەمە یەکێکە لە حەوت ئەلیفەکەی ڕیوایەتی حەفص: لە وەستاندا دەخوێنرێتەوە و لە گەیاندندا نا.",
+    "en": "True. This is one of the seven alifs of Hafs: pronounced when stopping, dropped when continuing.",
+    "id": "Benar. Ini salah satu alif tujuh riwayat Hafs: dibaca saat waqaf dan dibuang saat washal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q83",
+   "type": "choice",
+   "topic": "t23",
+   "prompt": {
+    "ar": "بماذا تُضبط الألفات السبع في المصحف؟",
+    "ckb": "حەوت ئەلیفەکە لە موصحەفدا بە چی نیشانە دەکرێن؟",
+    "en": "How are the seven alifs marked in the mushaf?",
+    "id": "Bagaimana alif tujuh ditandai dalam mushaf?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "دائرة مستطيلة عليها",
+      "ckb": "بازنەیەکی درێژکۆڵە لەسەریان",
+      "en": "A small oval circle over it",
+      "id": "Lingkaran lonjong di atasnya"
+     }
+    },
+    {
+     "text": {
+      "ar": "رأس صاد صغيرة عليها",
+      "ckb": "سەری صادێکی بچووک لەسەریان",
+      "en": "A small head of saad over it",
+      "id": "Kepala huruf shad kecil di atasnya"
+     }
+    },
+    {
+     "text": {
+      "ar": "رأس عين صغيرة عليها",
+      "ckb": "سەری عەینێکی بچووک لەسەریان",
+      "en": "A small head of 'ain over it",
+      "id": "Kepala huruf 'ain kecil di atasnya"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "تُضبط الألفات السبع بوضع دائرة مستطيلة عليها؛ ورأس الصاد علامة همزة الوصل، ورأس العين علامة همزة القطع.",
+    "ckb": "حەوت ئەلیفەکە بە بازنەیەکی درێژکۆڵە نیشانە دەکرێن؛ سەری صاد نیشانەی هەمزەی وەسڵە و سەری عەین نیشانەی هەمزەی قەطع.",
+    "en": "They are marked with a small oval circle; the small saad head marks hamzat al-wasl and the small 'ain head marks hamzat al-qat'.",
+    "id": "Ditandai dengan lingkaran lonjong; kepala shad kecil adalah tanda hamzah washal dan kepala 'ain kecil tanda hamzah qatha'."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q84",
+   "type": "choice",
+   "topic": "t24",
+   "prompt": {
+    "ar": "عند الوقف على حرف مشدّد يُطبَّق النبر، ويُستثنى من ذلك:",
+    "ckb": "لەکاتی وەستان لەسەر پیتی موشەددەد نەبر دەکرێت، جگە لە:",
+    "en": "Nabr is applied when stopping on a mushaddad letter, except on:",
+    "id": "Nabr diterapkan saat waqaf pada huruf bertasydid, kecuali pada:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "النون والميم المشددتين وحرف القلقلة المشدد",
+      "ckb": "نون و میمی موشەددەد و پیتی قەلقەلەی موشەددەد",
+      "en": "Mushaddad noon and meem, and a mushaddad qalqalah letter",
+      "id": "Nun dan mim bertasydid, serta huruf qalqalah bertasydid"
+     }
+    },
+    {
+     "text": {
+      "ar": "الياء المشددة",
+      "ckb": "یای موشەددەد",
+      "en": "A mushaddad yaa",
+      "id": "Ya bertasydid"
+     }
+    },
+    {
+     "text": {
+      "ar": "الراء المشددة",
+      "ckb": "ڕای موشەددەد",
+      "en": "A mushaddad raa",
+      "id": "Ra bertasydid"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "يُستثنى من النبر عند الوقف على المشدّد: النون والميم المشددتان، وحرف القلقلة المشدد.",
+    "ckb": "لە نەبر لەکاتی وەستان لەسەر موشەددەد، نون و میمی موشەددەد و پیتی قەلقەلەی موشەددەد بەدەرن.",
+    "en": "The exceptions are mushaddad noon and meem and a mushaddad qalqalah letter.",
+    "id": "Pengecualiannya adalah nun dan mim bertasydid serta huruf qalqalah bertasydid."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q85",
+   "type": "truefalse",
+   "topic": "t24",
+   "prompt": {
+    "ar": "النبر هو الضغط على مقطع أو حرف معيّن بحيث يكون صوته أعلى بقليل مما جاوره.",
+    "ckb": "نەبر بریتییە لە فشار خستنە سەر بڕگە یان پیتێکی دیاریکراو بەشێوەیەک دەنگەکەی تۆزێک بەرزتر بێت لە دەوروبەری.",
+    "en": "Nabr is pressing on a syllable or letter so its sound is slightly higher than the letters around it.",
+    "id": "Nabr adalah penekanan pada suku kata atau huruf tertentu sehingga suaranya sedikit lebih tinggi dari sekitarnya."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ هذا تعريف النبر اصطلاحًا.",
+    "ckb": "ڕاستە؛ ئەمە پێناسەی نەبرە لە زاراوەدا.",
+    "en": "True. This is the technical definition of nabr.",
+    "id": "Benar. Ini adalah definisi nabr secara istilah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q86",
+   "type": "choice",
+   "topic": "t25",
+   "example": {
+    "ref": "11:41",
+    "pattern": "مجر[ي]ها"
+   },
+   "prompt": {
+    "ar": "في الكلمة الملوّنة إمالة لحفص. في كم كلمة تقع الإمالة في رواية حفص؟",
+    "ckb": "لە وشە ڕەنگکراوەکەدا ئیماله هەیە بۆ حەفص. لە ڕیوایەتی حەفصدا ئیماله لە چەند وشەدا هەیە؟",
+    "en": "The highlighted word has imalah for Hafs. In how many words does imalah occur in the narration of Hafs?",
+    "id": "Kata yang ditandai dibaca imalah oleh Hafs. Pada berapa kata imalah terdapat dalam riwayat Hafs?"
+   },
+   "options": [
+    {
+     "number": "1"
+    },
+    {
+     "number": "3"
+    },
+    {
+     "number": "7"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "ليس في رواية حفص إمالة سوى هذه الكلمة. والإمالة تقريب الفتحة من الكسرة والألف من الياء.",
+    "ckb": "لە ڕیوایەتی حەفصدا جگە لەم وشەیە ئیماله نییە. ئیماله نزیککردنەوەی فەتحەیە لە کەسرە و ئەلیف لە یا.",
+    "en": "In the narration of Hafs this is the only word with imalah: bringing the fathah close to kasrah and the alif close to yaa.",
+    "id": "Dalam riwayat Hafs tidak ada imalah selain kata ini: mendekatkan fathah ke kasrah dan alif ke ya."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q87",
+   "type": "choice",
+   "topic": "t25",
+   "example": {
+    "ref": "88:22",
+    "pattern": "بم[ص]يطر"
+   },
+   "prompt": {
+    "ar": "الحرف الملوّن يُقرأ لحفص:",
+    "ckb": "پیتی ڕەنگکراو بۆ حەفص دەخوێنرێتەوە:",
+    "en": "For Hafs, the highlighted letter is read:",
+    "id": "Bagi Hafs, huruf yang ditandai dibaca:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "بالصاد فقط",
+      "ckb": "تەنها بە (ص)",
+      "en": "With ص only",
+      "id": "Dengan ص saja"
+     }
+    },
+    {
+     "text": {
+      "ar": "بالسين فقط",
+      "ckb": "تەنها بە (س)",
+      "en": "With س only",
+      "id": "Dengan س saja"
+     }
+    },
+    {
+     "text": {
+      "ar": "بالصاد وبالسين",
+      "ckb": "بە (ص) و بە (س)",
+      "en": "With ص or with س",
+      "id": "Dengan ص atau س"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "كلمة سورة الغاشية تُقرأ بالصاد فقط، وكلمة سورة الطور تُقرأ بالصاد والسين والصاد أشهر، وكلمتا البقرة والأعراف بالسين فقط.",
+    "ckb": "وشەکەی سورەتی غاشیە تەنها بە (ص) دەخوێنرێتەوە؛ هی سورەتی طور بە (ص) و (س) و (ص) بەناوبانگترە؛ هی بەقەرە و ئەعراف تەنها بە (س).",
+    "en": "The word in al-Ghashiyah is read with ص only; the word in at-Tur with ص or س (ص is better known); the words in al-Baqarah and al-A'raf with س only.",
+    "id": "Kata di al-Ghasyiyah dibaca dengan ص saja; di ath-Thur dengan ص atau س (ص lebih masyhur); di al-Baqarah dan al-A'raf dengan س saja."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q88",
+   "type": "choice",
+   "topic": "t26",
+   "prompt": {
+    "ar": "ما الرَّوم؟",
+    "ckb": "ڕەوم چییە؟",
+    "en": "What is rawm?",
+    "id": "Apa itu raum?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الإتيان ببعض الحركة (نحو ثلثها) عند الوقف",
+      "ckb": "وتنی بەشێک لە حەرەکە (نزیکەی سێ یەکی) لەکاتی وەستان",
+      "en": "Pronouncing part of the vowel (about a third) when stopping",
+      "id": "Membaca sebagian harakat (sekitar sepertiga) ketika waqaf"
+     }
+    },
+    {
+     "text": {
+      "ar": "ضمّ الشفتين بعد التسكين من غير صوت",
+      "ckb": "کۆکردنەوەی لێوەکان لەدوای ساکنکردن بەبێ دەنگ",
+      "en": "Rounding the lips after the sukoon, without sound",
+      "id": "Memonyongkan bibir setelah sukun tanpa suara"
+     }
+    },
+    {
+     "text": {
+      "ar": "الوقف بالسكون المجرد من الحركة",
+      "ckb": "وەستان بە سکونی بەتاڵ لە حەرەکە",
+      "en": "Stopping with a sukoon free of any vowel",
+      "id": "Berhenti dengan sukun tanpa harakat"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الروم الإتيان ببعض الحركة ويُقدَّر بثلثها عند الوقف على الضمة أو الكسرة، ويسمعه القريب دون البعيد. وضمّ الشفتين بلا صوت هو الإشمام.",
+    "ckb": "ڕەوم وتنی بەشێکە لە حەرەکە (سێ یەکی) لەکاتی وەستان لەسەر ضەممە یان کەسرە، و نزیک گوێی لێ دەبێت نەک دوور. کۆکردنەوەی لێو بەبێ دەنگ ئیشمامە.",
+    "en": "Rawm is pronouncing about a third of the vowel when stopping on dammah or kasrah; those near can hear it. Rounding the lips silently is ishmam.",
+    "id": "Raum adalah membaca sekitar sepertiga harakat ketika waqaf pada dhammah atau kasrah; terdengar oleh yang dekat. Memonyongkan bibir tanpa suara adalah isymam."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q89",
+   "type": "choice",
+   "topic": "t26",
+   "prompt": {
+    "ar": "كيف يُوقف على حرف آخره فتحة؟",
+    "ckb": "چۆن لەسەر پیتێک دەوەستیت کە کۆتاییەکەی فەتحەیە؟",
+    "en": "How do you stop on a final letter with fathah?",
+    "id": "Bagaimana berhenti pada huruf akhir yang berharakat fathah?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "بالسكون فقط",
+      "ckb": "تەنها بە سکون",
+      "en": "With sukoon only",
+      "id": "Dengan sukun saja"
+     }
+    },
+    {
+     "text": {
+      "ar": "بالسكون أو الروم",
+      "ckb": "بە سکون یان ڕەوم",
+      "en": "With sukoon or rawm",
+      "id": "Dengan sukun atau raum"
+     }
+    },
+    {
+     "text": {
+      "ar": "بالسكون أو الروم أو الإشمام",
+      "ckb": "بە سکون یان ڕەوم یان ئیشمام",
+      "en": "With sukoon, rawm or ishmam",
+      "id": "Dengan sukun, raum, atau isymam"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الفتحة يُوقف عليها بالسكون فقط، والكسرة بالسكون أو الروم، والضمة بالسكون أو الروم أو الإشمام.",
+    "ckb": "فەتحە تەنها بە سکون؛ کەسرە بە سکون یان ڕەوم؛ ضەممە بە سکون یان ڕەوم یان ئیشمام.",
+    "en": "Fathah: sukoon only. Kasrah: sukoon or rawm. Dammah: sukoon, rawm or ishmam.",
+    "id": "Fathah: sukun saja. Kasrah: sukun atau raum. Dhammah: sukun, raum, atau isymam."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q90",
+   "type": "truefalse",
+   "topic": "t26",
+   "prompt": {
+    "ar": "الإشمام يُسمع بالأذن.",
+    "ckb": "ئیشمام بە گوێ دەبیسترێت.",
+    "en": "Ishmam can be heard.",
+    "id": "Isymam dapat didengar."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ الإشمام ضمّ الشفتين من غير صوت، فلا يُدركه المكفوف، أما الروم فيسمعه القريب.",
+    "ckb": "هەڵەیە؛ ئیشمام کۆکردنەوەی لێوەکانە بەبێ دەنگ و کەسی نابینا هەستی پێ ناکات؛ ڕەوم نزیک گوێی لێ دەبێت.",
+    "en": "False. Ishmam is rounding the lips without sound, so a blind person cannot perceive it; rawm is heard by those near.",
+    "id": "Salah. Isymam adalah memonyongkan bibir tanpa suara, sehingga tidak dapat diketahui oleh tunanetra; raum terdengar oleh yang dekat."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q91",
+   "type": "choice",
+   "topic": "t27",
+   "prompt": {
+    "ar": "الأصل في التخلّص من التقاء الساكنين في كلمتين تحريك الأول بـ:",
+    "ckb": "بنەڕەت لە ڕزگاربوون لە بەیەکگەیشتنی دوو ساکن لە دوو وشەدا جوڵاندنی یەکەمیانە بە:",
+    "en": "The basic way to resolve two sakin letters meeting across two words is to give the first one:",
+    "id": "Cara asal mengatasi pertemuan dua sukun dalam dua kata adalah memberi huruf pertama:"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "الكسرة",
+      "ckb": "کەسرە",
+      "en": "A kasrah",
+      "id": "Kasrah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الفتحة",
+      "ckb": "فەتحە",
+      "en": "A fathah",
+      "id": "Fathah"
+     }
+    },
+    {
+     "text": {
+      "ar": "الضمة",
+      "ckb": "ضەممە",
+      "en": "A dammah",
+      "id": "Dhammah"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الأصل التحريك بالكسرة، وقد يُخالَف فيُحرَّك بالفتح أو الضم في صور معيّنة، أو يُحذف الأول إن كان حرف مد.",
+    "ckb": "بنەڕەت جوڵاندنە بە کەسرە؛ هەندێجار بە فەتحە یان ضەممە دەجوڵێنرێت لە چەند وێنەیەکی دیاریکراودا، یان یەکەم دەسڕێتەوە ئەگەر پیتی مەد بێت.",
+    "en": "The basic rule is kasrah; in certain cases it is fathah or dammah instead, and a first madd letter is dropped.",
+    "id": "Asalnya diberi kasrah; dalam keadaan tertentu diberi fathah atau dhammah, dan huruf mad pertama dibuang."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q92",
+   "type": "truefalse",
+   "topic": "t27",
+   "prompt": {
+    "ar": "يصحّ التقاء ساكنين في كلمة واحدة إذا كان الأول حرف مد أو لين.",
+    "ckb": "بەیەکگەیشتنی دوو ساکن لە یەک وشەدا دروستە ئەگەر یەکەمیان پیتی مەد یان لین بێت.",
+    "en": "Two sakin letters may meet within one word when the first is a madd or leen letter.",
+    "id": "Dua sukun boleh bertemu dalam satu kata jika yang pertama huruf mad atau lin."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ يصحّ ذلك في حالتين: أن يكون الأول حرف مد أو لين، أو أن يكون سكون الثاني عارضًا.",
+    "ckb": "ڕاستە؛ لە دوو حاڵەتدا دروستە: یەکەمیان پیتی مەد یان لین بێت، یان سکونی دووەم عارض بێت.",
+    "en": "True. It happens in two cases: the first is a madd or leen letter, or the second sukoon is temporary.",
+    "id": "Benar. Ini terjadi dalam dua keadaan: huruf pertama huruf mad atau lin, atau sukun kedua bersifat sementara."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q93",
+   "type": "choice",
+   "topic": "t28",
+   "prompt": {
+    "ar": "كم عدد مواضع سجود التلاوة في القرآن الكريم؟",
+    "ckb": "سوجدەی تیلاوە لە قورئاندا چەند شوێنە؟",
+    "en": "How many places of prostration of recitation are there in the Qur'an?",
+    "id": "Berapa jumlah tempat sujud tilawah dalam al-Qur'an?"
+   },
+   "options": [
+    {
+     "number": "15"
+    },
+    {
+     "number": "14"
+    },
+    {
+     "number": "11"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "مواضع سجود التلاوة في القرآن الكريم خمسة عشر موضعًا.",
+    "ckb": "سوجدەی تیلاوە لە قورئاندا پازدە شوێنە.",
+    "en": "There are fifteen places of prostration of recitation in the Qur'an.",
+    "id": "Ada lima belas tempat sujud tilawah dalam al-Qur'an."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q94",
+   "type": "choice",
+   "topic": "t28",
+   "prompt": {
+    "ar": "ما حكم سجود التلاوة؟",
+    "ckb": "حوکمی سوجدەی تیلاوە چییە؟",
+    "en": "What is the ruling of the prostration of recitation?",
+    "id": "Apa hukum sujud tilawah?"
+   },
+   "options": [
+    {
+     "text": {
+      "ar": "سنة مؤكدة",
+      "ckb": "سوننەتی موئەکەدە",
+      "en": "Sunnah mu'akkadah (a stressed sunnah)",
+      "id": "Sunnah muakkadah"
+     }
+    },
+    {
+     "text": {
+      "ar": "واجب",
+      "ckb": "واجب",
+      "en": "Wajib (obligatory)",
+      "id": "Wajib"
+     }
+    },
+    {
+     "text": {
+      "ar": "مكروه",
+      "ckb": "مەکروه",
+      "en": "Makrooh",
+      "id": "Makruh"
+     }
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "سجود التلاوة سنة مؤكدة.",
+    "ckb": "سوجدەی تیلاوە سوننەتی موئەکەدەیە.",
+    "en": "The prostration of recitation is sunnah mu'akkadah.",
+    "id": "Sujud tilawah hukumnya sunnah muakkadah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q95",
+   "type": "choice",
+   "topic": "t28",
+   "prompt": {
+    "ar": "ما علامة السجدة في المصحف؟",
+    "ckb": "نیشانەی سوجدە لە موصحەفدا چییە؟",
+    "en": "What is the sign of prostration in the mushaf?",
+    "id": "Apa tanda sujud dalam mushaf?"
+   },
+   "options": [
+    {
+     "arabic": "۩"
+    },
+    {
+     "arabic": "۞"
+    },
+    {
+     "arabic": "ۜ"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "علامة السجدة (۩) بعد الكلمة التي يُسجد عندها.",
+    "ckb": "نیشانەی سوجدە (۩) لەدوای ئەو وشەیە دێت کە سوجدەی لەسەر دەبرێت.",
+    "en": "The sign (۩) comes after the word at which one prostrates.",
+    "id": "Tanda (۩) terletak setelah kata tempat sujud."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q96",
+   "type": "choice",
+   "topic": "t29",
+   "prompt": {
+    "ar": "عمّن روى حفص؟",
+    "ckb": "حەفص لە کێوە گێڕاویەتییەوە؟",
+    "en": "From whom did Hafs narrate?",
+    "id": "Dari siapakah Hafs meriwayatkan?"
+   },
+   "options": [
+    {
+     "arabic": "عاصم"
+    },
+    {
+     "arabic": "نافع"
+    },
+    {
+     "arabic": "ابن كثير"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "حفص راوي عاصم، وعاصم أخذ عن عبد الله بن حبيب.",
+    "ckb": "حەفص گێڕەرەوەی عاصمە، و عاصم لە عبد الله بن حبيب وەریگرتووە.",
+    "en": "Hafs is a narrator of 'Asim, who learned from 'Abdullah ibn Habib.",
+    "id": "Hafs adalah perawi 'Ashim, dan 'Ashim belajar dari Abdullah bin Habib."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q97",
+   "type": "truefalse",
+   "topic": "t29",
+   "prompt": {
+    "ar": "رواية حفص عن عاصم أكثر الروايات انتشارًا في العالم الإسلامي.",
+    "ckb": "ڕیوایەتی حەفص لە عاصمەوە بڵاوترین ڕیوایەتە لە جیهانی ئیسلامیدا.",
+    "en": "The narration of Hafs from 'Asim is the most widespread in the Muslim world.",
+    "id": "Riwayat Hafs dari 'Ashim adalah riwayat paling tersebar di dunia Islam."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ هذا ما نبّه عليه الكتاب.",
+    "ckb": "ڕاستە؛ کتێبەکە ئاماژەی بەمە کردووە.",
+    "en": "True, as the book notes.",
+    "id": "Benar, sebagaimana disebutkan dalam buku."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q98",
+   "type": "choice",
+   "topic": "t30",
+   "prompt": {
+    "ar": "ما راويا عاصم الكوفي؟",
+    "ckb": "دوو گێڕەرەوەکەی عاصمی کوفی کێن؟",
+    "en": "Who are the two narrators of 'Asim al-Kufi?",
+    "id": "Siapa dua perawi 'Ashim al-Kufi?"
+   },
+   "options": [
+    {
+     "arabic": "شعبة وحفص"
+    },
+    {
+     "arabic": "قالون وورش"
+    },
+    {
+     "arabic": "البزي وقنبل"
+    },
+    {
+     "arabic": "خلف وخلاد"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "راويا عاصم: شعبة وحفص. وراويا نافع: قالون وورش، وراويا ابن كثير: البزي وقنبل، وراويا حمزة: خلف وخلاد.",
+    "ckb": "گێڕەرەوەکانی عاصم: شعبة و حفص؛ نافع: قالون و ورش؛ ابن كثير: البزي و قنبل؛ حمزة: خلف و خلاد.",
+    "en": "'Asim: Shu'bah and Hafs. Nafi': Qalun and Warsh. Ibn Kathir: al-Bazzi and Qunbul. Hamzah: Khalaf and Khallad.",
+    "id": "'Ashim: Syu'bah dan Hafs. Nafi': Qalun dan Warsy. Ibnu Katsir: al-Bazzi dan Qunbul. Hamzah: Khalaf dan Khallad."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q99",
+   "type": "choice",
+   "topic": "t30",
+   "prompt": {
+    "ar": "من ناظم «طيبة النشر» في القراءات العشر؟",
+    "ckb": "هۆنەرەوەی «طيبة النشر» لە دە قیرائەتەکەدا کێیە؟",
+    "en": "Who composed «Tayyibat an-Nashr» on the ten readings?",
+    "id": "Siapa penyusun «Thayyibatun Nasyr» tentang sepuluh qira'at?"
+   },
+   "options": [
+    {
+     "arabic": "ابن الجزري"
+    },
+    {
+     "arabic": "الشاطبي"
+    },
+    {
+     "arabic": "أبو عمرو الداني"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "طيبة النشر قصيدة في القراءات العشر للإمام محمد بن الجزري، أما الشاطبية فللإمام الشاطبي في القراءات السبع.",
+    "ckb": "طيبة النشر هۆنراوەیەکە لە دە قیرائەتەکەدا هی ابن الجزري؛ شاطبییە هی شاطبییە لە حەوت قیرائەتەکەدا.",
+    "en": "Tayyibat an-Nashr, on the ten readings, is by Imam Ibn al-Jazari; ash-Shatibiyyah, on the seven, is by ash-Shatibi.",
+    "id": "Thayyibatun Nasyr tentang sepuluh qira'at karya Imam Ibnul Jazari; asy-Syathibiyyah tentang tujuh qira'at karya asy-Syathibi."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
    "id": "q101",
    "type": "identify",
    "topic": "t10",

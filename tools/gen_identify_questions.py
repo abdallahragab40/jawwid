@@ -10,7 +10,7 @@ Writes the drafted questions into content_src/quiz.src.json, replacing the
 questions this tool wrote before (ids q101 and up). Hand-written questions
 (q01–q99) are never touched. All drafted questions are status "draft".
 
-Usage: python3 -I tools/gen_identify_questions.py && python3 -I tools/build_content.py
+Usage: python3 -I tools/gen_identify_questions.py && ./tools/build_all.sh
 """
 import io, json, os, random, sys
 from contextlib import redirect_stdout

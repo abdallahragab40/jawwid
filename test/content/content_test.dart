@@ -236,8 +236,9 @@ void main() {
         for (final r in c.rules) r.example,
         for (final q in c.questions) ?q.example,
       ];
-      // 22 rule cards, 21 hand-written and 152 drafted identify questions.
-      expect(excerpts.length, 22 + 21 + 152);
+      // 22 rule cards, 21 hand-written identify questions, 17 concept
+      // questions with an example, and 152 drafted identify questions.
+      expect(excerpts.length, 22 + 21 + 17 + 152);
       for (final e in excerpts) {
         expect(e.highlights, isNotEmpty);
         for (final (s, end) in e.highlights) {
@@ -265,8 +266,27 @@ void main() {
       }
     });
 
+    test('every topic has practice, and text options exist in all '
+        'four languages', () {
+      for (final t in c.topics) {
+        expect(
+          c.questionsForTopic(t.id).length,
+          greaterThanOrEqualTo(2),
+          reason: t.id,
+        );
+      }
+      for (final q in c.questions) {
+        for (final o in q.choices) {
+          if (o.text == null) continue;
+          for (final l in const ['ar', 'ckb', 'en', 'id']) {
+            expect(o.text![l], isNotEmpty, reason: '${q.id} $l');
+          }
+        }
+      }
+    });
+
     test('questions reference existing rules and have valid answers', () {
-      expect(c.questions.length, 28 + 152);
+      expect(c.questions.length, 99 + 152);
       expect({for (final q in c.questions) q.id}.length, c.questions.length);
       for (final q in c.questions) {
         switch (q.type) {

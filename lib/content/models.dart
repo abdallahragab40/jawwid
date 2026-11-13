@@ -307,10 +307,13 @@ enum QuestionType { identify, choice, trueFalse }
 
 /// One answer option for a [QuestionType.choice] question.
 class ChoiceOption {
-  const ChoiceOption({this.number, this.arabic, this.counts});
+  const ChoiceOption({this.number, this.arabic, this.counts, this.text});
   final String? number;
   final String? arabic;
   final String? counts;
+
+  /// An answer written in each interface language.
+  final Localized<String>? text;
 }
 
 class Question {
@@ -375,6 +378,7 @@ class Question {
                   number: (o as Map)['number'] as String?,
                   arabic: o['arabic'] as String?,
                   counts: o['counts'] as String?,
+                  text: o['text'] == null ? null : Localized.strings(o['text']),
                 ),
             ]
           : const [],
