@@ -1,0 +1,33 @@
+%status sourceExtracted
+
+@page 13
+# Basmalah ({{a البَسمَلة}})
+### The rule of basmalah when starting recitation from the beginning of the surah
+It is required to say basmalah at the beginning of the surahs except (surat A'tawbah).
+### The rule of basmalah when starting recitation from any part of the surah except its beginning
+If the reciter started from within the surah, (Middle of the surah) means after its beginning even if it is after one word, The reciter has a choice to say basmalah or not, but saying it is better and no difference between surat Bara'ah or other, A number of scholars said that basmalah is forbidden when starting from the middle of Surat A'tawbah as it is forbidden at its beginning.
+## Ways of saying basmalah between two surahs
+There are 3 permissible ways of saying basmalah and 1 impermissible way:
+= The first way | Cutting off all of them.
+{{q 113:5|وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ}} **Stopping** {{q 1:1|*}} **Stopping** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+= The second way | Joining all of them.
+{{q 93:11|وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ}} **Joining** {{q 1:1|*}} **Joining** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+= The third way | Stopping at the end of the surah with taking breath, and then, joining basmalah with the beginning of the next surah.
+{{q 93:11|وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ}} **Stopping** {{q 1:1|*}} **Joining** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+= The fourth way | **The impermissible way**: Joining the end of the surah With basmalah and stopping with taking breath, Then, starting from the beginning of the next surah.
+{{q 113:5|وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ}} **Joining** {{q 1:1|*}} **Stopping** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+- It is impermissible because the hearer may think that basmalah is a verse included in the first surah because basmalah is legislated at the beginning of surahs not at the end.
+
+@page 14
+### Notes
+1) The three mentioned ways are permissible whether the two surahs are consecutive in the Qur'an like the end of **Surat Al_Imran** with the beginning of **surat An_Nisaa** or nonconsecutive and the second of them occurs after the first in the arrangment of the Qur'an like the end of **Surat Al_Fatiha** with the beginning of **surat Al_Ma'idah**.
+2) If the second recited surah occurs first in the arrangment of the Qur'an like reciting **surat Yaseen after Al_Mulk**, In this case, there are 2 permissible ways:
+a - Cutting off all of them: {{q 67:30|فَمَن يَأْتِيكُم بِمَآءٍ مَّعِينٍۭ}} **Stopping** {{q 1:1|*}} **Stopping** {{q 36:1|يس}}.
+b - Cutting off the first and joining the second with the third: {{q 67:30|فَمَن يَأْتِيكُم بِمَآءٍ مَّعِينٍۭ}} **Stopping** {{q 1:1|*}} **Joining** {{q 36:1|يس}}.
+3) If the reciter repeated a surah, these two mentioned ways in the second note will be permissible.
+4) If the reciter linked the end of a Surah with the beginning of surat A'tawbah (Bara'ah), there will be 2 cases:
+a - If the first surah is **Al_Anfal** or any surah occurs before **surat A'tawbah** in the arrangment of the Qur'an, the reciter will have 3 optional ways without saying basmalah:
+= The first way | Qat' (Cutting off). {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌۢ}} **Stopping** {{q 9:1|*}}.
+= The second way | Sakt (slight pause without taking breath). {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌۢ}} **Sakt** {{q 9:1|*}}.
+= The third way | Wasl (Joining) (Taking into account iqlab): Converting noon into meem. {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌۢ}} **Joining** {{q 9:1|*}}.
+b - If the first surah occurs after **surat A'tawbah (Bara'ah)** in the arrangment of the Qur'an like reciting **surat Al_Mulk before A'tawbah**, It is permissible only one way (Waqf) stopping with taking breath without saying basmalah, Wasl and sakt are forbidden in this case, If the reciter repeated surat A'tawbah, Wasl and sakt will be also forbidden.

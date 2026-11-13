@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.05-1",
+  "notes": "Rule cards are supplementary learning content built from the four Level-2 editions. Definition status: sourceTranscribed = typed from the page image of that edition (needs proofreading); sourceExtracted = Latin text taken from the edition's PDF text layer, with Arabic fragments restored from the page image; authored = written for the app because the edition has no equivalent text (needs subject review). Explanations are authored. Kurdish wording, authored or transcribed, needs fluent-language review. Every card is status 'draft' until a qualified reviewer approves it; draft cards appear only in the development preview channel.",
+  "rules": [
+    {
+      "id": "r01", "topic": "t10", "letters": "ء ه ع ح غ خ",
+      "title": { "ar": "الإظهار الحلقي", "ckb": "ئیزهاری حەلقی", "en": "Ithhar Halqy (Throat Clarity)", "id": "Izhhar Halqi" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 42, "text": "الإظهارُ اصطلاحًا: إخراجُ كلِّ حرفٍ من مخرجِه من غيرِ زيادةٍ في الغُنَّة. فإذا وقعَ بعدَ النُّونِ السَّاكنةِ أو التَّنوينِ أحدُ حروفِ الحلقِ السِّتَّةِ وهي: الهمزةُ والهاءُ والعينُ والحاءُ والغينُ والخاءُ، وجبَ الإظهارُ ويُسمَّى إظهارًا حلقيًّا." },
+        "ckb": { "status": "sourceTranscribed", "page": 49, "text": "لە زاراوەدا: بریتیە لە دەرکردنی هەر پیتێک لە دەرچەی خۆیەوە بەبێ زیادە لە مینگەدا. ئەگەر لەدوای نونی ساکن یان تەنوین یەکێک لە شەش پیتەکەی گەروو (الحلق) هات کە ئەمانەن: الهمزة والهاء والعين والحاء والغين والخاء، ئەوا ئیزهار واجب دەبێت و پێی دەوترێت ئیزهاری حەلقی." },
+        "en": { "status": "sourceExtracted", "page": 43, "text": "In applied definition: pronouncing Noon sakinah or Tanween from its articulation point without excessive ghunnah. If noon sakinah or tanween is followed by one of the six throat letters (ء، هـ، ع، ح، غ، خ) ithhar must be done, It is called (ithhar halqy)." },
+        "id": { "status": "sourceExtracted", "page": 44, "text": "Secara istilah: mengeluarkan setiap huruf dari makhrajnya tanpa adanya ghunnah tambahan. Jika setelah nun sukun atau tanwin terdapat salah satu dari huruf izhhar yang enam, yaitu hamzah, ha, ain, ha, ghain, dan kha maka harus dibaca izhhar dan disebut dengan izhhar halqi." }
+      },
+      "example": { "ref": "59:9", "pattern": "م[ن] [ه]اجر" },
+      "explanation": {
+        "ar": "النون الساكنة في «مَنْ» تلاها حرف الهاء، وهو من حروف الحلق، فتُظهَر النون من غير غنة زائدة.",
+        "ckb": "نونی ساکن لە «مَنْ» پیتی (ه)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی گەروو، بۆیە نونەکە ئاشکرا دەکرێت بەبێ مینگەی زیادە.",
+        "en": "The noon sakinah in «مَنْ» is followed by هـ, one of the throat letters, so the noon is pronounced clearly without extra ghunnah.",
+        "id": "Nun sukun pada «مَنْ» diikuti huruf ha (هـ), salah satu huruf halq, sehingga nun dibaca jelas tanpa ghunnah tambahan."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r02", "topic": "t10", "letters": "ي ن م و",
+      "title": { "ar": "الإدغام بغنة", "ckb": "ئیدغام بە مینگەوە", "en": "Idgham with Ghunnah", "id": "Idgham Bighunnah" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 43, "text": "الإدغامُ اصطلاحًا: هو إدخالُ حرفٍ ساكنٍ بحرفٍ متحرِّكٍ، بحيثُ يصيرانِ حرفًا واحدًا مشدَّدًا كالثَّاني. والإدغامُ بغُنَّةٍ هو الذي تظهرُ فيه الغُنَّةُ، وحروفُه مجموعةٌ في كلمةِ (يَنْمُو). ولا يكونُ إدغامُ النُّونِ السَّاكنةِ والتَّنوينِ إلا من كلمتين." },
+        "ckb": { "status": "sourceTranscribed", "page": 50, "text": "لە زاراوەدا: بریتیە لە تێهەڵکێش کردنی پیتێکی ساکن بە پیتێکی موتەحەریک، بەشێوەیەک کە بە هەردووکیانەوە ببن بەیەک پیتی شەددار وەکو پیتی دووەم. ئیدغام بە مینگەوە ئەوەیە کە مینگەی تێدا دەردەکەوێت و پیتەکانی کۆبوونەتەوە لە وشەی: (يَنْمُو). ادغامی نونی ساکن و تەنوین لە دوو وشەدا نەبێت ڕوونادات." },
+        "en": { "status": "sourceExtracted", "page": 44, "text": "In applied definition: Inserting non voweled letter into voweled letter and making them as one mushaddad letter as the second. Idgham with ghunnah: It is accompanied by clear nasal sound (ghunnah), Its letters are collected in a word (ينمو). Notice: Merging noon sakinah or tanween only occurs in two words." },
+        "id": { "status": "sourceExtracted", "page": 45, "text": "Secara istilah: memasukkan huruf sukun ke huruf berharakat dan menjadikannya satu huruf bertasydid sebagaimana huruf yang kedua. Idgham Bighunnah: yaitu menampakkan suara sengau (ghunnah), dan huruf-hurufnya terangkai pada kata (ينمو) (ya, nun, mim, wawu). Perhatian: idgham nun sukun dan tanwin hanya terjadi pada dua kata." }
+      },
+      "example": { "ref": "99:7", "pattern": "فم[ن] [ي]عمل" },
+      "explanation": {
+        "ar": "النون الساكنة في آخر «فَمَن» تلاها الياء في أول الكلمة التالية، فتُدغَم النون فيها مع الغنة.",
+        "ckb": "نونی ساکنی کۆتایی «فَمَن» پیتی (ي)ی سەرەتای وشەی دواتری بەدوادا هاتووە، بۆیە نونەکە بە مینگەوە تێهەڵکێش دەکرێت.",
+        "en": "The noon sakinah at the end of «فَمَن» is followed by ي at the start of the next word, so the noon is merged into it with ghunnah.",
+        "id": "Nun sukun di akhir «فَمَن» diikuti huruf ya di awal kata berikutnya, sehingga nun dimasukkan ke dalamnya disertai ghunnah."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r03", "topic": "t10", "letters": "ل ر",
+      "title": { "ar": "الإدغام بلا غنة", "ckb": "ئیدغام بەبێ مینگە", "en": "Idgham without Ghunnah", "id": "Idgham Bilaa Ghunnah" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 43, "text": "الإدغامُ بلا غُنَّةٍ: هو الذي لا تصاحبُه الغُنَّةُ، وحرفاه اللَّامُ والرَّاء." },
+        "ckb": { "status": "sourceTranscribed", "page": 50, "text": "ئیدغام بەبێ مینگە: ئەوەیە کە مینگەی تێدا نییە و دوو پیتی هەیە کە بریتین لە اللام والراء." },
+        "en": { "status": "sourceExtracted", "page": 44, "text": "Idgham without ghunnah: It is not accompanied by nasal sound (ghunnah), Its two letters are (ل، ر)." },
+        "id": { "status": "sourceExtracted", "page": 45, "text": "Idgham Bilaa Ghunnah: yaitu tidak terdapat suara ghunnah, dan hurufnya adalah lam dan ra." }
+      },
+      "example": { "ref": "2:2", "pattern": "ه[د]ي [ل]لمتقين" },
+      "explanation": {
+        "ar": "التنوين في «هُدًى» تلاه اللام، فيُدغَم التنوين في اللام من غير غنة، ولذلك شُدِّدت اللام.",
+        "ckb": "تەنوینی «هُدًى» پیتی لامی بەدوادا هاتووە، بۆیە تەنوینەکە بەبێ مینگە لە لامەکەدا تێهەڵکێش دەکرێت، لەبەر ئەوە لامەکە شەددارە.",
+        "en": "The tanween of «هُدًى» is followed by ل, so it is merged into the laam without ghunnah; this is why the laam carries a shaddah.",
+        "id": "Tanwin pada «هُدًى» diikuti huruf lam, sehingga tanwin dimasukkan ke dalam lam tanpa ghunnah; karena itu lam bertasydid."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r04", "topic": "t10", "letters": "ب",
+      "title": { "ar": "الإقلاب", "ckb": "هەڵگەڕانەوە (الإقلاب)", "en": "Iqlab (Converting)", "id": "Iqlab (Mengubah)" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 45, "text": "الإقلابُ اصطلاحًا: قلبُ النُّونِ السَّاكنةِ أو التَّنوينِ عندَ الباءِ ميمًا مُخفاةً مع الغُنَّة. وله حرفٌ واحدٌ فقط وهو الباء." },
+        "ckb": { "status": "sourceTranscribed", "page": 53, "text": "لە زاراوەدا: بریتیە لە هەڵگێڕانەوەی نونی ساکن یان تەنوین لەکاتی گەیشتن بە پیتی (ب) و گۆڕینی بۆ پیتی (م)ێکی شاراوە لەگەڵ مینگەدا. یەک پیتی هەیە کە بریتیە لە (ب)." },
+        "en": { "status": "sourceExtracted", "page": 47, "text": "In applied definition: converting Noon sakinah or Tanween into hidden meem with ghunnah when it is followed by letter (ب). Letters of Iqlab is only baa (ب)." },
+        "id": { "status": "sourceExtracted", "page": 48, "text": "Secara istilah: mengubah nun sukun atau tanwin menjadi mim tersembunyi dengan ghunnah ketika diikuti huruf ba (ب). Hanya memiliki satu huruf saja yaitu ba (ب)." }
+      },
+      "example": { "ref": "2:33", "pattern": "ا[ن][ب]يهم" },
+      "explanation": {
+        "ar": "النون الساكنة في «أَنۢبِئْهُم» تلاها الباء، فتُقلب ميمًا مخفاة مع الغنة، وعلامتها الميم الصغيرة فوق النون.",
+        "ckb": "نونی ساکن لە «أَنۢبِئْهُم» پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا، و نیشانەکەی میمێکی بچووکە لەسەر نونەکە.",
+        "en": "The noon sakinah in «أَنۢبِئْهُم» is followed by ب, so it becomes a hidden meem with ghunnah; the small meem above the noon marks this.",
+        "id": "Nun sukun pada «أَنۢبِئْهُم» diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah; tandanya adalah mim kecil di atas nun."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r05", "topic": "t10", "letters": "ص ذ ث ك ج ش ق س د ط ز ف ت ض ظ",
+      "title": { "ar": "الإخفاء الحقيقي", "ckb": "ئیخفائی حەقیقی", "en": "Ikhfaa (Real Hiding)", "id": "Ikhfa Haqiqi" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 46, "text": "الإخفاءُ اصطلاحًا: هو النُّطقُ بالحرفِ بصفةٍ بينَ الإظهارِ والإدغامِ، عاريًا عن التَّشديدِ مع بقاءِ الغُنَّةِ في الحرفِ الأوَّل. تُخفى النُّونُ السَّاكنةُ والتَّنوينُ بغُنَّةٍ عندَ خمسةَ عشرَ حرفًا، وهي الباقيةُ من أحرفِ الهجاءِ بعدَ أحرفِ الإظهارِ والإدغامِ والإقلاب." },
+        "ckb": { "status": "sourceTranscribed", "page": 54, "text": "لە زاراوەدا: بریتیە لە وتن و دەربڕینی پیتەکە بەشێوەیەک لەنێوان ئیزهار و ئیدغام دا بێت، و شەدەی لەسەر نەبێت لەگەڵ مانەوەی مینگە لە پیتی یەکەمدا. نونی ساکن و تەنوین ئیخفاء دەکرێن بە مینگەوە لەکاتی گەیشتن بە پازدە پیت، ئەوانەش بریتین لە باقی پیتەکانی تری هیجائی جگە لە پیتەکانی ئیزهار و ئیدغام و ئیقلاب." },
+        "en": { "status": "sourceExtracted", "page": 48, "text": "In applied definition: pronouncing noon sakinah or tanween in a way so that the sound is between Ithhar and Idgham, stripped of any Shaddah with a ghunnah remaining in the first letter. Noon sakinah or tanween is hidden and accompanied by a ghunnah when it is followed by one of the 15 letters. They are the rest of the alphabetical letters after excluding letters of Ithhar, idgham and iqlab." },
+        "id": { "status": "sourceExtracted", "page": 49, "text": "Secara istilah: melafalkan antara sifat izhar dan idgham, tidak bertasydid, disertai ghunnah pada huruf pertama. Disamarkan suara nun sukun dan tanwin disertai ghunnah ketika diikuti 15 huruf hijaiyyah, yaitu sisa-sisa huruf izhar, idgham dan iqlab." }
+      },
+      "example": { "ref": "106:4", "pattern": "م[ن] [ج]وع" },
+      "explanation": {
+        "ar": "النون الساكنة في «مِّن» تلاها الجيم، وهو من حروف الإخفاء، فتُخفى النون مع بقاء الغنة.",
+        "ckb": "نونی ساکنی «مِّن» پیتی (ج)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە نونەکە دەشاردرێتەوە و مینگەکە دەمێنێت.",
+        "en": "The noon sakinah in «مِّن» is followed by ج, one of the ikhfaa letters, so the noon is hidden while its ghunnah remains.",
+        "id": "Nun sukun pada «مِّن» diikuti huruf jim, salah satu huruf ikhfa, sehingga nun disamarkan dan ghunnah tetap ada."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r06", "topic": "t11", "letters": "م",
+      "title": { "ar": "الإدغام الشفوي", "ckb": "تێهەڵکێشکردنی لێوی", "en": "Idgham Shafawi (Oral Merging)", "id": "Idgham Syafawi" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 48, "text": "تُدغَمُ الميمُ السَّاكنةُ إذا أتى بعدَها حرفٌ واحدٌ هو الميمُ، مع تطويلِ الغُنَّةِ أكملَ ما تكون. وسُمِّي شفويًّا لخروجِ الميمِ من الشَّفتين." },
+        "ckb": { "status": "sourceTranscribed", "page": 56, "text": "میمی ساکن تێهەڵکێش دەبێت ئەگەر هاتوو پیتی (م) لەدوایەوە هات، لەگەڵ درێژکردنەوەی مینگە. پێی دەوترێت شەفەوی: لەبەر ئەوەی میمەکە لەهەردوو لێوەوە دەردەچێت." },
+        "en": { "status": "sourceExtracted", "page": 50, "text": "If meem sakinah is followed by only letter meem, It is merged into voweled meem, prolonging the timing of ghunnah (most complete ghunnah). It is called shafawi: because meem is emitted from the two lips." },
+        "id": { "status": "sourceExtracted", "page": 51, "text": "Mim sukun diidghamkan (dileburkan) apabila setelahnya terdapat satu huruf, yaitu mim. Dengan memberikan ghunnah (sengau) yang dipanjangkan dengan sempurna. Dinamakan syafawi: karena huruf mim keluar dari dua bibir (syafatain)." }
+      },
+      "example": { "ref": "2:10", "pattern": "في قلوبه[م] [م]رض" },
+      "explanation": {
+        "ar": "الميم الساكنة في آخر «قُلُوبِهِم» تلتها ميم متحركة، فتُدغم فيها مع غنة كاملة.",
+        "ckb": "میمی ساکنی کۆتایی «قُلُوبِهِم» میمێکی موتەحەریکی بەدوادا هاتووە، بۆیە لەگەڵ مینگەیەکی تەواودا تێهەڵکێش دەکرێت.",
+        "en": "The meem sakinah at the end of «قُلُوبِهِم» is followed by a voweled meem, so the two merge with a complete ghunnah.",
+        "id": "Mim sukun di akhir «قُلُوبِهِم» diikuti mim berharakat, sehingga keduanya dilebur dengan ghunnah yang sempurna."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r07", "topic": "t11", "letters": "ب",
+      "title": { "ar": "الإخفاء الشفوي", "ckb": "شاردنەوەی لێوی", "en": "Ikhfaa Shafawi (Oral Hiding)", "id": "Ikhfa Syafawi" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 49, "text": "تُخفى الميمُ السَّاكنةُ بغُنَّةٍ إذا أتى بعدَها حرفٌ واحدٌ هو الباءُ، ولا يكونُ ذلك إلا في كلمتين." },
+        "ckb": { "status": "sourceTranscribed", "page": 57, "text": "میمی ساکن ئیخفاء دەبێت بە مینگەوە ئەگەر هاتوو پیتی (ب) لەدوایەوە هات، ئەمەش لە دوو وشەدا نەبێت ڕوونادات." },
+        "en": { "status": "sourceExtracted", "page": 51, "text": "If meem sakinah is followed by only letter baa, we pronounce hidden meem with ghunnah, It must happen between two words." },
+        "id": { "status": "sourceExtracted", "page": 52, "text": "Mim sukun di-ikhfa-kan (disamarkan) dengan ghunnah (sengau) apabila setelahnya terdapat satu huruf, yaitu ba. Hanya terdapat pada dua kata." }
+      },
+      "example": { "ref": "13:33", "pattern": "ا[م] [ب]ظهر" },
+      "explanation": {
+        "ar": "الميم الساكنة في «أَم» تلاها الباء في الكلمة التالية، فتُخفى الميم مع الغنة.",
+        "ckb": "میمی ساکنی «أَم» پیتی (ب)ی وشەی دواتری بەدوادا هاتووە، بۆیە میمەکە بە مینگەوە دەشاردرێتەوە.",
+        "en": "The meem sakinah in «أَم» is followed by ب in the next word, so the meem is hidden with ghunnah.",
+        "id": "Mim sukun pada «أَم» diikuti huruf ba pada kata berikutnya, sehingga mim disamarkan dengan ghunnah."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r08", "topic": "t11", "lettersExcept": "م ب",
+      "title": { "ar": "الإظهار الشفوي", "ckb": "ئاشکراکردنی لێوی", "en": "Ithhar Shafawi (Oral Clarity)", "id": "Izhhar Syafawi" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 49, "text": "تُظهَرُ الميمُ السَّاكنةُ إذا أتى بعدَها حرفٌ من حروفِ الهجاءِ، إلا الميمَ والباءَ. وسُمِّي شفويًّا لخروجِ الميمِ من الشَّفتين." },
+        "ckb": { "status": "sourceTranscribed", "page": 57, "text": "میمی ساکن ئیزهار دەکرێت ئەگەرهاتوو یەکێک لە پیتەکانی هیجائی لەدوایەوە هات جگە لە (م ، ب)." },
+        "en": { "status": "sourceExtracted", "page": 51, "text": "If meem sakinah is followed by any of alphaphetical letters except meem or baa, It is pronounced clearly. It is called shafawi because meem is emitted from two lips." },
+        "id": { "status": "sourceExtracted", "page": 52, "text": "Mim sukun dibaca secara jelas (izhhar) apabila setelahnya terdapat salah satu huruf hijaiyah selain mim dan ba. Disebut Syafawi: karena huruf mim keluar dari kedua bibir (syafatain)." }
+      },
+      "example": { "ref": "1:7", "pattern": "انع[م][ت]" },
+      "explanation": {
+        "ar": "الميم الساكنة في «أَنْعَمْتَ» تلاها التاء، وليست ميمًا ولا باءً، فتُظهر الميم.",
+        "ckb": "میمی ساکنی «أَنْعَمْتَ» پیتی (ت)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە میمەکە ئاشکرا دەکرێت.",
+        "en": "The meem sakinah in «أَنْعَمْتَ» is followed by ت, which is neither meem nor baa, so the meem is pronounced clearly.",
+        "id": "Mim sukun pada «أَنْعَمْتَ» diikuti huruf ta, yang bukan mim dan bukan ba, sehingga mim dibaca jelas."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r09", "topic": "t12", "letters": "نّ مّ",
+      "title": { "ar": "غنة النون والميم المشددتين", "ckb": "مینگەی نون و میمی توندکراو", "en": "Ghunnah of Noon and Meem Mushaddad", "id": "Ghunnah Nun dan Mim Bertasydid" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 50, "text": "الغُنَّةُ: صوتٌ يخرجُ من الخيشومِ وتكونُ مصاحبةً للنُّونِ والميمِ في كلِّ أحوالِهما. ويجبُ على القارئِ عندَ النُّطقِ بنونٍ أو ميمٍ مشدَّدتين تطويلُ الغُنَّةِ فيهما أكملَ ما تكونُ وصلًا ووقفًا." },
+        "ckb": { "status": "sourceTranscribed", "page": 58, "text": "مینگە (الغُنَّة): دەنگێکە لە برناخەوە (الخيشوم) دەردەچێت و لەگەڵ هەردوو پیتی نون و میمدا دەبێت لەهەموو حاڵەتێکیاندا. پێویستە لەسەر قورئان خوێن لەکاتی وتنی هەردوو پیتی نون و میم کە موشەددەد بن مینگەکە درێژبکاتەوە لەهەردوو حاڵەتی وەسڵ و وەستانیشدا." },
+        "en": { "status": "sourceExtracted", "page": 52, "text": "Ghunnah: A sound is emitted from the nasal cavity accompanying noon and meem in all cases. When the reciter pronounces noon or meem mushaddad, he must lengthen the timing of ghunnah (most complete ghunnah) in continuing recitation or stopping." },
+        "id": { "status": "sourceExtracted", "page": 53, "text": "Ghunnah: suara sengau yang keluar dari rongga hidung (khaysyum) yang selalu menyertai huruf nun dan mim dalam semua keadaan. Wajib bagi qari' saat mengucapkan nun atau mim bertasydid untuk memanjangkan ghunnah pada kedua huruf tersebut dengan sempurna, baik dalam keadaan washal (sambung) maupun waqaf (berhenti)." }
+      },
+      "example": { "ref": "114:6", "pattern": "من الج[ن]ة وال[ن]اس" },
+      "explanation": {
+        "ar": "النون في «ٱلْجِنَّةِ» و«ٱلنَّاسِ» مشدَّدة، فتُمدّ غنتها أكمل ما تكون.",
+        "ckb": "نونی «ٱلْجِنَّةِ» و «ٱلنَّاسِ» شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+        "en": "The noon in «ٱلْجِنَّةِ» and «ٱلنَّاسِ» carries a shaddah, so its ghunnah is held at its most complete.",
+        "id": "Nun pada «ٱلْجِنَّةِ» dan «ٱلنَّاسِ» bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r10", "topic": "t08", "letters": "ق ط ب ج د",
+      "title": { "ar": "القلقلة", "ckb": "هەژان (القلقلة)", "en": "Qalqalah", "id": "Qalqalah" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 32, "text": "القلقلةُ اصطلاحًا: اضطرابُ الحرفِ في مخرجِه عند النُّطقِ به ساكنًا حتَّى يُسمعَ له نبرةٌ قويَّة. حروفُها خمسةٌ يجمعُها (قُطْبُ جَدٍّ)." },
+        "ckb": { "status": "sourceTranscribed", "page": 38, "text": "لە زاراوەدا: بریتیە لە جوڵە و لەرینی پیت لە دەرچەکەیدا لەکاتی وتنیدا بە ساکنی هەتا نەبرێکی بەهێزی لێوە دەبیسترێت. پیتەکانی: پێنج دانەن کە لەم دەستەواژەیەدا کۆکراونەتەوە (قُطْبُ جَدٍّ)." },
+        "en": { "status": "sourceExtracted", "page": 33, "text": "In applied definition: The letter is disturbed at its articulation point when it is pronounced with Sukoon, producing a strong tone. Its letters: They are 5 letters collected in (قطب جد)." },
+        "id": { "status": "sourceExtracted", "page": 34, "text": "Secara istilah: Goncangan huruf pada makhrajnya ketika diucapkan dalam keadaan sukun, sehingga terdengar darinya letupan (pantulan) suara yang kuat. Huruf-hurufnya: ada lima, terangkai dalam (قطب جد)." }
+      },
+      "example": { "ref": "112:3", "pattern": "لم يل[د]" },
+      "explanation": {
+        "ar": "الدال في «يَلِدْ» ساكنة وهي من حروف القلقلة، فتُقلقَل.",
+        "ckb": "پیتی (د) لە «يَلِدْ» ساکنە و یەکێکە لە پیتەکانی قەلقەلە، بۆیە دەهەژێت.",
+        "en": "The daal in «يَلِدْ» carries sukoon and is a qalqalah letter, so it is pronounced with qalqalah.",
+        "id": "Huruf dal pada «يَلِدْ» bersukun dan termasuk huruf qalqalah, sehingga dibaca dengan qalqalah."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r11", "topic": "t18", "letters": "ا ب غ ح ج ك و خ ف ع ق ي م ه",
+      "title": { "ar": "اللام القمرية", "ckb": "لامی قەمەری", "en": "Laam Qamariyyah (Lunar Laam)", "id": "Lam Qamariyah" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 73, "text": "لامُ التَّعريفِ: هي لامٌ ساكنةٌ زائدةٌ عن بنيةِ الكلمةِ، مسبوقةٌ بهمزةِ وصلٍ مفتوحةٍ عندَ البدءِ، وبعدَها اسم. اللَّامُ القمريَّةُ: هي التي يأتي بعدَها حرفٌ من حروفِ (ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ)، حكمُها: الإظهار، وعلامتُها في المصحفِ: وضعُ علامةِ السُّكونِ على اللَّام." },
+        "ckb": { "status": "sourceTranscribed", "page": 83, "text": "لامی ناساندن: بریتیە لە لامێکی ساکنی زیادە لەسەر پێکهاتەی بنەڕەتی وشەکە کە هەمزەی وەسڵی لەپێشە بە مەفتوحی لەکاتی دەستپێکردنیدا و لەپاشیەوە ناوێک (اسم) هاتووە. لامی قەمەری (اللّامُ القمريّة): ئەو جۆرەیە کە لە دوایەوە پیتێک لەم پیتانە دێت (ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ). حوکمەکەی: ئیزهارە. نیشانەکەشی لە موصحەفدا: دانانی نیشانەی سکونە لەسەر لامەکە." },
+        "en": { "status": "sourceExtracted", "page": 79, "text": "It is an extra laam sakinah added to the basic makeup of the word, preceded by linking hamzah (hamzatul_wasl) with Fathah when starting and followed by noun. Laam Qamaryyiah (lunar laam): It is followed by any of the letters of (ابغ حجك وخف عقيمه). Its rule: Ithhar (clarity). Its sign in the Qur'an: Sukoon sign above laam." },
+        "id": { "status": "sourceExtracted", "page": 81, "text": "Lam sukun tambahan di luar penyusun asli kata, didahului hamzah washal di baca fathah saat memulai bacaan dan diikuti oleh sebuah kata benda (ism). Lam Qamariyah: lam yang diikuti oleh salah satu huruf dari (ابغ حجك وخف عقيمه). Hukum: izhar (jelas). Tanda dalam mushaf: diberi tanda sukun di atas lam." }
+      },
+      "example": { "ref": "2:35", "pattern": "ا[ل][ج]نة" },
+      "explanation": {
+        "ar": "لام التعريف في «ٱلْجَنَّةَ» تلاها الجيم، وهو من الحروف القمرية، فتُظهر اللام وعليها السكون.",
+        "ckb": "لامی ناساندن لە «ٱلْجَنَّةَ» پیتی (ج)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت و سکونی لەسەرە.",
+        "en": "The definite-article laam in «ٱلْجَنَّةَ» is followed by ج, a lunar letter, so the laam is pronounced clearly and carries a sukoon.",
+        "id": "Lam ta'rif pada «ٱلْجَنَّةَ» diikuti huruf jim, salah satu huruf qamariyah, sehingga lam dibaca jelas dan diberi tanda sukun."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r12", "topic": "t18", "letters": "ط ث ص ر ت ض ذ ن د س ظ ز ش ل",
+      "title": { "ar": "اللام الشمسية", "ckb": "لامی شەمسی", "en": "Laam Shamsiyyah (Solar Laam)", "id": "Lam Syamsiyyah" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 73, "text": "اللَّامُ الشَّمسيَّةُ: هي التي يأتي بعدَها حرفٌ من حروفِ أوائلِ كلماتِ هذا البيت: طِبْ ثُمَّ صِلْ رُحْمًا تَفُزْ ضِفْ ذا نِعَمْ ... دَعْ سُوءَ ظَنٍّ زُرْ شَرِيفًا لِلْكَرَمْ. حكمُها: الإدغام، وعلامتُها في المصحفِ: خلوُّ اللَّامِ من السُّكونِ ووضعُ شدَّةٍ على الحرفِ الذي بعدَها." },
+        "ckb": { "status": "sourceTranscribed", "page": 83, "text": "لامی شەمسی (اللّامُ الشّمسيّة): ئەوەیە کە لەدوایەوە پیتێک لە پیتەکانی سەرەتا وشەکانی ئەم دێڕە هاتووە: طِبْ ثُمَّ صِلْ رُحْمًا تَفُزْ ضِفْ ذا نِعَمْ ... دَعْ سُوءَ ظَنٍّ زُرْ شَرِيفًا لِلْكَرَمْ. حوکمەکەی: ادغامە. نیشانەکەشی لە موصحەفدا: نەبوونی سکون لە لامدا و دانانی شەدە لەسەر ئەو پیتەی دوای ئەو دێت." },
+        "en": { "status": "sourceExtracted", "page": 79, "text": "Laam Shamsyyiah (Solar Laam): It is followed by any of initials of each word in the following verse (طب ثم صل رحما تفز ضف ذا نعم دع سوء ظن زر شريفا للكرم). Its rule: Idgham (merging). Its sign in the Qur'an: Laam is devoid of sukoon sign and shaddah is drawn above the next letter." },
+        "id": { "status": "sourceExtracted", "page": 81, "text": "Lam Syamsiyyah: lam yang diikuti oleh salah satu huruf dari huruf-huruf pada awal kata-kata dari bait ini (طب ثم صل رحما تفز ضف ذا نعم دع سوء ظن زر شريفا للكرم). Hukum: idgham (dimasukkan). Tandanya dalam mushaf: lam tidak diberi tanda sukun, dan haruf setelahnya diberi tanda syaddah." }
+      },
+      "example": { "ref": "34:13", "pattern": "ا[ل][ش]كور" },
+      "explanation": {
+        "ar": "لام التعريف في «ٱلشَّكُورُ» تلاها الشين، وهو من الحروف الشمسية، فتُدغم اللام فيها؛ لذا خلت اللام من السكون وشُدِّدت الشين.",
+        "ckb": "لامی ناساندن لە «ٱلشَّكُورُ» پیتی (ش)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت؛ لەبەر ئەوە لامەکە سکونی لەسەر نییە و (ش)ەکە شەددارە.",
+        "en": "The definite-article laam in «ٱلشَّكُورُ» is followed by ش, a solar letter, so the laam is merged into it: the laam has no sukoon and the sheen carries a shaddah.",
+        "id": "Lam ta'rif pada «ٱلشَّكُورُ» diikuti huruf syin, salah satu huruf syamsiyah, sehingga lam dimasukkan ke dalamnya: lam tidak bersukun dan syin bertasydid."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r13", "topic": "t14", "letters": "ل",
+      "title": { "ar": "تفخيم لام لفظ الجلالة", "ckb": "تەفخیمی لامی وشەی (الله)", "en": "Heavy Laam in the Name of Allah", "id": "Lam Lafzhul Jalalah Ditebalkan" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 54, "text": "تُفخَّمُ لامُ لفظِ الجلالةِ في حالات: عندَ الابتداءِ بها، وإذا تقدَّمها فتحٌ، أو ساكنٌ بعدَ الفتح، أو ضمٌّ، أو ساكنٌ بعدَ الضَّمّ." },
+        "ckb": { "status": "sourceTranscribed", "page": 63, "text": "لامی وشەی پیرۆزی (الله) لەم چەند حاڵەتەی خوارەوەدا تەفخیم دەبێت: لەکاتی دەستپێکردن پێی، ئەگەر فەتحە لە پێشیەوە هاتبوو، ئەگەر ساکنێک لەدوای فەتحەیەک لەپێشیەوە هاتبوو، ئەگەر ضەممەیە لە پێشیەوە هاتبوو، ئەگەر ساکنێک لەدوای ضەممەیە لەپێشیەوە هاتبوو." },
+        "en": { "status": "authored", "page": null, "text": "The laam of the name of Allah is pronounced heavy when recitation starts with it, or when it is preceded by a fathah, a dammah, or a sukoon that comes after a fathah or a dammah." },
+        "id": { "status": "sourceExtracted", "page": 58, "text": "Lam Lafzhul Jalalah Ditebalkan, jika: di awal kalimat; sebelumnya fathah; sebelumnya sukun sebelumnya fathah; sebelumnya dhammah; sebelumnya sukun sebelumnya dhammah." }
+      },
+      "example": { "ref": "72:19", "pattern": "عب[د] ا[لل]ه" },
+      "explanation": {
+        "ar": "تقدَّم لفظَ الجلالة في «عَبْدُ ٱللَّهِ» ضمٌّ على الدال، فتُفخَّم اللام.",
+        "ckb": "لە «عَبْدُ ٱللَّهِ»دا ضەممە لەسەر پیتی (د) لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەفخیم دەکرێت.",
+        "en": "In «عَبْدُ ٱللَّهِ» the word before the name of Allah ends with a dammah, so the laam is pronounced heavy.",
+        "id": "Pada «عَبْدُ ٱللَّهِ» huruf sebelum lafzhul jalalah berharakat dhammah, sehingga lam dibaca tebal."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r14", "topic": "t14", "letters": "ل",
+      "title": { "ar": "ترقيق لام لفظ الجلالة", "ckb": "تەرقیقی لامی وشەی (الله)", "en": "Light Laam in the Name of Allah", "id": "Lam Lafzhul Jalalah Ditipiskan" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 54, "text": "تُرقَّقُ لامُ لفظِ الجلالةِ إذا تقدَّمها كسرٌ، أو ساكنٌ بعدَ كسرٍ، أو تنوين." },
+        "ckb": { "status": "sourceTranscribed", "page": 63, "text": "لامی وشەی پیرۆزی (الله) لەم چەند حاڵەتەی خوارەوەدا تەرقیق دەبێت: ئەگەر کەسرە لە پێشیەوە هاتبوو، ئەگەر ساکنێک لەدوای کەسرەیە لەپێشیەوە هاتبوو، ئەگەر تەنوین لە پێشیەوە هاتبوو." },
+        "en": { "status": "authored", "page": null, "text": "The laam of the name of Allah is pronounced light when it is preceded by a kasrah, by a sukoon that comes after a kasrah, or by tanween." },
+        "id": { "status": "sourceExtracted", "page": 59, "text": "Lam Lafzhul Jalalah Ditipiskan, jika: sebelumnya kasrah; sebelumnya sukun sebelumnya kasrah; sebelumnya tanwin." }
+      },
+      "example": { "ref": "1:1", "pattern": "بس[م] ا[لل]ه" },
+      "explanation": {
+        "ar": "تقدَّم لفظَ الجلالة في «بِسْمِ ٱللَّهِ» كسرٌ على الميم، فتُرقَّق اللام.",
+        "ckb": "لە «بِسْمِ ٱللَّهِ»دا کەسرە لەسەر پیتی (م) لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەرقیق دەکرێت.",
+        "en": "In «بِسْمِ ٱللَّهِ» the word before the name of Allah ends with a kasrah, so the laam is pronounced light.",
+        "id": "Pada «بِسْمِ ٱللَّهِ» huruf sebelum lafzhul jalalah berharakat kasrah, sehingga lam dibaca tipis."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r15", "topic": "t15", "letters": "ا و ي",
+      "title": { "ar": "المد الطبيعي (الأصلي)", "ckb": "مەدی سروشتی (بنەڕەتی)", "en": "Original (Natural) Madd", "id": "Mad Asli (Thabi'i)" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 59, "text": "المدُّ الأصليُّ (الطَّبيعيُّ): وهو الذي لا تقومُ ذاتُ الحرفِ إلا به، ولا يتوقَّفُ مدُّه على سببٍ من همزٍ أو سكون. ومقدارُ مدِّه: لا يزيدُ ولا ينقصُ عن حركتين بجميعِ صورِه المختلفةِ لجميعِ القُرَّاء." },
+        "ckb": { "status": "sourceTranscribed", "page": 68, "text": "مەدی بنەڕەتی (الأصلي) یان سروشتی (الطّبيعي): بریتیە لەو مەددەی کە خودی پیتەکە بە بێ ئەو مەددە دروست نابێت و هەروەها لەسەر هۆکاری هەمزە و سکون نەوەستاوە. ئەندازەی مەد و درێژکردنەوەکەشی: لەدوو حەرەکە زیاد و کەم ناکات لەهەموو حاڵەتەکانیدا و بەهەموو شێوەکانیەوە لای هەموو قورئان خوێنان." },
+        "en": { "status": "sourceExtracted", "page": 61, "text": "Original Madd (natural): It is a madd where the letter is not realized except with it, It doesn't rely on a cause of hamzah or sukoon. Amount of madd: Not to prolong nor shorten it more than two counts in all different shapes by all reciters." },
+        "id": { "status": "sourceExtracted", "page": 64, "text": "Mad Asli (Thabi'i): adalah mad yang keberadaan hurufnya tidak akan sempurna kecuali dengannya, dan panjangnya tidak bergantung pada sebab seperti hamzah atau sukun. Panjangnya: tidak lebih dan tidak kurang dari dua harakat dalam berbagai bentuknya untuk seluruh qari." }
+      },
+      "example": { "ref": "2:30", "pattern": "واذ [قا]ل ربك" },
+      "explanation": {
+        "ar": "الألف في «قَالَ» ساكنة قبلها فتح، ولم يأتِ بعدها همز ولا سكون، فتُمد حركتين.",
+        "ckb": "ئەلیفی «قَالَ» ساکنە و فەتحەی لەپێشە و هەمزە یان سکونی بەدوادا نەهاتووە، بۆیە دوو حەرەکە درێژ دەکرێتەوە.",
+        "en": "The alif in «قَالَ» follows a fathah and is not followed by hamzah or sukoon, so it is lengthened two counts.",
+        "id": "Alif pada «قَالَ» didahului fathah dan tidak diikuti hamzah atau sukun, sehingga dipanjangkan dua harakat."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r16", "topic": "t15", "letters": "ء ا و ي",
+      "title": { "ar": "مد البدل", "ckb": "مەدی بەدەل", "en": "Madd al-Badal (Exchange Lengthening)", "id": "Mad Badal" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 60, "text": "مدُّ البدلِ: هو أن يتقدَّمَ الهمزُ على حرفِ المدِّ في كلمة. وسُمِّيَ بدلًا لأنَّه في الأصلِ عبارةٌ عن همزتين: الأولى متحرِّكةٌ والثَّانيةُ ساكنةٌ، فأُبدلت الثَّانيةُ مدًّا من جنسِ حركةِ ما قبلَها." },
+        "ckb": { "status": "sourceTranscribed", "page": 69, "text": "مەدی بەدەل: بریتیە لە پێشکەوتنی هەمزە بەسەر پیتی مەددا لە وشەیەکدا. پێی دەوترێت (بەدەل) چونکە لەبنەڕەتدا پێکهاتبوو لە دوو هەمزە، یەکەمیان موتەحەریک و ئەوی تریان ساکن بوو، دووەمیان گۆڕاوە و بووە بە مەد لەڕەگەزی هەمان حەرەکەی پێش خۆی." },
+        "en": { "status": "sourceExtracted", "page": 63, "text": "Its definition: Hamzah precedes lengthening letter in a word. It is called badal because its origin is two hamazahs: The first is voweled and the second is non_voweled so, the last hamzah is converted into a lengthening letter similar to the vowel of the preceding letter." },
+        "id": { "status": "sourceExtracted", "page": 66, "text": "Definisi: ketika hamzah mendahului huruf mad dalam satu kata. Dinamakan badal karena asalnya terdiri dari dua hamzah: yang pertama berharakat dan yang kedua sukun. Hamzah kedua diubah menjadi mad yang sesuai dengan harakat sebelumnya." }
+      },
+      "example": { "ref": "2:14", "pattern": "الذين [ءا]منوا" },
+      "explanation": {
+        "ar": "تقدَّمت الهمزة على الألف في «ءَامَنُوا۟»، فهو مد بدل.",
+        "ckb": "لە «ءَامَنُوا۟»دا هەمزە پێش ئەلیفی مەد کەوتووە، بۆیە مەدی بەدەلە.",
+        "en": "In «ءَامَنُوا۟» the hamzah comes before the lengthening alif, so this is madd al-badal.",
+        "id": "Pada «ءَامَنُوا۟» hamzah mendahului alif mad, sehingga ini adalah mad badal."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r17", "topic": "t15", "letters": "ا و ي + ء",
+      "title": { "ar": "المد الواجب المتصل", "ckb": "مەدی واجبی موتتەصیل", "en": "Madd Wajib Mu'tasil (Required Joined Lengthening)", "id": "Mad Wajib Muttashil" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 61, "text": "المدُّ الواجبُ المتَّصلُ: هو أن يأتيَ بعدَ حرفِ المدِّ همزةٌ متَّصلةٌ به في كلمةٍ واحدة. وسُمِّي متَّصلًا لاتِّصالِ حرفِ المدِّ بالهمزةِ بعدَه في كلمةٍ واحدة. مقدارُ مدِّه: (٤ – ٥) حركات." },
+        "ckb": { "status": "sourceTranscribed", "page": 70, "text": "مەدی واجبی موتتەصیل: بریتیە لەوەی کە لەدوای پیتی مەددەوە هەمزەیەکی لکاو بێت لەگەڵیدا لەیەک وشەدا. پێی دەوترێت (موتتەصیل) لەبەر لکانی پیتی مەد بە هەمزەوە لەدوایەوە لەیەک وشەدا. ئەندازەی مەد و درێژکردنەوەکەشی (٤-٥) حەرەکەیە." },
+        "en": { "status": "sourceExtracted", "page": 64, "text": "Its definition: A letter of madd is followed by hamzah in the same word. Its is called Mu'tasil (Joined) because a letter of madd is followed by hamzah directly in the same word. The duration of lengthening: 4 or 5 counts." },
+        "id": { "status": "sourceExtracted", "page": 67, "text": "Definisi: apabila setelah huruf mad terdapat hamzah yang bersambung dalam satu kata. Disebut muttashil: Karena huruf mad bersambung dengan hamzah setelahnya dalam satu kata. Panjang mad: (4 atau 5) harakat." }
+      },
+      "example": { "ref": "2:19", "pattern": "من الس[ماء]" },
+      "explanation": {
+        "ar": "جاءت الهمزة بعد الألف في كلمة واحدة «ٱلسَّمَآءِ»، فتُمد ٤ أو ٥ حركات.",
+        "ckb": "لە وشەی «ٱلسَّمَآءِ»دا هەمزە لەدوای ئەلیفی مەد لە هەمان وشەدا هاتووە، بۆیە ٤ یان ٥ حەرەکە درێژ دەکرێتەوە.",
+        "en": "In «ٱلسَّمَآءِ» the hamzah follows the alif within the same word, so it is lengthened 4 or 5 counts.",
+        "id": "Pada «ٱلسَّمَآءِ» hamzah terletak setelah alif dalam satu kata, sehingga dipanjangkan 4 atau 5 harakat."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r18", "topic": "t15", "letters": "ا و ي | ء",
+      "title": { "ar": "المد الجائز المنفصل", "ckb": "مەدی جائیزی مونفەصیل", "en": "Madd Ja'ez Munfasil (Separate Allowed Lengthening)", "id": "Mad Jaiz Munfashil" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 61, "text": "المدُّ الجائزُ المنفصلُ: هو أن يكونَ حرفُ المدِّ في آخرِ الكلمةِ الأولى والهمزةُ في أوَّلِ الكلمةِ التي تليها. وسُمِّي منفصلًا لانفصالِ حرفِ المدِّ عن الهمزةِ، فكلٌّ منهما في كلمةٍ منفصلة. مقدارُ مدِّه: (٤ – ٥) حركات." },
+        "ckb": { "status": "sourceTranscribed", "page": 70, "text": "مەدی جائیزی مونفەصیل: بریتیە لەوەی کە پیتە مەددەکە کەوتبێتە کۆتا پیتی یەکەم وشەوە و هەمزەش کەوتبێتە یەکەم پیتی وشەکەی دوایەوە. پێی دەوترێت (مونفەصیل) لەبەر جیاکاری پیتی مەد لەگەڵ هەمزە، واتە پێکەوە نەلکاون، بەوەش هەریەکەیان لە وشەیەکی سەربەخۆدان. ئەندازەی مەد و درێژکردنەوەکەشی (٤-٥) حەرەکەیە." },
+        "en": { "status": "sourceExtracted", "page": 64, "text": "Its definition: A letter of madd comes at the end of the first word followed by hamzah at the beginning of the next word. Its is called Munfasil (separate) because a letter of madd comes in a word and hamzah comes in another word so, they are separated from each other. The duration of lengthening: 4 or 5 counts." },
+        "id": { "status": "sourceExtracted", "page": 67, "text": "Definisi: apabila huruf mad berada di akhir kata pertama, dan hamzah berada di awal kata berikutnya. Disebut munfashil: karena huruf mad terpisah dari hamzah, keduanya berada di kata yang berbeda. Panjang mad: (4 atau 5) harakat." }
+      },
+      "example": { "ref": "108:1", "pattern": "ا[نا] [ا]عطينك" },
+      "explanation": {
+        "ar": "حرف المد في آخر «إِنَّآ» والهمزة في أول «أَعْطَيْنَٰكَ»، فهو مد منفصل.",
+        "ckb": "پیتی مەد لە کۆتایی «إِنَّآ»دایە و هەمزە لە سەرەتای «أَعْطَيْنَٰكَ»دا، بۆیە مەدی مونفەصیلە.",
+        "en": "The lengthening letter ends «إِنَّآ» and the hamzah begins «أَعْطَيْنَٰكَ», so the madd is separated (munfasil).",
+        "id": "Huruf mad berada di akhir «إِنَّآ» dan hamzah di awal «أَعْطَيْنَٰكَ», sehingga ini mad munfashil."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r19", "topic": "t15", "letters": "ه",
+      "title": { "ar": "مد الصلة الصغرى", "ckb": "مەدی صیلەی بچوک", "en": "Madd as-Silah as-Sughra (Lesser Connecting Lengthening)", "id": "Mad Shilah Sughra" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 62, "text": "مدُّ الصِّلة: هو صِلةُ هاءِ الضَّميرِ بواوٍ إن كانت الهاءُ مضمومةً، وبياءٍ إذا كانت الهاءُ مكسورةً، شرطَ وقوعِه بينَ متحرِّكين. مدُّ الصِّلةِ الصُّغرى: وهي التي لم يقعْ بعدَ هاءِ الضَّميرِ همزةٌ، مقدارُ مدِّه حركتان، وتُلحَقُ بالمدِّ الطَّبيعيّ." },
+        "ckb": { "status": "sourceTranscribed", "page": 71, "text": "مەدی صیلە: بریتیە لە گەیاندنی هائی ڕاناو (هاءُ الضَّمير) بە (واو) ئەگەرهاتوو هائەکە مەزموم بوو، وە بە (یا) ئەگەر هاتوو هائەکە مەکسور بوو، بەمەرجێک لەنێوان دوو موتەحەریک هاتبێت. مەدی صیلەی بچوک: ئەوەیە کە لەدوای هائی ڕاناوەوە هەمزە نەیەت. ئەندازەی مەددەکەی دوو حەرەکەیە و پەیوەست دەکرێت بە مەدی تەبیعیەوە." },
+        "en": { "status": "sourceExtracted", "page": 65, "text": "Connecting lengthening: To connect pronoun haa (ـه) to waaw if haa has dammah and connect haa to yaa if haa has kasrah provided that haa occurs between two voweled letters. Lesser Connecting Lengthening: There is no hamzah after pronoun haa. The duration of lengthening: It is prolonged for 2 counts and it follows natural lengthening." },
+        "id": { "status": "sourceExtracted", "page": 68, "text": "Mad Shilah: Penyambungan huruf ha' dhomir dengan wawu jika ha' berharakat dhammah, dan dengan ya' jika ha' berharakat kasrah, dengan syarat diapit oleh dua huruf berharakat. Mad Shilah Sughra: terjadi jika setelah ha' dhomir tidak diikuti oleh hamzah. Panjang mad: dua harakat, termasuk dalam kategori mad thabi'i." }
+      },
+      "example": { "ref": "86:8", "pattern": "ان[ه] علي رجع[ه] لقادر" },
+      "explanation": {
+        "ar": "هاء الضمير في «إِنَّهُۥ» و«رَجْعِهِۦ» وقعت بين متحرِّكين ولم يأتِ بعدها همز، فتوصل بواو أو ياء صغيرة وتُمد حركتين.",
+        "ckb": "هائی ڕاناو لە «إِنَّهُۥ» و «رَجْعِهِۦ»دا لەنێوان دوو موتەحەریکدا هاتووە و هەمزەی بەدوادا نەهاتووە، بۆیە بە واو یان یایەکی بچووک دەگەیەنرێت و دوو حەرەکە درێژ دەکرێتەوە.",
+        "en": "The pronoun haa in «إِنَّهُۥ» and «رَجْعِهِۦ» sits between two voweled letters with no hamzah after it, so it is connected with a small waaw or yaa and lengthened two counts.",
+        "id": "Ha' dhomir pada «إِنَّهُۥ» dan «رَجْعِهِۦ» diapit dua huruf berharakat dan tidak diikuti hamzah, sehingga disambung dengan wawu atau ya' kecil dan dipanjangkan dua harakat."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r20", "topic": "t15", "letters": "ا و ي + ّ",
+      "title": { "ar": "المد اللازم الكلمي المثقل", "ckb": "مەدی لازمی کەلیمی قورس", "en": "Madd Lazim Kalimi Muthaqqal (Compulsory Heavy Lengthening in a Word)", "id": "Mad Lazim Kalimi Mutsaqqal" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 63, "text": "المدُّ اللَّازمُ: هو أن يأتيَ حرفُ المدِّ وبعدَه حرفٌ ساكنٌ سكونًا أصليًّا في حالتَي الوصلِ والوقف، مقدارُ مدِّه (٦) حركاتٍ بجميعِ أقسامِه ولجميعِ القُرَّاء. المدُّ اللَّازمُ الكلميُّ المثقَّلُ: وهو أن يأتيَ بعدَ حرفِ المدِّ حرفٌ ساكنٌ مُدغَمٌ (مشدَّد) في كلمةٍ واحدة." },
+        "ckb": { "status": "sourceTranscribed", "page": 72, "text": "مەدی لازم: بریتیە لەوەی پیتێکی ساکن کە سکونەکەی ئەصلی و بنەڕەتی بێت بەدوای پیتێکی مەددا بێت لەهەردوو حاڵەتی وەسڵ و وەستانیشدا. ئەندازەی مەددەکەی (٦) حەرەکەیە بەهەموو جۆرەکانیەوە لای هەموو قورئان خوێنان. مەدی لازمی کەلیمی قورس: ئەوەیە کە پیتێکی مەد دێت و بەدوایدا پیتێکی ساکنی تێهەڵکێشکراوی موشەددەد دێت لە وشەیەکدا." },
+        "en": { "status": "sourceExtracted", "page": 67, "text": "Its definition: A lengthening letter is followed by a letter with an original sukoon when continuing recitation or stopping. The duration of lengthening: It is prolonged for 6 counts for all its divisions and for all reciters. Compulsory heavy lengthening in a word: A lengthening letter is followed by a letter with sukoon merged into the next (mushaddad letter) in the same word." },
+        "id": { "status": "sourceExtracted", "page": 69, "text": "Definisi: Mad ini terjadi ketika ada huruf mad diikuti oleh huruf yang bersukun asli, baik dalam keadaan washal (sambung) maupun waqaf (berhenti). Panjang Mad: 6 harakat, berlaku untuk semua jenisnya dan semua qari. Mad Lazim Kalimi Mutsaqqal: yaitu mad yang terjadi ketika setelah huruf mad terdapat huruf yang bersukun yang bertasydid (mudgham) pada satu kata." }
+      },
+      "example": { "ref": "1:7", "pattern": "ولا ال[ضا][ل]ين" },
+      "explanation": {
+        "ar": "بعد الألف في «ٱلضَّآلِّينَ» لام ساكنة مدغمة (مشدَّدة) في الكلمة نفسها، فتُمد ست حركات.",
+        "ckb": "لە «ٱلضَّآلِّينَ»دا لەدوای ئەلیفی مەدەوە لامێکی ساکنی تێهەڵکێشکراو (شەددار) لە هەمان وشەدا هاتووە، بۆیە شەش حەرەکە درێژ دەکرێتەوە.",
+        "en": "In «ٱلضَّآلِّينَ» the alif is followed by a laam with a merged sukoon (shaddah) in the same word, so it is lengthened six counts.",
+        "id": "Pada «ٱلضَّآلِّينَ» alif diikuti lam sukun yang diidghamkan (bertasydid) dalam satu kata, sehingga dipanjangkan enam harakat."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r21", "topic": "t15", "letters": "ا و ي",
+      "title": { "ar": "المد العارض للسكون", "ckb": "مەدی عارض للسکون", "en": "Madd 'Arid Lissukoon (Lengthening Due to Stopping)", "id": "Mad 'Aridh Lissukun" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 65, "text": "المدُّ العارضُ للسُّكون: هو أن يأتيَ بعدَ حرفِ المدِّ سكونٌ عارضٌ بسببِ الوقف. مقدارُ مدِّه: (٢ – ٤ – ٦) حركات، وذلك في حالِ الوقفِ عليه، أمَّا إذا وصلنا فيصبحُ المدُّ طبيعيًّا." },
+        "ckb": { "status": "sourceTranscribed", "page": 74, "text": "مەدی عارض للسکون: بریتیە لەوەی کە لەدوای پیتی مەددەوە سکونی عارز بێت بەهۆی وەستانەوە. ئەندازەی مەددەکەی (٢-٤-٦) حەرەکەیە. ئەوەش لەحاڵەتی وەستان لەسەری، بەڵام ئەگەر بیخوێنینەوە لەگەڵیدا پێکەوە، واتە وەسڵی بکەین، ئەوا دەبێتە مەدی ئاسایی یان تەبیعی." },
+        "en": { "status": "sourceExtracted", "page": 69, "text": "Its definition: A lengthening letter is followed by a conditional sukoon due to stopping. The duration of lengthening: It is prolonged for (2 or 4 or 6) counts when stopping, but when we continue recitation, it will be a natural lengthening (prolonged for 2 counts)." },
+        "id": { "status": "sourceExtracted", "page": 71, "text": "Definisi: mad ini terjadi ketika setelah huruf mad terdapat sukun yang disebabkan oleh waqaf (berhenti). Panjang mad: 2, 4 atau 6 harakat. Panjang ini berlaku saat waqaf (berhenti), sedangkan saat washal (sambung) mad kembali menjadi mad thabi'i." }
+      },
+      "example": { "ref": "1:2", "pattern": "رب العل[مين]" },
+      "explanation": {
+        "ar": "عند الوقف على «ٱلْعَٰلَمِينَ» تُسكَّن النون سكونًا عارضًا بعد الياء المدية، فيجوز مدها ٢ أو ٤ أو ٦ حركات.",
+        "ckb": "لەکاتی وەستان لەسەر «ٱلْعَٰلَمِينَ» نونەکە سکونێکی عارز وەردەگرێت لەدوای یای مەددەوە، بۆیە دەکرێت ٢ یان ٤ یان ٦ حەرەکە درێژ بکرێتەوە.",
+        "en": "When stopping on «ٱلْعَٰلَمِينَ», the final noon takes a temporary sukoon after the lengthening yaa, so it may be lengthened 2, 4 or 6 counts.",
+        "id": "Saat waqaf pada «ٱلْعَٰلَمِينَ», nun terakhir menjadi sukun karena waqaf setelah ya mad, sehingga boleh dipanjangkan 2, 4, atau 6 harakat."
+      },
+      "review": { "status": "draft" }
+    },
+    {
+      "id": "r22", "topic": "t15", "letters": "و ي",
+      "title": { "ar": "مد اللين", "ckb": "مەدی لیین", "en": "Madd al-Leen (Soft Lengthening)", "id": "Mad Lin" },
+      "definition": {
+        "ar": { "status": "sourceTranscribed", "page": 65, "text": "مدُّ اللِّين: هو أن يأتيَ بعدَ حرفِ اللِّينِ سكونٌ عارضٌ بسببِ الوقف. مقدارُ مدِّه: (٢ – ٤ – ٦) حركات، وذلك في حالةِ الوقفِ على الحرفِ الذي يلي حرفَ اللِّين." },
+        "ckb": { "status": "sourceTranscribed", "page": 74, "text": "مەدی لیین: بریتیە لەوەی کە لەدوای پیتی لینەوە سکونێکی عارز بێت بەهۆی وەستانەوە. ئەندازەی مەددەکەی (٢-٤-٦) حەرەکەیە." },
+        "en": { "status": "sourceExtracted", "page": 69, "text": "Its definition: A soft letter is followed by a conditional sukoon due to stopping. The duration of lengthening: It is prolonged for (2 or 4 or 6) counts." },
+        "id": { "status": "sourceExtracted", "page": 71, "text": "Mad Lin: mad ini terjadi ketika setelah huruf lin terdapat sukun yang disebabkan oleh waqaf. Panjang Mad: 2, 4, atau 6 harakat. Hal ini berlaku saat waqaf pada huruf setelah huruf lin." }
+      },
+      "example": { "ref": "106:1", "pattern": "لايلف قر[يش]" },
+      "explanation": {
+        "ar": "عند الوقف على «قُرَيْشٍ» تُسكَّن الشين بعد الياء الساكنة المفتوح ما قبلها، فيُمد مد لين.",
+        "ckb": "لەکاتی وەستان لەسەر «قُرَيْشٍ» پیتی (ش) ساکن دەبێت لەدوای یایەکی ساکن کە فەتحەی لەپێشە، بۆیە مەدی لیینە.",
+        "en": "When stopping on «قُرَيْشٍ», the sheen takes a temporary sukoon after a yaa sakinah preceded by a fathah, so it is madd al-leen.",
+        "id": "Saat waqaf pada «قُرَيْشٍ», huruf syin menjadi sukun setelah ya sukun yang didahului fathah, sehingga ini mad lin."
+      },
+      "review": { "status": "draft" }
+    }
+  ]
+}

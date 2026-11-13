@@ -1,0 +1,29 @@
+# Outstanding release dependencies
+
+Development can continue without these; a public release should not.
+
+## Permissions
+1. **Author's written permission** (Hussein Kareem Mohammed) to bundle the four PDFs in an app, to ship the structurally optimised copies, and to derive supplementary material (transcribed/quoted definitions, the extracted diagram, rule cards, questions, and the native full-text lessons with their cropped figures). The books allow sharing "as long as [nothing is] added or removed"; app bundling and derived material are not explicitly addressed.
+2. **Translators' acknowledgement** (Nisreen Kamal Shalash — English; Ustadzah Ana Fi Naimatin — Indonesian) for quoting their text in rule cards and the articulation explorer.
+3. **Embedded fonts in the PDFs** — confirm that redistributing the PDFs inside an app is acceptable for the embedded subsets (Microsoft, KFGQPC Uthman Taha Naskh EULA, HQPB Qur'an glyph fonts, Sarchia, Rabar, etc.; see `docs/licenses.md` §2). The app does not use these fonts itself.
+4. **Tanzil** — confirm that coloured, partial-verse excerpts (labelled "Excerpt from …", text unchanged) are within the "verbatim copies" term. Attribution and link are already in About and the licence page.
+
+## Expert review (content is `draft` until then)
+5. **Tajweed subject review** of all 22 rule cards (definitions, letters, chosen example, highlighted letters, explanation) and all 28 questions. Approve by setting `review.status` to `reviewed` in `content_src/*.src.json` and rebuilding.
+6. **Proofreading of transcriptions** — Arabic and Kurdish definitions and makharij descriptions were typed from page images (`sourceTranscribed`).
+6a. **Proofreading of all 118 native lessons** against their pages (Arabic and Kurdish typed from page images; English and Indonesian from the text layer with Arabic retyped), and a decision on every item in `content_src/lessons/REVIEW_NOTES.md` (printed verse citations that do not match the verse, words with no exact Qur'anic match, copied lines, missing counts). Approve a topic by adding it to `content_src/lessons/reviewed.json`; only then does its lesson appear in release builds.
+7. **Fluent Sorani review** of all Kurdish wording: interface strings (`lib/l10n/arb/app_ckb.arb`), framework localisations (`lib/l10n/ckb_localizations.dart`), group titles, partial-coverage notes, explanations and questions. Note: Kurdish text uses standard Unicode Sorani letters (ک U+06A9, ی U+06CC, ە U+06D5); the source PDFs render some words with Arabic ك/ي forms.
+8. **English and Indonesian review** of authored strings (the English definitions of r13/r14 and all explanations/questions are authored).
+9. Decide how to present two **source discrepancies** (CKB p.20 "ط ذ ث" vs ظ ذ ث; ID p.22 "above" vs "below" for noon) — currently the app keeps the edition's own text and uses the Arabic letters for the letter data.
+
+## Product / store
+10. **App icon and store artwork** — an original icon is now in place (the name «جَوِّد» in Noto Naskh Arabic Bold on the app's emerald and gold eight-pointed star; rendered by `test/rendering/app_icon_test.dart`, platform sizes by `tools/make_icons.py`, Android adaptive icon included; splash background set to the app's paper colour). It needs the owner's approval; store screenshots and feature graphics are still to be made.
+11. **Bundle identifier / application id** — now `app.jawwid.jawwid` (Android `applicationId`, iOS `PRODUCT_BUNDLE_IDENTIFIER`); replace it with a reverse domain the owner controls before the first upload, because it cannot change after publication. Still to do: Android release signing key, iOS team. (The internal code namespace `app.rattil.rattil`, the Dart package `rattil` and the folder name are not user-visible and were left unchanged.)
+12. **Product name** — decided: **جَوِّد / Jawwid** (2026-11-13). Set in `lib/app/branding.dart` (in-app), the launcher labels (Android `res/values*/strings.xml`: Jawwid, and جَوِّد for Arabic and Kurdish devices; iOS `*.lproj/InfoPlist.strings`, same split) and the icon. Before publishing, check the name is free in both stores and not a registered trademark (not checked here). Store listing name suggestion: «جَوِّد – تبسيط التجويد» / «Jawwid – Simplifying Tajweed».
+13. **Privacy statement** — in all four languages in `docs/privacy.md` and the About page. Store data-safety forms: no data collected or shared. Declare the notification permission (used only by the optional daily reminder). Re-verify the permission list in the merged release manifest before upload.
+14. **Accessibility pass on hardware** with TalkBack and VoiceOver in all four languages (semantics labels are in place and localised; a hands-on screen-reader pass has not been done).
+15a. **Daily reminder on hardware** — verified in tests with a fake scheduler and the build includes the plugin, boot receiver and desugaring; still to check on a real Android 13+ phone and an iPhone that the permission prompt appears, the notification arrives at the chosen time (inexact on Android: may drift by some minutes), and it survives a reboot.
+15. **Physical-device performance check** on a low-end Android phone (memory budget and cache extents are tuned in the reader; only the simulator was available here).
+
+## Not included by design
+* Audio and pronunciation scoring — not added (no verified recordings were provided). No placeholder controls exist.

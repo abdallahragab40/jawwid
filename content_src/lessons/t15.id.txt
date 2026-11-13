@@ -1,0 +1,159 @@
+%status sourceExtracted
+
+@page 63
+# Mad dan qashar ({{a المَدُّ وَالقَصر}})
+## Definisi mad
+= Secara bahasa | Penambahan dan pemanjangan. Allah Ta'ala berfirman: {{q 71:12|وَيُ[مْ]دِدْكُم بِأَمْوَٰلٍ وَبَنِينَ}} [Nuh: 12], "Dan Dia akan memperbanyak harta dan anak-anakmu."
+= Secara istilah | Memanjangkan suara pada salah satu huruf mad dan lin melebihi kadar mad thabi'i (mad asli), karena adanya sebab hamzah atau sukun.
+## Huruf-huruf mad
+**Alif**, **wau** dan **ya** yang sukun, dengan syarat didahului harakat yang sejenis dengannya.
+- **Alif** sukun sebelumnya fathah, contoh: {{q ?|قَ[ا]لَ}}, {{q 11:43|وَحَ[ا]لَ}}, {{q ?|أَندَ[ا]دًا}}.
+- **Wau** sukun sebelumnya dhammah, contoh: {{q ?|يَقُ[و]لُ}}, {{q 8:24|يَحُ[و]لُ}}, {{q ?|تَتَّقُ[و]نَ}}.
+- **Ya** sukun sebelumnya kasrah, contoh: {{q ?|قِ[ي]لَ}}, {{q 34:54|وَحِ[ي]لَ}}, {{q ?|صَٰدِقِ[ي]نَ}}.
+- Huruf-huruf tersebut dengan syarat-syaratnya terkumpul dalam kata: ({{a نُوحِيهَا، أُوتِينَا، أُوذِينَا}}).
+- **Disebut huruf mad** karena memiliki kemampuan untuk dipanjangkan.
+## Huruf lin
+**Wau** sukun dan **ya** sukun yang didahului oleh huruf berharakat fathah, contoh: {{q ?|قَ[وْ]لَ}}, {{q ?|يَ[وْ]مَ}}, {{q ?|قُرَ[يْ]شٍ}}.
+- **Disebut huruf lin** karena dilafalkan panjang dan lembut tanpa usaha yang keras dari lidah.
+
+@page 64
+## Definisi qashar
+= Secara bahasa | Menahan atau mencegah.
+= Secara istilah | Membaca huruf mad tanpa menambah panjang melebihi kadar mad thabi'i, yaitu hanya dua harakat.
+> **Catatan**: Makna qashar adalah tidak menambah panjang lebih dari dua harakat, sesuai kadar mad thabi'i, sedangkan mad adalah yang lebih panjang dari itu.
+# Jenis-jenis mad dalam al-Qur'an ({{a أنواعُ المَدِّ في القُرآنِ الكريم}})
+1) **Mad asli (thabi'i)**: mad yang keberadaan hurufnya tidak akan sempurna kecuali dengannya, dan panjangnya tidak bergantung pada sebab seperti hamzah atau sukun.
+- **Disebut asli**: karena keberadaannya merupakan hal yang asli dan tetap dalam satu kondisi.
+- **Disebut thabi'i**: karena pembaca dengan naluri yang normal tidak akan mengurangi atau menambahnya dari dua harakat.
+- **Panjangnya**: tidak lebih dan tidak kurang dari dua harakat dalam berbagai bentuknya, untuk seluruh qari.
+- Tempo mad diukur dengan harakat:
+= Harakat | Durasi waktu untuk melafalkan huruf berharakat, seperti: ba, bu, bi ({{a بَ  بُ  بِ}}).
+= Lamanya dua harakat | Durasi waktu yang dibutuhkan untuk melafalkan dua huruf berharakat secara berurutan, seperti: ba-ba ({{a بَ بَ}}), bu-bu ({{a بُ بُ}}) atau bi-bi ({{a بِ بِ}}).
+= Durasi mad | Menyesuaikan dengan kecepatan bacaan (tahqiq, tadwir atau hadr).
+2) **Mad far'i**: memanjangkan suara pada salah satu huruf mad karena adanya hamzah atau sukun setelahnya.
+- **Disebut far'i**: karena merupakan cabang dari mad asli dan bergantung pada suatu sebab.
+
+@page 65
+### Tabel yang menjelaskan jenis-jenis mad dalam al-Qur'an
+| | Mad asli (thabi'i): dipanjangkan 2 harakat; yang menyerupai mad asli | Mad far'i (dipanjangkan lebih dari 2 harakat): sebab hamzah | Mad far'i (dipanjangkan lebih dari 2 harakat): sebab sukun |
+| a | Mad badal | Mad muttashil | Mad lazim (dengan berbagai jenisnya) |
+| b | Mad 'iwadh | Mad munfashil | Mad 'aridh lissukun |
+| c | Mad shilah sughra | Mad shilah kubra | Mad lin |
+
+@page 66
+# Yang disamakan dengan mad thabi'i
+## a- Mad badal
+= Definisi | Ketika hamzah mendahului huruf mad dalam satu kata.
+= Contoh | {{q ?|ءَ[ا]مَنُوا۟}}, {{q ?|أُ[و]تُوا۟}}, {{q ?|إِ[ي]مَٰنًا}}, {{q ?|ءَ[ا]دَمَ}}.
+### Catatan
+1) Dinamakan badal karena asalnya terdiri dari dua hamzah: yang pertama berharakat dan yang kedua sukun. Hamzah kedua diubah menjadi mad yang sesuai dengan harakat sebelumnya, contoh: {{q ?|ءَامَنُوا۟}} aslinya ({{a ءَأْمَنُوا}}), {{q ?|أُوتُوا۟}} aslinya ({{a أُؤْتُوا}}), {{q ?|إِيمَٰنًا}} aslinya ({{a إِئْمَانًا}}).
+2) Namun, ada beberapa kata di mana huruf madnya bukan pengganti dari hamzah, tetapi tetap disebut mad badal atau yang menyerupainya (**syabih al-badal**), contoh: {{q ?|ٱلْقُرْءَ[ا]نُ}}, {{q ?|وَجَآءُ[و]}}, {{q 12:29|ٱلْخَاطِـِٔ[ي]نَ}}, {{q ?|مَسْـُٔ[و]لًا}}.
+3) Sebagian ulama memasukkan mad badal ke dalam kategori mad far'i karena terdapat hamzah sebelumnya, dan karena sebagian qari memanjangkannya lebih dari dua harakat.
+## b- Mad 'iwadh
+= Definisi | Penggantian tanwin fathah (nashab) dengan alif dalam kondisi waqaf.
+= Contoh | {{q ?|عَلِي[مًا]}}, {{q ?|حَكِي[مًا]}}, {{q ?|سَوَآ[ءً]}}, {{q 56:35|إِنشَآ[ءً]}}, {{q ?|شَيْـً[ٔا]}}.
+= Disebut 'iwadh | Karena menggantikan tanwin dengan alif.
+> **Catatan**: Tanwin tidak digantikan dengan alif jika tanwin tersebut berada pada huruf ta' marbuthah. Sebagai gantinya, huruf ta' diubah menjadi ha', contoh: {{q ?|وَشَجَرَ[ةً]}} saat waqaf ({{a وَشَجَرَهْ}}), {{q ?|جَنَّ[ةً]}} saat waqaf ({{a جَنَّهْ}}).
+## c- Mad shilah sughra
+Akan dijelaskan lebih lanjut.
+
+@page 67
+# Mad far'i yang sebabnya hamzah
+## a- Mad wajib muttashil
+= Definisi | Apabila setelah huruf mad terdapat hamzah yang bersambung dalam satu kata.
+= Contoh | {{q 35:37|وَجَ[آءَ]كُمُ ٱلنَّذِيرُ}}, {{q ?|سُ[وٓءَ] ٱلْعَذَابِ}}, {{q ?|هَنِ[يٓـًٔ]ۢا بِمَا}}, {{q 69:19|هَ[آؤُ]مُ}}, {{q ?|ٱلسَّمَ[آءِ]}}, {{q ?|هَٰٓؤُلَ[آءِ]}}.
+= Disebut muttashil | Karena huruf mad bersambung dengan hamzah setelahnya dalam satu kata.
+= Panjang mad | (4 atau 5) harakat.
+## b- Mad jaiz munfashil
+= Definisi | Apabila huruf mad berada di akhir kata pertama, dan hamzah berada di awal kata berikutnya.
+= Contoh | {{q 108:1|إِنَّ[آ أَ]عْطَيْنَٰكَ}}, {{q 24:31|وَتُوبُ[وٓا۟ إِ]لَى ٱللَّهِ}}, {{q ?|فِ[ىٓ أَ]نفُسِكُمْ}}, {{q ?|[يَٰٓأَ]يُّهَا}}, {{q ?|[هَٰٓأَ]نتُمْ هَٰٓؤُلَآءِ}}.
+= Disebut munfashil | Karena huruf mad terpisah dari hamzah; keduanya berada di kata yang berbeda.
+= Panjang mad | (4 atau 5) harakat.
+- **Catatan 1**: Jenis munfashil:
+= Hakiki | Ketika huruf mad ditulis dan dilafalkan, contoh: {{q ?|بِمَ[آ أُ]نزِلَ}}, {{q 66:6|قُ[وٓا۟ أَ]نفُسَكُمْ}}, {{q ?|فِ[ىٓ أَ]نفُسِكُمْ}}.
+= Hukmi | Ketika huruf mad dihilangkan dalam tulisan tetapi tetap dilafalkan, contoh: {{q ?|[يَٰٓأَ]يُّهَا ٱلَّذِينَ ءَامَنُوا۟}}, {{q ?|[هَٰٓأَ]نتُمْ [هَٰٓ]ؤُلَآءِ}}.
+- **Catatan 2**: Dibaca sepanjang dua harakat menurut Thayyibah an-Nasyr.
+## c- Mad shilah kubra
+Akan dijelaskan di halaman berikutnya.
+
+@page 68
+# Mad shilah ({{a مَدُّ الصِّلة}})
+= Mad shilah | Penyambungan huruf ha' dhamir dengan **wawu** jika ha' berharakat dhammah, dan dengan **ya'** jika ha' berharakat kasrah, dengan syarat diapit oleh dua huruf berharakat.
+= Ha' dhamir (kinayah) | Huruf ha' tambahan yang menunjukkan kata ganti orang ketiga tunggal laki-laki.
+## Mad shilah sughra
+Terjadi jika setelah ha' dhamir tidak diikuti oleh hamzah.
+= Panjang mad | Dua harakat, termasuk dalam kategori mad thabi'i.
+= Contoh | {{q 84:15|بَلَىٰٓ إِنَّ رَبَّ[هُۥ] كَانَ بِ[هِۦ] بَصِيرًا}}.
+= Tanda pada mushaf | Wawu kecil atau ya' kecil setelah ha', seperti pada: {{q 86:8|إِنَّ[هُۥ] عَلَىٰ رَجْعِ[هِۦ] لَقَادِرٌ}}.
+## Mad shilah kubra
+Terjadi jika setelah huruf ha' dhamir terdapat hamzah.
+= Panjang mad | (4 atau 5) harakat, termasuk dalam kategori mad munfashil.
+= Contoh | {{q 104:3|يَحْسَبُ أَنَّ مَالَ[هُۥٓ أَ]خْلَدَهُۥ}}, {{q 83:12|وَمَا يُكَذِّبُ بِ[هِۦٓ إِ]لَّا كُلُّ}}.
+= Tanda dalam mushaf | Wawu kecil atau ya' kecil dengan tanda mad di atasnya: {{q 104:3|مَالَ[هُۥٓ] أَخْلَدَهُۥ}}, {{q 83:12|بِ[هِۦٓ] إِلَّا كُلُّ}}.
+- **Catatan 1**: Mad shilah hanya berlaku saat menyambung bacaan (washal); jika berhenti (waqaf), mad dihilangkan dan digantikan dengan sukun.
+- **Catatan 2**: Ada dua pengecualian dari kaidah mad shilah pada riwayat Hafs:
+= a | Kata yang tidak memenuhi syarat, tetapi ada mad shilah: {{q 25:69|وَيَخْلُدْ فِي[هِۦ] مُهَانًا}} [Al-Furqan: 69].
+= b | Kata yang memenuhi syarat, tetapi tidak ada mad shilah: {{q 39:7|يَرْضَ[هُ] لَكُمْ}} [Az-Zumar: 7].
+- **Catatan 3**: Mad ini juga berlaku pada huruf ha yang terdapat dalam isim isyarah (**هذه**), contoh: {{q ?|هَٰذِ[هِۦ] نَاقَةُ ٱللَّهِ}}, {{q 12:65|هَٰذِ[هِۦ] بِضَٰعَتُنَا}}, {{q 21:92|إِنَّ هَٰذِ[هِۦٓ] أُمَّتُكُمْ}}.
+
+@page 69
+# Mad far'i yang sebabnya sukun
+## a- Mad lazim
+= Definisi | Mad ini terjadi ketika ada huruf mad diikuti oleh huruf yang bersukun asli, baik dalam keadaan washal (sambung) maupun waqaf (berhenti).
+= Contoh | {{q 1:7|ٱل[ضَّآ]لِّينَ}}, {{q 10:91|ءَ[آ]لْـَٰٔنَ}}, {{q 26:1|طسٓمٓ}}, {{q 38:1|صٓ}}.
+= Panjang mad | 6 harakat, berlaku untuk semua jenisnya dan semua qari.
+Mad lazim terbagi menjadi dua bagian:
+### Mad lazim kalimi
+Terjadi ketika huruf mad diikuti oleh huruf yang bersukun asli dalam satu kata.
+= Mad lazim kalimi mutsaqqal | Mad yang terjadi ketika setelah huruf mad terdapat huruf sukun yang bertasydid (mudgham) pada satu kata, contoh: {{q 1:7|ٱل[ضَّآ]لِّينَ}}, {{q 6:80|أَتُحَٰ[ٓجُّ]وٓنِّى}}, {{q 5:2|ءَ[آ]مِّينَ}}, {{q ?|ءَ[آ]للَّهُ}}, {{q ?|ءَ[آ]لذَّكَرَيْنِ}}. Tidak terdapat contoh untuk huruf ya dalam al-Qur'an.
+= Mad lazim kalimi mukhaffaf | Terjadi ketika setelah huruf mad terdapat huruf sukun yang tidak dileburkan (tidak mudgham) dalam satu kata, seperti {{q 10:51|ءَ[آ]لْـَٰٔنَ}} (yang terdapat pada dua tempat dalam surat Yunus: 51 dan 91), dan tidak ada yang ketiga dalam al-Qur'an.
+### Mad lazim harfi
+Terjadi ketika huruf mad diikuti oleh huruf sukun asli pada huruf-huruf muqaththa'ah di awal surat. Huruf-huruf tersebut terdiri dari tujuh huruf yang dirangkum dalam kalimat: (**سَنَقُصُّ لَكُم**).
+= Mad lazim harfi mutsaqqal | Terjadi pada huruf di awal beberapa surat yang terdiri dari tiga huruf, di mana huruf tengahnya adalah huruf mad dan huruf ketiga dilebur (mudgham) dengan huruf setelahnya. Contoh: (**lam**) pada {{q 2:1|الٓمٓ}} dilafalkan ({{a ألف لام مّيم}}); (**sin**) pada {{q 26:1|طسٓمٓ}} dilafalkan ({{a طا سين مّيم}}).
+= Mad lazim harfi mukhaffaf | Terjadi pada huruf di awal beberapa surah yang terdiri dari tiga huruf, di mana huruf tengahnya adalah huruf mad, tetapi huruf ketiga bersukun. Contoh: {{q 38:1|صٓ}} dilafalkan ({{a صَاد}}), {{q 68:1|نٓ}} dilafalkan ({{a نُون}}).
+
+@page 70
+# Hukum mad pada awal surah ({{a أحكامُ المَدِّ في فَواتِحِ السُّوَرِ}})
+Sebanyak 29 surah dalam al-Qur'an dimulai dengan huruf-huruf muqaththa'ah (terpisah), dengan jumlah sebanyak (14) huruf yang dirangkum dalam kalimat (**صَحَّ طَرِيقُكَ مَعَ السُّنَّه**): "Benarlah jalanmu bersama sunnah."
+Huruf-huruf muqaththa'ah ini terbagi menjadi (14) bentuk, yaitu: {{q 2:1|الٓمٓ}}, {{q 7:1|الٓمٓصٓ}}, {{q 10:1|الٓر}}, {{q 13:1|الٓمٓر}}, {{q 19:1|كٓهيعٓصٓ}}, {{q 20:1|طه}}, {{q 26:1|طسٓمٓ}}, {{q 27:1|طسٓ}}, {{q 36:1|يسٓ}}, {{q 38:1|صٓ}}, {{q 40:1|حمٓ}}, {{q 42:1|حمٓ}} {{q 42:2|عٓسٓقٓ}}, {{q 50:1|قٓ}}, {{q 68:1|نٓ}}.
+Huruf-huruf ini terbagi berdasarkan hukum mad yang ada di dalamnya menjadi empat kelompok, yaitu:
+1) **Tidak memiliki mad sama sekali**: yaitu alif, karena tidak ada huruf mad di dalamnya sehingga dibaca alif, contoh: {{q 2:1|الٓمٓ}} dibaca (alif laam miim) ({{a أَلِف لام ميم}}).
+2) **Dipanjangkan dengan mad thabi'i**: yaitu huruf yang tersusun dari dua huruf, di mana huruf keduanya adalah huruf mad. Huruf-huruf ini berjumlah lima, dirangkum dalam kata (**حَيٌّ طَهُرَ**), dibaca (haa, yaa, thaa, haa, raa) ({{a حَا، يَا، طَا، هَا، رَا}}).
+3) **Dipanjangkan dengan mad lazim (6 harakat)**: yaitu huruf yang tersusun dari tiga huruf, di mana huruf tengahnya adalah huruf mad dan diikuti huruf yang bersukun asli. Huruf-huruf ini berjumlah tujuh, dirangkum dalam kata (**سَنَقُصُّ لَكُم**), yaitu ({{a سِين، نُون، قَاف، صَاد، لَام، كَاف، مِيم}}).
+4) **Diperbolehkan dibaca panjang 4 atau 6 harakat**: kelompok ini terdiri dari huruf yang memiliki tiga huruf penyusun, di mana huruf tengahnya adalah huruf lin, yaitu huruf ('ain) yang muncul pada dua pembukaan surah: Maryam {{q 19:1|كٓهيعٓصٓ}} dibaca (kaaf haa yaa 'ain shaad) ({{a كَاف هَا يَا عَيْن صَاد}}), dan Asy-Syura {{q 42:1|حمٓ}} {{q 42:2|عٓسٓقٓ}} dibaca (haa miim 'ain siin qaaf) ({{a حَا مِيم عَيْن سِين قَاف}}).
+- Huruf ini dikelompokkan dalam mad lin karena kedekatannya dengan sifat tersebut.
+
+@page 71
+## b- Mad 'aridh lissukun
+= Definisi | Mad ini terjadi ketika setelah huruf mad terdapat sukun yang disebabkan oleh waqaf (berhenti).
+= Contoh | {{q ?|بِٱلْعِبَ[ا]دِ}}, {{q ?|ٱلْفَآئِزُ[و]نَ}}, {{q ?|ٱلْعَٰلَمِ[ي]نَ}}.
+= Panjang mad | 2, 4 atau 6 harakat. Panjang ini berlaku saat waqaf (berhenti), sedangkan saat washal (sambung) mad kembali menjadi mad thabi'i.
+- Dianjurkan untuk menyamakan panjang mad dalam satu bacaan. Jika seorang qari' memilih membaca dengan 4 harakat, maka sebaiknya ia menerapkannya secara konsisten sampai selesai bacaan. Hal ini juga berlaku untuk pilihan panjang mad lainnya.
+- Dianjurkan menggunakan qashar (2 harakat) untuk bacaan cepat (hadr), tawassuth (4 harakat) untuk bacaan sedang (tadwir), dan isyba' (6 harakat) untuk bacaan lambat (tahqiq), agar bacaan lebih teratur dan indah.
+## c- Mad lin
+= Definisi | Mad ini terjadi ketika setelah huruf lin terdapat sukun yang disebabkan oleh waqaf.
+= Contoh | {{q ?|خَ[وْ]فٍ}}, {{q ?|قُرَ[يْ]شٍ}}, {{q ?|ٱلْبَ[يْ]تِ}}.
+= Panjang mad | 2, 4 atau 6 harakat.
+- Hal ini berlaku saat waqaf pada huruf setelah huruf lin. Namun, jika washal maka tidak ada mad, seperti pada firman Allah: {{q 106:3|هَٰذَا ٱلْبَ[يْ]تِ}} {{q 106:4|ٱلَّذِىٓ}}.
+- Dianjurkan menyamakan panjang mad lin, seperti yang dijelaskan pada mad 'aridh lissukun.
+- Dianjurkan qashar (2 harakat) dalam bacaan cepat (hadr), tawassuth (4 harakat) dalam bacaan sedang (tadwir), dan isyba' (6 harakat) dalam bacaan lambat (tahqiq), agar bacaan lebih serasi dan indah.
+### Catatan: mad far'i memiliki tiga hukum
+1) **Lazim**: mad yang disepakati oleh semua qari untuk memanjangkannya, termasuk dalam kadar panjangnya, yaitu **mad lazim**.
+2) **Wajib**: mad yang disepakati oleh semua qari untuk memanjangkannya, tetapi terdapat perbedaan pada kadar panjangnya, yaitu **mad muttashil**.
+3) **Jaiz (pilihan)**: mad yang terdapat perbedaan di antara qari, baik dalam memanjangkan maupun memendekkannya, termasuk dalam panjangnya, yaitu **mad munfashil**, **shilah kubra**, **'aridh lissukun** dan **lin**.
+
+@page 72
+# Tabel yang menjelaskan jenis mad, hukumnya, dan panjangnya ({{a جدولٌ يوضِحُ أنواعَ المُدودِ وحُكمِهِ ومقدارِ مَدِّه}})
+| | Jenis mad | Panjang mad | Hukum |
+| Mad far'i | Lazim | 6 harakat | Lazim |
+| Mad far'i | Muttashil | 4 atau 5 harakat | Wajib |
+| Mad far'i | 'Aridh lissukun | 2, 4 atau 6 harakat | Jaiz |
+| Mad far'i | Lin | 2, 4 atau 6 harakat | Jaiz |
+| Mad far'i | Munfashil | 4 atau 5 harakat | Jaiz |
+| Mad far'i | Shilah kubra | 4 atau 5 harakat | Jaiz |
+| Mad asli | Badal | 2 harakat | Jaiz |
+| Mad asli | Thabi'i | 2 harakat | Wajib |
+| Mad asli | 'Iwadh | 2 harakat | Wajib |
+| Mad asli | Shilah sughra | 2 harakat | Wajib |
+# Tanda mad dalam mushaf ({{a علامةُ المَدِّ في ضَبطِ المُصحفِ}})
+Tanda ini ({{a ـٓ}}) diletakkan di atas mad **lazim**, **wajib muttashil**, **jaiz munfashil** dan **shilah kubra**, sebagai penunjuk bahwa mad ini lebih panjang dibandingkan mad thabi'i.

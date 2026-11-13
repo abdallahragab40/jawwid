@@ -1,0 +1,145 @@
+%status sourceExtracted
+
+@page 42
+# Hukum Nun Sukun dan Tanwin ({{a أحكامُ النُّونِ السَّاكِنةِ والتَّنوين}})
+Hal ini sangat penting karena nun sukun dan tanwin disebutkan berkali-kali dalam al-Qur'an. Perhatikan bahwa nun terdapat dalam tiga keadaan dalam al-Qur'an:
+1) **musyaddadah/bertasydid**, seperti: {{q ?|الْجَ[نَّ]ةَ}}، {{q ?|أَ[نَّ]}}.
+2) **mutaharrikah / berharakat** [fathah, kasrah atau dhammah], seperti: {{q ?|[نَ]عْبُدُ}}، {{q ?|تَعْلَمُو[نَ]}}، {{q ?|دِي[نِ]}}.
+3) **sukun**, seperti {{q ?|أَ[نْ]عَمْتَ}}، {{q ?|مَ[ن] يَخْشَىٰ}}، {{q ?|مِ[ن]ۢ بَعْدِ}}، {{q ?|يَ[ن]ظُرُونَ}} dan inilah yang akan dibahas.
+
+## Nun Sukun
+= Definisi | nun tanpa harakat (tanpa tanda atau dengan tanda sukun di atasnya) tetap ada baik saat waqaf maupun washal, dalam pelafalan dan penulisan, baik tambahan atau penyusun asli suatu kata, terdapat di tengah atau akhir kata.
+= Contoh | {{q ?|يَ[ن]ظُرُونَ}}، {{q ?|ا[ن]كَدَرَتْ}}، {{q ?|سُ[ن]دُسٍ}}، {{q ?|أَ[ن]عَمَ}}، {{q ?|مِّ[ن]}}.
+
+## Tanwin
+= Definisi | nun sukun tambahan (bukan taukid), terletak diakhir isim, terucap namun tidak tertulis, terletak pada akhir kata benda, dilafalkan saat melanjutkan bacaan tidak saat berhenti, dan tandanya adalah harakat ganda.
+= Contoh | {{q ?|سِرَا[جًا] وَهَّاجًا}}، {{q ?|قَوْ[مٍ] هَادٍ}}، {{q ?|وُجُو[هٌ] يَوْمَئِذٍ}}، {{q ?|غَفُو[رٌ] حَلِيمٌ}}.
+
+@page 43
+## Hukum Nun Sukun dan Tanwin
+Nun sukun dan tanwin memiliki 4 hukum ketika bertemu dengan huruf hijaiyyah:
+1) **izhhar**: huruf-hurufnya: ({{a ء ه ع ح غ خ}}).
+2) **idgham (melebur)**: huruf-hurufnya: ({{a يَرْمَلُون}}). bighunnah: ({{a ينمو}}). bilaa ghunnah: ({{a ل ر}}).
+3) **iqlab (mengganti/menukar)** huruf-hurufnya: ({{a ب}}).
+4) **ikhfa (samar)**: huruf-hurufnya: (sisa-sisa huruf).
+
+@page 44
+# 1- Izhhar (Jelas) ({{a الإظهار}})
+### Definisi Izhhar
+= Secara bahasa | jelas dan terang.
+= Secara istilah | mengeluarkan setiap huruf dari makhrajnya tanpa adanya ghunnah tambahan.
+### Huruf-hurufnya
+Jika setelah nun sukun atau tanwin terdapat salah satu dari huruf izhhar yang enam, yaitu: ({{a ء ، هـ ، ع ، ح ، غ ، خ}}) hamzah, ha, ain, ha, ghain, dan kha maka harus dibaca izhhar dan disebut dengan izhhar halqi. Beberapa ulama mengumpulkannya pada huruf pertama setiap kata pada kalimat berikut {{a أَخِي هَاكَ عِلْمًا حَازَهُ غَيْرُ خَاسِرِ}} (Saudaraku ambillah ilmu, barang siapa yang memperolehnya tidak akan menjadi orang yang merugi).
+- **Disebut izhhar halqi** karena keluarnya enam huruf tersebut dari tenggorokan (halq).
+- **Sebab izhhar** jauhnya makhraj nun sukun dari makhraj tenggorokan (halq).
+- **Cara pengucapannya**: mengucapkan nun sukun atau tanwin dengan jelas tanpa ghunnah tambahan dan hindari memotong atau diam (sakt) dengan cara memberikan tempo tawassut (pertengahan, antara syiddah dan rakhawah).
+### Contoh
+| Huruf izhar | Nun sukun: Pada satu kata | Nun sukun: antara dua kata | Tanwin: Tanwin hanya terdapat pada dua kata |
+| Hamzah | {{q ?|وَيَ[ن]ـَٔوْنَ}} | {{q ?|مَ[نْ أَ]عْطَىٰ}} | {{q ?|وَجَنَّٰ[تٍ أَ]لْفَافًا}} |
+| Haa | {{q ?|وَيَ[نْهَ]وْنَ}} | {{q ?|مَ[نْ هَ]اجَرَ}} | {{q ?|وَلِكُلِّ قَوْ[مٍ هَ]ادٍ}} |
+| Ain | {{q ?|أَ[نْعَ]مْتَ}} | {{q ?|إِ[نْ عَ]لَيْكَ}} | {{q ?|حَكِي[مٌ عَ]لِيمٌ}} |
+| Haa | {{q ?|وَتَ[نْحِ]تُونَ}} | {{q ?|وَمَ[نْ حَ]وْلَهُ}} | {{q ?|قَرْ[ضًا حَ]سَنًا}} |
+| Ghain | {{q ?|فَسَيُ[نْغِ]ضُونَ}} | {{q ?|مِ[نْ غَ]يْرِ}} | {{q ?|لَعَفُ[وٌّ غَ]فُورٌ}} |
+| Khaa | {{q ?|وَالْمُ[نْخَ]نِقَةُ}} | {{q ?|مِّ[نْ خَ]وْفٍ}} | {{q ?|عَلِي[مٌ خَ]بِيرٌ}} |
+### Tanda Izhhar dalam Al-Qur'an
+untuk nun sukun: {{q ?|أَ[نْ]عَمْتَ}}، {{q ?|مَ[نْ] هَاجَرَ}}.
+untuk tanwin: {{q ?|عَبْ[دًا] إِذَا}}، {{q ?|وَجَنَّٰ[تٍ] أَلْفَافًا}}، {{q ?|غَفُو[رٌ] حَلِيمٌ}}.
+
+@page 45
+# 2- Idgham (memasukkan) ({{a الإدغام}})
+### Definisi Idgham
+= Secara bahasa | memasukkan sesuatu ke dalam sesuatu.
+= Secara istilah | memasukkan huruf sukun ke huruf berharakat dan menjadikannya satu huruf bertasydid sebagaimana huruf yang kedua.
+### Huruf-hurufnya
+Idghamkanlah nun sukun atau tanwin jika setelahnya terdapat salah satu huruf yang terangkai dalam kata ({{a يَرْمَلُون}}) (ya, ra, mim, lam, wawu, nun).
+- **Perhatian**: idgham nun sukun dan tanwin hanya terjadi pada dua kata.
+Idgham terbagi menjadi:
+## 1- Idgham Bighunnah
+Yaitu menampakkan suara sengau (ghunnah/ sengau), dan huruf-hurufnya terangkai pada kata ({{a يَنْمُو}}) (ya, nun, mim, wawu).
+| Huruf idgham | nun sukun | nun sukun | tanwin | tanwin |
+| Yaa | {{q ?|مَ[ن يَ]خْشَىٰ}} | {{q ?|وَمَ[ن يَ]عْمَلْ}} | {{q ?|وُجُو[هٌ يَ]وْمَئِذٍ}} | {{q ?|لِّقَوْ[مٍ يَ]تَفَكَّرُونَ}} |
+| Nun | {{q ?|إِ[ن نَّ]فَعَتِ}} | {{q ?|لَ[ن نَّ]دْخُلَهَا}} | {{q ?|عِظَٰمً[ا نَّ]خِرَةً}} | {{q ?|شَيْ[ءٍ نُّ]كُرٍ}} |
+| Mim | {{q ?|مِّ[ن مَّ]سَدٍ}} | {{q ?|مِ[ن مَّ]الٍ}} | {{q ?|نَفْ[سٌ مَّ]ا}} | {{q ?|صُحُفً[ا مُّ]طَهَّرَةً}} |
+| Wawu | {{q ?|مِّ[ن وَ]رَآئِهِم}} | {{q ?|مِ[ن وَ]الٍ}} | {{q ?|سِرَاجً[ا وَ]هَّاجًا}} | {{q ?|وَوَالِ[دٍ وَ]مَا وَلَدَ}} |
+## 2- Idgham Bilaa Ghunnah
+Yaitu tidak terdapat suara ghunnah, dan hurufnya adalah ({{a ل ر}}) lam dan ra.
+| Huruf idgham | nun sukun | nun sukun | tanwin | tanwin |
+| Laam | {{q ?|يَكُ[ن لَّ]هُ}} | {{q ?|مِّ[ن لَّ]دُنْهُ}} | {{q ?|مَا[لًا لُّ]بَدًا}} | {{q ?|هُ[دًى لِّ]لْمُتَّقِينَ}} |
+| Raa | {{q ?|مِ[ن رَّ]حِيقٍ}} | {{q ?|مِّ[ن رَّ]بِّهِمْ}} | {{q ?|غَفُو[رٌ رَّ]حِيمٌ}} | {{q ?|عِيشَ[ةٍ رَّ]اضِيَةٍ}} |
+
+@page 46
+### Idgham pada nun sukun atau tanwin berdasarkan sempurna dan tidaknya terbagi menjadi dua bagian
+1) **Idgham kamil (memasukkan dengan sempurna)**: yaitu memasukkan nun sukun atau tanwin ke huruf setelahnya tanpa menyisakan sifat-sifatnya, hurufnya terangkai dalam ({{a نرمل}}).
+2) **Idgham naqish (memasukkan dengan kurang sempurna)**: yaitu memasukkan huruf nun sukun atau tanwin ke huruf setelahnya dengan menyisakan sifat ghunnah, hurufnya: wawu dan ya ({{a و ي}}).
+- Berdasarkan hal tersebut idgham dibedakan menjadi 3 macam:
+= Idgham bighunnah | Kamil: hurufnya ({{a م ن}}). Naqish: hurufnya ({{a و ي}}).
+= Idgham bila ghunnah | Kamil: hurufnya ({{a ر ل}}).
+### Tanda Idgham dalam Al-Qur'an
+Tanda idgham nun sukun atau tanwin (idgham kamil) pada huruf ({{a ن، م، ل، ر}}): {{q ?|مِّ[ن مَّ]سَدٍ}}، {{q ?|يَكُ[ن لَّ]هُ}}، {{q ?|صُحُفً[ا مُّ]طَهَّرَةً}}، {{q ?|عِيشَ[ةٍ رَّ]اضِيَةٍ}}، {{q ?|خَيْ[رٌ لِّ]لْأَبْرَارِ}}.
+Tanda idgham nun sukun atau tanwin (idgham naqish) pada huruf ({{a و، ي}}): {{q ?|مِّ[ن وَ]رَآئِهِم}}، {{q ?|مَ[ن يَ]خْشَىٰ}}، {{q ?|سِرَاجً[ا وَ]هَّاجًا}}، {{q ?|يَوْمَئِ[ذٍ يُ]وَفِّيهِمُ}}، {{q ?|وُجُو[هٌ يَ]وْمَئِذٍ}}.
+
+@page 47
+### Dua catatan
+1) Nun sukun tidak diidghamkan pada **wawu** dan **ya** jika terdapat pada satu kata, hanya ada 4 kata didalam al-Qur’an, yaitu {{q 6:99|قِ[نْوَ]انٌ}}، {{q 13:4|صِ[نْوَ]انٌ}}، {{q ?|ٱلدُّ[نْيَ]ا}} Terdapat pada banyak، {{q ?|بُ[نْيَ]ٰنٌ}} Terdapat pada banyak. Agar tidak menyerupai kata-kata jika diidghamkan maka berubah artinya.
+2) Hafs ‘an Ashim dari jalur Syatibiyyah tidak mengidghamkan nun ke huruf wawu saat washal pada dua tempat: {{q 36:1|يس}} {{q 36:2|وَٱلْقُرْءَانِ ٱلْحَكِيمِ}} [Yasin: 1-2] memperjelas suara nun ({{a يَا سِينْ وَالقُرآنِ}}). {{q 68:1|[ن] وَٱلْقَلَمِ وَمَا يَسْطُرُونَ}} [Al-Qalam: 1] memperjelas suara nun ({{a نُونْ وَالقَلَمِ وما يَسْطُرُون}}).
+Begitu juga tidak mengidghamkan nun pada huruf ra pada firman Allah: {{q 75:27|وَقِيلَ مَ[نْ رَ]اقٍ}} karena sakt yang menghalangi idgham dan karena riwayah.
+
+@page 48
+# 3- Iqlab (mengubah) ({{a الإقلاب}})
+### Definisi Iqlab
+= Secara bahasa | mengubah sesuatu menjadi sesuatu yang lain.
+= Secara istilah | mengubah nun sukun atau tanwin menjadi mim tersembunyi dengan ghunnah ketika diikuti huruf ba ({{a ب}}).
+### Hurufnya
+Hanya memiliki satu huruf saja yaitu ba ({{a ب}}).
+- **Cara melafalkannya**: merapatkan kedua bibir dengan lembut tanpa adanya celah dan buatlah bibir saling menempel, agar tidak menyerupai idgham pada huruf mim.
+### Contoh
+| | | | | |
+| Nun sukun: Satu kata | {{q ?|فَأَ[نۢبَ]تْنَا}} | {{q ?|لَيُ[نۢبَ]ذَنَّ}} | {{q ?|ٱلْأَ[نۢبَ]آءُ}} | {{q ?|أَ[نۢبِ]ـُٔونِى}} |
+| Nun sukun: Dua kata | {{q ?|مِ[نۢ بَ]عْدِ}} | {{q ?|مِ[نۢ بَ]قْلِهَا}} | {{q ?|مِ[نۢ بَ]عْضٍ}} | {{q ?|مِ[نۢ بَ]يْتِكَ}} |
+| Tanwin | {{q ?|سَمِيعًۢ[ا بَ]صِيرًا}} | {{q ?|عُتُلٍّۢ[ بَ]عْدَ}} | {{q ?|نَفْسٌۢ[ بِ]مَا}} | {{q ?|سَمِيعٌۢ[ بَ]صِيرٌ}} |
+### Tanda iqlab dalam Al-Qur'an
+Pada nun sukun: terdapat huruf mim kecil diatas huruf nun sebagai ganti dari sukun: {{q ?|فَأَ[نۢ]بَتْنَا}}، {{q ?|مِ[نۢ] بَقْلِهَا}}.
+Pada tanwin: meletakkan mim kecil sebagai ganti harakat kedua yaitu harakat yang menunjukkan tanwin: {{q ?|نَفْ[سٌۢ] بِمَا}}، {{q ?|سَمِي[عًۢا] بَصِيرًا}}، {{q ?|سَمِي[عٌۢ] بَصِيرٌ}}.
+
+@page 49
+# 4- Ikhfa (samar) ({{a الإخفاء}})
+### Definisi Ikhfa
+= Secara bahasa | menutup.
+= Secara istilah | melafalkan antara sifat izhar dan idgham, tidak bertasydid, disertai ghunnah pada huruf pertama.
+### Huruf-hurufnya
+Disamarkan suara nun sukun dan tanwin disertai ghunnah ketika diikuti 15 huruf hijaiyyah, yaitu sisa-sisa huruf izhar, idgham dan iqlab. Nadzim (pembuat nadzam) telah mengumpulkan huruf ikhfa di setiap awal kata pada bait berikut ini:
+{{a صِفْ ذَا ثَنَا كَمْ جَادَ شَخْصٌ قَدْ سَمَا ... دُمْ طَيِّبًا زِدْ فِي تُقًى ضَعْ ظَالِمَا}}
+- Ikhfa nun sukun dan tanwin dinamakan dengan **ikhfa haqiqy**.
+- **Cara melafalkannya**: meletakkan lidah mendekat ke makhraj huruf ikhfa.
+### Tingkatan Ikhfa
+Ikhfa memiliki tingkat kesamaran yang berbeda berdasarkan dekat dan jauhnya huruf ikhfa dari nun sukun dan tanwin, jika nun sukun dan tanwin dekat dengan huruf-huruf ikhfa maka ikhfanya lebih kuat daripada yang lainnya.
+1) **Ikhfa aqwa**: jika diikuti huruf: ({{a ط، د، ت}}).
+2) **Ikhfa ausath**: jika diikuti 10 huruf: ({{a ص، ذ، ث، ج، ش، س، ز، ف، ض، ظ}}).
+3) **Ikhfa adna**: huruf yang dekat dengan izhar: ({{a ق، ك}}).
+- Dan jagalah ikhfa haqiqi dari sisi ghunnah tebal dan tipis sesuai dengan huruf yang mengikutinya, jika setelahnya huruf tebal maka tebalkalah sesuai tingkat ketebalannya, dan jika setelahnya huruf tipis maka tipiskanlah.
+| Ghunnah diikuti huruf tebal | Ghunnah diikuti huruf tipis |
+| {{q ?|بِرِي[حٍ صَ]رْصَرٍ}} | {{q ?|مَّ[نثُ]ورًا}} |
+| {{q ?|مِ[ن ضَ]رِيعٍ}} | {{q ?|إِ[ن كَ]انَ}} |
+| {{q ?|يَ[نطِ]قُونَ}} | {{q ?|شَيْ[ءٍ شَ]هِيدٌ}} |
+| {{q ?|شَيْ[ءٍ قَ]دِيرٌ}} | {{q ?|فَمَ[ن ثَ]قُلَتْ}} |
+| {{q ?|يَ[نظُ]رُونَ}} | {{q ?|مِّ[ن جُ]وعٍ}} |
+
+@page 50
+### Tanda Ikhfa dalam Al-Qur'an
+Dan jagalah ikhfa haqiqi dari sisi ghunnah tebal dan tipis sesuai dengan huruf yang mengikutinya, jika setelahnya huruf tebal maka tebalkalah sesuai tingkat ketebalannya, dan jika setelahnya huruf tipis maka tipiskanlah: {{q ?|إِ[ن كُ]نتُمْ}}.
+| Huruf ikhfa | Nun sukun: Pada satu kata | Nun sukun: antara dua kata | Tanwin |
+| {{a ص}} | {{q ?|فَٱ[نصَ]بْ}} | {{q ?|عَ[ن صَ]لَاتِهِمْ}} | {{q ?|بِرِي[حٍ صَ]رْصَرٍ}} |
+| {{a ذ}} | {{q ?|مُ[نذِ]رٌ}} | {{q ?|مِّ[ن ذَ]كَرٍ}} | {{q ?|وَطَعَامً[ا ذَ]ا}} |
+| {{a ث}} | {{q ?|مَّ[نثُ]ورًا}} | {{q ?|فَمَ[ن ثَ]قُلَتْ}} | {{q ?|أَزْوَٰجً[ا ثَ]لَٰثَةً}} |
+| {{a ك}} | {{q ?|عَ[نكَ]}} | {{q ?|إِ[ن كَ]انَ}} | {{q ?|وَرِزْ[قٌ كَ]رِيمٌ}} |
+| {{a ج}} | {{q ?|وَأَ[نجَ]يْنَا}} | {{q ?|مِّ[ن جُ]وعٍ}} | {{q ?|قَوْمً[ا جَ]بَّارِينَ}} |
+| {{a ش}} | {{q ?|أَ[نشَ]رَهُ}} | {{q ?|فَمَ[ن شَ]آءَ}} | {{q ?|شَيْ[ءٍ شَ]هِيدٌ}} |
+| {{a ق}} | {{q ?|أَ[نقَ]ضَ}} | {{q ?|مِ[ن قَ]بْلُ}} | {{q ?|شَيْ[ءٍ قَ]دِيرٌ}} |
+| {{a س}} | {{q ?|تُ[نسَ]ىٰ}} | {{q ?|مِّ[ن سِ]جِّيلٍ}} | {{q ?|وَرَجُلً[ا سَ]لَمًا}} |
+| {{a د}} | {{q ?|عِ[ندَ]}} | {{q ?|مِ[ن دَ]آبَّةٍ}} | {{q ?|قِنْوَا[نٌ دَ]انِيَةٌ}} |
+| {{a ط}} | {{q ?|يَ[نطِ]قُونَ}} | {{q ?|مَ[ن طَ]غَىٰ}} | {{q ?|صَعِيدً[ا طَ]يِّبًا}} |
+| {{a ز}} | {{q ?|أَ[نزَ]لْنَٰهُ}} | {{q ?|مِّ[ن زَ]كَوٰةٍ}} | {{q ?|صَعِيدً[ا زَ]لَقًا}} |
+| {{a ف}} | {{q ?|ٱ[نفَ]طَرَتْ}} | {{q ?|مِ[ن فَ]ضْلِ}} | {{q ?|سَفَ[رٍ فَ]عِدَّةٌ}} |
+| {{a ت}} | {{q ?|أَفَأَ[نتَ]}} | {{q ?|مَ[ن تَ]زَكَّىٰ}} | {{q ?|عَمَ[دٍ تَ]رَوْنَهَا}} |
+| {{a ض}} | {{q ?|مَّ[نضُ]ودٍ}} | {{q ?|مِ[ن ضَ]رِيعٍ}} | {{q 80:38|مُّسْفِرَ[ةٌ]}} {{q 80:39|[ضَ]احِكَةٌ}} |
+| {{a ظ}} | {{q ?|يَ[نظُ]رُونَ}} | {{q ?|مَ[ن ظَ]لَمَ}} | {{q ?|ظِ[لًّا ظَ]لِيلًا}} |

@@ -1,0 +1,10 @@
+%status sourceExtracted
+
+@page 9
+# Tingkatan Membaca Al-Qur’an (Kecepatannya) ({{a مَراتِبُ التِلاوةِ (سُرعاتُ القِراءةِ)}})
+Ada 3 tingkatan (kecepatan) membaca al-Qur'an:
+= 1 - Tahqiq (lambat) | Merupakan bacaan lambat dengan tingkat kemahiran dan ketelitian tertinggi, sangat cocok untuk pembelajaran.
+= 2 - Hadr (cepat) | Merupakan bacaan cepat yang dilakukan oleh qari’ tanpa merusak huruf, makhrajnya, atau sifat-sifatnya. Dalam tingkatan hadr, seorang qari’ harus memperhatikan 2 hal: a- kecepatan membaca. b- kemahiran membaca tanpa mengabaikan aturan dan tidak merusaknya.
+= 3 - Tadwir (pertengahan) | Merupakan bacaan pertengahan antara tahqiq (lambat) dan hadr (cepat).
+- **Tartil** tidak termasuk dalam tingkatan qira’ah, tetapi ia melekat pada tiga tingkatan diatas, jadi tartil adalah membaca dengan memahami dan mentadabburi disertai memberikan haq dan mustahaq huruf pada sifat dan makhrajnya. Karena sesungguhnya al-Qur’an diturunkan untuk diamalkan, difahami dan ditadabburi sebagaimana firman Allah: {{q 38:29|*}} [Shad: 29].
+> “Ini adalah sebuah kitab yang Kami turunkan kepadamu penuh dengan berkah supaya mereka memperhatikan ayat-ayatnya dan supaya mendapat pelajaran orang-orang yang mempunyai pikiran.” (Shad: 29)

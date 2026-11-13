@@ -1,0 +1,258 @@
+"""Generates lib/l10n/arb/app_{ar,ckb,en,id}.arb. Edit strings here, then run:
+  python3 -I tools/gen_arb.py && flutter gen-l10n
+"""
+import json, os, re, sys
+OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'lib', 'l10n', 'arb')
+# key: (description, ar, ckb, en, id)
+S = {
+ 'navHome': ('Bottom navigation: home', 'الرئيسية', 'سەرەکی', 'Home', 'Beranda'),
+ 'navLessons': ('Bottom navigation: lessons', 'الدروس', 'وانەکان', 'Lessons', 'Pelajaran'),
+ 'navRules': ('Bottom navigation: rules guide', 'القواعد', 'ڕێساکان', 'Rules', 'Kaidah'),
+ 'navPractice': ('Bottom navigation: practice', 'التدريب', 'ڕاهێنان', 'Practice', 'Latihan'),
+ 'navMore': ('Bottom navigation: more', 'المزيد', 'زیاتر', 'More', 'Lainnya'),
+
+ 'actionCancel': ('', 'إلغاء', 'پاشگەزبوونەوە', 'Cancel', 'Batal'),
+ 'actionDelete': ('', 'حذف', 'سڕینەوە', 'Delete', 'Hapus'),
+ 'actionDone': ('', 'تم', 'تەواو', 'Done', 'Selesai'),
+ 'actionGo': ('', 'انتقال', 'بڕۆ', 'Go', 'Buka'),
+ 'actionOk': ('', 'حسنًا', 'باشە', 'OK', 'OK'),
+ 'actionSave': ('', 'حفظ', 'پاشەکەوتکردن', 'Save', 'Simpan'),
+
+ 'editionArabic': ('Name of the Arabic book edition', 'النسخة العربية', 'وەشانی عەرەبی', 'Arabic edition', 'Edisi bahasa Arab'),
+ 'editionKurdish': ('Name of the Kurdish book edition', 'النسخة الكردية', 'وەشانی کوردی', 'Kurdish edition', 'Edisi bahasa Kurdi'),
+ 'editionEnglish': ('Name of the English book edition', 'النسخة الإنجليزية', 'وەشانی ئینگلیزی', 'English edition', 'Edisi bahasa Inggris'),
+ 'editionIndonesian': ('Name of the Indonesian book edition', 'النسخة الإندونيسية', 'وەشانی ئیندۆنیزی', 'Indonesian edition', 'Edisi bahasa Indonesia'),
+
+ 'pageLabel': ('Printed page number label. {number} is already localized.', 'صفحة {number}', 'لاپەڕە {number}', 'Page {number}', 'Halaman {number}'),
+ 'pageRangeLabel': ('Printed page range', 'الصفحات {start}–{end}', 'لاپەڕە {start}–{end}', 'Pages {start}–{end}', 'Halaman {start}–{end}'),
+ 'pageCover': ('Front cover page', 'الغلاف', 'بەرگ', 'Cover', 'Sampul'),
+ 'pageBackCover': ('Back cover page', 'الغلاف الخلفي', 'بەرگی دواوە', 'Back cover', 'Sampul belakang'),
+ 'pageUnnumbered': ('A page without a printed number', 'صفحة غير مرقّمة', 'لاپەڕەی بێ ژمارە', 'Unnumbered page', 'Halaman tanpa nomor'),
+
+ 'homeContinueTitle': ('', 'تابع القراءة', 'بەردەوام بە لە خوێندنەوە', 'Continue reading', 'Lanjutkan membaca'),
+ 'homeStartTitle': ('', 'ابدأ بالدرس الأول', 'بە وانەی یەکەم دەست پێبکە', 'Start with the first lesson', 'Mulai dari pelajaran pertama'),
+ 'homeContinueOtherEdition': ('Last-read topic is missing from the current-language edition', 'هذا الموضوع غير موجود في {current}، لذلك يُفتح في {other}.', 'ئەم بابەتە لە {current}دا نییە، بۆیە لە {other}دا دەکرێتەوە.', 'This topic is not in the {current}, so it opens in the {other}.', 'Topik ini tidak ada di {current}, jadi dibuka di {other}.'),
+ 'homeCurriculum': ('', 'فهرس موضوعات التجويد', 'پێڕستی بابەتەکانی تەجوید', 'Tajweed topics index', 'Indeks topik tajwid'),
+ 'homeCurriculumSummary': ('', '{topics} موضوعًا في {groups} وحدات', '{topics} بابەت لە {groups} بەشدا', '{topics} topics in {groups} units', '{topics} topik dalam {groups} unit'),
+ 'homeRecentBookmarks': ('', 'أحدث العلامات', 'دوایین نیشانەکان', 'Recent bookmarks', 'Penanda terbaru'),
+ 'homeReviewSuggestion': ('', 'اقتراح للمراجعة', 'پێشنیاری پێداچوونەوە', 'Suggested review', 'Saran untuk diulang'),
+ 'reviewMissed': ('', 'أصبتَ في {correct} من {answered} من أسئلة «{topic}». راجع الدرس ثم أعد المحاولة.', 'لە پرسیارەکانی «{topic}» {correct} لە {answered} دروست بوون. پێداچوونەوە بە وانەکەدا بکە و دووبارە هەوڵ بدەرەوە.', 'You answered {correct} of {answered} correctly in «{topic}». Review the lesson, then try again.', 'Anda menjawab benar {correct} dari {answered} di «{topic}». Ulangi pelajarannya, lalu coba lagi.'),
+ 'reviewTryPractice': ('', 'قرأتَ «{topic}». جرّب أسئلته للتثبيت.', '«{topic}»ت خوێندەوە. پرسیارەکانی تاقی بکەرەوە بۆ جێگیرکردن.', 'You have read «{topic}». Try its practice questions to consolidate.', 'Anda sudah membaca «{topic}». Coba soal latihannya untuk memantapkan.'),
+ 'reviewFinishLesson': ('', 'بدأتَ «{topic}». أكمله وعلّمه مكتملًا عندما تنتهي.', 'دەستت بە «{topic}» کردووە. تەواوی بکە و کاتێک تەواو بوو وەک تەواوکراو دیاری بکە.', 'You have started «{topic}». Finish it and mark it completed when you are done.', 'Anda sudah memulai «{topic}». Selesaikan dan tandai selesai bila sudah.'),
+ 'reviewNextLesson': ('', 'الدرس التالي: «{topic}».', 'وانەی داهاتوو: «{topic}».', 'Next lesson: «{topic}».', 'Pelajaran berikutnya: «{topic}».'),
+ 'reviewOpenLesson': ('', 'افتح الدرس', 'وانەکە بکەرەوە', 'Open lesson', 'Buka pelajaran'),
+ 'streakDays': ('Optional, quiet study streak. {count} localized.', 'أيام دراسة متتالية: {count}', 'ڕۆژانی خوێندنی یەک لەدوای یەک: {count}', 'Consecutive study days: {count}', 'Hari belajar berturut-turut: {count}'),
+ 'streakNone': ('Shown when there is no current streak. Never guilt-inducing.', 'كل يوم فرصة جديدة للتعلّم.', 'هەموو ڕۆژێک دەرفەتێکی نوێیە بۆ فێربوون.', 'Every day is a fresh chance to learn.', 'Setiap hari adalah kesempatan baru untuk belajar.'),
+
+ 'curriculumTitle': ('', 'موضوعات التجويد', 'بابەتەکانی تەجوید', 'Tajweed topics', 'Topik tajwid'),
+ 'curriculumIntro': ('', 'الموضوعات ({count}) بترتيب الكتاب، ويمكنك فتح أي موضوع مباشرة.', 'بابەتەکان ({count}) بە ڕیزبەندی کتێبەکەن، دەتوانیت ڕاستەوخۆ هەر بابەتێک بکەیتەوە.', '{count} topics in the order of the book. Any topic can be opened directly.', '{count} topik sesuai urutan buku. Topik mana pun dapat langsung dibuka.'),
+ 'curriculumProgress': ('', 'بدأت: {read} · مكتملة: {completed} · من {total}', 'دەستپێکراو: {read} · تەواوکراو: {completed} · لە {total}', 'Started: {read} · Completed: {completed} · of {total}', 'Dimulai: {read} · Selesai: {completed} · dari {total}'),
+ 'curriculumGroupsNote': ('', 'تقسيم الوحدات لتسهيل التصفح فقط، وليس من الكتاب.', 'دابەشکردنی بەشەکان تەنها بۆ ئاسانکاری گەڕانە و لە کتێبەکەدا نییە.', 'Units are a browsing aid added by the app; they are not part of the book.', 'Pembagian unit hanya alat bantu aplikasi dan bukan bagian dari buku.'),
+ 'statusNotStarted': ('', 'لم يبدأ', 'دەستی پێنەکراوە', 'Not started', 'Belum dimulai'),
+ 'statusRead': ('', 'تمت قراءته', 'خوێندراوەتەوە', 'Read', 'Sudah dibaca'),
+ 'statusCompleted': ('', 'مكتمل', 'تەواوکراو', 'Completed', 'Selesai'),
+
+ 'topicNumber': ('App bar title of a topic. {number} localized.', 'الموضوع {number}', 'بابەتی {number}', 'Topic {number}', 'Topik {number}'),
+ 'topicInTheBook': ('', 'في الكتاب', 'لە کتێبەکەدا', 'In the book', 'Di dalam buku'),
+ 'topicReadHint': ('', 'تُعرض الصفحات الأصلية من {edition} كما هي.', 'لاپەڕە ڕەسەنەکانی {edition} وەک خۆیان پیشان دەدرێن.', 'The original pages of the {edition} are shown as printed.', 'Halaman asli {edition} ditampilkan apa adanya.'),
+ 'topicOpenPages': ('', 'افتح صفحات الدرس', 'لاپەڕەکانی وانەکە بکەرەوە', 'Open lesson pages', 'Buka halaman pelajaran'),
+ 'topicUnavailableTitle': ('', 'غير متوفر في هذه النسخة', 'لەم وەشانەدا بەردەست نییە', 'Not in this edition', 'Tidak ada di edisi ini'),
+ 'topicUnavailableInEdition': ('', 'موضوع «{topic}» غير موجود في {edition}. يمكنك قراءته في نسخة أخرى.', 'بابەتی «{topic}» لە {edition}دا نییە. دەتوانیت لە وەشانێکی تردا بیخوێنیتەوە.', 'The topic «{topic}» is not included in the {edition}. You can read it in another edition.', 'Topik «{topic}» tidak terdapat di {edition}. Anda dapat membacanya di edisi lain.'),
+ 'topicNotInEditionShort': ('', 'غير موجود في {edition}', 'لە {edition}دا نییە', 'Not in the {edition}', 'Tidak ada di {edition}'),
+ 'topicPartialShort': ('', 'تغطية جزئية', 'بەشێکی هەیە', 'partly covered', 'sebagian'),
+ 'topicAvailableIn': ('', 'متوفر في:', 'بەردەستە لە:', 'Available in:', 'Tersedia di:'),
+ 'topicMarkCompleted': ('Switch that marks a topic as completed (reading progress).', 'علّمه مكتملًا', 'وەک تەواوکراو دیاری بکە', 'Mark as completed', 'Tandai selesai'),
+ 'topicOtherEditions': ('', 'هذا الموضوع في النسخ الأخرى', 'ئەم بابەتە لە وەشانەکانی تردا', 'This topic in other editions', 'Topik ini di edisi lain'),
+ 'topicRelatedRules': ('', 'بطاقات القواعد', 'کارتەکانی ڕێسا', 'Rule cards', 'Kartu kaidah'),
+ 'topicPractice': ('', 'التدريب', 'ڕاهێنان', 'Practice', 'Latihan'),
+
+ 'readerLoading': ('', 'جارٍ فتح الكتاب…', 'کتێبەکە دەکرێتەوە…', 'Opening the book…', 'Membuka buku…'),
+ 'readerError': ('', 'تعذّر فتح هذه النسخة. أعد تثبيت التطبيق إذا استمرت المشكلة.', 'ئەم وەشانە نەکرایەوە. ئەگەر کێشەکە بەردەوام بوو، ئەپەکە دووبارە دابمەزرێنەوە.', 'This edition could not be opened. Reinstall the app if the problem continues.', 'Edisi ini tidak dapat dibuka. Pasang ulang aplikasi jika masalah berlanjut.'),
+ 'readerPageSemantics': ('Accessibility label for the page area', 'صفحة الكتاب: {edition}، {page}. انقر لإظهار أدوات القراءة أو إخفائها.', 'لاپەڕەی کتێب: {edition}، {page}. لێی بدە بۆ پیشاندان یان شاردنەوەی ئامرازەکانی خوێندنەوە.', 'Book page: {edition}, {page}. Tap to show or hide reading controls.', 'Halaman buku: {edition}, {page}. Ketuk untuk menampilkan atau menyembunyikan kontrol.'),
+ 'readerPositionOf': ('Physical position within the PDF file', '{current} من {total}', '{current} لە {total}', '{current} of {total}', '{current} dari {total}'),
+ 'readerAddBookmark': ('', 'إضافة علامة', 'زیادکردنی نیشانە', 'Add bookmark', 'Tambah penanda'),
+ 'readerRemoveBookmark': ('', 'إزالة العلامة', 'لابردنی نیشانە', 'Remove bookmark', 'Hapus penanda'),
+ 'bookmarkAdded': ('', 'أُضيفت العلامة', 'نیشانە زیادکرا', 'Bookmark added', 'Penanda ditambahkan'),
+ 'bookmarkRemoved': ('', 'أُزيلت العلامة', 'نیشانە لابرا', 'Bookmark removed', 'Penanda dihapus'),
+ 'readerNotes': ('', 'ملاحظات الصفحة', 'تێبینییەکانی لاپەڕە', 'Page notes', 'Catatan halaman'),
+ 'readerMore': ('', 'خيارات أخرى', 'هەڵبژاردەی تر', 'More options', 'Opsi lain'),
+ 'readerGoToPage': ('', 'الانتقال إلى صفحة', 'چوون بۆ لاپەڕە', 'Go to page', 'Pergi ke halaman'),
+ 'goToPageFieldLabel': ('', 'رقم الصفحة المطبوع', 'ژمارەی چاپکراوی لاپەڕە', 'Printed page number', 'Nomor halaman tercetak'),
+ 'goToPageInvalid': ('', 'أدخل رقمًا بين {min} و{max}.', 'ژمارەیەک لە نێوان {min} و {max} بنووسە.', 'Enter a number between {min} and {max}.', 'Masukkan angka antara {min} dan {max}.'),
+ 'readerChooseEdition': ('', 'القراءة في نسخة أخرى', 'خوێندنەوە لە وەشانێکی تر', 'Read in another edition', 'Baca di edisi lain'),
+ 'readerAppearance': ('', 'مظهر القراءة', 'ڕووکاری خوێندنەوە', 'Reading appearance', 'Tampilan membaca'),
+ 'readerThemeLight': ('', 'فاتح', 'ڕووناک', 'Light', 'Terang'),
+ 'readerThemeSepia': ('', 'ورقي', 'کاغەزی', 'Sepia', 'Sepia'),
+ 'readerThemeNight': ('', 'ليلي', 'شەو', 'Night', 'Malam'),
+ 'readerDimPages': ('', 'تخفيف سطوع الصفحات', 'کەمکردنەوەی ڕووناکی لاپەڕەکان', 'Dim the pages', 'Redupkan halaman'),
+ 'readerDimPagesHint': ('', 'يخفّف السطوع بالتساوي دون تغيير الألوان.', 'ڕووناکی بە یەکسانی کەم دەکاتەوە بەبێ گۆڕینی ڕەنگەکان.', 'Lowers brightness evenly without changing any colour.', 'Mengurangi kecerahan secara merata tanpa mengubah warna.'),
+ 'readerColorsNote': ('', 'ألوان الكتاب تحمل معنى تعليميًّا، لذلك لا تُعكس الصفحات ولا يُعاد تلوينها.', 'ڕەنگەکانی کتێبەکە مانای فێرکارییان هەیە، بۆیە لاپەڕەکان پێچەوانە ناکرێنەوە و ڕەنگیان ناگۆڕدرێت.', 'The book’s colours carry teaching meaning, so pages are never inverted or recoloured.', 'Warna dalam buku memiliki makna pembelajaran, sehingga halaman tidak pernah dibalik atau diwarnai ulang.'),
+ 'readerShowThumbnails': ('', 'إظهار الصفحات المصغّرة', 'پیشاندانی لاپەڕە بچووککراوەکان', 'Show page thumbnails', 'Tampilkan gambar mini halaman'),
+ 'readerHideThumbnails': ('', 'إخفاء الصفحات المصغّرة', 'شاردنەوەی لاپەڕە بچووککراوەکان', 'Hide page thumbnails', 'Sembunyikan gambar mini halaman'),
+ 'readerLessonDetails': ('', 'تفاصيل الدرس', 'وردەکاری وانەکە', 'Lesson details', 'Detail pelajaran'),
+
+ 'notesForPage': ('', 'ملاحظات {page}', 'تێبینییەکانی {page}', 'Notes for {page}', 'Catatan {page}'),
+ 'notesPrivateHint': ('', 'تُحفظ ملاحظاتك على هذا الجهاز فقط.', 'تێبینییەکانت تەنها لەسەر ئەم ئامێرە پاشەکەوت دەکرێن.', 'Your notes are saved on this device only.', 'Catatan Anda hanya disimpan di perangkat ini.'),
+ 'notesHint': ('', 'اكتب ملاحظة…', 'تێبینییەک بنووسە…', 'Write a note…', 'Tulis catatan…'),
+ 'notesAdd': ('', 'إضافة ملاحظة', 'زیادکردنی تێبینی', 'Add note', 'Tambah catatan'),
+ 'notesEdit': ('', 'تعديل الملاحظة', 'دەستکاریکردنی تێبینی', 'Edit note', 'Ubah catatan'),
+ 'notesOpenPage': ('', 'افتح الصفحة', 'لاپەڕەکە بکەرەوە', 'Open page', 'Buka halaman'),
+ 'notesEmpty': ('', 'لا توجد ملاحظات بعد. أضف ملاحظة من شاشة القراءة.', 'هێشتا هیچ تێبینییەک نییە. لە شاشەی خوێندنەوە تێبینی زیاد بکە.', 'No notes yet. Add one from the reading screen.', 'Belum ada catatan. Tambahkan dari layar membaca.'),
+ 'notesTab': ('', 'الملاحظات', 'تێبینییەکان', 'Notes', 'Catatan'),
+ 'bookmarksTab': ('', 'العلامات', 'نیشانەکان', 'Bookmarks', 'Penanda'),
+ 'bookmarksEmpty': ('', 'لا توجد علامات بعد. أضف علامة من شاشة القراءة.', 'هێشتا هیچ نیشانەیەک نییە. لە شاشەی خوێندنەوە نیشانە زیاد بکە.', 'No bookmarks yet. Add one from the reading screen.', 'Belum ada penanda. Tambahkan dari layar membaca.'),
+ 'bookmarksAndNotes': ('', 'العلامات والملاحظات', 'نیشانە و تێبینییەکان', 'Bookmarks and notes', 'Penanda dan catatan'),
+
+ 'rulesTitle': ('', 'دليل القواعد', 'ڕێبەری ڕێساکان', 'Rules guide', 'Panduan kaidah'),
+ 'rulesIntro': ('', 'بطاقات مختصرة للقواعد المشروحة في الكتب، مع مثال موثّق ورابط إلى الدرس.', 'کارتی کورت بۆ ئەو ڕێسایانەی لە کتێبەکاندا ڕوونکراونەتەوە، لەگەڵ نموونەیەکی پشتڕاستکراو و بەستەر بۆ وانەکە.', 'Short cards for rules explained in the books, each with a verified example and a link to the lesson.', 'Kartu ringkas untuk kaidah yang dijelaskan dalam buku, masing-masing dengan contoh terverifikasi dan tautan ke pelajarannya.'),
+ 'rulesAwaitingReview': ('Release build with no reviewed rule cards yet', 'بطاقات القواعد قيد المراجعة العلمية وستتوفر بعد اعتمادها. الكتب متاحة كاملة في الدروس.', 'کارتەکانی ڕێسا لەژێر پێداچوونەوەی زانستیدان و دوای پەسەندکردن بەردەست دەبن. کتێبەکان بە تەواوی لە وانەکاندا بەردەستن.', 'Rule cards are under expert review and will appear once approved. The complete books are available under Lessons.', 'Kartu kaidah sedang ditinjau ahli dan akan tersedia setelah disetujui. Buku lengkap tersedia di Pelajaran.'),
+ 'ruleCardTitle': ('', 'بطاقة القاعدة', 'کارتی ڕێسا', 'Rule card', 'Kartu kaidah'),
+ 'ruleFromLesson': ('', 'من درس: {topic}', 'لە وانەی: {topic}', 'From the lesson: {topic}', 'Dari pelajaran: {topic}'),
+ 'ruleDefinition': ('', 'التعريف', 'پێناسە', 'Definition', 'Definisi'),
+ 'ruleSourceLine': ('', 'من {edition}، صفحة {page}', 'لە {edition}، لاپەڕە {page}', 'From the {edition}, page {page}', 'Dari {edition}, halaman {page}'),
+ 'ruleNotInEdition': ('', 'لا يتناول {edition} هذه الجزئية بنص مستقل؛ الملخّص أعلاه كُتب للتطبيق.', '{edition} ئەم بەشە بە دەقێکی سەربەخۆ باس ناکات؛ کورتەکەی سەرەوە بۆ ئەپەکە نووسراوە.', 'The {edition} does not cover this point in its own text; the summary above was written for the app.', '{edition} tidak membahas bagian ini dalam teks tersendiri; ringkasan di atas ditulis untuk aplikasi.'),
+ 'ruleArabicSource': ('', 'نص النسخة العربية:', 'دەقی وەشانی عەرەبی:', 'Text of the Arabic edition:', 'Teks edisi bahasa Arab:'),
+ 'ruleLetters': ('', 'الحروف', 'پیتەکان', 'Letters', 'Huruf'),
+ 'ruleAllLettersExcept': ('', 'جميع الحروف ما عدا:', 'هەموو پیتەکان جگە لە:', 'All letters except:', 'Semua huruf kecuali:'),
+ 'ruleExample': ('', 'مثال', 'نموونە', 'Example', 'Contoh'),
+ 'ruleHighlightedLetters': ('', 'الحروف الملوّنة', 'پیتە ڕەنگکراوەکان', 'The highlighted letters', 'Huruf yang ditandai'),
+ 'ruleInTheBooks': ('', 'في الكتب', 'لە کتێبەکاندا', 'In the books', 'Di dalam buku'),
+ 'ruleOpenLesson': ('', 'الدرس', 'وانەکە', 'Lesson', 'Pelajaran'),
+ 'rulePractice': ('', 'تدرّب', 'ڕاهێنان بکە', 'Practise', 'Berlatih'),
+ 'quranExcerptFrom': ('Label under a partial verse', 'مقتطف من {reference}', 'بەشێک لە {reference}', 'Excerpt from {reference}', 'Kutipan dari {reference}'),
+ 'quranExcerptSemantics': ('Accessibility label for a Qur\'anic example', 'مثال قرآني: {text}. الحروف الملوّنة: {highlighted}. {reference}', 'نموونەی قورئانی: {text}. پیتە ڕەنگکراوەکان: {highlighted}. {reference}', 'Qur’anic example: {text}. Highlighted letters: {highlighted}. {reference}', 'Contoh Al-Qur’an: {text}. Huruf yang ditandai: {highlighted}. {reference}'),
+
+ 'previewBadge': ('Marks unreviewed supplementary content in development builds', 'معاينة للتطوير', 'پێشبینینی گەشەپێدان', 'Development preview', 'Pratinjau pengembangan'),
+ 'previewExplanation': ('', 'هذه المادة الإضافية لم تُراجَع بعد من مختص، وتظهر في نسخة التطوير فقط.', 'ئەم بابەتە زیادەیە هێشتا لەلایەن پسپۆڕەوە پێداچوونەوەی بۆ نەکراوە و تەنها لە وەشانی گەشەپێداندا دەردەکەوێت.', 'This supplementary material has not yet been reviewed by an expert and appears only in development builds.', 'Materi tambahan ini belum ditinjau ahli dan hanya muncul di versi pengembangan.'),
+
+ 'makharijTitle': ('', 'مخارج الحروف', 'دەرچەی پیتەکان', 'Articulation points', 'Makharijul huruf'),
+ 'makharijSubtitle': ('', 'الرسم التوضيحي مع المخارج السبعة عشر', 'وێنەی ڕوونکەرەوە لەگەڵ حەڤدە دەرچەکە', 'The diagram with all seventeen points', 'Diagram dengan tujuh belas makhraj'),
+ 'makharijIntro': ('', 'يعرض الكتاب {areas} مخارج عامة و{points} مخرجًا خاصًّا. اختر مخرجًا لترى موضعه ووصفه.', 'کتێبەکە {areas} دەرچەی گشتی و {points} دەرچەی تایبەت دەخاتەڕوو. دەرچەیەک هەڵبژێرە بۆ بینینی شوێن و وەسفەکەی.', 'The book presents {areas} general areas and {points} specific articulation points. Choose a point to see where it is and how it is described.', 'Buku ini menyajikan {areas} makhraj umum dan {points} makhraj khusus. Pilih makhraj untuk melihat letak dan penjelasannya.'),
+ 'makharijDiagramSource': ('', 'الرسم من الكتاب نفسه. كبّره بإصبعين.', 'وێنەکە هی خودی کتێبەکەیە. بە دوو پەنجە گەورەی بکە.', 'Illustration from the book itself. Pinch to zoom.', 'Ilustrasi dari buku itu sendiri. Cubit untuk memperbesar.'),
+ 'makharijOpenDiagramPage': ('', 'صفحة الرسم', 'لاپەڕەی وێنەکە', 'Diagram page', 'Halaman diagram'),
+ 'makharijAllPoints': ('', 'جميع المخارج', 'هەموو دەرچەکان', 'All articulation points', 'Semua makhraj'),
+ 'makharijAllAreas': ('', 'الكل', 'هەموو', 'All', 'Semua'),
+ 'makharijNotMarked': ('', 'لا يحدد الرسم هذا الموضع بعلامة؛ راجع صفحة الكتاب لرسمه التفصيلي.', 'وێنەکە ئەم شوێنە بە نیشانە دیاری ناکات؛ بۆ وێنە وردەکەی سەیری لاپەڕەی کتێبەکە بکە.', 'This place is not marked on the diagram; see the book page for its detailed illustration.', 'Tempat ini tidak ditandai pada diagram; lihat halaman buku untuk ilustrasi rincinya.'),
+ 'makharijReadInBook': ('', '{edition}، صفحة {page}', '{edition}، لاپەڕە {page}', '{edition}, page {page}', '{edition}, halaman {page}'),
+
+ 'practiceTitle': ('', 'التدريب', 'ڕاهێنان', 'Practice', 'Latihan'),
+ 'practiceIntro': ('', 'أسئلة إضافية كُتبت للتطبيق، وأمثلتها مأخوذة من جداول الكتب وموثّقة.', 'پرسیاری زیادە کە بۆ ئەپەکە نووسراون، نموونەکانیان لە خشتەکانی کتێبەکانەوە وەرگیراون و پشتڕاستکراونەتەوە.', 'Supplementary questions written for the app. Their examples come from the books’ tables and are verified.', 'Soal tambahan yang ditulis untuk aplikasi. Contohnya diambil dari tabel buku dan sudah diverifikasi.'),
+ 'practiceAwaitingReview': ('', 'أسئلة التدريب قيد المراجعة وستتوفر بعد اعتمادها.', 'پرسیارەکانی ڕاهێنان لەژێر پێداچوونەوەدان و دوای پەسەندکردن بەردەست دەبن.', 'Practice questions are under review and will appear once approved.', 'Soal latihan sedang ditinjau dan akan tersedia setelah disetujui.'),
+ 'practiceOverall': ('', 'نتيجتك', 'ئەنجامەکەت', 'Your results', 'Hasil Anda'),
+ 'practiceNotTried': ('', 'عدد الأسئلة: {count} — لم تبدأ بعد.', 'ژمارەی پرسیارەکان: {count} — هێشتا دەستت پێنەکردووە.', '{count} questions — not started yet.', '{count} soal — belum dimulai.'),
+ 'practicePerformance': ('Correct latest answers / answered / total', 'صحيحة: {correct} من {answered} مُجابة · المجموع {total}', 'دروست: {correct} لە {answered} وەڵامدراو · کۆی گشتی {total}', 'Correct: {correct} of {answered} answered · {total} in total', 'Benar: {correct} dari {answered} dijawab · total {total}'),
+ 'practiceSeparateFromReading': ('', 'تقدّم القراءة يُسجَّل منفصلًا عن نتائج التدريب.', 'پێشکەوتنی خوێندنەوە جیا لە ئەنجامەکانی ڕاهێنان تۆمار دەکرێت.', 'Reading progress is recorded separately from practice results.', 'Kemajuan membaca dicatat terpisah dari hasil latihan.'),
+ 'practiceStart': ('', 'ابدأ التدريب', 'دەست بە ڕاهێنان بکە', 'Start practice', 'Mulai latihan'),
+ 'practiceContinue': ('', 'تابع التدريب', 'بەردەوام بە لە ڕاهێنان', 'Continue practice', 'Lanjutkan latihan'),
+ 'practiceByLesson': ('', 'حسب الدرس', 'بەپێی وانە', 'By lesson', 'Per pelajaran'),
+ 'practiceThisLesson': ('', 'تدرّب على هذا الدرس', 'ڕاهێنان لەسەر ئەم وانەیە بکە', 'Practise this lesson', 'Latih pelajaran ini'),
+ 'practiceReset': ('', 'مسح نتائج التدريب', 'سڕینەوەی ئەنجامەکانی ڕاهێنان', 'Clear practice results', 'Hapus hasil latihan'),
+ 'practiceResetConfirm': ('', 'ستُمسح نتائج التدريب فقط. تبقى العلامات والملاحظات وتقدّم القراءة كما هي.', 'تەنها ئەنجامەکانی ڕاهێنان دەسڕدرێنەوە. نیشانە و تێبینی و پێشکەوتنی خوێندنەوە وەک خۆیان دەمێننەوە.', 'Only practice results will be cleared. Bookmarks, notes and reading progress stay as they are.', 'Hanya hasil latihan yang dihapus. Penanda, catatan, dan kemajuan membaca tetap tersimpan.'),
+
+ 'quizProgress': ('', 'السؤال {current} من {total}', 'پرسیاری {current} لە {total}', 'Question {current} of {total}', 'Soal {current} dari {total}'),
+ 'quizSupplementary': ('', 'سؤال إضافي، ليس من نص الكتاب.', 'پرسیاری زیادە، لە دەقی کتێبەکە نییە.', 'Supplementary question, not from the book’s text.', 'Soal tambahan, bukan dari teks buku.'),
+ 'quizIdentifyPrompt': ('', 'ما الحكم في الحروف الملوّنة؟', 'حوکمی پیتە ڕەنگکراوەکان چییە؟', 'Which rule applies to the highlighted letters?', 'Hukum apa yang berlaku pada huruf yang ditandai?'),
+ 'quizTrueFalsePrompt': ('', 'صواب أم خطأ؟', 'ڕاست یان هەڵە؟', 'True or false?', 'Benar atau salah?'),
+ 'quizTrue': ('', 'صواب', 'ڕاست', 'True', 'Benar'),
+ 'quizFalse': ('', 'خطأ', 'هەڵە', 'False', 'Salah'),
+ 'quizCounts': ('A number of counts (harakat). {value} localized.', '{value} حركات', '{value} حەرەکە', '{value} counts', '{value} harakat'),
+ 'quizFeedbackCorrect': ('', 'إجابة صحيحة', 'وەڵامی دروست', 'Correct', 'Benar'),
+ 'quizFeedbackIncorrect': ('', 'ليست هذه الإجابة', 'ئەمە وەڵامەکە نییە', 'Not quite', 'Belum tepat'),
+ 'quizCorrectAnswer': ('Accessibility value of the correct option', 'الإجابة الصحيحة', 'وەڵامی دروست', 'correct answer', 'jawaban benar'),
+ 'quizYourAnswer': ('Accessibility value of the chosen wrong option', 'إجابتك', 'وەڵامەکەت', 'your answer', 'jawaban Anda'),
+ 'quizReviewRule': ('', 'بطاقة القاعدة', 'کارتی ڕێسا', 'Rule card', 'Kartu kaidah'),
+ 'quizOpenLesson': ('', 'الدرس', 'وانەکە', 'The lesson', 'Pelajaran'),
+ 'quizNext': ('', 'السؤال التالي', 'پرسیاری داهاتوو', 'Next question', 'Soal berikutnya'),
+ 'quizSeeResult': ('', 'عرض النتيجة', 'بینینی ئەنجام', 'See result', 'Lihat hasil'),
+ 'quizFinished': ('', 'أحسنت المتابعة', 'دەستخۆش', 'Well done for practising', 'Bagus, terus berlatih'),
+ 'quizScore': ('', 'أصبت في {correct} من {total}', '{correct} لە {total} دروست بوون', '{correct} of {total} correct', '{correct} dari {total} benar'),
+ 'quizFinishedHint': ('', 'ستظهر الأسئلة التي أخطأت فيها أولًا في المرة القادمة.', 'جاری داهاتوو ئەو پرسیارانەی هەڵەت تێدا کردوون یەکەم دەردەکەون.', 'Questions you missed will come first next time.', 'Soal yang terlewat akan muncul lebih dulu lain kali.'),
+
+ 'searchTitle': ('', 'البحث', 'گەڕان', 'Search', 'Cari'),
+ 'searchHint': ('', 'ابحث عن موضوع أو قاعدة أو مصطلح', 'بە دوای بابەت یان ڕێسا یان زاراوەدا بگەڕێ', 'Search topics, rules and terms', 'Cari topik, kaidah, dan istilah'),
+ 'searchCoverage': ('Honest description of search coverage', 'يبحث في عناوين الموضوعات وأسماء القواعد والمصطلحات بالّلغات الأربع. أما نص الصفحات فيُبحث فيه في النسختين الإنجليزية والإندونيسية فقط، لأن نص النسختين العربية والكردية لا يُستخرج بدقة.', 'لە ناونیشانی بابەتەکان و ناوی ڕێساکان و زاراوەکاندا بە هەر چوار زمانەکە دەگەڕێت. دەقی لاپەڕەکان تەنها لە وەشانی ئینگلیزی و ئیندۆنیزیدا دەگەڕدرێت، چونکە دەقی وەشانی عەرەبی و کوردی بە وردی دەرناهێنرێت.', 'Searches topic titles, rule names and key terms in all four languages. Page text is searched only in the English and Indonesian editions, because the text of the Arabic and Kurdish editions cannot be extracted reliably.', 'Mencari judul topik, nama kaidah, dan istilah dalam keempat bahasa. Teks halaman hanya dicari pada edisi bahasa Inggris dan Indonesia, karena teks edisi Arab dan Kurdi tidak dapat diekstrak dengan andal.'),
+ 'searchLessons': ('', 'الموضوعات', 'بابەتەکان', 'Topics', 'Topik'),
+ 'searchRules': ('', 'بطاقات القواعد', 'کارتەکانی ڕێسا', 'Rule cards', 'Kartu kaidah'),
+ 'searchPagesIn': ('', 'صفحات من {edition}', 'لاپەڕەکانی {edition}', 'Pages in the {edition}', 'Halaman di {edition}'),
+ 'searchPagesNote': ('', 'وُجدت الكلمة في نص هذه الصفحات؛ موضعها داخل الصفحة غير محدد.', 'وشەکە لە دەقی ئەم لاپەڕانەدا دۆزرایەوە؛ شوێنەکەی لەناو لاپەڕەکەدا دیاری ناکرێت.', 'The word was found in the text of these pages; its exact position on the page is not marked.', 'Kata ditemukan dalam teks halaman ini; posisi tepatnya di halaman tidak ditandai.'),
+ 'searchMatched': ('', 'يطابق: {text}', 'یەکدەگرێتەوە لەگەڵ: {text}', 'Matches: {text}', 'Cocok: {text}'),
+ 'searchNoResults': ('', 'لا نتائج لـ«{query}»', 'هیچ ئەنجامێک نییە بۆ «{query}»', 'No results for «{query}»', 'Tidak ada hasil untuk «{query}»'),
+ 'searchNoResultsHint': ('', 'جرّب اسم الحكم أو جزءًا منه، مثل: الإخفاء، القلقلة، المد.', 'ناوی حوکمەکە یان بەشێکی تاقی بکەرەوە، وەک: ئیخفاء، قەلقەلە، مەد.', 'Try the name of a rule or part of it, such as ikhfaa, qalqalah or madd.', 'Coba nama hukum atau sebagiannya, misalnya ikhfa, qalqalah, atau mad.'),
+
+ 'settingsTitle': ('', 'الإعدادات', 'ڕێکخستنەکان', 'Settings', 'Pengaturan'),
+ 'settingsLanguage': ('', 'اللغة', 'زمان', 'Language', 'Bahasa'),
+ 'settingsLanguageHint': ('', 'تتغير الواجهة ونسخة الكتاب معًا. يُحفظ موضع القراءة في كل نسخة على حدة، ويُنقل الدرس الحالي إلى ما يقابله.', 'ڕووکار و وەشانی کتێبەکە پێکەوە دەگۆڕێن. شوێنی خوێندنەوە بۆ هەر وەشانێک بە جیا پاشەکەوت دەکرێت و وانەی ئێستا دەگوازرێتەوە بۆ هاوتاکەی.', 'The interface and the book edition change together. Reading positions are kept per edition, and the current lesson carries over to its equivalent.', 'Antarmuka dan edisi buku berubah bersamaan. Posisi membaca disimpan per edisi, dan pelajaran saat ini dipindahkan ke padanannya.'),
+ 'settingsStudy': ('', 'الدراسة', 'خوێندن', 'Study', 'Belajar'),
+ 'settingsStreak': ('', 'عدّاد الأيام المتتالية', 'ژمێرەری ڕۆژە یەک لەدوای یەکەکان', 'Consecutive-days counter', 'Penghitung hari berturut-turut'),
+ 'settingsStreakHint': ('', 'خيار هادئ يظهر في الرئيسية.', 'هەڵبژاردەیەکی ئارامە کە لە سەرەکیدا دەردەکەوێت.', 'A quiet option shown on Home.', 'Opsi tenang yang tampil di Beranda.'),
+ 'settingsHaptics': ('', 'الاهتزاز عند اللمس', 'لەرینەوە لە کاتی دەستلێدان', 'Haptic feedback', 'Getaran sentuh'),
+ 'settingsHapticsHint': ('', 'اهتزاز خفيف عند تغيير القسم، وتعليم الدرس مكتملًا، والإجابة في التدريب.', 'لەرینەوەیەکی سووک لە کاتی گۆڕینی بەش، دیاریکردنی وانە وەک تەواوکراو و وەڵامدانەوە لە ڕاهێناندا.', 'A light vibration when you switch sections, mark a lesson completed or answer a question.', 'Getaran ringan saat berpindah bagian, menandai pelajaran selesai, atau menjawab soal.'),
+ 'settingsReminder': ('', 'تذكير يومي', 'بیرخستنەوەی ڕۆژانە', 'Daily reminder', 'Pengingat harian'),
+ 'settingsReminderHint': ('', 'إشعار واحد كل يوم في الوقت الذي تختاره. يُجدوَل على جهازك ولا يُرسل شيء إلى أي جهة.', 'یەک ئاگادارکردنەوە هەموو ڕۆژێک لەو کاتەی هەڵیدەبژێریت. لەسەر ئامێرەکەت ڕێکدەخرێت و هیچ شتێک بۆ هیچ لایەک نانێردرێت.', 'One notification a day at the time you choose. It is scheduled on your device; nothing is sent anywhere.', 'Satu notifikasi setiap hari pada waktu yang Anda pilih. Dijadwalkan di perangkat Anda; tidak ada yang dikirim ke mana pun.'),
+ 'settingsReminderTime': ('', 'وقت التذكير', 'کاتی بیرخستنەوە', 'Reminder time', 'Waktu pengingat'),
+ 'settingsReminderDenied': ('', 'لم يُسمح بالإشعارات. يمكنك السماح بها من إعدادات الجهاز ثم تفعيل التذكير.', 'ڕێگە بە ئاگادارکردنەوەکان نەدراوە. دەتوانیت لە ڕێکخستنەکانی ئامێرەکەوە ڕێگەی پێبدەیت و پاشان بیرخستنەوەکە چالاک بکەیت.', 'Notifications are not allowed. You can allow them in the device settings, then turn the reminder on.', 'Notifikasi tidak diizinkan. Anda dapat mengizinkannya di pengaturan perangkat, lalu menyalakan pengingat.'),
+ 'reminderBody': ('Text of the daily reminder notification', 'حان وقت وِردك من التجويد. تابع درسك من حيث توقفت.', 'کاتی خوێندنەوەی تەجویدی ئەمڕۆتە. وانەکەت لەو شوێنەوە بەردەوام بکە کە لێی وەستایت.', 'Time for today\'s Tajweed study. Continue your lesson where you left off.', 'Waktunya belajar tajwid hari ini. Lanjutkan pelajaran Anda dari tempat terakhir.'),
+ 'reminderChannel': ('Android notification channel name', 'التذكير اليومي', 'بیرخستنەوەی ڕۆژانە', 'Daily reminder', 'Pengingat harian'),
+ 'bookTitle': ('Entry that opens the whole book for browsing', 'الكتاب كاملًا', 'هەموو کتێبەکە', 'The whole book', 'Buku lengkap'),
+ 'bookSubtitle': ('{edition} localized edition name', 'تصفّح صفحات {edition} كاملةً كمرجع', 'هەموو لاپەڕەکانی {edition} وەک سەرچاوە ببینە', 'Browse every page of the {edition} as a reference', 'Jelajahi semua halaman {edition} sebagai rujukan'),
+ 'settingsOffline': ('', 'تعمل الكتب الأربعة وكل المزايا دون اتصال بالإنترنت، ولا يلزم إنشاء حساب.', 'هەر چوار کتێبەکە و هەموو تایبەتمەندییەکان بەبێ ئینتەرنێت کار دەکەن و پێویست بە دروستکردنی هەژمار ناکات.', 'All four books and every feature work offline. No account is needed.', 'Keempat buku dan semua fitur berfungsi tanpa internet. Tidak perlu akun.'),
+
+ 'lessonRead': ('Primary button: open the native lesson text', 'اقرأ الدرس', 'وانەکە بخوێنەوە', 'Read the lesson', 'Baca pelajaran'),
+ 'lessonOriginalPages': ('Opens the original PDF pages', 'الصفحات الأصلية', 'لاپەڕە ڕەسەنەکان', 'Original pages', 'Halaman asli'),
+ 'lessonFromPage': ('Marker before content taken from a book page. {page} localized.', 'من صفحة {page}', 'لە لاپەڕە {page}', 'From page {page}', 'Dari halaman {page}'),
+ 'lessonViewInBook': ('', 'اعرضها في الكتاب', 'لە کتێبەکەدا ببینە', 'View in the book', 'Lihat di buku'),
+ 'lessonSourceNote': ('', 'هذا النص منقول من صفحات {edition}. الصفحات الأصلية هي المرجع.', 'ئەم دەقە لە لاپەڕەکانی {edition} وەرگیراوە. لاپەڕە ڕەسەنەکان سەرچاوەن.', 'This text is taken from the pages of the {edition}. The original pages remain the reference.', 'Teks ini diambil dari halaman {edition}. Halaman asli tetap menjadi rujukan.'),
+ 'lessonUnderReview': ('Shown in preview builds on unreviewed lesson text', 'لم يُراجَع هذا النقل بعد؛ عند أي اختلاف فالمعتمد هو الصفحة الأصلية.', 'ئەم گواستنەوەیە هێشتا پێداچوونەوەی بۆ نەکراوە؛ لە هەر جیاوازییەکدا لاپەڕە ڕەسەنەکە پشتی پێدەبەسترێت.', 'This transcription has not been reviewed yet; where it differs, the original page is authoritative.', 'Salinan ini belum ditinjau; jika ada perbedaan, halaman asli yang menjadi acuan.'),
+ 'lessonFigure': ('Accessibility label of a book illustration', 'رسمٌ توضيحيٌّ من الكتاب، انقر للتكبير', 'وێنەیەکی ڕوونکەرەوە لە کتێبەکە، لێی بدە بۆ گەورەکردن', 'Illustration from the book; tap to enlarge', 'Ilustrasi dari buku; ketuk untuk memperbesar'),
+ 'lessonFullVerse': ('Title of the sheet showing the full verse of an excerpt', 'الآية كاملة', 'ئایەتەکە بە تەواوی', 'The full verse', 'Ayat lengkap'),
+ 'lessonQuranTapHint': ('Accessibility hint on a Qur\'anic example', 'انقر لعرض الآية كاملة', 'لێی بدە بۆ بینینی ئایەتەکە بە تەواوی', 'Tap to see the full verse', 'Ketuk untuk melihat ayat lengkap'),
+ 'lessonContents': ('Button/sheet title: list of the lesson\'s sections', 'محتويات الدرس', 'ناوەڕۆکی وانەکە', 'Lesson contents', 'Isi pelajaran'),
+ 'lessonEnd': ('Heading at the end of a lesson', 'نهاية الدرس', 'کۆتایی وانەکە', 'End of the lesson', 'Akhir pelajaran'),
+ 'lessonPrevious': ('', 'الدرس السابق', 'وانەی پێشوو', 'Previous lesson', 'Pelajaran sebelumnya'),
+ 'lessonNext': ('', 'الدرس التالي', 'وانەی داهاتوو', 'Next lesson', 'Pelajaran berikutnya'),
+ 'searchInLessons': ('', 'في نصوص الدروس', 'لە دەقی وانەکاندا', 'In the lesson text', 'Di teks pelajaran'),
+ 'searchCoverageWithLessons': ('Search coverage when lesson text is available', 'يبحث في نصوص الدروس وعناوين الموضوعات وأسماء القواعد والمصطلحات بالّلغات الأربع، وفي نص صفحات النسختين الإنجليزية والإندونيسية.', 'لە دەقی وانەکان و ناونیشانی بابەتەکان و ناوی ڕێساکان و زاراوەکاندا بە هەر چوار زمانەکە دەگەڕێت، هەروەها لە دەقی لاپەڕەکانی وەشانی ئینگلیزی و ئیندۆنیزیدا.', 'Searches the lesson text, topic titles, rule names and key terms in all four languages, and the page text of the English and Indonesian editions.', 'Mencari teks pelajaran, judul topik, nama kaidah, dan istilah dalam keempat bahasa, serta teks halaman edisi bahasa Inggris dan Indonesia.'),
+
+ 'aboutTitle': ('', 'عن التطبيق', 'دەربارەی ئەپەکە', 'About', 'Tentang'),
+ 'aboutBody': ('', 'رفيق لدراسة التجويد مبني حول كتب «تبسيط التجويد – المستوى الثاني». تُعرض الكتب الأصلية كما هي، وتحيط بها أدوات للتصفح والمراجعة والتدريب.', 'هاوڕێیەکی خوێندنی تەجویدە کە لەسەر کتێبەکانی «ئاسانکردنی تەجوید – ئاستی دووەم» دروستکراوە. کتێبە ڕەسەنەکان وەک خۆیان پیشان دەدرێن و ئامرازی گەڕان و پێداچوونەوە و ڕاهێنانیان لەگەڵدایە.', 'A Tajweed study companion built around the “Simplifying Tajweed – Level 2” books. The original books are shown unchanged, surrounded by tools for browsing, review and practice.', 'Pendamping belajar tajwid yang dibangun di sekitar buku “Tajwid Ringkas – Level 2”. Buku aslinya ditampilkan apa adanya, dilengkapi alat untuk menjelajah, mengulang, dan berlatih.'),
+ 'aboutBooks': ('', 'الكتب', 'کتێبەکان', 'The books', 'Buku'),
+ 'aboutAuthor': ('', 'المؤلف: {name}', 'نووسەر: {name}', 'Author: {name}', 'Penulis: {name}'),
+ 'aboutTranslator': ('', 'الترجمة: {name}', 'وەرگێڕان: {name}', 'Translator: {name}', 'Penerjemah: {name}'),
+ 'aboutDistribution': ('Quotes the authors\' distribution condition', 'ينص الكتاب على أن «حق النشر متاح للجميع ما دام بعيدًا عن الزيادة أو النقصان».', 'کتێبەکە دەڵێت مافی بڵاوکردنەوە بۆ هەمووان ڕێگەپێدراوە بەو مەرجەی هیچی بۆ زیاد و کەم نەکرێت.', 'The book states that “a copyright is available for everyone as long as he keeps them away from adding or removing.”', 'Buku ini menyatakan bahwa hak sebar terbuka bagi siapa saja selama tidak ada penambahan atau pengurangan.'),
+ 'aboutUnchanged': ('', 'تُعرض الصفحات دون أي إضافة أو حذف. النسخ المضمّنة مضغوطة بنيويًّا فقط، وقد تحقق أن عرضها مطابق للأصل بكسلًا بكسل.', 'لاپەڕەکان بەبێ هیچ زیادکردن و لابردنێک پیشان دەدرێن. وەشانە ناوخراوەکان تەنها لە ڕووی پێکهاتەوە پەستێنراون و پشتڕاستکراوەتەوە کە پیشاندانیان پیکسڵ بە پیکسڵ وەک ئەسڵەکەیە.', 'Pages are shown with nothing added or removed. The bundled copies are only structurally compacted, and their rendering was verified to be pixel-identical to the originals.', 'Halaman ditampilkan tanpa penambahan atau pengurangan. Salinan yang dibundel hanya dipadatkan secara struktural, dan tampilannya telah diverifikasi identik piksel demi piksel dengan aslinya.'),
+ 'aboutPrivacyTitle': ('', 'الخصوصية', 'تایبەتمەندی', 'Privacy', 'Privasi'),
+ 'aboutPrivacy': ('', 'لا يجمع التطبيق أي بيانات ولا يتصل بالإنترنت. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق.', 'ئەپەکە هیچ زانیارییەک کۆ ناکاتەوە و پەیوەندی بە ئینتەرنێتەوە ناکات. ڕێکخستن و پێشکەوتن و تێبینییەکانت تەنها لەسەر ئامێرەکەت پاشەکەوت دەکرێن و بە سڕینەوەی ئەپەکە دەسڕدرێنەوە.', 'The app collects no data and makes no internet connections. Your settings, progress and notes stay on your device only and are deleted with the app.', 'Aplikasi ini tidak mengumpulkan data dan tidak terhubung ke internet. Pengaturan, kemajuan, dan catatan Anda hanya tersimpan di perangkat Anda dan terhapus bersama aplikasi.'),
+ 'aboutQuranText': ('', 'النص القرآني', 'دەقی قورئان', 'Qur’anic text', 'Teks Al-Qur’an'),
+ 'aboutTanzil': ('', 'الأمثلة القرآنية في الدروس وبطاقات القواعد والتدريب منقولة حرفيًّا من نص مشروع تنزيل (الرسم العثماني، الإصدار 1.1، tanzil.net) ومراجعها محققة آليًّا.', 'نموونە قورئانییەکانی ناو وانەکان و کارتەکانی ڕێسا و ڕاهێنان وشە بە وشە لە دەقی پڕۆژەی تەنزیل (ڕێنووسی عوسمانی، وەشانی 1.1، tanzil.net) وەرگیراون و سەرچاوەکانیان بە شێوەی ئۆتۆماتیکی پشتڕاستکراونەتەوە.', 'Qur’anic examples in the lessons, rule cards and practice are copied verbatim from the Tanzil Project text (Uthmani script, version 1.1, tanzil.net), and their references are checked automatically.', 'Contoh Al-Qur’an pada pelajaran, kartu kaidah, dan latihan disalin apa adanya dari teks Tanzil Project (rasm Utsmani, versi 1.1, tanzil.net), dan rujukannya diperiksa secara otomatis.'),
+ 'aboutSupplementary': ('', 'المواد الإضافية', 'بابەتە زیادەکان', 'Supplementary material', 'Materi tambahan'),
+ 'aboutSupplementaryBody': ('', 'نصوص الدروس وبطاقات القواعد وأسئلة التدريب ومستكشف المخارج مبنية على نصوص الكتب، وتُراجَع قبل اعتمادها للإصدار.', 'دەقی وانەکان و کارتەکانی ڕێسا و پرسیارەکانی ڕاهێنان و گەڕۆکی دەرچەکان لەسەر دەقی کتێبەکان دروستکراون و پێش پەسەندکردن بۆ بڵاوکردنەوە پێداچوونەوەیان بۆ دەکرێت.', 'The lesson text, rule cards, practice questions and the articulation explorer are built from the books’ text and are reviewed before they are approved for release.', 'Teks pelajaran, kartu kaidah, soal latihan, dan penjelajah makhraj disusun dari teks buku dan ditinjau sebelum disetujui untuk rilis.'),
+ 'aboutFonts': ('', 'الخطوط', 'فۆنتەکان', 'Fonts', 'Huruf'),
+ 'aboutFontsBody': ('', 'Noto Naskh Arabic وNoto Sans Arabic وAmiri وAmiri Quran وLiterata وInter، جميعها بترخيص SIL Open Font License 1.1. خطوط الكتب الأصلية لا تُوزَّع مع التطبيق.', 'Noto Naskh Arabic و Noto Sans Arabic و Amiri و Amiri Quran و Literata و Inter، هەموویان بە مۆڵەتی SIL Open Font License 1.1. فۆنتەکانی کتێبە ڕەسەنەکان لەگەڵ ئەپەکەدا دابەش ناکرێن.', 'Noto Naskh Arabic, Noto Sans Arabic, Amiri, Amiri Quran, Literata and Inter, all under the SIL Open Font License 1.1. The original books’ fonts are not distributed with the app.', 'Noto Naskh Arabic, Noto Sans Arabic, Amiri, Amiri Quran, Literata, dan Inter, semuanya berlisensi SIL Open Font License 1.1. Huruf asli buku tidak didistribusikan bersama aplikasi.'),
+ 'aboutLicenses': ('', 'التراخيص', 'مۆڵەتەکان', 'Licences', 'Lisensi'),
+ 'aboutContentVersion': ('', 'إصدار المحتوى: {version}', 'وەشانی ناوەڕۆک: {version}', 'Content version: {version}', 'Versi konten: {version}'),
+}
+
+langs = ['ar', 'ckb', 'en', 'id']
+os.makedirs(OUT, exist_ok=True)
+for i, lang in enumerate(langs):
+    d = {'@@locale': lang}
+    for k, (desc, *vals) in S.items():
+        v = vals[i]
+        d[k] = v
+        if lang == 'ar':
+            ph = re.findall(r'\{(\w+)\}', vals[0])
+            meta = {}
+            if desc:
+                meta['description'] = desc
+            if ph:
+                meta['placeholders'] = {p: {'type': 'String'} for p in dict.fromkeys(ph)}
+            if meta:
+                d['@' + k] = meta
+        # sanity: same placeholders in every language
+        a = sorted(set(re.findall(r'\{(\w+)\}', vals[0])))
+        b = sorted(set(re.findall(r'\{(\w+)\}', v)))
+        assert a == b, (k, lang, a, b)
+    with open(os.path.join(OUT, f'app_{lang}.arb'), 'w', encoding='utf-8') as f:
+        json.dump(d, f, ensure_ascii=False, indent=2)
+        f.write('\n')
+print(len(S), 'keys x', len(langs))

@@ -1,0 +1,1031 @@
+{
+ "schemaVersion": 1,
+ "contentVersion": "2026.11.05-1",
+ "notes": "Supplementary practice questions written for the app (not original book content). Example words are taken from the example tables of the Level-2 books and verified against the Tanzil Uthmani text by tools/build_content.py. 'identify' questions use rule cards as answer options. All questions are status 'draft' until reviewed; Kurdish wording needs fluent-language review.",
+ "questions": [
+  {
+   "id": "q01",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "1:7",
+    "surah": 1,
+    "ayah": 7,
+    "text": "أَنْعَمْتَ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      2,
+      6
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "ا[ن][ع]مت"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r04",
+    "r05"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها العين، وهو حرف حلقي، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ع)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by ع, a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf ain, salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q02",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "13:11",
+    "surah": 13,
+    "ayah": 11,
+    "text": "مِن وَالٍ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      2,
+      3
+     ],
+     [
+      4,
+      6
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "م[ن] [و]ال"
+   },
+   "options": [
+    "r02",
+    "r03",
+    "r05",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة في «مِن» تلاها الواو، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکنی «مِن» پیتی (و)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah in «مِن» is followed by و, one of the letters of (ينمو), so it is merged with ghunnah.",
+    "id": "Nun sukun pada «مِن» diikuti huruf wawu, salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q03",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:5",
+    "surah": 2,
+    "ayah": 5,
+    "text": "مِّن رَّبِّهِمْ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      8
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "م[ن] [ر]بهم"
+   },
+   "options": [
+    "r03",
+    "r02",
+    "r01",
+    "r04"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "النون الساكنة تلاها الراء، فتُدغم بلا غنة.",
+    "ckb": "نونی ساکن پیتی (ر)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by ر, so it is merged without ghunnah.",
+    "id": "Nun sukun diikuti huruf ra, sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q04",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:27",
+    "surah": 2,
+    "ayah": 27,
+    "text": "مِنۢ بَعْدِ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      2,
+      4
+     ],
+     [
+      5,
+      7
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "م[ن] [ب]عد"
+   },
+   "options": [
+    "r04",
+    "r05",
+    "r07",
+    "r02"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by ب, so it turns into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q05",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "8:32",
+    "surah": 8,
+    "ayah": 32,
+    "text": "إِن كَانَ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      2,
+      3
+     ],
+     [
+      4,
+      6
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "ا[ن] [ك]ان"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r04",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة في «إِن» تلاها الكاف، وهو من حروف الإخفاء، فتُخفى النون مع الغنة.",
+    "ckb": "نونی ساکنی «إِن» پیتی (ك)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە نونەکە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah in «إِن» is followed by ك, one of the ikhfaa letters, so the noon is hidden with ghunnah.",
+    "id": "Nun sukun pada «إِن» diikuti huruf kaf, salah satu huruf ikhfa, sehingga nun disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q06",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "5:15",
+    "surah": 5,
+    "ayah": 15,
+    "text": "جَآءَكُم مِّنَ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      13
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "جاءك[م] [م]ن"
+   },
+   "options": [
+    "r06",
+    "r07",
+    "r08",
+    "r02"
+   ],
+   "answer": "r06",
+   "explanation": {
+    "ar": "الميم الساكنة في «جَآءَكُم» تلتها ميم، فتُدغم إدغامًا شفويًّا مع الغنة.",
+    "ckb": "میمی ساکنی «جَآءَكُم» میمێکی بەدوادا هاتووە، بۆیە بە تێهەڵکێشکردنی لێوی و بە مینگەوە دەخوێنرێت.",
+    "en": "The meem sakinah in «جَآءَكُم» is followed by a meem, so it is Idgham Shafawi with ghunnah.",
+    "id": "Mim sukun pada «جَآءَكُم» diikuti mim, sehingga hukumnya idgham syafawi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q07",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "3:101",
+    "surah": 3,
+    "ayah": 101,
+    "text": "يَعْتَصِم بِٱللَّهِ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      8,
+      9
+     ],
+     [
+      10,
+      12
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "يعتص[م] [ب]الله"
+   },
+   "options": [
+    "r07",
+    "r04",
+    "r06",
+    "r08"
+   ],
+   "answer": "r07",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها الباء في كلمة أخرى، فتُخفى إخفاءً شفويًّا.",
+    "ckb": "میمی ساکن پیتی (ب)ی وشەیەکی تری بەدوادا هاتووە، بۆیە بە شاردنەوەی لێوی دەخوێنرێت.",
+    "en": "The meem sakinah is followed by ب in another word, so it is Ikhfaa Shafawi.",
+    "id": "Mim sukun diikuti huruf ba pada kata lain, sehingga hukumnya ikhfa syafawi."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q08",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "2:25",
+    "surah": 2,
+    "ayah": 25,
+    "text": "لَهُمْ جَنَّٰتٍ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      4,
+      6
+     ],
+     [
+      7,
+      9
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "له[م] [ج]نت"
+   },
+   "options": [
+    "r08",
+    "r07",
+    "r06",
+    "r01"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها الجيم، وليست ميمًا ولا باءً، فتُظهر.",
+    "ckb": "میمی ساکن پیتی (ج)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by ج, which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf jim, bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q09",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "111:1",
+    "surah": 111,
+    "ayah": 1,
+    "text": "وَتَبَّ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      4,
+      7
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "وت[ب]"
+   },
+   "options": [
+    "r10",
+    "r09",
+    "r05",
+    "r01"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "الباء المشددة في «وَتَبَّ» من حروف القلقلة، وتُقلقَل عند الوقف عليها.",
+    "ckb": "پیتی (ب)ی شەددار لە «وَتَبَّ»دا یەکێکە لە پیتەکانی قەلقەلە و لەکاتی وەستان لەسەری دەهەژێت.",
+    "en": "The baa with shaddah in «وَتَبَّ» is a qalqalah letter and is pronounced with qalqalah when stopping on it.",
+    "id": "Huruf ba bertasydid pada «وَتَبَّ» termasuk huruf qalqalah dan dibaca qalqalah saat waqaf."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q10",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "54:1",
+    "surah": 54,
+    "ayah": 1,
+    "text": "وَٱنشَقَّ ٱلْقَمَرُ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      11,
+      15
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "وانشق ا[ل][ق]مر"
+   },
+   "options": [
+    "r11",
+    "r12",
+    "r01",
+    "r10"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "اللام في «ٱلْقَمَرُ» تلاها القاف، وهو حرف قمري، فتُظهر اللام.",
+    "ckb": "لامی «ٱلْقَمَرُ» پیتی (ق)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam in «ٱلْقَمَرُ» is followed by ق, a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ٱلْقَمَرُ» diikuti huruf qaf, huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q11",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "54:1",
+    "surah": 54,
+    "ayah": 1,
+    "text": "ٱقْتَرَبَتِ ٱلسَّاعَةُ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      13,
+      17
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "اقتربت ا[ل][س]اعة"
+   },
+   "options": [
+    "r12",
+    "r11",
+    "r03",
+    "r02"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "اللام في «ٱلسَّاعَةُ» تلاها السين، وهو حرف شمسي، فتُدغم اللام.",
+    "ckb": "لامی «ٱلسَّاعَةُ» پیتی (س)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam in «ٱلسَّاعَةُ» is followed by س, a solar letter, so the laam is merged.",
+    "id": "Lam pada «ٱلسَّاعَةُ» diikuti huruf sin, huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q12",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:49",
+    "surah": 2,
+    "ayah": 49,
+    "text": "سُوٓءَ ٱلْعَذَابِ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      0,
+      6
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "[سوء] العذاب"
+   },
+   "options": [
+    "r17",
+    "r18",
+    "r16",
+    "r15"
+   ],
+   "answer": "r17",
+   "explanation": {
+    "ar": "جاءت الهمزة بعد الواو المدية في كلمة واحدة «سُوٓءَ»، فهو مد متصل.",
+    "ckb": "لە «سُوٓءَ»دا هەمزە لەدوای واوی مەد لە هەمان وشەدا هاتووە، بۆیە مەدی موتتەصیلە.",
+    "en": "In «سُوٓءَ» the hamzah follows the lengthening waaw in the same word, so it is Madd Mu'tasil.",
+    "id": "Pada «سُوٓءَ» hamzah terletak setelah wawu mad dalam satu kata, sehingga ini mad muttashil."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q13",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "66:8",
+    "surah": 66,
+    "ayah": 8,
+    "text": "تُوبُوٓا۟ إِلَى",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      3,
+      9
+     ],
+     [
+      10,
+      12
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "تو[بوا] [ا]لي"
+   },
+   "options": [
+    "r18",
+    "r17",
+    "r21",
+    "r16"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد في آخر «تُوبُوٓا۟» والهمزة في أول «إِلَى»، فهو مد منفصل.",
+    "ckb": "پیتی مەد لە کۆتایی «تُوبُوٓا۟»دایە و هەمزە لە سەرەتای «إِلَى»دا، بۆیە مەدی مونفەصیلە.",
+    "en": "The lengthening letter ends «تُوبُوٓا۟» and the hamzah begins «إِلَى», so it is Madd Munfasil.",
+    "id": "Huruf mad berada di akhir «تُوبُوٓا۟» dan hamzah di awal «إِلَى», sehingga ini mad munfashil."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q14",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "6:80",
+    "surah": 6,
+    "ayah": 80,
+    "text": "أَتُحَٰٓجُّوٓنِّى",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      4,
+      11
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "ات[ح][ج]وني"
+   },
+   "options": [
+    "r20",
+    "r17",
+    "r21",
+    "r15"
+   ],
+   "answer": "r20",
+   "explanation": {
+    "ar": "بعد حرف المد في «أَتُحَٰٓجُّوٓنِّى» حرف ساكن مدغم (الجيم المشددة) في الكلمة نفسها، فهو مد لازم كلمي مثقل.",
+    "ckb": "لە «أَتُحَٰٓجُّوٓنِّى»دا لەدوای پیتی مەدەوە پیتێکی ساکنی تێهەڵکێشکراو (جیمی شەددار) لە هەمان وشەدا هاتووە، بۆیە مەدی لازمی کەلیمی قورسە.",
+    "en": "In «أَتُحَٰٓجُّوٓنِّى» the lengthening letter is followed by a merged sukoon (the jeem with shaddah) in the same word, so it is Madd Lazim Kalimi Muthaqqal.",
+    "id": "Pada «أَتُحَٰٓجُّوٓنِّى» huruf mad diikuti huruf sukun yang diidghamkan (jim bertasydid) dalam satu kata, sehingga ini mad lazim kalimi mutsaqqal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q15",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "3:173",
+    "surah": 3,
+    "ayah": 173,
+    "text": "فَزَادَهُمْ إِيمَٰنًا",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      12,
+      15
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "فزادهم [اي]منا"
+   },
+   "options": [
+    "r16",
+    "r15",
+    "r17",
+    "r18"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّمت الهمزة على الياء المدية في «إِيمَٰنًا»، فهو مد بدل.",
+    "ckb": "لە «إِيمَٰنًا»دا هەمزە پێش یای مەد کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "In «إِيمَٰنًا» the hamzah comes before the lengthening yaa, so it is Madd al-Badal.",
+    "id": "Pada «إِيمَٰنًا» hamzah mendahului ya mad, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q16",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "1:5",
+    "surah": 1,
+    "ayah": 5,
+    "text": "وَإِيَّاكَ نَسْتَعِينُ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      19,
+      22
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "واياك نستع[ين]"
+   },
+   "options": [
+    "r21",
+    "r15",
+    "r22",
+    "r20"
+   ],
+   "answer": "r21",
+   "explanation": {
+    "ar": "عند الوقف على «نَسْتَعِينُ» تُسكَّن النون بعد الياء المدية، فهو مد عارض للسكون.",
+    "ckb": "لەکاتی وەستان لەسەر «نَسْتَعِينُ» نونەکە ساکن دەبێت لەدوای یای مەد، بۆیە مەدی عارض للسکونە.",
+    "en": "When stopping on «نَسْتَعِينُ», the noon takes a sukoon after the lengthening yaa, so it is Madd 'Arid Lissukoon.",
+    "id": "Saat waqaf pada «نَسْتَعِينُ», nun menjadi sukun setelah ya mad, sehingga ini mad 'aridh lissukun."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q17",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "106:3",
+    "surah": 106,
+    "ayah": 3,
+    "text": "هَٰذَا ٱلْبَيْتِ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      12,
+      16
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "هذا الب[يت]"
+   },
+   "options": [
+    "r22",
+    "r21",
+    "r15",
+    "r16"
+   ],
+   "answer": "r22",
+   "explanation": {
+    "ar": "عند الوقف على «ٱلْبَيْتِ» تُسكَّن التاء بعد الياء الساكنة المفتوح ما قبلها، فهو مد لين.",
+    "ckb": "لەکاتی وەستان لەسەر «ٱلْبَيْتِ» پیتی (ت) ساکن دەبێت لەدوای یایەکی ساکن کە فەتحەی لەپێشە، بۆیە مەدی لیینە.",
+    "en": "When stopping on «ٱلْبَيْتِ», the taa takes a sukoon after a yaa sakinah preceded by a fathah, so it is Madd al-Leen.",
+    "id": "Saat waqaf pada «ٱلْبَيْتِ», huruf ta menjadi sukun setelah ya sukun yang didahului fathah, sehingga ini mad lin."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q18",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "84:15",
+    "surah": 84,
+    "ayah": 15,
+    "text": "إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      11,
+      14
+     ],
+     [
+      23,
+      26
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "ان رب[ه] كان ب[ه] بصيرا"
+   },
+   "options": [
+    "r19",
+    "r15",
+    "r16",
+    "r17"
+   ],
+   "answer": "r19",
+   "explanation": {
+    "ar": "هاء الضمير في «رَبَّهُۥ» و«بِهِۦ» بين متحركين ولم يأتِ بعدها همز، فهو مد صلة صغرى.",
+    "ckb": "هائی ڕاناو لە «رَبَّهُۥ» و «بِهِۦ»دا لەنێوان دوو موتەحەریکدایە و هەمزەی بەدوادا نەهاتووە، بۆیە مەدی صیلەی بچوکە.",
+    "en": "The pronoun haa in «رَبَّهُۥ» and «بِهِۦ» is between two voweled letters with no hamzah after it, so it is the lesser connecting madd.",
+    "id": "Ha' dhomir pada «رَبَّهُۥ» dan «بِهِۦ» diapit dua huruf berharakat tanpa hamzah setelahnya, sehingga ini mad shilah sughra."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q19",
+   "type": "identify",
+   "topic": "t12",
+   "example": {
+    "ref": "78:5",
+    "surah": 78,
+    "ayah": 5,
+    "text": "ثُمَّ كَلَّا",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      2,
+      5
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "ث[م] كلا"
+   },
+   "options": [
+    "r09",
+    "r06",
+    "r02",
+    "r10"
+   ],
+   "answer": "r09",
+   "explanation": {
+    "ar": "الميم في «ثُمَّ» مشددة، فتُمد غنتها أكمل ما تكون.",
+    "ckb": "میمی «ثُمَّ» شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+    "en": "The meem in «ثُمَّ» carries a shaddah, so its ghunnah is held at its most complete.",
+    "id": "Mim pada «ثُمَّ» bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q20",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "8:32",
+    "surah": 8,
+    "ayah": 32,
+    "text": "قَالُوا۟ ٱللَّهُمَّ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      3,
+      8
+     ],
+     [
+      10,
+      14
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "قا[لوا] ا[لل]هم"
+   },
+   "options": [
+    "r13",
+    "r14",
+    "r11",
+    "r12"
+   ],
+   "answer": "r13",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد ضمٍّ في «قَالُوا۟»، فتُفخَّم اللام.",
+    "ckb": "لە «قَالُوا۟ ٱللَّهُمَّ»دا ساکنێک لەدوای ضەممە لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەفخیم دەکرێت.",
+    "en": "Before the name of Allah, «قَالُوا۟» ends in a sukoon that follows a dammah, so the laam is heavy.",
+    "id": "Sebelum lafzhul jalalah, «قَالُوا۟» berakhir dengan sukun setelah dhammah, sehingga lam dibaca tebal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q21",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "39:61",
+    "surah": 39,
+    "ayah": 61,
+    "text": "وَيُنَجِّى ٱللَّهُ",
+    "isWholeAyah": false,
+    "highlights": [
+     [
+      6,
+      10
+     ],
+     [
+      12,
+      16
+     ]
+    ],
+    "occurrencesInAyah": 1,
+    "pattern": "وين[جي] ا[لل]ه"
+   },
+   "options": [
+    "r14",
+    "r13",
+    "r12",
+    "r11"
+   ],
+   "answer": "r14",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد كسرٍ في «وَيُنَجِّى»، فتُرقَّق اللام.",
+    "ckb": "لە «وَيُنَجِّى ٱللَّهُ»دا ساکنێک لەدوای کەسرە لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەرقیق دەکرێت.",
+    "en": "Before the name of Allah, «وَيُنَجِّى» ends in a sukoon that follows a kasrah, so the laam is light.",
+    "id": "Sebelum lafzhul jalalah, «وَيُنَجِّى» berakhir dengan sukun setelah kasrah, sehingga lam dibaca tipis."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q22",
+   "type": "choice",
+   "topic": "t10",
+   "rule": "r05",
+   "prompt": {
+    "ar": "كم عدد حروف الإخفاء الحقيقي؟",
+    "ckb": "ژمارەی پیتەکانی ئیخفائی حەقیقی چەندە؟",
+    "en": "How many letters of ikhfaa (real hiding) are there?",
+    "id": "Berapa jumlah huruf ikhfa haqiqi?"
+   },
+   "options": [
+    {
+     "number": "15"
+    },
+    {
+     "number": "6"
+    },
+    {
+     "number": "4"
+    },
+    {
+     "number": "2"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "تُخفى النون الساكنة والتنوين عند خمسة عشر حرفًا.",
+    "ckb": "نونی ساکن و تەنوین لەکاتی گەیشتن بە پازدە پیت ئیخفاء دەکرێن.",
+    "en": "Noon sakinah and tanween are hidden before 15 letters.",
+    "id": "Nun sukun dan tanwin disamarkan ketika diikuti 15 huruf."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q23",
+   "type": "choice",
+   "topic": "t08",
+   "rule": "r10",
+   "prompt": {
+    "ar": "تُجمع حروف القلقلة في:",
+    "ckb": "پیتەکانی قەلقەلە لە کامەدا کۆکراونەتەوە؟",
+    "en": "The letters of qalqalah are collected in:",
+    "id": "Huruf-huruf qalqalah terangkai dalam:"
+   },
+   "options": [
+    {
+     "arabic": "قُطْبُ جَدٍّ"
+    },
+    {
+     "arabic": "يَنْمُو"
+    },
+    {
+     "arabic": "يَرْمَلُون"
+    },
+    {
+     "arabic": "ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).",
+    "ckb": "پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.",
+    "en": "The five qalqalah letters are collected in (قُطْبُ جَدٍّ).",
+    "id": "Lima huruf qalqalah terangkai dalam (قُطْبُ جَدٍّ)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q24",
+   "type": "choice",
+   "topic": "t10",
+   "rule": "r03",
+   "prompt": {
+    "ar": "حرفا الإدغام بلا غنة هما:",
+    "ckb": "پیتەکانی ئیدغام بەبێ مینگە کامانەن؟",
+    "en": "The letters of idgham without ghunnah are:",
+    "id": "Huruf idgham bilaa ghunnah adalah:"
+   },
+   "options": [
+    {
+     "arabic": "ل ر"
+    },
+    {
+     "arabic": "ي ن م و"
+    },
+    {
+     "arabic": "ب"
+    },
+    {
+     "arabic": "ء ه ع ح غ خ"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الإدغام بلا غنة حرفاه اللام والراء.",
+    "ckb": "ئیدغام بەبێ مینگە دوو پیتی هەیە: لام و را.",
+    "en": "Idgham without ghunnah has two letters: laam and raa.",
+    "id": "Idgham bilaa ghunnah memiliki dua huruf: lam dan ra."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q25",
+   "type": "choice",
+   "topic": "t15",
+   "rule": "r20",
+   "prompt": {
+    "ar": "كم حركة يُمد المد اللازم؟",
+    "ckb": "مەدی لازم چەند حەرەکە درێژ دەکرێتەوە؟",
+    "en": "How many counts is Madd Lazim lengthened?",
+    "id": "Berapa harakat panjang mad lazim?"
+   },
+   "options": [
+    {
+     "counts": "6"
+    },
+    {
+     "counts": "2"
+    },
+    {
+     "counts": "4–5"
+    },
+    {
+     "counts": "2–4–6"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "يُمد المد اللازم ست حركات بجميع أقسامه ولجميع القراء.",
+    "ckb": "مەدی لازم شەش حەرەکە درێژ دەکرێتەوە بەهەموو جۆرەکانیەوە لای هەموو قورئان خوێنان.",
+    "en": "Madd Lazim is lengthened 6 counts for all its divisions and for all reciters.",
+    "id": "Mad lazim dipanjangkan 6 harakat untuk semua jenisnya dan semua qari."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q26",
+   "type": "choice",
+   "topic": "t15",
+   "rule": "r17",
+   "prompt": {
+    "ar": "ما مقدار مد المد الواجب المتصل؟",
+    "ckb": "ئەندازەی مەدی واجبی موتتەصیل چەندە؟",
+    "en": "How long is Madd Wajib Mu'tasil?",
+    "id": "Berapa panjang mad wajib muttashil?"
+   },
+   "options": [
+    {
+     "counts": "4–5"
+    },
+    {
+     "counts": "2"
+    },
+    {
+     "counts": "6"
+    },
+    {
+     "counts": "2–4–6"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "مقدار مده (٤ – ٥) حركات.",
+    "ckb": "ئەندازەکەی (٤-٥) حەرەکەیە.",
+    "en": "It is lengthened 4 or 5 counts.",
+    "id": "Panjangnya 4 atau 5 harakat."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q27",
+   "type": "truefalse",
+   "topic": "t10",
+   "rule": "r02",
+   "prompt": {
+    "ar": "لا يكون إدغام النون الساكنة والتنوين إلا من كلمتين.",
+    "ckb": "ئیدغامی نونی ساکن و تەنوین تەنها لە دوو وشەدا ڕوودەدات.",
+    "en": "Idgham of noon sakinah and tanween occurs only across two words.",
+    "id": "Idgham nun sukun dan tanwin hanya terjadi pada dua kata."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ نبَّه الكتاب على أن إدغام النون الساكنة والتنوين لا يكون إلا من كلمتين.",
+    "ckb": "ڕاستە؛ کتێبەکە ئاماژەی بەوە کردووە کە ئیدغامی نونی ساکن و تەنوین تەنها لە دوو وشەدا ڕوودەدات.",
+    "en": "True. The book notes that this idgham only happens across two words.",
+    "id": "Benar. Buku ini menegaskan bahwa idgham tersebut hanya terjadi pada dua kata."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q28",
+   "type": "truefalse",
+   "topic": "t11",
+   "rule": "r07",
+   "prompt": {
+    "ar": "يقع الإخفاء الشفوي في كلمة واحدة.",
+    "ckb": "شاردنەوەی لێوی لە یەک وشەدا ڕوودەدات.",
+    "en": "Ikhfaa shafawi can occur within one word.",
+    "id": "Ikhfa syafawi dapat terjadi dalam satu kata."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ لا يكون الإخفاء الشفوي إلا في كلمتين.",
+    "ckb": "هەڵەیە؛ شاردنەوەی لێوی تەنها لە دوو وشەدا ڕوودەدات.",
+    "en": "False. Ikhfaa shafawi only occurs across two words.",
+    "id": "Salah. Ikhfa syafawi hanya terjadi pada dua kata."
+   },
+   "review": {
+    "status": "draft"
+   }
+  }
+ ]
+}

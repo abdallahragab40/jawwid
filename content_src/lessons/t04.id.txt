@@ -1,0 +1,64 @@
+%status sourceExtracted
+
+@page 10
+# Isti’adzah (Memohon Perlindungan) ({{a الاستِعاذة}})
+Jika qari’ ingin membaca al-Qur'an maka harus memulai dengan isti'adzah, sebagaimana firman Allah: {{q 16:98|*}} [An-Nahl: 98]
+> Apabila kamu membaca al Quran hendaklah kamu meminta perlindungan kepada Allah dari syaithan yang terkutuk. (An Nahl: 98)
+Baik qari’ membaca al-Qur’an dari awal surat maupun pertengahan.
+### Definisi
+= Secara bahasa | memohon perlindungan, berpegang teguh, dan membentengi diri.
+= Secara istilah | Sebuah kata yang digunakan untuk mencari perlindungan dan berpegang teguh kepada Allah dari syaithan yang terkutuk, ketika hendak membaca al-Qur’an.
+### Bentuk Lafal Isti'adzah
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} Aku berlindung kepada Allah dari godaan syaithan yang terkutuk.
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ إنَّ اللهَ هو السَّميعُ العَليمُ}} Aku berlindung kepada Allah dari godaan syaithan yang terkutuk. Sesungguhnya Allah, Dialah Dzat yang Maha Mendengar lagi Maha Mengetahui.
+- {{a أعوذُ باللهِ السَّميعِ العَليمِ مِنَ الشَّيطانِ الرَّجيمِ}} Aku berlindung kepada Allah yang Maha Mendengar dan Maha Mengetahui dari godaan syaithan yang terkutuk.
+### Hukumnya
+= Mustahabah (dianjurkan) | pendapat mayoritas ulama qira'at dan ahli fiqih, dan ini pendapat yang terpilih.
+= Wajibah (wajib) | pendapat 'Ataa' dan Ats-tsauri.
+### Dianjurkan untuk mengucapkan isti'adzah dengan suara keras pada situasi berikut
+1) Jika qari’ membaca dengan suara keras dan yang lain mendengarkannya.
+2) Jika qari’ membaca secara berkelompok, secara bergantian dan dia adalah pembaca pertama.
+
+@page 11
+### Manfaat membaca isti'adzah dengan suara keras
+1) Menjelaskan awal bacaan.
+2) Mendorong pendengar untuk mendengarkan.
+3) Menyuarakan hati qari'.
+4) Menolak bisikan syaithan dan pikiran jahat.
+### Dianjurkan untuk melafalkan isti'adzah dengan suara pelan pada situasi berikut
+1) Jika qari' membaca sendiri, baik dengan suara pelan atau keras.
+2) Jika qari' membaca secara bergiliran dan bukan pembaca pertama.
+3) Jika qari' membaca dalam shalat, baik sebagai imam atau makmum.
+### Kapan harus mengulang isti'adzah
+Imam Annawawi ({{a رحمه الله}}) mengatakan diam dalam waktu yang lama dan percakapan panjang dianggap sebagai alasan untuk mengulang isti'adzah. Namun, jika bacaannya terputus oleh kata-kata dari al-Qur'an seperti mengoreksi kesalahan, melakukan kesalahan, menjelaskan makna suatu ayat atau bacaannya terputus karena bersin atau batuk, maka qari tidak harus melafalkan isti'adzah.
+
+@page 12
+# Cara-cara Melafalkan Isti'adzah ({{a أوجُهُ الاسْتِعاذَة}})
+## Menyambung ist'adzah dengan awal surat (bab)
+Ada 4 cara yang benar dan boleh menyambung ist'adzah dengan basmallah di awal surat kecuali pada surat at-Taubah.
+= Cara pertama | memutus semua, berhenti pada isti'adzah dan basmallah.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **berhenti** {{q 1:1|*}} **berhenti** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+= Cara kedua | menyambung isti'adzah dan basmallah dan berhenti dengan mengambil nafas kemudian membaca surat.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 1:1|*}} **berhenti** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+= Cara ketiga | berhenti pada isti'adzah dan menyambung basmallah dengan awal surat.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **berhenti** {{q 1:1|*}} **lanjut** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+= Cara keempat | menyambung semua tanpa berhenti.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 1:1|*}} **lanjut** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+## Melafalkan ist'adzah selain dengan permulaan surat
+Jika qari' memulai dari tengah-tengah surat (dari dalam surat) maksudnya setelah awal meskipun setelah satu kata, maka qari' mempunyai pilihan untuk mengucapkan basmallah atau tidak, tetapi mengucapkannya lebih baik jika qari' memilih melafalkan basmallah, maka lafalkan dengan ist'adzah sebagaimana penjelasan sebelumnya ada empat cara membaca awal surat. Jika qari' memilih untuk tidak mengucapkan basmallah, maka ada dua cara:
+= Cara pertama | Qatha' (memutus): berhenti pada ist'adzah dan memutus ayat berikutnya.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **berhenti** {{q 54:17|وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ}}.
+= Cara kedua | menyambung isti'adzah dengan ayat setelahnya.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 54:17|وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ}}.
+
+@page 13
+> **Catatan**: putuslah isti'adzah dengan ayat setelahnya jika terdapat lafadz Allah, nama-nama Allah, atau kata ganti yang merujuk kepada Allah Jalla Jalaaluh atau nama Rasulullah shallallaahu alaihi wasallam, atau sifat yang merujuk padanya. **Contoh yang tidak diperbolehkan**:
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 2:257|ٱللَّهُ وَلِىُّ ٱلَّذِينَ ءَامَنُوا۟}} [Al-Baqarah: 257].
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 41:47|إِلَيْهِ يُرَدُّ عِلْمُ ٱلسَّاعَةِ}} [Fussilat: 47].
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 48:29|مُّحَمَّدٌ رَّسُولُ ٱللَّهِ}} [Al-Fath: 29].
+## Memulai surat at-Taubah (Baraa'ah)
+Jika qari' memulai membaca surat at-Taubah (Bara'ah) maka tidak diperkenankan melafalkan basmallah, hanya diperbolehkan dengan dua cara:
+= Cara pertama | memutus istiadzah dengan awal surat.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **berhenti** {{q 9:1|*}}.
+= Cara kedua | menyambung istiadzah dengan awal surat.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **lanjut** {{q 9:1|*}}.

@@ -1,0 +1,56 @@
+%status sourceExtracted
+
+@page 81
+# Hukum lam sukun ({{a أحكامُ اللَّامِ السَّاكِنةِ}})
+Lam-lam sukun dalam al-Qur'an terdiri atas lima jenis:
+## 1- Lam ta'rif ({{a لامُ التَّعريف (ال)}})
+Lam sukun tambahan di luar penyusun asli kata, didahului hamzah washal yang dibaca fathah saat memulai bacaan, dan diikuti oleh sebuah kata benda (ism).
+### Lam qamariyah ({{a اللَّامُ القمريَّة}})
+Lam yang diikuti oleh salah satu huruf dari (**ابْغِ حَجَّكَ وَخَفْ عَقِيمَه**).
+= Hukum | Izhar (jelas).
+= Tanda dalam mushaf | Diberi tanda sukun di atas lam.
+!crop 453 221 539 282
+| | | | | | | |
+| {{q ?|ٱ[لْ]أَمَلُ}} | {{q ?|ٱ[لْ]بَارِئُ}} | {{q ?|ٱ[لْ]غَنِىُّ}} | {{q ?|ٱ[لْ]حَجَّ}} | {{q ?|ٱ[لْ]جَنَّةَ}} | {{q ?|ٱ[لْ]كَهْفِ}} | {{q ?|ٱ[لْ]وَدُودُ}} |
+| {{q ?|ٱ[لْ]خَلْقِ}} | {{q ?|ٱ[لْ]فَتَّاحُ}} | {{q ?|ٱ[لْ]عَلِيمُ}} | {{q ?|ٱ[لْ]قَمَرُ}} | {{q ?|ٱ[لْ]يَوْمِ}} | {{q ?|ٱ[لْ]مُلْكُ}} | {{q ?|ٱ[لْ]هُدَىٰ}} |
+### Lam syamsiyyah ({{a اللَّامُ الشَّمسيَّة}})
+Lam yang diikuti oleh salah satu huruf dari huruf-huruf pada awal kata-kata dari bait ini:
+> {{a طِبْ ثُمَّ صِلْ رُحمًا تَفُزْ ضِفْ ذَا نِعَمْ ... دَعْ سُوءَ ظَنٍّ زُرْ شَرِيفًا لِلكَرَمْ}}
+= Hukum | Idgham (dimasukkan).
+= Tandanya dalam mushaf | Lam tidak diberi tanda sukun, dan huruf setelahnya diberi tanda syaddah.
+!crop 445 470 534 529
+| | | | | | | |
+| {{q ?|ٱل[طَّ]يِّبَٰتُ}} | {{q ?|ٱل[ثَّ]وَابِ}} | {{q ?|وَٱل[صَّ]ٰلِحِينَ}} | {{q ?|ٱل[رَّ]زَّاقُ}} | {{q ?|ٱل[تَّ]ٰٓئِبُونَ}} | {{q ?|ٱل[ضَّ]آلِّينَ}} | {{q ?|ٱل[ذِّ]كْرَ}} |
+| {{q ?|ٱل[نَّ]عِيمِ}} | {{q ?|ٱل[دَّ]اعِ}} | {{q ?|ٱل[سَّ]مِيعُ}} | {{q ?|ٱل[ظَّ]ٰلِمِينَ}} | {{q ?|ٱل[زَّ]بُورِ}} | {{q ?|ٱل[شَّ]كُورُ}} | {{q ?|وَٱ[لَّ]يْلِ}} |
+## 2- Lam ism (kata benda) ({{a لامُ الاسم}})
+Lam yang terdapat dalam kata benda, yang merupakan bagian asli dari struktur kata dan selalu berada di tengah.
+= Hukum | Izhar (dibaca jelas).
+| | | | | |
+| {{q ?|وَأَ[لْ]وَٰنِكُمْ}} | {{q ?|سَ[لْ]سَبِيلًا}} | {{q ?|خَ[لْ]فَهُمْ}} | {{q ?|مَ[لْ]جَـًٔا}} | {{q ?|زِ[لْ]زَالَهَا}} |
+
+@page 82
+## 3- Lam al-amr (perintah) ({{a لامُ الأمرِ}})
+Lam al-amr adalah lam sukun tambahan yang bukan bagian dari struktur dasar kata; lam ini masuk ke dalam fi'il mudhari' (kata kerja bentuk sekarang/mendatang) dan mengubahnya menjadi bentuk perintah. Lam al-amr selalu didahului oleh huruf fa' ({{a فـ}}), wawu ({{a و}}) atau tsumma ({{a ثُمَّ}}).
+= Hukum | Izhar (dibaca jelas).
+| | | | |
+| {{q ?|فَ[لْ]يَمْدُدْ}} | {{q ?|وَ[لْ]يُوفُوا۟}} | {{q ?|وَ[لْ]يَطَّوَّفُوا۟}} | {{q ?|ثُمَّ [لْ]يَقْطَعْ}} |
+## 4- Lam fi'il (kata kerja) ({{a لامُ الفعل}})
+Lam sukun yang terdapat dalam kata kerja, baik fi'il madhi (lampau), mudhari' (sedang/akan) atau amr (perintah), yang berada di tengah atau di akhir.
+- **Fi'il madhi (lampau)**: {{q ?|أَرْسَ[لْ]نَا}}, **fi'il mudhari' (sedang/akan)**: {{q ?|يَ[لْ]تَقِطْهُ}}, **fi'il amr (perintah)**: {{q ?|وَأَ[لْ]قِ}}.
+= Hukum | Izhar (jelas), kecuali jika berada di akhir dan diikuti oleh huruf **lam** atau **ra**, maka wajib di-idgham-kan.
+| | | | |
+| {{q 17:23|فَلَا تَقُ[ل لَّ]هُمَآ أُفٍّ}} | {{q ?|أَقُ[ل لَّ]كُمْ}} | {{q 20:114|وَقُ[ل رَّ]بِّ زِدْنِى عِلْمًا}} | {{q ?|فَقُ[ل رَّ]بُّكُمْ}} |
+
+@page 83
+## 5- Lam huruf ({{a لامُ الحرف}})
+Lam yang terdapat pada dua huruf (**هل** dan **بل**) saja, dan tidak terdapat pada selainnya dalam al-Qur'an.
+= Hukum | Idgham jika setelahnya terdapat huruf **lam** atau **ra**, contoh:
+| | | | |
+| {{q 30:28|هَ[ل لَّ]كُم مِّن مَّا مَلَكَتْ}} | {{q 3:154|هَ[ل لَّ]نَا مِنَ ٱلْأَمْرِ}} | {{q 4:158|بَ[ل رَّ]فَعَهُ ٱللَّهُ}} | {{q 21:56|بَ[ل رَّ]بُّكُمْ}} |
+### Pengecualian
+1) {{q 83:14|بَ[لْ رَ]انَ}} [Al-Muthaffifin: 14], karena adanya saktah yang mencegah idgham.
+2) Tidak ada keadaan dalam al-Qur'an di mana huruf ra muncul setelah (**هل**).
+= Hukum | Izhar (dibaca jelas) jika setelahnya terdapat huruf-huruf selainnya, contoh:
+| | | | |
+| {{q ?|هَ[لْ] نَحْنُ}} | {{q ?|هَ[لْ] يَسْتَطِيعُ}} | {{q ?|بَ[لْ] طَبَعَ}} | {{q ?|بَ[لْ] هُمْ}} |
+- **Ringkasan**: tanda sukun diletakkan pada lam sukun dalam mushaf untuk menunjukkan izhar-nya, contoh: {{q ?|ٱ[لْ]جَنَّةَ}}, {{q ?|سَ[لْ]سَبِيلًا}}, {{q ?|أَرْسَ[لْ]نَا}}, {{q ?|فَ[لْ]يَمْدُدْ}}.

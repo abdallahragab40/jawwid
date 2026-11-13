@@ -1,0 +1,17 @@
+%status sourceExtracted
+
+@page 91
+# Ibtida' (start) ({{a الإبتِداءُ}})
+= Its definition | To start the recitation after cutting off or stopping.
+Imam Ibn Al-Gazari said: (Starting is only optional, because it is not compelled by necessity like stopping; it is impermissible to start except with an independent meaning that conveys the intended sense and is not attached to what precedes it in meaning).
+## Types of start
+### 1- Good start ({{a الإبتداءُ الحَسَن}})
+It is permissible to start with it, where the meaning is independent by itself. It is divided into complete, sufficient and good, like the division of stopping:
+= a- Complete start ({{a التَّام}}) | To start with what is not attached to what precedes it in parsing or meaning, like starting at the beginning of surahs.
+= b- Sufficient start ({{a الكافي}}) | To start with what is attached to what precedes it in meaning, not in parsing, like: {{q 2:6|يُؤْمِنُونَ}} {{q 2:7|[خَتَمَ] ٱللَّهُ عَلَىٰ قُلُوبِهِمْ}} [Al-Baqarah: 7].
+= c- Good start ({{a الحَسَن}}) | To start with a good meaning that is attached to what precedes it, like: {{q 2:8|وَمِنَ ٱلنَّاسِ [مَن] يَقُولُ ءَامَنَّا}} [Al-Baqarah: 8].
+### 2- Ugly start ({{a الإبتداءُ القَبيح}})
+To start with what gives a corrupt meaning because it is strongly attached to what precedes it in parsing and meaning. If the reciter starts with it, he gives a corrupt meaning or suggests a meaning other than Allah's intention. For example:
+- Starting with the Almighty's saying: {{q 10:68|[ٱتَّخَذَ] ٱللَّهُ وَلَدًا}}, of the verse: {{q 10:68|قَالُوا۟ ٱتَّخَذَ ٱللَّهُ وَلَدًا}} [Yunus: 68].
+- Starting with the Almighty's saying: {{q 3:181|[إِنَّ] ٱللَّهَ فَقِيرٌ وَنَحْنُ أَغْنِيَآءُ}}, of the verse: {{q 3:181|لَّقَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّذِينَ قَالُوٓا۟ إِنَّ ٱللَّهَ فَقِيرٌ}} [Al 'Imran: 181].
+- Starting with the Almighty's saying: {{q 9:30|[عُزَيْرٌ] ٱبْنُ ٱللَّهِ}}, of the verse: {{q 9:30|وَقَالَتِ ٱلْيَهُودُ عُزَيْرٌ ٱبْنُ ٱللَّهِ}} [At-Tawbah: 30].

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.05-1",
+  "editions": [
+    {
+      "id": "ar",
+      "language": "ar",
+      "direction": "rtl",
+      "title": "تبسيط التجويد بالألوان والصور والتخطيط",
+      "level": "المستوى الثاني",
+      "asset": "assets/books/ar.pdf",
+      "pageCount": 102,
+      "numbering": {
+        "firstNumbered": 3,
+        "lastNumbered": 99,
+        "offset": 0,
+        "printedNumerals": "arabicIndic",
+        "printedOverrides": {
+          "36": 40
+        }
+      },
+      "author": "حسين كريم محمد",
+      "translator": null,
+      "masterFile": "source/books/rattil-level2-ar.pdf",
+      "masterSha256": "23b2be943d7ef17ec73f8e101f3292acfc284ee20e28b11ce2a5f8af8654664a",
+      "bundledSha256": "f0bb38687bd452e2ddbb0e6b87a729683dee81c2af69749cb62c3310703e1a1a",
+      "frontMatter": {
+        "intro": 3,
+        "topicList": 4,
+        "references": 99
+      },
+      "blankPages": [
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "id": "ckb",
+      "language": "ckb",
+      "direction": "rtl",
+      "title": "ئاسانکردنی تەجوید",
+      "level": "ئاستی دووەم",
+      "asset": "assets/books/ckb.pdf",
+      "pageCount": 112,
+      "numbering": {
+        "firstNumbered": 3,
+        "lastNumbered": 110,
+        "offset": 0,
+        "printedNumerals": "arabicIndic",
+        "printedOverrides": {
+          "42": null
+        }
+      },
+      "author": "حسين كريم محمد",
+      "translator": null,
+      "masterFile": "source/books/rattil-level2-ckb.pdf",
+      "masterSha256": "369bf536b75b6121810a0a9f65ac967dbe177879a13a7e780ce523adf6b6f0e7",
+      "bundledSha256": "20ac5cb0e787acfe71f8b6899c1984a00d6adfea6d473840c04a8ba1334ef1d6",
+      "frontMatter": {
+        "intro": 3,
+        "topicList": 4,
+        "references": 110
+      },
+      "blankPages": [
+        2,
+        111
+      ]
+    },
+    {
+      "id": "en",
+      "language": "en",
+      "direction": "ltr",
+      "title": "Simplifying Tajweed",
+      "level": "Level two",
+      "asset": "assets/books/en.pdf",
+      "pageCount": 109,
+      "numbering": {
+        "firstNumbered": 3,
+        "lastNumbered": 107,
+        "offset": 0,
+        "printedNumerals": "western"
+      },
+      "author": "Hussein Kareem Mohammed",
+      "translator": "Nisreen Kamal Shalash",
+      "masterFile": "source/books/rattil-level2-en.pdf",
+      "masterSha256": "4aede63790ab4969b6040f45a222afa5ba09124a1948e70e4113ebac8577ed12",
+      "bundledSha256": "7cfd0013caa83a064e5d143acec5231c66d082005f2f89cf05eaf14288925c9f",
+      "frontMatter": {
+        "intro": 3,
+        "topicList": null,
+        "references": 107
+      },
+      "blankPages": [
+        2,
+        108
+      ]
+    },
+    {
+      "id": "id",
+      "language": "id",
+      "direction": "ltr",
+      "title": "Tajwid Ringkas",
+      "level": "Level Dua",
+      "asset": "assets/books/id.pdf",
+      "pageCount": 112,
+      "numbering": {
+        "firstNumbered": 3,
+        "lastNumbered": 110,
+        "offset": 0,
+        "printedNumerals": "western"
+      },
+      "author": "Husein Karim Muhammad",
+      "translator": "Ustadzah Ana Fi Naimatin",
+      "masterFile": "source/books/rattil-level2-id.pdf",
+      "masterSha256": "285401ae86291ef93bae511ede7916e9d502b1f9069b6e2e851156c8c0460394",
+      "bundledSha256": "fc1dc09d6841dd14fdbf8e1129de83d93ff0590782322cb372bf0483d38920d6",
+      "frontMatter": {
+        "intro": 3,
+        "topicList": 4,
+        "references": 110
+      },
+      "blankPages": [
+        2,
+        111
+      ]
+    }
+  ]
+}

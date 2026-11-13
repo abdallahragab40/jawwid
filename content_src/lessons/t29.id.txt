@@ -1,0 +1,11 @@
+%status sourceExtracted
+
+@page 108
+# Sanad riwayat Hafsh ({{a إسنادُ روايةِ حفصٍ}})
+Rangkaian sanad, dari atas ke bawah:
+- **Nabi Muhammad** (shallallahu 'alaihi wa sallam)
+- **Utsman bin Affan**, **Ali bin Abi Thalib**, **Abdullah bin Mas'ud**, **Ubay bin Ka'ab**, **Zaid bin Tsabit**
+- **Abdullah bin Habib**
+- **Ashim**
+- **Hafsh**
+> **Catatan**: Riwayat Hafsh 'an Ashim adalah riwayat yang paling banyak tersebar di dunia Islam.

@@ -1,0 +1,18 @@
+%status sourceExtracted
+
+@page 109
+# Nama 10 ulama qira'at dan perawinya ({{a أسماءُ القُرَّاءِ العشرةِ ورواتِهم}})
+| | Pembaca (qari) | Perawinya | 'Asyrah sughra | 'Asyrah kubra |
+| 1 | Nafi' Al-Madani | Qalun, Warsy | Jalur Syathibiyyah | Thayyibatun Nasyr dalam 10 qira'at |
+| 2 | Ibnu Katsir Al-Makki | Al-Bazzi, Qunbul | Jalur Syathibiyyah | Thayyibatun Nasyr |
+| 3 | Abu Amr Al-Bashri | Ad-Duri, As-Susi | Jalur Syathibiyyah | Thayyibatun Nasyr |
+| 4 | Ibnu Amir Ad-Dimasyqi | Hisyam, Ibnu Dzakwan | Jalur Syathibiyyah | Thayyibatun Nasyr |
+| 5 | Ashim Al-Kufi | Syu'bah, Hafsh | Jalur Syathibiyyah | Thayyibatun Nasyr |
+| 6 | Hamzah Al-Kufi | Khalaf, Khallad | Jalur Syathibiyyah | Thayyibatun Nasyr |
+| 7 | Al-Kisa'i Al-Kufi | Abul Harits, Ad-Duri | Jalur Syathibiyyah | Thayyibatun Nasyr |
+| 8 | Abu Ja'far Al-Madani | Ibnu Wardan, Ibnu Jammaz | Jalur Ad-Durrah | Thayyibatun Nasyr |
+| 9 | Ya'qub Al-Bashri | Ruwais, Rauh | Jalur Ad-Durrah | Thayyibatun Nasyr |
+| 10 | Khalaf Al-Kufi | Ishaq, Idris | Jalur Ad-Durrah | Thayyibatun Nasyr |
+= Asy-Syathibiyyah | Sebuah qasidah berbentuk nadham yang membahas tujuh qira'at, karya Imam Abul Qasim bin Firruh Al-Andalusi. Disebut juga (**Hirzul Amani wa Wajhut Tahani**). Qasidah ini menyusun kembali isi kitab At-Taisir karya Abu Amr Ad-Dani dalam 1173 bait.
+= Ad-Durrah (Ad-Durrah Al-Mudhiyyah fil Qira'at Ats-Tsalats Al-Mutammimah lil 'Asyr Al-Mardhiyyah) | Sebuah nadham dalam ilmu qira'at, yang mengumpulkan tiga qira'at tambahan untuk melengkapi sepuluh qira'at (Abu Ja'far Al-Madani, Ya'qub Al-Bashri, Khalaf Al-Kufi). Ditulis oleh Imam Muhammad bin Al-Jazari, dengan jumlah 240 bait.
+= Thayyibatun Nasyr | Sebuah qasidah dalam sepuluh qira'at, karya Imam Muhammad bin Al-Jazari. Nadham ini menyusun isi kitab An-Nasyr dalam 1015 bait.

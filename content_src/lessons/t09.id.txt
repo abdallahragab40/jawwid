@@ -1,0 +1,92 @@
+%status sourceExtracted
+
+@page 38
+# Kesalahan-kesalahan yang sering terjadi dalam pengucapan huruf hijaiyyah ({{a أبرزُ الأخطاءِ عِندَ نُطقِ حروفِ الهجاءِ}})
+### Kesalahan-kesalahan yang terjadi saat mengucapkan alif
+1) Tidak membuka mulut secukupnya, contoh: {{q ?|مُوسَ[ىٰ]}}.
+2) Menebalkan (tafkhim) alif pada keadaan yang seharusnya ditipiskan (tarqiq), contoh: {{q ?|ٱلنَّهَ[ا]رَ}}, {{q ?|ٱلنَّ[ا]رِ}}.
+3) Menipiskan (tarqiq) alif pada tempat yang seharusnya ditebalkan (tafkhim), contoh: {{q ?|[خَٰ]لِدِينَ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan hamzah ({{a ء}})
+1) Menebalkan (tafkhim) hamzah, contoh: {{q ?|[أَ]صَابَهَا}}.
+2) Melemahkan suara hamzah pada saat berhenti (waqaf), contoh: {{q ?|ٱلسَّمَآ[ءِ]}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan ha ({{a هـ}})
+1) Menebalkan (tafkhim), contoh: {{q ?|ٱلنَّ[هَ]ارِ}}.
+2) Melemahkan suara ha, contoh: {{q ?|ٱ[هْ]دِنَا}}.
+3) Melemahkan suara ha pada saat berhenti (waqaf), contoh: {{q ?|مِّن مِّثْلِ[هِۦ]}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan 'ain ({{a ع}})
+1) Memutuskan suara 'ain ketika melafalkannya dalam keadaan sukun, contoh: {{q ?|يَ[عْ]لَمُونَ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan ha ({{a ح}})
+1) Melemahkan nafas (hams) ha, contoh: {{q ?|ٱلرَّ[حْ]مَٰنِ ٱلرَّ[حِ]يمِ}}.
+2) Mengganti ha {{a ح}} dengan ha {{a هـ}}, contoh: {{q ?|ٱلْ[حَ]مْدُ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan ghain ({{a غ}})
+1) Mengganti ghain dengan kha, contoh: {{q ?|يَ[غْ]شَىٰ}}.
+2) Mengucapkan ghain dengan qalqalah, contoh: {{q ?|ٱلْمَ[غْ]ضُوبِ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan qaf ({{a ق}})
+1) Tidak mengucapkan qaf dengan qalqalah, contoh: {{q ?|ٱلْحَ[قُّ]}}.
+2) Mengucapkan qaf hampir sama dengan kaf, contoh: {{q ?|[قَ]الُوا۟}}.
+
+@page 39
+### Kesalahan-kesalahan yang terjadi saat mengucapkan kaf ({{a ك}})
+1) Tidak mengeluarkan nafas (hams) pada huruf kaf, terutama ketika kaf sukun, contoh: {{q ?|أَ[كْ]بَرُ}}, {{q ?|صَدْرَ[كَ]}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan jim ({{a ج}})
+1) Tidak mengucapkan jim dengan qalqalah, contoh: {{q ?|أَ[جْ]رُهُمْ}}, {{q ?|ٱلْحَ[جَّ]}}.
+2) Mengucapkan jim dengan lemah, contoh: {{q ?|[جَ]عَلُوا۟}}, {{q ?|وَ[جَ]نَّةٍ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan syin ({{a ش}})
+1) Melemahkan suara syin, contoh: {{q ?|أَ[شْ]تَاتًا}}, {{q ?|وَأَ[شْ]هِدُوا۟}}.
+2) Menebalkan (tafkhim) syin jika berdekatan dengan huruf yang ditebalkan, contoh: {{q ?|[شَ]طَطًا}}.
+### Kesalahan-kesalahan yang terjadi pada saat mengucapkan huruf ya ({{a ي}})
+1) Mencampurkan suara ya dengan sedikit suara sengau (ghunnah), contoh: {{q ?|ٱلْعَٰلَمِ[ي]نَ}}, {{q ?|ٱلْحَٰكِمِ[ي]نَ}}.
+### Kesalahan-kesalahan yang terjadi pada saat mengucapkan huruf dhad ({{a ض}})
+1) Mengganti dhad dengan zha, contoh: {{q ?|[ضَ]لَّ}}, {{q ?|[ضَ]لَٰلٍ}}.
+2) Mengganti dhad dengan dal, contoh: {{q ?|تُفِي[ضُ]ونَ}}.
+3) Mengucapkan dhad dengan qalqalah, contoh: {{q ?|وَعِنَبًا وَقَ[ضْ]بًا}}.
+4) Menggabungkan (idgham) dhad dengan huruf setelahnya, contoh: {{q ?|ٱ[ضْ]طُرَّ}}, {{q ?|عَرَّ[ضْ]تُم}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan lam ({{a ل}})
+1) Menebalkan (tafkhim) lam pada tempat yang seharusnya ditipiskan (tarqiq), contoh: {{q ?|تَعْ[لَ]مُونَ}}, {{q ?|زُ[لْ]زِلَتِ}}.
+2) Menipiskan (tarqiq) lam pada tempat yang seharusnya ditebalkan (tafkhim), contoh: {{q ?|عَبْدُ [ٱللَّهِ]}}, {{q ?|عِبَادَ [ٱللَّهِ]}}.
+3) Menggabungkan (idgham) lam dengan huruf setelahnya (tidak melafazkan lam secara jelas), contoh: {{q ?|وَجَعَ[لْ]نَا}}.
+4) Menggabungkan (idgham) lam qamariyah dengan jim, contoh: {{q ?|ٱ[لْ]جَنَّةِ}}, {{q ?|ٱ[لْ]جِبَالُ}}.
+
+@page 40
+### Kesalahan-kesalahan yang terjadi saat mengucapkan nun ({{a ن}})
+1) Tidak memberikan nun haknya yaitu ghunnah (sengau) ketika berhenti (waqaf) padanya, contoh: {{q ?|ٱلْعَٰلَمِي[نَ]}}.
+2) Terlalu lama dan bergetar (tathnin) ghunnah-nya ketika nun bertasydid, contoh: {{q ?|مِنَ ٱلْجِ[نَّ]ةِ وَٱل[نَّ]اسِ}}. Hal ini terjadi karena terlalu menggetarkan suara nun saat melafalkannya.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan ra ({{a ر}})
+1) Menebalkan (tafkhim) ra pada tempat yang seharusnya ditipiskan (tarqiq), contoh: {{q ?|فِ[رْ]عَوْنَ}}.
+2) Menipiskan (tarqiq) ra pada tempat yang seharusnya ditebalkan (tafkhim), contoh: {{q ?|مَ[رْ]يَمَ}}, {{q ?|ٱلْقُ[رْ]ءَانُ}}.
+3) Berlebihan getarnya ketika ra bertasydid atau sukun, contoh: {{q ?|إِنِ ٱ[رْ]تَبْتُمْ}}.
+4) Tidak melafalkan ra dengan jelas ketika ra tersebut sukun dan berhenti (waqaf) padanya, contoh: {{q ?|نَصِي[رٍ]}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan tha ({{a ط}})
+1) Menipiskan (tarqiq) tha, contoh: {{q ?|[طِ]بَاقًا}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan dal ({{a د}})
+1) Mencampurkan suara dal dengan suara ta, contoh: {{q ?|ٱل[دِّ]ينِ}}.
+2) Menebalkannya (tafkhim), contoh: {{q ?|صُ[دُ]ورِ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan ta ({{a ت}})
+1) Terlalu kuat mengeluarkan nafas (hams) pada ta ketika ta tersebut berharakat, contoh: {{q ?|[تَ]تَفَكَّرُونَ}}.
+2) Menebalkannya (tafkhim), contoh: {{q ?|[تَ]طْمَئِنُّ}}.
+3) Tidak mengeluarkan nafas (hams) pada ta, terutama ketika ta tersebut sukun, contoh: {{q ?|طَلَعَ[ت]}}, {{q ?|غَرَبَ[ت]}}.
+
+@page 41
+### Kesalahan-kesalahan yang terjadi saat mengucapkan huruf-huruf shafir (shad, za dan sin) ({{a ص، ز، س}})
+1) Melemahkan shafirnya huruf-huruf tersebut, contoh: {{q ?|ٱل[صَّ]مَدُ}}, {{q ?|ٱلْمِ[سْ]كِينِ}}, {{q ?|يَ[زَّ]كَّىٰ}}.
+2) Membulatkan kedua bibir saat melafalkan huruf shad, contoh: {{q ?|ٱل[صَّ]ٰلِحَٰتِ}}.
+3) Menipiskan (tarqiq) huruf shad, contoh: {{q ?|ٱلْمَ[صِ]يرُ}}.
+4) Menebalkan (tafkhim) huruf sin, contoh: {{q ?|يَ[سْ]طُرُونَ}}.
+5) Mencampurkan suara sin dengan za, contoh: {{q ?|رِجْ[سٌ]}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan huruf-huruf latsawiyyah ({{a ظ، ذ، ث}})
+1) Mengeluarkan ujung lidah terlalu jauh, contoh: {{q ?|وَٱل[ظَّ]ٰلِمِينَ}}.
+2) Menempatkan ujung lidah pada gusi atau bagian dalam dua gigi seri atas.
+3) Mengganti {{a ذ}} dengan {{a ز}}, contoh: {{q ?|وَٱل[ذَّ]ٰكِرِينَ}}.
+4) Mengganti {{a ث}} dengan {{a س}} atau {{a ت}}, contoh: {{q ?|فَكَ[ثَّ]رَكُمْ}}.
+### Kesalahan dalam mengucapkan huruf fa ({{a ف}})
+1) Tidak jelas dalam melafalkan fa karena lemahnya hams, contoh: {{q ?|تَ[فْ]عَلُونَ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan huruf wawu ({{a و}})
+1) Tidak membulatkan kedua bibir dengan kadar yang diinginkan, contoh: {{q ?|[وَ]ٱللَّهُ}}, {{q ?|ٱلْمُفْلِحُ[و]نَ}}.
+2) Mencampurkan suara wawu ({{a واو}}) dengan suara sengau ({{a الغنة}}), contoh: {{q ?|يُوقِنُ[و]نَ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan huruf ba ({{a ب}})
+1) Menebalkannya ketika berada di dekat huruf yang ditebalkan, contoh: {{q ?|ٱلْ[بَ]صَرَ}}.
+2) Tidak menqalqalahkannya ketika sukun, contoh: {{q ?|وَيُ[بْ]صِرُونَ}}, {{q ?|وَيُ[بْ]طِلَ}}.
+### Kesalahan-kesalahan yang terjadi saat mengucapkan huruf mim ({{a م}})
+1) Memotongnya saat waqaf, contoh: {{q ?|ٱلرَّحِي[مِ]}}, {{q ?|ٱلْحَكِي[مُ]}}.
+2) Menebalkannya ketika berada di dekat huruf yang tebal, contoh: {{q ?|[مَ]خْ[مَ]صَةٍ}}.
+3) Menqalqalahkannya saat sukun, contoh: {{q ?|يَ[مْ]تَرُونَ}}, {{q ?|يُ[مْ]سِكُهُنَّ}}.

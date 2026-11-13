@@ -1,0 +1,154 @@
+{
+ "ar": {
+  "pages": 102,
+  "master_bytes": 10645248,
+  "bundled_bytes": 6437283,
+  "pdfium_150pct_diff_pages": [],
+  "pdfium_max_channel_delta": 0,
+  "pdfium_600pct_identical": [
+   [
+    5,
+    true
+   ],
+   [
+    17,
+    true
+   ],
+   [
+    28,
+    true
+   ],
+   [
+    36,
+    true
+   ],
+   [
+    47,
+    true
+   ],
+   [
+    66,
+    true
+   ]
+  ],
+  "mupdf_150pct_diff_pages": [
+   1,
+   102
+  ],
+  "text_layer_diff_pages": []
+ },
+ "ckb": {
+  "pages": 112,
+  "master_bytes": 11610201,
+  "bundled_bytes": 7072457,
+  "pdfium_150pct_diff_pages": [],
+  "pdfium_max_channel_delta": 0,
+  "pdfium_600pct_identical": [
+   [
+    5,
+    true
+   ],
+   [
+    17,
+    true
+   ],
+   [
+    28,
+    true
+   ],
+   [
+    36,
+    true
+   ],
+   [
+    47,
+    true
+   ],
+   [
+    66,
+    true
+   ]
+  ],
+  "mupdf_150pct_diff_pages": [
+   1,
+   112
+  ],
+  "text_layer_diff_pages": []
+ },
+ "en": {
+  "pages": 109,
+  "master_bytes": 9096217,
+  "bundled_bytes": 5795357,
+  "pdfium_150pct_diff_pages": [],
+  "pdfium_max_channel_delta": 0,
+  "pdfium_600pct_identical": [
+   [
+    5,
+    true
+   ],
+   [
+    17,
+    true
+   ],
+   [
+    28,
+    true
+   ],
+   [
+    36,
+    true
+   ],
+   [
+    47,
+    true
+   ],
+   [
+    66,
+    true
+   ]
+  ],
+  "mupdf_150pct_diff_pages": [
+   1,
+   109
+  ],
+  "text_layer_diff_pages": []
+ },
+ "id": {
+  "pages": 112,
+  "master_bytes": 9685086,
+  "bundled_bytes": 6135639,
+  "pdfium_150pct_diff_pages": [],
+  "pdfium_max_channel_delta": 0,
+  "pdfium_600pct_identical": [
+   [
+    5,
+    true
+   ],
+   [
+    17,
+    true
+   ],
+   [
+    28,
+    true
+   ],
+   [
+    36,
+    true
+   ],
+   [
+    47,
+    true
+   ],
+   [
+    66,
+    true
+   ]
+  ],
+  "mupdf_150pct_diff_pages": [
+   1,
+   112
+  ],
+  "text_layer_diff_pages": []
+ }
+}

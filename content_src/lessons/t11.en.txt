@@ -1,0 +1,41 @@
+%status sourceExtracted
+
+@page 50
+# Rules of Meem sakinah ({{a أحكامُ المِيمِ السَّاكِنةِ}})
+= Its definition | Meem that is free from any harakah (no fathah, dammah or kasrah), and it is sakinah when continuing the recitation or stopping. It may be original or extra, and it comes in the middle of the word or at its end.
+= Explanation of the definition | The intended meem here is devoid of harakah:
+- Either with no sukoon sign, like: {{q ?|وَلَكُ[م] مَّا كَسَبْتُمْ}}.
+- Or with a sukoon sign, like: {{q ?|أَنْعَ[مْ]تَ}}, {{q ?|عَلَيْكُ[مْ] أَنفُسَكُمْ}}.
+### Rules of Meem sakinah
+1) **Idgham Shafawi** ({{a الإدغامُ الشَّفَوي}}): ({{a م}}).
+2) **Ikhfaa Shafawi** ({{a الإخفاءُ الشَّفَوي}}): ({{a ب}}).
+3) **Ithhar Shafawi** ({{a الإظهارُ الشَّفَوي}}): (the rest of the letters).
+## 1- Idgham Shafawi (oral merging)
+If meem sakinah is followed by the letter **meem** only, it is merged into the voweled meem, prolonging the timing of ghunnah (the most complete ghunnah).
+- {{q 106:4|ٱلَّذِىٓ أَطْعَمَهُ[م مِّ]ن جُوعٍ وَءَامَنَهُ[م مِّ]نْ خَوْفٍۭ}} [Quraysh: 4].
+- {{q 2:10|فِى قُلُوبِهِ[م مَّ]رَضٌ}} [Al-Baqarah: 10].
+- {{q 5:15|جَآءَكُ[م مِّ]نَ}} [Al-Ma'idah: 15].
+- **It is called shafawi**: because meem is emitted from the two lips, and to distinguish it from merging noon into its letters.
+- **It is called idgham mutamathilain saghir with ghunnah** (small merging of two identical letters with ghunnah): because the two meems have the same articulation point and characteristics, and the first meem is sakinah while the second is mutaharrikah.
+### Sign of Idgham Shafawi in the Qur'an
+The first meem has no sukoon, and the second has a shaddah, like: {{q 106:4|أَطْعَمَهُ[م مِّ]ن}}.
+
+@page 51
+## 2- Ikhfaa Shafawi (oral hiding)
+If meem sakinah is followed by the letter **baa** only, we pronounce a hidden meem with ghunnah. It only happens between two words.
+- **The method of pronunciation**: to make the two lips touch each other gently, without leaving a gap and without pressing the lips hard against each other, keeping the ghunnah as the reciter does with iqlaab (converting).
+### Examples
+- {{q ?|أَ[م بِ]ظَٰهِرٍ}}, {{q ?|وَمَن يَعْتَصِ[م بِ]ٱللَّهِ}}.
+- {{q 100:11|إِنَّ رَبَّهُ[م بِ]هِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ}}.
+- **It is called shafawi**: because meem and baa are articulated from the two lips.
+### Sign of Ikhfaa Shafawi in the Qur'an
+There is neither a sukoon sign above the meem nor a shaddah above the next letter, like: {{q ?|أَ[م بِ]ظَٰهِرٍ}}.
+## 3- Ithhar Shafawi (oral clarity)
+If meem sakinah is followed by any of the alphabetical letters except meem or baa, it is pronounced clearly.
+### Examples
+- {{q ?|أَنْعَ[مْ]تَ}}, {{q ?|وَأَ[مْ]دَدْنَٰهُم}}, {{q ?|فَيَ[مْ]كُثُ}}.
+- {{q ?|لَهُ[مْ] جَنَّٰتٌ}}, {{q 44:37|أَهُ[مْ] خَيْرٌ}}, {{q ?|وَهُ[مْ] فَرِحُونَ}}.
+- **It is called shafawi**: because meem is emitted from the two lips.
+### Sign of Ithhar Shafawi in the Qur'an
+A sukoon sign is placed above the meem, like: {{q ?|تُ[مْ]سُونَ}}, {{q ?|لَهُ[مْ] جَنَّٰتٌ}}.
+> **Notification**: The reciter should be careful not to hide meem sakinah if it is followed by **waaw** or **faa**, like: {{q ?|هُ[مْ فِ]يهَا خَٰلِدُونَ}}, {{q ?|وَهُ[مْ فَ]رِحُونَ}}, {{q ?|هُ[مْ وَ]أَزْوَٰجُهُمْ فِى ظِلَٰلٍ}}, {{q 2:255|أَيْدِيهِ[مْ وَ]مَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ}}, because the reciter rushes to hide the meem in these two cases since it is easy, and because the articulation point of meem is close to faa and the same as waaw (the two lips).

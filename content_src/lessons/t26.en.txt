@@ -1,0 +1,89 @@
+%status sourceExtracted
+
+@page 96
+# Rawm, ishmam and sukoon mahd ({{a الرَّومُ والإشمامُ والسُّكونُ المحضُ}})
+## 1- Sukoon mahd (pure sukoon)
+= Its definition | It is a sukoon devoid of any harakah (vowel); it is used to stop on a letter with **fathah**, **dammah** and **kasrah**.
+= Examples | {{q ?|ٱلْعَٰلَمِي[نَ]}}, {{q ?|ٱلرَّحِي[مُ]}}, {{q ?|ٱلدِّي[نِ]}}.
+## 2- Rawm
+= Its definition | To pronounce part of the vowel (nearly **one third of the harakah**) when stopping on **dammah** or **kasrah**; it can be heard by someone near, not far.
+= Examples | {{q ?|نَسْتَعِي[نُ]}}, {{q ?|ٱلرَّحِي[مُ]}}, {{q ?|ٱلدِّي[نِ]}}, {{q 105:1|ٱلْفِي[لِ]}}.
+= Rule | When rawm is applied, we follow the same rules of lengthening as when we continue the recitation (the letter of madd is prolonged for 2 counts).
+## 3- Ishmam
+= Its definition | To circle the lips directly after giving sukoon to the letter with **dammah**, in the same shape as pronouncing a dammah, without any sound; it is not perceived by the blind.
+= Examples | {{q ?|نَسْتَعِي[نُ]}}, {{q 11:87|يَٰشُعَيْ[بُ]}}, {{q ?|أَلِي[مٌ]}}.
+= Rule | When ishmam is applied, we follow the same rules of lengthening as when we stop with pure sukoon (the letter of madd is prolonged for 2, 4 or 6 counts).
+
+@page 97
+### Notice
+For Hafs, rawm and ishmam originally occur when stopping at the end of the word; there is neither rawm nor ishmam when continuing the recitation or in the middle of a word, except one word: {{q 12:11|قَالُوا۟ يَٰٓأَبَانَا مَا لَكَ لَا [تَأْمَ۫نَّا] عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ}} [Yusuf: 11]. In the narration of Hafs on the authority of 'Asim, it may be pronounced in two ways:
+= A- Ishmam | Pronouncing the first noon without a vowel and merging it into the second, circling the lips without a sound directly after starting to pronounce the merged noon, like: ({{a تَأْمَنَّا}}).
+= B- Rawm | Keeping the dammah on the first noon and lowering its sound slightly, quickly compared with the neighbouring letters, like: ({{a تَأْمَنُنَا}}).
+# How to stop at the end of Qur'anic words – briefly ({{a كيفيَّةُ الوقوفِ على أواخرِ الكلماتِ القرآنيَّةِ – باختِصارٍ}})
+| Vowel | Example | The way of stopping |
+| Original sukoon | {{q 93:10|فَلَا تَنْهَ[رْ]}} | Only with sukoon |
+| Fathah | {{q ?|هُنَالِ[كَ]}} | Only with sukoon |
+| Kasrah or double kasrah | {{q ?|ٱلرَّحِي[مِ]}}, {{q 113:5|حَاسِ[دٍ]}} | With sukoon or rawm |
+| Dammah or double dammah | {{q 28:70|لَهُ ٱلْحَمْ[دُ]}}, {{q ?|سَمِي[عٌ]}} | With sukoon, rawm or ishmam |
+| Double fathah | {{q ?|عَلِي[مًا]}} | (Madd ewad) substituting an alif for the tanween |
+
+@page 98
+# How to stop at the end of Qur'anic words – in detail ({{a كيفيَّةُ الوقوفِ على أواخرِ الكلماتِ القرآنيَّةِ – بالتَّفصيلِ}})
+To simplify this subject, the types of words that can be stopped on in several ways are limited to 9 types, as follows:
+
+@page 98
+### 1- Letter with an original sukoon
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Sukoon | {{q 93:10|فَلَا تَنْهَ[رْ]}} | Pure sukoon |
+### 2- Letter voweled when continuing, not preceded by a lengthening or leen letter
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Fathah | {{q ?|هُنَالِ[كَ]}} | Pure sukoon |
+| Kasrah | {{q ?|رَ[بِّ]}} | Pure sukoon; rawm |
+| Dammah | {{q 28:70|لَهُ ٱلْحَمْ[دُ]}} | Pure sukoon; rawm; ishmam |
+### 3- Madd 'arid lis-sukoon or madd leen
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Fathah | {{q ?|ٱلدِّي[نَ]}}, {{q ?|ٱلْقَوْ[لَ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling |
+| Kasrah | {{q 13:30|مَتَا[بِ]}}, {{q 9:52|ٱلْحُسْنَيَيْ[نِ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling; rawm with shortening |
+| Dammah | {{q ?|نَسْتَعِي[نُ]}}, {{q ?|قَوْ[مٌ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling; rawm with shortening; ishmam with shortening; ishmam with moderating; ishmam with fulfilling |
+
+@page 99
+### 4- With tanween
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Fathah | {{q ?|عَلِي[مًا]}} | Substituting an alif for the tanween |
+| Kasrah | {{q ?|حَمِي[دٍ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling; rawm with shortening |
+| Dammah | {{q ?|سَمِي[عٌ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling; rawm with shortening; ishmam with shortening; ishmam with moderating; ishmam with fulfilling |
+### 5- Madd muttasil (joined lengthening)
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Fathah | {{q ?|شَآ[ءَ]}} | Pure sukoon with moderating; pure sukoon with 5 counts; pure sukoon with fulfilling |
+| Kasrah | {{q ?|مِّنَ ٱلسَّمَآ[ءِ]}} | Pure sukoon with moderating; pure sukoon with 5 counts; pure sukoon with fulfilling; rawm with moderating; rawm with 5 counts |
+| Dammah | {{q ?|يَشَآ[ءُ]}} | Pure sukoon with moderating; pure sukoon with 5 counts; pure sukoon with fulfilling; rawm with moderating; rawm with 5 counts; ishmam with moderating; ishmam with 5 counts; ishmam with fulfilling |
+
+@page 100
+### 6- Madd lazim (compulsory lengthening)
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Fathah | {{q 22:36|صَوَآ[فَّ]}} | Pure sukoon with fulfilling |
+| Kasrah | {{q 4:12|مُضَآ[رٍّ]}} | Pure sukoon with fulfilling; rawm with fulfilling |
+| Dammah | {{q 22:18|وَٱلدَّوَآ[بُّ]}} | Pure sukoon with fulfilling; rawm with fulfilling; ishmam with fulfilling |
+### 7- Pronoun haa ({{a هاءُ الكِناية}})
+| Example | Ways of stopping on it |
+| {{q ?|قَتَلُو[هُ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling |
+| {{q 5:116|قُلْتُ[هُۥ]}} | Pure sukoon |
+| {{q 28:7|فَأَلْقِي[هِ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling |
+| {{q ?|بِ[هِۦ]}} | Pure sukoon |
+| {{q 21:80|وَعَلَّمْنَٰ[هُ]}} | Pure sukoon with shortening; pure sukoon with moderating; pure sukoon with fulfilling; rawm with shortening; ishmam with shortening; ishmam with moderating; ishmam with fulfilling |
+| {{q ?|مِّنْ[هُ]}} | Pure sukoon; rawm; ishmam |
+| {{q 5:116|عَلِمْتَ[هُۥ]}} | Pure sukoon; rawm; ishmam |
+> **Note** (pronoun haa, according to the detailed opinion, which is preferred): Scholars have three opinions about applying rawm and ishmam to the pronoun haa: 1- It is prohibited in all cases. 2- It is permissible in all cases. 3- In detail: a- they are not applied if the haa is preceded by (**waaw sakinah**, **dammah**, **yaa sakinah** or **kasrah**); b- they are applied if it is preceded by (**alif**, a **sakin sound letter** or **fathah**).
+
+@page 101
+### 8- Feminine taa written as haa (tied taa)
+| Example | Ways of stopping on it |
+| {{q ?|وَرَحْمَ[ةٌ]}}, {{q ?|رَحْمَ[ةً]}}, {{q ?|جَنَّ[ةٍ]}} | Ibdal: stopping with a sakin haa |
+### Feminine taa written as taa (open taa)
+| Vowel of the last letter | Example | Ways of stopping on it |
+| Fathah | {{q 43:32|رَحْمَ[تَ]}} | Pure sukoon |
+| Kasrah | {{q ?|رَحْمَ[تِ]}} | Pure sukoon; rawm |
+| Dammah | {{q ?|رَحْمَ[تُ]}} | Pure sukoon; rawm; ishmam |
+### 9- Temporary vowel to avoid two sakin letters meeting
+| Example | Ways of stopping on it |
+| {{q 14:44|وَأَنذِ[رِ] ٱلنَّاسَ}}, {{q 3:139|وَأَنتُ[مُ] ٱلْأَعْلَوْنَ}} | Pure sukoon |

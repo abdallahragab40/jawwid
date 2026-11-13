@@ -1,0 +1,98 @@
+%status sourceExtracted
+
+@page 54
+# Heaviness and lightness ({{a التَّفْخِيمُ والتَّرقِيقُ}})
+This research is strongly linked to the articulation points of letters and their characteristics. Its subject is dividing the Arabic letters into heavy and light, and then emitting each letter with the characteristic it deserves, heavy or light.
+## Heaviness
+= In linguistics | Fatness.
+= In applied definition | Fatness that enters the body of the letter, so the mouth is filled with its echo.
+= Examples | {{q ?|ٱلْ[غَ]يْبِ}}, {{q ?|[خَا]لِصَةً}}, {{q ?|بَ[قْ]لِهَا}}.
+!crop 391 174 547 324
+## Lightness
+= In linguistics | Thinness.
+= In applied definition | Thinness that enters the body of the letter, so the mouth is not filled with its echo.
+= Examples | {{q ?|أَ[كْ]ثَرُهُمْ}}, {{q ?|أَ[تْ]رَابًا}}, {{q ?|أَ[شْ]تَاتًا}}.
+!crop 394 372 550 522
+### Heavy and light letters can be divided into three sections
+- Letters that are always heavy: ({{a خُصَّ ضَغْطٍ قِظْ}}).
+- Letters that are sometimes heavy and sometimes light: (**alif**, the **laam** of the exalted name ({{a الله}}) or ({{a اللهم}}), and **raa**).
+- Letters that are always light: **the rest of the alphabetical letters**.
+
+@page 55
+# Letters that are always heavy ({{a حروفٌ مُفخَّمَةٌ دائمًا}})
+Scholars of Tajweed agree that the letters that are always heavy are the letters of isti'laa (letters of elevation) ({{a خُصَّ ضَغْطٍ قِظْ}}), with no exception, whether they are voweled or non-voweled, and whether they are adjacent to a lowered letter or not. These letters vary in the degree of tafkheem (heaviness): the heaviness of a letter is determined by its elevation, so the more the letter is elevated, the heavier it is.
+- **Ordering of the elevated letters according to the strength of heaviness**: the strongest letter is {{a ط}}, and then {{a ض، ص، ظ، ق، غ، خ}}.
+### Ranks of heaviness for the elevated letters
+= The first school of thought | They made them three ranks, and Ibn At-Tahhan Al-Andalusi chose it: the letter with fathah, the letter with dammah, and the letter with kasrah. A non-voweled letter has no separate rank, but follows the rank of the vowel on the preceding letter.
+= The second school of thought | They made them five ranks, and Ibn Al-Gazari chose it.
+1) The first rank is the letter with fathah followed by alif madd.
+2) The second rank is the letter with fathah not followed by alif madd.
+3) The third rank is the letter with dammah.
+4) The fourth rank is the letter with sukoon.
+5) The fifth rank is the letter with kasrah.
+
+@page 56
+### The second school of thought
+| Letters | 1 | 2 | 3 | 4 | 5 |
+| T'aa | {{q ?|[طَا]لُوتَ}} | {{q ?|[طَ]عَامِ}} | {{q ?|بُ[طُ]ونِهِمْ}} | {{q ?|شَ[طْ]رَ}} | {{q ?|شَيَٰ[طِ]ينِهِمْ}} |
+| D'aad | {{q ?|رَمَ[ضَا]نَ}} | {{q ?|غَ[ضَ]بٍ}} | {{q ?|بَعْ[ضُ]كُمْ}} | {{q ?|فَ[ضْ]لٍ}} | {{q ?|حَا[ضِ]رَةً}} |
+| S'aad | {{q ?|أَبْ[صَٰ]رِهِمْ}} | {{q ?|وَبَ[صَ]لِهَا}} | {{q ?|[صُ]مٌّ}} | {{q ?|أَ[صْ]حَٰبُ}} | {{q ?|بَ[صِ]يرٌ}} |
+| Th'aa | {{q ?|[ظَٰ]لِمُونَ}} | {{q ?|مَوْعِ[ظَ]ةٌ}} | {{q ?|[ظُ]لُمَٰتٍ}} | {{q ?|يَ[ظْ]لِمُونَ}} | {{q ?|عَ[ظِ]يمٌ}} |
+| Qaaf | {{q ?|ٱلْفُرْ[قَا]نَ}} | {{q ?|ٱلْ[قَ]رْيَةَ}} | {{q ?|ٱلْ[قُ]رْبَىٰ}} | {{q ?|بَ[قْ]لِهَا}} | {{q ?|وَ[قِ]ثَّآئِهَا}} |
+| Ghain | {{q ?|بِ[غَٰ]فِلٍ}} | {{q ?|ٱلْ[غَ]يْبِ}} | {{q ?|[غُ]رْفَةً}} | {{q ?|ٱلْمَ[غْ]رِبِ}} | {{q ?|[غِ]شَٰوَةٌ}} |
+| Khaa | {{q ?|[خَا]لِصَةً}} | {{q ?|[خَ]لِيفَةً}} | {{q ?|[خُ]لَّةٌ}} | {{q ?|يَ[خْ]تَصُّ}} | {{q ?|أَ[خِ]يهِ}} |
+# Letters that are always light ({{a حروفٌ مرقَّقةٌ دائمًا}})
+They are the letters of istifaal (lowering) except alif madd, the laam of the exalted name, and raa, which are sometimes light and sometimes heavy.
+
+@page 57
+### Cases of heavy raa
+1) Raa is with fathah, like: {{q ?|[رَ]مَضَانَ}}, {{q ?|ٱلْقُ[رَ]ىٰ}}.
+2) Raa is with sukoon and preceded by a letter with fathah, like: {{q ?|مَ[رْ]يَمَ}}, {{q ?|نَ[رْ]فَعُ}}.
+3) Raa is with a conditional sukoon (due to stopping on it) and preceded by a letter with sukoon (not yaa), and the original sukoon is preceded by fathah, like: {{q ?|وَٱلْفَجْ[رِ]}}, {{q ?|وَٱلْوَتْ[رِ]}}.
+4) Raa is with dammah, like: {{q ?|[رُ]زِقُوا۟}}, {{q ?|تَعْبُ[رُ]ونَ}}.
+5) Raa is with sukoon and preceded by a letter with dammah, like: {{q ?|ٱلْقُ[رْ]ءَانُ}}.
+6) Raa is with a conditional sukoon and preceded by a letter with sukoon, and the original sukoon is preceded by a letter with dammah, like: {{q ?|ٱلْغَفُو[رُ]}}, {{q ?|خُضْ[رٍ]}}.
+7) Raa is with sukoon, preceded by a letter with kasrah and followed by a heavy letter not with kasrah in the same word. They are five words in the Qur'an: {{q ?|قِ[رْ]طَاسٍ}}, {{q ?|وَإِ[رْ]صَادًا}}, {{q ?|مِ[رْ]صَادًا}}, {{q ?|لَبِٱلْمِ[رْ]صَادِ}}, {{q ?|فِ[رْ]قَةٍ}}.
+8) Raa is with sukoon and preceded by a conditional kasrah, whether it is pronounced or implied, like: {{q ?|ٱ[رْ]جِعُوٓا۟}}, {{q ?|ٱ[رْ]تَبْتُمْ}}, {{q ?|أَمِ ٱ[رْ]تَابُوٓا۟}}, {{q ?|رَّبِّ ٱ[رْ]حَمْهُمَا}}.
+**Briefly**, when hamzatul wasl (the linking hamzah) comes before raa sakinah, the raa is heavy.
+### Cases of light raa
+1) Raa is with kasrah, like: {{q ?|[رِ]يحٌ}}, {{q ?|يَعْ[رِ]فُونَهَا}}.
+2) Raa is with an original sukoon, preceded by an original kasrah and not followed by a heavy letter, like: {{q ?|فِ[رْ]عَوْنَ}}, {{q ?|يَغْفِ[رْ]}}.
+3) Raa is with a conditional sukoon (because of stopping) and preceded by sukoon, and the original sukoon is preceded by kasrah, like: {{q ?|حِجْ[رٍ]}}, {{q ?|ٱلسِّحْ[رَ]}}.
+4) Raa is with sukoon and preceded by yaa sakinah (yaa madd or yaa leen), like: {{q ?|بَصِي[رٌ]}}, {{q ?|خَيْ[رٌ]}}.
+
+@page 58
+### Heaviness and lightness are allowed
+### {{q 26:63|فِرْقٍ}} in continuing recitation
+If raa is with sukoon, preceded by a letter with kasrah and followed by an elevated letter with kasrah. Allah says: {{q 26:63|فَكَانَ كُلُّ فِ[رْ]قٍ كَٱلطَّوْدِ ٱلْعَظِيمِ}} [Ash-Shu'ara: 63]. It is mentioned in only one position in the Qur'an.
+- **Note 1**: When we stop on the qaaf with sukoon, the raa must be heavy because the reason for lightness was removed: the lightness depended on pronouncing the next elevated letter (qaaf) with kasrah, and it became sukoon.
+- **Note 2**: If we stop on the qaaf with rawm, the raa can be heavy or light (both rules are possible).
+### {{q 12:99|مِصْرَ}}, {{q 34:12|ٱلْقِطْرِ}} when stopping
+Raa with sukoon is preceded by an elevated letter with sukoon, and the elevated letter is preceded by kasrah. Allah says:
+- {{q 12:99|وَقَالَ ٱدْخُلُوا۟ مِصْ[رَ] إِن شَآءَ ٱللَّهُ ءَامِنِينَ}} [Yusuf: 99]. It is mentioned 4 times in the Qur'an [Yunus: 87; Yusuf: 21 and 99; Az-Zukhruf: 51].
+- {{q 34:12|وَأَسَلْنَا لَهُۥ عَيْنَ ٱلْقِطْ[رِ] وَمِنَ ٱلْجِنِّ}} [Saba': 12]. It is mentioned one time in the Qur'an.
+- **Note 1**: The raa is heavy when continuing the recitation because there is a fathah on it in the word {{q 12:99|مِصْ[رَ]}}, and it is light when continuing the recitation because there is a kasrah under it in the word {{q 34:12|ٱلْقِطْ[رِ]}}.
+- **Note 2**: Imam Ibn Al-Gazari chose heaviness when stopping on the raa with sukoon in the word {{q 12:99|مِصْ[رَ]}}, because it is heavy when continuing the recitation, and lightness when stopping on the raa with sukoon in the word {{q 34:12|ٱلْقِطْ[رِ]}}, because it is light when continuing the recitation.
+
+@page 59
+- **Note 3**: Some scholars allow both heaviness and lightness of the raa in the next three words when stopping, but the priority is to make it light. In Allah's saying:
+- {{q 54:16|فَكَيْفَ كَانَ عَذَابِى وَنُذُ[رِ]}} [Al-Qamar: 16].
+- {{q 89:4|وَٱلَّيْلِ إِذَا يَسْ[رِ]}} [Al-Fajr: 4].
+- {{q 26:52|وَأَوْحَيْنَآ إِلَىٰ مُوسَىٰٓ أَنْ أَسْ[رِ] بِعِبَادِىٓ إِنَّكُم مُّتَّبَعُونَ}} [Ash-Shu'ara: 52].
+This is when the raa has sukoon due to stopping and is followed by an omitted yaa. There are two opinions: whoever makes the raa **light** takes into account its origin, where the yaa is omitted, and also the continued recitation; whoever makes the raa **heavy** regards neither its origin nor the continued recitation, so it is heavy according to the rule.
+## 4- Ghunnah ({{a الغُنَّة}})
+Ghunnah follows the next letter in heaviness or lightness.
+### It is heavy if the next letter is heavy ({{a ط، ض، ص، ظ، ق}}), like
+| | | | |
+| T'aa | {{q ?|يَ[نطِ]قُونَ}} | {{q ?|مَ[ن طَ]غَىٰ}} | {{q ?|صَعِيدً[ا طَ]يِّبًا}} |
+| D'aad | {{q ?|مَّ[نضُ]ودٍ}} | {{q ?|مِ[ن ضَ]رِيعٍ}} | {{q 80:38|مُّسْفِرَ[ةٌ]}} {{q 80:39|[ضَ]احِكَةٌ}} |
+| S'aad | {{q ?|فَٱ[نصَ]بْ}} | {{q ?|عَ[ن صَ]لَاتِهِمْ}} | {{q ?|بِرِي[حٍ صَ]رْصَرٍ}} |
+| Th'aa | {{q ?|يَ[نظُ]رُونَ}} | {{q ?|مَ[ن ظَ]لَمَ}} | {{q ?|ظِلًّ[ا ظَ]لِيلًا}} |
+| Qaaf | {{q ?|أَ[نقَ]ضَ}} | {{q ?|مِ[ن قَ]بْلُ}} | {{q ?|شَىْ[ءٍ قَ]دِيرٌ}} |
+### It is light if the next letter is light, like
+| | | |
+| Thaal | {{q ?|مُ[نذِ]رٌ}} | {{q ?|مِّ[ن ذِ]كْرٍ}} |
+| Thaa | {{q ?|مَّ[نثُ]ورًا}} | {{q ?|فَمَ[ن ثَ]قُلَتْ}} |
+| Kaaf | {{q ?|عَ[نكَ]}} | {{q ?|إِ[ن كَ]انَ}} |
+| Jeem | {{q ?|وَأَ[نجَ]يْنَا}} | {{q ?|مِّ[ن جُ]وعٍ}} |
+| Sheen | {{q ?|أَ[نشَ]رَهُۥ}} | {{q ?|فَمَ[ن شَ]آءَ}} |

@@ -1,0 +1,33 @@
+%status sourceExtracted
+
+@page 14
+# Basmallah ({{a البَسمَلة}})
+### Hukum membaca basmallah ketika memulai awal surat
+Wajib melafalkan basmallah ketika memulai awal surat (kecuali surat at-Taubah).
+### Hukum membaca basmallah ketika memulai selain awal surat
+Ketika qari’ memulai pada pertengahan surat, bukan pada awalnya meskipun satu kata, maka qari’ diberikan pilihan antara melafalkan basmallah dan tidak melafalkannya. Adapun melafalkannya lebih utama. Tidak ada perbedaan antara surat at-Taubah dan surat lainnya, akan tetapi sebagian ulama melarang membaca basmallah ketika memulai ditengah surat at-Taubah sebagaimana dikiaskan ketika membaca awalnya.
+## Cara membaca basmallah antara dua surat
+Ada 3 cara yang diperbolehkan membaca basmallah antara dua surat, dan 1 cara yang dilarang:
+= Pertama | memutus semua.
+{{q 113:5|وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ}} **berhenti** {{q 1:1|*}} **berhenti** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+= Kedua | menyambung semua.
+{{q 93:11|وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ}} **lanjut** {{q 1:1|*}} **lanjut** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+= Ketiga | berhenti pada akhir surat kemudian memulai dengan basmallah dan menyambung dengan awal surat.
+{{q 93:11|وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ}} **berhenti** {{q 1:1|*}} **lanjut** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+= Keempat | **cara yang terlarang**, tidak diperbolehkan menyambung akhir surat dengan basmallah dan waqaf padanya kemudian memulai awal surat.
+{{q 113:5|وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ}} **lanjut** {{q 1:1|*}} **berhenti** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+- Agar pendengar tidak menyangka bahwa basmallah adalah ayat dari surat pertama, karena basmallah dimulai pada awal surat dan bukan di akhir.
+
+@page 15
+### Catatan
+1) Tiga cara yang disebutkan diatas diperbolehkan, baik dua surat itu berturut-turut dalam mushaf, seperti akhir surat **Ali-Imran** dengan awal surat **An-Nisa**, atau tidak berturut-turut dan yang kedua jauh setelah yang pertama dalam urutan al-Qur'an seperti akhir surat **al-Faatihah** dengan awal surat **al-Maaidah**.
+2) Jika surat kedua yang dibaca berikutnya mendahului urutan al-Qur'an pada yang pertama, seperti yang membaca (**Surah Yasin setelah Surat al-Mulk**), maka diperbolehkan membaca dengan dua cara:
+a - memutus semua: {{q 67:30|فَمَن يَأْتِيكُم بِمَآءٍ مَّعِينٍۭ}} **berhenti** {{q 1:1|*}} **berhenti** {{q 36:1|يس}}.
+b - Memutus yang pertama dan menyambung yang kedua dengan yang ketiga: {{q 67:30|فَمَن يَأْتِيكُم بِمَآءٍ مَّعِينٍۭ}} **berhenti** {{q 1:1|*}} **lanjut** {{q 36:1|يس}}.
+3) Jika qari mengulangi surat, maka dua cara yang disebutkan pada nomor dua diatas, diperbolehkan.
+4) Jika qari' sampai pada akhir surat dan ingin melanjutkan membaca surat at-Taubah (Baraa'ah), akan ada dua keadaan:
+a - Jika surah pertama adalah surat **al-Anfal** atau surat apa pun sebelum **Surat at-Taubah** dalam urutan al-Qur'an, qari' dapat melakukan tiga pilihan cara tanpa melafalkan basmallah, yaitu:
+= Cara pertama | waqaf (berhenti). {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌۢ}} **berhenti** {{q 9:1|*}}.
+= Cara kedua | Sakt (berhenti sebentar tanpa mengambil nafas). {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌۢ}} **Sakt** {{q 9:1|*}}.
+= Cara ketiga | Wasl (lanjut) (melafalkan dengan iqlab): mengganti sukun pada tanwin dengan mim. {{q 8:75|إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌۢ}} **lanjut** {{q 9:1|*}}.
+b - Jika surah pertama terletak setelah **surat at-Taubah (Baraa'ah)** dalam urutan al-Qur'an seperti membaca **surat al-Mulk sebelum membaca surat at-Taubah**, maka hanya diperbolehkan satu cara (waqaf) berhenti dengan mengambil nafas tanpa mengucapkan basmallah, pada keadaan ini dilarang washal dan sakt, jika qari mengulangi membaca surat at-Taubah lagi, maka washal dan sakt juga dilarang.

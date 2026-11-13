@@ -1,0 +1,660 @@
+{
+  "@@locale": "ar",
+  "navHome": "الرئيسية",
+  "@navHome": {
+    "description": "Bottom navigation: home"
+  },
+  "navLessons": "الدروس",
+  "@navLessons": {
+    "description": "Bottom navigation: lessons"
+  },
+  "navRules": "القواعد",
+  "@navRules": {
+    "description": "Bottom navigation: rules guide"
+  },
+  "navPractice": "التدريب",
+  "@navPractice": {
+    "description": "Bottom navigation: practice"
+  },
+  "navMore": "المزيد",
+  "@navMore": {
+    "description": "Bottom navigation: more"
+  },
+  "actionCancel": "إلغاء",
+  "actionDelete": "حذف",
+  "actionDone": "تم",
+  "actionGo": "انتقال",
+  "actionOk": "حسنًا",
+  "actionSave": "حفظ",
+  "editionArabic": "النسخة العربية",
+  "@editionArabic": {
+    "description": "Name of the Arabic book edition"
+  },
+  "editionKurdish": "النسخة الكردية",
+  "@editionKurdish": {
+    "description": "Name of the Kurdish book edition"
+  },
+  "editionEnglish": "النسخة الإنجليزية",
+  "@editionEnglish": {
+    "description": "Name of the English book edition"
+  },
+  "editionIndonesian": "النسخة الإندونيسية",
+  "@editionIndonesian": {
+    "description": "Name of the Indonesian book edition"
+  },
+  "pageLabel": "صفحة {number}",
+  "@pageLabel": {
+    "description": "Printed page number label. {number} is already localized.",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "pageRangeLabel": "الصفحات {start}–{end}",
+  "@pageRangeLabel": {
+    "description": "Printed page range",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "pageCover": "الغلاف",
+  "@pageCover": {
+    "description": "Front cover page"
+  },
+  "pageBackCover": "الغلاف الخلفي",
+  "@pageBackCover": {
+    "description": "Back cover page"
+  },
+  "pageUnnumbered": "صفحة غير مرقّمة",
+  "@pageUnnumbered": {
+    "description": "A page without a printed number"
+  },
+  "homeContinueTitle": "تابع القراءة",
+  "homeStartTitle": "ابدأ بالدرس الأول",
+  "homeContinueOtherEdition": "هذا الموضوع غير موجود في {current}، لذلك يُفتح في {other}.",
+  "@homeContinueOtherEdition": {
+    "description": "Last-read topic is missing from the current-language edition",
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "other": {
+        "type": "String"
+      }
+    }
+  },
+  "homeCurriculum": "فهرس موضوعات التجويد",
+  "homeCurriculumSummary": "{topics} موضوعًا في {groups} وحدات",
+  "@homeCurriculumSummary": {
+    "placeholders": {
+      "topics": {
+        "type": "String"
+      },
+      "groups": {
+        "type": "String"
+      }
+    }
+  },
+  "homeRecentBookmarks": "أحدث العلامات",
+  "homeReviewSuggestion": "اقتراح للمراجعة",
+  "reviewMissed": "أصبتَ في {correct} من {answered} من أسئلة «{topic}». راجع الدرس ثم أعد المحاولة.",
+  "@reviewMissed": {
+    "placeholders": {
+      "correct": {
+        "type": "String"
+      },
+      "answered": {
+        "type": "String"
+      },
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewTryPractice": "قرأتَ «{topic}». جرّب أسئلته للتثبيت.",
+  "@reviewTryPractice": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewFinishLesson": "بدأتَ «{topic}». أكمله وعلّمه مكتملًا عندما تنتهي.",
+  "@reviewFinishLesson": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewNextLesson": "الدرس التالي: «{topic}».",
+  "@reviewNextLesson": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "reviewOpenLesson": "افتح الدرس",
+  "streakDays": "أيام دراسة متتالية: {count}",
+  "@streakDays": {
+    "description": "Optional, quiet study streak. {count} localized.",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "streakNone": "كل يوم فرصة جديدة للتعلّم.",
+  "@streakNone": {
+    "description": "Shown when there is no current streak. Never guilt-inducing."
+  },
+  "curriculumTitle": "موضوعات التجويد",
+  "curriculumIntro": "الموضوعات ({count}) بترتيب الكتاب، ويمكنك فتح أي موضوع مباشرة.",
+  "@curriculumIntro": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "curriculumProgress": "بدأت: {read} · مكتملة: {completed} · من {total}",
+  "@curriculumProgress": {
+    "placeholders": {
+      "read": {
+        "type": "String"
+      },
+      "completed": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "curriculumGroupsNote": "تقسيم الوحدات لتسهيل التصفح فقط، وليس من الكتاب.",
+  "statusNotStarted": "لم يبدأ",
+  "statusRead": "تمت قراءته",
+  "statusCompleted": "مكتمل",
+  "topicNumber": "الموضوع {number}",
+  "@topicNumber": {
+    "description": "App bar title of a topic. {number} localized.",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "topicInTheBook": "في الكتاب",
+  "topicReadHint": "تُعرض الصفحات الأصلية من {edition} كما هي.",
+  "@topicReadHint": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "topicOpenPages": "افتح صفحات الدرس",
+  "topicUnavailableTitle": "غير متوفر في هذه النسخة",
+  "topicUnavailableInEdition": "موضوع «{topic}» غير موجود في {edition}. يمكنك قراءته في نسخة أخرى.",
+  "@topicUnavailableInEdition": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      },
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "topicNotInEditionShort": "غير موجود في {edition}",
+  "@topicNotInEditionShort": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "topicPartialShort": "تغطية جزئية",
+  "topicAvailableIn": "متوفر في:",
+  "topicMarkCompleted": "علّمه مكتملًا",
+  "@topicMarkCompleted": {
+    "description": "Switch that marks a topic as completed (reading progress)."
+  },
+  "topicOtherEditions": "هذا الموضوع في النسخ الأخرى",
+  "topicRelatedRules": "بطاقات القواعد",
+  "topicPractice": "التدريب",
+  "readerLoading": "جارٍ فتح الكتاب…",
+  "readerError": "تعذّر فتح هذه النسخة. أعد تثبيت التطبيق إذا استمرت المشكلة.",
+  "readerPageSemantics": "صفحة الكتاب: {edition}، {page}. انقر لإظهار أدوات القراءة أو إخفائها.",
+  "@readerPageSemantics": {
+    "description": "Accessibility label for the page area",
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "readerPositionOf": "{current} من {total}",
+  "@readerPositionOf": {
+    "description": "Physical position within the PDF file",
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "readerAddBookmark": "إضافة علامة",
+  "readerRemoveBookmark": "إزالة العلامة",
+  "bookmarkAdded": "أُضيفت العلامة",
+  "bookmarkRemoved": "أُزيلت العلامة",
+  "readerNotes": "ملاحظات الصفحة",
+  "readerMore": "خيارات أخرى",
+  "readerGoToPage": "الانتقال إلى صفحة",
+  "goToPageFieldLabel": "رقم الصفحة المطبوع",
+  "goToPageInvalid": "أدخل رقمًا بين {min} و{max}.",
+  "@goToPageInvalid": {
+    "placeholders": {
+      "min": {
+        "type": "String"
+      },
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "readerChooseEdition": "القراءة في نسخة أخرى",
+  "readerAppearance": "مظهر القراءة",
+  "readerThemeLight": "فاتح",
+  "readerThemeSepia": "ورقي",
+  "readerThemeNight": "ليلي",
+  "readerDimPages": "تخفيف سطوع الصفحات",
+  "readerDimPagesHint": "يخفّف السطوع بالتساوي دون تغيير الألوان.",
+  "readerColorsNote": "ألوان الكتاب تحمل معنى تعليميًّا، لذلك لا تُعكس الصفحات ولا يُعاد تلوينها.",
+  "readerShowThumbnails": "إظهار الصفحات المصغّرة",
+  "readerHideThumbnails": "إخفاء الصفحات المصغّرة",
+  "readerLessonDetails": "تفاصيل الدرس",
+  "notesForPage": "ملاحظات {page}",
+  "@notesForPage": {
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "notesPrivateHint": "تُحفظ ملاحظاتك على هذا الجهاز فقط.",
+  "notesHint": "اكتب ملاحظة…",
+  "notesAdd": "إضافة ملاحظة",
+  "notesEdit": "تعديل الملاحظة",
+  "notesOpenPage": "افتح الصفحة",
+  "notesEmpty": "لا توجد ملاحظات بعد. أضف ملاحظة من شاشة القراءة.",
+  "notesTab": "الملاحظات",
+  "bookmarksTab": "العلامات",
+  "bookmarksEmpty": "لا توجد علامات بعد. أضف علامة من شاشة القراءة.",
+  "bookmarksAndNotes": "العلامات والملاحظات",
+  "rulesTitle": "دليل القواعد",
+  "rulesIntro": "بطاقات مختصرة للقواعد المشروحة في الكتب، مع مثال موثّق ورابط إلى الدرس.",
+  "rulesAwaitingReview": "بطاقات القواعد قيد المراجعة العلمية وستتوفر بعد اعتمادها. الكتب متاحة كاملة في الدروس.",
+  "@rulesAwaitingReview": {
+    "description": "Release build with no reviewed rule cards yet"
+  },
+  "ruleCardTitle": "بطاقة القاعدة",
+  "ruleFromLesson": "من درس: {topic}",
+  "@ruleFromLesson": {
+    "placeholders": {
+      "topic": {
+        "type": "String"
+      }
+    }
+  },
+  "ruleDefinition": "التعريف",
+  "ruleSourceLine": "من {edition}، صفحة {page}",
+  "@ruleSourceLine": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "ruleNotInEdition": "لا يتناول {edition} هذه الجزئية بنص مستقل؛ الملخّص أعلاه كُتب للتطبيق.",
+  "@ruleNotInEdition": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "ruleArabicSource": "نص النسخة العربية:",
+  "ruleLetters": "الحروف",
+  "ruleAllLettersExcept": "جميع الحروف ما عدا:",
+  "ruleExample": "مثال",
+  "ruleHighlightedLetters": "الحروف الملوّنة",
+  "ruleInTheBooks": "في الكتب",
+  "ruleOpenLesson": "الدرس",
+  "rulePractice": "تدرّب",
+  "quranExcerptFrom": "مقتطف من {reference}",
+  "@quranExcerptFrom": {
+    "description": "Label under a partial verse",
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "quranExcerptSemantics": "مثال قرآني: {text}. الحروف الملوّنة: {highlighted}. {reference}",
+  "@quranExcerptSemantics": {
+    "description": "Accessibility label for a Qur'anic example",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      },
+      "highlighted": {
+        "type": "String"
+      },
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "previewBadge": "معاينة للتطوير",
+  "@previewBadge": {
+    "description": "Marks unreviewed supplementary content in development builds"
+  },
+  "previewExplanation": "هذه المادة الإضافية لم تُراجَع بعد من مختص، وتظهر في نسخة التطوير فقط.",
+  "makharijTitle": "مخارج الحروف",
+  "makharijSubtitle": "الرسم التوضيحي مع المخارج السبعة عشر",
+  "makharijIntro": "يعرض الكتاب {areas} مخارج عامة و{points} مخرجًا خاصًّا. اختر مخرجًا لترى موضعه ووصفه.",
+  "@makharijIntro": {
+    "placeholders": {
+      "areas": {
+        "type": "String"
+      },
+      "points": {
+        "type": "String"
+      }
+    }
+  },
+  "makharijDiagramSource": "الرسم من الكتاب نفسه. كبّره بإصبعين.",
+  "makharijOpenDiagramPage": "صفحة الرسم",
+  "makharijAllPoints": "جميع المخارج",
+  "makharijAllAreas": "الكل",
+  "makharijNotMarked": "لا يحدد الرسم هذا الموضع بعلامة؛ راجع صفحة الكتاب لرسمه التفصيلي.",
+  "makharijReadInBook": "{edition}، صفحة {page}",
+  "@makharijReadInBook": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      },
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "practiceTitle": "التدريب",
+  "practiceIntro": "أسئلة إضافية كُتبت للتطبيق، وأمثلتها مأخوذة من جداول الكتب وموثّقة.",
+  "practiceAwaitingReview": "أسئلة التدريب قيد المراجعة وستتوفر بعد اعتمادها.",
+  "practiceOverall": "نتيجتك",
+  "practiceNotTried": "عدد الأسئلة: {count} — لم تبدأ بعد.",
+  "@practiceNotTried": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "practicePerformance": "صحيحة: {correct} من {answered} مُجابة · المجموع {total}",
+  "@practicePerformance": {
+    "description": "Correct latest answers / answered / total",
+    "placeholders": {
+      "correct": {
+        "type": "String"
+      },
+      "answered": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "practiceSeparateFromReading": "تقدّم القراءة يُسجَّل منفصلًا عن نتائج التدريب.",
+  "practiceStart": "ابدأ التدريب",
+  "practiceContinue": "تابع التدريب",
+  "practiceByLesson": "حسب الدرس",
+  "practiceThisLesson": "تدرّب على هذا الدرس",
+  "practiceReset": "مسح نتائج التدريب",
+  "practiceResetConfirm": "ستُمسح نتائج التدريب فقط. تبقى العلامات والملاحظات وتقدّم القراءة كما هي.",
+  "quizProgress": "السؤال {current} من {total}",
+  "@quizProgress": {
+    "placeholders": {
+      "current": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "quizSupplementary": "سؤال إضافي، ليس من نص الكتاب.",
+  "quizIdentifyPrompt": "ما الحكم في الحروف الملوّنة؟",
+  "quizTrueFalsePrompt": "صواب أم خطأ؟",
+  "quizTrue": "صواب",
+  "quizFalse": "خطأ",
+  "quizCounts": "{value} حركات",
+  "@quizCounts": {
+    "description": "A number of counts (harakat). {value} localized.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "quizFeedbackCorrect": "إجابة صحيحة",
+  "quizFeedbackIncorrect": "ليست هذه الإجابة",
+  "quizCorrectAnswer": "الإجابة الصحيحة",
+  "@quizCorrectAnswer": {
+    "description": "Accessibility value of the correct option"
+  },
+  "quizYourAnswer": "إجابتك",
+  "@quizYourAnswer": {
+    "description": "Accessibility value of the chosen wrong option"
+  },
+  "quizReviewRule": "بطاقة القاعدة",
+  "quizOpenLesson": "الدرس",
+  "quizNext": "السؤال التالي",
+  "quizSeeResult": "عرض النتيجة",
+  "quizFinished": "أحسنت المتابعة",
+  "quizScore": "أصبت في {correct} من {total}",
+  "@quizScore": {
+    "placeholders": {
+      "correct": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "quizFinishedHint": "ستظهر الأسئلة التي أخطأت فيها أولًا في المرة القادمة.",
+  "searchTitle": "البحث",
+  "searchHint": "ابحث عن موضوع أو قاعدة أو مصطلح",
+  "searchCoverage": "يبحث في عناوين الموضوعات وأسماء القواعد والمصطلحات بالّلغات الأربع. أما نص الصفحات فيُبحث فيه في النسختين الإنجليزية والإندونيسية فقط، لأن نص النسختين العربية والكردية لا يُستخرج بدقة.",
+  "@searchCoverage": {
+    "description": "Honest description of search coverage"
+  },
+  "searchLessons": "الموضوعات",
+  "searchRules": "بطاقات القواعد",
+  "searchPagesIn": "صفحات من {edition}",
+  "@searchPagesIn": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "searchPagesNote": "وُجدت الكلمة في نص هذه الصفحات؛ موضعها داخل الصفحة غير محدد.",
+  "searchMatched": "يطابق: {text}",
+  "@searchMatched": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResults": "لا نتائج لـ«{query}»",
+  "@searchNoResults": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchNoResultsHint": "جرّب اسم الحكم أو جزءًا منه، مثل: الإخفاء، القلقلة، المد.",
+  "settingsTitle": "الإعدادات",
+  "settingsLanguage": "اللغة",
+  "settingsLanguageHint": "تتغير الواجهة ونسخة الكتاب معًا. يُحفظ موضع القراءة في كل نسخة على حدة، ويُنقل الدرس الحالي إلى ما يقابله.",
+  "settingsStudy": "الدراسة",
+  "settingsStreak": "عدّاد الأيام المتتالية",
+  "settingsStreakHint": "خيار هادئ يظهر في الرئيسية.",
+  "settingsHaptics": "الاهتزاز عند اللمس",
+  "settingsHapticsHint": "اهتزاز خفيف عند تغيير القسم، وتعليم الدرس مكتملًا، والإجابة في التدريب.",
+  "settingsReminder": "تذكير يومي",
+  "settingsReminderHint": "إشعار واحد كل يوم في الوقت الذي تختاره. يُجدوَل على جهازك ولا يُرسل شيء إلى أي جهة.",
+  "settingsReminderTime": "وقت التذكير",
+  "settingsReminderDenied": "لم يُسمح بالإشعارات. يمكنك السماح بها من إعدادات الجهاز ثم تفعيل التذكير.",
+  "reminderBody": "حان وقت وِردك من التجويد. تابع درسك من حيث توقفت.",
+  "@reminderBody": {
+    "description": "Text of the daily reminder notification"
+  },
+  "reminderChannel": "التذكير اليومي",
+  "@reminderChannel": {
+    "description": "Android notification channel name"
+  },
+  "bookTitle": "الكتاب كاملًا",
+  "@bookTitle": {
+    "description": "Entry that opens the whole book for browsing"
+  },
+  "bookSubtitle": "تصفّح صفحات {edition} كاملةً كمرجع",
+  "@bookSubtitle": {
+    "description": "{edition} localized edition name",
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsOffline": "تعمل الكتب الأربعة وكل المزايا دون اتصال بالإنترنت، ولا يلزم إنشاء حساب.",
+  "lessonRead": "اقرأ الدرس",
+  "@lessonRead": {
+    "description": "Primary button: open the native lesson text"
+  },
+  "lessonOriginalPages": "الصفحات الأصلية",
+  "@lessonOriginalPages": {
+    "description": "Opens the original PDF pages"
+  },
+  "lessonFromPage": "من صفحة {page}",
+  "@lessonFromPage": {
+    "description": "Marker before content taken from a book page. {page} localized.",
+    "placeholders": {
+      "page": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonViewInBook": "اعرضها في الكتاب",
+  "lessonSourceNote": "هذا النص منقول من صفحات {edition}. الصفحات الأصلية هي المرجع.",
+  "@lessonSourceNote": {
+    "placeholders": {
+      "edition": {
+        "type": "String"
+      }
+    }
+  },
+  "lessonUnderReview": "لم يُراجَع هذا النقل بعد؛ عند أي اختلاف فالمعتمد هو الصفحة الأصلية.",
+  "@lessonUnderReview": {
+    "description": "Shown in preview builds on unreviewed lesson text"
+  },
+  "lessonFigure": "رسمٌ توضيحيٌّ من الكتاب، انقر للتكبير",
+  "@lessonFigure": {
+    "description": "Accessibility label of a book illustration"
+  },
+  "lessonFullVerse": "الآية كاملة",
+  "@lessonFullVerse": {
+    "description": "Title of the sheet showing the full verse of an excerpt"
+  },
+  "lessonQuranTapHint": "انقر لعرض الآية كاملة",
+  "@lessonQuranTapHint": {
+    "description": "Accessibility hint on a Qur'anic example"
+  },
+  "lessonContents": "محتويات الدرس",
+  "@lessonContents": {
+    "description": "Button/sheet title: list of the lesson's sections"
+  },
+  "lessonEnd": "نهاية الدرس",
+  "@lessonEnd": {
+    "description": "Heading at the end of a lesson"
+  },
+  "lessonPrevious": "الدرس السابق",
+  "lessonNext": "الدرس التالي",
+  "searchInLessons": "في نصوص الدروس",
+  "searchCoverageWithLessons": "يبحث في نصوص الدروس وعناوين الموضوعات وأسماء القواعد والمصطلحات بالّلغات الأربع، وفي نص صفحات النسختين الإنجليزية والإندونيسية.",
+  "@searchCoverageWithLessons": {
+    "description": "Search coverage when lesson text is available"
+  },
+  "aboutTitle": "عن التطبيق",
+  "aboutBody": "رفيق لدراسة التجويد مبني حول كتب «تبسيط التجويد – المستوى الثاني». تُعرض الكتب الأصلية كما هي، وتحيط بها أدوات للتصفح والمراجعة والتدريب.",
+  "aboutBooks": "الكتب",
+  "aboutAuthor": "المؤلف: {name}",
+  "@aboutAuthor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutTranslator": "الترجمة: {name}",
+  "@aboutTranslator": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutDistribution": "ينص الكتاب على أن «حق النشر متاح للجميع ما دام بعيدًا عن الزيادة أو النقصان».",
+  "@aboutDistribution": {
+    "description": "Quotes the authors' distribution condition"
+  },
+  "aboutUnchanged": "تُعرض الصفحات دون أي إضافة أو حذف. النسخ المضمّنة مضغوطة بنيويًّا فقط، وقد تحقق أن عرضها مطابق للأصل بكسلًا بكسل.",
+  "aboutPrivacyTitle": "الخصوصية",
+  "aboutPrivacy": "لا يجمع التطبيق أي بيانات ولا يتصل بالإنترنت. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق.",
+  "aboutQuranText": "النص القرآني",
+  "aboutTanzil": "الأمثلة القرآنية في الدروس وبطاقات القواعد والتدريب منقولة حرفيًّا من نص مشروع تنزيل (الرسم العثماني، الإصدار 1.1، tanzil.net) ومراجعها محققة آليًّا.",
+  "aboutSupplementary": "المواد الإضافية",
+  "aboutSupplementaryBody": "نصوص الدروس وبطاقات القواعد وأسئلة التدريب ومستكشف المخارج مبنية على نصوص الكتب، وتُراجَع قبل اعتمادها للإصدار.",
+  "aboutFonts": "الخطوط",
+  "aboutFontsBody": "Noto Naskh Arabic وNoto Sans Arabic وAmiri وAmiri Quran وLiterata وInter، جميعها بترخيص SIL Open Font License 1.1. خطوط الكتب الأصلية لا تُوزَّع مع التطبيق.",
+  "aboutLicenses": "التراخيص",
+  "aboutContentVersion": "إصدار المحتوى: {version}",
+  "@aboutContentVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  }
+}

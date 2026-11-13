@@ -1,0 +1,11 @@
+%status sourceExtracted
+
+@page 105
+# The chain of transmission of the narration of Hafs ({{a إسنادُ روايةِ حفصٍ}})
+The chain, from top to bottom:
+- **The Prophet Muhammad** (peace be upon him)
+- **'Uthman ibn 'Affan**, **'Ali ibn Abi Talib**, **'Abdullah ibn Mas'ud**, **Ubayy ibn Ka'b**, **Zaid ibn Thabit**
+- **'Abdullah ibn Habib**
+- **'Asim**
+- **Hafs**
+> **Notice**: The narration of Hafs is the most widespread narration in the Islamic world.

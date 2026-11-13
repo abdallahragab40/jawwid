@@ -1,0 +1,27 @@
+%status sourceExtracted
+
+@page 7
+# Lahn dalam Membaca Al-Qur'an ({{a اللَّحنُ في تِلاوةِ القُرآنِ الكَريم}})
+### Definisi
+= Secara bahasa | menyimpang dari yang benar, dikatakan lahn jika melakukan kesalahan.
+= Secara istilah | melakukan kesalahan ketika membaca al-Qur'an dan menyimpang dari kebenaran.
+Lahn (kesalahan) terbagi menjadi dua: (**lahn jaly** dan **lahn khafy**) (**kesalahan jelas** dan **kesalahan tersembunyi**).
+## 1- Lahn Jaly (Kesalahan Jelas)
+= Definisi | adalah kesalahan yang terjadi pada kata sehingga menyebabkan susunannya terganggu baik maknanya berubah maupun tidak. **Disebut (jaly) jelas**, karena kesalahan yang dapat diketahui oleh orang yang faham tentang ilmu al-Quran maupun orang yang awam.
+= Hukumnya | haram (dilarang), orang yang membacanya berdosa apabila ia melakukan kesalahan tersebut dengan sengaja atau tidak belajar padahal ia dapat melakukannya.
+### Beberapa bentuknya
+1) **Mengganti huruf dengan huruf**: seperti mengganti ha ({{a ح}}) dengan ha ({{a ه}}) {{q 1:2|ٱلْ[حَ]مْدُ لِلَّهِ}}.
+2) **Mengganti harakah dengan harakat**: seperti dengan mengkasrahkan ta sebagai ganti dari fathah {{q 1:7|أَنْعَمْ[تَ]}}.
+3) **Menyukunkan huruf yang berharakat**: mengubah raa dengan dhammah menjadi sukun saat washal {{q 27:27|قَالَ سَنَنظُ[رُ] أَصَدَقْتَ}}.
+4) **Mengubah sukun dengan harakat**: seperti memberikan harakat fathah pada huruf mim sukun {{q 1:7|أَنْعَ[مْ]تَ}}.
+5) **Menambahkan huruf atau beberapa huruf**, atau menambahkan kata atau beberapa kata.
+
+@page 8
+## 2- Lahn khafy (Kesalahan Tersembunyi)
+= Definisinya | ini adalah kesalahan yang terkait dengan kefasihan pengucapan, bukan kebenarannya.
+= Sebagian contohnya | tidak memberikan mad, tidak memberikan tempo ghunnah yang tepat, dan tidak menjadikan laam dan raa tebal atau tipis pada tempatnya. Disebut khafy (tersembunyi) karena hanya orang yang memahami ilmu al-Qur'an yang mengetahuinya.
+= Hukumnya | makruh (tidak disukai). Dikatakan haram (terlarang) karena keluar dari kaidah yang sebenarnya.
+Dibagi menjadi 2 tingkatan:
+1) jika qari terjatuh pada hukum yang terlihat jelas maka haram.
+2) jika qari terjatuh pada hukum yang rinci maka makruh.
+> **Catatan**: hendaknya seorang qari’ menjaga bacaannya dengan cara talaqqi dan musafahah agar terhindar dari lahn khafy dan lahn jaly.

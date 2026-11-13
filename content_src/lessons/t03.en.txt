@@ -1,0 +1,9 @@
+%status sourceExtracted
+
+@page 8
+# Ranks of Recitation (Speeds of Recitation) ({{a مَراتِبُ التِلاوةِ (سُرعاتُ القِراءةِ)}})
+There are 3 ranks of reciting the Qur'an (speeds):
+= 1 - Tahqiq (Slowness) | To make the recitation slow with the highest degree of proficiency and carefulness, It is suitable for education.
+= 2 - Hadr (Quickness) | It is a quick recitation performed by the reciter without disturbing letters, their articulation points or their characteristics. In the rank of hadr, the reciter should take 2 things into account: a- Speed recitation. b- Proficiency of recitation without ignoring rules nor disturbing them.
+= 3 - Tadwir (moderation) | To make recitation moderate between tahqiq (slowness) and hadr (quickness).
+- **Tartil (Recitation)** has no specific rank but, It is included in the last three ranks. In tartil, the recitation is accompanied by understanding and meditating, with giving letters their rights and dues from characteristics and articulation points, The Qur'an was sent down to act according to its content and to understand and ponder over its verses for Almighty's saying: {{q 38:29|*}} [Sad: 29].

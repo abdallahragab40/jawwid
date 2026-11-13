@@ -1,0 +1,153 @@
+%status sourceExtracted
+
+@page 41
+# Rules of Noon Sakinah and Tanween ({{a أحكامُ النُّونِ السَّاكِنةِ والتَّنوين}})
+This subject is so important because Noon sakinah and Tanween are mentioned many times in the Holy Qur'an. Note that Noon comes in three cases in the Qur'an:
+1) **Mushaddadah (Stressed)** like: {{q ?|الْجَ[نَّ]ةَ}}، {{q ?|أَ[نَّ]}}.
+2) **Mutaharekah (voweled)** like: {{q ?|[نَ]عْبُدُ}}، {{q ?|تَعْلَمُو[نَ]}}، {{q ?|دِي[نِ]}}.
+3) **Sakinah (non_voweled)** like: {{q ?|أَ[نْ]عَمْتَ}}، {{q ?|مَ[ن] يَخْشَىٰ}}، {{q ?|مِ[ن]ۢ بَعْدِ}}، {{q ?|يَ[ن]ظُرُونَ}} and It's intended.
+
+## Noon sakinah
+= Definition | Noon is with no harakah (with no sign or with Sukoon sign above), It is constant in continuing recitation or stopping and pronouncing or writing, It is extra or from the origin of the word, It comes also in the Middle of the word or at the end.
+= Examples | {{q ?|يَ[ن]ظُرُونَ}}، {{q ?|ا[ن]كَدَرَتْ}}، {{q ?|سُ[ن]دُسٍ}}، {{q ?|أَ[ن]عَمَ}}، {{q ?|مِّ[ن]}}.
+
+## Tanween
+= Definition | extra noon sakinah is not used for emphasis, pronounced not written at the end of nouns and found in continuing the recitation not stopping It's sign is doubling vowels.
+= Examples | {{q ?|سِرَا[جًا] وَهَّاجًا}}، {{q ?|قَوْ[مٍ] هَادٍ}}، {{q ?|وُجُو[هٌ] يَوْمَئِذٍ}}، {{q ?|غَفُو[رٌ] حَلِيمٌ}}.
+
+### Comparison between Noon sakinah and tanween
+| | Noon sakinah | Tanween |
+| 1 | Noon sakinah occurs in the Middle of the word or at the end | Only at the end of the word |
+| 2 | In nouns, verbs and articles | Only in nouns |
+| 3 | It is constant in the case of continuing recitation or stopping | Only in the case of continuing recitation |
+| 4 | It is constant in pronouncing and writing | Only in pronouncing |
+| 5 | May be from the origin of the word or extra | Only extra not from the origin of the word. |
+
+@page 42
+## Rules of Noon sakinah and Tanween
+Noon sakinah and Tanween have 4 rules when they are followed by any of the alphaphetical letters:
+1) **Ithhar (clarity)**: Its letters: ({{a ء ه ع ح غ خ}}).
+2) **Idgham (merging)**: Its letters: are collected ({{a يَرْمَلُون}}). With ghunnah: ({{a ينمو}}). Without ghunnah: ({{a ل ر}}).
+3) **Iqlab (converting)**: Its letters: is only ({{a ب}}).
+4) **Ikhfaa (hiding)**: Its letters: (are the rest of the letters).
+
+@page 43
+# 1- Ithhar (throat clarity) ({{a الإظهار}})
+### definition of Ithhar
+= In linguistics | clarity and manifestation.
+= In applied definition | pronouncing Noon sakinah or Tanween from its articulation point without excessive ghunnah.
+### Letters of Ithhar
+If noon sakinah or tanween is followed by one of the six throat letters: ({{a ء ، هـ ، ع ، ح ، غ ، خ}}) ithhar must be done, It is called (ithhar halqy). Some scholars gathered them in the first letter of each word in the following phrase ({{a أَخِي هَاكَ عِلْمًا حَازَهُ غَيْرُ خَاسِرِ}}).
+- **It is called throat clarity**: because all six letters are emitted from throat.
+- **The cause of Ithhar**: The articulation point of Noon sakinah is far from the articulation point of these letters.
+- **The method of pronunciation**: To Pronounce Noon sakinah or Tanween clearly with no apparent ghunnah and avoid cutting off or slight pausing without taking breath, The characteristic of tawassut (moderation) that occurs between sheddah and Rakhawah (strength and softness) should be also applied.
+### Noon sakinah
+| Letter of Ithhar | Noon sakinah: in one word | Noon sakinah: In two words | Tanween: Tanween is only in two words |
+| Hamzah | {{q ?|وَيَ[ن]ـَٔوْنَ}} | {{q ?|مَ[نْ أَ]عْطَىٰ}} | {{q ?|وَجَنَّٰ[تٍ أَ]لْفَافًا}} |
+| Haa | {{q ?|وَيَ[نْهَ]وْنَ}} | {{q ?|مَ[نْ هَ]اجَرَ}} | {{q ?|وَلِكُلِّ قَوْ[مٍ هَ]ادٍ}} |
+| Ain | {{q ?|أَ[نْعَ]مْتَ}} | {{q ?|إِ[نْ عَ]لَيْكَ}} | {{q ?|حَكِي[مٌ عَ]لِيمٌ}} |
+| Haa | {{q ?|وَتَ[نْحِ]تُونَ}} | {{q ?|وَمَ[نْ حَ]وْلَهُ}} | {{q ?|قَرْ[ضًا حَ]سَنًا}} |
+| Ghain | {{q ?|فَسَيُ[نْغِ]ضُونَ}} | {{q ?|مِ[نْ غَ]يْرِ}} | {{q ?|لَعَفُ[وٌّ غَ]فُورٌ}} |
+| Khaa | {{q ?|وَالْمُ[نْخَ]نِقَةُ}} | {{q ?|مِّ[نْ خَ]وْفٍ}} | {{q ?|عَلِي[مٌ خَ]بِيرٌ}} |
+### Sign of Ithhar in the Qur'an
+For Noon sakinah: {{q ?|أَ[نْ]عَمْتَ}}، {{q ?|مَ[نْ] هَاجَرَ}}.
+For Tanween: {{q ?|عَبْ[دًا] إِذَا}}، {{q ?|وَجَنَّٰ[تٍ] أَلْفَافًا}}، {{q ?|غَفُو[رٌ] حَلِيمٌ}}.
+
+@page 44
+# 2- Idgham (merging) ({{a الإدغام}})
+### Definition of Idgham
+= In linguistics | Inserting something into another.
+= In applied definition | Inserting non voweled letter into voweled letter and making them as one mushaddad letter as the second.
+### Letters of Idgham
+Noon sakinah or tanween is merged into the next letter when it is followed by one of the six letters that are collected in a word: ({{a يَرْمَلُون}}) ({{a ي، ر، م، ل، و، ن}}).
+- **Notice**: Merging noon sakinah or tanween only occurs in two words.
+It Is divided into:
+## 1- Idgham with ghunnah
+It is accompanied by clear nasal sound (ghunnah), Its letters are collected in a word ({{a يَنْمُو}}) ({{a ي، ن، م، و}}).
+| Letters | Letter of idgham with noon sakinah | Letter of idgham with noon sakinah | With tanween | With tanween |
+| Yaa | {{q ?|مَ[ن يَ]خْشَىٰ}} | {{q ?|وَمَ[ن يَ]عْمَلْ}} | {{q ?|وُجُو[هٌ يَ]وْمَئِذٍ}} | {{q ?|لِّقَوْ[مٍ يَ]تَفَكَّرُونَ}} |
+| Noon | {{q ?|إِ[ن نَّ]فَعَتِ}} | {{q ?|لَ[ن نَّ]دْخُلَهَا}} | {{q ?|عِظَٰمً[ا نَّ]خِرَةً}} | {{q ?|شَيْ[ءٍ نُّ]كُرٍ}} |
+| Meem | {{q ?|مِّ[ن مَّ]سَدٍ}} | {{q ?|مِ[ن مَّ]الٍ}} | {{q ?|نَفْ[سٌ مَّ]ا}} | {{q ?|صُحُفً[ا مُّ]طَهَّرَةً}} |
+| Waaw | {{q ?|مِّ[ن وَ]رَآئِهِم}} | {{q ?|مِ[ن وَ]الٍ}} | {{q ?|سِرَاجً[ا وَ]هَّاجًا}} | {{q ?|وَوَالِ[دٍ وَ]مَا وَلَدَ}} |
+## 2- Idgham without ghunnah
+It is not accompanied by nasal sound (ghunnah), Its two letters are ({{a ل ، ر}}).
+| Letters | Letter of idgham with noon sakinah | Letter of idgham with noon sakinah | With tanween | With tanween |
+| Laam | {{q ?|يَكُ[ن لَّ]هُ}} | {{q ?|مِّ[ن لَّ]دُنْهُ}} | {{q ?|مَا[لًا لُّ]بَدًا}} | {{q ?|هُ[دًى لِّ]لْمُتَّقِينَ}} |
+| Raa | {{q ?|مِ[ن رَّ]حِيقٍ}} | {{q ?|مِّ[ن رَّ]بِّهِمْ}} | {{q ?|غَفُو[رٌ رَّ]حِيمٌ}} | {{q ?|عِيشَ[ةٍ رَّ]اضِيَةٍ}} |
+
+@page 45
+### According to completeness and incompleteness, Idgham can be divided into two types
+1) **complete Idgham**: To merge Noon sakinah or Tanween completely into the next letter without any trace of Noon left, Its letters are collected in a word ({{a نرمل}}) ({{a ن، ر، م، ل}}).
+2) **Incomplete Idgham**: To merge Noon sakinah or Tanween and remain the characteristic of ghunnah, Its letters are ({{a و، ي}}).
+- Accordingly, Idgham can be divided into 3 types:
+= Idgham with ghunnah | complete Idgham Its letters are ({{a م، ن}}); incomplete Idgham Its letters are ({{a و، ي}}).
+= Idgham without ghunnah | complete Idgham Its letters are ({{a ل، ر}}).
+### Sign of Idgham in the Qur'an
+Sign of Noon sakinah or Tanween in the case of (complete Idgham) into letters ({{a ن، م، ل، ر}}) (Placing shaddah sign above the letter that follows noon sakinah or tanween.): {{q ?|مِّ[ن مَّ]سَدٍ}}، {{q ?|يَكُ[ن لَّ]هُ}}، {{q ?|صُحُفً[ا مُّ]طَهَّرَةً}}، {{q ?|عِيشَ[ةٍ رَّ]اضِيَةٍ}}، {{q ?|خَيْ[رٌ لِّ]لْأَبْرَارِ}}.
+Sign of Noon sakinah or Tanween in the case of (Incomplete Idgham) into letters ({{a و، ي}}) (Placing vowel [fathah _kasrah_dammah] above the letter that follows noon sakinah or tanween.): {{q ?|مِّ[ن وَ]رَآئِهِم}}، {{q ?|مَ[ن يَ]خْشَىٰ}}، {{q ?|سِرَاجً[ا وَ]هَّاجًا}}، {{q ?|يَوْمَئِ[ذٍ يُ]وَفِّيهِمُ}}، {{q ?|وُجُو[هٌ يَ]وْمَئِذٍ}}.
+
+@page 46
+### Two notes
+1) Noon sakinah is not merged into (**waaw or Yaa**) if they met in one word. They are only 4 words in the Qur'an: {{q 6:99|قِ[نْوَ]انٌ}}، {{q 13:4|صِ[نْوَ]انٌ}}، {{q ?|ٱلدُّ[نْيَ]ا}} wherever it occurs، {{q ?|بُ[نْيَ]ٰنٌ}} wherever it occurs. Merging is not applied to these words to follow (Imam Hafs) in this narration and keep their meanings away from confusion and misunderstanding.
+2) Hafs on the authority of Asim by the way of Ash_shaatibiyyah doesn't merge Noon into waaw in continuing recitation between two words: {{q 36:1|يس}} {{q 36:2|وَٱلْقُرْءَانِ ٱلْحَكِيمِ}} [Yasin: 1-2]. Noon is pronounced clearly ({{a يَا سِينْ وَالقُرآنِ}}). {{q 68:1|[ن] وَٱلْقَلَمِ وَمَا يَسْطُرُونَ}} [Al-Qalam: 1]. Noon is pronounced clearly ({{a نُونْ وَالقَلَمِ وما يَسْطُرُون}}).
+Noon is not merged into raa in Almighty's word: {{q 75:27|وَقِيلَ مَ[نْ رَ]اقٍ}} Because of Sakt (slight pause without taking breath) that prevents Idgham, according to the narration.
+
+@page 47
+# 3- Iqlab (converting) ({{a الإقلاب}})
+### definition of Iqlab
+= In linguistics | converting something into another.
+= In applied definition | converting Noon sakinah or Tanween into hidden meem with ghunnah when it is followed by letter ({{a ب}}).
+### Letters of Iqlab
+Letters of Iqlab is only baa ({{a ب}}).
+- **Method of pronunciation**: To make your lips touch each other gently. Don't leave a gap nor make your lips over pressed against each other. So, It will differ from pronouncing meem merged into another meem.
+### Examples
+| | | | | |
+| Noon sakinah: in one word | {{q ?|فَأَ[نۢبَ]تْنَا}} | {{q ?|لَيُ[نۢبَ]ذَنَّ}} | {{q ?|ٱلْأَ[نۢبَ]آءُ}} | {{q ?|أَ[نۢبِ]ـُٔونِى}} |
+| Noon sakinah: In two words | {{q ?|مِ[نۢ بَ]عْدِ}} | {{q ?|مِ[نۢ بَ]قْلِهَا}} | {{q ?|مِ[نۢ بَ]عْضٍ}} | {{q ?|مِ[نۢ بَ]يْتِكَ}} |
+| Tanween | {{q ?|سَمِيعًۢ[ا بَ]صِيرًا}} | {{q ?|عُتُلٍّۢ[ بَ]عْدَ}} | {{q ?|نَفْسٌۢ[ بِ]مَا}} | {{q ?|سَمِيعٌۢ[ بَ]صِيرٌ}} |
+### Sign of Iqlab in the Qur'an
+In Noon sakinah: putting tiny meem above noon instead of Sukoon: {{q ?|فَأَ[نۢ]بَتْنَا}}، {{q ?|مِ[نۢ] بَقْلِهَا}}.
+In Tanween: putting tiny meem instead of the second vowel (that vowel refers to Tanween): {{q ?|نَفْ[سٌۢ] بِمَا}}، {{q ?|سَمِي[عًۢا] بَصِيرًا}}، {{q ?|سَمِي[عٌۢ] بَصِيرٌ}}.
+
+@page 48
+# 4- Ikhfaa (Hiding) ({{a الإخفاء}})
+### Definition of Ikhfaa
+= In linguistics | hiding.
+= In applied definition | pronouncing noon sakinah or tanween in a way so that the sound is between Ithhar and Idgham, stripped of any Shaddah with a ghunnah remaining in the first letter.
+### Letters of Ikhfaa
+Noon sakinah or tanween is hidden and accompanied by a ghunnah when it is followed by one of the 15 letters. They are the rest of the alphabetical letters after excluding letters of Ithhar, idgham and iqlab. The regulator collected them in the first letter of each word in the following verse:
+{{a صِفْ ذَا ثَنَا كَمْ جَادَ شَخْصٌ قَدْ سَمَا ... دُمْ طَيِّبًا زِدْ فِي تُقًى ضَعْ ظَالِمَا}}
+- Hiding noon sakinah and tanween is called as real hiding.
+- **The method of pronunciation**: Placing the Tongue in a position close to the articulation point of the next letter.
+### Levels of Ikhfaa
+Ikhfaa has different levels of strength depending on the closeness or farness of the articulation point of Ikhfaa letter to noon, Whatever the articulation point of noon sakinah or tanween is Closer to the articulation point of Ikhfaa letters, whatever ikhfaa is stronger.
+1) **The heighest level of Ikhfaa** with ({{a ط، د، ت}}).
+2) **The intermediate level of Ikhfaa** with 10 letters: ({{a ص، ذ، ث، ج، ش، س، ز، ف، ض، ظ}}).
+3) **The lowest level of Ikhfaa** (closer to Ithhar) with ({{a ق، ك}}).
+- Special care with ghunnah to be heavy or light according to the following letter: If Noon sakinah or Tanween is followed by heavy letter, Gunnah should be heavy, If they are followed by light letter, Gunnah should be light.
+| Gunnah is followed by heavy letter | Gunnah is followed by light letter |
+| {{q ?|بِرِي[حٍ صَ]رْصَرٍ}} | {{q ?|مَّ[نثُ]ورًا}} |
+| {{q ?|مِ[ن ضَ]رِيعٍ}} | {{q ?|إِ[ن كَ]انَ}} |
+| {{q ?|يَ[نطِ]قُونَ}} | {{q ?|شَيْ[ءٍ شَ]هِيدٌ}} |
+| {{q ?|شَيْ[ءٍ قَ]دِيرٌ}} | {{q ?|فَمَ[ن ثَ]قُلَتْ}} |
+| {{q ?|يَ[نظُ]رُونَ}} | {{q ?|مِّ[ن جُ]وعٍ}} |
+
+@page 49
+### Sign of Ikhfaa in the Qur'an
+The same sign of Incomplete Idgham as well as Ikhfaa can take place in one word like: {{q ?|إِ[ن كُ]نتُمْ}}.
+| Letter of Ikhfaa | For Noon sakinah: In one word | For Noon sakinah: In two words | For Tanween |
+| {{a ص}} | {{q ?|فَٱ[نصَ]بْ}} | {{q ?|عَ[ن صَ]لَاتِهِمْ}} | {{q ?|بِرِي[حٍ صَ]رْصَرٍ}} |
+| {{a ذ}} | {{q ?|مُ[نذِ]رٌ}} | {{q ?|مِّ[ن ذَ]كَرٍ}} | {{q ?|وَطَعَامً[ا ذَ]ا}} |
+| {{a ث}} | {{q ?|مَّ[نثُ]ورًا}} | {{q ?|فَمَ[ن ثَ]قُلَتْ}} | {{q ?|أَزْوَٰجً[ا ثَ]لَٰثَةً}} |
+| {{a ك}} | {{q ?|عَ[نكَ]}} | {{q ?|إِ[ن كَ]انَ}} | {{q ?|وَرِزْ[قٌ كَ]رِيمٌ}} |
+| {{a ج}} | {{q ?|وَأَ[نجَ]يْنَا}} | {{q ?|مِّ[ن جُ]وعٍ}} | {{q ?|قَوْمً[ا جَ]بَّارِينَ}} |
+| {{a ش}} | {{q ?|أَ[نشَ]رَهُ}} | {{q ?|فَمَ[ن شَ]آءَ}} | {{q ?|شَيْ[ءٍ شَ]هِيدٌ}} |
+| {{a ق}} | {{q ?|أَ[نقَ]ضَ}} | {{q ?|مِ[ن قَ]بْلُ}} | {{q ?|شَيْ[ءٍ قَ]دِيرٌ}} |
+| {{a س}} | {{q ?|تُ[نسَ]ىٰ}} | {{q ?|مِّ[ن سِ]جِّيلٍ}} | {{q ?|وَرَجُلً[ا سَ]لَمًا}} |
+| {{a د}} | {{q ?|عِ[ندَ]}} | {{q ?|مِ[ن دَ]آبَّةٍ}} | {{q ?|قِنْوَا[نٌ دَ]انِيَةٌ}} |
+| {{a ط}} | {{q ?|يَ[نطِ]قُونَ}} | {{q ?|مَ[ن طَ]غَىٰ}} | {{q ?|صَعِيدً[ا طَ]يِّبًا}} |
+| {{a ز}} | {{q ?|أَ[نزَ]لْنَٰهُ}} | {{q ?|مِّ[ن زَ]كَوٰةٍ}} | {{q ?|صَعِيدً[ا زَ]لَقًا}} |
+| {{a ف}} | {{q ?|ٱ[نفَ]طَرَتْ}} | {{q ?|مِ[ن فَ]ضْلِ}} | {{q ?|سَفَ[رٍ فَ]عِدَّةٌ}} |
+| {{a ت}} | {{q ?|أَفَأَ[نتَ]}} | {{q ?|مَ[ن تَ]زَكَّىٰ}} | {{q ?|عَمَ[دٍ تَ]رَوْنَهَا}} |
+| {{a ض}} | {{q ?|مَّ[نضُ]ودٍ}} | {{q ?|مِ[ن ضَ]رِيعٍ}} | {{q 80:38|مُّسْفِرَ[ةٌ]}} {{q 80:39|[ضَ]احِكَةٌ}} |
+| {{a ظ}} | {{q ?|يَ[نظُ]رُونَ}} | {{q ?|مَ[ن ظَ]لَمَ}} | {{q ?|ظِ[لًّا ظَ]لِيلًا}} |

@@ -1,0 +1,135 @@
+%status sourceExtracted
+
+@page 16
+# Huruf Arab ({{a الحُروفُ العَربيَّة}})
+Al-Qur'an terdiri dari surat-surat, surat-surat al-Qur'an terdiri dari ayat-ayat, ayat-ayat terdiri dari kata-kata, dan setiap kata terdiri dari huruf-huruf, satuan terkecil dalam al-Qur’an adalah huruf.
+| | | | | | | | | | |
+| {{a ا}} | {{a ب}} | {{a ت}} | {{a ث}} | {{a ج}} | {{a ح}} | {{a خ}} | {{a د}} | {{a ذ}} | {{a ر}} |
+| {{a ز}} | {{a س}} | {{a ش}} | {{a ص}} | {{a ض}} | {{a ط}} | {{a ظ}} | {{a ع}} | {{a غ}} | {{a ف}} |
+| {{a ق}} | {{a ك}} | {{a ل}} | {{a م}} | {{a ن}} | {{a ه}} | {{a و}} | {{a ي}} | {{a ء}} | |
+- **Huruf**: adalah suara yang bergantung pada makhraj muhaqqaq atau muqaddar, bisa jadi dalam keadaan sukun atau berharakat (fathah, dhammah, kasrah).
+# Makharijul Huruf (Tempat-tempat Keluarnya Huruf) ({{a مَخارِجُ الحُروفِ}})
+- **Makhraj secara bahasa**: tempat keluar.
+- **Makhraj secara istilah**: tempat keluarnya huruf yang menjadi tempat berhentinya suara padanya saat diucapkan, yang membedakan antara satu huruf dengan huruf yang lainnya.
+- **Makhraj muhaqqaq**: makhraj yang bergantung pada bagian yang khusus dari bagian tenggorokan (al-halq), lidah (al-lisan), dan dua bibir (asy-syafatain).
+- **Makhraj muqaddar**: makhraj yang tidak bergantung pada bagian yang khusus dari bagian tenggorokan (al-halq), lidah (al-lisan), dan dua bibir (asy-syafatain). Makhraj ini tidak berakhir pada suatu titik tertentu, melainkan diakhiri dengan berakhirnya hembusan udara, oleh karena itu ia menerima penambahan dan pengurangan, dan muncullah **tiga huruf mad** darinya.
+!crop 148 630 444 772
+
+@page 17
+### Cara mengetahui tempat keluarnya huruf
+1) melafalkan sukun pada huruf.
+2) menambahkan hamzah washal sebelum huruf tersebut.
+3) mengucapkan huruf, jika suara terputus, maka disitulah tempat keluarnya huruf.
+### Jenis-jenis makharijul huruf
+Makhraj umum (**utama**) dan makhraj khusus (**cabang**). Ada tiga pendapat ulama mengenai jumlah makhraj khusus (cabang) berdasarkan makhraj umumnya (utama):
+1) **Tujuh belas makhraj**: ini adalah madzhab Ibnul Jazary dan begitu juga pendapat mayoritas ulama, pada al-jauf terdapat **1** makhraj, pada al-halq terdapat **3** makhraj, pada al-lisan **10** makhraj, pada asy-syafatain **2** makhraj dan pada al-khaisyum **1** makhraj.
+2) **Enam belas makhraj**: dan ini adalah madzhab Sibawaih dan asy-Syatibi. Mereka tidak memasukkan al-jauf sebagai makhraj, dan mereka berpendapat bahwa huruf al-jauf keluar dari keluarnya huruf-huruf yang serupa dengannya, maka Alif keluar dari makhraj huruf hamzah, waw maddiyyah keluar dari makhraj huruf wawu bukan mad, dan ya maddiyyah keluar dari makhraj huruf ya bukan mad.
+3) **Empat belas makhraj**: dan ini adalah madzhab al-Farra' dan Qutrub. Mereka sepakat dengan pendapat Sibawaih dan yang sependapat dengannya yaitu meniadakan makhraj al-jauf, dan menambahkan pengurangan makhraj dengan menjadikan **lam, ra, dan nun** pada satu makhraj.
+> **Perhatian**: makharijul huruf ditampilkan dalam dua bentuk: Cara pertama: singkat untuk dihafal dan dimurajaah. Cara kedua: dirinci dan dijelaskan dengan contoh dan gambar.
+
+@page 18
+# Gambar Ilustrasi Organ Bicara ({{a الصُّورُ التَّوضِيحيَّةُ لأعضاءِ النُّطقِ}})
+!crop 45 148 520 440
+!crop 55 522 560 765
+
+@page 19
+# 1- Al-Jauf ({{a الجَوف}})
+### Penjelasan
+= Al-jauf secara bahasa | rongga.
+= Al-jauf secara istilah | rongga kosong yang terdapat di mulut dan tenggorokan.
+### Hurufnya
+tiga huruf mad:
+- **Alif sukun** sebelumnya fathah, contoh: {{q ?|[قَا]لَ}}، {{q ?|وَ[حَا]لَ}}، {{q ?|أَندَ[ادً]ا}}.
+- **Wawu sukun** sebelumnya dhammah, contoh: {{q ?|يَ[قُو]لُ}}، {{q 8:24|يَ[حُو]لُ}}، {{q ?|تَتَّ[قُو]نَ}}.
+- **Ya sukun** sebelumnya kasrah, contoh: {{q ?|[قِي]لَ}}، {{q ?|وَ[حِي]لَ}}، {{q ?|صَٰدِ[قِي]نَ}}.
+### Gambar ilustrasi
+!crop 120 508 548 662
+
+@page 20
+# 2- Tenggorokan ({{a الحَلْق}})
+Terletak di daerah antara laring dan pangkal lidah, dan di dalamnya terdapat **tiga makhraj khusus** untuk **enam huruf**.
+## Pangkal tenggorokan
+**Hamzah ({{a ء}}), ha ({{a هـ}})**: Keluar dari pangkal tenggorokan (daerah pita suara).
+{{q ?|يَ[أْ]كُلُ}}، {{q ?|مُ[ؤْ]مِنٍ}}، {{q ?|أَ[هْ]وَآءَهُم}}، {{q ?|أَ[هْ]لِهَا}}.
+!crop 410 140 537 264
+## Tengah tenggorokan
+**Ain ({{a ع}}), ha ({{a ح}})**: Keluar dari tengah tenggorokan (daerah epiglotis).
+{{q ?|أَ[عْ]بُدُ}}، {{q ?|أَ[عْ]لَمُ}}، {{q ?|إِ[حْ]سَٰنًا}}، {{q ?|أَ[حْ]رَصَ}}.
+!crop 136 381 452 519
+## Ujung tenggorokan
+**Ghain ({{a غ}}), kha ({{a خ}})**: Keluar dari ujung tenggorokan (daerah akar lidah).
+{{q ?|أَ[غْ]نِيَآءَ}}، {{q ?|وَأَ[غْ]رَقْنَا}}، {{q ?|وَأَ[خْ]رَجَتِ}}، {{q ?|أَ[خْ]بَارَهَا}}.
+!crop 134 628 452 760
+
+@page 21
+# 3- Lidah ({{a اللِّسان}})
+Pada makhraj al-lisan terdapat **10 makhraj khusus**, untuk **18 huruf**.
+## Pangkal lidah
+**Qaf ({{a ق}})**: keluar dari pangkal lidah dengan langit-langit atas bagian lunak (langit-langit berdaging).
+{{q ?|أَ[قْ]رَرْتُمْ}}، {{q ?|أَ[قْ]رَبُ}}، {{q ?|أُ[قْ]سِمُ}}.
+!crop 387 121 547 279
+**Kaf ({{a ك}})**: Keluar dari pangkal lidah langit-langit lunak dan keras yang berhadapan dengannya (langit-langit berdaging dan tulang keras).
+{{q ?|أَ[كْ]ثَرُهُمْ}}، {{q ?|أَ[كْ]بَرُ}}، {{q ?|ٱ[كْ]تَسَبُوا۟}}.
+!crop 389 294 546 455
+## Tengah lidah
+**Jim ({{a ج}}), syin ({{a ش}}), ya bukan mad ({{a ي}})**: Keluar dari tengah lidah pada langit-langit atas yang berhadapan dengannya.
+{{q ?|أَ[جْ]رُهُمْ}}، {{q ?|أَ[جْ]رُ}}، {{q ?|أَ[شْ]هُرٍ}}، {{q ?|أَ[شْ]تَاتًا}}، {{q ?|أَ[يْ]مَٰنَكُمْ}}، {{q ?|أَ[يْ]دِيهِمْ}}.
+!crop 80 612 548 761
+
+@page 22
+## Sisi lidah
+**Dhad ({{a ض}})**: Keluar dari salah satu tepi lidah sebelah kanan atau sebelah kiri atau dari keduanya secara bersamaan pada gigi geraham bagian atas.
+{{q ?|ٱ[ضْ]رِب}}، {{q ?|أَ[ضْ]حَكَ}}، {{q ?|أَ[ضْ]عَافًا}}.
+!crop 392 96 546 252
+**Lam ({{a ل}})**: Keluar dari ujung dua sisi lidah bagian depan sampai akhir ujung lidah pada gusi gigi-gigi atas yang berhadapan dengannya.
+{{q ?|قُ[لْ]نَا}}، {{q ?|يُ[لْ]قُونَ}}، {{q ?|خَ[لْ]فَهَا}}.
+!crop 394 255 545 410
+## Ujung lidah
+**Nun ({{a ن}})**: keluar dari ujung lidah pada gusi gigi-gigi bagian atas diatas makhraj huruf lam dan melekat padanya ghunnah dari rongga hidung.
+{{q ?|أَ[نْ]عَمْتَ}}، {{q ?|وَتَ[نْ]حِتُونَ}}، {{q ?|إِ[نْ]}}.
+!crop 392 462 547 620
+**Ra ({{a ر}})**: keluar dari ujung lidah di daerah punggungnya pada gusi gigi-gigi bagian atas, dekat dari makhraj huruf nun.
+{{q ?|أَ[رْ]بَعَةً}}، {{q ?|أَ[رْ]بَابًا}}، {{q ?|أَ[رْ]بَعِينَ}}.
+!crop 395 629 546 784
+
+@page 23
+**Tha ({{a ط}}), dal ({{a د}}), ta ({{a ت}})**: Keluar dari ujung lidah pada pangkal dua gigi seri bagian atas.
+{{q ?|أَ[طْ]عَمَهُم}}، {{q ?|أَ[طْ]وَارًا}}، {{q ?|أَ[دْ]رَىٰكَ}}، {{q ?|أَ[دْ]نَىٰ}}، {{q ?|أَ[تْ]قَىٰكُمْ}}، {{q ?|أَ[تْ]رَابًا}}.
+!crop 183 198 469 326
+**Shad ({{a ص}}), sin ({{a س}}), za ({{a ز}})**: Keluar dari ujung lidah pada dinding dalam gigi seri bagian bawah maka keluar suara dari atasnya, mengalir antara dua gigi seri atas dan bawah.
+{{q ?|أَ[صْ]حَٰبُ}}، {{q ?|أَ[سْ]فَلَ}}، {{q ?|وَأَ[سْ]قَيْنَٰكُم}}، {{q ?|أَ[زْ]وَٰجٌ}}، {{q ?|أَ[زْ]كَىٰ}}.
+!crop 183 442 469 570
+**Dza ({{a ظ}}), dzal ({{a ذ}}), tsa ({{a ث}})**: Keluar dari ujung lidah pada ujung dua gigi seri atas.
+{{q ?|أَ[ظْ]لَمَ}}، {{q ?|وَأَ[ظْ]هَرَهُ}}، {{q ?|ٱ[ذْ]كُرُوا۟}}، {{q ?|إِ[ذْ]}}، {{q ?|إِ[ثْ]مٌ}}، {{q ?|ٱ[ثْ]نَتَيْنِ}}.
+!crop 168 658 426 770
+
+@page 24
+# 4- Dua bibir ({{a الشَّفتان}})
+Pada makhraj umum ini terdapat dua makhraj khusus untuk empat huruf.
+## Bibir bagian dalam
+**Fa ({{a ف}})**: Keluar dari bibir dalam bagian bawah pada ujung dua gigi seri atas.
+{{q ?|أَ[فْ]وَاجًا}}، {{q ?|أَ[فْ]لَحَ}}، {{q ?|أَ[فْ]نَانٍ}}.
+!crop 397 124 548 274
+## Dua bibir
+**Wawu bukan mad ({{a و غير مدية}}), ba ({{a ب}}) dan mim ({{a م}})**: Keluar dari antara dua bibir dengan membulatkannya untuk wawu dan merapatkannya untuk ba dan mim, dan pada mim melekat padanya suara sengau dari rongga hidung.
+{{q ?|وَٱلْيَوْمِ ٱلْ[مَ]وْعُودِ}}، {{q ?|إِ[بْ]رَٰهِيمَ}}، {{q ?|أَ[بْ]وَٰبُهَا}}، {{q ?|أَ[مْ]رُنَا}}، {{q ?|وَأَ[مْ]نًا}}.
+!crop 130 396 540 540
+# 5 – Rongga Hidung ({{a الخَيشوم}})
+- **Rongga hidung ({{a الخَيشُوم}})**: merupakan rongga kosong yang menghubungkan bagian atas hidung dan tenggorokan, tempat keluarnya suara ghunnah.
+- **Ghunnah (dari sisi keberadaannya pada huruf)**: yaitu suara yang keluar dari al-khaisyum (rongga hidung), yang melekat pada huruf nun dan mim dalam segala keadaannya. Miim selalu disertai ghunnah; Nuun selalu disertai ghunnah.
+!crop 280 660 536 787
+
+@page 25
+# Kesempurnaan Harakat ({{a إتمامُ الحركات}})
+## Huruf fathah
+Wajib bagi qari' membuka mulutnya saat melafalkan huruf fathah, sebagaimana saat melafalkan alif. {{q ?|تَ[حْ]سَبُ}}.
+!crop 375 90 529 245
+## Huruf dhammah
+Wajib bagi qari' membulatkan kedua bibirnya saat melafalkan huruf dhammah, sebagaimana saat melafalkan wawu. {{q ?|[سُ]لْطَٰنِيَهْ}}.
+!crop 377 247 525 397
+## Huruf kasrah
+Wajib bagi qari' untuk menurunkan rahangnya yang bawah dan menaikkan tengah lidahnya saat melafalkan huruf kasrah, sebagaimana saat melafalkan ya. {{q ?|أُقْ[سِ]مُ}}.
+!crop 378 411 522 561
+## Huruf sukun
+Adapun huruf sukun maka keluar dari makhraj asalnya tanpa ada kaitannya dengan keadaan diatas. {{q ?|إِ[سْ]رَارًا}}.
+!crop 377 582 525 732

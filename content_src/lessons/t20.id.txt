@@ -1,0 +1,71 @@
+%status sourceExtracted
+
+@page 88
+# Waqaf (berhenti) ({{a الوَقفُ}})
+Ilmu waqaf dan ibtida adalah salah satu pembahasan penting dalam tilawah al-Qur'an, di mana pembaca harus memahami panduan untuk mencapai waqaf yang benar dan ibtida yang baik.
+## Perbandingan antara waqaf, qatha' dan sakt
+= Waqaf (berhenti) ({{a الوقف}}) | Memotong suara di akhir kata untuk sementara waktu dengan tujuan mengambil napas, biasanya dengan niat melanjutkan pembacaan, bukan dengan maksud meninggalkan bacaan.
+= Qatha' (memutus) ({{a القطع}}) | Berhenti dari bacaan dengan niat menyelesaikannya, kemudian beralih ke aktivitas lain, seperti rukuk.
+= Sakt ({{a السكت}}) | Memotong suara untuk waktu yang lebih singkat dari waqaf tanpa mengambil napas, dengan niat melanjutkan bacaan.
+## Jenis-jenis waqaf
+1) **Waqaf idhthirari (waqaf darurat)** ({{a الاضطراري}}): waqaf yang terjadi pada qari' selama membaca, karena alasan darurat seperti kehabisan napas, batuk, bersin, atau halangan lain yang mengharuskannya berhenti. **Hukum**: dibolehkan berhenti pada kata apa saja sampai alasan darurat yang menyebabkannya berhenti selesai.
+2) **Waqaf ikhtibari (pengujian)** ({{a الاختباري}}): meminta qari' untuk berhenti pada kata tertentu untuk menguji dan mengetesnya, dan untuk memastikan kualitas bacaan. **Hukumnya**: boleh, demi tujuan pengajaran.
+3) **Waqaf intizhari (waqaf menunggu)** ({{a الانتظاري}}): waqaf khusus bagi orang yang menggabungkan berbagai bacaan (qira'at) di hadapan seorang guru. Dia berhenti pada sebuah kata, kemudian memulai ulang ayat dari awal hingga semua wajah (bacaan) sempurna. **Hukum**: diperbolehkan, asalkan tidak memberikan makna yang salah.
+4) **Waqaf ikhtiyari (waqaf pilihan)** ({{a الاختياري}}): ketika qari' berhenti pada pilihannya sendiri tanpa didorong oleh suatu kebutuhan mendesak. Waqaf ini terbagi menjadi:
+| Diperbolehkan | Tidak diperbolehkan |
+| Waqaf tam ({{a التَّام}}) | Waqaf qabih ({{a القبيح}}) |
+| Waqaf kafy ({{a الكافي}}) | |
+| Waqaf hasan ({{a الحسن}}) | |
+
+@page 89
+## a- Waqaf tam ({{a الوقفُ التَّام}})
+= Definisi | Waqaf yang maknanya telah sempurna, dan tidak berkaitan dengan yang setelahnya baik secara lafaz maupun makna.
+= Disebut tam | Karena kalimatnya sempurna, dan tidak memiliki hubungan dengan yang setelahnya baik lafaz maupun makna.
+= Hukum | Dianjurkan untuk berhenti padanya, dan baik untuk memulai dengan yang setelahnya.
+Biasanya terdapat pada akhir ayat dan penghujung kisah, sebagaimana saat waqaf pada firman Allah:
+- {{q 1:4|مَٰلِكِ يَوْمِ [ٱلدِّينِ]}} {{q 1:5|*}} [Al-Fatihah: 4–5].
+- {{q 2:5|أُو۟لَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ وَأُو۟لَٰٓئِكَ هُمُ [ٱلْمُفْلِحُونَ]}} {{q 2:6|*}} [Al-Baqarah: 5–6].
+- {{q 25:29|لَّقَدْ أَضَلَّنِى عَنِ ٱلذِّكْرِ بَعْدَ إِذْ [جَآءَنِى] وَكَانَ ٱلشَّيْطَٰنُ لِلْإِنسَٰنِ خَذُولًا}} [Al-Furqan: 29].
+### Catatan
+Di antara jenis waqaf tam adalah yang dikenal oleh para ulama sebagai **waqaf lazim** atau waqaf bayan:
+= Waqaf lazim ({{a الوقفُ اللَّازم}}) | Berhenti pada suatu kata dalam al-Qur'an agar makna menjadi jelas dan terang.
+= Hukum | Wajib, harus berhenti pada kata tersebut dan memulai dengan yang setelahnya. Tanpa berhenti, makna bisa menjadi kabur di pikiran pendengar sehingga sulit dipahami maksudnya.
+Tanda pada mushaf (**مـ**), contoh:
+- {{q 54:6|فَتَوَلَّ [عَنْهُمْ] يَوْمَ يَدْعُ ٱلدَّاعِ إِلَىٰ شَىْءٍ نُّكُرٍ}} [Al-Qamar: 6].
+- {{q 6:36|إِنَّمَا يَسْتَجِيبُ ٱلَّذِينَ [يَسْمَعُونَ] وَٱلْمَوْتَىٰ يَبْعَثُهُمُ ٱللَّهُ ثُمَّ إِلَيْهِ يُرْجَعُونَ}} [Al-An'am: 36].
+- {{q 36:76|فَلَا يَحْزُنكَ [قَوْلُهُمْ] إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ}} [Yasin: 76].
+- {{q 28:88|وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَٰهًا [ءَاخَرَ] لَآ إِلَٰهَ إِلَّا هُوَ}} [Al-Qashash: 88].
+
+@page 90
+## b- Waqaf kafy ({{a الوقفُ الكافي}})
+= Definisi | Waqaf pada suatu kalimat yang memberikan makna yang benar dan sempurna, namun terkait secara makna dengan apa yang sesudahnya, tidak secara lafaz.
+= Disebut kafy | Karena cukup dengan kalimat itu tanpa bergantung pada lafaz yang sesudahnya, meskipun tetap terkait makna dengannya.
+= Hukum | Dianjurkan berhenti, dan baik pula memulai dari setelahnya, seperti pada waqaf tam.
+Ditemukan di akhir ayat atau di tengah-tengahnya, seperti waqaf pada firman Allah:
+- {{q 2:4|وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْـَٔاخِرَةِ هُمْ [يُوقِنُونَ]}} {{q 2:5|*}} [Al-Baqarah: 4–5].
+- {{q 19:41|وَٱذْكُرْ فِى ٱلْكِتَٰبِ [إِبْرَٰهِيمَ] إِنَّهُۥ كَانَ صِدِّيقًا نَّبِيًّا}} [Maryam: 41].
+## c- Waqaf hasan ({{a الوقفُ الحسن}})
+= Definisi | Berhenti pada sebuah kalimat yang maknanya telah selesai padanya, namun kalimat tersebut tetap memiliki hubungan dengan apa yang datang setelahnya baik secara lafaz maupun makna.
+= Alasan penamaan | Disebut "hasan" (baik) karena waqaf ini memberikan pemahaman yang jelas tentang makna kalimat ketika berhenti padanya; maknanya dapat dipahami meskipun belum membaca kelanjutannya.
+= Hukum | Dianjurkan untuk berhenti (waqaf), tetapi tidak dianjurkan untuk memulai bacaan langsung dari bagian setelahnya, kecuali jika waqaf ini terjadi di akhir ayat. Hal ini karena berhenti pada akhir ayat merupakan sunnah mutlak, baik ayat tersebut memiliki hubungan dengan kelanjutannya atau tidak, contoh:
+- **Pada akhir ayat**: {{q 1:2|ٱلْحَمْدُ لِلَّهِ رَبِّ [ٱلْعَٰلَمِينَ]}} {{q 1:3|*}} [Al-Fatihah: 2–3].
+- **Pada selain akhir ayat**: {{q 1:2|ٱلْحَمْدُ [لِلَّهِ] رَبِّ ٱلْعَٰلَمِينَ}} [Al-Fatihah: 2].
+
+@page 91
+## d- Waqaf qabih (waqaf yang buruk) ({{a الوقفُ القبيح}})
+= Definisi | Berhenti pada sesuatu yang belum selesai maknanya, karena berkaitan dengan apa yang ada setelahnya secara lafaz maupun makna, dan berhenti padanya memberikan makna yang kurang atau salah.
+= Disebut qabih (buruk) | Karena buruknya berhenti pada bagian tersebut; sebab ia tidak memberikan makna yang benar, memberikan kesan makna yang tidak dimaksudkan, atau menimbulkan makna yang rusak.
+= Hukum | Tidak diperbolehkan dengan sengaja berhenti padanya, kecuali dalam keadaan darurat yang sangat mendesak. Jika terpaksa berhenti, maka harus mengulanginya lagi.
+- Berhenti pada kalimat yang maknanya tidak dapat dipahami karena sangat bergantung pada kata setelahnya secara lafaz dan makna, contoh: {{q 1:2|[ٱلْحَمْدُ] لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ}} [Al-Fatihah: 2].
+- Berhenti pada kalimat yang memberikan makna yang tidak sesuai dengan yang diinginkan Allah, contoh: {{q 4:43|لَا تَقْرَبُوا۟ [ٱلصَّلَوٰةَ] وَأَنتُمْ سُكَٰرَىٰ}} [An-Nisa': 43].
+- Berhenti pada kalimat yang memberikan makna yang tidak layak bagi Allah, contoh: {{q 47:19|فَٱعْلَمْ أَنَّهُۥ [لَآ إِلَٰهَ] إِلَّا ٱللَّهُ وَٱسْتَغْفِرْ لِذَنۢبِكَ وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ}} [Muhammad: 19].
+
+@page 92
+# Tanda-tanda waqaf dalam mushaf ({{a علاماتُ الوقفِ في المُصحفِ}})
+= {{a مـ}} | Tanda waqaf lazim: {{q 6:36|إِنَّمَا يَسْتَجِيبُ ٱلَّذِينَ [يَسْمَعُونَ] وَٱلْمَوْتَىٰ يَبْعَثُهُمُ ٱللَّهُ ثُمَّ إِلَيْهِ يُرْجَعُونَ}} [Al-An'am: 36].
+= {{a لا}} | Tanda waqaf terlarang, karena maknanya tidak sempurna: {{q 39:33|وَٱلَّذِى جَآءَ بِٱلصِّدْقِ وَصَدَّقَ [بِهِۦٓ] أُو۟لَٰٓئِكَ هُمُ ٱلْمُتَّقُونَ}} [Az-Zumar: 33].
+= {{a ج}} | Tanda boleh waqaf dan boleh washal: {{q 10:65|وَلَا يَحْزُنكَ قَوْلُهُمْ إِنَّ ٱلْعِزَّةَ لِلَّهِ [جَمِيعًا] هُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ}} [Yunus: 65].
+= {{a قلى}} | Tanda boleh washal namun waqaf lebih utama: {{q 2:191|فَإِن قَٰتَلُوكُمْ فَٱقْتُلُوهُمْ كَذَٰلِكَ جَزَآءُ ٱلْكَٰفِرِينَ}} [Al-Baqarah: 191].
+= {{a صلى}} | Tanda boleh waqaf namun washal lebih utama: {{q 67:3|مَّا تَرَىٰ فِى خَلْقِ ٱلرَّحْمَٰنِ مِن [تَفَٰوُتٍ] فَٱرْجِعِ ٱلْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ}} [Al-Mulk: 3].
+= {{a ∴ ∴}} | Tanda waqaf yang saling berkaitan, di mana jika berhenti pada salah satu tempat, tidak boleh berhenti pada tempat lainnya: {{q 2:2|ذَٰلِكَ ٱلْكِتَٰبُ لَا [رَيْبَ] [فِيهِ] هُدًى لِّلْمُتَّقِينَ}} [Al-Baqarah: 2].
+- Juga diperbolehkan menyambung pada kedua tanda tersebut tanpa berhenti pada salah satunya.

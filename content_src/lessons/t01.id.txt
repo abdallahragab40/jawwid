@@ -1,0 +1,21 @@
+%status sourceExtracted
+
+@page 5
+# Definisi Ilmu Tajwid ({{a تَعرِيفُ عِلْمِ التَّجويد}})
+### Definisi
+= Secara bahasa | memperindah.
+= Secara istilah | suatu ilmu ditetapkan untuk memberikan setiap huruf **hak** dan **mustahak**, makhraj dan sifat, waqaf dan ibtida, tanpa berlebihan dan asal-asalan.
+- **Hak**: sifat yang melekat, tetap dan tidak dapat dihilangkan dari hurufnya seperti jahr dan Syiddah.
+- **Mustahaq**: sifat yang bersifat sementara yang disebabkan oleh sifat yang melekat, seperti: idgham, ikhfa, dan izhhar,...dll.
+### Hukumnya
+= Sisi teori ({{a الجانبُ النَّظري}}) | yaitu ilmu dengan kaidah tajwid, dengan segenap peraturan dan kondisinya. **Hukumnya**: fardhu kifayah.
+= Sisi praktis ({{a الجانبُ العَمَلي}}) | mengamalkan kaidah tajwid selama membaca al-Qur'an. **Hukumnya**: fardhu ain (kewajiban setiap muslim).
+### Kelebihan dan manfaatnya
+- Untuk menjaga lisan dari melakukan kesalahan (lahn) ketika membaca al-Qur'an.
+- Untuk mendapatkan keridhaan Allah.
+
+@page 6
+### Ilmu tajwid dapat diperoleh dengan dua cara
+1) **Arriwayah (narasi)**: dengan 'ard atau talqiin (membacakan atau mendengarkan), atau dengan keduanya. **'ard** ({{a العَرض}}): membacakan kepada syaikh. **talqin** ({{a التَّلقين}}): syaikh membaca dihadapan murid-muridnya kemudian murid-muridnya menirukan apa yang dibaca syaikh.
+2) **Dirayah (ilmu)**: mempelajari dan memahami kaidah tajwid dan menerapkannya pada ayat-ayat al-Qur'an, jika qari lupa sebagian ilmunya, maka qari harus memurajaah kaidah tajwid dan memperbaiki bacaannya.
+- Seorang qari harus memperdengarkan bacaan al-Qur’annya kepada guru yang ahli dibidangnya, sampai qari tersebut bisa menjaga dalam mengamalkan dua cara (**dirayah dan riwayah**).

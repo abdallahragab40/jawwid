@@ -1,0 +1,16 @@
+%status sourceExtracted
+
+@page 93
+# Nabr (accent) in the Qur'an ({{a النَّبرُ في القرآنِ الكريم}})
+## Its definition
+= In linguistics | Pressing and raising the voice.
+= In applied definition | Pressure on a part or a specific letter of the word, so that its sound is a little louder than the neighbouring letters.
+## Positions of accent
+1) When pronouncing waaw or yaa with shaddah, like: {{q ?|إِ[يَّ]اكَ}}, {{q ?|مِّن قُ[وَّ]ةٍ}}, {{q 4:135|يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَ[وَّ]ٰمِينَ بِٱلْقِسْطِ}}.
+2) When moving from a lengthening letter to the first letter of the mushaddad letter (in the case of compulsory lengthening), like: {{q 1:7|غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآ[لِّ]ينَ}}, {{q 80:33|فَإِذَا جَآءَتِ ٱلصَّآ[خَّ]ةُ}}, {{q ?|وَمَا مِن دَآ[بَّ]ةٍ فِى ٱلْأَرْضِ}}.
+3) When stopping on a hamzah that comes after a lengthening or leen letter, like: {{q ?|ٱلسَّمَآ[ءِ]}}, {{q ?|سُوٓ[ءَ]}}, {{q ?|سِىٓ[ءَ] بِهِمْ}}.
+4) When the alif of the dual is dropped to avoid the meeting of two sakin letters, like: {{q 7:22|ذَا[قَا] ٱلشَّجَرَةَ}}, {{q 27:15|وَ[قَالَا] ٱلْحَمْدُ لِلَّهِ}}.
+5) When stopping on a mushaddad letter, like: {{q ?|يَٰٓأَيُّهَا ٱلنَّبِ[ىُّ]}}, {{q 54:3|وَكُلُّ أَمْرٍ مُّسْتَقِ[رٌّ]}}, {{q 2:255|ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَ[ىُّ] ٱلْقَيُّومُ}}, {{q 31:10|أَن تَمِيدَ بِكُمْ وَبَ[ثَّ] فِيهَا مِن كُلِّ دَآبَّةٍ}}.
+### Note: nabr is applied when stopping on a mushaddad letter, except
+1) Stopping on noon and meem mushaddad, like: {{q ?|وَلَٰكِ[نَّ]}}, {{q ?|فِى ٱلْيَ[مِّ]}}.
+2) Stopping on a letter of qalqalah with shaddah, like: {{q 111:1|وَتَ[بَّ]}}, {{q ?|بِٱلْحَ[قِّ]}}.

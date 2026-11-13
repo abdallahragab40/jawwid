@@ -1,0 +1,25 @@
+%status sourceExtracted
+
+@page 6
+# Lahn in the Recitation of the Qur'an ({{a اللَّحنُ في تِلاوةِ القُرآنِ الكَريم}})
+### Its definition
+= Lahn in lingustics | keeping away from right, It is said (lahana) if he committed Mistake.
+= In applied definition | committing Mistakes when reciting the Qur'an and deviating from correctness.
+Lahn (Mistake) is divided into two types: (**Lahn Jali** and **Lahn khafi**) (**Obvious Mistake** and **Hidden Mistake**).
+## 1- Lahn Jali (Obvious Mistake)
+= Its definition | It is a mistake that occurs to the word, causing its makeup to be disturbed whether the meaning is changed or not. **It is called (jali) obvious because** it is a clear defect that all Qur'an scholars and others know.
+= Its rule | It is haram (forbidden) and the reciter is punished when he makes this mistake intentionally or neglects learning although he can do this.
+### Some of its shapes
+1) Replacing a letter to another: like replacing ({{a ح}}) to ({{a ه}}) {{q 1:2|ٱلْ[حَ]مْدُ لِلَّهِ}}.
+2) Replacing vowel (harakah) to another Like replacing **taa with Fathah** to **taa with kasrah** {{q 1:7|أَنْعَمْ[تَ]}}.
+3) Changing a voweled letter into non_voweled like changing **raa** with **dammah** into **raa** with **sukoon** when continuing recitation {{q 27:27|قَالَ سَنَنظُ[رُ] أَصَدَقْتَ}}.
+4) Changing a non_voweled letter into voweled like changing meem with sukoon into meem with fathah {{q 1:7|أَنْعَ[مْ]تَ}}.
+5) Adding a letter or letters or adding a word or words.
+
+@page 7
+## 2- Lahn khafi (Hidden)
+= Its definition | It is a mistake that is related to the fluency in pronunciation not correctness.
+= Some of its shapes | Not giving madd or ghunnah their required durations and not pronouncing light and heavy letters properly. It is called khafi (Hidden) because only Qur'an scholars know it.
+= Its rule | It is makrooh (undesirable). It is said haram (forbidden) because it disturbs the correct performance.
+It can be divided into 2 degrees: If the reciter drops a clear rule, It will be forbidden, If he drops an accurate rule, It will be undesirable.
+> **Note**: The recitation must be preserved from both of these mistakes when it is based on repetition or word of mouth (talaqi or mushafahah).

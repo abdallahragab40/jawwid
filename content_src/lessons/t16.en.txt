@@ -1,0 +1,33 @@
+%status sourceExtracted
+
+@page 71
+# The strongest madd and using the rule of the stronger of two causes ({{a أقوى المُدُودِ والعملُ بقاعدةِ أقوى السَّببين}})
+- If two causes meet in one lengthening letter, one of them strong and the other weak, the stronger is used and the weaker is neglected.
+- Secondary lengthening comes in 5 ranks according to strength and weakness, ordered from the strongest to the weakest as follows. Sheikh As-Samannudi says:
+> {{a أقْوَى المُدُودِ: لَازِمٌ فَمَا اتَّصَلْ ... فَعَارِضٌ فَذُو انفِصَالٍ فَبَدَلْ}}
+> {{a وَسَبَبَا مَدٍّ إذا مَا وُجِدَا ... فَإِنَّ أقْوَى السَّبَبَيْنِ انْفَرَدَا}}
+The strongest of lengthenings is **Lazim** (compulsory) (1), then **Muttasil** (joined) (2), **'Arid lis-sukoon** (conditional because of sukoon) (3), **Munfasil** (separate) (4), and then **Badal** (exchange) (5).
+| Madd | Duration (counts) |
+| 1 – Lazim | 6 |
+| 2 – Muttasil | 4 – 5 |
+| 3 – 'Arid lis-sukoon | 2 – 4 – 6 |
+| 4 – Munfasil | 4 – 5 |
+| 5 – Badal | 2 |
+
+@page 72
+## Meeting lengthenings in the rule of the stronger of two causes ({{a المُدودُ التي تَجتَمعُ في قاعدةِ أقوى السَّبَبَين}})
+1) **Meeting Lazim with Badal**, like: {{q 5:2|ءَ[آ]مِّينَ}}, {{q ?|ءَ[آ]للَّهُ}}, {{q 10:91|ءَ[آ]لْـَٰٔنَ}}, {{q ?|ءَ[آ]لذَّكَرَيْنِ}}. **Lazim** is used first.
+2) **Meeting Muttasil with Badal**, like: {{q ?|رِئَ[آءَ] ٱلنَّاسِ}}. **Muttasil** is used first.
+3) **Meeting 'Arid lis-sukoon with Badal**, like: {{q ?|شَنَـَٔ[ا]نُ}}, {{q ?|يُرَآءُ[و]نَ}}, {{q ?|خَٰسِـِٔ[ي]نَ}}. **'Arid lis-sukoon** is used first.
+4) **Meeting Munfasil with Badal**, like: {{q 12:16|وَجَآءُ[وٓ أَ]بَاهُمْ}}. **Munfasil** is used first.
+5) **Meeting Muttasil, Badal and 'Arid lis-sukoon**, like: {{q ?|رِئَ[آءَ]}}. Badal is neglected because it is weak, so the remaining lengthenings (Muttasil and 'Arid lis-sukoon) follow the same rules.
+6) **Meeting Muttasil with 'Arid lis-sukoon**, like: {{q ?|ٱلسَّمَ[آءُ]}}.
+### Cases 5 and 6
+| Muttasil | 'Arid lis-sukoon | Used first |
+| 4 – المُنفصِلُ | 4 – 5 |
+| 4 | 2 | 4 |
+| 4 | 4 | 4 |
+| 4 | 6 | 6 |
+| 5 | 2 | 5 |
+| 5 | 4 | 5 |
+| 5 | 6 | 6 |

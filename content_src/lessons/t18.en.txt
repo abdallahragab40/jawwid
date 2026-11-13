@@ -1,0 +1,56 @@
+%status sourceExtracted
+
+@page 79
+# Rules of the non-voweled laam ({{a أحكامُ اللَّامِ السَّاكِنةِ}})
+The non-voweled laams in the Noble Qur'an are of five types:
+## 1- Laam of the definite article ({{a لامُ التَّعريف (ال)}})
+It is an extra laam sakinah added to the basic make-up of the word, preceded by a linking hamzah (hamzatul wasl) with fathah when starting, and followed by a noun.
+### Laam qamariyyah (lunar laam)
+It is followed by any of the letters of (**ابْغِ حَجَّكَ وَخَفْ عَقِيمَه**).
+= Its rule | Ithhar (clarity).
+= Its sign in the Qur'an | A sukoon sign above the laam.
+!crop 411 249 497 309
+| | | | | | | |
+| {{q ?|ٱ[لْ]أَمَلُ}} | {{q ?|ٱ[لْ]بَارِئُ}} | {{q ?|ٱ[لْ]غَنِىُّ}} | {{q ?|ٱ[لْ]حَجَّ}} | {{q ?|ٱ[لْ]جَنَّةَ}} | {{q ?|ٱ[لْ]كَهْفِ}} | {{q ?|ٱ[لْ]وَدُودُ}} |
+| {{q ?|ٱ[لْ]خَلْقِ}} | {{q ?|ٱ[لْ]فَتَّاحُ}} | {{q ?|ٱ[لْ]عَلِيمُ}} | {{q ?|ٱ[لْ]قَمَرُ}} | {{q ?|ٱ[لْ]يَوْمِ}} | {{q ?|ٱ[لْ]مُلْكُ}} | {{q ?|ٱ[لْ]هُدَىٰ}} |
+### Laam shamsiyyah (solar laam)
+It is followed by any of the initials of the words in the following verse:
+> {{a طِبْ ثُمَّ صِلْ رُحمًا تَفُزْ ضِفْ ذَا نِعَمْ ... دَعْ سُوءَ ظَنٍّ زُرْ شَرِيفًا لِلكَرَمْ}}
+= Its rule | Idgham (merging).
+= Its sign in the Qur'an | The laam is devoid of the sukoon sign, and a shaddah is drawn above the next letter.
+!crop 409 476 497 535
+| | | | | | | |
+| {{q ?|ٱل[طَّ]يِّبَٰتُ}} | {{q ?|ٱل[ثَّ]وَابِ}} | {{q ?|وَٱل[صَّ]ٰلِحِينَ}} | {{q ?|ٱل[رَّ]زَّاقُ}} | {{q ?|ٱل[تَّ]ٰٓئِبُونَ}} | {{q ?|ٱل[ضَّ]آلِّينَ}} | {{q ?|ٱل[ذِّ]كْرَ}} |
+| {{q ?|ٱل[نَّ]عِيمِ}} | {{q ?|ٱل[دَّ]اعِ}} | {{q ?|ٱل[سَّ]مِيعُ}} | {{q ?|ٱل[ظَّ]ٰلِمِينَ}} | {{q ?|ٱل[زَّ]بُورِ}} | {{q ?|ٱل[شَّ]كُورُ}} | {{q ?|وَٱ[لَّ]يْلِ}} |
+## 2- Laam of the noun (laam al-ism) ({{a لامُ الاسم}})
+It is a permanent laam in the root of the noun and always comes in the middle of the word.
+= Its rule | Ithhar (clarity).
+| | | | | |
+| {{q ?|وَأَ[لْ]وَٰنِكُمْ}} | {{q ?|سَ[لْ]سَبِيلًا}} | {{q ?|خَ[لْ]فَهُمْ}} | {{q ?|مَ[لْ]جَـًٔا}} | {{q ?|زِ[لْ]زَالَهَا}} |
+
+@page 80
+## 3- Laam of command (laam al-amr) ({{a لامُ الأمرِ}})
+It is an extra non-voweled laam added to the present-tense verb, changing it into the imperative form. It is preceded by a particle such as faa ({{a فـ}}), waaw ({{a و}}) or thumma ({{a ثُمَّ}}).
+= Its rule | Ithhar (clarity).
+| | | | |
+| {{q ?|فَ[لْ]يَمْدُدْ}} | {{q ?|وَ[لْ]يُوفُوا۟}} | {{q ?|وَ[لْ]يَطَّوَّفُوا۟}} | {{q ?|ثُمَّ [لْ]يَقْطَعْ}} |
+## 4- Laam of the verb (laam al-fi'l) ({{a لامُ الفعل}})
+It is the original non-voweled laam that appears in verbs, whether past, present or imperative, in the middle of the word or at its end.
+- **Past tense**: {{q ?|أَرْسَ[لْ]نَا}}, **present tense**: {{q ?|يَ[لْ]تَقِطْهُ}}, **imperative**: {{q ?|وَأَ[لْ]قِ}}.
+= Its rule | Ithhar (clarity); but if the laam of the verb is at the end and followed by the letter **laam** or **raa**, idgham (merging) is required.
+| | | | |
+| {{q 17:23|فَلَا تَقُ[ل لَّ]هُمَآ أُفٍّ}} | {{q ?|أَقُ[ل لَّ]كُمْ}} | {{q 20:114|وَقُ[ل رَّ]بِّ زِدْنِى عِلْمًا}} | {{q ?|فَقُ[ل رَّ]بُّكُمْ}} |
+
+@page 81
+## 5- Laam of the particle (laam al-harf) ({{a لامُ الحرف}})
+This is the laam that occurs only in the particles (**هل**) and (**بل**); these are the only two instances of laam al-harf in the Noble Qur'an.
+= Its rule | Idgham (merging) if the laam is followed by **laam** or **raa**, like:
+| | | | |
+| {{q 30:28|هَ[ل لَّ]كُم مِّن مَّا مَلَكَتْ}} | {{q 3:154|هَ[ل لَّ]نَا مِنَ ٱلْأَمْرِ}} | {{q 4:158|بَ[ل رَّ]فَعَهُ ٱللَّهُ}} | {{q 21:56|بَ[ل رَّ]بُّكُمْ}} |
+### Note
+1) It is excluded from this rule: {{q 83:14|بَ[لْ رَ]انَ}} [Al-Mutaffifin: 14], where there is a sakt (slight pause without taking breath) preventing idgham.
+2) Know that raa never occurs after (**هل**) in the Qur'an.
+= Its rule | Ithhar (clarity) if the laam is followed by any other letter, like:
+| | | | |
+| {{q ?|هَ[لْ] نَحْنُ}} | {{q ?|هَ[لْ] يَسْتَطِيعُ}} | {{q ?|بَ[لْ] طَبَعَ}} | {{q ?|بَ[لْ] هُمْ}} |
+- **Briefly**: a sukoon is placed on the non-voweled laam in the Qur'an to show that it is pronounced clearly (ithhar), like: {{q ?|ٱ[لْ]جَنَّةَ}}, {{q ?|سَ[لْ]سَبِيلًا}}, {{q ?|أَرْسَ[لْ]نَا}}, {{q ?|فَ[لْ]يَمْدُدْ}}.

@@ -1,0 +1,89 @@
+%status sourceExtracted
+
+@page 99
+# Raum, isymam dan sukun mahd ({{a الرَّومُ والإشمامُ والسُّكونُ المحضُ}})
+## 1- Sukun mahd
+= Definisi | Sukun yang murni tanpa adanya harakat, dan digunakan untuk berhenti pada huruf yang berharakat **fathah**, **dhammah** maupun **kasrah**.
+= Contoh | {{q ?|ٱلْعَٰلَمِي[نَ]}}, {{q ?|ٱلرَّحِي[مُ]}}, {{q ?|ٱلدِّي[نِ]}}.
+## 2- Raum
+= Definisi | Membaca sebagian dari harakat (dengan takaran **sepertiga harakat**) ketika berhenti (waqaf) pada **dhammah** atau **kasrah**. Suaranya hanya terdengar oleh orang yang dekat, tidak oleh yang jauh.
+= Contoh | {{q ?|نَسْتَعِي[نُ]}}, {{q ?|ٱلرَّحِي[مُ]}}, {{q ?|ٱلدِّي[نِ]}}, {{q 105:1|ٱلْفِي[لِ]}}.
+= Kaidah | Hukum mad bersama raum sama seperti hukumnya ketika washal (huruf mad dipanjangkan dua harakat).
+## 3- Isymam
+= Definisi | Memonyongkan kedua bibir sesaat setelah mensukunkan huruf yang berharakat **dhammah**, seperti bentuknya ketika melafalkan dhammah, tanpa suara, dan tidak dapat diketahui oleh orang yang buta.
+= Contoh | {{q ?|نَسْتَعِي[نُ]}}, {{q 11:87|يَٰشُعَيْ[بُ]}}, {{q ?|أَلِي[مٌ]}}.
+= Kaidah | Hukum mad bersama isymam sama seperti hukumnya pada sukun mahd (huruf mad dipanjangkan 2, 4 atau 6 harakat).
+
+@page 100
+### Catatan
+Prinsip dasar raum dan isymam dalam riwayat Hafsh adalah bahwa keduanya hanya dilakukan pada akhir kata ketika berhenti (waqaf). Tidak terdapat raum atau isymam pada saat menyambung (washal) atau di tengah kata, kecuali pada satu kata saja: {{q 12:11|قَالُوا۟ يَٰٓأَبَانَا مَا لَكَ لَا [تَأْمَ۫نَّا] عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ}} [Yusuf: 11]. Dalam riwayat Hafsh 'an 'Ashim, kata ini boleh dibaca dengan dua cara:
+= A- Isymam | Mensukunkan nun pertama dan mengidghamkannya ke nun kedua, disertai memonyongkan kedua bibir tanpa suara sesaat setelah memulai pelafalan nun yang diidghamkan, contoh: ({{a تَأْمَنَّا}}).
+= B- Raum | Mempertahankan dhammah pada nun pertama dan merendahkan suaranya sedikit dengan cepat dibandingkan huruf-huruf di sekitarnya, contoh: ({{a تَأْمَنُنَا}}).
+# Cara berhenti pada akhir kata-kata dalam al-Qur'an – secara ringkas ({{a كيفيَّةُ الوقوفِ على أواخرِ الكلماتِ القرآنيَّةِ – باختِصارٍ}})
+| Harakat | Contoh | Cara berhenti |
+| Sukun asli | {{q 93:10|فَلَا تَنْهَ[رْ]}} | Hanya dengan sukun |
+| Fathah | {{q ?|هُنَالِ[كَ]}} | Hanya dengan sukun |
+| Kasrah, tanwin kasrah | {{q ?|ٱلرَّحِي[مِ]}}, {{q 113:5|حَاسِ[دٍ]}} | Dengan sukun atau raum |
+| Dhammah, tanwin dhammah | {{q 28:70|لَهُ ٱلْحَمْ[دُ]}}, {{q ?|سَمِي[عٌ]}} | Dengan sukun, raum atau isymam |
+| Tanwin fathah | {{q ?|عَلِي[مًا]}} | Mengganti tanwin dengan alif |
+
+@page 101
+# Cara berhenti pada akhir kata-kata dalam al-Qur'an – secara rinci ({{a كيفيَّةُ الوقوفِ على أواخرِ الكلماتِ القرآنيَّةِ – بالتَّفصيلِ}})
+Untuk mempermudah pembahasan ini, telah dibuat klasifikasi jenis-jenis lafaz yang dapat diwaqafkan dengan berbagai cara, yaitu sembilan jenis sebagai berikut:
+
+@page 101
+### 1- Huruf bersukun asli
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Sukun | {{q 93:10|فَلَا تَنْهَ[رْ]}} | Sukun mahd |
+### 2- Berharakat ketika washal dan sebelumnya tidak ada mad atau lin
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Fathah | {{q ?|هُنَالِ[كَ]}} | Sukun mahd |
+| Kasrah | {{q ?|رَ[بِّ]}} | Sukun mahd; raum |
+| Dhammah | {{q 28:70|لَهُ ٱلْحَمْ[دُ]}} | Sukun mahd; raum; isymam |
+### 3- Mad 'aridh lissukun atau mad lin
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Fathah | {{q ?|ٱلدِّي[نَ]}}, {{q ?|ٱلْقَوْ[لَ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba' |
+| Kasrah | {{q 13:30|مَتَا[بِ]}}, {{q 9:52|ٱلْحُسْنَيَيْ[نِ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba'; raum dengan qashar |
+| Dhammah | {{q ?|نَسْتَعِي[نُ]}}, {{q ?|قَوْ[مٌ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba'; raum dengan qashar; isymam dengan qashar; isymam dengan tawassuth; isymam dengan isyba' |
+
+@page 102
+### 4- Tanwin
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Fathah | {{q ?|عَلِي[مًا]}} | Mengganti tanwin dengan alif |
+| Kasrah | {{q ?|حَمِي[دٍ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba'; raum dengan qashar |
+| Dhammah | {{q ?|سَمِي[عٌ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba'; raum dengan qashar; isymam dengan qashar; isymam dengan tawassuth; isymam dengan isyba' |
+### 5- Mad muttashil
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Fathah | {{q ?|شَآ[ءَ]}} | Sukun mahd dengan tawassuth; sukun mahd dengan 5 harakat; sukun mahd dengan isyba' |
+| Kasrah | {{q ?|مِّنَ ٱلسَّمَآ[ءِ]}} | Sukun mahd dengan tawassuth; sukun mahd dengan 5 harakat; sukun mahd dengan isyba'; raum dengan tawassuth; raum dengan 5 harakat |
+| Dhammah | {{q ?|يَشَآ[ءُ]}} | Sukun mahd dengan tawassuth; sukun mahd dengan 5 harakat; sukun mahd dengan isyba'; raum dengan tawassuth; raum dengan 5 harakat; isymam dengan tawassuth; isymam dengan 5 harakat; isymam dengan isyba' |
+
+@page 103
+### 6- Mad lazim
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Fathah | {{q 22:36|صَوَآ[فَّ]}} | Sukun mahd dengan isyba' |
+| Kasrah | {{q 4:12|مُضَآ[رٍّ]}} | Sukun mahd dengan isyba'; raum dengan isyba' |
+| Dhammah | {{q 22:18|وَٱلدَّوَآ[بُّ]}} | Sukun mahd dengan isyba'; raum dengan isyba'; isymam dengan isyba' |
+### 7- Ha' kinayah ({{a هاءُ الكِناية}})
+| Contoh | Cara berhenti |
+| {{q ?|قَتَلُو[هُ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba' |
+| {{q 5:116|قُلْتُ[هُۥ]}} | Sukun mahd |
+| {{q 28:7|فَأَلْقِي[هِ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba' |
+| {{q ?|بِ[هِۦ]}} | Sukun mahd |
+| {{q 21:80|وَعَلَّمْنَٰ[هُ]}} | Sukun mahd dengan qashar; sukun mahd dengan tawassuth; sukun mahd dengan isyba'; raum dengan qashar; isymam dengan qashar; isymam dengan tawassuth; isymam dengan isyba' |
+| {{q ?|مِّنْ[هُ]}} | Sukun mahd; raum; isymam |
+| {{q 5:116|عَلِمْتَ[هُۥ]}} | Sukun mahd; raum; isymam |
+> **Catatan** (ha' kinayah, menurut pendapat tafshil, dan ini yang rajih): Para ulama memiliki tiga pendapat mengenai kebolehan masuknya raum dan isymam pada ha' kinayah: 1- Dilarang secara mutlak. 2- Diperbolehkan secara mutlak. 3- Tafshil (dirinci): a- tidak boleh jika sebelumnya ada (**wau sukun**, **dhammah**, **ya sukun** atau **kasrah**); b- boleh jika sebelumnya ada (**alif**, **huruf sukun yang sahih** atau **fathah**).
+
+@page 104
+### 8- Ta' ta'nits yang ditulis dengan ha' (ta' marbuthah)
+| Contoh | Cara berhenti |
+| {{q ?|وَرَحْمَ[ةٌ]}}, {{q ?|رَحْمَ[ةً]}}, {{q ?|جَنَّ[ةٍ]}} | Ibdal: berhenti dengan ha' sukun |
+### Ta' ta'nits yang ditulis dengan ta' (ta' mabsuthah)
+| Harakat huruf terakhir | Contoh | Cara berhenti |
+| Fathah | {{q 43:32|رَحْمَ[تَ]}} | Sukun mahd |
+| Kasrah | {{q ?|رَحْمَ[تِ]}} | Sukun mahd; raum |
+| Dhammah | {{q ?|رَحْمَ[تُ]}} | Sukun mahd; raum; isymam |
+### 9- Harakat yang datang karena bertemunya dua sukun
+| Contoh | Cara berhenti |
+| {{q 14:44|وَأَنذِ[رِ] ٱلنَّاسَ}}, {{q 3:139|وَأَنتُ[مُ] ٱلْأَعْلَوْنَ}} | Sukun mahd |

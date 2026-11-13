@@ -1,0 +1,16 @@
+%status sourceExtracted
+
+@page 53
+# Nun dan mim bertasydid ({{a النُّونُ والمِيمُ المُشدَّدَتين}})
+### Hal yang perlu diketahui
+- **Ghunnah** ({{a الغُنَّة}}): suara sengau yang keluar dari rongga hidung (khaisyum) yang selalu menyertai huruf **nun** dan **mim** dalam semua keadaan.
+- Wajib bagi qari' saat mengucapkan nun atau mim bertasydid untuk memanjangkan ghunnah pada kedua huruf tersebut dengan sempurna, baik dalam keadaan washal (sambung) maupun waqaf (berhenti).
+### Contoh
+- {{q ?|مِنَ ٱلْجِ[نَّ]ةِ وَٱل[نَّ]اسِ}}, {{q 8:43|وَلَٰكِ[نَّ] ٱللَّهَ سَلَّمَ}}, {{q 36:68|وَمَن [نُّ]عَمِّرْهُ}}.
+- {{q ?|حَ[مَّ]الَةَ ٱلْحَطَبِ}}, {{q ?|ثُ[مَّ] كَلَّا سَيَعْلَمُونَ}}, {{q ?|مِن [مَّ]الٍ وَبَنِينَ}}.
+- {{q 2:124|وَإِذِ ٱبْتَلَىٰٓ إِبْرَٰهِۦمَ رَبُّهُۥ بِكَلِمَٰتٍ فَأَتَ[مَّ]هُ[نَّ]}}.
+- {{q ?|إِ[نَّ] ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ}}.
+### Catatan
+Jika kita ingin memulai dengan kata {{q 36:68|[نُّ]عَمِّرْهُ}} atau {{q ?|[مَّ]الٍ}} pada contoh sebelumnya, maka kita membuang tasydid dan memulai tanpa ghunnah tambahan, karena tasydid berasal dari proses idgham, dan saat memulai bacaan tidak ada idgham.
+### Gambar penjelasan
+!crop 158 631 502 782

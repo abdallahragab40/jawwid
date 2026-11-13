@@ -1,0 +1,9 @@
+%status sourceExtracted
+
+@page 107
+# Sujud tilawah ({{a سُجودُ التِّلاوة}})
+Adalah sujud yang dilakukan karena membaca salah satu ayat sajdah dari al-Qur'an.
+= Hukumnya | Sunnah muakkadah (sunnah yang ditekankan).
+= Tempatnya | Terdapat 15 tempat sujud tilawah di dalam al-Qur'an: [Al-A'raf: 206], [Ar-Ra'd: 15], [An-Nahl: 49], [Al-Isra': 107], [Maryam: 58], [Al-Hajj: 18], [Al-Hajj: 77], [Al-Furqan: 60], [An-Naml: 25], [As-Sajdah: 15], [Shad: 24], [Fushshilat: 37], [An-Najm: 62], [Al-Insyiqaq: 21], [Al-'Alaq: 19].
+= Bacaan di dalamnya | Disunnahkan membaca dalam sujud tilawah: "{{a سَجَدَ وجهيَ للذي خلقهُ، وشقَّ سَمعهُ وبَصرهُ، بِحولِه وقُوَّتِه}}" (Shahih at-Tirmidzi 3425). Sebagian ulama membolehkan membaca "{{a سبحانَ ربيَ الأعلى}}", atau melakukan seperti pada sujud-sujud lainnya.
+= Tandanya dalam mushaf | {{q 96:15|*}} {{q 96:16|*}} {{q 96:17|*}} {{q 96:18|*}} {{q 96:19|كَلَّا لَا تُطِعْهُ وَٱسْجُدْ [وَٱقْتَرِب]}} [Surat Al-'Alaq].

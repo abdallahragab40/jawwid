@@ -1,0 +1,18 @@
+%status sourceExtracted
+
+@page 105
+# Hukum pertemuan dua huruf sukun ({{a حكمُ التِقاءِ السَّاكِنين}})
+## Pertemuan dua huruf sukun dalam satu kata
+Diperbolehkan menggabungkan dua huruf sukun dalam satu kata dalam dua keadaan:
+1) Jika huruf pertama dari kedua huruf sukun adalah huruf mad atau lin, contoh: {{q 1:7|ٱلضَّ[آ]لِّينَ}}, {{q 68:1|نٓ}} dibaca ({{a نُون}}), {{q 50:1|قٓ}} dibaca ({{a قَاف}}), ({{a عَيْن}}).
+2) Jika huruf kedua di antara keduanya adalah sukun yang bersifat 'aridh (sementara), contoh: {{q ?|ٱلْعَٰلَمِي[نَ]}}, {{q ?|ٱلْبَيْ[تِ]}}.
+## Pertemuan dua huruf sukun dalam dua kata
+Orang Arab tidak menggabungkan dua huruf sukun dalam dua kata; jika hal itu terjadi dalam ucapan mereka, mereka menghilangkannya dengan salah satu dari dua cara berikut:
+1) **Tidak melafalkan huruf pertama (dihapus)**: hal ini terjadi pada huruf mad jika bertemu dengan sukun sesudahnya, sehingga huruf mad dan hamzah washal dihilangkan, contoh: {{q 7:22|ذَا[قَا] ٱلشَّجَرَةَ}}, {{q 51:22|وَ[فِى] ٱلسَّمَآءِ}}, {{q 8:32|قَا[لُوا۟] ٱللَّهُمَّ}}.
+2) **Memberikan harakat**: cara asal untuk menghilangkan pertemuan dua huruf sukun dalam dua kata adalah dengan memberikan harakat **kasrah** pada huruf sukun pertama, contoh: {{q 17:110|قُ[لِ] ٱدْعُوا۟ ٱللَّهَ أَ[وِ] ٱدْعُوا۟ ٱلرَّحْمَٰنَ}}, {{q 12:31|وَقَالَ[تِ] ٱخْرُجْ}}, {{q 24:50|أَ[مِ] ٱرْتَابُوٓا۟}}.
+### Kadang berbeda dari asalnya: huruf pertama yang bersukun diberikan harakat
+= Dengan fathah, ada tiga bentuk | a- Huruf (**مِنْ**): {{q ?|مِ[نَ] ٱلشَّٰهِدِينَ}}, {{q ?|مِ[نَ] ٱلْخَٰلِدِينَ}}; (min) yang berbentuk tetap dengan sukun bertemu dengan huruf kedua yang sukun, yaitu lam syamsiyyah yang diidghamkan ke huruf syin.
+
+@page 106
+= Dengan fathah (lanjutan) | b- Ta' ta'nits, jika disambungkan dengan alif tatsniyah (ganda): {{q 66:10|كَانَ[تَا]}}, {{q 41:11|قَالَ[تَآ]}}; ta' ta'nits pada kata (كانت، قالت) berbentuk tetap dengan sukun, dan alif tatsniyah juga sukun. c- ({{q 3:1|الٓ[مٓ]}} {{q 3:2|ٱللَّهُ}}): pada pembukaan surat Ali 'Imran saat washal, harakat mim diharuskan dibaca fathah, karena mim adalah huruf hijaiyah dalam keadaan sukun (ميمْ) yang bertemu dengan lam dalam lafzhul jalalah (Allah) yang juga sukun.
+= Dengan dhammah, ada dua bentuk | a- Wawu lin yang menunjukkan jamak: {{q 2:94|فَتَمَنَّ[وُا۟] ٱلْمَوْتَ}}, {{q 4:42|وَعَصَ[وُا۟] ٱلرَّسُولَ}}; huruf wawu lin dalam kedua contoh adalah huruf mati yang didahului oleh harakat fathah. b- Mim jamak: {{q 2:216|عَلَيْكُ[مُ] ٱلْقِتَالُ}}, {{q 10:67|لَكُ[مُ] ٱلَّيْلَ}}; mim jamak adalah huruf yang berbentuk tetap dengan sukun, yang bertemu dengan lam ta'rif yang bersukun setelah hamzah washal dihilangkan dalam rangkaian kalimat.

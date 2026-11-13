@@ -1,0 +1,62 @@
+%status sourceExtracted
+
+@page 9
+# Isti'adhah (Seeking Refuge) ({{a الاستِعاذة}})
+When the reader wants to recite something from The Book of Allah, he must start with Istiathah (Seeking Refuge) according to Almighty's saying: {{q 16:98|*}} [An-Nahl: 98] whether he recites from the beginning of the surah (chapter) or the middle.
+### Its definition
+= In linguistics | Seeking refuge, protection and perservation.
+= In applied definition | A term is used to seek refuge and protection in Allah from the cursed Satan when reciting the Qur'an.
+### Formats of Istiathah
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} I seek refuge in Allah from the cursed Satan (**It is the most popular**).
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ إنَّ اللهَ هو السَّميعُ العَليمُ}} I seek refuge in Allah from the cursed Satan indeed, Allah is the all_hearing and knowing.
+- {{a أعوذُ باللهِ السَّميعِ العَليمِ مِنَ الشَّيطانِ الرَّجيمِ}} I seek refuge in Allah the all_hearing and knowing from the cursed Satan.
+### Its rule
+= Mustahabah (Recommended) | The saying of the majority of reciters and jurists (it is the most preponderant saying).
+= Wajibah (Required) | The saying of At'aa and Athawri.
+### It is recommended to say Isti'adhah loudly in the following situations
+1) If the reader recites loudly and others are listening to him.
+2) If the reader recites in a group by turns and he is the first reader.
+
+@page 10
+### Benefits of saying Isti'adhah loudly
+1) Clarifying of the start of recitation.
+2) Urging the hearer to listen.
+3) Evoking the reciter's heart.
+4) Expelling the whispers of satans and evil thoughts.
+### It is recommended to say Isti'adhah quietly in the following situations
+1) If the reader recites alone whether he recites quietly or loudly.
+2) If the reader recites in a group by turns and he is not the first reader.
+3) If the reader recites in Salah (Prayer) whether he is Imam or Mamum (Leader or Follower).
+### When Istiathah should be repeated
+Imam Annawawi (May Allah bless his soul) says silence and long conversation are considerd reasons for repeating Isti'adhah. But, If the recitation was interrupted by words from the Qur'an like correcting mistake or committing mistake or clarifying a meaning of a verse or the recitation was cut off because of sneezing or coughing, he must not repeat Istiathah in these situations.
+
+@page 11
+# Ways of Isti'adhah ({{a أوجُهُ الاسْتِعاذَة}})
+## Linking ist'adhah with the beginning of the surah (chapter)
+There are 4 correct and permissible ways of linking ist'adhah with basmalah with the beginning of the surah except surat A'tawbah (Bara'ah).
+= The first way | cutting off all of them: He stops on ist'adhah and basmalah with taking breath.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Stopping** {{q 1:1|*}} **Stopping** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+= The second way | Joining ist'adhah with basmalah and stopping on it with taking breath. Then, starting with the surah.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 1:1|*}} **Stopping** {{q 114:1|قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ}}.
+= The third way | Stopping on ist'adhah and then, joining basmalah with the beginning of the surah.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Stopping** {{q 1:1|*}} **Joining** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+= The fourth way | joining all of them: With no stopping.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 1:1|*}} **Joining** {{q 94:1|أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ}}.
+## Linking ist'adhah with any part of the surah except its beginning
+If the reciter began from within the surah (The middle of the surah) which means after the beginning even if it is after one word, the reciter has the choice to say basmalah or not, but saying it is better. If the reciter chose to say basmalah, he will join it with ist'adhah by the previous four ways with the beginning of the surah. If he chose not to say basmalah, he will have two ways:
+= The first way | Qat' (Cutting off): Stopping on ist'adhah and cutting it off the next verses.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Stopping** {{q 54:17|وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ}}.
+= The second way | Wasl (Joining): Joining ist'adhah with the next verses.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 54:17|وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ}}.
+
+@page 12
+> **Note**: The priority is to cut Isti'athah off the verse if the verse started with one of the names of Allah or a pronoun refers to Him (glory be to him) or one of the messenger's names (peace be upon him) or qualities, It is not correct to say:
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 2:257|ٱللَّهُ وَلِىُّ ٱلَّذِينَ ءَامَنُوا۟}} [Al-Baqarah: 257].
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 41:47|إِلَيْهِ يُرَدُّ عِلْمُ ٱلسَّاعَةِ}} [Fussilat: 47].
+- {{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 48:29|مُّحَمَّدٌ رَّسُولُ ٱللَّهِ}} [Al-Fath: 29].
+## When starting with surat A'tawbah (Bara'ah)
+If the reciter began with surat A'tawbah (Bara'ah), he should not say basmalah, He has only 2 ways:
+= The first | cutting ist'adhah off the beginning of the surah.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Stopping** {{q 9:1|*}}.
+= The second | Joining ist'adhah with the beginning.
+{{a أعوذُ باللهِ مِنَ الشَّيطانِ الرَّجيمِ}} **Joining** {{q 9:1|*}}.

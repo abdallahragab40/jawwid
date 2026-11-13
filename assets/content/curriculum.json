@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.05-1",
+  "notes": "Topic order and the 30 Level-2 topics follow the topic list printed on page 4 of the Arabic and Kurdish editions. Groups are an app-level navigation aid and are not part of the books. Page numbers are physical PDF page indices (1-based); in all four editions the printed page number equals the physical index on numbered pages. Title status: sourceTranscribed = typed from the page image; sourceExtracted = taken from the PDF text layer; authored = written for the app because the edition has no equivalent heading.",
+  "groups": [
+    { "id": "g1", "title": { "ar": "مقدمات علم التجويد", "ckb": "سەرەتاکانی زانستی تەجوید", "en": "Foundations of Tajweed", "id": "Dasar-Dasar Ilmu Tajwid" }, "topics": ["t01", "t02", "t03"] },
+    { "id": "g2", "title": { "ar": "الاستعاذة والبسملة", "ckb": "ئیستیعازە و بەسمەلە", "en": "Isti'adhah and Basmalah", "id": "Isti'adzah dan Basmallah" }, "topics": ["t04", "t05"] },
+    { "id": "g3", "title": { "ar": "الحروف: مخارجها وصفاتها", "ckb": "پیتەکان: دەرچە و سیفاتەکانیان", "en": "The Letters: Articulation and Characteristics", "id": "Huruf: Makhraj dan Sifat" }, "topics": ["t06", "t07", "t08", "t09"] },
+    { "id": "g4", "title": { "ar": "أحكام النون والميم", "ckb": "حوکمەکانی نون و میم", "en": "Rules of Noon and Meem", "id": "Hukum Nun dan Mim" }, "topics": ["t10", "t11", "t12", "t13"] },
+    { "id": "g5", "title": { "ar": "التفخيم والترقيق والمدود", "ckb": "قەڵەوکردن و ناسکردن و مەدەکان", "en": "Heaviness, Lightness and Lengthening", "id": "Tebal-Tipis dan Mad" }, "topics": ["t14", "t15", "t16"] },
+    { "id": "g6", "title": { "ar": "الإدغام واللام والهمزات", "ckb": "ئیدغام و لام و هەمزەکان", "en": "Idgham, Laam and the Hamzahs", "id": "Idgham, Lam, dan Hamzah" }, "topics": ["t17", "t18", "t19"] },
+    { "id": "g7", "title": { "ar": "الوقف والابتداء وما يتصل بهما", "ckb": "وەستان و دەستپێکردن و ئەوەی پەیوەندی پێیانەوە هەیە", "en": "Stopping, Starting and Related Topics", "id": "Waqaf, Ibtida', dan Pembahasan Terkait" }, "topics": ["t20", "t21", "t22", "t23", "t24", "t25", "t26", "t27"] },
+    { "id": "g8", "title": { "ar": "سجود التلاوة والإسناد والقراء", "ckb": "سوجدەی تیلاوە و سەنەد و قورئان خوێنەکان", "en": "Prostration, Isnad and the Ten Reciters", "id": "Sujud Tilawah, Sanad, dan Para Qari'" }, "topics": ["t28", "t29", "t30"] }
+  ],
+  "topics": [
+    {
+      "id": "t01", "order": 1,
+      "title": {
+        "ar": { "text": "تعريف علم التجويد", "status": "sourceTranscribed" },
+        "ckb": { "text": "پێناسەی زانستی تەجوید", "status": "sourceTranscribed" },
+        "en": { "text": "Definition of the Science of Tajweed", "status": "sourceExtracted" },
+        "id": { "text": "Definisi Ilmu Tajwid", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [5, 5], "ckb": [5, 6], "en": [4, 5], "id": [5, 6] }
+    },
+    {
+      "id": "t02", "order": 2,
+      "title": {
+        "ar": { "text": "اللَّحنُ في تلاوةِ القرآنِ الكريم", "status": "sourceTranscribed" },
+        "ckb": { "text": "هەڵەکردن لە خوێندنەوەی قورئاندا", "status": "sourceTranscribed" },
+        "en": { "text": "Lahn in the Recitation of the Qur'an", "status": "sourceExtracted" },
+        "id": { "text": "Lahn dalam Membaca Al-Qur'an", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [6, 6], "ckb": [7, 8], "en": [6, 7], "id": [7, 8] }
+    },
+    {
+      "id": "t03", "order": 3,
+      "title": {
+        "ar": { "text": "مراتبُ التلاوة (سُرعاتُ القراءة)", "status": "sourceTranscribed" },
+        "ckb": { "text": "پلەکانی خوێندنەوە لە ڕووی خێراییەوە", "status": "sourceTranscribed" },
+        "en": { "text": "Ranks of Recitation (Speeds of Recitation)", "status": "sourceExtracted" },
+        "id": { "text": "Tingkatan Membaca Al-Qur'an", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [7, 7], "ckb": [9, 9], "en": [8, 8], "id": [9, 9] }
+    },
+    {
+      "id": "t04", "order": 4,
+      "title": {
+        "ar": { "text": "الاستعاذة", "status": "sourceTranscribed" },
+        "ckb": { "text": "ئیستیعازە (پەناگرتن)", "status": "sourceTranscribed" },
+        "en": { "text": "Isti'adhah (Seeking Refuge)", "status": "sourceExtracted" },
+        "id": { "text": "Isti'adzah (Memohon Perlindungan)", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [8, 10], "ckb": [10, 13], "en": [9, 12], "id": [10, 13] }
+    },
+    {
+      "id": "t05", "order": 5,
+      "title": {
+        "ar": { "text": "البسملة", "status": "sourceTranscribed" },
+        "ckb": { "text": "بەسمەلە", "status": "sourceTranscribed" },
+        "en": { "text": "Basmalah", "status": "sourceExtracted" },
+        "id": { "text": "Basmallah", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [11, 12], "ckb": [14, 15], "en": [13, 14], "id": [14, 15] }
+    },
+    {
+      "id": "t06", "order": 6,
+      "title": {
+        "ar": { "text": "مخارجُ الحروف", "status": "sourceTranscribed" },
+        "ckb": { "text": "دەرچەی پیتەکانی زمانی عەرەبی", "status": "sourceTranscribed" },
+        "en": { "text": "Articulation Points of Letters", "status": "sourceExtracted" },
+        "id": { "text": "Makharijul Huruf", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [13, 23], "ckb": [16, 26], "en": [15, 24], "id": [16, 25] }
+    },
+    {
+      "id": "t07", "order": 7,
+      "title": {
+        "ar": { "text": "ألقابُ الحروف", "status": "sourceTranscribed" },
+        "ckb": { "text": "نازناوی پیتەکان", "status": "sourceTranscribed" },
+        "en": { "text": "Titles of the Letters (Alqab al-Huruf)", "status": "authored" },
+        "id": { "text": "Julukan Huruf (Alqab al-Huruf)", "status": "authored" }
+      },
+      "pages": { "ar": [24, 24], "ckb": [27, 27], "en": null, "id": null }
+    },
+    {
+      "id": "t08", "order": 8,
+      "title": {
+        "ar": { "text": "صفاتُ الحروف", "status": "sourceTranscribed" },
+        "ckb": { "text": "سیفاتی پیتەکان", "status": "sourceTranscribed" },
+        "en": { "text": "Characteristics of Letters", "status": "sourceExtracted" },
+        "id": { "text": "Sifat-Sifat Huruf", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [25, 36], "ckb": [28, 42], "en": [25, 36], "id": [26, 37] }
+    },
+    {
+      "id": "t09", "order": 9,
+      "title": {
+        "ar": { "text": "أبرزُ الأخطاءِ عند نطقِ حروفِ الهجاء", "status": "sourceTranscribed" },
+        "ckb": { "text": "دیارترینی ئەو هەڵانەی کە دەکرێن لەکاتی دەربڕینی پیتەکاندا", "status": "sourceTranscribed" },
+        "en": { "text": "The Most Prominent Mistakes When Pronouncing the Letters", "status": "sourceExtracted" },
+        "id": { "text": "Kesalahan-Kesalahan yang Sering Terjadi dalam Pengucapan Huruf Hijaiyyah", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [37, 40], "ckb": [43, 46], "en": [37, 40], "id": [38, 41] }
+    },
+    {
+      "id": "t10", "order": 10,
+      "title": {
+        "ar": { "text": "أحكامُ النُّونِ السَّاكِنةِ والتَّنوين", "status": "sourceTranscribed" },
+        "ckb": { "text": "ئەحکامەکانی نونی ساکن و تەنوین", "status": "sourceTranscribed" },
+        "en": { "text": "Rules of Noon Sakinah and Tanween", "status": "sourceExtracted" },
+        "id": { "text": "Hukum Nun Sukun dan Tanwin", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [41, 47], "ckb": [47, 55], "en": [41, 49], "id": [42, 50] }
+    },
+    {
+      "id": "t11", "order": 11,
+      "title": {
+        "ar": { "text": "أحكامُ الميمِ السَّاكِنة", "status": "sourceTranscribed" },
+        "ckb": { "text": "حوکمەکانی میمی زەنەدار", "status": "sourceTranscribed" },
+        "en": { "text": "Rules of Meem Sakinah", "status": "sourceExtracted" },
+        "id": { "text": "Hukum Mim Sukun", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [48, 49], "ckb": [56, 57], "en": [50, 51], "id": [51, 52] }
+    },
+    {
+      "id": "t12", "order": 12,
+      "title": {
+        "ar": { "text": "النُّونُ والميمُ المُشدَّدتين", "status": "sourceTranscribed" },
+        "ckb": { "text": "نون و میمی توندکراو", "status": "sourceTranscribed" },
+        "en": { "text": "Noon and Meem Mushaddad", "status": "sourceExtracted" },
+        "id": { "text": "Nun dan Mim Bertasydid", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [50, 50], "ckb": [58, 58], "en": [52, 52], "id": [53, 53] }
+    },
+    {
+      "id": "t13", "order": 13,
+      "title": {
+        "ar": { "text": "مَراتِبُ الغُنَن", "status": "sourceTranscribed" },
+        "ckb": { "text": "ماوەی مینگەکان", "status": "sourceTranscribed" },
+        "en": { "text": "Timings of Ghunnah", "status": "sourceExtracted" },
+        "id": { "text": "Tingkatan Ghunnah", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [51, 51], "ckb": [59, 59], "en": [53, 53], "id": [54, 54] }
+    },
+    {
+      "id": "t14", "order": 14,
+      "title": {
+        "ar": { "text": "التَّفخيمُ والتَّرقيق", "status": "sourceTranscribed" },
+        "ckb": { "text": "قەڵەوکردن و ناسکردن", "status": "sourceTranscribed" },
+        "en": { "text": "Heaviness and Lightness (Tafkheem and Tarqeeq)", "status": "sourceExtracted" },
+        "id": { "text": "Tebal dan Tipis", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [52, 57], "ckb": [60, 66], "en": [54, 59], "id": [55, 62] },
+      "partial": {
+        "en": {
+          "ar": "لا تتضمّن النسخة الإنجليزية الفقرتين الخاصّتين بتفخيم الألف وترقيقها ولام لفظ الجلالة.",
+          "ckb": "وەشانی ئینگلیزی بەشەکانی تایبەت بە ئەلیف و لامی وشەی (الله) لەخۆ ناگرێت.",
+          "en": "The English edition does not include the subsections on Alif and on the Laam of the name of Allah.",
+          "id": "Edisi bahasa Inggris tidak memuat subbab tentang alif dan lam pada lafzhul jalalah."
+        }
+      }
+    },
+    {
+      "id": "t15", "order": 15,
+      "title": {
+        "ar": { "text": "المدُّ والقصر", "status": "sourceTranscribed" },
+        "ckb": { "text": "درێژکردنەوە و کورتکردنەوە", "status": "sourceTranscribed" },
+        "en": { "text": "Madd and Qasr (Lengthening and Shortening)", "status": "sourceExtracted" },
+        "id": { "text": "Mad dan Qashar", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [58, 66], "ckb": [67, 75], "en": [60, 70], "id": [63, 72] }
+    },
+    {
+      "id": "t16", "order": 16,
+      "title": {
+        "ar": { "text": "أقوى المُدودِ والعملُ بقاعدةِ أقوى السَّببين", "status": "sourceTranscribed" },
+        "ckb": { "text": "بەهێزترینی مەدەکان و کارکردن بە ڕێسای بەهێزترینی هۆکار", "status": "sourceTranscribed" },
+        "en": { "text": "The Strongest Madd and the Rule of the Stronger of Two Causes", "status": "sourceExtracted" },
+        "id": { "text": "Tingkatan Kekuatan Mad dan Penerapannya dengan Kaidah Sebab Terkuat", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [67, 67], "ckb": [76, 76], "en": [71, 72], "id": [73, 74] }
+    },
+    {
+      "id": "t17", "order": 17,
+      "title": {
+        "ar": { "text": "الإدغامُ ومَبحثُ عِلاقاتِ الحُروف", "status": "sourceTranscribed" },
+        "ckb": { "text": "ئیدغام و باسی پەیوەندی پیتەکان", "status": "sourceTranscribed" },
+        "en": { "text": "Idgham and the Relationships Between Letters", "status": "sourceExtracted" },
+        "id": { "text": "Idgham dalam Al-Qur'an dan Pembahasan Hubungan Huruf", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [68, 72], "ckb": [77, 82], "en": [73, 78], "id": [75, 80] }
+    },
+    {
+      "id": "t18", "order": 18,
+      "title": {
+        "ar": { "text": "أحكامُ اللَّامِ السَّاكِنة", "status": "sourceTranscribed" },
+        "ckb": { "text": "ئەحکامەکانی لامی ساکن", "status": "sourceTranscribed" },
+        "en": { "text": "Rules of the Non-Voweled Laam", "status": "sourceExtracted" },
+        "id": { "text": "Hukum Lam Sukun", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [73, 74], "ckb": [83, 84], "en": [79, 81], "id": [81, 83] }
+    },
+    {
+      "id": "t19", "order": 19,
+      "title": {
+        "ar": { "text": "هَمزَتا القَطعِ والوَصل", "status": "sourceTranscribed" },
+        "ckb": { "text": "هەمزەی بچڕاو و هەمزەی گەیاندن", "status": "sourceTranscribed" },
+        "en": { "text": "Hamzat Qat' and Hamzat Wasl", "status": "sourceExtracted" },
+        "id": { "text": "Hamzah Qatha' dan Hamzah Washal", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [75, 78], "ckb": [85, 88], "en": [82, 85], "id": [84, 87] }
+    },
+    {
+      "id": "t20", "order": 20,
+      "title": {
+        "ar": { "text": "الوَقف", "status": "sourceTranscribed" },
+        "ckb": { "text": "وەستان", "status": "sourceTranscribed" },
+        "en": { "text": "Waqf (Stop)", "status": "sourceExtracted" },
+        "id": { "text": "Al-Waqf (Berhenti)", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [79, 83], "ckb": [89, 93], "en": [86, 90], "id": [88, 92] }
+    },
+    {
+      "id": "t21", "order": 21,
+      "title": {
+        "ar": { "text": "الابتِداء", "status": "sourceTranscribed" },
+        "ckb": { "text": "دەست پێکردن", "status": "sourceTranscribed" },
+        "en": { "text": "Ibtida' (Start)", "status": "sourceExtracted" },
+        "id": { "text": "Ibtida' (Permulaan)", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [84, 84], "ckb": [94, 94], "en": [91, 91], "id": [93, 93] }
+    },
+    {
+      "id": "t22", "order": 22,
+      "title": {
+        "ar": { "text": "السَّكت", "status": "sourceTranscribed" },
+        "ckb": { "text": "سەکت", "status": "sourceTranscribed" },
+        "en": { "text": "Sakt (Slight Pause)", "status": "sourceExtracted" },
+        "id": { "text": "Sakt", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [85, 85], "ckb": [95, 95], "en": [86, 86], "id": [94, 94] },
+      "partial": {
+        "en": {
+          "ar": "لا يوجد في النسخة الإنجليزية مبحث مستقل للسكت؛ يرد تعريفه فقط ضمن المقارنة بين الوقف والقطع والسكت في صفحة ٨٦.",
+          "ckb": "وەشانی ئینگلیزی بەشێکی سەربەخۆی بۆ سەکت نییە؛ تەنها پێناسەکەی لە بەراوردی نێوان وەستان و بڕین و سەکتدا هاتووە لە لاپەڕە ٨٦.",
+          "en": "The English edition has no dedicated Sakt section; Sakt is only defined within the comparison of Waqf, Qat' and Sakt on page 86.",
+          "id": "Edisi bahasa Inggris tidak memiliki bab khusus tentang sakt; sakt hanya didefinisikan dalam perbandingan waqaf, qatha', dan sakt di halaman 86."
+        }
+      }
+    },
+    {
+      "id": "t23", "order": 23,
+      "title": {
+        "ar": { "text": "الألِفاتُ السَّبع", "status": "sourceTranscribed" },
+        "ckb": { "text": "حەوت ئەلیفەکە", "status": "sourceTranscribed" },
+        "en": { "text": "The Seven Alifs", "status": "sourceExtracted" },
+        "id": { "text": "Alif Tujuh", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [86, 86], "ckb": [96, 96], "en": [92, 92], "id": [95, 95] }
+    },
+    {
+      "id": "t24", "order": 24,
+      "title": {
+        "ar": { "text": "النَّبرُ في القرآنِ الكريم", "status": "sourceTranscribed" },
+        "ckb": { "text": "نەبر لە قورئانی پیرۆزدا", "status": "sourceTranscribed" },
+        "en": { "text": "Nabr (Accent) in the Qur'an", "status": "sourceExtracted" },
+        "id": { "text": "Nabr (Penekanan) dalam Al-Qur'an", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [87, 87], "ckb": [97, 97], "en": [93, 93], "id": [96, 96] }
+    },
+    {
+      "id": "t25", "order": 25,
+      "title": {
+        "ar": { "text": "ما يُراعى لحفص", "status": "sourceTranscribed" },
+        "ckb": { "text": "ئەوەی ڕەچاو دەکرێت لە ریوایەتی حەفص", "status": "sourceTranscribed" },
+        "en": { "text": "What Must Be Considered for Hafs", "status": "sourceExtracted" },
+        "id": { "text": "Hal-Hal yang Diperhatikan untuk Riwayat Hafsh", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [88, 89], "ckb": [98, 99], "en": [94, 95], "id": [97, 98] }
+    },
+    {
+      "id": "t26", "order": 26,
+      "title": {
+        "ar": { "text": "الرَّومُ والإشمامُ والسُّكونُ المَحض", "status": "sourceTranscribed" },
+        "ckb": { "text": "ڕەوم و ئیشمام و سکونی تەواو", "status": "sourceTranscribed" },
+        "en": { "text": "Rawm, Ishmam and Sukoon Mahd", "status": "sourceExtracted" },
+        "id": { "text": "Raum, Isymam, dan Sukun Murni", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [90, 95], "ckb": [100, 105], "en": [96, 101], "id": [99, 104] }
+    },
+    {
+      "id": "t27", "order": 27,
+      "title": {
+        "ar": { "text": "حكمُ التقاءِ السَّاكِنين", "status": "sourceTranscribed" },
+        "ckb": { "text": "حوکمی بەیەکگەیشتنی دوو ساکن", "status": "sourceTranscribed" },
+        "en": { "text": "The Rule of Meeting Two Sakin Letters", "status": "sourceExtracted" },
+        "id": { "text": "Hukum Pertemuan Dua Huruf Sukun", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [96, 96], "ckb": [106, 107], "en": [102, 103], "id": [105, 106] }
+    },
+    {
+      "id": "t28", "order": 28,
+      "title": {
+        "ar": { "text": "سُجودُ التِّلاوة", "status": "sourceTranscribed" },
+        "ckb": { "text": "سوجدەی تیلاوە", "status": "sourceTranscribed" },
+        "en": { "text": "Sujood at-Tilawah (Prostration of Recitation)", "status": "sourceExtracted" },
+        "id": { "text": "Sujud Tilawah", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [97, 97], "ckb": [108, 108], "en": [104, 104], "id": [107, 107] }
+    },
+    {
+      "id": "t29", "order": 29,
+      "title": {
+        "ar": { "text": "إسنادُ روايةِ حفص", "status": "sourceTranscribed" },
+        "ckb": { "text": "سەنەدی ریوایەتی حەفص", "status": "sourceTranscribed" },
+        "en": { "text": "The Chain of Transmission of the Narration of Hafs", "status": "sourceExtracted" },
+        "id": { "text": "Sanad Riwayat Hafs", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [98, 98], "ckb": [108, 108], "en": [105, 105], "id": [108, 108] }
+    },
+    {
+      "id": "t30", "order": 30,
+      "title": {
+        "ar": { "text": "أسماءُ القُرَّاءِ العشرةِ ورواتِهم", "status": "sourceTranscribed" },
+        "ckb": { "text": "ناوی هەر دە قورئان خوێنەکە و گێڕەرەوەکانیان", "status": "sourceTranscribed" },
+        "en": { "text": "Names of the Ten Reciters and Their Narrators", "status": "sourceExtracted" },
+        "id": { "text": "Nama 10 Ulama Qira'at dan Perawinya", "status": "sourceExtracted" }
+      },
+      "pages": { "ar": [98, 98], "ckb": [109, 109], "en": [106, 106], "id": [109, 109] }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+%status sourceExtracted
+
+@page 15
+# Arabic Alphabet ({{a الحُروفُ العَربيَّة}})
+The Holy Qur'an consists of (surahs) chapters, the chapters consist of verses (Ayat), the verses consist of words and every word consists of letters so, the smallest unit of the Qur'an is the letter.
+| | | | | | | | | | |
+| {{a ا}} | {{a ب}} | {{a ت}} | {{a ث}} | {{a ج}} | {{a ح}} | {{a خ}} | {{a د}} | {{a ذ}} | {{a ر}} |
+| {{a ز}} | {{a س}} | {{a ش}} | {{a ص}} | {{a ض}} | {{a ط}} | {{a ظ}} | {{a ع}} | {{a غ}} | {{a ف}} |
+| {{a ق}} | {{a ك}} | {{a ل}} | {{a م}} | {{a ن}} | {{a ه}} | {{a و}} | {{a ي}} | {{a ء}} | |
+- **The letter**: a sound depends on specific or approximate articulation point, The letter may be sakin or voweled (with fathah, dammah or kasrah).
+# Articulation Points of Letters ({{a مَخارِجُ الحُروفِ}})
+- **Articulation point in lingustics**: The place of articulation.
+- **In applied definition**: The place of articulation of the letter where the sound stops hence, the letter is distinguished from other letters.
+- **Specific articulation point**: It depends on certain part of the throat, the tongue or the lips.
+- **Approximate articulation point**: It does not depend on certain part of the throat, the tongue or the lips, It has no specific point, but it finishes by stopping of exhale (air), It can be prolonged or shortened and **three letters of madd** are emitted from this articulation point.
+!crop 148 603 444 746
+
+@page 16
+### How do you know the articulation point of the letter?
+1) We can pronounce the letter with sukoon.
+2) We admit hamzatul Wasl before the sakin letter.
+3) we pronounce the letter and where the sound stops, the articulation point is established.
+### Types of articulation points
+There are major articulation points (**main**) and specific articulation points (**minor**). Scholars have three opinions about the number of specific articulation points (minor) that fall under the major articulation points (main).
+1) **There are 17 articulation points**: The school of thought is followed by Ibn Al_Gazari and also the majority of scholars as the following: (**1**) articulation point from Jawf, (**3**) articulation points from throat, (**10**) articulation points from tongue, (**2**) articulation points from lips and (**1**) articulation point from nasal cavity.
+2) **There are 16 articulation points**: The school of thought is followed by Sibawayh and A'Shatby. They do not consider Jawf as articulation point. They believe that letters that are emitted from Jawf have the same articulation point of the identical letters in drawing, Alif madd is articulated from the same articulation point of hamzah (throat), waaw madd is articulated from the same articulation point of non_lengthening waaw (lips) and Yaa madd is articulated from the same articulation point of non_lengthening yaa (the middle of the tongue).
+3) **There are 14 articulation points**: The school of thought is followed by Al_Faraa and Qutrub. they agree Sybawyh and his followers on disregarding 1 articulation point from Jawf. they add also that **laam, raa and noon** are emitted from the same articulation point.
+
+@page 17
+# Illustrations of the Organs of Speech ({{a الصُّورُ التَّوضِيحيَّةُ لأعضاءِ النُّطقِ}})
+!crop 45 148 520 440
+!crop 55 498 560 731
+
+@page 18
+# 1- Al_Jawf ({{a الجَوف}})
+### Its definition
+= In linguistics | The empty space.
+= In applied definition | The empty space in the throat and mouth.
+### Its letters
+Three letters of madd (3 lengthening letters):
+- **Alif sakinah** is preceded by letter with fathah like: {{q ?|[قَا]لَ}}، {{q ?|وَ[حَا]لَ}}، {{q ?|أَندَ[ادً]ا}}.
+- **waaw sakinah** is preceded by letter with dammah like: {{q ?|يَ[قُو]لُ}}، {{q 8:24|يَ[حُو]لُ}}، {{q ?|تَتَّ[قُو]نَ}}.
+- **Yaa sakinah** is preceded by letter with kasrah like: {{q ?|[قِي]لَ}}، {{q ?|وَ[حِي]لَ}}، {{q ?|صَٰدِ[قِي]نَ}}.
+### Pictograms
+!crop 120 476 548 630
+
+@page 19
+# 2- The throat ({{a الحَلْق}})
+It means the space between the larynx and the furthest part of the tongue, It has **3 specific** articulation points for **6 letters**.
+## The bottom of the throat
+**Hamzah ({{a ء}}), Haa ({{a هـ}})**: They are articulated from the furthest part of the throat (The area of the vocal cords).
+{{q ?|يَ[أْ]كُلُ}}، {{q ?|مُ[ؤْ]مِنٍ}}، {{q ?|أَ[هْ]وَآءَهُم}}، {{q ?|أَ[هْ]لِهَا}}.
+!crop 409 138 536 262
+## The middle part of the throat
+**Ain ({{a ع}}), Haa ({{a ح}})**: They are articulated from the middle part of the throat (The area of the epiglottis).
+{{q ?|أَ[عْ]بُدُ}}، {{q ?|أَ[عْ]لَمُ}}، {{q ?|إِ[حْ]سَٰنًا}}، {{q ?|أَ[حْ]رَصَ}}.
+!crop 136 405 454 544
+## The Top of the throat
+**Ghain ({{a غ}}), Khaa ({{a خ}})**: They are articulated from the closest part of the throat (The area of the root of the tongue).
+{{q ?|أَ[غْ]نِيَآءَ}}، {{q ?|وَأَ[غْ]رَقْنَا}}، {{q ?|وَأَ[خْ]رَجَتِ}}، {{q ?|أَ[خْ]بَارَهَا}}.
+!crop 134 670 452 802
+
+@page 20
+# 3- The tongue ({{a اللِّسان}})
+The tongue has **10 specific** articulation points for **18 letters**.
+## The furthest part of the tongue
+**Qaaf ({{a ق}})**: is emitted from the furthest part of the tongue with the soft palate (The soft area of the gum of the upper molars).
+{{q ?|أَ[قْ]رَرْتُمْ}}، {{q ?|أَ[قْ]رَبُ}}، {{q ?|أُ[قْ]سِمُ}}.
+!crop 387 137 547 295
+**Kaaf ({{a ك}})**: is emitted from the furthest part of the tongue with the hard and soft palate together (The hard and soft area of the upper palate).
+{{q ?|أَ[كْ]ثَرُهُمْ}}، {{q ?|أَ[كْ]بَرُ}}، {{q ?|ٱ[كْ]تَسَبُوا۟}}.
+!crop 389 310 546 471
+## The middle of the tongue
+**Jeem ({{a ج}}), Sheen ({{a ش}}), Non lengthening Yaa ({{a ي}})**: are emitted from the middle of the tongue with the middle of the upper palate.
+{{q ?|أَ[جْ]رُهُمْ}}، {{q ?|أَ[جْ]رُ}}، {{q ?|أَ[شْ]هُرٍ}}، {{q ?|أَ[شْ]تَاتًا}}، {{q ?|أَ[يْ]مَٰنَكُمْ}}، {{q ?|أَ[يْ]دِيهِمْ}}.
+!crop 80 628 548 777
+
+@page 21
+## The edge of the tongue
+**D'add ({{a ض}})**: Is emitted from one of the edges of the tongue right or left or the two edges together with the upper molars.
+{{q ?|ٱ[ضْ]رِب}}، {{q ?|أَ[ضْ]حَكَ}}، {{q ?|أَ[ضْ]عَافًا}}.
+!crop 395 99 545 253
+**Laam ({{a ل}})**: Is emitted from the closest part of both edges of the tongue to the utmost tip and what lies opposite to it from the gum of the upper central incisors, lateral incisors, canines and premolars.
+{{q ?|قُ[لْ]نَا}}، {{q ?|يُ[لْ]قُونَ}}، {{q ?|خَ[لْ]فَهَا}}.
+!crop 392 266 544 420
+## The tip of the tongue
+**Noon ({{a ن}})**: Is emitted from the tip of the tongue and what lies opposite to it from the gum of the upper incisors, below the articulation point of laam, It is accompanied by ghunnah from the nasal cavity.
+{{q ?|أَ[نْ]عَمْتَ}}، {{q ?|وَتَ[نْ]حِتُونَ}}، {{q ?|إِ[نْ]}}.
+!crop 392 488 547 645
+**Raa ({{a ر}})**: Is emitted from the tip of the tongue from the top and what lies opposite to it from the gum of the upper incisors, close to the articulation point of noon.
+{{q ?|أَ[رْ]بَعَةً}}، {{q ?|أَ[رْ]بَابًا}}، {{q ?|أَ[رْ]بَعِينَ}}.
+!crop 398 648 547 801
+
+@page 22
+**T'aa ({{a ط}}), daal ({{a د}}), taa ({{a ت}})**: are emitted from the tip of the tongue and what lies opposite to it from the gum line of the upper central incisors.
+{{q ?|أَ[طْ]عَمَهُم}}، {{q ?|أَ[طْ]وَارًا}}، {{q ?|أَ[دْ]رَىٰكَ}}، {{q ?|أَ[دْ]نَىٰ}}، {{q ?|أَ[تْ]قَىٰكُمْ}}، {{q ?|أَ[تْ]رَابًا}}.
+!crop 183 213 469 341
+**S'aad ({{a ص}}), seen ({{a س}}), zaay ({{a ز}})**: are emitted from the tip of the tongue with the bottom of the inner plates of the lower incisors, The sound is articulated slightly above them passing between the upper and lower incisors.
+{{q ?|أَ[صْ]حَٰبُ}}، {{q ?|أَ[سْ]فَلَ}}، {{q ?|وَأَ[سْ]قَيْنَٰكُم}}، {{q ?|أَ[زْ]وَٰجٌ}}، {{q ?|أَ[زْ]كَىٰ}}.
+!crop 179 456 469 588
+**Th'aa ({{a ظ}}), thaal ({{a ذ}}), thaa ({{a ث}})**: are emitted from the tip of the tongue with the tip of the upper central incisors.
+{{q ?|أَ[ظْ]لَمَ}}، {{q ?|وَأَ[ظْ]هَرَهُ}}، {{q ?|ٱ[ذْ]كُرُوا۟}}، {{q ?|إِ[ذْ]}}، {{q ?|إِ[ثْ]مٌ}}، {{q ?|ٱ[ثْ]نَتَيْنِ}}.
+!crop 169 686 422 798
+
+@page 23
+# 4- The two lips ({{a الشَّفتان}})
+This major articulation point includes two specific articulation points for 4 letters:
+## The inside of the lip
+**Faa ({{a ف}})**: Is emitted from the inside of the lower lip with the tip of the upper central incisors.
+{{q ?|أَ[فْ]وَاجًا}}، {{q ?|أَ[فْ]لَحَ}}، {{q ?|أَ[فْ]نَانٍ}}.
+!crop 397 124 548 274
+## The two lips
+**Non_lengthening waaw ({{a و غير مدية}}), baa ({{a ب}}) and meem ({{a م}})**: are emitted from the two lips by circling the two lips with waaw and closing them with baa and meem, Meem is also accompanied by ghunnah from the nasal cavity.
+{{q ?|وَٱلْيَوْمِ ٱلْ[مَ]وْعُودِ}}، {{q ?|إِ[بْ]رَٰهِيمَ}}، {{q ?|أَ[بْ]وَٰبُهَا}}، {{q ?|أَ[مْ]رُنَا}}، {{q ?|وَأَ[مْ]نًا}}.
+!crop 130 394 540 540
+# 5 – Khayshoom (The nasal cavity) ({{a الخَيشوم}})
+- The nasal cavity is the opening that connects the furthest point of the nose to the throat and Produces ghunnah.
+- **Ghunnah (as a letter)**: is a sound is articulated from khayshoom (The nasal cavity) and accompanies noon and meem in all cases. Meem is not free from ghunnah; Noon is not free from ghunnah.
+!crop 279 646 536 772
+
+@page 24
+# Completing harakahs (vowels) ({{a إتمامُ الحركات}})
+## Letter with fathah
+When the reciter pronounces letter with fathah, he must open his mouth by the same way of pronouncing Alif. {{q ?|تَ[حْ]سَبُ}}.
+!crop 375 106 529 261
+## Letter with dammah
+When the reciter pronounces letter with dammah, he must circle his lips by the same way of pronouncing Waaw. {{q ?|[سُ]لْطَٰنِيَهْ}}.
+!crop 377 279 525 429
+## Letter with kasrah
+When the reciter pronounces letter with kasrah, he must drop his lower jaw and raise the middle of the tongue by the same way of pronouncing Yaa. {{q ?|أُقْ[سِ]مُ}}.
+!crop 378 460 522 609
+## Letter with Sukoon
+Letter with sukoon is emitted from its original articulation point without any of the above. {{q ?|إِ[سْ]رَارًا}}.
+!crop 377 631 525 780

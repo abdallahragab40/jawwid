@@ -1,0 +1,94 @@
+%status sourceExtracted
+
+@page 73
+# Idgham in the Holy Qur'an ({{a الإدغامُ في القرآنِ الكريم}})
+= Definition | To insert a non-voweled letter into a voweled letter so that they become one stressed letter like the second one.
+= Benefit | To pronounce the letters easily, as pronouncing one single merged letter is lighter on the tongue than pronouncing two separate ones.
+= Causes | Two identical letters, two close letters and two similar letters meeting.
+## Divisions
+### Idgham kabir (big merging)
+Inserting a voweled letter into another voweled letter so that they become one stressed (mushaddad) letter like the second.
+- Idgham kabir is not applied by Hafs on the authority of 'Asim.
+- It is called idgham kabir because of the multiple steps involved: replacing the first letter if it is not identical to the second, then making it non-voweled, and finally merging it into the second letter.
+### Idgham saghir (small merging)
+Inserting a non-voweled letter into a voweled letter so that they become one mushaddad letter like the second.
+- It is called idgham saghir because fewer steps are involved compared to idgham kabir.
+- Idgham saghir is divided into two sections in terms of characteristics:
+= Complete idgham | Merging the letter, its essence and its characteristics, into the next, so the merged letter is removed completely and leaves no trace in pronunciation, like: {{q 61:14|فَـَٔامَنَ[ت طَّ]آئِفَةٌ}}, {{q 2:256|قَ[د تَّ]بَيَّنَ}}, {{q 111:5|مِّ[ن مَّ]سَدٍۭ}}. Its sign: the first letter is free from sukoon and the second is mushaddad.
+
+@page 74
+= Incomplete idgham | Merging the letter's essence but not its characteristics into the next: the merged letter is removed but some of its characteristics are kept. Incomplete idgham occurs only in:
+- Merging noon sakinah or tanween into **yaa** or **waaw**, like: {{q ?|وَمَ[ن يَ]عْمَلْ}}, {{q ?|مِّ[ن وَ]رَآئِهِم}}, {{q 78:13|سِرَاجً[ا وَ]هَّاجًا}}, {{q 90:3|وَوَالِ[دٍ وَ]مَا وَلَدَ}}. The characteristic of the merged letter (ghunnah) is preserved.
+- Merging **t'aa** into **taa**, like: {{q 5:28|بَسَ[طت]}}, {{q 27:22|أَحَ[طتُ]}}.
+- Its sign: the first letter is free from sukoon and the second letter is not mushaddad.
+
+@page 75
+# The relationships between two meeting letters ({{a مَبحَثُ عِلاقاتِ الحُروفِ}})
+Whenever two letters meet in pronunciation and writing, there is a relationship between them: they may be identical, similar, close or far apart. This meeting may be within one word or between two words. In the following, we define every type and clarify its rule.
+## 1- Two identical letters ({{a الحَرفانِ المُتماثِلان}})
+These letters share the same articulation point and characteristics, like: {{q 5:61|وَقَ[د دَّ]خَلُوا۟}}, {{q 2:2|فِي[هِ هُ]دًى}}, {{q 24:35|تَمْ[سَسْ]هُ}}.
+The condition of idgham of two identical letters: the first of them is sakin and is not a lengthening letter, like:
+- **Merging baa into baa**: {{q 2:60|ٱضْرِ[ب بِّ]عَصَاكَ ٱلْحَجَرَ}} [Al-Baqarah: 60].
+- **Merging taa into taa**: {{q 2:16|رَبِحَ[ت تِّ]جَٰرَتُهُمْ}} [Al-Baqarah: 16].
+- **Merging daal into daal**: {{q 5:61|وَقَ[د دَّ]خَلُوا۟}} [Al-Ma'idah: 61].
+- **Merging thaal into thaal**: {{q 21:87|إِ[ذ ذَّ]هَبَ}} [Al-Anbiya': 87].
+- **Merging raa into raa**: {{q 18:24|وَٱذْكُ[ر رَّ]بَّكَ}} [Al-Kahf: 24].
+- **Merging noon into noon**: {{q 30:29|مِّ[ن نَّ]ٰصِرِينَ}} [Ar-Rum: 29].
+- **Merging faa into faa**: {{q 17:33|فَلَا يُسْرِ[ف فِّ]ى ٱلْقَتْلِ}} [Al-Isra': 33]; it is mentioned once in the Qur'an.
+- **Merging laam into laam**: {{q 25:10|وَيَجْعَ[ل لَّ]كَ قُصُورًۢا}} [Al-Furqan: 10].
+- **Merging 'ain into 'ain**: {{q 18:78|تَسْتَطِ[ع عَّ]لَيْهِ}} [Al-Kahf: 78]; it is mentioned once in the Qur'an.
+- **Merging meem into meem**: {{q 106:4|أَطْعَمَهُ[م مِّ]ن جُوعٍ}} [Quraysh: 4]; idgham shafawi (oral merging).
+- **Merging kaaf into kaaf**: {{q 4:78|يُدْرِ[ككُّ]مُ ٱلْمَوْتُ}} [An-Nisa': 78].
+- **Merging haa into haa**: {{q 24:33|يُكْرِ[ههُّ]نَّ}} [An-Nur: 33].
+- **Merging waaw into waaw**: {{q 83:3|أَ[و وَّ]زَنُوهُمْ}} [Al-Mutaffifin: 3].
+- **Merging yaa into yaa**: {{q 68:6|بِأَ[يي]كُمُ}} [Al-Qalam: 6]; it is mentioned once.
+If the first of the two identical letters is voweled or is a lengthening letter, it is not merged into the next letter, like: {{q 24:35|تَمْ[سَسْ]هُ}}, {{q ?|يَعْلَ[مُ مَ]ا بَيْنَ}}, {{q ?|قَالُ[وا۟ وَ]هُمْ}}, {{q ?|فِ[ى يُ]وسُفَ}}, {{q 2:2|فِي[هِ هُ]دًى}}.
+
+@page 76
+## 2- Two similar letters ({{a الحَرفانِ المُتجانسان}})
+These letters share the same articulation point and differ in some characteristics, like: {{q 43:89|فَٱصْفَ[حْ عَ]نْهُمْ}}, {{q 81:7|ٱلنُّفُو[سُ زُ]وِّجَتْ}}, {{q 37:125|أَ[تَدْ]عُونَ}}.
+Similarity is one of the reasons for idgham, but meeting two similar letters does not mean that they must be merged. The reciters do not merge all similar letters; they merge certain letters. Hafs limited the idgham of two similar letters to 7 cases, provided that the first of them is sakin:
+### a- Articulation point of th'aa, thaal and thaa ({{a ظ، ذ، ث}})
+1) **Merging thaal into th'aa**, in 2 positions: {{q 4:64|إِ[ذ ظَّ]لَمُوٓا۟ أَنفُسَهُمْ}} [An-Nisa': 64], {{q 43:39|إِ[ذ ظَّ]لَمْتُمْ}} [Az-Zukhruf: 39].
+2) **Merging thaa into thaal**, in 1 position: {{q 7:176|يَلْهَ[ث ذَّ]ٰلِكَ}} [Al-A'raf: 176].
+### b- Articulation point of baa and meem ({{a ب، م}})
+3) **Merging baa into meem**, in 1 position: {{q 11:42|يَٰبُنَىَّ ٱرْكَ[ب مَّ]عَنَا}} [Hud: 42].
+### c- Articulation point of t'aa, daal and taa ({{a ط، د، ت}})
+4) **Merging daal into taa**: {{q 2:256|قَ[د تَّ]بَيَّنَ}} [Al-Baqarah: 256].
+5) **Merging taa into daal**, in 2 positions: {{q 7:189|أَثْقَلَ[ت دَّ]عَوَا ٱللَّهَ}} [Al-A'raf: 189], {{q 10:89|أُجِيبَ[ت دَّ]عْوَتُكُمَا}} [Yunus: 89].
+6) **Merging taa into t'aa**: {{q 61:14|فَـَٔامَنَ[ت طَّ]آئِفَةٌ}} [As-Saff: 14].
+7) **Merging t'aa into taa**, in 4 words: {{q 5:28|بَسَ[طت]}}, {{q 27:22|أَحَ[طتُ]}}, {{q 39:56|فَرَّ[طتُ]}}, {{q 12:80|فَرَّ[طت]مْ}}.
+> **Note**: Merging t'aa into taa is an incomplete idgham because t'aa is stronger than taa, and the strong is not merged into the weak. The characteristics of t'aa, including itbaq (adhesion), are preserved, but qalqalah (disturbance) is removed.
+
+@page 77
+## 3- Two close letters ({{a الحَرفانِ المُتقاربان}})
+These letters are close to each other in articulation point and characteristics.
+- Close in articulation point and characteristic, like: {{q ?|مِّ[ن لَّ]دُنْهُ}}.
+- Close in articulation point but different in characteristic, like: {{q 23:112|عَدَ[دَ سِ]نِينَ}}.
+- Close in characteristic but different in articulation point, like: {{q ?|لَّقَ[دْ كَ]انَ لَكُمْ}}.
+Closeness is one of the reasons for idgham, but meeting two close letters does not mean that they must be merged. The reciters do not merge all close letters; they merge certain letters. Hafs merged the following close letters:
+1) **Merging laam into raa**: {{q 4:158|بَ[ل رَّ]فَعَهُ ٱللَّهُ إِلَيْهِ}} [An-Nisa': 158], {{q 21:56|بَ[ل رَّ]بُّكُمْ}} [Al-Anbiya': 56], {{q 23:29|وَقُ[ل رَّ]بِّ أَنزِلْنِى مُنزَلًا مُّبَارَكًا}} [Al-Mu'minun: 29].
+- They are similar letters according to the school of Al-Farra'; according to the school of Sibawayh, it is a required idgham of close letters.
+- There is an exception: {{q 83:14|بَ[لْ رَ]انَ}}; merging laam into raa is not applied because of the sakt (slight pause without taking breath), which prevents idgham.
+2) **Merging qaaf into kaaf**, in the Almighty's word: {{q 77:20|أَلَمْ نَخْلُ[قكُّ]م مِّن مَّآءٍ مَّهِينٍ}} [Al-Mursalat: 20].
+- The reciters differ on whether the characteristic of qaaf remains or not: complete or incomplete idgham is permissible, and complete idgham is what is recited for Hafs.
+3) **Merging laam shamsiyyah (solar laam)** in 13 letters; it will be clarified in the subject of the laam of the definite article.
+4) **Merging noon sakinah and tanween** in the 5 letters of the word (**يَرْمُلُو**); it was mentioned in the subject of noon sakinah and tanween.
+
+@page 78
+## 4- Two far-apart letters ({{a الحَرفانِ المُتباعِدان}})
+These letters are far apart in articulation point and characteristics, like: {{q ?|تُ[حْمَ]لُونَ}}, {{q ?|تَ[شْكُ]رُونَ}}.
+= Its rule | Ithhar (clarity) in all recitations.
+### Note 1: Some classifiers divide two identical, similar or close letters into
+| | Definition | Examples | Its rule |
+| Saghir (small) | The first letter is sakin and the second is voweled | | It was clarified above |
+| Kabir (big) | Both letters are voweled | {{q 2:2|فِي[هِ هُ]دًى}}, {{q 81:7|ٱلنُّفُو[سُ زُ]وِّجَتْ}}, {{q ?|رِزْ[قُكُ]مْ}} | Ithhar (clarity) by Hafs |
+| Mutlaq (absolute) | The first letter is voweled and the second is sakin | {{q 24:35|تَمْ[سَسْ]هُ}}, {{q 37:125|أَ[تَدْ]عُونَ}}, {{q 2:120|وَلَ[ن تَ]رْضَىٰ}} | Ithhar must be applied by all reciters |
+### Note 2: A number of scholars said that Hafs recited with idgham kabir in a few positions, like
+- {{q 12:11|تَأْ[مَ۫نَّا]}} [Yusuf: 11], its origin ({{a تأمَنُنَا}}).
+- {{q 18:95|مَكَّ[نِّى]}} [Al-Kahf: 95], its origin ({{a مكنَنِي}}).
+- {{q 39:64|تَأْمُرُ[وٓنِّىٓ]}} [Az-Zumar: 64], its origin ({{a تأمُرُونَنِي}}).
+- {{q 6:80|أَتُحَٰٓجُّ[وٓنِّى]}} [Al-An'am: 80], its origin ({{a أتحاجُّونَنِي}}).
+- {{q 4:58|نِ[عِمَّا]}} [An-Nisa': 58], its origin ({{a نعمَ مَا}}).
+- {{q 10:35|يَ[هِدِّىٓ]}} [Yunus: 35], its origin ({{a يهْتَدي}}).
+It is called idgham kabir when we look at the origin of the word; in its current form, it is not called idgham.

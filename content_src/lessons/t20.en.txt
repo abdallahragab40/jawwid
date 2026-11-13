@@ -1,0 +1,71 @@
+%status sourceExtracted
+
+@page 86
+# Waqf (stop) ({{a الوَقفُ}})
+The science of stopping and starting is one of the most important subjects in the recitation of the Qur'an: the reciter must learn what guides him to a proper stop and a good start.
+## Comparison among waqf, qat' and sakt
+= Waqf (stop) ({{a الوقف}}) | Cutting off the sound at the end of the word for a period of time in which one usually takes a breath, with the intention of resuming the recitation, not abandoning it.
+= Qat' (cutting off) ({{a القطع}}) | Interrupting the recitation with the intention of ending it, and then moving to another action, like ruku' (bowing).
+= Sakt (slight pause) ({{a السكت}}) | Cutting off the sound for a period shorter than the time of a stop, without taking a breath, with the intention of continuing the recitation.
+## Types of stop
+1) **Forced stop** ({{a الاضطراري}}): what happens to the reciter during his recitation because of a necessity forcing him to stop, like shortness of breath, coughing, sneezing or other excuses. **Its rule**: it is permissible to stop on any word until the compelling state passes.
+2) **Tested stop** ({{a الاختباري}}): the reciter is asked to stop on a certain word to be examined and to make sure of the quality of his recitation. **Its rule**: it is permissible, for the sake of teaching.
+3) **Waiting stop** ({{a الانتظاري}}): a stop only for one who combines the different readings before a sheikh: he stops on a word and then resumes the verse from its beginning until he has read it in all its ways. **Its rule**: it is permissible on condition that it does not give a corrupt meaning.
+4) **Optional stop** ({{a الاختياري}}): the reciter stops by his own choice, without a compelling state. It is divided into:
+| Permissible | Impermissible |
+| Complete stop ({{a التَّام}}) | Ugly stop ({{a القبيح}}) |
+| Sufficient stop ({{a الكافي}}) | |
+| Good stop ({{a الحسن}}) | |
+
+@page 87
+## a- Complete stop ({{a الوقفُ التَّام}})
+= Its definition | A stop whose meaning is complete and which is not attached to what follows it, neither in parsing nor in meaning.
+= It is called complete | Because the speech is complete and not attached to what follows it, neither in parsing nor in meaning.
+= Its rule | It is good to stop on it and to start with what follows it.
+It occurs most commonly at the ends of verses and stories, like stopping on the Almighty's saying:
+- {{q 1:4|مَٰلِكِ يَوْمِ [ٱلدِّينِ]}} {{q 1:5|*}} [Al-Fatihah: 4–5].
+- {{q 2:5|أُو۟لَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ وَأُو۟لَٰٓئِكَ هُمُ [ٱلْمُفْلِحُونَ]}} {{q 2:6|*}} [Al-Baqarah: 5–6].
+- {{q 25:29|لَّقَدْ أَضَلَّنِى عَنِ ٱلذِّكْرِ بَعْدَ إِذْ [جَآءَنِى] وَكَانَ ٱلشَّيْطَٰنُ لِلْإِنسَٰنِ خَذُولًا}} [Al-Furqan: 29].
+### Note
+Among the types of complete stop is what scholars call the **compulsory stop** (the clarifying stop):
+= Compulsory stop ({{a الوقفُ اللَّازم}}) | Stopping on a Qur'anic word to make the meaning clear.
+= Its rule | It is compulsory to stop on it and start with what follows it. Unless we stop, the meaning may be ambiguous in the hearer's mind, so he may not grasp the purpose of Allah's words.
+Its sign in the Qur'an is a meem (**مـ**) above the word, for example:
+- {{q 54:6|فَتَوَلَّ [عَنْهُمْ] يَوْمَ يَدْعُ ٱلدَّاعِ إِلَىٰ شَىْءٍ نُّكُرٍ}} [Al-Qamar: 6].
+- {{q 6:36|إِنَّمَا يَسْتَجِيبُ ٱلَّذِينَ [يَسْمَعُونَ] وَٱلْمَوْتَىٰ يَبْعَثُهُمُ ٱللَّهُ ثُمَّ إِلَيْهِ يُرْجَعُونَ}} [Al-An'am: 36].
+- {{q 36:76|فَلَا يَحْزُنكَ [قَوْلُهُمْ] إِنَّا نَعْلَمُ مَا يُسِرُّونَ وَمَا يُعْلِنُونَ}} [Ya-Sin: 76].
+- {{q 28:88|وَلَا تَدْعُ مَعَ ٱللَّهِ إِلَٰهًا [ءَاخَرَ] لَآ إِلَٰهَ إِلَّا هُوَ}} [Al-Qasas: 88].
+
+@page 88
+## b- Sufficient stop ({{a الوقفُ الكافي}})
+= Its definition | Stopping on a word that gives a correct meaning and is attached to what follows it in meaning, not in parsing.
+= It is called sufficient | Because it dispenses with what follows it in terms of parsing, although they are attached in meaning.
+= Its rule | It is good to stop on it and to start with what follows it, like the complete stop.
+It occurs at the ends of verses and in their middle, like stopping on the Almighty's saying:
+- {{q 2:4|وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْـَٔاخِرَةِ هُمْ [يُوقِنُونَ]}} {{q 2:5|*}} [Al-Baqarah: 4–5].
+- {{q 19:41|وَٱذْكُرْ فِى ٱلْكِتَٰبِ [إِبْرَٰهِيمَ] إِنَّهُۥ كَانَ صِدِّيقًا نَّبِيًّا}} [Maryam: 41].
+## c- Good stop ({{a الوقفُ الحسن}})
+= Its definition | A stop that conveys a complete meaning by itself and is attached to what follows it in parsing and meaning.
+= It is called good | Because it gives an understood meaning that makes stopping on it good in itself.
+= Its rule | It is good to stop on it, but it is not good to start with what follows it unless it is the end of a verse, because stopping at the ends of verses is a sunnah in all cases, whether attached to what follows or not, like:
+- **At the end of verses**: {{q 1:2|ٱلْحَمْدُ لِلَّهِ رَبِّ [ٱلْعَٰلَمِينَ]}} {{q 1:3|*}} [Al-Fatihah: 2–3].
+- **Not at the end of verses**: {{q 1:2|ٱلْحَمْدُ [لِلَّهِ] رَبِّ ٱلْعَٰلَمِينَ}} [Al-Fatihah: 2].
+
+@page 89
+## d- Ugly stop ({{a الوقفُ القبيح}})
+= Its definition | Stopping on what does not give a complete meaning, because it is attached to what follows it in parsing and meaning; stopping on it gives an incomplete or wrong meaning.
+= It is called ugly | Because of the ugliness of stopping on it: it does not give a correct meaning, or it gives an unintended meaning, or it suggests a corrupt meaning.
+= Its rule | The reciter should not stop on it deliberately except in urgent necessity; if he had to stop, he should go back and repeat.
+- Stopping on a word that gives no meaning because it is strongly attached to what follows it in parsing and meaning, like: {{q 1:2|[ٱلْحَمْدُ] لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ}} [Al-Fatihah: 2].
+- Stopping on a word that suggests a meaning other than what Allah intended, like: {{q 4:43|لَا تَقْرَبُوا۟ [ٱلصَّلَوٰةَ] وَأَنتُمْ سُكَٰرَىٰ}} [An-Nisa': 43].
+- Stopping on a word that suggests a meaning inappropriate for Allah, like: {{q 47:19|فَٱعْلَمْ أَنَّهُۥ [لَآ إِلَٰهَ] إِلَّا ٱللَّهُ وَٱسْتَغْفِرْ لِذَنۢبِكَ وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ}} [Muhammad: 19].
+
+@page 90
+# Symbols of stop in the Qur'an ({{a علاماتُ الوقفِ في المُصحفِ}})
+= {{a مـ}} | Symbol of the compulsory stop: {{q 6:36|إِنَّمَا يَسْتَجِيبُ ٱلَّذِينَ [يَسْمَعُونَ] وَٱلْمَوْتَىٰ يَبْعَثُهُمُ ٱللَّهُ ثُمَّ إِلَيْهِ يُرْجَعُونَ}} [Al-An'am: 36].
+= {{a لا}} | Symbol of the prohibited stop, because the meaning is incomplete: {{q 39:33|وَٱلَّذِى جَآءَ بِٱلصِّدْقِ وَصَدَّقَ [بِهِۦٓ] أُو۟لَٰٓئِكَ هُمُ ٱلْمُتَّقُونَ}} [Az-Zumar: 33].
+= {{a ج}} | Symbol that both stopping and continuing are allowed: {{q 10:65|وَلَا يَحْزُنكَ قَوْلُهُمْ إِنَّ ٱلْعِزَّةَ لِلَّهِ [جَمِيعًا] هُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ}} [Yunus: 65].
+= {{a قلى}} | Symbol that continuing is allowed while stopping is better: {{q 2:191|فَإِن قَٰتَلُوكُمْ فَٱقْتُلُوهُمْ كَذَٰلِكَ جَزَآءُ ٱلْكَٰفِرِينَ}} [Al-Baqarah: 191].
+= {{a صلى}} | Symbol that stopping is allowed while continuing is better: {{q 67:3|مَّا تَرَىٰ فِى خَلْقِ ٱلرَّحْمَٰنِ مِن [تَفَٰوُتٍ] فَٱرْجِعِ ٱلْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ}} [Al-Mulk: 3].
+= {{a ∴ ∴}} | Symbol of the related (embracing) stop: if the reciter stops at one of the two positions, he should not stop at the other: {{q 2:2|ذَٰلِكَ ٱلْكِتَٰبُ لَا [رَيْبَ] [فِيهِ] هُدًى لِّلْمُتَّقِينَ}} [Al-Baqarah: 2].
+- It is also permissible to join the two positions together without stopping at either of them.

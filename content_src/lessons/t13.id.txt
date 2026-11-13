@@ -1,0 +1,8 @@
+%status sourceExtracted
+
+@page 54
+# Tingkatan ghunnah (durasi ghunnah) ({{a أزمِنةُ الغُنَن}})
+1) **Paling sempurna** ({{a أكمل}}): pada nun dan mim yang bertasydid dan dua idgham, contoh: {{q 8:43|وَلَٰكِ[نَّ] ٱللَّهَ سَلَّمَ}}, {{q 28:7|فِى ٱلْيَ[مِّ] وَلَا تَخَافِى}}, {{q ?|مَلِكِ ٱل[نَّ]اسِ}}, {{q 87:9|إِ[ن نَّ]فَعَتِ}}, {{q ?|وَمَ[ن يَ]عْمَلْ}}, {{q 10:27|مَّا لَهُ[م مِّ]نَ ٱللَّهِ}}.
+2) **Sempurna** ({{a كامل}}): pada nun dan mim yang diikhfa-kan, contoh: {{q ?|ٱلْإِ[ن]سَٰنُ}}, {{q ?|وَمَن يَعْتَصِ[م بِ]ٱللَّهِ}}, {{q ?|مِ[نۢ بَ]عْدِ}}.
+3) **Kurang sempurna** ({{a ناقص}}): pada nun dan mim sukun yang diizharkan, contoh: {{q ?|أَ[نْ]عَمْتَ}}, {{q ?|حَكِي[مٌ عَ]لِيمٌ}}, {{q ?|وَهُ[مْ فَ]رِحُونَ}}.
+4) **Paling kurang** ({{a أنقص}}): pada nun dan mim yang berharakat, contoh: {{q 2:93|بِئْسَ[مَ]ا يَأْ[مُ]رُكُم بِهِۦٓ إِي[مَٰنُ]كُمْ إِن كُنتُم مُّؤْ[مِنِ]ينَ}}.

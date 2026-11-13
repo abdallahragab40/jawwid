@@ -1,0 +1,17 @@
+%status sourceExtracted
+
+@page 93
+# Ibtida' (permulaan) ({{a الإبتِداءُ}})
+= Definisi | Memulai bacaan setelah berhenti atau diam.
+Imam Ibnul Jazari berkata: (Ibtida' tidak dilakukan kecuali secara pilihan, karena tidak seperti waqaf yang kadang-kadang diperlukan. Tidak diperbolehkan memulai kecuali dengan makna yang independen dan tidak terkait dengan sebelumnya sehingga merusak makna).
+## Jenis-jenis ibtida'
+### 1- Ibtida' hasan (baik) ({{a الإبتداءُ الحَسَن}})
+Diperbolehkan untuk memulai dengannya, yaitu memulai dengan kata-kata yang independen secara makna. Terbagi menjadi tam (sempurna), kafy (cukup) dan hasan (baik), sebagaimana pembagian waqaf, yaitu:
+= a- Ibtida' tam (sempurna) ({{a التَّام}}) | Memulai dengan sesuatu yang tidak memiliki hubungan makna atau lafaz dengan sebelumnya, sebagaimana saat memulai awal surat.
+= b- Ibtida' kafy (cukup) ({{a الكافي}}) | Memulai dengan sesuatu yang terkait dengan sebelumnya dalam makna, tetapi tidak dalam lafaz, contoh: {{q 2:6|يُؤْمِنُونَ}} {{q 2:7|[خَتَمَ] ٱللَّهُ عَلَىٰ قُلُوبِهِمْ}} [Al-Baqarah: 7].
+= c- Ibtida' hasan (baik) ({{a الحَسَن}}) | Memulai dengan sesuatu yang memiliki makna baik dan masih terkait dengan sebelumnya, contoh: {{q 2:8|وَمِنَ ٱلنَّاسِ [مَن] يَقُولُ ءَامَنَّا}} [Al-Baqarah: 8].
+### 2- Ibtida' qabih (buruk) ({{a الإبتداءُ القَبيح}})
+Memulai dengan sesuatu yang merusak makna, karena kuatnya keterkaitan dengan sebelumnya baik dalam lafaz maupun makna, sehingga memulai dengannya merusak makna atau memberikan kesan yang salah dari apa yang dimaksudkan Allah Ta'ala, misalnya:
+- Memulai dengan firman Allah Ta'ala: {{q 10:68|[ٱتَّخَذَ] ٱللَّهُ وَلَدًا}}, dari ayat: {{q 10:68|قَالُوا۟ ٱتَّخَذَ ٱللَّهُ وَلَدًا}} [Yunus: 68].
+- Memulai dengan firman Allah Ta'ala: {{q 3:181|[إِنَّ] ٱللَّهَ فَقِيرٌ وَنَحْنُ أَغْنِيَآءُ}}, dari ayat: {{q 3:181|لَّقَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّذِينَ قَالُوٓا۟ إِنَّ ٱللَّهَ فَقِيرٌ}} [Ali 'Imran: 181].
+- Memulai dengan firman Allah Ta'ala: {{q 9:30|[عُزَيْرٌ] ٱبْنُ ٱللَّهِ}}, dari ayat: {{q 9:30|وَقَالَتِ ٱلْيَهُودُ عُزَيْرٌ ٱبْنُ ٱللَّهِ}} [At-Taubah: 30].

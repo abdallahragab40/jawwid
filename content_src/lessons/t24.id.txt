@@ -1,0 +1,16 @@
+%status sourceExtracted
+
+@page 96
+# Nabr (penekanan) dalam al-Qur'an ({{a النَّبرُ في القرآنِ الكريم}})
+## Definisi
+= Secara bahasa | Menekan atau suara yang keras.
+= Secara istilah | Penekanan pada suku kata atau huruf tertentu sehingga suaranya sedikit lebih tinggi dibandingkan huruf-huruf yang ada di sekitarnya.
+## Tempat-tempat nabr
+1) Ketika melafalkan huruf wawu atau ya yang bertasydid, contoh: {{q ?|إِ[يَّ]اكَ}}, {{q ?|مِّن قُ[وَّ]ةٍ}}, {{q 4:135|يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَ[وَّ]ٰمِينَ بِٱلْقِسْطِ}}.
+2) Ketika berpindah dari huruf mad ke huruf setelahnya yang bertasydid, contoh: {{q 1:7|غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآ[لِّ]ينَ}}, {{q 80:33|فَإِذَا جَآءَتِ ٱلصَّآ[خَّ]ةُ}}, {{q ?|وَمَا مِن دَآ[بَّ]ةٍ فِى ٱلْأَرْضِ}}.
+3) Ketika berpindah dari huruf mad atau lin ke hamzah saat berhenti (waqaf) padanya, contoh: {{q ?|ٱلسَّمَآ[ءِ]}}, {{q ?|سُوٓ[ءَ]}}, {{q ?|سِىٓ[ءَ] بِهِمْ}}.
+4) Ketika membuang alif dalam bentuk tasniyah (ganda) untuk menghindari pertemuan dua huruf sukun, contoh: {{q 7:22|ذَا[قَا] ٱلشَّجَرَةَ}}, {{q 27:15|وَ[قَالَا] ٱلْحَمْدُ لِلَّهِ}}.
+5) Ketika berhenti pada huruf yang bertasydid (huruf ganda), contoh: {{q ?|يَٰٓأَيُّهَا ٱلنَّبِ[ىُّ]}}, {{q 54:3|وَكُلُّ أَمْرٍ مُّسْتَقِ[رٌّ]}}, {{q 2:255|ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَ[ىُّ] ٱلْقَيُّومُ}}, {{q 31:10|أَن تَمِيدَ بِكُمْ وَبَ[ثَّ] فِيهَا مِن كُلِّ دَآبَّةٍ}}.
+### Catatan: terdapat pengecualian saat berhenti pada huruf bertasydid
+1) Ketika berhenti pada huruf nun dan mim yang bertasydid, contoh: {{q ?|وَلَٰكِ[نَّ]}}, {{q ?|فِى ٱلْيَ[مِّ]}}.
+2) Ketika berhenti pada huruf qalqalah yang bertasydid, contoh: {{q 111:1|وَتَ[بَّ]}}, {{q ?|بِٱلْحَ[قِّ]}}.

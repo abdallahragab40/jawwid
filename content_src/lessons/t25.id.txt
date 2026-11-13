@@ -1,0 +1,25 @@
+%status sourceExtracted
+
+@page 97
+# Hal-hal yang diperhatikan untuk riwayat Hafsh ({{a مَا يُراعى لِحَفصٍ}})
+1) **Hukum huruf shad dalam firman Allah Ta'ala**:
+- {{q 2:245|وَٱللَّهُ يَقْبِضُ وَيَبْ[صُۜ]طُ وَإِلَيْهِ تُرْجَعُونَ}} [Al-Baqarah: 245], {{q 7:69|وَزَادَكُمْ فِى ٱلْخَلْقِ بَ[صْۜ]طَةً}} [Al-A'raf: 69]: kedua kata ini dibaca dengan **sin** saja.
+- {{q 88:22|لَّسْتَ عَلَيْهِم بِمُ[صَ]يْطِرٍ}} [Al-Ghasyiyah: 22]: kata ini hanya dibaca dengan **shad** saja.
+- {{q 52:37|أَمْ عِندَهُمْ خَزَآئِنُ رَبِّكَ أَمْ هُمُ ٱلْمُ[صَۣ]يْطِرُونَ}} [Ath-Thur: 37]: dibaca dengan **shad dan sin**; dibaca dengan shad lebih masyhur.
+2) **Saat pembukaan surat Ali 'Imran**: {{q 3:1|[الٓمٓ]}} {{q 3:2|[ٱللَّهُ] لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ}}. Dalam keadaan washal, mim dibaca fathah karena bertemunya dua huruf sukun: yang pertama mim pada akhir ejaan huruf hijaiyyah (**ميمْ**) dan yang kedua lam pertama pada lafzhul jalalah Allah. Diperbolehkan melafalkan ya' pada mim dengan dua cara, yaitu:
+- Memanjangkannya 6 harakat mengikuti panjang mad lazim, berdasarkan asalnya, yaitu sukun asli, dan tidak memperhitungkan harakat yang datang kemudian, contoh: ({{a أَلِفْ لَآمْ مِّيـــمَ اللهُ}}).
+- Memendekkannya dengan kadar 2 harakat, dengan memperhitungkan harakat tambahan yang datang kemudian, sehingga dianggap seperti mad thabi'i, contoh: ({{a أَلِفْ لَآمْ مِّيمَ اللهُ}}).
+3) **Kata** {{q 27:36|فَمَآ ءَاتَىٰ[نِۦَ] ٱللَّهُ خَيْرٌ مِّمَّآ ءَاتَىٰكُم}} [An-Naml: 36]. **Saat waqaf, ada dua cara**:
+- Melafalkan huruf ya' sukun, contoh: ({{a فَمَآ ءَاتَىٰنِي}}).
+- Menghapus huruf ya' sukun dan berhenti pada nun (dengan sukun atau dengan raum), contoh: ({{a فَمَآ ءَاتَىٰنْ}}).
+
+@page 98
+4) **Dua kata** ({{a ضَعْفٍ}}), ({{a ضَعْفًا}}) pada tiga tempat di Surah Ar-Rum dibaca dengan **fathah** pada huruf dhad (ini lebih didahulukan), dan juga dapat dibaca dengan men-**dhammah**-kan huruf dhad, contoh: {{q 30:54|ٱللَّهُ ٱلَّذِى خَلَقَكُم مِّن [ضَ]عْفٍ ثُمَّ جَعَلَ مِنۢ بَعْدِ [ضَ]عْفٍ قُوَّةً ثُمَّ جَعَلَ مِنۢ بَعْدِ قُوَّةٍ [ضَ]عْفًا وَشَيْبَةً}}.
+> **Catatan**: Saat membaca, ketiga kata tersebut harus seragam pada huruf dhad: semuanya dibaca dengan fathah atau semuanya dibaca dengan dhammah.
+5) **Kata** {{q 26:176|[لْـَٔيْكَةِ]}} diawali dengan hamzah washal yang fathah, yaitu: ({{a ٱلْأَيْكَةِ}}).
+- {{q 26:176|كَذَّبَ أَصْحَٰبُ [لْـَٔيْكَةِ] ٱلْمُرْسَلِينَ}} [Asy-Syu'ara': 176].
+- {{q 38:13|وَثَمُودُ وَقَوْمُ لُوطٍ وَأَصْحَٰبُ [لْـَٔيْكَةِ] أُو۟لَٰٓئِكَ ٱلْأَحْزَابُ}} [Shad: 13].
+6) **Imalah pada alif dan fathah sebelumnya** pada kata {{q 11:41|مَجْ[ر۪ىٰ]هَا}} dalam firman Allah Ta'ala: {{q 11:41|وَقَالَ ٱرْكَبُوا۟ فِيهَا بِسْمِ ٱللَّهِ مَجْ[ر۪ىٰ]هَا وَمُرْسَىٰهَآ}} [Hud: 41].
+= Imalah | Mendekatkan suara fathah kepada kasrah dan suara alif kepada ya', tanpa mengubahnya sepenuhnya atau memberikan penekanan yang berlebihan.
+- Dalam riwayat Hafsh, imalah hanya terdapat pada kata ini.
+7) {{q 37:130|[إِلْ يَاسِينَ]}} **adalah satu kata** dalam riwayat Hafsh, dan ketika berhenti padanya dianggap sebagai satu kata, yaitu: ({{a إِلْيَاسِين}}).
