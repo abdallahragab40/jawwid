@@ -52,9 +52,12 @@ Group titles (8) and partial-coverage notes are authored in all four languages.
 
 Definitions are quoted from each language's own edition with its page. Authored definitions: English r13/r14 (Laam of the name of Allah), because the English edition lacks that subsection. Explanations of the highlighted letters (22 × 4) are authored. Every Qur'anic example (22) is taken from the books' own example tables and copied verbatim from Tanzil with an automatically verified reference.
 
-## Practice questions (28) — supplementary, all `draft`
+## Practice questions (180) — supplementary, all `draft`
 
-Types: {'identify': 21, 'choice': 5, 'truefalse': 2}. Prompts and explanations are authored in all four languages; identify-the-rule questions (21) use rule-card titles as options and verified Tanzil excerpts (examples drawn from the books' tables).
+* **28 hand-written** — types: identify 21, choice 5, true/false 2. Prompts and explanations are authored in all four languages.
+* **152 drafted from the books' example tables** by `tools/gen_identify_questions.py` (ids q101+, marked `"generated"`): "identify the rule" for 19 of the 22 rule cards — noon sakinah and tanween 87, meem sakinah 9, noon/meem mushaddad 4, qalqalah 7, laam of «ال» 16, laam of the name of Allah 4, madd 25. Each example is a word the Arabic lesson prints (found with `tools/harvest_examples.py`, which uses the lesson builder's Tanzil resolver), so no Qur'anic text is typed; highlights cover the letters that decide the rule. Explanations come from per-rule templates in four languages and name the deciding letter.
+* Options are shown in random order in the app.
+* Not yet covered by any question: 22 of the 30 topics (concept questions still to be written), and rule cards r14 and r19 have no new examples (the book's only examples are already used).
 
 ## Articulation points (17 points, 5 areas, 14 diagram landmarks)
 

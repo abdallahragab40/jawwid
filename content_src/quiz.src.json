@@ -1,105 +1,4708 @@
 {
-  "schemaVersion": 1,
-  "contentVersion": "2026.11.05-1",
-  "notes": "Supplementary practice questions written for the app (not original book content). Example words are taken from the example tables of the Level-2 books and verified against the Tanzil Uthmani text by tools/build_content.py. 'identify' questions use rule cards as answer options. All questions are status 'draft' until reviewed; Kurdish wording needs fluent-language review.",
-  "questions": [
-    { "id": "q01", "type": "identify", "topic": "t10", "example": { "ref": "1:7", "pattern": "ا[ن][ع]مت" }, "options": ["r01", "r02", "r04", "r05"], "answer": "r01",
-      "explanation": { "ar": "النون الساكنة تلاها العين، وهو حرف حلقي، فالحكم إظهار حلقي.", "ckb": "نونی ساکن پیتی (ع)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.", "en": "The noon sakinah is followed by ع, a throat letter, so the rule is Ithhar Halqy.", "id": "Nun sukun diikuti huruf ain, salah satu huruf halq, sehingga hukumnya izhhar halqi." },
-      "review": { "status": "draft" } },
-    { "id": "q02", "type": "identify", "topic": "t10", "example": { "ref": "13:11", "pattern": "م[ن] [و]ال" }, "options": ["r02", "r03", "r05", "r01"], "answer": "r02",
-      "explanation": { "ar": "النون الساكنة في «مِن» تلاها الواو، وهو من حروف (ينمو)، فتُدغم بغنة.", "ckb": "نونی ساکنی «مِن» پیتی (و)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.", "en": "The noon sakinah in «مِن» is followed by و, one of the letters of (ينمو), so it is merged with ghunnah.", "id": "Nun sukun pada «مِن» diikuti huruf wawu, salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah." },
-      "review": { "status": "draft" } },
-    { "id": "q03", "type": "identify", "topic": "t10", "example": { "ref": "2:5", "pattern": "م[ن] [ر]بهم" }, "options": ["r03", "r02", "r01", "r04"], "answer": "r03",
-      "explanation": { "ar": "النون الساكنة تلاها الراء، فتُدغم بلا غنة.", "ckb": "نونی ساکن پیتی (ر)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.", "en": "The noon sakinah is followed by ر, so it is merged without ghunnah.", "id": "Nun sukun diikuti huruf ra, sehingga diidghamkan tanpa ghunnah." },
-      "review": { "status": "draft" } },
-    { "id": "q04", "type": "identify", "topic": "t10", "example": { "ref": "2:27", "pattern": "م[ن] [ب]عد" }, "options": ["r04", "r05", "r07", "r02"], "answer": "r04",
-      "explanation": { "ar": "النون الساكنة تلاها الباء، فتُقلب ميمًا مخفاة مع الغنة.", "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.", "en": "The noon sakinah is followed by ب, so it turns into a hidden meem with ghunnah.", "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah." },
-      "review": { "status": "draft" } },
-    { "id": "q05", "type": "identify", "topic": "t10", "example": { "ref": "8:32", "pattern": "ا[ن] [ك]ان" }, "options": ["r05", "r01", "r04", "r03"], "answer": "r05",
-      "explanation": { "ar": "النون الساكنة في «إِن» تلاها الكاف، وهو من حروف الإخفاء، فتُخفى النون مع الغنة.", "ckb": "نونی ساکنی «إِن» پیتی (ك)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە نونەکە بە مینگەوە دەشاردرێتەوە.", "en": "The noon sakinah in «إِن» is followed by ك, one of the ikhfaa letters, so the noon is hidden with ghunnah.", "id": "Nun sukun pada «إِن» diikuti huruf kaf, salah satu huruf ikhfa, sehingga nun disamarkan dengan ghunnah." },
-      "review": { "status": "draft" } },
-    { "id": "q06", "type": "identify", "topic": "t11", "example": { "ref": "5:15", "pattern": "جاءك[م] [م]ن" }, "options": ["r06", "r07", "r08", "r02"], "answer": "r06",
-      "explanation": { "ar": "الميم الساكنة في «جَآءَكُم» تلتها ميم، فتُدغم إدغامًا شفويًّا مع الغنة.", "ckb": "میمی ساکنی «جَآءَكُم» میمێکی بەدوادا هاتووە، بۆیە بە تێهەڵکێشکردنی لێوی و بە مینگەوە دەخوێنرێت.", "en": "The meem sakinah in «جَآءَكُم» is followed by a meem, so it is Idgham Shafawi with ghunnah.", "id": "Mim sukun pada «جَآءَكُم» diikuti mim, sehingga hukumnya idgham syafawi dengan ghunnah." },
-      "review": { "status": "draft" } },
-    { "id": "q07", "type": "identify", "topic": "t11", "example": { "ref": "3:101", "pattern": "يعتص[م] [ب]الله" }, "options": ["r07", "r04", "r06", "r08"], "answer": "r07",
-      "explanation": { "ar": "الميم الساكنة تلاها الباء في كلمة أخرى، فتُخفى إخفاءً شفويًّا.", "ckb": "میمی ساکن پیتی (ب)ی وشەیەکی تری بەدوادا هاتووە، بۆیە بە شاردنەوەی لێوی دەخوێنرێت.", "en": "The meem sakinah is followed by ب in another word, so it is Ikhfaa Shafawi.", "id": "Mim sukun diikuti huruf ba pada kata lain, sehingga hukumnya ikhfa syafawi." },
-      "review": { "status": "draft" } },
-    { "id": "q08", "type": "identify", "topic": "t11", "example": { "ref": "2:25", "pattern": "له[م] [ج]نت" }, "options": ["r08", "r07", "r06", "r01"], "answer": "r08",
-      "explanation": { "ar": "الميم الساكنة تلاها الجيم، وليست ميمًا ولا باءً، فتُظهر.", "ckb": "میمی ساکن پیتی (ج)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.", "en": "The meem sakinah is followed by ج, which is neither meem nor baa, so it is pronounced clearly.", "id": "Mim sukun diikuti huruf jim, bukan mim dan bukan ba, sehingga dibaca jelas." },
-      "review": { "status": "draft" } },
-    { "id": "q09", "type": "identify", "topic": "t08", "example": { "ref": "111:1", "pattern": "وت[ب]" }, "options": ["r10", "r09", "r05", "r01"], "answer": "r10",
-      "explanation": { "ar": "الباء المشددة في «وَتَبَّ» من حروف القلقلة، وتُقلقَل عند الوقف عليها.", "ckb": "پیتی (ب)ی شەددار لە «وَتَبَّ»دا یەکێکە لە پیتەکانی قەلقەلە و لەکاتی وەستان لەسەری دەهەژێت.", "en": "The baa with shaddah in «وَتَبَّ» is a qalqalah letter and is pronounced with qalqalah when stopping on it.", "id": "Huruf ba bertasydid pada «وَتَبَّ» termasuk huruf qalqalah dan dibaca qalqalah saat waqaf." },
-      "review": { "status": "draft" } },
-    { "id": "q10", "type": "identify", "topic": "t18", "example": { "ref": "54:1", "pattern": "وانشق ا[ل][ق]مر" }, "options": ["r11", "r12", "r01", "r10"], "answer": "r11",
-      "explanation": { "ar": "اللام في «ٱلْقَمَرُ» تلاها القاف، وهو حرف قمري، فتُظهر اللام.", "ckb": "لامی «ٱلْقَمَرُ» پیتی (ق)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.", "en": "The laam in «ٱلْقَمَرُ» is followed by ق, a lunar letter, so the laam is pronounced clearly.", "id": "Lam pada «ٱلْقَمَرُ» diikuti huruf qaf, huruf qamariyah, sehingga lam dibaca jelas." },
-      "review": { "status": "draft" } },
-    { "id": "q11", "type": "identify", "topic": "t18", "example": { "ref": "54:1", "pattern": "اقتربت ا[ل][س]اعة" }, "options": ["r12", "r11", "r03", "r02"], "answer": "r12",
-      "explanation": { "ar": "اللام في «ٱلسَّاعَةُ» تلاها السين، وهو حرف شمسي، فتُدغم اللام.", "ckb": "لامی «ٱلسَّاعَةُ» پیتی (س)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.", "en": "The laam in «ٱلسَّاعَةُ» is followed by س, a solar letter, so the laam is merged.", "id": "Lam pada «ٱلسَّاعَةُ» diikuti huruf sin, huruf syamsiyah, sehingga lam diidghamkan." },
-      "review": { "status": "draft" } },
-    { "id": "q12", "type": "identify", "topic": "t15", "example": { "ref": "2:49", "pattern": "[سوء] العذاب" }, "options": ["r17", "r18", "r16", "r15"], "answer": "r17",
-      "explanation": { "ar": "جاءت الهمزة بعد الواو المدية في كلمة واحدة «سُوٓءَ»، فهو مد متصل.", "ckb": "لە «سُوٓءَ»دا هەمزە لەدوای واوی مەد لە هەمان وشەدا هاتووە، بۆیە مەدی موتتەصیلە.", "en": "In «سُوٓءَ» the hamzah follows the lengthening waaw in the same word, so it is Madd Mu'tasil.", "id": "Pada «سُوٓءَ» hamzah terletak setelah wawu mad dalam satu kata, sehingga ini mad muttashil." },
-      "review": { "status": "draft" } },
-    { "id": "q13", "type": "identify", "topic": "t15", "example": { "ref": "66:8", "pattern": "تو[بوا] [ا]لي" }, "options": ["r18", "r17", "r21", "r16"], "answer": "r18",
-      "explanation": { "ar": "حرف المد في آخر «تُوبُوٓا۟» والهمزة في أول «إِلَى»، فهو مد منفصل.", "ckb": "پیتی مەد لە کۆتایی «تُوبُوٓا۟»دایە و هەمزە لە سەرەتای «إِلَى»دا، بۆیە مەدی مونفەصیلە.", "en": "The lengthening letter ends «تُوبُوٓا۟» and the hamzah begins «إِلَى», so it is Madd Munfasil.", "id": "Huruf mad berada di akhir «تُوبُوٓا۟» dan hamzah di awal «إِلَى», sehingga ini mad munfashil." },
-      "review": { "status": "draft" } },
-    { "id": "q14", "type": "identify", "topic": "t15", "example": { "ref": "6:80", "pattern": "ات[ح][ج]وني" }, "options": ["r20", "r17", "r21", "r15"], "answer": "r20",
-      "explanation": { "ar": "بعد حرف المد في «أَتُحَٰٓجُّوٓنِّى» حرف ساكن مدغم (الجيم المشددة) في الكلمة نفسها، فهو مد لازم كلمي مثقل.", "ckb": "لە «أَتُحَٰٓجُّوٓنِّى»دا لەدوای پیتی مەدەوە پیتێکی ساکنی تێهەڵکێشکراو (جیمی شەددار) لە هەمان وشەدا هاتووە، بۆیە مەدی لازمی کەلیمی قورسە.", "en": "In «أَتُحَٰٓجُّوٓنِّى» the lengthening letter is followed by a merged sukoon (the jeem with shaddah) in the same word, so it is Madd Lazim Kalimi Muthaqqal.", "id": "Pada «أَتُحَٰٓجُّوٓنِّى» huruf mad diikuti huruf sukun yang diidghamkan (jim bertasydid) dalam satu kata, sehingga ini mad lazim kalimi mutsaqqal." },
-      "review": { "status": "draft" } },
-    { "id": "q15", "type": "identify", "topic": "t15", "example": { "ref": "3:173", "pattern": "فزادهم [اي]منا" }, "options": ["r16", "r15", "r17", "r18"], "answer": "r16",
-      "explanation": { "ar": "تقدَّمت الهمزة على الياء المدية في «إِيمَٰنًا»، فهو مد بدل.", "ckb": "لە «إِيمَٰنًا»دا هەمزە پێش یای مەد کەوتووە، بۆیە مەدی بەدەلە.", "en": "In «إِيمَٰنًا» the hamzah comes before the lengthening yaa, so it is Madd al-Badal.", "id": "Pada «إِيمَٰنًا» hamzah mendahului ya mad, sehingga ini mad badal." },
-      "review": { "status": "draft" } },
-    { "id": "q16", "type": "identify", "topic": "t15", "example": { "ref": "1:5", "pattern": "واياك نستع[ين]" }, "options": ["r21", "r15", "r22", "r20"], "answer": "r21",
-      "explanation": { "ar": "عند الوقف على «نَسْتَعِينُ» تُسكَّن النون بعد الياء المدية، فهو مد عارض للسكون.", "ckb": "لەکاتی وەستان لەسەر «نَسْتَعِينُ» نونەکە ساکن دەبێت لەدوای یای مەد، بۆیە مەدی عارض للسکونە.", "en": "When stopping on «نَسْتَعِينُ», the noon takes a sukoon after the lengthening yaa, so it is Madd 'Arid Lissukoon.", "id": "Saat waqaf pada «نَسْتَعِينُ», nun menjadi sukun setelah ya mad, sehingga ini mad 'aridh lissukun." },
-      "review": { "status": "draft" } },
-    { "id": "q17", "type": "identify", "topic": "t15", "example": { "ref": "106:3", "pattern": "هذا الب[يت]" }, "options": ["r22", "r21", "r15", "r16"], "answer": "r22",
-      "explanation": { "ar": "عند الوقف على «ٱلْبَيْتِ» تُسكَّن التاء بعد الياء الساكنة المفتوح ما قبلها، فهو مد لين.", "ckb": "لەکاتی وەستان لەسەر «ٱلْبَيْتِ» پیتی (ت) ساکن دەبێت لەدوای یایەکی ساکن کە فەتحەی لەپێشە، بۆیە مەدی لیینە.", "en": "When stopping on «ٱلْبَيْتِ», the taa takes a sukoon after a yaa sakinah preceded by a fathah, so it is Madd al-Leen.", "id": "Saat waqaf pada «ٱلْبَيْتِ», huruf ta menjadi sukun setelah ya sukun yang didahului fathah, sehingga ini mad lin." },
-      "review": { "status": "draft" } },
-    { "id": "q18", "type": "identify", "topic": "t15", "example": { "ref": "84:15", "pattern": "ان رب[ه] كان ب[ه] بصيرا" }, "options": ["r19", "r15", "r16", "r17"], "answer": "r19",
-      "explanation": { "ar": "هاء الضمير في «رَبَّهُۥ» و«بِهِۦ» بين متحركين ولم يأتِ بعدها همز، فهو مد صلة صغرى.", "ckb": "هائی ڕاناو لە «رَبَّهُۥ» و «بِهِۦ»دا لەنێوان دوو موتەحەریکدایە و هەمزەی بەدوادا نەهاتووە، بۆیە مەدی صیلەی بچوکە.", "en": "The pronoun haa in «رَبَّهُۥ» and «بِهِۦ» is between two voweled letters with no hamzah after it, so it is the lesser connecting madd.", "id": "Ha' dhomir pada «رَبَّهُۥ» dan «بِهِۦ» diapit dua huruf berharakat tanpa hamzah setelahnya, sehingga ini mad shilah sughra." },
-      "review": { "status": "draft" } },
-    { "id": "q19", "type": "identify", "topic": "t12", "example": { "ref": "78:5", "pattern": "ث[م] كلا" }, "options": ["r09", "r06", "r02", "r10"], "answer": "r09",
-      "explanation": { "ar": "الميم في «ثُمَّ» مشددة، فتُمد غنتها أكمل ما تكون.", "ckb": "میمی «ثُمَّ» شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.", "en": "The meem in «ثُمَّ» carries a shaddah, so its ghunnah is held at its most complete.", "id": "Mim pada «ثُمَّ» bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna." },
-      "review": { "status": "draft" } },
-    { "id": "q20", "type": "identify", "topic": "t14", "example": { "ref": "8:32", "pattern": "قا[لوا] ا[لل]هم" }, "options": ["r13", "r14", "r11", "r12"], "answer": "r13",
-      "explanation": { "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد ضمٍّ في «قَالُوا۟»، فتُفخَّم اللام.", "ckb": "لە «قَالُوا۟ ٱللَّهُمَّ»دا ساکنێک لەدوای ضەممە لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەفخیم دەکرێت.", "en": "Before the name of Allah, «قَالُوا۟» ends in a sukoon that follows a dammah, so the laam is heavy.", "id": "Sebelum lafzhul jalalah, «قَالُوا۟» berakhir dengan sukun setelah dhammah, sehingga lam dibaca tebal." },
-      "review": { "status": "draft" } },
-    { "id": "q21", "type": "identify", "topic": "t14", "example": { "ref": "39:61", "pattern": "وين[جي] ا[لل]ه" }, "options": ["r14", "r13", "r12", "r11"], "answer": "r14",
-      "explanation": { "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد كسرٍ في «وَيُنَجِّى»، فتُرقَّق اللام.", "ckb": "لە «وَيُنَجِّى ٱللَّهُ»دا ساکنێک لەدوای کەسرە لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەرقیق دەکرێت.", "en": "Before the name of Allah, «وَيُنَجِّى» ends in a sukoon that follows a kasrah, so the laam is light.", "id": "Sebelum lafzhul jalalah, «وَيُنَجِّى» berakhir dengan sukun setelah kasrah, sehingga lam dibaca tipis." },
-      "review": { "status": "draft" } },
-    { "id": "q22", "type": "choice", "topic": "t10", "rule": "r05",
-      "prompt": { "ar": "كم عدد حروف الإخفاء الحقيقي؟", "ckb": "ژمارەی پیتەکانی ئیخفائی حەقیقی چەندە؟", "en": "How many letters of ikhfaa (real hiding) are there?", "id": "Berapa jumlah huruf ikhfa haqiqi?" },
-      "options": [ { "number": "15" }, { "number": "6" }, { "number": "4" }, { "number": "2" } ], "answer": 0,
-      "explanation": { "ar": "تُخفى النون الساكنة والتنوين عند خمسة عشر حرفًا.", "ckb": "نونی ساکن و تەنوین لەکاتی گەیشتن بە پازدە پیت ئیخفاء دەکرێن.", "en": "Noon sakinah and tanween are hidden before 15 letters.", "id": "Nun sukun dan tanwin disamarkan ketika diikuti 15 huruf." },
-      "review": { "status": "draft" } },
-    { "id": "q23", "type": "choice", "topic": "t08", "rule": "r10",
-      "prompt": { "ar": "تُجمع حروف القلقلة في:", "ckb": "پیتەکانی قەلقەلە لە کامەدا کۆکراونەتەوە؟", "en": "The letters of qalqalah are collected in:", "id": "Huruf-huruf qalqalah terangkai dalam:" },
-      "options": [ { "arabic": "قُطْبُ جَدٍّ" }, { "arabic": "يَنْمُو" }, { "arabic": "يَرْمَلُون" }, { "arabic": "ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ" } ], "answer": 0,
-      "explanation": { "ar": "حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).", "ckb": "پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.", "en": "The five qalqalah letters are collected in (قُطْبُ جَدٍّ).", "id": "Lima huruf qalqalah terangkai dalam (قُطْبُ جَدٍّ)." },
-      "review": { "status": "draft" } },
-    { "id": "q24", "type": "choice", "topic": "t10", "rule": "r03",
-      "prompt": { "ar": "حرفا الإدغام بلا غنة هما:", "ckb": "پیتەکانی ئیدغام بەبێ مینگە کامانەن؟", "en": "The letters of idgham without ghunnah are:", "id": "Huruf idgham bilaa ghunnah adalah:" },
-      "options": [ { "arabic": "ل ر" }, { "arabic": "ي ن م و" }, { "arabic": "ب" }, { "arabic": "ء ه ع ح غ خ" } ], "answer": 0,
-      "explanation": { "ar": "الإدغام بلا غنة حرفاه اللام والراء.", "ckb": "ئیدغام بەبێ مینگە دوو پیتی هەیە: لام و را.", "en": "Idgham without ghunnah has two letters: laam and raa.", "id": "Idgham bilaa ghunnah memiliki dua huruf: lam dan ra." },
-      "review": { "status": "draft" } },
-    { "id": "q25", "type": "choice", "topic": "t15", "rule": "r20",
-      "prompt": { "ar": "كم حركة يُمد المد اللازم؟", "ckb": "مەدی لازم چەند حەرەکە درێژ دەکرێتەوە؟", "en": "How many counts is Madd Lazim lengthened?", "id": "Berapa harakat panjang mad lazim?" },
-      "options": [ { "counts": "6" }, { "counts": "2" }, { "counts": "4–5" }, { "counts": "2–4–6" } ], "answer": 0,
-      "explanation": { "ar": "يُمد المد اللازم ست حركات بجميع أقسامه ولجميع القراء.", "ckb": "مەدی لازم شەش حەرەکە درێژ دەکرێتەوە بەهەموو جۆرەکانیەوە لای هەموو قورئان خوێنان.", "en": "Madd Lazim is lengthened 6 counts for all its divisions and for all reciters.", "id": "Mad lazim dipanjangkan 6 harakat untuk semua jenisnya dan semua qari." },
-      "review": { "status": "draft" } },
-    { "id": "q26", "type": "choice", "topic": "t15", "rule": "r17",
-      "prompt": { "ar": "ما مقدار مد المد الواجب المتصل؟", "ckb": "ئەندازەی مەدی واجبی موتتەصیل چەندە؟", "en": "How long is Madd Wajib Mu'tasil?", "id": "Berapa panjang mad wajib muttashil?" },
-      "options": [ { "counts": "4–5" }, { "counts": "2" }, { "counts": "6" }, { "counts": "2–4–6" } ], "answer": 0,
-      "explanation": { "ar": "مقدار مده (٤ – ٥) حركات.", "ckb": "ئەندازەکەی (٤-٥) حەرەکەیە.", "en": "It is lengthened 4 or 5 counts.", "id": "Panjangnya 4 atau 5 harakat." },
-      "review": { "status": "draft" } },
-    { "id": "q27", "type": "truefalse", "topic": "t10", "rule": "r02",
-      "prompt": { "ar": "لا يكون إدغام النون الساكنة والتنوين إلا من كلمتين.", "ckb": "ئیدغامی نونی ساکن و تەنوین تەنها لە دوو وشەدا ڕوودەدات.", "en": "Idgham of noon sakinah and tanween occurs only across two words.", "id": "Idgham nun sukun dan tanwin hanya terjadi pada dua kata." },
-      "answer": true,
-      "explanation": { "ar": "صواب؛ نبَّه الكتاب على أن إدغام النون الساكنة والتنوين لا يكون إلا من كلمتين.", "ckb": "ڕاستە؛ کتێبەکە ئاماژەی بەوە کردووە کە ئیدغامی نونی ساکن و تەنوین تەنها لە دوو وشەدا ڕوودەدات.", "en": "True. The book notes that this idgham only happens across two words.", "id": "Benar. Buku ini menegaskan bahwa idgham tersebut hanya terjadi pada dua kata." },
-      "review": { "status": "draft" } },
-    { "id": "q28", "type": "truefalse", "topic": "t11", "rule": "r07",
-      "prompt": { "ar": "يقع الإخفاء الشفوي في كلمة واحدة.", "ckb": "شاردنەوەی لێوی لە یەک وشەدا ڕوودەدات.", "en": "Ikhfaa shafawi can occur within one word.", "id": "Ikhfa syafawi dapat terjadi dalam satu kata." },
-      "answer": false,
-      "explanation": { "ar": "خطأ؛ لا يكون الإخفاء الشفوي إلا في كلمتين.", "ckb": "هەڵەیە؛ شاردنەوەی لێوی تەنها لە دوو وشەدا ڕوودەدات.", "en": "False. Ikhfaa shafawi only occurs across two words.", "id": "Salah. Ikhfa syafawi hanya terjadi pada dua kata." },
-      "review": { "status": "draft" } }
-  ]
+ "schemaVersion": 1,
+ "contentVersion": "2026.11.05-1",
+ "notes": "Supplementary practice questions written for the app (not original book content). Example words are taken from the example tables of the Level-2 books and verified against the Tanzil Uthmani text by tools/build_content.py. 'identify' questions use rule cards as answer options. All questions are status 'draft' until reviewed; Kurdish wording needs fluent-language review.",
+ "questions": [
+  {
+   "id": "q01",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "1:7",
+    "pattern": "ا[ن][ع]مت"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r04",
+    "r05"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها العين، وهو حرف حلقي، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ع)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by ع, a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf ain, salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q02",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "13:11",
+    "pattern": "م[ن] [و]ال"
+   },
+   "options": [
+    "r02",
+    "r03",
+    "r05",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة في «مِن» تلاها الواو، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکنی «مِن» پیتی (و)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah in «مِن» is followed by و, one of the letters of (ينمو), so it is merged with ghunnah.",
+    "id": "Nun sukun pada «مِن» diikuti huruf wawu, salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q03",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:5",
+    "pattern": "م[ن] [ر]بهم"
+   },
+   "options": [
+    "r03",
+    "r02",
+    "r01",
+    "r04"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "النون الساكنة تلاها الراء، فتُدغم بلا غنة.",
+    "ckb": "نونی ساکن پیتی (ر)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by ر, so it is merged without ghunnah.",
+    "id": "Nun sukun diikuti huruf ra, sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q04",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:27",
+    "pattern": "م[ن] [ب]عد"
+   },
+   "options": [
+    "r04",
+    "r05",
+    "r07",
+    "r02"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by ب, so it turns into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q05",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "8:32",
+    "pattern": "ا[ن] [ك]ان"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r04",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة في «إِن» تلاها الكاف، وهو من حروف الإخفاء، فتُخفى النون مع الغنة.",
+    "ckb": "نونی ساکنی «إِن» پیتی (ك)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە نونەکە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah in «إِن» is followed by ك, one of the ikhfaa letters, so the noon is hidden with ghunnah.",
+    "id": "Nun sukun pada «إِن» diikuti huruf kaf, salah satu huruf ikhfa, sehingga nun disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q06",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "5:15",
+    "pattern": "جاءك[م] [م]ن"
+   },
+   "options": [
+    "r06",
+    "r07",
+    "r08",
+    "r02"
+   ],
+   "answer": "r06",
+   "explanation": {
+    "ar": "الميم الساكنة في «جَآءَكُم» تلتها ميم، فتُدغم إدغامًا شفويًّا مع الغنة.",
+    "ckb": "میمی ساکنی «جَآءَكُم» میمێکی بەدوادا هاتووە، بۆیە بە تێهەڵکێشکردنی لێوی و بە مینگەوە دەخوێنرێت.",
+    "en": "The meem sakinah in «جَآءَكُم» is followed by a meem, so it is Idgham Shafawi with ghunnah.",
+    "id": "Mim sukun pada «جَآءَكُم» diikuti mim, sehingga hukumnya idgham syafawi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q07",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "3:101",
+    "pattern": "يعتص[م] [ب]الله"
+   },
+   "options": [
+    "r07",
+    "r04",
+    "r06",
+    "r08"
+   ],
+   "answer": "r07",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها الباء في كلمة أخرى، فتُخفى إخفاءً شفويًّا.",
+    "ckb": "میمی ساکن پیتی (ب)ی وشەیەکی تری بەدوادا هاتووە، بۆیە بە شاردنەوەی لێوی دەخوێنرێت.",
+    "en": "The meem sakinah is followed by ب in another word, so it is Ikhfaa Shafawi.",
+    "id": "Mim sukun diikuti huruf ba pada kata lain, sehingga hukumnya ikhfa syafawi."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q08",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "2:25",
+    "pattern": "له[م] [ج]نت"
+   },
+   "options": [
+    "r08",
+    "r07",
+    "r06",
+    "r01"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها الجيم، وليست ميمًا ولا باءً، فتُظهر.",
+    "ckb": "میمی ساکن پیتی (ج)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by ج, which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf jim, bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q09",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "111:1",
+    "pattern": "وت[ب]"
+   },
+   "options": [
+    "r10",
+    "r09",
+    "r05",
+    "r01"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "الباء المشددة في «وَتَبَّ» من حروف القلقلة، وتُقلقَل عند الوقف عليها.",
+    "ckb": "پیتی (ب)ی شەددار لە «وَتَبَّ»دا یەکێکە لە پیتەکانی قەلقەلە و لەکاتی وەستان لەسەری دەهەژێت.",
+    "en": "The baa with shaddah in «وَتَبَّ» is a qalqalah letter and is pronounced with qalqalah when stopping on it.",
+    "id": "Huruf ba bertasydid pada «وَتَبَّ» termasuk huruf qalqalah dan dibaca qalqalah saat waqaf."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q10",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "54:1",
+    "pattern": "وانشق ا[ل][ق]مر"
+   },
+   "options": [
+    "r11",
+    "r12",
+    "r01",
+    "r10"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "اللام في «ٱلْقَمَرُ» تلاها القاف، وهو حرف قمري، فتُظهر اللام.",
+    "ckb": "لامی «ٱلْقَمَرُ» پیتی (ق)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam in «ٱلْقَمَرُ» is followed by ق, a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ٱلْقَمَرُ» diikuti huruf qaf, huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q11",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "54:1",
+    "pattern": "اقتربت ا[ل][س]اعة"
+   },
+   "options": [
+    "r12",
+    "r11",
+    "r03",
+    "r02"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "اللام في «ٱلسَّاعَةُ» تلاها السين، وهو حرف شمسي، فتُدغم اللام.",
+    "ckb": "لامی «ٱلسَّاعَةُ» پیتی (س)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam in «ٱلسَّاعَةُ» is followed by س, a solar letter, so the laam is merged.",
+    "id": "Lam pada «ٱلسَّاعَةُ» diikuti huruf sin, huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q12",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:49",
+    "pattern": "[سوء] العذاب"
+   },
+   "options": [
+    "r17",
+    "r18",
+    "r16",
+    "r15"
+   ],
+   "answer": "r17",
+   "explanation": {
+    "ar": "جاءت الهمزة بعد الواو المدية في كلمة واحدة «سُوٓءَ»، فهو مد متصل.",
+    "ckb": "لە «سُوٓءَ»دا هەمزە لەدوای واوی مەد لە هەمان وشەدا هاتووە، بۆیە مەدی موتتەصیلە.",
+    "en": "In «سُوٓءَ» the hamzah follows the lengthening waaw in the same word, so it is Madd Mu'tasil.",
+    "id": "Pada «سُوٓءَ» hamzah terletak setelah wawu mad dalam satu kata, sehingga ini mad muttashil."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q13",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "66:8",
+    "pattern": "تو[بوا] [ا]لي"
+   },
+   "options": [
+    "r18",
+    "r17",
+    "r21",
+    "r16"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد في آخر «تُوبُوٓا۟» والهمزة في أول «إِلَى»، فهو مد منفصل.",
+    "ckb": "پیتی مەد لە کۆتایی «تُوبُوٓا۟»دایە و هەمزە لە سەرەتای «إِلَى»دا، بۆیە مەدی مونفەصیلە.",
+    "en": "The lengthening letter ends «تُوبُوٓا۟» and the hamzah begins «إِلَى», so it is Madd Munfasil.",
+    "id": "Huruf mad berada di akhir «تُوبُوٓا۟» dan hamzah di awal «إِلَى», sehingga ini mad munfashil."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q14",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "6:80",
+    "pattern": "ات[ح][ج]وني"
+   },
+   "options": [
+    "r20",
+    "r17",
+    "r21",
+    "r15"
+   ],
+   "answer": "r20",
+   "explanation": {
+    "ar": "بعد حرف المد في «أَتُحَٰٓجُّوٓنِّى» حرف ساكن مدغم (الجيم المشددة) في الكلمة نفسها، فهو مد لازم كلمي مثقل.",
+    "ckb": "لە «أَتُحَٰٓجُّوٓنِّى»دا لەدوای پیتی مەدەوە پیتێکی ساکنی تێهەڵکێشکراو (جیمی شەددار) لە هەمان وشەدا هاتووە، بۆیە مەدی لازمی کەلیمی قورسە.",
+    "en": "In «أَتُحَٰٓجُّوٓنِّى» the lengthening letter is followed by a merged sukoon (the jeem with shaddah) in the same word, so it is Madd Lazim Kalimi Muthaqqal.",
+    "id": "Pada «أَتُحَٰٓجُّوٓنِّى» huruf mad diikuti huruf sukun yang diidghamkan (jim bertasydid) dalam satu kata, sehingga ini mad lazim kalimi mutsaqqal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q15",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "3:173",
+    "pattern": "فزادهم [اي]منا"
+   },
+   "options": [
+    "r16",
+    "r15",
+    "r17",
+    "r18"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّمت الهمزة على الياء المدية في «إِيمَٰنًا»، فهو مد بدل.",
+    "ckb": "لە «إِيمَٰنًا»دا هەمزە پێش یای مەد کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "In «إِيمَٰنًا» the hamzah comes before the lengthening yaa, so it is Madd al-Badal.",
+    "id": "Pada «إِيمَٰنًا» hamzah mendahului ya mad, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q16",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "1:5",
+    "pattern": "واياك نستع[ين]"
+   },
+   "options": [
+    "r21",
+    "r15",
+    "r22",
+    "r20"
+   ],
+   "answer": "r21",
+   "explanation": {
+    "ar": "عند الوقف على «نَسْتَعِينُ» تُسكَّن النون بعد الياء المدية، فهو مد عارض للسكون.",
+    "ckb": "لەکاتی وەستان لەسەر «نَسْتَعِينُ» نونەکە ساکن دەبێت لەدوای یای مەد، بۆیە مەدی عارض للسکونە.",
+    "en": "When stopping on «نَسْتَعِينُ», the noon takes a sukoon after the lengthening yaa, so it is Madd 'Arid Lissukoon.",
+    "id": "Saat waqaf pada «نَسْتَعِينُ», nun menjadi sukun setelah ya mad, sehingga ini mad 'aridh lissukun."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q17",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "106:3",
+    "pattern": "هذا الب[يت]"
+   },
+   "options": [
+    "r22",
+    "r21",
+    "r15",
+    "r16"
+   ],
+   "answer": "r22",
+   "explanation": {
+    "ar": "عند الوقف على «ٱلْبَيْتِ» تُسكَّن التاء بعد الياء الساكنة المفتوح ما قبلها، فهو مد لين.",
+    "ckb": "لەکاتی وەستان لەسەر «ٱلْبَيْتِ» پیتی (ت) ساکن دەبێت لەدوای یایەکی ساکن کە فەتحەی لەپێشە، بۆیە مەدی لیینە.",
+    "en": "When stopping on «ٱلْبَيْتِ», the taa takes a sukoon after a yaa sakinah preceded by a fathah, so it is Madd al-Leen.",
+    "id": "Saat waqaf pada «ٱلْبَيْتِ», huruf ta menjadi sukun setelah ya sukun yang didahului fathah, sehingga ini mad lin."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q18",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "84:15",
+    "pattern": "ان رب[ه] كان ب[ه] بصيرا"
+   },
+   "options": [
+    "r19",
+    "r15",
+    "r16",
+    "r17"
+   ],
+   "answer": "r19",
+   "explanation": {
+    "ar": "هاء الضمير في «رَبَّهُۥ» و«بِهِۦ» بين متحركين ولم يأتِ بعدها همز، فهو مد صلة صغرى.",
+    "ckb": "هائی ڕاناو لە «رَبَّهُۥ» و «بِهِۦ»دا لەنێوان دوو موتەحەریکدایە و هەمزەی بەدوادا نەهاتووە، بۆیە مەدی صیلەی بچوکە.",
+    "en": "The pronoun haa in «رَبَّهُۥ» and «بِهِۦ» is between two voweled letters with no hamzah after it, so it is the lesser connecting madd.",
+    "id": "Ha' dhomir pada «رَبَّهُۥ» dan «بِهِۦ» diapit dua huruf berharakat tanpa hamzah setelahnya, sehingga ini mad shilah sughra."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q19",
+   "type": "identify",
+   "topic": "t12",
+   "example": {
+    "ref": "78:5",
+    "pattern": "ث[م] كلا"
+   },
+   "options": [
+    "r09",
+    "r06",
+    "r02",
+    "r10"
+   ],
+   "answer": "r09",
+   "explanation": {
+    "ar": "الميم في «ثُمَّ» مشددة، فتُمد غنتها أكمل ما تكون.",
+    "ckb": "میمی «ثُمَّ» شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+    "en": "The meem in «ثُمَّ» carries a shaddah, so its ghunnah is held at its most complete.",
+    "id": "Mim pada «ثُمَّ» bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q20",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "8:32",
+    "pattern": "قا[لوا] ا[لل]هم"
+   },
+   "options": [
+    "r13",
+    "r14",
+    "r11",
+    "r12"
+   ],
+   "answer": "r13",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد ضمٍّ في «قَالُوا۟»، فتُفخَّم اللام.",
+    "ckb": "لە «قَالُوا۟ ٱللَّهُمَّ»دا ساکنێک لەدوای ضەممە لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەفخیم دەکرێت.",
+    "en": "Before the name of Allah, «قَالُوا۟» ends in a sukoon that follows a dammah, so the laam is heavy.",
+    "id": "Sebelum lafzhul jalalah, «قَالُوا۟» berakhir dengan sukun setelah dhammah, sehingga lam dibaca tebal."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q21",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "39:61",
+    "pattern": "وين[جي] ا[لل]ه"
+   },
+   "options": [
+    "r14",
+    "r13",
+    "r12",
+    "r11"
+   ],
+   "answer": "r14",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد كسرٍ في «وَيُنَجِّى»، فتُرقَّق اللام.",
+    "ckb": "لە «وَيُنَجِّى ٱللَّهُ»دا ساکنێک لەدوای کەسرە لەپێش وشەی (الله) هاتووە، بۆیە لامەکە تەرقیق دەکرێت.",
+    "en": "Before the name of Allah, «وَيُنَجِّى» ends in a sukoon that follows a kasrah, so the laam is light.",
+    "id": "Sebelum lafzhul jalalah, «وَيُنَجِّى» berakhir dengan sukun setelah kasrah, sehingga lam dibaca tipis."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q22",
+   "type": "choice",
+   "topic": "t10",
+   "rule": "r05",
+   "prompt": {
+    "ar": "كم عدد حروف الإخفاء الحقيقي؟",
+    "ckb": "ژمارەی پیتەکانی ئیخفائی حەقیقی چەندە؟",
+    "en": "How many letters of ikhfaa (real hiding) are there?",
+    "id": "Berapa jumlah huruf ikhfa haqiqi?"
+   },
+   "options": [
+    {
+     "number": "15"
+    },
+    {
+     "number": "6"
+    },
+    {
+     "number": "4"
+    },
+    {
+     "number": "2"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "تُخفى النون الساكنة والتنوين عند خمسة عشر حرفًا.",
+    "ckb": "نونی ساکن و تەنوین لەکاتی گەیشتن بە پازدە پیت ئیخفاء دەکرێن.",
+    "en": "Noon sakinah and tanween are hidden before 15 letters.",
+    "id": "Nun sukun dan tanwin disamarkan ketika diikuti 15 huruf."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q23",
+   "type": "choice",
+   "topic": "t08",
+   "rule": "r10",
+   "prompt": {
+    "ar": "تُجمع حروف القلقلة في:",
+    "ckb": "پیتەکانی قەلقەلە لە کامەدا کۆکراونەتەوە؟",
+    "en": "The letters of qalqalah are collected in:",
+    "id": "Huruf-huruf qalqalah terangkai dalam:"
+   },
+   "options": [
+    {
+     "arabic": "قُطْبُ جَدٍّ"
+    },
+    {
+     "arabic": "يَنْمُو"
+    },
+    {
+     "arabic": "يَرْمَلُون"
+    },
+    {
+     "arabic": "ابْغِ حَجَّكَ وَخَفْ عَقِيمَهُ"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "حروف القلقلة خمسة يجمعها (قُطْبُ جَدٍّ).",
+    "ckb": "پیتەکانی قەلقەلە پێنجن و لە (قُطْبُ جَدٍّ)دا کۆکراونەتەوە.",
+    "en": "The five qalqalah letters are collected in (قُطْبُ جَدٍّ).",
+    "id": "Lima huruf qalqalah terangkai dalam (قُطْبُ جَدٍّ)."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q24",
+   "type": "choice",
+   "topic": "t10",
+   "rule": "r03",
+   "prompt": {
+    "ar": "حرفا الإدغام بلا غنة هما:",
+    "ckb": "پیتەکانی ئیدغام بەبێ مینگە کامانەن؟",
+    "en": "The letters of idgham without ghunnah are:",
+    "id": "Huruf idgham bilaa ghunnah adalah:"
+   },
+   "options": [
+    {
+     "arabic": "ل ر"
+    },
+    {
+     "arabic": "ي ن م و"
+    },
+    {
+     "arabic": "ب"
+    },
+    {
+     "arabic": "ء ه ع ح غ خ"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "الإدغام بلا غنة حرفاه اللام والراء.",
+    "ckb": "ئیدغام بەبێ مینگە دوو پیتی هەیە: لام و را.",
+    "en": "Idgham without ghunnah has two letters: laam and raa.",
+    "id": "Idgham bilaa ghunnah memiliki dua huruf: lam dan ra."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q25",
+   "type": "choice",
+   "topic": "t15",
+   "rule": "r20",
+   "prompt": {
+    "ar": "كم حركة يُمد المد اللازم؟",
+    "ckb": "مەدی لازم چەند حەرەکە درێژ دەکرێتەوە؟",
+    "en": "How many counts is Madd Lazim lengthened?",
+    "id": "Berapa harakat panjang mad lazim?"
+   },
+   "options": [
+    {
+     "counts": "6"
+    },
+    {
+     "counts": "2"
+    },
+    {
+     "counts": "4–5"
+    },
+    {
+     "counts": "2–4–6"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "يُمد المد اللازم ست حركات بجميع أقسامه ولجميع القراء.",
+    "ckb": "مەدی لازم شەش حەرەکە درێژ دەکرێتەوە بەهەموو جۆرەکانیەوە لای هەموو قورئان خوێنان.",
+    "en": "Madd Lazim is lengthened 6 counts for all its divisions and for all reciters.",
+    "id": "Mad lazim dipanjangkan 6 harakat untuk semua jenisnya dan semua qari."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q26",
+   "type": "choice",
+   "topic": "t15",
+   "rule": "r17",
+   "prompt": {
+    "ar": "ما مقدار مد المد الواجب المتصل؟",
+    "ckb": "ئەندازەی مەدی واجبی موتتەصیل چەندە؟",
+    "en": "How long is Madd Wajib Mu'tasil?",
+    "id": "Berapa panjang mad wajib muttashil?"
+   },
+   "options": [
+    {
+     "counts": "4–5"
+    },
+    {
+     "counts": "2"
+    },
+    {
+     "counts": "6"
+    },
+    {
+     "counts": "2–4–6"
+    }
+   ],
+   "answer": 0,
+   "explanation": {
+    "ar": "مقدار مده (٤ – ٥) حركات.",
+    "ckb": "ئەندازەکەی (٤-٥) حەرەکەیە.",
+    "en": "It is lengthened 4 or 5 counts.",
+    "id": "Panjangnya 4 atau 5 harakat."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q27",
+   "type": "truefalse",
+   "topic": "t10",
+   "rule": "r02",
+   "prompt": {
+    "ar": "لا يكون إدغام النون الساكنة والتنوين إلا من كلمتين.",
+    "ckb": "ئیدغامی نونی ساکن و تەنوین تەنها لە دوو وشەدا ڕوودەدات.",
+    "en": "Idgham of noon sakinah and tanween occurs only across two words.",
+    "id": "Idgham nun sukun dan tanwin hanya terjadi pada dua kata."
+   },
+   "answer": true,
+   "explanation": {
+    "ar": "صواب؛ نبَّه الكتاب على أن إدغام النون الساكنة والتنوين لا يكون إلا من كلمتين.",
+    "ckb": "ڕاستە؛ کتێبەکە ئاماژەی بەوە کردووە کە ئیدغامی نونی ساکن و تەنوین تەنها لە دوو وشەدا ڕوودەدات.",
+    "en": "True. The book notes that this idgham only happens across two words.",
+    "id": "Benar. Buku ini menegaskan bahwa idgham tersebut hanya terjadi pada dua kata."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q28",
+   "type": "truefalse",
+   "topic": "t11",
+   "rule": "r07",
+   "prompt": {
+    "ar": "يقع الإخفاء الشفوي في كلمة واحدة.",
+    "ckb": "شاردنەوەی لێوی لە یەک وشەدا ڕوودەدات.",
+    "en": "Ikhfaa shafawi can occur within one word.",
+    "id": "Ikhfa syafawi dapat terjadi dalam satu kata."
+   },
+   "answer": false,
+   "explanation": {
+    "ar": "خطأ؛ لا يكون الإخفاء الشفوي إلا في كلمتين.",
+    "ckb": "هەڵەیە؛ شاردنەوەی لێوی تەنها لە دوو وشەدا ڕوودەدات.",
+    "en": "False. Ikhfaa shafawi only occurs across two words.",
+    "id": "Salah. Ikhfa syafawi hanya terjadi pada dua kata."
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  {
+   "id": "q101",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "92:5",
+    "pattern": "مَ[نْ أَ]عْطَىٰ"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r05",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ء)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ء)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (ء), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (ء), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q102",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "78:16",
+    "pattern": "وَجَنَّٰ[تٍ أَ]لْفَافًا"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r05",
+    "r03"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ء)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "تەنوین پیتی (ء)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The tanween is followed by (ء), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Tanwin diikuti huruf (ء), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q103",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "3:104",
+    "pattern": "وَيَ[نْهَ]وْنَ"
+   },
+   "options": [
+    "r01",
+    "r05",
+    "r02",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ه)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ه)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (ه), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (ه), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q104",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "13:7",
+    "pattern": "وَلِكُلِّ قَوْ[مٍ هَ]ادٍ"
+   },
+   "options": [
+    "r01",
+    "r05",
+    "r02",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ه)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "تەنوین پیتی (ه)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The tanween is followed by (ه), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Tanwin diikuti huruf (ه), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q105",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "42:48",
+    "pattern": "إِ[نْ عَ]لَيْكَ"
+   },
+   "options": [
+    "r01",
+    "r05",
+    "r03",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ع)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ع)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (ع), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (ع), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q106",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "6:83",
+    "pattern": "حَكِي[مٌ عَ]لِيمٌ"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r03",
+    "r05"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ع)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "تەنوین پیتی (ع)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The tanween is followed by (ع), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Tanwin diikuti huruf (ع), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q107",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "7:74",
+    "pattern": "وَتَ[نْحِ]تُونَ"
+   },
+   "options": [
+    "r01",
+    "r05",
+    "r02",
+    "r03"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ح)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ح)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (ح), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (ح), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q108",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "40:7",
+    "pattern": "وَمَ[نْ حَ]وْلَهُ"
+   },
+   "options": [
+    "r01",
+    "r05",
+    "r02",
+    "r03"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ح)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (ح)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (ح), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (ح), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q109",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:245",
+    "pattern": "قَرْ[ضًا حَ]سَنًا"
+   },
+   "options": [
+    "r01",
+    "r03",
+    "r04",
+    "r05"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ح)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "تەنوین پیتی (ح)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The tanween is followed by (ح), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Tanwin diikuti huruf (ح), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q110",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "17:51",
+    "pattern": "فَسَيُ[نْغِ]ضُونَ"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r05",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (غ)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (غ)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (غ), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (غ), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q111",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "20:22",
+    "pattern": "مِ[نْ غَ]يْرِ"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r03",
+    "r05"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (غ)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (غ)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (غ), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (غ), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q112",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "22:60",
+    "pattern": "لَعَفُ[وٌّ غَ]فُورٌ"
+   },
+   "options": [
+    "r01",
+    "r04",
+    "r05",
+    "r03"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (غ)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "تەنوین پیتی (غ)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The tanween is followed by (غ), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Tanwin diikuti huruf (غ), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q113",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "5:3",
+    "pattern": "وَالْمُ[نْخَ]نِقَةُ"
+   },
+   "options": [
+    "r01",
+    "r03",
+    "r05",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (خ)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (خ)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (خ), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (خ), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q114",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "106:4",
+    "pattern": "مِّ[نْ خَ]وْفٍ"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r04",
+    "r05"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (خ)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "نونی ساکن پیتی (خ)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The noon sakinah is followed by (خ), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Nun sukun diikuti huruf (خ), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q115",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "31:34",
+    "pattern": "عَلِي[مٌ خَ]بِيرٌ"
+   },
+   "options": [
+    "r01",
+    "r02",
+    "r03",
+    "r04"
+   ],
+   "answer": "r01",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (خ)، وهو من حروف الحلق، فالحكم إظهار حلقي.",
+    "ckb": "تەنوین پیتی (خ)ی بەدوادا هاتووە کە پیتێکی گەرووە، بۆیە حوکمەکە ئیزهاری حەلقییە.",
+    "en": "The tanween is followed by (خ), a throat letter, so the rule is Ithhar Halqy.",
+    "id": "Tanwin diikuti huruf (خ), salah satu huruf halq, sehingga hukumnya izhhar halqi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q116",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "87:10",
+    "pattern": "مَ[ن يَ]خْشَىٰ"
+   },
+   "options": [
+    "r02",
+    "r04",
+    "r05",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ي)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (ي)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ي), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ي), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q117",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "4:110",
+    "pattern": "وَمَ[ن يَ]عْمَلْ"
+   },
+   "options": [
+    "r02",
+    "r04",
+    "r03",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ي)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (ي)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ي), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ي), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q118",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "75:22",
+    "pattern": "وُجُو[هٌ يَ]وْمَئِذٍ"
+   },
+   "options": [
+    "r02",
+    "r05",
+    "r03",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ي)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (ي)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ي), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (ي), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q119",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "13:3",
+    "pattern": "لِّقَوْ[مٍ يَ]تَفَكَّرُونَ"
+   },
+   "options": [
+    "r02",
+    "r04",
+    "r01",
+    "r03"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ي)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (ي)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ي), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (ي), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q120",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "87:9",
+    "pattern": "إِ[ن نَّ]فَعَتِ"
+   },
+   "options": [
+    "r02",
+    "r01",
+    "r05",
+    "r03"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ن)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (ن)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ن), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ن), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q121",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "5:22",
+    "pattern": "لَ[ن نَّ]دْخُلَهَا"
+   },
+   "options": [
+    "r02",
+    "r05",
+    "r03",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ن)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (ن)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ن), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ن), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q122",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "79:11",
+    "pattern": "عِظَٰمً[ا نَّ]خِرَةً"
+   },
+   "options": [
+    "r02",
+    "r03",
+    "r01",
+    "r04"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ن)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (ن)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ن), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (ن), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q123",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "54:6",
+    "pattern": "شَيْ[ءٍ نُّ]كُرٍ"
+   },
+   "options": [
+    "r02",
+    "r05",
+    "r03",
+    "r04"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ن)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (ن)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ن), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (ن), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q124",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "111:5",
+    "pattern": "مِّ[ن مَّ]سَدٍ"
+   },
+   "options": [
+    "r02",
+    "r04",
+    "r03",
+    "r05"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (م)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (م)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (م), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (م), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q125",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "23:55",
+    "pattern": "مِ[ن مَّ]الٍ"
+   },
+   "options": [
+    "r02",
+    "r03",
+    "r01",
+    "r04"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (م)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (م)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (م), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (م), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q126",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "32:17",
+    "pattern": "نَفْ[سٌ مَّ]ا"
+   },
+   "options": [
+    "r02",
+    "r05",
+    "r03",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (م)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (م)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (م), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (م), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q127",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "98:2",
+    "pattern": "صُحُفً[ا مُّ]طَهَّرَةً"
+   },
+   "options": [
+    "r02",
+    "r01",
+    "r04",
+    "r05"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (م)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (م)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (م), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (م), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q128",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "45:10",
+    "pattern": "مِّ[ن وَ]رَآئِهِم"
+   },
+   "options": [
+    "r02",
+    "r05",
+    "r04",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (و)، وهو من حروف (ينمو)، فتُدغم بغنة.",
+    "ckb": "نونی ساکن پیتی (و)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (و), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Nun sukun diikuti huruf (و), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q129",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "78:13",
+    "pattern": "سِرَاجً[ا وَ]هَّاجًا"
+   },
+   "options": [
+    "r02",
+    "r01",
+    "r05",
+    "r04"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (و)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (و)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (و), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (و), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q130",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "90:3",
+    "pattern": "وَوَالِ[دٍ وَ]مَا وَلَدَ"
+   },
+   "options": [
+    "r02",
+    "r05",
+    "r03",
+    "r01"
+   ],
+   "answer": "r02",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (و)، وهو من حروف (ينمو)، فيُدغم بغنة.",
+    "ckb": "تەنوین پیتی (و)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی (ينمو)، بۆیە بە مینگەوە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (و), one of the letters of (ينمو), so it merges with ghunnah.",
+    "id": "Tanwin diikuti huruf (و), salah satu huruf (ينمو), sehingga diidghamkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q131",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "4:11",
+    "pattern": "يَكُ[ن لَّ]هُ"
+   },
+   "options": [
+    "r03",
+    "r01",
+    "r04",
+    "r02"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ل)، فتُدغم بلا غنة.",
+    "ckb": "نونی ساکن پیتی (ل)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ل), so it merges without ghunnah.",
+    "id": "Nun sukun diikuti huruf (ل), sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q132",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "18:2",
+    "pattern": "مِّ[ن لَّ]دُنْهُ"
+   },
+   "options": [
+    "r03",
+    "r04",
+    "r05",
+    "r02"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ل)، فتُدغم بلا غنة.",
+    "ckb": "نونی ساکن پیتی (ل)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ل), so it merges without ghunnah.",
+    "id": "Nun sukun diikuti huruf (ل), sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q133",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "90:6",
+    "pattern": "مَا[لًا لُّ]بَدًا"
+   },
+   "options": [
+    "r03",
+    "r02",
+    "r01",
+    "r04"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ل)، فيُدغم بلا غنة.",
+    "ckb": "تەنوین پیتی (ل)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ل), so it merges without ghunnah.",
+    "id": "Tanwin diikuti huruf (ل), sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q134",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "83:25",
+    "pattern": "مِ[ن رَّ]حِيقٍ"
+   },
+   "options": [
+    "r03",
+    "r05",
+    "r04",
+    "r02"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ر)، فتُدغم بلا غنة.",
+    "ckb": "نونی ساکن پیتی (ر)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The noon sakinah is followed by (ر), so it merges without ghunnah.",
+    "id": "Nun sukun diikuti huruf (ر), sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q135",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:173",
+    "pattern": "غَفُو[رٌ رَّ]حِيمٌ"
+   },
+   "options": [
+    "r03",
+    "r02",
+    "r05",
+    "r04"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ر)، فيُدغم بلا غنة.",
+    "ckb": "تەنوین پیتی (ر)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ر), so it merges without ghunnah.",
+    "id": "Tanwin diikuti huruf (ر), sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q136",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "69:21",
+    "pattern": "عِيشَ[ةٍ رَّ]اضِيَةٍ"
+   },
+   "options": [
+    "r03",
+    "r04",
+    "r01",
+    "r02"
+   ],
+   "answer": "r03",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ر)، فيُدغم بلا غنة.",
+    "ckb": "تەنوین پیتی (ر)ی بەدوادا هاتووە، بۆیە بەبێ مینگە تێهەڵکێش دەکرێت.",
+    "en": "The tanween is followed by (ر), so it merges without ghunnah.",
+    "id": "Tanwin diikuti huruf (ر), sehingga diidghamkan tanpa ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q137",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "27:60",
+    "pattern": "فَأَ[نۢبَ]تْنَا"
+   },
+   "options": [
+    "r04",
+    "r01",
+    "r05",
+    "r03"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q138",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "104:4",
+    "pattern": "لَيُ[نۢبَ]ذَنَّ"
+   },
+   "options": [
+    "r04",
+    "r03",
+    "r01",
+    "r05"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q139",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "28:66",
+    "pattern": "ٱلْأَ[نۢبَ]آءُ"
+   },
+   "options": [
+    "r04",
+    "r02",
+    "r01",
+    "r03"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q140",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:31",
+    "pattern": "أَ[نۢبِ]ـُٔونِى"
+   },
+   "options": [
+    "r04",
+    "r03",
+    "r05",
+    "r02"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q141",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:61",
+    "pattern": "مِ[نۢ بَ]قْلِهَا"
+   },
+   "options": [
+    "r04",
+    "r05",
+    "r02",
+    "r01"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q142",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "3:34",
+    "pattern": "مِ[نۢ بَ]عْضٍ"
+   },
+   "options": [
+    "r04",
+    "r05",
+    "r01",
+    "r02"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q143",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "8:5",
+    "pattern": "مِ[نۢ بَ]يْتِكَ"
+   },
+   "options": [
+    "r04",
+    "r02",
+    "r03",
+    "r05"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف الباء، فتُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The noon sakinah is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Nun sukun diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q144",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "4:58",
+    "pattern": "سَمِيعًۢ[ا بَ]صِيرًا"
+   },
+   "options": [
+    "r04",
+    "r03",
+    "r01",
+    "r05"
+   ],
+   "answer": "r04",
+   "explanation": {
+    "ar": "التنوين تلاه حرف الباء، فيُقلب ميمًا مخفاة مع الغنة.",
+    "ckb": "تەنوین پیتی (ب)ی بەدوادا هاتووە، بۆیە دەگۆڕدرێت بۆ میمێکی شاراوە لەگەڵ مینگەدا.",
+    "en": "The tanween is followed by (ب), so it changes into a hidden meem with ghunnah.",
+    "id": "Tanwin diikuti huruf ba, sehingga berubah menjadi mim tersembunyi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q145",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "94:7",
+    "pattern": "فَٱ[نصَ]بْ"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r03",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ص)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ص)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ص), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ص), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q146",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "107:5",
+    "pattern": "عَ[ن صَ]لَاتِهِمْ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r02",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ص)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ص)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ص), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ص), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q147",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "69:6",
+    "pattern": "بِرِي[حٍ صَ]رْصَرٍ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r04",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ص)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ص)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ص), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ص), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q148",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "13:7",
+    "pattern": "مُ[نذِ]رٌ"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r03",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ذ)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ذ)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ذ), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ذ), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q149",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "3:195",
+    "pattern": "مِّ[ن ذَ]كَرٍ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r04",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ذ)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ذ)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ذ), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ذ), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q150",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "73:13",
+    "pattern": "وَطَعَامً[ا ذَ]ا"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r04",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ذ)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ذ)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ذ), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ذ), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q151",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "25:23",
+    "pattern": "مَّ[نثُ]ورًا"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r02",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ث)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ث)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ث), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ث), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q152",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "7:8",
+    "pattern": "فَمَ[ن ثَ]قُلَتْ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r04",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ث)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ث)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ث), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ث), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q153",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "56:7",
+    "pattern": "أَزْوَٰجً[ا ثَ]لَٰثَةً"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r01",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ث)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ث)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ث), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ث), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q154",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:120",
+    "pattern": "عَ[نكَ]"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r03",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ك)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ك)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ك), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ك), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q155",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "4:11",
+    "pattern": "إِ[ن كَ]انَ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r02",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ك)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ك)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ك), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ك), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q156",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "8:4",
+    "pattern": "وَرِزْ[قٌ كَ]رِيمٌ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r03",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ك)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ك)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ك), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ك), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q157",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "26:65",
+    "pattern": "وَأَ[نجَ]يْنَا"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r03",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ج)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ج)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ج), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ج), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q158",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "5:22",
+    "pattern": "قَوْمً[ا جَ]بَّارِينَ"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r04",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ج)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ج)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ج), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ج), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q159",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "80:22",
+    "pattern": "أَ[نشَ]رَهُ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r01",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ش)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ش)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ش), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ش), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q160",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "18:29",
+    "pattern": "فَمَ[ن شَ]آءَ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r04",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ش)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ش)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ش), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ش), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q161",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "5:117",
+    "pattern": "شَيْ[ءٍ شَ]هِيدٌ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r03",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ش)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ش)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ش), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ش), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q162",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "94:3",
+    "pattern": "أَ[نقَ]ضَ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r02",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ق)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ق)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ق), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ق), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q163",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:25",
+    "pattern": "مِ[ن قَ]بْلُ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r03",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ق)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ق)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ق), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ق), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q164",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:20",
+    "pattern": "شَيْ[ءٍ قَ]دِيرٌ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r02",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ق)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ق)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ق), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ق), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q165",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "20:126",
+    "pattern": "تُ[نسَ]ىٰ"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r02",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (س)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (س)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (س), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (س), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q166",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "11:82",
+    "pattern": "مِّ[ن سِ]جِّيلٍ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r01",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (س)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (س)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (س), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (س), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q167",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "39:29",
+    "pattern": "وَرَجُلً[ا سَ]لَمًا"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r01",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (س)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (س)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (س), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (س), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q168",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:54",
+    "pattern": "عِ[ندَ]"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r01",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (د)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (د)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (د), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (د), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q169",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "6:38",
+    "pattern": "مِ[ن دَ]آبَّةٍ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r02",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (د)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (د)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (د), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (د), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q170",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "6:99",
+    "pattern": "قِنْوَا[نٌ دَ]انِيَةٌ"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r03",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (د)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (د)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (د), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (د), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q171",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "21:63",
+    "pattern": "يَ[نطِ]قُونَ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r03",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ط)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ط)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ط), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ط), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q172",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "79:37",
+    "pattern": "مَ[ن طَ]غَىٰ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r02",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ط)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ط)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ط), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ط), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q173",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "4:43",
+    "pattern": "صَعِيدً[ا طَ]يِّبًا"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r03",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ط)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ط)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ط), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ط), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q174",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "6:92",
+    "pattern": "أَ[نزَ]لْنَٰهُ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r04",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ز)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ز)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ز), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ز), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q175",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "30:39",
+    "pattern": "مِّ[ن زَ]كَوٰةٍ"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r02",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ز)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ز)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ز), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ز), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q176",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "18:40",
+    "pattern": "صَعِيدً[ا زَ]لَقًا"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r03",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ز)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ز)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ز), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ز), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q177",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "82:1",
+    "pattern": "ٱ[نفَ]طَرَتْ"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r01",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ف)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ف)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ف), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ف), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q178",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "12:38",
+    "pattern": "مِ[ن فَ]ضْلِ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r04",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ف)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ف)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ف), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ف), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q179",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:184",
+    "pattern": "سَفَ[رٍ فَ]عِدَّةٌ"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r02",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ف)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ف)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ف), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ف), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q180",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "10:42",
+    "pattern": "أَفَأَ[نتَ]"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r01",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ت)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ت)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ت), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ت), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q181",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "20:76",
+    "pattern": "مَ[ن تَ]زَكَّىٰ"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r02",
+    "r03"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ت)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ت)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ت), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ت), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q182",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "13:2",
+    "pattern": "عَمَ[دٍ تَ]رَوْنَهَا"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r03",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ت)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ت)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ت), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ت), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q183",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "11:82",
+    "pattern": "مَّ[نضُ]ودٍ"
+   },
+   "options": [
+    "r05",
+    "r01",
+    "r02",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ض)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ض)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ض), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ض), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q184",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "88:6",
+    "pattern": "مِ[ن ضَ]رِيعٍ"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r04",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ض)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ض)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ض), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ض), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q185",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "2:210",
+    "pattern": "يَ[نظُ]رُونَ"
+   },
+   "options": [
+    "r05",
+    "r04",
+    "r03",
+    "r02"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ظ)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ظ)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ظ), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ظ), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q186",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "18:87",
+    "pattern": "مَ[ن ظَ]لَمَ"
+   },
+   "options": [
+    "r05",
+    "r02",
+    "r04",
+    "r01"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "النون الساكنة تلاها حرف (ظ)، وهو من حروف الإخفاء، فتُخفى مع الغنة.",
+    "ckb": "نونی ساکن پیتی (ظ)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The noon sakinah is followed by (ظ), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Nun sukun diikuti huruf (ظ), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q187",
+   "type": "identify",
+   "topic": "t10",
+   "example": {
+    "ref": "4:57",
+    "pattern": "ظِ[لًّا ظَ]لِيلًا"
+   },
+   "options": [
+    "r05",
+    "r03",
+    "r01",
+    "r04"
+   ],
+   "answer": "r05",
+   "explanation": {
+    "ar": "التنوين تلاه حرف (ظ)، وهو من حروف الإخفاء، فيُخفى مع الغنة.",
+    "ckb": "تەنوین پیتی (ظ)ی بەدوادا هاتووە کە یەکێکە لە پیتەکانی ئیخفاء، بۆیە بە مینگەوە دەشاردرێتەوە.",
+    "en": "The tanween is followed by (ظ), one of the ikhfaa letters, so it is hidden with ghunnah.",
+    "id": "Tanwin diikuti huruf (ظ), salah satu huruf ikhfa, sehingga disamarkan dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q188",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "106:4",
+    "pattern": "اطعمه[م] [م]ن"
+   },
+   "options": [
+    "r06",
+    "r07",
+    "r08",
+    "r02"
+   ],
+   "answer": "r06",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها ميم، فتُدغم إدغامًا شفويًّا مع الغنة.",
+    "ckb": "میمی ساکن میمێکی بەدوادا هاتووە، بۆیە بە تێهەڵکێشکردنی لێوی و بە مینگەوە دەخوێنرێت.",
+    "en": "The meem sakinah is followed by another meem, so it is Idgham Shafawi with ghunnah.",
+    "id": "Mim sukun diikuti mim, sehingga hukumnya idgham syafawi dengan ghunnah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q189",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "100:11",
+    "pattern": "ربه[م] [ب]هم"
+   },
+   "options": [
+    "r07",
+    "r05",
+    "r04",
+    "r06"
+   ],
+   "answer": "r07",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف الباء، فتُخفى إخفاءً شفويًّا مع الغنة.",
+    "ckb": "میمی ساکن پیتی (ب)ی بەدوادا هاتووە، بۆیە بە شاردنەوەی لێوی دەخوێنرێت.",
+    "en": "The meem sakinah is followed by (ب), so it is Ikhfaa Shafawi.",
+    "id": "Mim sukun diikuti huruf ba, sehingga hukumnya ikhfa syafawi."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q190",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "52:22",
+    "pattern": "وا[م][د]دنهم"
+   },
+   "options": [
+    "r08",
+    "r01",
+    "r06",
+    "r07"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (د)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (د)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (د), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (د), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q191",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "13:17",
+    "pattern": "في[م][ك]ث"
+   },
+   "options": [
+    "r08",
+    "r07",
+    "r01",
+    "r06"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (ك)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (ك)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (ك), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (ك), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q192",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "3:198",
+    "pattern": "له[م] [ج]نت"
+   },
+   "options": [
+    "r08",
+    "r07",
+    "r06",
+    "r01"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (ج)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (ج)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (ج), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (ج), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q193",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "44:37",
+    "pattern": "اه[م] [خ]ير"
+   },
+   "options": [
+    "r08",
+    "r01",
+    "r06",
+    "r07"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (خ)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (خ)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (خ), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (خ), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q194",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "9:50",
+    "pattern": "وه[م] [ف]رحون"
+   },
+   "options": [
+    "r08",
+    "r06",
+    "r01",
+    "r07"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (ف)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (ف)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (ف), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (ف), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q195",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "30:17",
+    "pattern": "ت[م][س]ون"
+   },
+   "options": [
+    "r08",
+    "r07",
+    "r06",
+    "r01"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (س)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (س)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (س), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (س), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q196",
+   "type": "identify",
+   "topic": "t11",
+   "example": {
+    "ref": "36:56",
+    "pattern": "ه[م] [و]ازوجهم"
+   },
+   "options": [
+    "r08",
+    "r06",
+    "r01",
+    "r07"
+   ],
+   "answer": "r08",
+   "explanation": {
+    "ar": "الميم الساكنة تلاها حرف (و)، وهو ليس ميمًا ولا باءً، فتُظهَر.",
+    "ckb": "میمی ساکن پیتی (و)ی بەدوادا هاتووە کە نە میمە و نە (ب)ە، بۆیە ئاشکرا دەکرێت.",
+    "en": "The meem sakinah is followed by (و), which is neither meem nor baa, so it is pronounced clearly.",
+    "id": "Mim sukun diikuti huruf (و), bukan mim dan bukan ba, sehingga dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q197",
+   "type": "identify",
+   "topic": "t12",
+   "example": {
+    "ref": "8:43",
+    "pattern": "ولك[ن] الله"
+   },
+   "options": [
+    "r09",
+    "r02",
+    "r05",
+    "r06"
+   ],
+   "answer": "r09",
+   "explanation": {
+    "ar": "حرف (نّ) مشدَّد، فتظهر غنته كاملة.",
+    "ckb": "پیتی (نّ) شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+    "en": "The (نّ) carries a shaddah, so its ghunnah is held in full.",
+    "id": "Huruf (نّ) bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q198",
+   "type": "identify",
+   "topic": "t12",
+   "example": {
+    "ref": "36:68",
+    "pattern": "ومن [ن]عمره"
+   },
+   "options": [
+    "r09",
+    "r02",
+    "r06",
+    "r05"
+   ],
+   "answer": "r09",
+   "explanation": {
+    "ar": "حرف (نّ) مشدَّد، فتظهر غنته كاملة.",
+    "ckb": "پیتی (نّ) شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+    "en": "The (نّ) carries a shaddah, so its ghunnah is held in full.",
+    "id": "Huruf (نّ) bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q199",
+   "type": "identify",
+   "topic": "t12",
+   "example": {
+    "ref": "111:4",
+    "pattern": "ح[م]الة الحطب"
+   },
+   "options": [
+    "r09",
+    "r05",
+    "r06",
+    "r02"
+   ],
+   "answer": "r09",
+   "explanation": {
+    "ar": "حرف (مّ) مشدَّد، فتظهر غنته كاملة.",
+    "ckb": "پیتی (مّ) شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+    "en": "The (مّ) carries a shaddah, so its ghunnah is held in full.",
+    "id": "Huruf (مّ) bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q200",
+   "type": "identify",
+   "topic": "t12",
+   "example": {
+    "ref": "2:20",
+    "pattern": "ا[ن] الله"
+   },
+   "options": [
+    "r09",
+    "r06",
+    "r02",
+    "r05"
+   ],
+   "answer": "r09",
+   "explanation": {
+    "ar": "حرف (نّ) مشدَّد، فتظهر غنته كاملة.",
+    "ckb": "پیتی (نّ) شەددارە، بۆیە مینگەکەی بە تەواوی درێژ دەکرێتەوە.",
+    "en": "The (نّ) carries a shaddah, so its ghunnah is held in full.",
+    "id": "Huruf (نّ) bertasydid, sehingga ghunnahnya dipanjangkan dengan sempurna."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q201",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "106:4",
+    "pattern": "ا[ط]عمهم"
+   },
+   "options": [
+    "r10",
+    "r01",
+    "r08",
+    "r09"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (ط) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (ط) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(ط) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (ط) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q202",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "18:48",
+    "pattern": "ن[ج]عل"
+   },
+   "options": [
+    "r10",
+    "r08",
+    "r09",
+    "r01"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (ج) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (ج) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(ج) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (ج) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q203",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "100:4",
+    "pattern": "ن[ق]عا"
+   },
+   "options": [
+    "r10",
+    "r09",
+    "r08",
+    "r01"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (ق) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (ق) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(ق) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (ق) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q204",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "111:5",
+    "pattern": "ح[ب]ل"
+   },
+   "options": [
+    "r10",
+    "r08",
+    "r09",
+    "r01"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (ب) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (ب) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(ب) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (ب) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q205",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "4:124",
+    "pattern": "ي[د]خلون"
+   },
+   "options": [
+    "r10",
+    "r08",
+    "r09",
+    "r01"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (د) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (د) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(د) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (د) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q206",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "23:1",
+    "pattern": "ق[د] افلح"
+   },
+   "options": [
+    "r10",
+    "r01",
+    "r08",
+    "r09"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (د) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (د) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(د) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (د) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q207",
+   "type": "identify",
+   "topic": "t08",
+   "example": {
+    "ref": "20:24",
+    "pattern": "اذه[ب] الي"
+   },
+   "options": [
+    "r10",
+    "r01",
+    "r09",
+    "r08"
+   ],
+   "answer": "r10",
+   "explanation": {
+    "ar": "حرف (ب) من حروف القلقلة (قُطْبُ جَدٍّ) وهو ساكن هنا، فيُقلقَل.",
+    "ckb": "پیتی (ب) یەکێکە لە پیتەکانی قەلقەلە (قُطْبُ جَدٍّ) و لێرەدا ساکنە، بۆیە دەهەژێت.",
+    "en": "(ب) is one of the qalqalah letters (قُطْبُ جَدٍّ) and is sakin here, so it is pronounced with qalqalah.",
+    "id": "Huruf (ب) termasuk huruf qalqalah (قُطْبُ جَدٍّ) dan di sini sukun, sehingga dibaca qalqalah."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q208",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "15:3",
+    "pattern": "ا[لا]مل"
+   },
+   "options": [
+    "r11",
+    "r13",
+    "r12",
+    "r14"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ء)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (ء)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (ء), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (ء), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q209",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "59:24",
+    "pattern": "ا[لب]اري"
+   },
+   "options": [
+    "r11",
+    "r13",
+    "r14",
+    "r12"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ب)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (ب)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (ب), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (ب), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q210",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "6:133",
+    "pattern": "ا[لغ]ني"
+   },
+   "options": [
+    "r11",
+    "r13",
+    "r12",
+    "r14"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (غ)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (غ)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (غ), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (غ), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q211",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "18:9",
+    "pattern": "ا[لك]هف"
+   },
+   "options": [
+    "r11",
+    "r12",
+    "r14",
+    "r13"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ك)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (ك)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (ك), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (ك), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q212",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "7:69",
+    "pattern": "ا[لخ]لق"
+   },
+   "options": [
+    "r11",
+    "r12",
+    "r14",
+    "r13"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (خ)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (خ)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (خ), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (خ), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q213",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "2:32",
+    "pattern": "ا[لع]ليم"
+   },
+   "options": [
+    "r11",
+    "r13",
+    "r14",
+    "r12"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ع)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (ع)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (ع), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (ع), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q214",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "76:11",
+    "pattern": "ا[لي]وم"
+   },
+   "options": [
+    "r11",
+    "r13",
+    "r12",
+    "r14"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ي)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (ي)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (ي), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (ي), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q215",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "2:120",
+    "pattern": "ا[له]دي"
+   },
+   "options": [
+    "r11",
+    "r13",
+    "r12",
+    "r14"
+   ],
+   "answer": "r11",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ه)، وهو من الحروف القمرية، فتُظهَر اللام.",
+    "ckb": "لامی «ال» پیتی (ه)ی بەدوادا هاتووە کە پیتێکی قەمەرییە، بۆیە لامەکە ئاشکرا دەکرێت.",
+    "en": "The laam of «ال» is followed by (ه), a lunar letter, so the laam is pronounced clearly.",
+    "id": "Lam pada «ال» diikuti huruf (ه), huruf qamariyah, sehingga lam dibaca jelas."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q216",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "5:4",
+    "pattern": "ا[لط]يبت"
+   },
+   "options": [
+    "r12",
+    "r14",
+    "r13",
+    "r11"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ط)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ط)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ط), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ط), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q217",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "3:195",
+    "pattern": "ا[لث]واب"
+   },
+   "options": [
+    "r12",
+    "r13",
+    "r11",
+    "r14"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ث)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ث)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ث), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ث), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q218",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "4:69",
+    "pattern": "وا[لص]لحين"
+   },
+   "options": [
+    "r12",
+    "r13",
+    "r11",
+    "r14"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ص)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ص)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ص), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ص), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q219",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "51:58",
+    "pattern": "ا[لر]زاق"
+   },
+   "options": [
+    "r12",
+    "r11",
+    "r14",
+    "r13"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ر)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ر)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ر), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ر), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q220",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "15:9",
+    "pattern": "ا[لذ]كر"
+   },
+   "options": [
+    "r12",
+    "r11",
+    "r13",
+    "r14"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ذ)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ذ)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ذ), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ذ), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q221",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "5:65",
+    "pattern": "ا[لن]عيم"
+   },
+   "options": [
+    "r12",
+    "r11",
+    "r13",
+    "r14"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ن)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ن)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ن), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ن), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q222",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "2:127",
+    "pattern": "ا[لس]ميع"
+   },
+   "options": [
+    "r12",
+    "r14",
+    "r11",
+    "r13"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (س)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (س)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (س), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (س), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q223",
+   "type": "identify",
+   "topic": "t18",
+   "example": {
+    "ref": "21:105",
+    "pattern": "ا[لز]بور"
+   },
+   "options": [
+    "r12",
+    "r14",
+    "r13",
+    "r11"
+   ],
+   "answer": "r12",
+   "explanation": {
+    "ar": "لام «ال» تلاها حرف (ز)، وهو من الحروف الشمسية، فتُدغم اللام فيه.",
+    "ckb": "لامی «ال» پیتی (ز)ی بەدوادا هاتووە کە پیتێکی شەمسییە، بۆیە لامەکە تێهەڵکێش دەکرێت.",
+    "en": "The laam of «ال» is followed by (ز), a solar letter, so the laam merges into it.",
+    "id": "Lam pada «ال» diikuti huruf (ز), huruf syamsiyah, sehingga lam diidghamkan."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q224",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "2:255",
+    "pattern": "[الل]ه لا اله"
+   },
+   "options": [
+    "r13",
+    "r12",
+    "r11",
+    "r14"
+   ],
+   "answer": "r13",
+   "explanation": {
+    "ar": "ابتُدئ بلفظ الجلالة، فتُفخَّم لامه.",
+    "ckb": "دەستپێکردن بە وشەی (الله)ە، بۆیە لامەکە تەفخیم دەکرێت.",
+    "en": "The recitation starts with the name of Allah, so its laam is heavy.",
+    "id": "Bacaan dimulai dengan lafzhul jalalah, sehingga lam dibaca tebal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q225",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "37:40",
+    "pattern": "عبا[د] ا[لل]ه"
+   },
+   "options": [
+    "r13",
+    "r14",
+    "r11",
+    "r12"
+   ],
+   "answer": "r13",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة فتحٌ، فتُفخَّم لامه.",
+    "ckb": "فەتحە پێش وشەی (الله) کەوتووە، بۆیە لامەکە تەفخیم دەکرێت.",
+    "en": "A fathah comes before the name of Allah, so its laam is heavy.",
+    "id": "Lafzhul jalalah didahului fathah, sehingga lam dibaca tebal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q226",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "2:210",
+    "pattern": "وا[لي] ا[لل]ه"
+   },
+   "options": [
+    "r13",
+    "r11",
+    "r12",
+    "r14"
+   ],
+   "answer": "r13",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة ساكنٌ بعد فتح، فتُفخَّم لامه.",
+    "ckb": "ساکنێک لەدوای فەتحە پێش وشەی (الله) کەوتووە، بۆیە لامەکە تەفخیم دەکرێت.",
+    "en": "A sakin letter after a fathah comes before the name of Allah, so its laam is heavy.",
+    "id": "Lafzhul jalalah didahului huruf sukun setelah fathah, sehingga lam dibaca tebal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q227",
+   "type": "identify",
+   "topic": "t14",
+   "example": {
+    "ref": "19:30",
+    "pattern": "عب[د] ا[لل]ه"
+   },
+   "options": [
+    "r13",
+    "r11",
+    "r12",
+    "r14"
+   ],
+   "answer": "r13",
+   "explanation": {
+    "ar": "تقدَّم لفظَ الجلالة ضمٌّ، فتُفخَّم لامه.",
+    "ckb": "ضەممە پێش وشەی (الله) کەوتووە، بۆیە لامەکە تەفخیم دەکرێت.",
+    "en": "A dammah comes before the name of Allah, so its laam is heavy.",
+    "id": "Lafzhul jalalah didahului dhammah, sehingga lam dibaca tebal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q228",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "11:43",
+    "pattern": "وح[ا]ل"
+   },
+   "options": [
+    "r15",
+    "r16",
+    "r22",
+    "r20"
+   ],
+   "answer": "r15",
+   "explanation": {
+    "ar": "حرف المد (ا) لم يأتِ بعده همز ولا سكون، فهو مد طبيعي.",
+    "ckb": "پیتی مەد (ا) نە هەمزە و نە ساکنی بەدوادا نەهاتووە، بۆیە مەدی سروشتییە.",
+    "en": "The madd letter (ا) is followed by neither a hamzah nor a sukoon, so it is a natural madd.",
+    "id": "Huruf mad (ا) tidak diikuti hamzah maupun sukun, sehingga ini mad asli."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q229",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:22",
+    "pattern": "اند[ا]دا"
+   },
+   "options": [
+    "r15",
+    "r22",
+    "r17",
+    "r20"
+   ],
+   "answer": "r15",
+   "explanation": {
+    "ar": "حرف المد (ا) لم يأتِ بعده همز ولا سكون، فهو مد طبيعي.",
+    "ckb": "پیتی مەد (ا) نە هەمزە و نە ساکنی بەدوادا نەهاتووە، بۆیە مەدی سروشتییە.",
+    "en": "The madd letter (ا) is followed by neither a hamzah nor a sukoon, so it is a natural madd.",
+    "id": "Huruf mad (ا) tidak diikuti hamzah maupun sukun, sehingga ini mad asli."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q230",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:8",
+    "pattern": "يق[و]ل"
+   },
+   "options": [
+    "r15",
+    "r18",
+    "r21",
+    "r16"
+   ],
+   "answer": "r15",
+   "explanation": {
+    "ar": "حرف المد (و) لم يأتِ بعده همز ولا سكون، فهو مد طبيعي.",
+    "ckb": "پیتی مەد (و) نە هەمزە و نە ساکنی بەدوادا نەهاتووە، بۆیە مەدی سروشتییە.",
+    "en": "The madd letter (و) is followed by neither a hamzah nor a sukoon, so it is a natural madd.",
+    "id": "Huruf mad (و) tidak diikuti hamzah maupun sukun, sehingga ini mad asli."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q231",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "8:24",
+    "pattern": "يح[و]ل"
+   },
+   "options": [
+    "r15",
+    "r18",
+    "r21",
+    "r22"
+   ],
+   "answer": "r15",
+   "explanation": {
+    "ar": "حرف المد (و) لم يأتِ بعده همز ولا سكون، فهو مد طبيعي.",
+    "ckb": "پیتی مەد (و) نە هەمزە و نە ساکنی بەدوادا نەهاتووە، بۆیە مەدی سروشتییە.",
+    "en": "The madd letter (و) is followed by neither a hamzah nor a sukoon, so it is a natural madd.",
+    "id": "Huruf mad (و) tidak diikuti hamzah maupun sukun, sehingga ini mad asli."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q232",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:11",
+    "pattern": "ق[ي]ل"
+   },
+   "options": [
+    "r15",
+    "r21",
+    "r17",
+    "r16"
+   ],
+   "answer": "r15",
+   "explanation": {
+    "ar": "حرف المد (ي) لم يأتِ بعده همز ولا سكون، فهو مد طبيعي.",
+    "ckb": "پیتی مەد (ي) نە هەمزە و نە ساکنی بەدوادا نەهاتووە، بۆیە مەدی سروشتییە.",
+    "en": "The madd letter (ي) is followed by neither a hamzah nor a sukoon, so it is a natural madd.",
+    "id": "Huruf mad (ي) tidak diikuti hamzah maupun sukun, sehingga ini mad asli."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q233",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "34:54",
+    "pattern": "وح[ي]ل"
+   },
+   "options": [
+    "r15",
+    "r22",
+    "r21",
+    "r16"
+   ],
+   "answer": "r15",
+   "explanation": {
+    "ar": "حرف المد (ي) لم يأتِ بعده همز ولا سكون، فهو مد طبيعي.",
+    "ckb": "پیتی مەد (ي) نە هەمزە و نە ساکنی بەدوادا نەهاتووە، بۆیە مەدی سروشتییە.",
+    "en": "The madd letter (ي) is followed by neither a hamzah nor a sukoon, so it is a natural madd.",
+    "id": "Huruf mad (ي) tidak diikuti hamzah maupun sukun, sehingga ini mad asli."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q234",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:9",
+    "pattern": "[ءا]منوا"
+   },
+   "options": [
+    "r16",
+    "r22",
+    "r18",
+    "r21"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّم الهمز على حرف المد (ا) في كلمة واحدة، فهو مد بدل.",
+    "ckb": "لەم وشەیەدا هەمزە پێش پیتی مەد (ا) کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "A hamzah comes before the madd letter (ا) in the same word, so it is Madd al-Badal.",
+    "id": "Hamzah mendahului huruf mad (ا) dalam satu kata, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q235",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:101",
+    "pattern": "[او]توا"
+   },
+   "options": [
+    "r16",
+    "r15",
+    "r20",
+    "r18"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّم الهمز على حرف المد (و) في كلمة واحدة، فهو مد بدل.",
+    "ckb": "لەم وشەیەدا هەمزە پێش پیتی مەد (و) کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "A hamzah comes before the madd letter (و) in the same word, so it is Madd al-Badal.",
+    "id": "Hamzah mendahului huruf mad (و) dalam satu kata, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q236",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:31",
+    "pattern": "[ءا]دم"
+   },
+   "options": [
+    "r16",
+    "r21",
+    "r15",
+    "r18"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّم الهمز على حرف المد (ا) في كلمة واحدة، فهو مد بدل.",
+    "ckb": "لەم وشەیەدا هەمزە پێش پیتی مەد (ا) کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "A hamzah comes before the madd letter (ا) in the same word, so it is Madd al-Badal.",
+    "id": "Hamzah mendahului huruf mad (ا) dalam satu kata, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q237",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:185",
+    "pattern": "القر[ءا]ن"
+   },
+   "options": [
+    "r16",
+    "r21",
+    "r22",
+    "r17"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّم الهمز على حرف المد (ا) في كلمة واحدة، فهو مد بدل.",
+    "ckb": "لەم وشەیەدا هەمزە پێش پیتی مەد (ا) کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "A hamzah comes before the madd letter (ا) in the same word, so it is Madd al-Badal.",
+    "id": "Hamzah mendahului huruf mad (ا) dalam satu kata, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q238",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "17:34",
+    "pattern": "مس[و]لا"
+   },
+   "options": [
+    "r16",
+    "r15",
+    "r21",
+    "r22"
+   ],
+   "answer": "r16",
+   "explanation": {
+    "ar": "تقدَّم الهمز على حرف المد (و) في كلمة واحدة، فهو مد بدل.",
+    "ckb": "لەم وشەیەدا هەمزە پێش پیتی مەد (و) کەوتووە، بۆیە مەدی بەدەلە.",
+    "en": "A hamzah comes before the madd letter (و) in the same word, so it is Madd al-Badal.",
+    "id": "Hamzah mendahului huruf mad (و) dalam satu kata, sehingga ini mad badal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q239",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "35:37",
+    "pattern": "وج[اء]كم"
+   },
+   "options": [
+    "r17",
+    "r15",
+    "r18",
+    "r16"
+   ],
+   "answer": "r17",
+   "explanation": {
+    "ar": "جاء الهمز بعد حرف المد (ا) في كلمة واحدة، فهو مد واجب متصل.",
+    "ckb": "هەمزە لەدوای پیتی مەد (ا) لە هەمان وشەدا هاتووە، بۆیە مەدی موتتەصیلە.",
+    "en": "A hamzah comes after the madd letter (ا) in the same word, so it is Madd Wajib Mu'tasil.",
+    "id": "Hamzah terletak setelah huruf mad (ا) dalam satu kata, sehingga ini mad wajib muttashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q240",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "69:19",
+    "pattern": "ه[او]م"
+   },
+   "options": [
+    "r17",
+    "r20",
+    "r21",
+    "r18"
+   ],
+   "answer": "r17",
+   "explanation": {
+    "ar": "جاء الهمز بعد حرف المد (ا) في كلمة واحدة، فهو مد واجب متصل.",
+    "ckb": "هەمزە لەدوای پیتی مەد (ا) لە هەمان وشەدا هاتووە، بۆیە مەدی موتتەصیلە.",
+    "en": "A hamzah comes after the madd letter (ا) in the same word, so it is Madd Wajib Mu'tasil.",
+    "id": "Hamzah terletak setelah huruf mad (ا) dalam satu kata, sehingga ini mad wajib muttashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q241",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "24:31",
+    "pattern": "وتو[بوا] [ا]لي"
+   },
+   "options": [
+    "r18",
+    "r22",
+    "r17",
+    "r16"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد (و) في آخر كلمة والهمز في أول الكلمة التي بعدها، فهو مد جائز منفصل.",
+    "ckb": "پیتی مەد (و) لە کۆتایی وشەیەکە و هەمزە لە سەرەتای وشەی دواتردایە، بۆیە مەدی مونفەصیلە.",
+    "en": "The madd letter (و) ends one word and a hamzah begins the next, so it is Madd Ja'ez Munfasil.",
+    "id": "Huruf mad (و) berada di akhir kata dan hamzah di awal kata berikutnya, sehingga ini mad jaiz munfashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q242",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:235",
+    "pattern": "ف[ي] [ا]نفسكم"
+   },
+   "options": [
+    "r18",
+    "r20",
+    "r21",
+    "r15"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد (ي) في آخر كلمة والهمز في أول الكلمة التي بعدها، فهو مد جائز منفصل.",
+    "ckb": "پیتی مەد (ي) لە کۆتایی وشەیەکە و هەمزە لە سەرەتای وشەی دواتردایە، بۆیە مەدی مونفەصیلە.",
+    "en": "The madd letter (ي) ends one word and a hamzah begins the next, so it is Madd Ja'ez Munfasil.",
+    "id": "Huruf mad (ي) berada di akhir kata dan hamzah di awal kata berikutnya, sehingga ini mad jaiz munfashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q243",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:4",
+    "pattern": "بم[ا] [ا]نزل"
+   },
+   "options": [
+    "r18",
+    "r21",
+    "r22",
+    "r17"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد (ا) في آخر كلمة والهمز في أول الكلمة التي بعدها، فهو مد جائز منفصل.",
+    "ckb": "پیتی مەد (ا) لە کۆتایی وشەیەکە و هەمزە لە سەرەتای وشەی دواتردایە، بۆیە مەدی مونفەصیلە.",
+    "en": "The madd letter (ا) ends one word and a hamzah begins the next, so it is Madd Ja'ez Munfasil.",
+    "id": "Huruf mad (ا) berada di akhir kata dan hamzah di awal kata berikutnya, sehingga ini mad jaiz munfashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q244",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "66:6",
+    "pattern": "ق[وا] [ا]نفسكم"
+   },
+   "options": [
+    "r18",
+    "r17",
+    "r21",
+    "r15"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد (و) في آخر كلمة والهمز في أول الكلمة التي بعدها، فهو مد جائز منفصل.",
+    "ckb": "پیتی مەد (و) لە کۆتایی وشەیەکە و هەمزە لە سەرەتای وشەی دواتردایە، بۆیە مەدی مونفەصیلە.",
+    "en": "The madd letter (و) ends one word and a hamzah begins the next, so it is Madd Ja'ez Munfasil.",
+    "id": "Huruf mad (و) berada di akhir kata dan hamzah di awal kata berikutnya, sehingga ini mad jaiz munfashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q245",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "3:66",
+    "pattern": "[ها]نتم"
+   },
+   "options": [
+    "r18",
+    "r15",
+    "r21",
+    "r22"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد (ا) في آخر كلمة والهمز في أول الكلمة التي بعدها، فهو مد جائز منفصل.",
+    "ckb": "پیتی مەد (ا) لە کۆتایی وشەیەکە و هەمزە لە سەرەتای وشەی دواتردایە، بۆیە مەدی مونفەصیلە.",
+    "en": "The madd letter (ا) ends one word and a hamzah begins the next, so it is Madd Ja'ez Munfasil.",
+    "id": "Huruf mad (ا) berada di akhir kata dan hamzah di awal kata berikutnya, sehingga ini mad jaiz munfashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q246",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:21",
+    "pattern": "[يا]يها"
+   },
+   "options": [
+    "r18",
+    "r21",
+    "r22",
+    "r20"
+   ],
+   "answer": "r18",
+   "explanation": {
+    "ar": "حرف المد (ا) في آخر كلمة والهمز في أول الكلمة التي بعدها، فهو مد جائز منفصل.",
+    "ckb": "پیتی مەد (ا) لە کۆتایی وشەیەکە و هەمزە لە سەرەتای وشەی دواتردایە، بۆیە مەدی مونفەصیلە.",
+    "en": "The madd letter (ا) ends one word and a hamzah begins the next, so it is Madd Ja'ez Munfasil.",
+    "id": "Huruf mad (ا) berada di akhir kata dan hamzah di awal kata berikutnya, sehingga ini mad jaiz munfashil."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q247",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "5:2",
+    "pattern": "ء[ام]ين"
+   },
+   "options": [
+    "r20",
+    "r18",
+    "r16",
+    "r17"
+   ],
+   "answer": "r20",
+   "explanation": {
+    "ar": "جاء بعد حرف المد حرف مشدَّد في كلمة واحدة، فهو مد لازم كلمي مثقل.",
+    "ckb": "لەدوای پیتی مەدەوە پیتێکی شەددار لە هەمان وشەدا هاتووە، بۆیە مەدی لازمی کەلیمی قورسە.",
+    "en": "A letter with shaddah follows the madd letter in the same word, so it is Madd Lazim Kalimi Muthaqqal.",
+    "id": "Huruf mad diikuti huruf bertasydid dalam satu kata, sehingga ini mad lazim kalimi mutsaqqal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q248",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "10:59",
+    "pattern": "ء[الل]ه"
+   },
+   "options": [
+    "r20",
+    "r21",
+    "r18",
+    "r22"
+   ],
+   "answer": "r20",
+   "explanation": {
+    "ar": "جاء بعد حرف المد حرف مشدَّد في كلمة واحدة، فهو مد لازم كلمي مثقل.",
+    "ckb": "لەدوای پیتی مەدەوە پیتێکی شەددار لە هەمان وشەدا هاتووە، بۆیە مەدی لازمی کەلیمی قورسە.",
+    "en": "A letter with shaddah follows the madd letter in the same word, so it is Madd Lazim Kalimi Muthaqqal.",
+    "id": "Huruf mad diikuti huruf bertasydid dalam satu kata, sehingga ini mad lazim kalimi mutsaqqal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q249",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "6:143",
+    "pattern": "ء[الذ]كرين"
+   },
+   "options": [
+    "r20",
+    "r22",
+    "r17",
+    "r16"
+   ],
+   "answer": "r20",
+   "explanation": {
+    "ar": "جاء بعد حرف المد حرف مشدَّد في كلمة واحدة، فهو مد لازم كلمي مثقل.",
+    "ckb": "لەدوای پیتی مەدەوە پیتێکی شەددار لە هەمان وشەدا هاتووە، بۆیە مەدی لازمی کەلیمی قورسە.",
+    "en": "A letter with shaddah follows the madd letter in the same word, so it is Madd Lazim Kalimi Muthaqqal.",
+    "id": "Huruf mad diikuti huruf bertasydid dalam satu kata, sehingga ini mad lazim kalimi mutsaqqal."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q250",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "2:207",
+    "pattern": "بالعب[اد]"
+   },
+   "options": [
+    "r21",
+    "r17",
+    "r20",
+    "r22"
+   ],
+   "answer": "r21",
+   "explanation": {
+    "ar": "عند الوقف على آخر الآية يُسكَّن الحرف الأخير بعد حرف المد (ا)، فهو مد عارض للسكون.",
+    "ckb": "لەکاتی وەستان لە کۆتایی ئایەتەکە پیتی کۆتایی لەدوای پیتی مەد (ا) ساکن دەبێت، بۆیە مەدی عارض للسکونە.",
+    "en": "Stopping at the end of the verse makes the last letter sakin after the madd letter (ا), so it is Madd 'Arid Lissukoon.",
+    "id": "Saat waqaf di akhir ayat, huruf terakhir menjadi sukun setelah huruf mad (ا), sehingga ini mad 'aridh lissukun."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q251",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "9:20",
+    "pattern": "الفايز[ون]"
+   },
+   "options": [
+    "r21",
+    "r15",
+    "r17",
+    "r16"
+   ],
+   "answer": "r21",
+   "explanation": {
+    "ar": "عند الوقف على آخر الآية يُسكَّن الحرف الأخير بعد حرف المد (و)، فهو مد عارض للسكون.",
+    "ckb": "لەکاتی وەستان لە کۆتایی ئایەتەکە پیتی کۆتایی لەدوای پیتی مەد (و) ساکن دەبێت، بۆیە مەدی عارض للسکونە.",
+    "en": "Stopping at the end of the verse makes the last letter sakin after the madd letter (و), so it is Madd 'Arid Lissukoon.",
+    "id": "Saat waqaf di akhir ayat, huruf terakhir menjadi sukun setelah huruf mad (و), sehingga ini mad 'aridh lissukun."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  },
+  {
+   "id": "q252",
+   "type": "identify",
+   "topic": "t15",
+   "example": {
+    "ref": "106:4",
+    "pattern": "خ[وف]"
+   },
+   "options": [
+    "r22",
+    "r18",
+    "r15",
+    "r20"
+   ],
+   "answer": "r22",
+   "explanation": {
+    "ar": "عند الوقف على آخر الآية يُسكَّن الحرف الأخير بعد حرف اللين (و) الساكن المفتوح ما قبله، فهو مد لين.",
+    "ckb": "لەکاتی وەستان لە کۆتایی ئایەتەکە پیتی کۆتایی ساکن دەبێت لەدوای پیتی لیینی (و) ساکن کە فەتحەی لەپێشە، بۆیە مەدی لیینە.",
+    "en": "Stopping at the end of the verse makes the last letter sakin after the leen letter (و), which follows a fathah, so it is Madd al-Leen.",
+    "id": "Saat waqaf di akhir ayat, huruf terakhir menjadi sukun setelah huruf lin (و) yang didahului fathah, sehingga ini mad lin."
+   },
+   "review": {
+    "status": "draft"
+   },
+   "generated": "tools/gen_identify_questions.py"
+  }
+ ]
 }
