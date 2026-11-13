@@ -280,6 +280,9 @@ WHERE = {
 }
 
 
+AMBIGUOUS = {'ل': {'طرف اللسان'}}
+
+
 def makharij_questions(first_id):
     """'Where is this letter articulated?' for every letter with a single
     articulation point. Options are point names from the articulation data
@@ -297,7 +300,9 @@ def makharij_questions(first_id):
                 continue  # و ي (also madd letters), and ghunnah
             name = p['name']
             others = []
-            seen = {name['ar']}
+            # Never offer an arguably right answer as a wrong option: the book
+            # says laam runs from the edge of the tongue to its tip.
+            seen = {name['ar']} | AMBIGUOUS.get(letter, set())
             rng = random.Random(f'makhraj|{letter}')
             for q in rng.sample(points, len(points)):
                 if q['name']['ar'] not in seen:

@@ -8050,14 +8050,6 @@
     },
     {
      "text": {
-      "ar": "طرف اللسان",
-      "ckb": "پێشەوەی زمان",
-      "en": "The tip of the tongue",
-      "id": "Ujung lidah"
-     }
-    },
-    {
-     "text": {
       "ar": "وسط الحلق",
       "ckb": "ناوەڕاستی گەروو",
       "en": "The middle part of the throat",
@@ -8070,6 +8062,14 @@
       "ckb": "نزیکترینی گەروو",
       "en": "The top of the throat",
       "id": "Ujung tenggorokan"
+     }
+    },
+    {
+     "text": {
+      "ar": "وسط اللسان",
+      "ckb": "ناوەڕاستی زمان",
+      "en": "The middle of the tongue",
+      "id": "Tengah lidah"
      }
     }
    ],

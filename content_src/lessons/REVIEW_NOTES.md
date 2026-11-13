@@ -8,6 +8,7 @@
 - t09 ar p38: «قلقتُها» (dad, item 3) read as «قلقلتُها». ar p40: the meem items are numbered ١، ٢، ٢; renumbered 1–3.
 - t09 ckb p44: the dad heading prints «الضاء» (for الضاد); kept as printed.
 - t09 id p38: alif item 2 says "seharusnya dipisahkan (tarqiq)"; written as "ditipiskan (tarqiq)". id p40: the ط heading reads "ta" (written "tha"); "Menipikan" corrected to "Menipiskan".
+- t10 ar p42: in the ithhar table (ʿayn, «two words») the page prints only «إِنْ»; written «إِنْ عَلَيْكَ» (42:48) as printed in the Kurdish edition (ckb p49). Found in the 2026-11-13 proofreading spot-check.
 - t11 ar p49 (and the other editions): the example «هُمْ خَيْرٌ» is printed without the hamzah; rendered as أَهُمْ خَيْرٌ (44:37), the only Qur'anic match.
 - t14 ar p53: the khaa/sakin example looks like «تَخْتَصُّ»; the Qur'anic word is يَخْتَصُّ (2:105), used here — confirm against the print.
 - t14 ar p56: «مِصْرَ» locations print as [يونس:٧٨ …]; the verse is Yunus 10:87 (written ٨٧). The «أَسْرِ» verse is cited as [الشعراء: ٧٧]; it is 26:52 (written ٥٢). «نُذُرِ» occurs only as وَنُذُرِ, so that form is shown.
