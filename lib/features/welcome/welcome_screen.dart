@@ -6,6 +6,7 @@ import '../../app/theme.dart';
 import '../../content/language.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/ornaments.dart';
+import '../../widgets/learning_intent_control.dart';
 import '../study/study_state.dart';
 
 /// First launch: what the app offers, and the learner's language (Arabic is
@@ -42,78 +43,92 @@ class WelcomeScreen extends ConsumerWidget {
     );
 
     return Scaffold(
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(24, 12, 24, 16),
+          child: FilledButton(
+            onPressed: ctl.setWelcomed,
+            child: Text(l10n.welcomeStart),
+          ),
+        ),
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
           children: [
-            const Center(child: Rosette(size: 76)),
-            const SizedBox(height: 14),
-            Text(
-              Branding.name(lang),
-              textAlign: TextAlign.center,
-              style: context.type
-                  .heading(size: 40)
-                  .copyWith(
-                    fontFamily: Branding.nameFontFamily(lang),
-                    color: green,
-                  ),
-            ),
-            Text(
-              Branding.subtitleFor(lang),
-              textAlign: TextAlign.center,
-              style: context.type.ui(
-                size: 16,
-                weight: FontWeight.w600,
-                color: dark ? RattilColors.goldLight : RattilColors.goldText,
-              ),
-            ),
-            const SizedBox(height: 18),
-            Text(
-              l10n.welcomeIntro(Branding.subtitleFor(lang)),
-              textAlign: TextAlign.center,
-              style: context.type.prose(size: 17),
-            ),
-            const SizedBox(height: 18),
-            feature(Icons.menu_book_outlined, l10n.welcomeLessons),
-            feature(Icons.auto_stories_outlined, l10n.welcomeBook),
-            if (ref.watch(contentProvider).questions.isNotEmpty)
-              feature(Icons.bolt, l10n.welcomePractice),
-            const SizedBox(height: 22),
-            Text(
-              l10n.welcomeChooseLanguage,
-              style: context.type.heading(size: 18),
-            ),
-            const SizedBox(height: 10),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                for (final l in AppLanguage.values)
-                  ChoiceChip(
-                    label: Text(
-                      l.nativeName,
-                      textDirection: l.direction,
-                      style: TextStyle(
-                        fontFamily: l.usesArabicScript
-                            ? 'NotoSansArabic'
-                            : 'Inter',
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
+                const Center(child: Rosette(size: 76)),
+                const SizedBox(height: 14),
+                Text(
+                  Branding.name(lang),
+                  textAlign: TextAlign.center,
+                  style: context.type
+                      .heading(size: 40)
+                      .copyWith(
+                        fontFamily: Branding.nameFontFamily(lang),
+                        color: green,
                       ),
-                    ),
-                    selected: l == lang,
-                    showCheckmark: false,
-                    selectedColor: scheme.primaryContainer,
-                    onSelected: (_) => ctl.setLanguage(l),
+                ),
+                Text(
+                  Branding.subtitleFor(lang),
+                  textAlign: TextAlign.center,
+                  style: context.type.ui(
+                    size: 16,
+                    weight: FontWeight.w600,
+                    color: dark
+                        ? RattilColors.goldLight
+                        : RattilColors.goldText,
                   ),
+                ),
+                const SizedBox(height: 22),
+                Text(
+                  l10n.welcomeChooseLanguage,
+                  style: context.type.heading(size: 18),
+                ),
+                const SizedBox(height: 10),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    for (final l in AppLanguage.values)
+                      ChoiceChip(
+                        label: Text(
+                          l.nativeName,
+                          textDirection: l.direction,
+                          style: TextStyle(
+                            fontFamily: l.usesArabicScript
+                                ? 'NotoSansArabic'
+                                : 'Inter',
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        selected: l == lang,
+                        showCheckmark: false,
+                        selectedColor: scheme.primaryContainer,
+                        onSelected: (_) => ctl.setLanguage(l),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Text(l10n.welcomeLanguageLater, style: context.type.muted()),
+                const SizedBox(height: 18),
+                Text(
+                  l10n.welcomeIntro(Branding.subtitleFor(lang)),
+                  textAlign: TextAlign.center,
+                  style: context.type.prose(size: 17),
+                ),
+                const SizedBox(height: 18),
+                feature(Icons.menu_book_outlined, l10n.welcomeLessons),
+                feature(Icons.auto_stories_outlined, l10n.welcomeBook),
+                if (ref.watch(contentProvider).questions.isNotEmpty)
+                  feature(Icons.bolt, l10n.welcomePractice),
+                const SizedBox(height: 20),
+                const LearningIntentControl(),
+                const SizedBox(height: 26),
               ],
-            ),
-            const SizedBox(height: 6),
-            Text(l10n.welcomeLanguageLater, style: context.type.muted()),
-            const SizedBox(height: 26),
-            FilledButton(
-              onPressed: ctl.setWelcomed,
-              child: Text(l10n.welcomeStart),
             ),
           ],
         ),

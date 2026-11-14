@@ -9,21 +9,34 @@ import '../../widgets/ornaments.dart';
 import '../study/study_state.dart';
 import 'session.dart';
 
-class PracticeScreen extends ConsumerWidget {
+class PracticeScreen extends ConsumerStatefulWidget {
   const PracticeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<PracticeScreen> createState() => _PracticeScreenState();
+}
+
+class _PracticeScreenState extends ConsumerState<PracticeScreen> {
+  int _limit = quizSessionSize;
+  bool _allTopics = false;
+
+  @override
+  Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final content = ref.watch(contentProvider);
     final lang = ref.watch(languageProvider);
     final quiz = ref.watch(studyProvider.select((s) => s.quiz));
+    final saved = ref.watch(studyProvider.select((s) => s.savedSession));
+    final resumable = saved != null && saved.canResume(content);
     final questions = content.questions;
     final answered = questions.where((q) => quiz.containsKey(q.id)).length;
     final correct = questions
         .where((q) => quiz[q.id]?.lastCorrect ?? false)
         .length;
     final mistakes = mistakeCount(questions, quiz);
+    final delayed = questions
+        .where((q) => (quiz[q.id]?.reviewStage ?? 0) >= 2)
+        .length;
     final topicIds = <String>{for (final q in questions) q.topicId}.toList()
       ..sort(
         (a, b) => content.topic(a).order.compareTo(content.topic(b).order),
@@ -35,16 +48,46 @@ class PracticeScreen extends ConsumerWidget {
           ? Center(
               child: Padding(
                 padding: const EdgeInsets.all(32),
-                child: Text(
-                  l10n.practiceAwaitingReview,
-                  style: context.type.ui(size: 15),
-                  textAlign: TextAlign.center,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      l10n.practiceAwaitingReview,
+                      style: context.type.ui(size: 15),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 16),
+                    OutlinedButton(
+                      onPressed: () => openBook(context),
+                      child: Text(l10n.bookTitle),
+                    ),
+                  ],
                 ),
               ),
             )
           : ListView(
               padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
               children: [
+                if (resumable)
+                  Card(
+                    child: ListTile(
+                      leading: const Icon(Icons.play_arrow),
+                      title: Text(l10n.practiceResume),
+                      subtitle: Text(
+                        l10n.quizProgress(
+                          n(saved.index + 1, lang),
+                          n(saved.questionIds.length, lang),
+                        ),
+                      ),
+                      onTap: () => openQuiz(context, resume: true),
+                      trailing: IconButton(
+                        tooltip: l10n.actionDelete,
+                        icon: const Icon(Icons.close),
+                        onPressed: () =>
+                            ref.read(studyProvider.notifier).saveSession(null),
+                      ),
+                    ),
+                  ),
                 Text(l10n.practiceIntro, style: context.type.muted(size: 14)),
                 if (content.isPreview) ...[
                   const SizedBox(height: 8),
@@ -80,15 +123,67 @@ class PracticeScreen extends ConsumerWidget {
                           l10n.practiceSeparateFromReading,
                           style: context.type.muted(size: 12.5),
                         ),
+                        if (delayed > 0)
+                          Text(
+                            l10n.practiceDelayedReview(n(delayed, lang)),
+                            style: context.type.muted(size: 13),
+                          ),
                         const SizedBox(height: 14),
+                        SwitchListTile(
+                          contentPadding: EdgeInsets.zero,
+                          title: Text(l10n.practiceAllTopics),
+                          value: _allTopics,
+                          onChanged: (value) =>
+                              setState(() => _allTopics = value),
+                        ),
+                        Text(l10n.practiceLength),
+                        Wrap(
+                          spacing: 8,
+                          children: [
+                            for (final count in [3, 5, 10])
+                              ChoiceChip(
+                                label: Text(n(count, lang)),
+                                selected: _limit == count,
+                                selectedColor: Theme.of(
+                                  context,
+                                ).colorScheme.primary,
+                                checkmarkColor: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimary,
+                                labelStyle: context.type.ui(
+                                  size: 13,
+                                  color: _limit == count
+                                      ? Theme.of(context).colorScheme.onPrimary
+                                      : Theme.of(context).colorScheme.onSurface,
+                                ),
+                                onSelected: (_) =>
+                                    setState(() => _limit = count),
+                              ),
+                          ],
+                        ),
+                        if (questions.any(
+                          (q) =>
+                              quiz[q.id]?.isDue(ref.read(clockProvider)()) ??
+                              false,
+                        ))
+                          OutlinedButton.icon(
+                            icon: const Icon(Icons.schedule),
+                            label: Text(l10n.practiceDue),
+                            onPressed: () =>
+                                openQuiz(context, dueOnly: true, limit: _limit),
+                          ),
                         FilledButton.icon(
                           icon: const Icon(Icons.bolt),
                           label: Text(l10n.practiceQuick),
-                          onPressed: () => openQuiz(context),
+                          onPressed: () => openQuiz(
+                            context,
+                            limit: _limit,
+                            learnedOnly: !_allTopics,
+                          ),
                         ),
                         const SizedBox(height: 6),
                         Text(
-                          l10n.practiceQuickHint(n(quizSessionSize, lang)),
+                          l10n.practiceQuickHint(n(_limit, lang)),
                           style: context.type.muted(size: 12.5),
                           textAlign: TextAlign.center,
                         ),

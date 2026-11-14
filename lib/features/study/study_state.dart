@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../content/content_repository.dart';
 import '../../content/language.dart';
 import '../../core/json_store.dart';
+import '../practice/saved_session.dart';
 
 enum ReaderTheme { light, sepia, night }
 
@@ -16,6 +17,9 @@ enum AppThemeChoice { system, light, dark }
 
 /// Reading progress is separate from quiz performance.
 enum TopicProgress { none, read, completed }
+
+/// Preferred next activity; never locks lessons or changes earned progress.
+enum LearningIntent { guided, revision, explore }
 
 class Bookmark {
   const Bookmark({
@@ -54,6 +58,8 @@ class Note {
     required this.text,
     required this.createdAt,
     required this.updatedAt,
+    this.lessonBlock,
+    this.sectionTitle,
   });
   final String id;
   final String edition;
@@ -62,6 +68,8 @@ class Note {
   final String text;
   final DateTime createdAt;
   final DateTime updatedAt;
+  final int? lessonBlock;
+  final String? sectionTitle;
 
   Note copyWith({String? text, DateTime? updatedAt}) => Note(
     id: id,
@@ -71,6 +79,8 @@ class Note {
     text: text ?? this.text,
     createdAt: createdAt,
     updatedAt: updatedAt ?? this.updatedAt,
+    lessonBlock: lessonBlock,
+    sectionTitle: sectionTitle,
   );
 
   Map<String, dynamic> toJson() => {
@@ -81,6 +91,8 @@ class Note {
     'text': text,
     'createdAt': createdAt.toIso8601String(),
     'updatedAt': updatedAt.toIso8601String(),
+    'lessonBlock': lessonBlock,
+    'sectionTitle': sectionTitle,
   };
   static Note fromJson(Map<String, dynamic> j) => Note(
     id: j['id'] as String,
@@ -88,6 +100,8 @@ class Note {
     page: (j['page'] as num).toInt(),
     topicId: j['topicId'] as String?,
     text: j['text'] as String? ?? '',
+    lessonBlock: (j['lessonBlock'] as num?)?.toInt(),
+    sectionTitle: j['sectionTitle'] as String?,
     createdAt:
         DateTime.tryParse(j['createdAt'] as String? ?? '') ??
         DateTime.fromMillisecondsSinceEpoch(0),
@@ -103,19 +117,30 @@ class QuizRecord {
     required this.correct,
     required this.lastCorrect,
     required this.lastAt,
+    this.reviewStage = 0,
+    this.nextReviewAt,
   });
   final int attempts;
   final int correct;
   final bool lastCorrect;
   final DateTime lastAt;
+  final int reviewStage;
+  final DateTime? nextReviewAt;
+
+  bool isDue(DateTime now) =>
+      nextReviewAt == null || !nextReviewAt!.isAfter(now);
 
   Map<String, dynamic> toJson() => {
     'attempts': attempts,
     'correct': correct,
     'lastCorrect': lastCorrect,
     'lastAt': lastAt.toIso8601String(),
+    'reviewStage': reviewStage,
+    'nextReviewAt': nextReviewAt?.toIso8601String(),
   };
   static QuizRecord fromJson(Map<String, dynamic> j) => QuizRecord(
+    reviewStage: ((j['reviewStage'] as num?)?.toInt() ?? 0).clamp(0, 4),
+    nextReviewAt: DateTime.tryParse(j['nextReviewAt'] as String? ?? ''),
     attempts: (j['attempts'] as num?)?.toInt() ?? 0,
     correct: (j['correct'] as num?)?.toInt() ?? 0,
     lastCorrect: j['lastCorrect'] as bool? ?? false,
@@ -161,19 +186,26 @@ class StudyState {
     this.readerTheme = ReaderTheme.light,
     this.dimNightPages = false,
     this.positions = const {},
+    this.lessonPositions = const {},
     this.lastRead,
     this.bookmarks = const [],
     this.notes = const [],
     this.topicProgress = const {},
     this.quiz = const {},
+    this.savedSession,
+    this.recentSearches = const {},
+    this.favoriteRules = const {},
     this.streakEnabled = false,
     this.studyDays = const {},
+    this.learningDays = const {},
+    this.weeklyGoal = 3,
     this.hapticsEnabled = true,
     this.reminderEnabled = false,
     this.reminderMinutes = 20 * 60,
     this.appTheme = AppThemeChoice.system,
     this.lessonTextScale = 1.0,
     this.welcomed = false,
+    this.learningIntent = LearningIntent.guided,
   });
 
   /// Arabic on first launch, regardless of device language.
@@ -185,15 +217,23 @@ class StudyState {
 
   /// Remembered reading position per edition.
   final Map<String, int> positions;
+  final Map<String, int> lessonPositions;
   final LastRead? lastRead;
   final List<Bookmark> bookmarks;
   final List<Note> notes;
   final Map<String, TopicProgress> topicProgress;
   final Map<String, QuizRecord> quiz;
+  final SavedSession? savedSession;
+  final Map<String, List<String>> recentSearches;
+  final Set<String> favoriteRules;
   final bool streakEnabled;
 
   /// Days (yyyy-mm-dd, local) on which the learner read or practised.
   final Set<String> studyDays;
+
+  /// Days with an answer or explicit lesson completion, not just a page open.
+  final Set<String> learningDays;
+  final int weeklyGoal;
 
   /// Light touch feedback on taps that change something.
   final bool hapticsEnabled;
@@ -211,43 +251,59 @@ class StudyState {
 
   /// The welcome screen has been seen (first launch only).
   final bool welcomed;
+  final LearningIntent learningIntent;
 
   StudyState copyWith({
     AppLanguage? language,
     ReaderTheme? readerTheme,
     bool? dimNightPages,
     Map<String, int>? positions,
+    Map<String, int>? lessonPositions,
     LastRead? lastRead,
     List<Bookmark>? bookmarks,
     List<Note>? notes,
     Map<String, TopicProgress>? topicProgress,
     Map<String, QuizRecord>? quiz,
+    SavedSession? savedSession,
+    bool clearSavedSession = false,
+    Map<String, List<String>>? recentSearches,
+    Set<String>? favoriteRules,
     bool? streakEnabled,
     Set<String>? studyDays,
+    Set<String>? learningDays,
+    int? weeklyGoal,
     bool? hapticsEnabled,
     bool? reminderEnabled,
     int? reminderMinutes,
     AppThemeChoice? appTheme,
     double? lessonTextScale,
     bool? welcomed,
+    LearningIntent? learningIntent,
   }) => StudyState(
     language: language ?? this.language,
     readerTheme: readerTheme ?? this.readerTheme,
     dimNightPages: dimNightPages ?? this.dimNightPages,
     positions: positions ?? this.positions,
+    lessonPositions: lessonPositions ?? this.lessonPositions,
     lastRead: lastRead ?? this.lastRead,
     bookmarks: bookmarks ?? this.bookmarks,
     notes: notes ?? this.notes,
     topicProgress: topicProgress ?? this.topicProgress,
     quiz: quiz ?? this.quiz,
+    savedSession: clearSavedSession ? null : savedSession ?? this.savedSession,
+    recentSearches: recentSearches ?? this.recentSearches,
+    favoriteRules: favoriteRules ?? this.favoriteRules,
     streakEnabled: streakEnabled ?? this.streakEnabled,
     studyDays: studyDays ?? this.studyDays,
+    learningDays: learningDays ?? this.learningDays,
+    weeklyGoal: weeklyGoal ?? this.weeklyGoal,
     hapticsEnabled: hapticsEnabled ?? this.hapticsEnabled,
     reminderEnabled: reminderEnabled ?? this.reminderEnabled,
     reminderMinutes: reminderMinutes ?? this.reminderMinutes,
     appTheme: appTheme ?? this.appTheme,
     lessonTextScale: lessonTextScale ?? this.lessonTextScale,
     welcomed: welcomed ?? this.welcomed,
+    learningIntent: learningIntent ?? this.learningIntent,
   );
 
   TopicProgress progressOf(String topicId) =>
@@ -264,7 +320,8 @@ class StudyState {
   /// Consecutive study days ending today or yesterday (no guilt: a missed day
   /// simply ends the count; the UI never scolds).
   int currentStreak(DateTime now) {
-    var day = DateTime(now.year, now.month, now.day);
+    // UTC is used only as a calendar-date label, preserving now's local date.
+    var day = DateTime.utc(now.year, now.month, now.day);
     if (!studyDays.contains(dayKey(day))) {
       day = day.subtract(const Duration(days: 1));
     }
@@ -284,6 +341,7 @@ class StudyState {
     'readerTheme': readerTheme.name,
     'dimNightPages': dimNightPages,
     'positions': positions,
+    'lessonPositions': lessonPositions,
     'lastRead': lastRead?.toJson(),
     'bookmarks': [for (final b in bookmarks) b.toJson()],
     'notes': [for (final n in notes) n.toJson()],
@@ -291,12 +349,18 @@ class StudyState {
       for (final e in topicProgress.entries) e.key: {'status': e.value.name},
     },
     'quiz': {for (final e in quiz.entries) e.key: e.value.toJson()},
+    'savedSession': savedSession?.toJson(),
+    'recentSearches': recentSearches,
+    'favoriteRules': favoriteRules.toList()..sort(),
     'streak': {'enabled': streakEnabled, 'days': (studyDays.toList()..sort())},
+    'learningDays': learningDays.toList()..sort(),
+    'weeklyGoal': weeklyGoal,
     'haptics': hapticsEnabled,
     'reminder': {'enabled': reminderEnabled, 'minutes': reminderMinutes},
     'appTheme': appTheme.name,
     'lessonTextScale': lessonTextScale,
     'welcomed': welcomed,
+    'learningIntent': learningIntent.name,
   };
 
   static StudyState fromJson(Map<String, dynamic> j) {
@@ -320,6 +384,10 @@ class StudyState {
     final reminder = (j['reminder'] as Map?) ?? const {};
     final minutes = (reminder['minutes'] as num?)?.toInt() ?? 20 * 60;
     return StudyState(
+      learningIntent: LearningIntent.values.firstWhere(
+        (v) => v.name == j['learningIntent'],
+        orElse: () => LearningIntent.guided,
+      ),
       language: AppLanguage.fromCode(j['language'] as String?),
       readerTheme: ReaderTheme.values.firstWhere(
         (t) => t.name == j['readerTheme'],
@@ -327,6 +395,11 @@ class StudyState {
       ),
       dimNightPages: j['dimNightPages'] as bool? ?? false,
       positions: positions,
+      lessonPositions: {
+        for (final e in ((j['lessonPositions'] as Map?) ?? const {}).entries)
+          if (e.key is String && e.value is int && e.value >= 0)
+            e.key as String: e.value as int,
+      },
       lastRead: LastRead.fromJson(j['lastRead']),
       bookmarks: [
         for (final b in (j['bookmarks'] as List?) ?? const [])
@@ -338,10 +411,29 @@ class StudyState {
       ],
       topicProgress: progress,
       quiz: quiz,
+      savedSession: SavedSession.fromJson(j['savedSession']),
+      favoriteRules: {
+        for (final id in (j['favoriteRules'] as List?) ?? const [])
+          if (id is String) id,
+      },
+      recentSearches: {
+        for (final e in ((j['recentSearches'] as Map?) ?? const {}).entries)
+          if (e.key is String && e.value is List)
+            e.key as String: (e.value as List)
+                .whereType<String>()
+                .where((s) => s.trim().isNotEmpty && s.length <= 120)
+                .take(8)
+                .toList(),
+      },
       streakEnabled: streak['enabled'] as bool? ?? false,
       studyDays: {
         for (final d in (streak['days'] as List?) ?? const []) d as String,
       },
+      learningDays: {
+        for (final day in (j['learningDays'] as List?) ?? const [])
+          if (day is String) day,
+      },
+      weeklyGoal: ((j['weeklyGoal'] as num?)?.toInt() ?? 3).clamp(1, 7),
       hapticsEnabled: j['haptics'] as bool? ?? true,
       reminderEnabled: reminder['enabled'] as bool? ?? false,
       reminderMinutes: minutes.clamp(0, 24 * 60 - 1),
@@ -379,24 +471,49 @@ final languageProvider = Provider<AppLanguage>(
   (ref) => ref.watch(studyProvider.select((s) => s.language)),
 );
 
+enum StudySaveStatus { saved, pending, failed }
+
+final studySaveStatusProvider =
+    NotifierProvider<StudySaveStatusController, StudySaveStatus>(
+      StudySaveStatusController.new,
+    );
+
+class StudySaveStatusController extends Notifier<StudySaveStatus> {
+  @override
+  StudySaveStatus build() => StudySaveStatus.saved;
+
+  void update(StudySaveStatus value) => state = value;
+}
+
 class StudyController extends Notifier<StudyState> {
   Timer? _debounce;
+  JsonStore? _store;
+  late StudyState _latest;
+  bool _dirty = false;
 
   @override
   StudyState build() {
+    _store = ref.read(storeProvider);
+    _latest = ref.read(initialStudyStateProvider);
     ref.onDispose(() {
-      // Never lose a pending (debounced) position on shutdown.
-      if (_debounce?.isActive ?? false) flush();
       _debounce?.cancel();
+      // A disposed Ref cannot read providers. All dependencies and the latest
+      // snapshot are captured while alive, including a previously failed save.
+      if (_dirty) _writeLatest(notify: false);
     });
-    return ref.read(initialStudyStateProvider);
+    return _latest;
   }
 
   DateTime get _now => ref.read(clockProvider)();
 
   void _set(StudyState next, {bool debounce = false}) {
+    _latest = next;
+    _dirty = true;
     state = next;
     if (debounce) {
+      if (ref.read(studySaveStatusProvider) != StudySaveStatus.failed) {
+        _saveStatus(StudySaveStatus.pending);
+      }
       _debounce?.cancel();
       _debounce = Timer(const Duration(milliseconds: 600), flush);
     } else {
@@ -404,12 +521,120 @@ class StudyController extends Notifier<StudyState> {
     }
   }
 
+  void flushPending() {
+    if (_dirty) flush();
+  }
+
+  void _saveStatus(StudySaveStatus status) =>
+      ref.read(studySaveStatusProvider.notifier).update(status);
+
+  void _writeLatest({required bool notify}) {
+    try {
+      _store?.saveSync(_latest.toJson());
+      _dirty = false;
+      if (notify) _saveStatus(StudySaveStatus.saved);
+    } catch (_) {
+      // Keep the in-memory changes and dirty snapshot available for retry;
+      // ordinary edits must not throw through UI callbacks or timer callbacks.
+      _dirty = true;
+      if (notify) _saveStatus(StudySaveStatus.failed);
+    }
+  }
+
   /// Writes the current state to disk (synchronously; the document is small).
-  Future<void> flush() {
+  Future<void> flush({bool deferStatus = false}) {
     _debounce?.cancel();
-    ref.read(storeProvider)?.saveSync(state.toJson());
+    if (_dirty) {
+      _writeLatest(notify: !deferStatus);
+      if (deferStatus) {
+        // Reader disposal can run while the widget tree is locked. Persist
+        // immediately, then publish feedback after that lifecycle completes.
+        scheduleMicrotask(() {
+          if (ref.mounted) {
+            _saveStatus(
+              _dirty ? StudySaveStatus.failed : StudySaveStatus.saved,
+            );
+          }
+        });
+      }
+    }
     return Future.value();
   }
+
+  void restoreBackup(StudyState restored) {
+    final next = restored.copyWith(
+      reminderEnabled: state.reminderEnabled,
+      welcomed: true,
+    );
+    // Commit to storage before replacing the live state. A failed write must
+    // not leave the screen claiming that imported progress was restored.
+    _store?.saveSync(next.toJson());
+    _debounce?.cancel();
+    _latest = next;
+    _dirty = false;
+    state = next;
+    _saveStatus(StudySaveStatus.saved);
+  }
+
+  void toggleFavoriteRule(String id) {
+    if (ref.read(contentProvider).rule(id) == null) return;
+    final favorites = {...state.favoriteRules};
+    if (!favorites.add(id)) favorites.remove(id);
+    _set(state.copyWith(favoriteRules: favorites));
+  }
+
+  Note addLessonNote(String topicId, int block, String text) {
+    final lang = state.language;
+    final lesson = ref.read(contentProvider).lesson(topicId, lang.code);
+    if (lesson == null ||
+        block < 0 ||
+        block >= lesson.blocks.length ||
+        text.trim().isEmpty) {
+      throw ArgumentError('Invalid lesson note');
+    }
+    final section = lesson.blocks[block];
+    final note = Note(
+      id: 'n${_now.microsecondsSinceEpoch}',
+      edition: lang.editionId,
+      page: section.page,
+      topicId: topicId,
+      text: text.trim(),
+      createdAt: _now,
+      updatedAt: _now,
+      lessonBlock: block,
+      sectionTitle: section.plain,
+    );
+    _set(state.copyWith(notes: [note, ...state.notes]));
+    return note;
+  }
+
+  void saveSession(SavedSession? session) => _set(
+    state.copyWith(savedSession: session, clearSavedSession: session == null),
+  );
+
+  void rememberSearch(String query) {
+    final text = query.trim();
+    if (text.length < 2 || text.length > 120) return;
+    final lang = state.language.code;
+    final previous = state.recentSearches[lang] ?? const <String>[];
+    _set(
+      state.copyWith(
+        recentSearches: {
+          ...state.recentSearches,
+          lang: [text, ...previous.where((q) => q != text)].take(8).toList(),
+        },
+      ),
+    );
+  }
+
+  void clearRecentSearches() => _set(
+    state.copyWith(
+      recentSearches: {...state.recentSearches, state.language.code: const []},
+    ),
+  );
+
+  void setWeeklyGoal(int days) =>
+      _set(state.copyWith(weeklyGoal: days.clamp(1, 7)));
 
   void setLanguage(AppLanguage language) =>
       _set(state.copyWith(language: language));
@@ -422,6 +647,9 @@ class StudyController extends Notifier<StudyState> {
       _set(state.copyWith(hapticsEnabled: enabled));
   void setReminder({bool? enabled, int? minutes}) =>
       _set(state.copyWith(reminderEnabled: enabled, reminderMinutes: minutes));
+
+  void setLearningIntent(LearningIntent intent) =>
+      _set(state.copyWith(learningIntent: intent));
 
   void setWelcomed() => _set(state.copyWith(welcomed: true));
 
@@ -453,7 +681,7 @@ class StudyController extends Notifier<StudyState> {
         lastRead: LastRead(
           edition: edition,
           page: page,
-          topicId: topicId ?? state.lastRead?.topicId,
+          topicId: topicId,
           at: _now,
         ),
         topicProgress: progress,
@@ -492,12 +720,27 @@ class StudyController extends Notifier<StudyState> {
     );
   }
 
+  void recordLessonSection(String key, int block) {
+    if (state.lessonPositions[key] == block) return;
+    _set(
+      state.copyWith(lessonPositions: {...state.lessonPositions, key: block}),
+      debounce: true,
+    );
+  }
+
   void setTopicCompleted(String topicId, bool completed) {
     final progress = Map<String, TopicProgress>.from(state.topicProgress);
     progress[topicId] = completed
         ? TopicProgress.completed
         : TopicProgress.read;
-    _set(state.copyWith(topicProgress: progress));
+    _set(
+      state.copyWith(
+        topicProgress: progress,
+        learningDays: completed
+            ? {...state.learningDays, StudyState.dayKey(_now)}
+            : state.learningDays,
+      ),
+    );
   }
 
   void toggleBookmark(String edition, int page) {
@@ -529,6 +772,16 @@ class StudyController extends Notifier<StudyState> {
       ],
     ),
   );
+
+  void restoreBookmark(Bookmark bookmark, {int? index}) {
+    if (state.bookmarks.any((b) => b.id == bookmark.id) ||
+        state.isBookmarked(bookmark.edition, bookmark.page)) {
+      return;
+    }
+    final bookmarks = [...state.bookmarks];
+    bookmarks.insert((index ?? 0).clamp(0, bookmarks.length), bookmark);
+    _set(state.copyWith(bookmarks: bookmarks));
+  }
 
   Note addNote(String edition, int page, String text) {
     final topics = ref.read(contentProvider).topicsAtPage(edition, page);
@@ -563,23 +816,50 @@ class StudyController extends Notifier<StudyState> {
     ),
   );
 
-  void recordAnswer(String questionId, bool correct) {
+  void restoreNote(Note note, {int? index}) {
+    if (state.notes.any((n) => n.id == note.id)) return;
+    final notes = [...state.notes];
+    notes.insert((index ?? 0).clamp(0, notes.length), note);
+    _set(state.copyWith(notes: notes));
+  }
+
+  void recordAnswer(
+    String questionId,
+    bool correct, {
+    SavedSession? checkpoint,
+    bool finishSession = false,
+  }) {
     final prev = state.quiz[questionId];
+    final now = _now;
+    final stage = correct
+        ? prev != null && !prev.isDue(now)
+              ? prev.reviewStage
+              : ((prev?.reviewStage ?? 0) + 1).clamp(1, 4)
+        : 0;
+    final days = const [1, 1, 3, 7, 14][stage];
     final rec = QuizRecord(
       attempts: (prev?.attempts ?? 0) + 1,
       correct: (prev?.correct ?? 0) + (correct ? 1 : 0),
       lastCorrect: correct,
-      lastAt: _now,
+      lastAt: now,
+      reviewStage: stage,
+      nextReviewAt: correct && prev != null && !prev.isDue(now)
+          ? prev.nextReviewAt
+          : now.add(Duration(days: days)),
     );
     _set(
       state.copyWith(
         quiz: {...state.quiz, questionId: rec},
+        savedSession: checkpoint,
+        clearSavedSession: finishSession,
+        learningDays: {...state.learningDays, StudyState.dayKey(now)},
         studyDays: {...state.studyDays, StudyState.dayKey(_now)},
       ),
     );
   }
 
-  void resetPractice() => _set(state.copyWith(quiz: const {}));
+  void resetPractice() =>
+      _set(state.copyWith(quiz: const {}, clearSavedSession: true));
 }
 
 /// Per-topic quiz performance, derived from the latest answer to each question.

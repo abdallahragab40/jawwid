@@ -280,6 +280,8 @@ void main() {
           )
           .first,
     );
+    await Scrollable.ensureVisible(tester.element(reminder), alignment: 0.5);
+    await tester.pumpAndSettle();
     await tester.tap(reminder);
     await tester.pumpAndSettle();
     expect(container.read(studyProvider).reminderEnabled, isTrue);
@@ -323,6 +325,8 @@ void main() {
           )
           .first,
     );
+    await Scrollable.ensureVisible(tester.element(reminder), alignment: 0.5);
+    await tester.pumpAndSettle();
     await tester.tap(reminder);
     await tester.pumpAndSettle();
     expect(container.read(studyProvider).reminderEnabled, isFalse);

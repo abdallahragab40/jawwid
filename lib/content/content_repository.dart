@@ -83,10 +83,16 @@ class ContentRepository {
     for (final r in _allRules)
       if (_visible(r.review)) r,
   ];
-  List<Question> get questions => [
-    for (final q in _allQuestions)
-      if (_visible(q.review)) q,
-  ];
+  List<Question> get questions {
+    final visibleRuleIds = rules.map((r) => r.id).toSet();
+    return [
+      for (final q in _allQuestions)
+        if (_visible(q.review) &&
+            (q.type != QuestionType.identify ||
+                q.ruleOptions.every(visibleRuleIds.contains)))
+          q,
+    ];
+  }
 
   /// Counts of all supplementary items regardless of channel (for diagnostics).
   int get totalRuleCount => _allRules.length;

@@ -7,6 +7,7 @@ import '../../content/models.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
 import '../study/study_state.dart';
+import '../lessons/lesson_outline.dart';
 
 /// The 30 Level-2 topics in the order of the books' topic list. Nothing is
 /// locked: every topic opens the original pages directly.
@@ -19,9 +20,16 @@ class CurriculumScreen extends ConsumerWidget {
     final content = ref.watch(contentProvider);
     final lang = ref.watch(languageProvider);
     final progress = ref.watch(studyProvider.select((s) => s.topicProgress));
-    final read = progress.values.where((p) => p != TopicProgress.none).length;
-    final completed = progress.values
-        .where((p) => p == TopicProgress.completed)
+    final available = content.topics
+        .where((t) => t.isAvailableIn(lang.editionId))
+        .toList();
+    final read = available
+        .where(
+          (t) => (progress[t.id] ?? TopicProgress.none) != TopicProgress.none,
+        )
+        .length;
+    final completed = available
+        .where((t) => progress[t.id] == TopicProgress.completed)
         .length;
 
     return Scaffold(
@@ -47,7 +55,7 @@ class CurriculumScreen extends ConsumerWidget {
             l10n.curriculumProgress(
               n(read, lang),
               n(completed, lang),
-              n(content.topics.length, lang),
+              n(available.length, lang),
             ),
             style: context.type.ui(size: 13.5, weight: FontWeight.w600),
           ),
@@ -59,9 +67,17 @@ class CurriculumScreen extends ConsumerWidget {
               index: gi,
               title: g.title.of(lang.code),
               done: g.topicIds
-                  .where((t) => progress[t] == TopicProgress.completed)
+                  .where(
+                    (t) =>
+                        content.topic(t).isAvailableIn(lang.editionId) &&
+                        progress[t] == TopicProgress.completed,
+                  )
                   .length,
-              total: g.topicIds.length,
+              total: g.topicIds
+                  .where(
+                    (id) => content.topic(id).isAvailableIn(lang.editionId),
+                  )
+                  .length,
             ),
             Card(
               child: Column(
@@ -121,6 +137,10 @@ class _TopicTile extends ConsumerWidget {
     } else {
       subtitle = pageRangeLabel(l10n, range, lang);
     }
+    final lesson = ref.watch(contentProvider).lesson(topic.id, lang.code);
+    final detail = lesson == null
+        ? subtitle
+        : '$subtitle · ${l10n.lessonReadingTime(n(lessonReadingMinutes(lesson), lang))}';
     return ListTile(
       leading: Semantics(
         label: label,
@@ -140,7 +160,7 @@ class _TopicTile extends ConsumerWidget {
         ),
       ),
       title: Text(topicTitle(topic, lang)),
-      subtitle: Text(subtitle),
+      subtitle: Text(detail),
       trailing: Icon(
         Icons.chevron_right,
         textDirection: Directionality.of(context),

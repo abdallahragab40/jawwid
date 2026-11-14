@@ -16,6 +16,8 @@ The build fails if any reference, pattern or highlight cannot be matched.
 Usage:  python3 -I tools/build_content.py
 """
 import json, os, re, sys, unicodedata
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from review_integrity import approved_item, item_fingerprint
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TANZIL = os.path.join(ROOT, 'tools', 'tanzil-quran-uthmani-1.1.txt')
@@ -136,6 +138,11 @@ def main():
         data = json.load(open(src_path, encoding='utf-8'))
         items = data['rules'] if name == 'rules' else data['questions']
         for item in items:
+            source_hash = item_fingerprint(item)
+            if item.get('review', {}).get('status') == 'reviewed' and not approved_item(item):
+                print(f"Approval invalidated by missing/changed fingerprint: {name}:{item['id']}")
+                item['review'] = {'status': 'draft'}
+            item['sourceFingerprint'] = source_hash
             ex = item.get('example')
             if ex:
                 r = resolve(verses, ex['ref'], ex['pattern'], f"{name}:{item['id']}")

@@ -389,7 +389,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get notesEmpty =>
-      'هێشتا هیچ تێبینییەک نییە. لە شاشەی خوێندنەوە تێبینی زیاد بکە.';
+      'هێشتا تێبینی نییە. لە ناوەڕۆکی وانە یان خوێنەرەوەی کتێب تێبینی زیاد بکە.';
 
   @override
   String get notesTab => 'تێبینییەکان';
@@ -851,7 +851,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'جەووید داتای شیکاریی بەکارهێنان کۆ ناکاتەوە. ڕێکخستن و پێشکەوتن و تێبینییەکانت لەسەر ئامێرەکەت دەمێننەوە و بە سڕینەوەی ئەپ دەسڕێنەوە. ناردنی تێبینی ئەپی ئیمەیڵ دەکاتەوە؛ بەستەرەکانی پشتگیری ئەپی پارەدان یان ماڵپەڕێکی دەرەکی دەکەنەوە. ئەو خزمەتگوزارییانە بە پێی سیاسەتی تایبەتمەندیی خۆیان مامەڵە لەگەڵ زانیارییە نێردراوەکان دەکەن.';
+      'جەووید ئاماری بەکارهێنان یان بەدواداچوونی نییە. زانیاریی فێربوون و مێژووی گەڕان و دڵخوازەکان و ڕێکخستنەکان لەسەر ئامێرەکەت دەمێننەوە. دەتوانیت پاشەکەوتێک لەگەڵ تێبینییەکان بۆ کلیپبۆرد کۆپی بکەیت و لە دەرەوەی ئەپ بیپارێزیت؛ ئەو کۆپییانە دوای سڕینەوەی ئەپ دەمێننەوە. ناردنی تێبینی ئەپی ئیمەیڵ دەکاتەوە و بەستەرەکانی پشتگیری ئەپی پارەدان یان ماڵپەڕێکی دەرەکی دەکەنەوە. ئەو خزمەتگوزارییانە بەپێی سیاسەتی تایبەتی خۆیان مامەڵە لەگەڵ ئەوە دەکەن کە تۆ هەڵدەبژێریت بینێریت.';
 
   @override
   String get aboutQuranText => 'دەقی قورئان';
@@ -947,4 +947,178 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get supportVodafone => 'Vodafone Cash';
+
+  @override
+  String get practiceLength => 'ژمارەی پرسیارەکان';
+
+  @override
+  String get practiceDue => 'پرسیارەکانی پێداچوونەوە';
+
+  @override
+  String get backupTitle => 'پاشەکەوت و گەڕاندنەوە';
+
+  @override
+  String get backupIntro =>
+      'فایلی پاشەکەوت لە شوێنێکی تایبەت بپارێزە، یان دەقەکەی کۆپی بکە. تێبینی و پێشکەوتنت لەخۆ دەگرێت. بۆ گەڕاندنەوە فایلەکە بکەرەوە یان دەقەکەی لە خوارەوە دابنێ.';
+
+  @override
+  String get backupCopy => 'کۆپیکردنی پاشەکەوت';
+
+  @override
+  String get backupRestore => 'گەڕاندنەوەی پاشەکەوت';
+
+  @override
+  String get backupConfirm =>
+      'ڕێکخستن و تێبینی و پێشکەوتنی ئێستا بەم پاشەکەوتە بگۆڕدرێن؟';
+
+  @override
+  String get backupInvalid =>
+      'ئەم پاشەکەوتە نادروستە یان لە وەشانێکی پشتگیرینەکراوە.';
+
+  @override
+  String get backupRestored => 'پاشەکەوت گەڕێندرایەوە.';
+
+  @override
+  String get dailySession => 'ئەمڕۆ: دانیشتنێکی کورتی فێربوون';
+
+  @override
+  String get practiceAllTopics => 'ڕاهێنان لەسەر هەموو بابەتەکان';
+
+  @override
+  String get weeklyLearningGoal => 'ئامانجی فێربوونی هەفتانە';
+
+  @override
+  String get weeklyLearningDays => 'ڕۆژەکانی فێربوون لەم هەفتەیەدا';
+
+  @override
+  String get practiceResume => 'بەردەوامبە لە ڕاهێنانی پاشەکەوتکراو';
+
+  @override
+  String get searchRecent => 'گەڕانەکانی ئەم دواییە';
+
+  @override
+  String get searchClearHistory => 'سڕینەوەی مێژووی گەڕان';
+
+  @override
+  String get ruleFavorite => 'پاشەکەوت یان لابردن لە دڵخوازەکان';
+
+  @override
+  String get ruleFavorites => 'یاسا دڵخوازەکان';
+
+  @override
+  String get notesOpenSection => 'کردنەوەی بەشی وانە';
+
+  @override
+  String get notesSaved => 'تێبینی پاشەکەوت کرا';
+
+  @override
+  String get ruleCompare => 'بەراوردکردنی یاساکان';
+
+  @override
+  String get ruleCompareFirst => 'یاسای یەکەم';
+
+  @override
+  String get ruleCompareSecond => 'یاسای دووەم';
+
+  @override
+  String get ruleCompareUnavailable =>
+      'بۆ بەراوردکردن دوو کارتی پێداچوونەوەکراو پێویستە. دەتوانیت لە ئێستادا کتێبی ڕەسەن بخوێنیتەوە.';
+
+  @override
+  String get learningIntent => 'چۆن دەتەوێت فێر بیت؟';
+
+  @override
+  String get learningIntentHint =>
+      'ئارەزوومەندانەیە. دەتوانیت لە ڕێکخستنەکان بیگۆڕیت.';
+
+  @override
+  String get learningGuided => 'هەنگاو بە هەنگاو';
+
+  @override
+  String get learningRevision => 'پێداچوونەوە';
+
+  @override
+  String get learningExplore => 'گەڕان بە بابەتەکاندا';
+
+  @override
+  String get lessonReviewOutline => 'پێداچوونەوە بە بەشەکانی وانە';
+
+  @override
+  String lessonReadingTime(String minutes) {
+    return 'نزیکەی $minutes خولەک بۆ خوێندنەوە';
+  }
+
+  @override
+  String practiceDelayedReview(String count) {
+    return 'پرسیارەکان کە دوای ماوەیەک بەڕاستی وەڵامدرانەوە: $count';
+  }
+
+  @override
+  String get startupLoading => 'کردنەوەی کەرەستەکانی فێربوون…';
+
+  @override
+  String get startupFailed =>
+      'جەووید نەکرایەوە. تکایە دووبارە هەوڵ بدەوە. زانیارییە پاشەکەوتکراوەکانت نەسڕاونەتەوە.';
+
+  @override
+  String get startupUpdateRequired =>
+      'زانیارییەکانت بە وەشانێکی نوێتر پاشەکەوت کراون. بۆ بەردەوامبوون جەووید نوێ بکەرەوە.';
+
+  @override
+  String get startupRetry => 'دووبارە هەوڵ بدەوە';
+
+  @override
+  String get backupRecoveryIntro =>
+      'پاشەکەوتێک بلکێنە بۆ گەڕاندنەوەی زانیارییەکانت. پشتڕاستکردنەوە زانیارییە نەخوێندراوەکان دەگۆڕێت. بیرخستنەوە ناچالاک دەمێنێتەوە تا لە ڕێکخستنەکان چالاکی بکەیت.';
+
+  @override
+  String get backupWriteFailed =>
+      'نەتوانرا زانیارییە گەڕێندراوەکان پاشەکەوت بکرێن. شوێنی پاشەکەوتکردنی ئامێرەکەت بپشکنە و دووبارە هەوڵ بدەوە.';
+
+  @override
+  String get savePending => 'گۆڕانکارییەکانت پاشەکەوت دەکرێن…';
+
+  @override
+  String get saveFailed =>
+      'دوایین گۆڕانکارییەکانت پاشەکەوت نەکراون. ئەپەکە کراوە بهێڵەوە و دووبارە هەوڵ بدەوە.';
+
+  @override
+  String get settingsReminderFailed =>
+      'بیرخەرەوە نوێ نەکرایەوە. ڕێکخستنەکانی ئاگادارکردنەوە بپشکنە و دووبارە هەوڵ بدەوە.';
+
+  @override
+  String get actionUndo => 'گەڕاندنەوە';
+
+  @override
+  String get noteDeleted => 'تێبینی سڕایەوە';
+
+  @override
+  String get bookmarkDeleted => 'نیشانە لابرا';
+
+  @override
+  String get backupSaveFile => 'پاشەکەوتکردنی فایلی پاشەکەوت';
+
+  @override
+  String get backupOpenFile => 'کردنەوەی فایلی پاشەکەوت';
+
+  @override
+  String get backupFileSaved => 'فایلی پاشەکەوت پارێزرا.';
+
+  @override
+  String get backupFileError =>
+      'فایلی پاشەکەوت نەکرایەوە یان پاشەکەوت نەکرا. دووبارە هەوڵ بدەوە.';
+
+  @override
+  String backupSummary(String date, String notes, String bookmarks) {
+    return 'پاشەکەوتی $date: $notes تێبینی و $bookmarks نیشانە.';
+  }
+
+  @override
+  String get backupUnknownDate => 'بەرواری نەزانراو';
+
+  @override
+  String get feedbackDetails => 'وردەکارییەکانی ئەپ و ناوەڕۆک زیاد بکە';
+
+  @override
+  String get feedbackDetailsHint => 'تێبینی و وەڵامەکانت زیاد ناکرێن.';
 }

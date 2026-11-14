@@ -7,9 +7,12 @@ import '../features/more/more_screen.dart';
 import '../features/practice/practice_screen.dart';
 import '../features/rules/rules_screen.dart';
 import '../core/haptics.dart';
+import '../features/study/study_state.dart';
+import '../features/reader/reader_document.dart';
+import '../features/reader/reader_screen.dart';
 import '../l10n/generated/app_localizations.dart';
 
-class RootShell extends StatefulWidget {
+class RootShell extends ConsumerStatefulWidget {
   const RootShell({super.key, this.initialTab = 0});
   final int initialTab;
 
@@ -17,10 +20,10 @@ class RootShell extends StatefulWidget {
       context.findAncestorStateOfType<RootShellState>();
 
   @override
-  State<RootShell> createState() => RootShellState();
+  ConsumerState<RootShell> createState() => RootShellState();
 }
 
-class RootShellState extends State<RootShell> {
+class RootShellState extends ConsumerState<RootShell> {
   late int _index = widget.initialTab;
 
   void selectTab(int index) => setState(() => _index = index);
@@ -28,6 +31,13 @@ class RootShellState extends State<RootShell> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    // Prepare only the selected language's book while the learner browses.
+    // Test readers replace native PDF rendering and need no preparation.
+    if (ref.watch(pageViewSubstituteProvider) == null) {
+      final edition = ref.watch(languageProvider).editionId;
+      final asset = ref.watch(contentProvider).editions[edition]!.asset;
+      ref.watch(readerDocumentProvider(asset));
+    }
     return Scaffold(
       body: IndexedStack(
         index: _index,

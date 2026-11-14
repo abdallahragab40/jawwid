@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/routes.dart';
+import '../more/contact_screen.dart';
 import '../../app/theme.dart';
 import '../../content/content_repository.dart';
 import '../../content/language.dart';
@@ -16,6 +17,7 @@ import '../../widgets/quran_excerpt_view.dart';
 import '../study/study_state.dart';
 import '../../core/haptics.dart';
 import 'session.dart';
+import 'saved_session.dart';
 import 'sort_board.dart';
 
 /// Source of randomness for option order; overridden in tests.
@@ -31,11 +33,17 @@ class QuizScreen extends ConsumerStatefulWidget {
     this.topicId,
     this.ruleId,
     this.mistakesOnly = false,
+    this.dueOnly = false,
+    this.learnedOnly = false,
     this.limit = quizSessionSize,
+    this.resume = false,
   });
   final String? topicId;
   final String? ruleId;
   final bool mistakesOnly;
+  final bool dueOnly;
+  final bool learnedOnly;
+  final bool resume;
 
   /// Number of questions in the session.
   final int limit;
@@ -51,6 +59,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   late final List<List<int>> _order;
   int _index = 0;
   int _correct = 0;
+  String? _topicId;
+  String? _ruleId;
   final _missed = <Question>[];
 
   /// The question on screen, or null on the result page.
@@ -64,8 +74,30 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   void initState() {
     super.initState();
     final content = ref.read(contentProvider);
+    _topicId = widget.topicId;
+    _ruleId = widget.ruleId;
+    final saved = ref.read(studyProvider).savedSession;
+    if (widget.resume && saved != null && saved.canResume(content)) {
+      final byId = {for (final q in content.questions) q.id: q};
+      _questions = [for (final id in saved.questionIds) byId[id]!];
+      _order = saved.order;
+      _index = saved.index;
+      _correct = saved.correct;
+      _missed.addAll([for (final id in saved.missedIds) byId[id]!]);
+      _topicId = saved.topicId;
+      _ruleId = saved.ruleId;
+      return;
+    }
     final quiz = ref.read(studyProvider).quiz;
     var qs = content.questions;
+    if (widget.learnedOnly) {
+      final study = ref.read(studyProvider);
+      final learned = qs
+          .where((q) => study.progressOf(q.topicId) != TopicProgress.none)
+          .toList();
+      // New learners can explore practice before starting their first lesson.
+      if (learned.isNotEmpty) qs = learned;
+    }
     if (widget.topicId != null) {
       qs = [
         for (final q in qs)
@@ -84,6 +116,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       quiz,
       random,
       mistakesOnly: widget.mistakesOnly,
+      dueOnly: widget.dueOnly,
+      now: ref.read(clockProvider)(),
       limit: widget.limit,
     );
     _order = [
@@ -95,7 +129,26 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
           QuestionType.sort => q.items.length,
         }, (i) => i)..shuffle(random),
     ];
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) ref.read(studyProvider.notifier).saveSession(_checkpoint(0));
+    });
   }
+
+  SavedSession? _checkpoint(int next) => next >= _questions.length
+      ? null
+      : SavedSession(
+          contentVersion: ref.read(contentProvider).contentVersion,
+          fingerprint: SavedSession.fingerprintFor(ref.read(contentProvider), [
+            for (final q in _questions) q.id,
+          ]),
+          questionIds: [for (final q in _questions) q.id],
+          order: _order,
+          index: next,
+          correct: _correct,
+          missedIds: [for (final q in _missed) q.id],
+          topicId: _topicId,
+          ruleId: _ruleId,
+        );
 
   bool _isCorrect(Question q, Object? choice) => switch (q.type) {
     QuestionType.identify => choice == q.answerRuleId,
@@ -121,7 +174,14 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         _missed.add(q);
       }
     });
-    ref.read(studyProvider.notifier).recordAnswer(q.id, ok);
+    ref
+        .read(studyProvider.notifier)
+        .recordAnswer(
+          q.id,
+          ok,
+          checkpoint: _checkpoint(_index + 1),
+          finishSession: _index + 1 >= _questions.length,
+        );
     final h = ref.read(hapticsProvider);
     ok ? h.success() : h.wrong();
   }
@@ -149,14 +209,16 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
         correct: _correct,
         total: _questions.length,
         missed: _missed,
-        topicId: widget.topicId,
+        topicId: _topicId,
         onAgain: () => Navigator.of(context).pushReplacement(
           MaterialPageRoute(
             settings: const RouteSettings(name: 'quiz'),
             builder: (_) => QuizScreen(
-              topicId: widget.topicId,
-              ruleId: widget.ruleId,
+              topicId: _topicId,
+              ruleId: _ruleId,
               mistakesOnly: widget.mistakesOnly,
+              dueOnly: widget.dueOnly,
+              learnedOnly: widget.learnedOnly,
               limit: widget.limit,
             ),
           ),
@@ -332,6 +394,19 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+            tooltip: l10n.feedbackTitle,
+            icon: const Icon(Icons.flag_outlined),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => FeedbackScreen(
+                  contentContext: 'Question ${q.id} · ${lang.code}',
+                ),
+              ),
+            ),
+          ),
+        ],
         title: Text(
           l10n.quizProgress(n(_index + 1, lang), n(_questions.length, lang)),
         ),

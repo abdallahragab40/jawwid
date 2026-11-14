@@ -8,6 +8,8 @@ import 'package:rattil/content/language.dart';
 import 'package:rattil/content/models.dart';
 import 'package:rattil/features/more/more_screen.dart';
 import 'package:rattil/features/more/contact_screen.dart';
+import 'package:rattil/features/more/backup_screen.dart';
+import 'package:rattil/widgets/note_editor_dialog.dart';
 import 'package:rattil/features/study/study_state.dart';
 import 'package:rattil/l10n/generated/app_localizations.dart';
 
@@ -66,6 +68,23 @@ void main() {
 
       await screen('lesson', () => openLesson(nav.context, 't10'));
       await screen('rule card', () => openRule(nav.context, 'r05'));
+      await screen(
+        'rule comparison',
+        () => openRuleComparison(nav.context, ruleId: 'r05'),
+      );
+      await screen(
+        'backup',
+        () => nav.push(MaterialPageRoute(builder: (_) => const BackupScreen())),
+      );
+      await screen(
+        'note editor',
+        () => nav.push(
+          DialogRoute(
+            context: nav.context,
+            builder: (_) => const NoteEditorDialog(),
+          ),
+        ),
+      );
       await screen('quiz', () => openQuiz(nav.context));
       await screen('makharij', () => openMakharij(nav.context));
       await screen('search', () => openSearch(nav.context));

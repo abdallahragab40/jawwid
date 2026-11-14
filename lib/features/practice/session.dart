@@ -18,6 +18,8 @@ List<Question> buildSession(
   Random random, {
   int limit = quizSessionSize,
   bool mistakesOnly = false,
+  bool dueOnly = false,
+  DateTime? now,
 }) {
   List<Question> tier(bool Function(QuizRecord?) test) {
     final groups = <String, List<Question>>{};
@@ -36,10 +38,17 @@ List<Question> buildSession(
     ];
   }
 
+  final clock = now ?? DateTime.now();
+  if (dueOnly) {
+    return tier((r) => r != null && r.isDue(clock)).take(limit).toList();
+  }
   return [
     ...tier((r) => r != null && !r.lastCorrect),
+    if (!mistakesOnly)
+      ...tier((r) => r != null && r.lastCorrect && r.isDue(clock)),
     if (!mistakesOnly) ...tier((r) => r == null),
-    if (!mistakesOnly) ...tier((r) => r != null && r.lastCorrect),
+    if (!mistakesOnly)
+      ...tier((r) => r != null && r.lastCorrect && !r.isDue(clock)),
   ].take(limit).toList();
 }
 

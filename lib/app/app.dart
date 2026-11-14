@@ -5,6 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../content/language.dart';
 import '../core/numerals.dart';
 import '../core/reminder.dart';
+import '../core/study_persistence.dart';
+import '../widgets/study_save_banner.dart';
 import '../features/study/study_state.dart';
 import '../features/welcome/welcome_screen.dart';
 import '../l10n/ckb_localizations.dart';
@@ -33,8 +35,13 @@ class RattilApp extends ConsumerWidget {
       bool done(Map<String, TopicProgress> p, String id) =>
           p[id] == TopicProgress.completed;
       for (final (i, g) in content.groups.indexed) {
-        final now = g.topicIds.every((t) => done(next, t));
-        final before = g.topicIds.every((t) => done(prev, t));
+        final availableIds = g.topicIds
+            .where((id) => content.topic(id).isAvailableIn(language.editionId))
+            .toList();
+        final now =
+            availableIds.isNotEmpty && availableIds.every((t) => done(next, t));
+        final before =
+            availableIds.isNotEmpty && availableIds.every((t) => done(prev, t));
         if (now && !before) {
           final l10n = lookupAppLocalizations(language.locale);
           appMessengerKey.currentState
@@ -62,7 +69,10 @@ class RattilApp extends ConsumerWidget {
       }
     });
     ref.watch(reminderSyncProvider);
+    ref.watch(studyPersistenceProvider);
     return MaterialApp(
+      builder: (context, child) =>
+          StudySaveBanner(child: child ?? const SizedBox.shrink()),
       scaffoldMessengerKey: appMessengerKey,
       onGenerateTitle: (_) => Branding.name(language),
       debugShowCheckedModeBanner: false,

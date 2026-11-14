@@ -8,6 +8,7 @@ import '../features/practice/quiz_screen.dart';
 import '../features/practice/session.dart';
 import '../features/reader/reader_screen.dart';
 import '../features/rules/rule_card_screen.dart';
+import '../features/rules/rule_comparison_screen.dart';
 import '../features/search/search_screen.dart';
 import '../features/study/study_state.dart';
 
@@ -65,6 +66,9 @@ Future<void> openQuiz(
   String? topicId,
   String? ruleId,
   bool mistakesOnly = false,
+  bool dueOnly = false,
+  bool learnedOnly = false,
+  bool resume = false,
   int limit = quizSessionSize,
 }) => Navigator.of(context).push(
   MaterialPageRoute(
@@ -73,6 +77,9 @@ Future<void> openQuiz(
       topicId: topicId,
       ruleId: ruleId,
       mistakesOnly: mistakesOnly,
+      dueOnly: dueOnly,
+      learnedOnly: learnedOnly,
+      resume: resume,
       limit: limit,
     ),
   ),
@@ -107,5 +114,13 @@ Future<void> replaceLesson(BuildContext context, String topicId) =>
       MaterialPageRoute(
         settings: RouteSettings(name: 'lesson/$topicId'),
         builder: (_) => LessonScreen(topicId: topicId),
+      ),
+    );
+
+Future<void> openRuleComparison(BuildContext context, {String? ruleId}) =>
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        settings: const RouteSettings(name: 'rule-comparison'),
+        builder: (_) => RuleComparisonScreen(initialRuleId: ruleId),
       ),
     );

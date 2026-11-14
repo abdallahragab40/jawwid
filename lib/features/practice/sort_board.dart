@@ -102,6 +102,12 @@ class _SortBoardState extends ConsumerState<SortBoard> {
         button: !_checked,
         selected: selected,
         label: item.arabic,
+        value: _checked
+            ? '${placement[i] == item.group ? l10n.quizFeedbackCorrect : l10n.quizFeedbackIncorrect}. '
+                  '${l10n.quizCorrectAnswer}: ${q.groups[item.group].of(lang.code)}'
+            : placement[i] == null
+            ? null
+            : q.groups[placement[i]!].of(lang.code),
         hint: placement.containsKey(i) && !_checked
             ? l10n.quizSortReturn
             : null,

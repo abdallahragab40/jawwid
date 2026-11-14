@@ -1,8 +1,19 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
+
+val releaseKeyFile = rootProject.file("key.properties")
+val releaseKeys = Properties().apply {
+    if (releaseKeyFile.exists()) releaseKeyFile.inputStream().use { load(it) }
+}
+val hasReleaseKeys = listOf("storeFile", "storePassword", "keyAlias", "keyPassword")
+    .all { !releaseKeys.getProperty(it).isNullOrBlank() }
+val allowUnsignedRelease = providers.gradleProperty("jawwidAllowUnsignedRelease")
+    .map { it == "true" }.getOrElse(false)
 
 android {
     namespace = "app.rattil.rattil"
@@ -27,12 +38,32 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (hasReleaseKeys) {
+            create("production") {
+                storeFile = rootProject.file(releaseKeys.getProperty("storeFile"))
+                storePassword = releaseKeys.getProperty("storePassword")
+                keyAlias = releaseKeys.getProperty("keyAlias")
+                keyPassword = releaseKeys.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (hasReleaseKeys) signingConfigs.getByName("production") else null
         }
+    }
+}
+
+gradle.taskGraph.whenReady {
+    val packagesRelease = allTasks.any {
+        it.project == project && it.name in listOf("packageRelease", "packageReleaseBundle", "bundleRelease")
+    }
+    if (packagesRelease && !hasReleaseKeys && !allowUnsignedRelease) {
+        throw GradleException("Production signing is missing. Configure android/key.properties. " +
+            "For an unsigned local artifact only, set -PjawwidAllowUnsignedRelease=true. " +
+            "Release builds never use the debug key.")
     }
 }
 

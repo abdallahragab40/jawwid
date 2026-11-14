@@ -25,6 +25,19 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   final _query = TextEditingController();
   String _q = '';
 
+  void _select(VoidCallback open) {
+    ref.read(studyProvider.notifier).rememberSearch(_q);
+    open();
+  }
+
+  void _useQuery(String query) {
+    setState(() {
+      _q = query;
+      _query.text = query;
+    });
+    ref.read(studyProvider.notifier).rememberSearch(query);
+  }
+
   @override
   void dispose() {
     _query.dispose();
@@ -35,6 +48,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final lang = ref.watch(languageProvider);
+    final recent = ref.watch(
+      studyProvider.select(
+        (s) => s.recentSearches[lang.code] ?? const <String>[],
+      ),
+    );
     final content = ref.watch(contentProvider);
     final engine = ref.watch(searchEngineProvider);
     final terms = engine.searchTerms(_q);
@@ -84,6 +102,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                   ),
           ),
           onChanged: (v) => setState(() => _q = v),
+          onSubmitted: (v) =>
+              ref.read(studyProvider.notifier).rememberSearch(v),
         ),
       ),
       body: ListView(
@@ -96,6 +116,40 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
             style: context.type.muted(size: 12.5),
           ),
           const SizedBox(height: 12),
+          if (!hasQuery) ...[
+            if (recent.isNotEmpty) ...[
+              SectionHeading(l10n.searchRecent),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final query in recent)
+                    ActionChip(
+                      label: Text(query),
+                      onPressed: () => _useQuery(query),
+                    ),
+                ],
+              ),
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: TextButton(
+                  onPressed: () =>
+                      ref.read(studyProvider.notifier).clearRecentSearches(),
+                  child: Text(l10n.searchClearHistory),
+                ),
+              ),
+            ],
+            SectionHeading(l10n.searchLessons),
+            for (final topic
+                in content.topics
+                    .where((t) => t.pagesIn(lang.editionId) != null)
+                    .take(4))
+              ListTile(
+                title: Text(topicTitle(topic, lang)),
+                trailing: const Icon(Icons.search),
+                onTap: () => _useQuery(topicTitle(topic, lang)),
+              ),
+          ],
           if (hasQuery &&
               topicHits.isEmpty &&
               ruleHits.isEmpty &&
@@ -149,7 +203,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                             Icons.chevron_right,
                             textDirection: Directionality.of(context),
                           ),
-                          onTap: () => openTopic(context, t.id),
+                          onTap: () => _select(() => openTopic(context, t.id)),
                         );
                       },
                     ),
@@ -175,7 +229,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                         Icons.chevron_right,
                         textDirection: Directionality.of(context),
                       ),
-                      onTap: () => openRule(context, h.ruleId!),
+                      onTap: () => _select(() => openRule(context, h.ruleId!)),
                     ),
                   ],
                 ],
@@ -203,8 +257,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                         Icons.chevron_right,
                         textDirection: Directionality.of(context),
                       ),
-                      onTap: () =>
-                          openLesson(context, h.topicId!, block: h.block),
+                      onTap: () => _select(
+                        () => openLesson(context, h.topicId!, block: h.block),
+                      ),
                     ),
                   ],
                 ],
@@ -242,8 +297,9 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                           Icons.chevron_right,
                           textDirection: Directionality.of(context),
                         ),
-                        onTap: () =>
-                            openReader(context, edition: e, page: h.page!),
+                        onTap: () => _select(
+                          () => openReader(context, edition: e, page: h.page!),
+                        ),
                       ),
                     ],
                   ],

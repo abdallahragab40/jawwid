@@ -91,6 +91,47 @@ void main() {
     expect(find.text(ar.quizLessonCompleted), findsOneWidget);
   });
 
+  test('due reviews use time and exclude unseen or future questions', () {
+    final now = DateTime.utc(2026, 11, 13);
+    final pool = loadContent().questions.take(3).toList();
+    final records = {
+      pool[0].id: QuizRecord(
+        attempts: 1,
+        correct: 1,
+        lastCorrect: true,
+        lastAt: now,
+        nextReviewAt: now,
+      ),
+      pool[1].id: QuizRecord(
+        attempts: 1,
+        correct: 1,
+        lastCorrect: true,
+        lastAt: now,
+        nextReviewAt: now.add(const Duration(days: 1)),
+      ),
+    };
+    expect(
+      buildSession(
+        pool,
+        records,
+        Random(1),
+        dueOnly: true,
+        now: now,
+      ).map((q) => q.id),
+      [pool[0].id],
+    );
+    expect(
+      buildSession(
+        pool,
+        records,
+        Random(1),
+        dueOnly: true,
+        now: now.add(const Duration(days: 1)),
+      ).length,
+      2,
+    );
+  });
+
   group('sessions', () {
     final content = loadContent();
     final pool = content.questions;
@@ -112,6 +153,7 @@ void main() {
             correct: 1,
             lastCorrect: true,
             lastAt: DateTime(2026),
+            nextReviewAt: DateTime(2100),
           ),
         for (final q in missed)
           q.id: QuizRecord(
@@ -119,6 +161,7 @@ void main() {
             correct: 0,
             lastCorrect: false,
             lastAt: DateTime(2026),
+            nextReviewAt: DateTime(2100),
           ),
       };
       final s = buildSession(pool, results, Random(2));

@@ -384,7 +384,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notesOpenPage => 'افتح الصفحة';
 
   @override
-  String get notesEmpty => 'لا توجد ملاحظات بعد. أضف ملاحظة من شاشة القراءة.';
+  String get notesEmpty =>
+      'لا توجد ملاحظات بعد. أضف ملاحظة من محتويات الدرس أو قارئ الكتاب.';
 
   @override
   String get notesTab => 'الملاحظات';
@@ -842,7 +843,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'لا يجمع جوِّد بيانات تحليلات الاستخدام. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق. إرسال الملاحظات يفتح تطبيق بريدك، وروابط الدعم تفتح تطبيق دفع أو موقعًا خارجيًا. تتعامل هذه الخدمات مع المعلومات التي تختار إرسالها وفق سياسات الخصوصية الخاصة بها.';
+      'لا يحتوي «جَوِّد» على إحصاءات استخدام أو تتبّع. تبقى بيانات التعلم وسجل البحث والمفضلة والإعدادات على جهازك. يمكنك نسخ بياناتك، بما فيها الملاحظات، إلى الحافظة وحفظها خارج التطبيق؛ وتبقى النسخ الخارجية بعد حذف التطبيق. تفتح الملاحظات المرسلة تطبيق البريد، وتفتح روابط الدعم تطبيق دفع أو موقعًا خارجيًا. تتعامل تلك الخدمات مع ما تختار إرساله وفق سياساتها الخاصة.';
 
   @override
   String get aboutQuranText => 'النص القرآني';
@@ -938,4 +939,176 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get supportVodafone => 'فودافون كاش';
+
+  @override
+  String get practiceLength => 'عدد الأسئلة';
+
+  @override
+  String get practiceDue => 'راجع الأسئلة المستحقة';
+
+  @override
+  String get backupTitle => 'النسخ الاحتياطي والاستعادة';
+
+  @override
+  String get backupIntro =>
+      'احفظ ملف نسخة احتياطية في مكان خاص، أو انسخ نص النسخة. تشمل النسخة ملاحظاتك وتقدّمك. للاستعادة افتح ملف النسخة أو الصق نصّها أدناه.';
+
+  @override
+  String get backupCopy => 'نسخ البيانات';
+
+  @override
+  String get backupRestore => 'استعادة البيانات';
+
+  @override
+  String get backupConfirm =>
+      'هل تستبدل الإعدادات والملاحظات والتقدم الحالي بهذه النسخة؟';
+
+  @override
+  String get backupInvalid => 'هذه النسخة غير صالحة أو من إصدار غير مدعوم.';
+
+  @override
+  String get backupRestored => 'تمت استعادة البيانات.';
+
+  @override
+  String get dailySession => 'اليوم: جلسة تعلّم قصيرة';
+
+  @override
+  String get practiceAllTopics => 'تدرّب على جميع الموضوعات';
+
+  @override
+  String get weeklyLearningGoal => 'هدف التعلم الأسبوعي';
+
+  @override
+  String get weeklyLearningDays => 'أيام التعلم هذا الأسبوع';
+
+  @override
+  String get practiceResume => 'تابع التدريب المحفوظ';
+
+  @override
+  String get searchRecent => 'عمليات البحث الأخيرة';
+
+  @override
+  String get searchClearHistory => 'مسح سجل البحث';
+
+  @override
+  String get ruleFavorite => 'حفظ القاعدة أو إزالتها من المفضلة';
+
+  @override
+  String get ruleFavorites => 'القواعد المفضلة';
+
+  @override
+  String get notesOpenSection => 'افتح قسم الدرس';
+
+  @override
+  String get notesSaved => 'تم حفظ الملاحظة';
+
+  @override
+  String get ruleCompare => 'قارن القواعد';
+
+  @override
+  String get ruleCompareFirst => 'القاعدة الأولى';
+
+  @override
+  String get ruleCompareSecond => 'القاعدة الثانية';
+
+  @override
+  String get ruleCompareUnavailable =>
+      'تحتاج المقارنة إلى بطاقتين مراجعتين. يمكنك قراءة الكتاب الأصلي في الوقت الحالي.';
+
+  @override
+  String get learningIntent => 'كيف تودّ أن تتعلّم؟';
+
+  @override
+  String get learningIntentHint => 'اختياري. يمكنك تغييره في الإعدادات.';
+
+  @override
+  String get learningGuided => 'خطوة بخطوة';
+
+  @override
+  String get learningRevision => 'المراجعة';
+
+  @override
+  String get learningExplore => 'استكشف الموضوعات';
+
+  @override
+  String get lessonReviewOutline => 'راجع أقسام الدرس';
+
+  @override
+  String lessonReadingTime(String minutes) {
+    return 'نحو $minutes دقائق للقراءة';
+  }
+
+  @override
+  String practiceDelayedReview(String count) {
+    return 'أسئلة أُجيب عنها بشكل صحيح بعد فترة: $count';
+  }
+
+  @override
+  String get startupLoading => 'جارٍ فتح مواد التعلم…';
+
+  @override
+  String get startupFailed =>
+      'تعذّر فتح جَوِّد. حاول مرة أخرى. لم تتم إعادة تعيين بياناتك المحفوظة.';
+
+  @override
+  String get startupUpdateRequired =>
+      'حُفظت بياناتك بإصدار أحدث. حدّث جَوِّد للمتابعة.';
+
+  @override
+  String get startupRetry => 'حاول مرة أخرى';
+
+  @override
+  String get backupRecoveryIntro =>
+      'الصق نسخة احتياطية لاستعادة بياناتك. ستستبدل الموافقة البيانات المحفوظة التي تعذّر قراءتها. يبقى التذكير متوقفًا حتى تفعّله من الإعدادات.';
+
+  @override
+  String get backupWriteFailed =>
+      'تعذّر حفظ البيانات المستعادة. تحقّق من مساحة التخزين وحاول مرة أخرى.';
+
+  @override
+  String get savePending => 'جارٍ حفظ تغييراتك…';
+
+  @override
+  String get saveFailed =>
+      'لم تُحفظ تغييراتك الأخيرة. أبقِ التطبيق مفتوحًا وحاول مجددًا.';
+
+  @override
+  String get settingsReminderFailed =>
+      'تعذّر تحديث التذكير. تحقّق من إعدادات الإشعارات وحاول مجددًا.';
+
+  @override
+  String get actionUndo => 'تراجع';
+
+  @override
+  String get noteDeleted => 'حُذفت الملاحظة';
+
+  @override
+  String get bookmarkDeleted => 'أُزيلت العلامة';
+
+  @override
+  String get backupSaveFile => 'حفظ ملف نسخة احتياطية';
+
+  @override
+  String get backupOpenFile => 'فتح ملف نسخة احتياطية';
+
+  @override
+  String get backupFileSaved => 'حُفظ ملف النسخة الاحتياطية.';
+
+  @override
+  String get backupFileError =>
+      'تعذّر فتح ملف النسخة الاحتياطية أو حفظه. حاول مجددًا.';
+
+  @override
+  String backupSummary(String date, String notes, String bookmarks) {
+    return 'نسخة بتاريخ $date: $notes ملاحظات و$bookmarks علامات.';
+  }
+
+  @override
+  String get backupUnknownDate => 'تاريخ غير معروف';
+
+  @override
+  String get feedbackDetails => 'إرفاق تفاصيل التطبيق والمحتوى';
+
+  @override
+  String get feedbackDetailsHint => 'لن تُرفق ملاحظاتك أو إجاباتك.';
 }

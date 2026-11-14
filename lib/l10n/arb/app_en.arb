@@ -108,7 +108,7 @@
   "notesAdd": "Add note",
   "notesEdit": "Edit note",
   "notesOpenPage": "Open page",
-  "notesEmpty": "No notes yet. Add one from the reading screen.",
+  "notesEmpty": "No notes yet. Add one from a lesson’s contents or the book reader.",
   "notesTab": "Notes",
   "bookmarksTab": "Bookmarks",
   "bookmarksEmpty": "No bookmarks yet. Add one from the reading screen.",
@@ -236,7 +236,7 @@
   "aboutDistribution": "The book states that “a copyright is available for everyone as long as he keeps them away from adding or removing.”",
   "aboutUnchanged": "Pages are shown with nothing added or removed. The bundled copies are only structurally compacted, and their rendering was verified to be pixel-identical to the originals.",
   "aboutPrivacyTitle": "Privacy",
-  "aboutPrivacy": "Jawwid does not collect analytics. Your settings, progress and notes stay on your device and are removed when you uninstall the app. Sending feedback opens your email app; support links open an external payment app or website. These services handle the information you choose to send under their own privacy policies.",
+  "aboutPrivacy": "Jawwid has no analytics or tracking. Study data, search history, favorites and settings stay on your device. You can copy a backup, which includes notes, to your clipboard and save it elsewhere; copies outside the app remain after uninstalling. Feedback opens your email app and support links open an external payment app or website. Those services handle what you choose to send under their own privacy policies.",
   "aboutQuranText": "Qur’anic text",
   "aboutTanzil": "Qur’anic examples in the lessons, rule cards and practice are copied verbatim from the Tanzil Project text (Uthmani script, version 1.1, tanzil.net), and their references are checked automatically.",
   "aboutSupplementary": "Supplementary material",
@@ -264,5 +264,84 @@
   "supportCopyAddress": "Copy payment address",
   "supportLinkFailed": "Could not open InstaPay. Copy the payment address and use it in your payment app.",
   "supportEtisalat": "Etisalat Cash",
-  "supportVodafone": "Vodafone Cash"
+  "supportVodafone": "Vodafone Cash",
+  "practiceLength": "Session length",
+  "practiceDue": "Review due questions",
+  "backupTitle": "Backup and restore",
+  "backupIntro": "Save a backup file somewhere private, or copy the backup text. It includes your notes and progress. Open a backup file or paste its text below to restore it.",
+  "backupCopy": "Copy backup",
+  "backupRestore": "Restore backup",
+  "backupConfirm": "Replace current settings, notes and progress with this backup?",
+  "backupInvalid": "This backup is invalid or from an unsupported version.",
+  "backupRestored": "Backup restored.",
+  "dailySession": "Today: a short learning session",
+  "practiceAllTopics": "Practice all topics",
+  "weeklyLearningGoal": "Weekly learning goal",
+  "weeklyLearningDays": "Days this week",
+  "practiceResume": "Continue saved practice",
+  "searchRecent": "Recent searches",
+  "searchClearHistory": "Clear search history",
+  "ruleFavorite": "Save or remove favorite",
+  "ruleFavorites": "Favorite rules",
+  "notesOpenSection": "Open lesson section",
+  "notesSaved": "Note saved",
+  "ruleCompare": "Compare rules",
+  "ruleCompareFirst": "First rule",
+  "ruleCompareSecond": "Second rule",
+  "ruleCompareUnavailable": "Two reviewed rule cards are needed to compare rules. You can read the original book meanwhile.",
+  "learningIntent": "How would you like to study?",
+  "learningIntentHint": "Optional. You can change this in Settings.",
+  "learningGuided": "Step by step",
+  "learningRevision": "Revision",
+  "learningExplore": "Explore topics",
+  "lessonReviewOutline": "Review the lesson sections",
+  "lessonReadingTime": "About {minutes} min to read",
+  "practiceDelayedReview": "Questions recalled after a delay: {count}",
+  "@lessonReadingTime": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "@practiceDelayedReview": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "startupLoading": "Opening your study materials…",
+  "startupFailed": "Jawwid could not open. Please try again. Your saved data has not been reset.",
+  "startupUpdateRequired": "Your study data was saved by a newer version. Update Jawwid to continue.",
+  "startupRetry": "Try again",
+  "backupRecoveryIntro": "Paste a backup to recover your study data. Confirmation replaces the unreadable saved data. Reminders stay off until you enable them in Settings.",
+  "backupWriteFailed": "Could not save the restored data. Check device storage and try again.",
+  "savePending": "Saving your changes…",
+  "saveFailed": "Your latest changes have not been saved. Keep the app open and try again.",
+  "settingsReminderFailed": "Could not update your reminder. Check notification settings and try again.",
+  "actionUndo": "Undo",
+  "noteDeleted": "Note deleted",
+  "bookmarkDeleted": "Bookmark removed",
+  "backupSaveFile": "Save backup file",
+  "backupOpenFile": "Open backup file",
+  "backupFileSaved": "Backup file saved.",
+  "backupFileError": "Could not open or save the backup file. Please try again.",
+  "backupSummary": "Backup from {date}: {notes} notes and {bookmarks} bookmarks.",
+  "backupUnknownDate": "unknown date",
+  "feedbackDetails": "Include app and content details",
+  "feedbackDetailsHint": "Your notes and answers are not included.",
+  "@backupSummary": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "notes": {
+        "type": "String"
+      },
+      "bookmarks": {
+        "type": "String"
+      }
+    }
+  }
 }

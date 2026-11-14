@@ -62,7 +62,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "f012258e9e52ee4d2adbed17c1b98ce93ded77ac7e17c748c83568906f979584"
   },
   {
    "id": "r02",
@@ -123,7 +124,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "09d61061fba8cacd8836c9e57e4a636c3d4041864ea6a59e0610d2173866f7e5"
   },
   {
    "id": "r03",
@@ -184,7 +186,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "418f3e67b0c94a7fd7c2b9662984ca0020afe15ccb7badebfa899aa35e8e30fa"
   },
   {
    "id": "r04",
@@ -241,7 +244,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "36f83a0f77fadca2988785d2230da6146bba46492ae6b45cbc835675cd9dc7b2"
   },
   {
    "id": "r05",
@@ -302,7 +306,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "a1f516663beac8880502d0475a03390f86f3b8503474447080e61bd5d668ee4c"
   },
   {
    "id": "r06",
@@ -363,7 +368,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "20e60fb00c9c071d225d112dd6ad317898b3031cd055b92b86978c69f7c3d1c3"
   },
   {
    "id": "r07",
@@ -424,7 +430,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "5a747d1f752f871fbae909eb29f45cfd3a241f42cae78196f6faba4975914611"
   },
   {
    "id": "r08",
@@ -481,7 +488,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "48688b9eda49ecc44e0fddd0663963d80b2f4c52f24fe27df7a9ae0bf31dc283"
   },
   {
    "id": "r09",
@@ -542,7 +550,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "424f579cf49ee63b377c8d285f4b5156f4845405477a65e9b4939b1583d8f668"
   },
   {
    "id": "r10",
@@ -599,7 +608,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "686f15b97f1dbae3016b17be374bfce7bcde7548bb016798e813b47b69dfdc55"
   },
   {
    "id": "r11",
@@ -656,7 +666,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "c126c944ce9b0fe77dc65dd798feeda279bc1e8f71f1e690b599870252f1dd1c"
   },
   {
    "id": "r12",
@@ -713,7 +724,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "215cd63f55821f28d2c7ae07ebb01fcbaa5a830ac0ef40c5f916ade36174eb1d"
   },
   {
    "id": "r13",
@@ -774,7 +786,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "e0be10375e326dccbc6b8daacc101d586054e9435168e76539bb90e5513d1ba8"
   },
   {
    "id": "r14",
@@ -835,7 +848,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "942ee0c79ed232f6de0d532d2f0a5a862d0422771be00f839280b33baeef10db"
   },
   {
    "id": "r15",
@@ -892,7 +906,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "f8b4f6442dfec2b72a669a2f4b55a94a084531a83ae0c50f91b95521372b093b"
   },
   {
    "id": "r16",
@@ -949,7 +964,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "f1909ae79c298e92feef9ea4cec9f7e09b2c0388832e9f023cbb7cd6915f4540"
   },
   {
    "id": "r17",
@@ -1006,7 +1022,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "beaa9351e775c1e6fa8a017f79c6cdbd79c0051eda29181754b55ccdeddc5ee2"
   },
   {
    "id": "r18",
@@ -1067,7 +1084,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "afc71d86acaee01156125f88a0165ba898388a990978782f859a44faf75041aa"
   },
   {
    "id": "r19",
@@ -1128,7 +1146,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "2a50c6a83ef46afb80a375742240f7819f52163b5f0d7934997bd3c9c12437c3"
   },
   {
    "id": "r20",
@@ -1185,7 +1204,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "7f75c4b30d8f12823069f87cd47b1f7a149ee257d2efae1503b13bb31a9378f1"
   },
   {
    "id": "r21",
@@ -1242,7 +1262,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "9f94ab645e7b077a89a9cfb18ad55ce85ac4ef9c78aa8d3a53e13e235345affc"
   },
   {
    "id": "r22",
@@ -1299,7 +1320,8 @@
    },
    "review": {
     "status": "draft"
-   }
+   },
+   "sourceFingerprint": "99284214a17e7b4dcf207e40adaeeabbeab3b434d45024998ecfa7559472c083"
   }
  ]
 }

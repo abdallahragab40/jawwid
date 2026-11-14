@@ -34,6 +34,8 @@ import json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_content import load_tanzil, bases, is_mark, FOLD  # noqa: E402
+from pathlib import Path
+from review_integrity import approved_lesson
 
 HARAKAT = set(chr(c) for c in range(0x064B, 0x0653))
 
@@ -308,7 +310,7 @@ def main():
             for b in lesson['blocks']:
                 if not (r[0] <= b['page'] <= r[1]):
                     sys.exit(f'{f}: page {b["page"]} outside topic range {r}')
-            if topic in reviewed.get(lang, []):
+            if approved_lesson(reviewed, lang, topic, Path(SRC) / f):
                 lesson['review'] = 'reviewed'
             lessons[topic] = lesson
         out = {'schemaVersion': 1, 'language': lang, 'lessons': lessons}

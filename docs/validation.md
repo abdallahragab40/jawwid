@@ -1,5 +1,52 @@
 # Validation results
 
+## Review fixes and completion pass — 2026-11-14
+
+- `flutter analyze`: no issues; formatting and `git diff --check`: clean.
+- Full Flutter suite: **177 tests passed**, including failed-save retry, pending-write teardown, front-matter continuation, reminder reconciliation, backup files/metadata, Undo, and accessible sort feedback.
+- All **6 Python tooling tests passed**. Full content rebuild passed (118 lessons, 630 verified verses); refreshed review pack and release audit still report **432 draft items**. No expert approvals were added.
+- Corrected reminder test lifecycle transitions and ensured reminder controls are fully visible before tapping in Settings tests.
+- Android reader integration exposed a provider notification during reader disposal. Reader exit now saves immediately and defers status feedback until after widget teardown; a focused widget regression covers this path.
+- Android real-PDF integration passed for all four editions: middle-page open, reopen using the same prepared document, and clean teardown. These debug/emulator timings establish behavior, not low-end performance.
+- Relaunched normal `lib/main.dart` on the iPhone 17 Pro simulator after the integration run; visually confirmed Arabic Home. Both learner-data file hashes match their pre-restart values.
+- Production signing now requires local owner credentials instead of silently using the debug key. Earlier signed-release build results below describe the previous configuration.
+
+## Startup restoration follow-up — 2026-11-14
+
+- Full Flutter suite: **162 tests passed**; `flutter analyze`: no issues; audit-tool suite: **2 tests passed**.
+- Confirmed manual startup recovery end-to-end using real temporary corrupted files: cancellation keeps both original files untouched, confirmation writes the imported state, and the app reloads into the restored language/progress with reminders off.
+- A simulated storage write failure leaves the existing live progress unchanged and displays an error. Newer-schema guidance offers no restore action.
+- Recovery controls pass accessibility checks in all four languages/light and dark; updated Arabic-light/English-dark recovery goldens visually inspected.
+- Updated Android arm64 release (60.5 MB) and debug builds pass with the startup-restoration changes. They retain the existing development signing configuration.
+- At the user's request, stopped the prior Flutter app process and launched a new `flutter run` process on the iPhone 17 Pro simulator. SHA-256 comparison of both existing learner-state files before/after the cold launch matched exactly. The normal welcome screen rendered; no study data was cleared.
+
+## Earlier reliability follow-up — 2026-11-14
+
+- `flutter analyze`: no issues found; full Flutter suite **160 tests passed**; release-audit Python suite **2 tests passed**.
+- Added recovery tests for malformed typed JSON, both files unreadable without reset, newer schema protection even with an older readable backup, invalid page-reference recovery, and preserving the good backup on the first recovery save.
+- Startup tests cover an immediate loading frame, failure/retry/success, 30-second stalled-loader timeout, newer-version guidance, and language switching. Recovery UI passes tap-target/label/contrast checks in all four languages in light/dark; Arabic-light and English-dark font-rendered goldens visually inspected.
+- Background lifecycle test proves a debounced reading position reaches disk immediately on leaving the foreground.
+- Updated Android arm64 release (60.5 MB) and debug APKs compile. The updated release installs and renders Home with existing data on the Android 17 emulator. The measured cold-launch command reported about 32.7 seconds while native builds were active; this reinforces that emulator smoke is not a startup-performance pass.
+- Normal iPhone 17 Pro app hot-restarted through the new bootstrap and rendered Welcome. No learner-state JSON was present in its current simulator data container; the Android emulator Home smoke retained existing progress. File-preservation/recovery is verified separately by the storage tests.
+- Cairo timezone-database test proves tomorrow's reminder retains its selected wall-clock hour across the spring offset change; date-only streak tests include leap-day/month boundaries.
+
+## Earlier completion validation — 2026-11-14
+
+- `flutter analyze`: no issues found.
+- `flutter test --reporter compact`: **145 tests passed**, including backups, safe release dependencies, language-aware progress/celebrations, source-heading outlines, quiz recovery, favorites, section notes, search history, preferences and comparison.
+- `python3 -I -m unittest discover -s tools/tests -v`: **2 tests passed** for the release inventory and source-fingerprint report.
+- `flutter drive --driver=test_driver/integration_test.dart --target=integration_test/product_journeys_test.dart -d 898E2264-BEDC-49CF-AB58-4E4A2B59F1E3`: passed; captured **25 current screenshots** (Home, comparison, backup, Settings, lesson Contents; all four languages in light and English in dark). Images inspected together and selected full-size images reviewed. Explicit frame pumping avoids capturing route transitions.
+- Accessibility guidelines now also cover comparison, backup and the note editor, in the existing four-language/light and AR/EN-dark matrix. Selected weekly-goal and practice-length chip colors were corrected during visual review.
+- Arabic/English comparison goldens use bundled fonts; small-phone/enlarged-text comparison and existing main-screen layouts pass in all four languages.
+- `flutter build apk --release --target-platform android-arm64`: passed; **60.5 MB**. `flutter build apk --debug --target-platform android-arm64`: passed. Android still uses its development signing configuration; these are not store-approved packages.
+- An initial overlapping integration/release build raced on generated test-plugin registration. Rebuilding sequentially passed; no production test-plugin dependency was added.
+- The release APK installed on the Android 17 arm64 emulator and rendered Home. First install/launch timed out while concurrent native builds were active; a subsequent cold launch reported `Status: ok` (about 8.2 seconds). This is smoke evidence, not a startup-performance pass; low-end hardware performance remains open.
+- Merged release manifest checked: boot, vibration, notification and generated app-local receiver permissions; **no INTERNET permission**.
+- Normal `lib/main.dart` relaunched successfully on the iPhone 17 Pro simulator after the isolated screenshot test. The integration test uses temporary in-memory learner state and a no-op reminder service.
+- Content audit: **432 draft items**, no missing native lessons, and zero currently reviewed questions blocked by unavailable options (none are approved yet). `--require-reviewed` exits 1 as expected. This is not legal/store/hardware approval.
+
+The sections below retain the earlier validation record and its historical test counts.
+
 Environment: macOS (Darwin 27.2), Flutter 3.44.8 / Dart 3.12.2, Xcode with iOS 27 simulators, Android SDK. Network was available (the "Flutter download restriction" reported earlier no longer applies: pub.dev, PyPI and GitHub all answered). Every result below was actually executed in this session; nothing is reported as passing without having run.
 
 ## Static checks

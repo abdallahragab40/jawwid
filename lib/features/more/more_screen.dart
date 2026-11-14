@@ -7,12 +7,16 @@ import '../../app/theme.dart';
 import '../../content/language.dart';
 import '../../core/haptics.dart';
 import '../../core/reminder.dart';
+import '../../core/numerals.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../widgets/labels.dart';
 import '../../widgets/ornaments.dart';
 import '../study/study_state.dart';
 import 'contact_screen.dart';
+import 'backup_screen.dart';
 import '../../widgets/text_size_control.dart';
+import '../../widgets/learning_intent_control.dart';
+import '../../widgets/note_editor_dialog.dart';
 
 class MoreScreen extends ConsumerWidget {
   const MoreScreen({super.key});
@@ -91,6 +95,13 @@ class MoreScreen extends ConsumerWidget {
                   l10n.settingsTitle,
                   null,
                   () => push(const SettingsScreen(), 'settings'),
+                ),
+                const Divider(indent: 56),
+                tile(
+                  Icons.backup_outlined,
+                  l10n.backupTitle,
+                  null,
+                  () => push(const BackupScreen(), 'backup'),
                 ),
                 const Divider(indent: 56),
                 tile(
@@ -176,7 +187,21 @@ class BookmarksNotesScreen extends ConsumerWidget {
                           trailing: IconButton(
                             tooltip: l10n.actionDelete,
                             icon: const Icon(Icons.delete_outline),
-                            onPressed: () => ctl.removeBookmark(b.id),
+                            onPressed: () {
+                              ctl.removeBookmark(b.id);
+                              ScaffoldMessenger.of(context)
+                                ..hideCurrentSnackBar()
+                                ..showSnackBar(
+                                  SnackBar(
+                                    content: Text(l10n.bookmarkDeleted),
+                                    action: SnackBarAction(
+                                      label: l10n.actionUndo,
+                                      onPressed: () =>
+                                          ctl.restoreBookmark(b, index: i),
+                                    ),
+                                  ),
+                                );
+                            },
                           ),
                           onTap: () => openReader(
                             context,
@@ -195,6 +220,17 @@ class BookmarksNotesScreen extends ConsumerWidget {
                     separatorBuilder: (_, _) => const SizedBox(height: 8),
                     itemBuilder: (ctx, i) {
                       final note = study.notes[i];
+                      final lesson = note.topicId == null
+                          ? null
+                          : content.lesson(note.topicId!, note.edition);
+                      final block = note.lessonBlock;
+                      final canOpenSection =
+                          note.edition == lang.editionId &&
+                          lesson != null &&
+                          block != null &&
+                          block >= 0 &&
+                          block < lesson.blocks.length &&
+                          lesson.blocks[block].plain == note.sectionTitle;
                       return Card(
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(16, 12, 8, 8),
@@ -210,9 +246,23 @@ class BookmarksNotesScreen extends ConsumerWidget {
                                 where(note.edition, note.page),
                                 style: context.type.muted(size: 12.5),
                               ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
+                              if (note.sectionTitle != null)
+                                Text(
+                                  note.sectionTitle!,
+                                  style: context.type.muted(size: 12.5),
+                                ),
+                              Wrap(
+                                alignment: WrapAlignment.end,
                                 children: [
+                                  if (canOpenSection)
+                                    TextButton(
+                                      onPressed: () => openLesson(
+                                        context,
+                                        note.topicId!,
+                                        block: block,
+                                      ),
+                                      child: Text(l10n.notesOpenSection),
+                                    ),
                                   TextButton(
                                     onPressed: () => openReader(
                                       context,
@@ -225,32 +275,11 @@ class BookmarksNotesScreen extends ConsumerWidget {
                                     tooltip: l10n.notesEdit,
                                     icon: const Icon(Icons.edit_outlined),
                                     onPressed: () async {
-                                      final c = TextEditingController(
-                                        text: note.text,
-                                      );
                                       final v = await showDialog<String>(
                                         context: context,
-                                        builder: (d) => AlertDialog(
-                                          title: Text(l10n.notesEdit),
-                                          content: TextField(
-                                            controller: c,
-                                            minLines: 2,
-                                            maxLines: 6,
-                                            autofocus: true,
-                                          ),
-                                          actions: [
-                                            TextButton(
-                                              onPressed: () => Navigator.pop(d),
-                                              child: Text(l10n.actionCancel),
-                                            ),
-                                            FilledButton(
-                                              onPressed: () => Navigator.pop(
-                                                d,
-                                                c.text.trim(),
-                                              ),
-                                              child: Text(l10n.actionSave),
-                                            ),
-                                          ],
+                                        builder: (_) => NoteEditorDialog(
+                                          initialText: note.text,
+                                          editing: true,
                                         ),
                                       );
                                       if (v != null && v.isNotEmpty) {
@@ -261,7 +290,23 @@ class BookmarksNotesScreen extends ConsumerWidget {
                                   IconButton(
                                     tooltip: l10n.actionDelete,
                                     icon: const Icon(Icons.delete_outline),
-                                    onPressed: () => ctl.deleteNote(note.id),
+                                    onPressed: () {
+                                      ctl.deleteNote(note.id);
+                                      ScaffoldMessenger.of(context)
+                                        ..hideCurrentSnackBar()
+                                        ..showSnackBar(
+                                          SnackBar(
+                                            content: Text(l10n.noteDeleted),
+                                            action: SnackBarAction(
+                                              label: l10n.actionUndo,
+                                              onPressed: () => ctl.restoreNote(
+                                                note,
+                                                index: i,
+                                              ),
+                                            ),
+                                          ),
+                                        );
+                                    },
                                   ),
                                 ],
                               ),
@@ -301,11 +346,18 @@ class _Empty extends StatelessWidget {
   );
 }
 
-class SettingsScreen extends ConsumerWidget {
+class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends ConsumerState<SettingsScreen> {
+  bool _requestingReminderPermission = false;
+
+  @override
+  Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final s = ref.watch(studyProvider);
     final ctl = ref.read(studyProvider.notifier);
@@ -346,6 +398,21 @@ class SettingsScreen extends ConsumerWidget {
                 ],
               ],
             ),
+          ),
+          const SizedBox(height: 16),
+          const LearningIntentControl(),
+          const SizedBox(height: 16),
+          SectionHeading(l10n.weeklyLearningGoal),
+          Wrap(
+            spacing: 8,
+            children: [
+              for (final days in [1, 3, 5, 7])
+                ChoiceChip(
+                  label: Text(formatInt(days, s.language.code)),
+                  selected: s.weeklyGoal == days,
+                  onSelected: (_) => ctl.setWeeklyGoal(days),
+                ),
+            ],
           ),
           const SizedBox(height: 16),
           SectionHeading(l10n.settingsAppearance),
@@ -416,27 +483,73 @@ class SettingsScreen extends ConsumerWidget {
               children: [
                 SwitchListTile(
                   value: s.reminderEnabled,
-                  onChanged: (on) async {
-                    ref.read(hapticsProvider).toggle();
-                    if (!on) {
-                      ctl.setReminder(enabled: false);
-                      return;
-                    }
-                    final messenger = ScaffoldMessenger.of(context);
-                    final granted = await ref
-                        .read(reminderServiceProvider)
-                        .requestPermission();
-                    if (granted) {
-                      ctl.setReminder(enabled: true);
-                    } else {
-                      messenger.showSnackBar(
-                        SnackBar(content: Text(l10n.settingsReminderDenied)),
-                      );
-                    }
-                  },
+                  onChanged: _requestingReminderPermission
+                      ? null
+                      : (on) async {
+                          ref.read(hapticsProvider).toggle();
+                          if (!on) {
+                            ctl.setReminder(enabled: false);
+                            return;
+                          }
+                          final messenger = ScaffoldMessenger.of(context);
+                          final bool granted;
+                          setState(() => _requestingReminderPermission = true);
+                          try {
+                            granted = await ref
+                                .read(reminderServiceProvider)
+                                .requestPermission();
+                          } catch (_) {
+                            if (!context.mounted) return;
+                            messenger.showSnackBar(
+                              SnackBar(
+                                content: Text(l10n.settingsReminderFailed),
+                              ),
+                            );
+                            return;
+                          } finally {
+                            if (mounted) {
+                              setState(
+                                () => _requestingReminderPermission = false,
+                              );
+                            }
+                          }
+                          if (!context.mounted) return;
+                          if (granted) {
+                            ctl.setReminder(enabled: true);
+                          } else {
+                            messenger.showSnackBar(
+                              SnackBar(
+                                content: Text(l10n.settingsReminderDenied),
+                              ),
+                            );
+                          }
+                        },
                   secondary: const Icon(Icons.notifications_outlined),
                   title: Text(l10n.settingsReminder),
                   subtitle: Text(l10n.settingsReminderHint),
+                ),
+                Consumer(
+                  builder: (context, ref, _) {
+                    final sync = ref.watch(reminderSyncProvider);
+                    if (!sync.hasError) return const SizedBox.shrink();
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(l10n.settingsReminderFailed),
+                          TextButton(
+                            onPressed: () =>
+                                ref.read(reminderSyncProvider.notifier).retry(),
+                            child: Text(l10n.startupRetry),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
                 ),
                 if (s.reminderEnabled)
                   ListTile(

@@ -3,12 +3,27 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:rattil/core/json_store.dart';
+import 'package:rattil/features/study/study_state.dart';
 import 'package:rattil/core/numerals.dart';
 import 'package:rattil/core/text_normalize.dart';
 
 import '../helpers.dart';
 
 void main() {
+  test('lesson anchors survive storage and old saves default safely', () {
+    final state = const StudyState(lessonPositions: {'en:t10:123': 18});
+    final restored = StudyState.fromJson(
+      jsonDecode(jsonEncode(state.toJson())),
+    );
+    expect(restored.copyWith(welcomed: true).lessonPositions['en:t10:123'], 18);
+    expect(StudyState.fromJson({}).lessonPositions, isEmpty);
+    expect(
+      StudyState.fromJson({
+        'lessonPositions': {'bad': -1, 'text': 'x'},
+      }).lessonPositions,
+      isEmpty,
+    );
+  });
   group('numerals', () {
     test(
       'Arabic and Kurdish use Arabic-Indic digits (as printed in both books)',

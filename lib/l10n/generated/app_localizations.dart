@@ -753,7 +753,7 @@ abstract class AppLocalizations {
   /// No description provided for @notesEmpty.
   ///
   /// In ar, this message translates to:
-  /// **'لا توجد ملاحظات بعد. أضف ملاحظة من شاشة القراءة.'**
+  /// **'لا توجد ملاحظات بعد. أضف ملاحظة من محتويات الدرس أو قارئ الكتاب.'**
   String get notesEmpty;
 
   /// No description provided for @notesTab.
@@ -1525,7 +1525,7 @@ abstract class AppLocalizations {
   /// No description provided for @aboutPrivacy.
   ///
   /// In ar, this message translates to:
-  /// **'لا يجمع جوِّد بيانات تحليلات الاستخدام. تُحفظ إعداداتك وتقدّمك وملاحظاتك على جهازك فقط، وتُحذف بحذف التطبيق. إرسال الملاحظات يفتح تطبيق بريدك، وروابط الدعم تفتح تطبيق دفع أو موقعًا خارجيًا. تتعامل هذه الخدمات مع المعلومات التي تختار إرسالها وفق سياسات الخصوصية الخاصة بها.'**
+  /// **'لا يحتوي «جَوِّد» على إحصاءات استخدام أو تتبّع. تبقى بيانات التعلم وسجل البحث والمفضلة والإعدادات على جهازك. يمكنك نسخ بياناتك، بما فيها الملاحظات، إلى الحافظة وحفظها خارج التطبيق؛ وتبقى النسخ الخارجية بعد حذف التطبيق. تفتح الملاحظات المرسلة تطبيق البريد، وتفتح روابط الدعم تطبيق دفع أو موقعًا خارجيًا. تتعامل تلك الخدمات مع ما تختار إرساله وفق سياساتها الخاصة.'**
   String get aboutPrivacy;
 
   /// No description provided for @aboutQuranText.
@@ -1695,6 +1695,318 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'فودافون كاش'**
   String get supportVodafone;
+
+  /// No description provided for @practiceLength.
+  ///
+  /// In ar, this message translates to:
+  /// **'عدد الأسئلة'**
+  String get practiceLength;
+
+  /// No description provided for @practiceDue.
+  ///
+  /// In ar, this message translates to:
+  /// **'راجع الأسئلة المستحقة'**
+  String get practiceDue;
+
+  /// No description provided for @backupTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'النسخ الاحتياطي والاستعادة'**
+  String get backupTitle;
+
+  /// No description provided for @backupIntro.
+  ///
+  /// In ar, this message translates to:
+  /// **'احفظ ملف نسخة احتياطية في مكان خاص، أو انسخ نص النسخة. تشمل النسخة ملاحظاتك وتقدّمك. للاستعادة افتح ملف النسخة أو الصق نصّها أدناه.'**
+  String get backupIntro;
+
+  /// No description provided for @backupCopy.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسخ البيانات'**
+  String get backupCopy;
+
+  /// No description provided for @backupRestore.
+  ///
+  /// In ar, this message translates to:
+  /// **'استعادة البيانات'**
+  String get backupRestore;
+
+  /// No description provided for @backupConfirm.
+  ///
+  /// In ar, this message translates to:
+  /// **'هل تستبدل الإعدادات والملاحظات والتقدم الحالي بهذه النسخة؟'**
+  String get backupConfirm;
+
+  /// No description provided for @backupInvalid.
+  ///
+  /// In ar, this message translates to:
+  /// **'هذه النسخة غير صالحة أو من إصدار غير مدعوم.'**
+  String get backupInvalid;
+
+  /// No description provided for @backupRestored.
+  ///
+  /// In ar, this message translates to:
+  /// **'تمت استعادة البيانات.'**
+  String get backupRestored;
+
+  /// No description provided for @dailySession.
+  ///
+  /// In ar, this message translates to:
+  /// **'اليوم: جلسة تعلّم قصيرة'**
+  String get dailySession;
+
+  /// No description provided for @practiceAllTopics.
+  ///
+  /// In ar, this message translates to:
+  /// **'تدرّب على جميع الموضوعات'**
+  String get practiceAllTopics;
+
+  /// No description provided for @weeklyLearningGoal.
+  ///
+  /// In ar, this message translates to:
+  /// **'هدف التعلم الأسبوعي'**
+  String get weeklyLearningGoal;
+
+  /// No description provided for @weeklyLearningDays.
+  ///
+  /// In ar, this message translates to:
+  /// **'أيام التعلم هذا الأسبوع'**
+  String get weeklyLearningDays;
+
+  /// No description provided for @practiceResume.
+  ///
+  /// In ar, this message translates to:
+  /// **'تابع التدريب المحفوظ'**
+  String get practiceResume;
+
+  /// No description provided for @searchRecent.
+  ///
+  /// In ar, this message translates to:
+  /// **'عمليات البحث الأخيرة'**
+  String get searchRecent;
+
+  /// No description provided for @searchClearHistory.
+  ///
+  /// In ar, this message translates to:
+  /// **'مسح سجل البحث'**
+  String get searchClearHistory;
+
+  /// No description provided for @ruleFavorite.
+  ///
+  /// In ar, this message translates to:
+  /// **'حفظ القاعدة أو إزالتها من المفضلة'**
+  String get ruleFavorite;
+
+  /// No description provided for @ruleFavorites.
+  ///
+  /// In ar, this message translates to:
+  /// **'القواعد المفضلة'**
+  String get ruleFavorites;
+
+  /// No description provided for @notesOpenSection.
+  ///
+  /// In ar, this message translates to:
+  /// **'افتح قسم الدرس'**
+  String get notesOpenSection;
+
+  /// No description provided for @notesSaved.
+  ///
+  /// In ar, this message translates to:
+  /// **'تم حفظ الملاحظة'**
+  String get notesSaved;
+
+  /// No description provided for @ruleCompare.
+  ///
+  /// In ar, this message translates to:
+  /// **'قارن القواعد'**
+  String get ruleCompare;
+
+  /// No description provided for @ruleCompareFirst.
+  ///
+  /// In ar, this message translates to:
+  /// **'القاعدة الأولى'**
+  String get ruleCompareFirst;
+
+  /// No description provided for @ruleCompareSecond.
+  ///
+  /// In ar, this message translates to:
+  /// **'القاعدة الثانية'**
+  String get ruleCompareSecond;
+
+  /// No description provided for @ruleCompareUnavailable.
+  ///
+  /// In ar, this message translates to:
+  /// **'تحتاج المقارنة إلى بطاقتين مراجعتين. يمكنك قراءة الكتاب الأصلي في الوقت الحالي.'**
+  String get ruleCompareUnavailable;
+
+  /// No description provided for @learningIntent.
+  ///
+  /// In ar, this message translates to:
+  /// **'كيف تودّ أن تتعلّم؟'**
+  String get learningIntent;
+
+  /// No description provided for @learningIntentHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'اختياري. يمكنك تغييره في الإعدادات.'**
+  String get learningIntentHint;
+
+  /// No description provided for @learningGuided.
+  ///
+  /// In ar, this message translates to:
+  /// **'خطوة بخطوة'**
+  String get learningGuided;
+
+  /// No description provided for @learningRevision.
+  ///
+  /// In ar, this message translates to:
+  /// **'المراجعة'**
+  String get learningRevision;
+
+  /// No description provided for @learningExplore.
+  ///
+  /// In ar, this message translates to:
+  /// **'استكشف الموضوعات'**
+  String get learningExplore;
+
+  /// No description provided for @lessonReviewOutline.
+  ///
+  /// In ar, this message translates to:
+  /// **'راجع أقسام الدرس'**
+  String get lessonReviewOutline;
+
+  /// No description provided for @lessonReadingTime.
+  ///
+  /// In ar, this message translates to:
+  /// **'نحو {minutes} دقائق للقراءة'**
+  String lessonReadingTime(String minutes);
+
+  /// No description provided for @practiceDelayedReview.
+  ///
+  /// In ar, this message translates to:
+  /// **'أسئلة أُجيب عنها بشكل صحيح بعد فترة: {count}'**
+  String practiceDelayedReview(String count);
+
+  /// No description provided for @startupLoading.
+  ///
+  /// In ar, this message translates to:
+  /// **'جارٍ فتح مواد التعلم…'**
+  String get startupLoading;
+
+  /// No description provided for @startupFailed.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعذّر فتح جَوِّد. حاول مرة أخرى. لم تتم إعادة تعيين بياناتك المحفوظة.'**
+  String get startupFailed;
+
+  /// No description provided for @startupUpdateRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'حُفظت بياناتك بإصدار أحدث. حدّث جَوِّد للمتابعة.'**
+  String get startupUpdateRequired;
+
+  /// No description provided for @startupRetry.
+  ///
+  /// In ar, this message translates to:
+  /// **'حاول مرة أخرى'**
+  String get startupRetry;
+
+  /// No description provided for @backupRecoveryIntro.
+  ///
+  /// In ar, this message translates to:
+  /// **'الصق نسخة احتياطية لاستعادة بياناتك. ستستبدل الموافقة البيانات المحفوظة التي تعذّر قراءتها. يبقى التذكير متوقفًا حتى تفعّله من الإعدادات.'**
+  String get backupRecoveryIntro;
+
+  /// No description provided for @backupWriteFailed.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعذّر حفظ البيانات المستعادة. تحقّق من مساحة التخزين وحاول مرة أخرى.'**
+  String get backupWriteFailed;
+
+  /// No description provided for @savePending.
+  ///
+  /// In ar, this message translates to:
+  /// **'جارٍ حفظ تغييراتك…'**
+  String get savePending;
+
+  /// No description provided for @saveFailed.
+  ///
+  /// In ar, this message translates to:
+  /// **'لم تُحفظ تغييراتك الأخيرة. أبقِ التطبيق مفتوحًا وحاول مجددًا.'**
+  String get saveFailed;
+
+  /// No description provided for @settingsReminderFailed.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعذّر تحديث التذكير. تحقّق من إعدادات الإشعارات وحاول مجددًا.'**
+  String get settingsReminderFailed;
+
+  /// No description provided for @actionUndo.
+  ///
+  /// In ar, this message translates to:
+  /// **'تراجع'**
+  String get actionUndo;
+
+  /// No description provided for @noteDeleted.
+  ///
+  /// In ar, this message translates to:
+  /// **'حُذفت الملاحظة'**
+  String get noteDeleted;
+
+  /// No description provided for @bookmarkDeleted.
+  ///
+  /// In ar, this message translates to:
+  /// **'أُزيلت العلامة'**
+  String get bookmarkDeleted;
+
+  /// No description provided for @backupSaveFile.
+  ///
+  /// In ar, this message translates to:
+  /// **'حفظ ملف نسخة احتياطية'**
+  String get backupSaveFile;
+
+  /// No description provided for @backupOpenFile.
+  ///
+  /// In ar, this message translates to:
+  /// **'فتح ملف نسخة احتياطية'**
+  String get backupOpenFile;
+
+  /// No description provided for @backupFileSaved.
+  ///
+  /// In ar, this message translates to:
+  /// **'حُفظ ملف النسخة الاحتياطية.'**
+  String get backupFileSaved;
+
+  /// No description provided for @backupFileError.
+  ///
+  /// In ar, this message translates to:
+  /// **'تعذّر فتح ملف النسخة الاحتياطية أو حفظه. حاول مجددًا.'**
+  String get backupFileError;
+
+  /// No description provided for @backupSummary.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسخة بتاريخ {date}: {notes} ملاحظات و{bookmarks} علامات.'**
+  String backupSummary(String date, String notes, String bookmarks);
+
+  /// No description provided for @backupUnknownDate.
+  ///
+  /// In ar, this message translates to:
+  /// **'تاريخ غير معروف'**
+  String get backupUnknownDate;
+
+  /// No description provided for @feedbackDetails.
+  ///
+  /// In ar, this message translates to:
+  /// **'إرفاق تفاصيل التطبيق والمحتوى'**
+  String get feedbackDetails;
+
+  /// No description provided for @feedbackDetailsHint.
+  ///
+  /// In ar, this message translates to:
+  /// **'لن تُرفق ملاحظاتك أو إجاباتك.'**
+  String get feedbackDetailsHint;
 }
 
 class _AppLocalizationsDelegate

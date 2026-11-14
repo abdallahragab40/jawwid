@@ -1,0 +1,43 @@
+name: Validate app
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      require_reviewed:
+        description: Require every content item to have expert approval
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Install pinned Flutter
+        run: |
+          git clone --depth 1 --branch 3.44.8 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - run: flutter pub get
+      - name: Format and analyze
+        run: |
+          dart format --output=none --set-exit-if-changed lib test integration_test test_driver
+          flutter analyze
+      - name: Unit, widget, rendering, and release-channel checks
+        run: flutter test
+      - name: Content tooling tests and rebuild
+        run: |
+          python3 -I -m unittest discover -s tools/tests -v
+          sh tools/build_all.sh
+          git diff --exit-code -- assets/content
+          python3 -I tools/release_audit.py --output-dir "$RUNNER_TEMP/content-audit"
+      - name: Full review gate when requested
+        if: ${{ inputs.require_reviewed == true }}
+        run: python3 -I tools/release_audit.py --require-reviewed --output-dir "$RUNNER_TEMP/release-readiness"

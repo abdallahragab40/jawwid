@@ -26,12 +26,35 @@ class HomeScreen extends ConsumerWidget {
     final study = ref.watch(studyProvider);
     final now = ref.watch(clockProvider)();
     final target = resolveContinue(study, content, lang);
-    final completed = study.topicProgress.values
-        .where((p) => p == TopicProgress.completed)
+    final availableTopics = content.topics
+        .where((t) => t.pagesIn(lang.editionId) != null)
+        .toList();
+    final completed = availableTopics
+        .where((t) => study.progressOf(t.id) == TopicProgress.completed)
         .length;
-    final started = study.topicProgress.values
-        .where((p) => p != TopicProgress.none)
+    final started = availableTopics
+        .where((t) => study.progressOf(t.id) != TopicProgress.none)
         .length;
+    final due = content.questions.any(
+      (q) => study.quiz[q.id]?.isDue(now) ?? false,
+    );
+    final dailyTopic = availableTopics
+        .where((t) => study.progressOf(t.id) != TopicProgress.completed)
+        .firstOrNull;
+    final saved = study.savedSession;
+    final canResume = saved != null && saved.canResume(content);
+    final explore = study.learningIntent == LearningIntent.explore;
+    final revise =
+        study.learningIntent == LearningIntent.revision &&
+        content.questions.isNotEmpty;
+    // Date-only arithmetic must not skip labels across a daylight-saving change.
+    final today = DateTime.utc(now.year, now.month, now.day);
+    final weekStart = today.subtract(Duration(days: today.weekday - 1));
+    final weekDays = List.generate(
+      today.weekday,
+      (i) => StudyState.dayKey(weekStart.add(Duration(days: i))),
+    );
+    final learnedDays = weekDays.where(study.learningDays.contains).length;
     final dark = context.isDark;
 
     return Scaffold(
@@ -82,10 +105,66 @@ class HomeScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 18),
 
-            // Continue / start.
+            // Resume/start is the primary action; secondary plans follow it.
             _ContinueCard(target: target, content: content, language: lang),
             const SizedBox(height: 14),
 
+            if (content.questions.isNotEmpty || dailyTopic != null) ...[
+              Card(
+                child: ListTile(
+                  leading: const Icon(Icons.today_outlined),
+                  title: Text(l10n.dailySession),
+                  subtitle: Text(
+                    canResume
+                        ? l10n.practiceResume
+                        : explore
+                        ? l10n.learningExplore
+                        : due
+                        ? l10n.practiceDue
+                        : revise
+                        ? l10n.practiceQuick
+                        : dailyTopic != null
+                        ? topicTitle(dailyTopic, lang)
+                        : l10n.practiceQuick,
+                  ),
+                  trailing: const Icon(Icons.play_arrow),
+                  onTap: () {
+                    if (canResume) {
+                      openQuiz(context, resume: true);
+                    } else if (explore) {
+                      RootShell.of(context)?.selectTab(Tabs.lessons);
+                    } else if (due) {
+                      openQuiz(context, dueOnly: true, limit: 3);
+                    } else if (revise) {
+                      openQuiz(context, learnedOnly: true, limit: 3);
+                    } else if (dailyTopic != null) {
+                      openTopic(context, dailyTopic.id);
+                    } else {
+                      openQuiz(context, limit: 3);
+                    }
+                  },
+                ),
+              ),
+              const SizedBox(height: 14),
+            ],
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '${l10n.weeklyLearningDays}: ${n(learnedDays, lang)} / ${n(study.weeklyGoal, lang)}',
+                    ),
+                    const SizedBox(height: 8),
+                    LinearProgressIndicator(
+                      value: (learnedDays / study.weeklyGoal).clamp(0, 1),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 14),
             // Progress and practice, side by side.
             IntrinsicHeight(
               child: Row(
@@ -95,7 +174,7 @@ class HomeScreen extends ConsumerWidget {
                     child: _ProgressTile(
                       completed: completed,
                       started: started,
-                      total: content.topics.length,
+                      total: availableTopics.length,
                       language: lang,
                     ),
                   ),
@@ -366,7 +445,9 @@ class _ReviewSuggestion extends ConsumerWidget {
     String? actionLabel;
 
     // 1. A lesson with recently missed practice questions.
-    for (final t in content.topics) {
+    for (final t in content.topics.where(
+      (t) => t.pagesIn(language.editionId) != null,
+    )) {
       final qs = content.questionsForTopic(t.id);
       final missed = qs
           .where(
@@ -391,10 +472,16 @@ class _ReviewSuggestion extends ConsumerWidget {
     if (topicId == null) {
       final last = study.lastRead?.topicId;
       final candidate =
-          last != null && study.progressOf(last) == TopicProgress.read
+          last != null &&
+              content.topic(last).pagesIn(language.editionId) != null &&
+              study.progressOf(last) == TopicProgress.read
           ? content.topic(last)
           : content.topics
-                .where((t) => study.progressOf(t.id) == TopicProgress.read)
+                .where(
+                  (t) =>
+                      study.progressOf(t.id) == TopicProgress.read &&
+                      t.pagesIn(language.editionId) != null,
+                )
                 .firstOrNull;
       if (candidate != null) {
         topicId = candidate.id;
@@ -413,7 +500,11 @@ class _ReviewSuggestion extends ConsumerWidget {
     // 3. The next lesson not yet started.
     if (topicId == null) {
       final next = content.topics
-          .where((t) => study.progressOf(t.id) == TopicProgress.none)
+          .where(
+            (t) =>
+                study.progressOf(t.id) == TopicProgress.none &&
+                t.pagesIn(language.editionId) != null,
+          )
           .firstOrNull;
       if (next == null) return const SizedBox.shrink();
       topicId = next.id;
@@ -618,14 +709,24 @@ class _UnitStrip extends StatelessWidget {
               Builder(
                 builder: (context) {
                   final accent = UnitColors.of(i, brightness);
-                  final done = g.topicIds
+                  final ids = g.topicIds
+                      .where(
+                        (id) =>
+                            content.topic(id).pagesIn(language.editionId) !=
+                            null,
+                      )
+                      .toList();
+                  if (ids.isEmpty) return const SizedBox.shrink();
+                  final done = ids
                       .where(
                         (t) => study.progressOf(t) == TopicProgress.completed,
                       )
                       .length;
-                  final next = g.topicIds.firstWhere(
-                    (t) => study.progressOf(t) != TopicProgress.completed,
-                    orElse: () => g.topicIds.first,
+                  final next = ids.firstWhere(
+                    (t) =>
+                        study.progressOf(t) != TopicProgress.completed &&
+                        content.topic(t).pagesIn(language.editionId) != null,
+                    orElse: () => ids.first,
                   );
                   return SizedBox(
                     width: 156,
@@ -641,7 +742,7 @@ class _UnitStrip extends StatelessWidget {
                           label:
                               '${l10n.homeUnitLabel(n(i + 1, language))}, '
                               '${g.title.of(language.code)}, '
-                              '${l10n.homeLessonsDone(n(done, language), n(g.topicIds.length, language))}',
+                              '${l10n.homeLessonsDone(n(done, language), n(ids.length, language))}',
                           child: Padding(
                             padding: const EdgeInsets.all(12),
                             child: Column(
@@ -668,7 +769,7 @@ class _UnitStrip extends StatelessWidget {
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(4),
                                   child: LinearProgressIndicator(
-                                    value: done / g.topicIds.length,
+                                    value: done / ids.length,
                                     minHeight: 5,
                                     color: accent,
                                     backgroundColor: accent.withValues(
@@ -678,7 +779,7 @@ class _UnitStrip extends StatelessWidget {
                                 ),
                                 const SizedBox(height: 4),
                                 Text(
-                                  '${n(done, language)} / ${n(g.topicIds.length, language)}',
+                                  '${n(done, language)} / ${n(ids.length, language)}',
                                   style: context.type.muted(size: 12),
                                 ),
                               ],

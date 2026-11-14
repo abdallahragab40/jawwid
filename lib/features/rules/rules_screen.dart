@@ -17,6 +17,7 @@ class RulesScreen extends ConsumerWidget {
     final l10n = AppLocalizations.of(context);
     final content = ref.watch(contentProvider);
     final lang = ref.watch(languageProvider);
+    final favorites = ref.watch(studyProvider.select((s) => s.favoriteRules));
     final rules = content.rules;
     final byTopic = <String, List<String>>{};
     for (final r in rules) {
@@ -50,6 +51,29 @@ class RulesScreen extends ConsumerWidget {
                   Text(
                     l10n.previewExplanation,
                     style: context.type.muted(size: 12),
+                  ),
+                ],
+                if (rules.length >= 2)
+                  OutlinedButton.icon(
+                    icon: const Icon(Icons.compare_arrows),
+                    onPressed: () => openRuleComparison(context),
+                    label: Text(l10n.ruleCompare),
+                  ),
+                if (rules.any((r) => favorites.contains(r.id))) ...[
+                  SectionHeading(l10n.ruleFavorites),
+                  Card(
+                    child: Column(
+                      children: [
+                        for (final rule in rules.where(
+                          (r) => favorites.contains(r.id),
+                        ))
+                          ListTile(
+                            leading: const Icon(Icons.star),
+                            title: Text(rule.title.of(lang.code)),
+                            onTap: () => openRule(context, rule.id),
+                          ),
+                      ],
+                    ),
                   ),
                 ],
                 for (final t in content.topics)
@@ -127,6 +151,11 @@ class _EmptyReview extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const Rosette(size: 40),
+          const SizedBox(height: 16),
+          OutlinedButton(
+            onPressed: () => openBook(context),
+            child: Text(AppLocalizations.of(context).bookTitle),
+          ),
           const SizedBox(height: 16),
           Text(
             text,

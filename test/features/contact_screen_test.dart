@@ -64,11 +64,20 @@ void main() {
     tester,
   ) async {
     await tester.pumpWidget(app(const FeedbackScreen()));
-    await tester.ensureVisible(find.text('Open email app'));
+    expect(find.text(feedbackEmail), findsOneWidget);
+    await tester.scrollUntilVisible(
+      find.text('Open email app'),
+      200,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
     await tester.tap(find.text('Open email app'));
     await tester.pumpAndSettle();
     expect(find.text('Please fill in this field.'), findsNWidgets(2));
-    expect(find.text(feedbackEmail), findsOneWidget);
   });
 
   testWidgets(

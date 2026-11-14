@@ -27,3 +27,9 @@ Reader themes (Arabic edition, page 46): `ar_reader_theme_light.png`, `ar_reader
 The practice-feedback screenshot is taken only where the first question's options include the tapped answer, which happened in Arabic.
 
 Dark theme (`integration_test/dark_screenshots_test.dart`), Arabic and English: `dark_<lang>_home.png`, `dark_<lang>_lessons.png`, `dark_<lang>_practice_tab.png`, `dark_<lang>_lesson.png`, `dark_<lang>_rule_card.png`, `dark_<lang>_quiz_feedback.png`.
+
+## Current product journeys — 2026-11-14
+
+`integration_test/product_journeys_test.dart` captures 25 preview-channel images on the iPhone 17 Pro simulator with isolated in-memory study data: `update_<language>_<theme>_<screen>.png`. Languages: ar, ckb, en, id in light; en additionally in dark. Screens: `home`, `comparison`, `backup`, `settings`, `lesson_contents`. These show the current daily goals, comparison, portability, preferences and section-note entry points. They are development evidence, not store screenshots from approved release content.
+
+The final capture pass was inspected after correcting selected-chip contrast and waiting explicitly for route transitions.

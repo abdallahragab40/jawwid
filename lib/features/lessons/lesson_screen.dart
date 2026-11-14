@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../app/routes.dart';
+import '../more/contact_screen.dart';
 import '../../app/theme.dart';
 import '../../content/models.dart';
 import '../../core/numerals.dart';
@@ -13,7 +14,9 @@ import '../../widgets/ornaments.dart';
 import '../../widgets/quran_excerpt_view.dart';
 import '../study/study_state.dart';
 import '../../widgets/text_size_control.dart';
+import '../../widgets/note_editor_dialog.dart';
 import '../../core/haptics.dart';
+import 'lesson_outline.dart';
 
 /// Unicode isolates keep Arabic runs intact inside left-to-right paragraphs
 /// (and LTR runs intact inside RTL ones).
@@ -45,6 +48,31 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
   final _section = ValueNotifier<int>(0);
   List<(int, LessonBlock)> _sections = const [];
 
+  Lesson? _cachedLesson;
+  String? _cachedLanguage;
+  String _cachedResumeKey = '';
+
+  String get _resumeKey {
+    final lang = ref.read(languageProvider);
+    final lesson = ref.read(contentProvider).lesson(widget.topicId, lang.code);
+    if (identical(lesson, _cachedLesson) && lang.code == _cachedLanguage) {
+      return _cachedResumeKey;
+    }
+    _cachedLesson = lesson;
+    _cachedLanguage = lang.code;
+    // Content changes invalidate positional anchors safely.
+    var signature = 2166136261;
+    for (final b in lesson?.blocks ?? <LessonBlock>[]) {
+      for (final unit
+          in '${b.type}:${b.page}:${b.plain}:${b.asset}'.codeUnits) {
+        signature = ((signature ^ unit) * 16777619) & 0xffffffff;
+      }
+    }
+    return _cachedResumeKey = '${lang.code}:${widget.topicId}:$signature';
+  }
+
+  bool _restored = false;
+
   void _onScroll() {
     final p = _scroll.position;
     _progress.value = p.maxScrollExtent <= 0
@@ -65,6 +93,11 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
       current = _sections.length - 1;
     }
     _section.value = current;
+    if (_restored && _sections.isNotEmpty) {
+      ref
+          .read(studyProvider.notifier)
+          .recordLessonSection(_resumeKey, _sections[current].$1);
+    }
   }
 
   void _jumpToBlock(int block) {
@@ -93,15 +126,14 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     _scroll.addListener(_onScroll);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       ref.read(studyProvider.notifier).recordLessonOpened(widget.topicId);
-      final target = widget.scrollToBlock;
+      final target =
+          widget.scrollToBlock ??
+          ref.read(studyProvider).lessonPositions[_resumeKey];
       final ctx = target == null ? null : _keys[target]?.currentContext;
       if (ctx != null) {
-        Scrollable.ensureVisible(
-          ctx,
-          alignment: 0.15,
-          duration: const Duration(milliseconds: 300),
-        );
+        Scrollable.ensureVisible(ctx, alignment: 0.15, duration: Duration.zero);
       }
+      _restored = true;
     });
   }
 
@@ -124,6 +156,8 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
     final unitIndex = content.groups.indexOf(group);
     final accent = UnitColors.of(unitIndex, Theme.of(context).brightness);
     final draft = content.isPreview && lesson.review == ReviewStatus.draft;
+    final sections = lessonOutline(lesson);
+    _sections = sections;
     final children = <Widget>[
       // One compact line: the unit, plus a tap target for the source notes.
       Row(
@@ -183,20 +217,54 @@ class _LessonScreenState extends ConsumerState<LessonScreen> {
         ),
       );
     }
+    children.add(
+      TextButton.icon(
+        icon: const Icon(Icons.flag_outlined),
+        label: Text(l10n.feedbackTitle),
+        onPressed: () => Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => FeedbackScreen(
+              contentContext: 'Lesson ${widget.topicId} · ${lang.code}',
+            ),
+          ),
+        ),
+      ),
+    );
+    children.add(
+      TextButton.icon(
+        icon: const Icon(Icons.note_add_outlined),
+        label: Text(l10n.notesAdd),
+        onPressed: () => _addSectionNote(
+          _sections.isEmpty
+              ? 0
+              : _sections[_section.value.clamp(0, _sections.length - 1)].$1,
+        ),
+      ),
+    );
+    children.add(const SizedBox(height: 20));
+    children.add(
+      Text(l10n.lessonReviewOutline, style: context.type.heading(size: 19)),
+    );
+    for (final (index, section) in sections) {
+      children.add(
+        ListTile(
+          title: Text(_isolated(section.plain)),
+          trailing: const Icon(Icons.arrow_upward),
+          onTap: () => _jumpToBlock(index),
+        ),
+      );
+    }
     children.add(_LessonEnd(topicId: widget.topicId));
     final range = topic.pagesIn(ed);
-    final sections = [
-      for (final (i, b) in lesson.blocks.indexed)
-        if (b.type == LessonBlockType.h1 || b.type == LessonBlockType.h2)
-          (i, b),
-    ];
-    _sections = sections;
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          topicTitle(topic, lang),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
+        title: Tooltip(
+          message: topicTitle(topic, lang),
+          child: Text(
+            topicTitle(topic, lang),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
         ),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(3),
@@ -319,6 +387,21 @@ extension on _LessonScreenState {
     );
   }
 
+  Future<void> _addSectionNote(int block) async {
+    final l10n = AppLocalizations.of(context);
+    final value = await showDialog<String>(
+      context: context,
+      builder: (_) => const NoteEditorDialog(),
+    );
+    if (!mounted || value == null || value.isEmpty) return;
+    ref
+        .read(studyProvider.notifier)
+        .addLessonNote(widget.topicId, block, value);
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(l10n.notesSaved)));
+  }
+
   void _showContents(List<(int, LessonBlock)> sections) {
     final l10n = AppLocalizations.of(context);
     showModalBottomSheet<void>(
@@ -340,6 +423,25 @@ extension on _LessonScreenState {
                 style: context.type.heading(size: 19),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+              child: Text(
+                l10n.lessonReadingTime(
+                  n(
+                    lessonReadingMinutes(
+                      ref
+                          .read(contentProvider)
+                          .lesson(
+                            widget.topicId,
+                            ref.read(languageProvider).code,
+                          )!,
+                    ),
+                    ref.read(languageProvider),
+                  ),
+                ),
+                style: context.type.muted(size: 13),
+              ),
+            ),
             for (final (i, b) in sections)
               ListTile(
                 contentPadding: EdgeInsetsDirectional.only(
@@ -351,6 +453,14 @@ extension on _LessonScreenState {
                   style: b.type == LessonBlockType.h1
                       ? context.type.ui(size: 15, weight: FontWeight.w600)
                       : context.type.ui(size: 14),
+                ),
+                trailing: IconButton(
+                  tooltip: '${l10n.notesAdd}: ${b.plain}',
+                  icon: const Icon(Icons.note_add_outlined),
+                  onPressed: () {
+                    Navigator.of(sheet).pop();
+                    _addSectionNote(i);
+                  },
                 ),
                 onTap: () {
                   Navigator.of(sheet).pop();

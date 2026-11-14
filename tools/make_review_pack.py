@@ -14,13 +14,15 @@ decisions with tools/apply_review.py.
 
 Usage: python3 -I tools/make_review_pack.py   (after ./tools/build_all.sh)
 """
-import csv, html, json, os
+import csv, html, json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from review_integrity import item_fingerprint
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONTENT = os.path.join(ROOT, 'assets', 'content')
 OUT = os.path.join(ROOT, 'docs', 'review')
 LANGS = [('ar', 'العربية', 'rtl'), ('ckb', 'کوردی', 'rtl'), ('en', 'English', 'ltr'), ('id', 'Indonesia', 'ltr')]
-FIELDS = ['id', 'kind', 'topic', 'type', 'status', 'decision', 'note', 'kurdish_note']
+FIELDS = ['id', 'kind', 'topic', 'type', 'status', 'source_sha256', 'decision', 'note', 'kurdish_note']
 TF = {'ar': ('صواب', 'خطأ'), 'ckb': ('ڕاستە', 'هەڵەیە'), 'en': ('True', 'False'), 'id': ('Benar', 'Salah')}
 
 
@@ -85,7 +87,15 @@ def options_html(q, rules, code):
 
 
 def main():
+    sources = {}
+    for kind, name, key in [('rule card', 'rules', 'rules'), ('question', 'quiz', 'questions')]:
+        doc = json.load(open(os.path.join(ROOT, 'content_src', f'{name}.src.json'), encoding='utf-8'))
+        sources.update({(kind, item['id']): item_fingerprint(item) for item in doc[key]})
     rules_data, quiz, curriculum, quran = load('rules.json'), load('quiz.json'), load('curriculum.json'), load('quran.json')
+    for kind, items in [('rule card', rules_data['rules']), ('question', quiz['questions'])]:
+        for item in items:
+            if item.get('sourceFingerprint') != sources.get((kind, item['id'])):
+                sys.exit(f"Stale compiled content for {kind}:{item['id']}; run tools/build_all.sh first")
     rules = {r['id']: r for r in rules_data['rules']}
     topics = curriculum['topics']
     title = {t['id']: t['title']['ar']['text'] + ' — ' + t['title']['en']['text'] for t in topics}
@@ -153,6 +163,8 @@ def main():
                     + ''.join(string_rows) + '</table>')
 
     os.makedirs(OUT, exist_ok=True)
+    for row in rows:
+        row['source_sha256'] = sources.get((row['kind'], row['id']), '')
     page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -199,11 +211,12 @@ def main():
         with open(path, encoding='utf-8-sig', newline='') as f:
             previous = {r['id']: r for r in csv.DictReader(f)}
     with open(path, 'w', encoding='utf-8-sig', newline='') as f:
-        w = csv.DictWriter(f, fieldnames=FIELDS)
+        w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator='\n')
         w.writeheader()
         for r in rows:
             old = previous.get(r['id'], {})
-            w.writerow({**r, **{k: old.get(k, '') for k in ('decision', 'note', 'kurdish_note')}})
+            decision = old.get('decision', '') if old.get('source_sha256') == r['source_sha256'] else ''
+            w.writerow({**r, 'decision': decision, **{k: old.get(k, '') for k in ('note', 'kurdish_note')}})
     print(f'review pack: {len(rows)} items -> docs/review/review.html, docs/review/review.csv')
 
 

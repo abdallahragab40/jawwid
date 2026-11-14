@@ -108,7 +108,7 @@
   "notesAdd": "Tambah catatan",
   "notesEdit": "Ubah catatan",
   "notesOpenPage": "Buka halaman",
-  "notesEmpty": "Belum ada catatan. Tambahkan dari layar membaca.",
+  "notesEmpty": "Belum ada catatan. Tambahkan dari daftar isi pelajaran atau pembaca buku.",
   "notesTab": "Catatan",
   "bookmarksTab": "Penanda",
   "bookmarksEmpty": "Belum ada penanda. Tambahkan dari layar membaca.",
@@ -236,7 +236,7 @@
   "aboutDistribution": "Buku ini menyatakan bahwa hak sebar terbuka bagi siapa saja selama tidak ada penambahan atau pengurangan.",
   "aboutUnchanged": "Halaman ditampilkan tanpa penambahan atau pengurangan. Salinan yang dibundel hanya dipadatkan secara struktural, dan tampilannya telah diverifikasi identik piksel demi piksel dengan aslinya.",
   "aboutPrivacyTitle": "Privasi",
-  "aboutPrivacy": "Jawwid tidak mengumpulkan analitik penggunaan. Pengaturan, kemajuan, dan catatan disimpan di perangkat Anda dan dihapus saat aplikasi dihapus. Mengirim masukan membuka aplikasi email; tautan dukungan membuka aplikasi pembayaran atau situs eksternal. Layanan tersebut menangani informasi yang Anda kirim sesuai kebijakan privasinya sendiri.",
+  "aboutPrivacy": "Jawwid tidak memiliki analitik atau pelacakan. Data belajar, riwayat pencarian, favorit, dan pengaturan tetap di perangkat Anda. Anda dapat menyalin cadangan, termasuk catatan, ke papan klip dan menyimpannya di luar aplikasi; salinan tersebut tetap ada setelah aplikasi dihapus. Umpan balik membuka aplikasi email dan tautan dukungan membuka aplikasi pembayaran atau situs eksternal. Layanan tersebut menangani informasi yang Anda pilih untuk dikirim menurut kebijakan privasinya sendiri.",
   "aboutQuranText": "Teks Al-Qur’an",
   "aboutTanzil": "Contoh Al-Qur’an pada pelajaran, kartu kaidah, dan latihan disalin apa adanya dari teks Tanzil Project (rasm Utsmani, versi 1.1, tanzil.net), dan rujukannya diperiksa secara otomatis.",
   "aboutSupplementary": "Materi tambahan",
@@ -264,5 +264,84 @@
   "supportCopyAddress": "Salin alamat pembayaran",
   "supportLinkFailed": "Tidak dapat membuka InstaPay. Salin alamat pembayaran dan gunakan di aplikasi pembayaran.",
   "supportEtisalat": "Etisalat Cash",
-  "supportVodafone": "Vodafone Cash"
+  "supportVodafone": "Vodafone Cash",
+  "practiceLength": "Jumlah soal",
+  "practiceDue": "Tinjau soal terjadwal",
+  "backupTitle": "Cadangkan dan pulihkan",
+  "backupIntro": "Simpan berkas cadangan di tempat pribadi, atau salin teks cadangan. Cadangan berisi catatan dan kemajuan Anda. Buka berkas cadangan atau tempel teksnya di bawah untuk memulihkannya.",
+  "backupCopy": "Salin cadangan",
+  "backupRestore": "Pulihkan cadangan",
+  "backupConfirm": "Ganti pengaturan, catatan, dan kemajuan saat ini dengan cadangan ini?",
+  "backupInvalid": "Cadangan tidak valid atau berasal dari versi yang tidak didukung.",
+  "backupRestored": "Cadangan dipulihkan.",
+  "dailySession": "Hari ini: sesi belajar singkat",
+  "practiceAllTopics": "Latih semua topik",
+  "weeklyLearningGoal": "Target belajar mingguan",
+  "weeklyLearningDays": "Hari belajar minggu ini",
+  "practiceResume": "Lanjutkan latihan tersimpan",
+  "searchRecent": "Pencarian terakhir",
+  "searchClearHistory": "Hapus riwayat pencarian",
+  "ruleFavorite": "Simpan atau hapus favorit",
+  "ruleFavorites": "Kaidah favorit",
+  "notesOpenSection": "Buka bagian pelajaran",
+  "notesSaved": "Catatan disimpan",
+  "ruleCompare": "Bandingkan kaidah",
+  "ruleCompareFirst": "Kaidah pertama",
+  "ruleCompareSecond": "Kaidah kedua",
+  "ruleCompareUnavailable": "Diperlukan dua kartu kaidah yang telah ditinjau. Sementara itu, Anda dapat membaca buku asli.",
+  "learningIntent": "Bagaimana Anda ingin belajar?",
+  "learningIntentHint": "Opsional. Anda dapat mengubahnya di Pengaturan.",
+  "learningGuided": "Langkah demi langkah",
+  "learningRevision": "Mengulang pelajaran",
+  "learningExplore": "Jelajahi topik",
+  "lessonReviewOutline": "Tinjau bagian pelajaran",
+  "lessonReadingTime": "Sekitar {minutes} menit membaca",
+  "practiceDelayedReview": "Soal yang diingat setelah jeda: {count}",
+  "@lessonReadingTime": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "@practiceDelayedReview": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "startupLoading": "Membuka materi belajar…",
+  "startupFailed": "Jawwid tidak dapat dibuka. Silakan coba lagi. Data tersimpan Anda belum direset.",
+  "startupUpdateRequired": "Data belajar disimpan oleh versi yang lebih baru. Perbarui Jawwid untuk melanjutkan.",
+  "startupRetry": "Coba lagi",
+  "backupRecoveryIntro": "Tempel cadangan untuk memulihkan data belajar. Konfirmasi akan mengganti data tersimpan yang tidak dapat dibaca. Pengingat tetap nonaktif sampai Anda mengaktifkannya di Pengaturan.",
+  "backupWriteFailed": "Data yang dipulihkan tidak dapat disimpan. Periksa penyimpanan perangkat dan coba lagi.",
+  "savePending": "Menyimpan perubahan…",
+  "saveFailed": "Perubahan terbaru belum tersimpan. Biarkan aplikasi terbuka dan coba lagi.",
+  "settingsReminderFailed": "Pengingat tidak dapat diperbarui. Periksa pengaturan notifikasi dan coba lagi.",
+  "actionUndo": "Urungkan",
+  "noteDeleted": "Catatan dihapus",
+  "bookmarkDeleted": "Penanda dihapus",
+  "backupSaveFile": "Simpan berkas cadangan",
+  "backupOpenFile": "Buka berkas cadangan",
+  "backupFileSaved": "Berkas cadangan disimpan.",
+  "backupFileError": "Berkas cadangan tidak dapat dibuka atau disimpan. Coba lagi.",
+  "backupSummary": "Cadangan dari {date}: {notes} catatan dan {bookmarks} penanda.",
+  "backupUnknownDate": "tanggal tidak diketahui",
+  "feedbackDetails": "Sertakan detail aplikasi dan konten",
+  "feedbackDetailsHint": "Catatan dan jawaban Anda tidak disertakan.",
+  "@backupSummary": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "notes": {
+        "type": "String"
+      },
+      "bookmarks": {
+        "type": "String"
+      }
+    }
+  }
 }

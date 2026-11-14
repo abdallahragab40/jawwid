@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../l10n/generated/app_localizations.dart';
+import '../study/study_state.dart';
 
 const feedbackEmail = 'abdallahragab40@gmail.com';
 const supportNumber = '01159478583';
@@ -27,7 +31,8 @@ Future<void> _copy(BuildContext context, String text) async {
 }
 
 class FeedbackScreen extends StatefulWidget {
-  const FeedbackScreen({super.key});
+  const FeedbackScreen({super.key, this.contentContext});
+  final String? contentContext;
 
   @override
   State<FeedbackScreen> createState() => _FeedbackScreenState();
@@ -39,6 +44,49 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
   final _message = TextEditingController();
   bool _opening = false;
   bool _failed = false;
+  bool _includeDetails = false;
+  String? _details;
+
+  Future<void> _loadDetails() async {
+    String version = 'unavailable';
+    try {
+      final info = await PackageInfo.fromPlatform();
+      version = '${info.version}+${info.buildNumber}';
+    } catch (_) {
+      // Diagnostics must remain usable if the platform metadata is unavailable.
+    }
+    if (!mounted) return;
+    String content = '';
+    try {
+      final container = ProviderScope.containerOf(context, listen: false);
+      final repository = container.read(contentProvider);
+      final language = container.read(languageProvider);
+      content =
+          '\nContent: ${repository.contentVersion} (${repository.channel.name})'
+          '\nLanguage/edition: ${language.code}/${language.editionId}';
+    } catch (_) {
+      // Startup feedback is also available before content/providers are ready.
+    }
+    setState(
+      () => _details =
+          'Jawwid: $version\nPlatform: ${defaultTargetPlatform.name}'
+          '$content${widget.contentContext == null ? '' : '\nContext: ${widget.contentContext}'}',
+    );
+  }
+
+  String get _body =>
+      '${_message.text.trim()}'
+      '${_includeDetails && _details != null ? '\n\n$_details' : ''}';
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.contentContext != null) {
+      _subject.text = widget.contentContext!;
+      _message.text = '${widget.contentContext!}\n\n';
+    }
+    _loadDetails();
+  }
 
   @override
   void dispose() {
@@ -52,9 +100,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
     setState(() => _opening = true);
     var opened = false;
     try {
-      opened = await launchUrl(
-        feedbackUri(_subject.text.trim(), _message.text.trim()),
-      );
+      opened = await launchUrl(feedbackUri(_subject.text.trim(), _body));
     } catch (_) {
       opened = false;
     }
@@ -110,6 +156,15 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               textCapitalization: TextCapitalization.sentences,
             ),
             const SizedBox(height: 16),
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              title: Text(l10n.feedbackDetails),
+              subtitle: Text(l10n.feedbackDetailsHint),
+              value: _includeDetails,
+              onChanged: (value) => setState(() => _includeDetails = value),
+            ),
+            if (_includeDetails && _details != null) SelectableText(_details!),
+            const SizedBox(height: 16),
             FilledButton.icon(
               onPressed: _opening ? null : _send,
               icon: const Icon(Icons.email_outlined),
@@ -120,10 +175,8 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
               Text(l10n.feedbackFallback),
             ],
             TextButton.icon(
-              onPressed: () => _copy(
-                context,
-                '${_subject.text.trim()}\n\n${_message.text.trim()}',
-              ),
+              onPressed: () =>
+                  _copy(context, '${_subject.text.trim()}\n\n$_body'),
               icon: const Icon(Icons.copy_outlined),
               label: Text(l10n.feedbackCopy),
             ),

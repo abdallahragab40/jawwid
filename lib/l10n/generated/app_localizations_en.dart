@@ -386,7 +386,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notesOpenPage => 'Open page';
 
   @override
-  String get notesEmpty => 'No notes yet. Add one from the reading screen.';
+  String get notesEmpty =>
+      'No notes yet. Add one from a lesson’s contents or the book reader.';
 
   @override
   String get notesTab => 'Notes';
@@ -849,7 +850,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'Jawwid does not collect analytics. Your settings, progress and notes stay on your device and are removed when you uninstall the app. Sending feedback opens your email app; support links open an external payment app or website. These services handle the information you choose to send under their own privacy policies.';
+      'Jawwid has no analytics or tracking. Study data, search history, favorites and settings stay on your device. You can copy a backup, which includes notes, to your clipboard and save it elsewhere; copies outside the app remain after uninstalling. Feedback opens your email app and support links open an external payment app or website. Those services handle what you choose to send under their own privacy policies.';
 
   @override
   String get aboutQuranText => 'Qur’anic text';
@@ -945,4 +946,177 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get supportVodafone => 'Vodafone Cash';
+
+  @override
+  String get practiceLength => 'Session length';
+
+  @override
+  String get practiceDue => 'Review due questions';
+
+  @override
+  String get backupTitle => 'Backup and restore';
+
+  @override
+  String get backupIntro =>
+      'Save a backup file somewhere private, or copy the backup text. It includes your notes and progress. Open a backup file or paste its text below to restore it.';
+
+  @override
+  String get backupCopy => 'Copy backup';
+
+  @override
+  String get backupRestore => 'Restore backup';
+
+  @override
+  String get backupConfirm =>
+      'Replace current settings, notes and progress with this backup?';
+
+  @override
+  String get backupInvalid =>
+      'This backup is invalid or from an unsupported version.';
+
+  @override
+  String get backupRestored => 'Backup restored.';
+
+  @override
+  String get dailySession => 'Today: a short learning session';
+
+  @override
+  String get practiceAllTopics => 'Practice all topics';
+
+  @override
+  String get weeklyLearningGoal => 'Weekly learning goal';
+
+  @override
+  String get weeklyLearningDays => 'Days this week';
+
+  @override
+  String get practiceResume => 'Continue saved practice';
+
+  @override
+  String get searchRecent => 'Recent searches';
+
+  @override
+  String get searchClearHistory => 'Clear search history';
+
+  @override
+  String get ruleFavorite => 'Save or remove favorite';
+
+  @override
+  String get ruleFavorites => 'Favorite rules';
+
+  @override
+  String get notesOpenSection => 'Open lesson section';
+
+  @override
+  String get notesSaved => 'Note saved';
+
+  @override
+  String get ruleCompare => 'Compare rules';
+
+  @override
+  String get ruleCompareFirst => 'First rule';
+
+  @override
+  String get ruleCompareSecond => 'Second rule';
+
+  @override
+  String get ruleCompareUnavailable =>
+      'Two reviewed rule cards are needed to compare rules. You can read the original book meanwhile.';
+
+  @override
+  String get learningIntent => 'How would you like to study?';
+
+  @override
+  String get learningIntentHint => 'Optional. You can change this in Settings.';
+
+  @override
+  String get learningGuided => 'Step by step';
+
+  @override
+  String get learningRevision => 'Revision';
+
+  @override
+  String get learningExplore => 'Explore topics';
+
+  @override
+  String get lessonReviewOutline => 'Review the lesson sections';
+
+  @override
+  String lessonReadingTime(String minutes) {
+    return 'About $minutes min to read';
+  }
+
+  @override
+  String practiceDelayedReview(String count) {
+    return 'Questions recalled after a delay: $count';
+  }
+
+  @override
+  String get startupLoading => 'Opening your study materials…';
+
+  @override
+  String get startupFailed =>
+      'Jawwid could not open. Please try again. Your saved data has not been reset.';
+
+  @override
+  String get startupUpdateRequired =>
+      'Your study data was saved by a newer version. Update Jawwid to continue.';
+
+  @override
+  String get startupRetry => 'Try again';
+
+  @override
+  String get backupRecoveryIntro =>
+      'Paste a backup to recover your study data. Confirmation replaces the unreadable saved data. Reminders stay off until you enable them in Settings.';
+
+  @override
+  String get backupWriteFailed =>
+      'Could not save the restored data. Check device storage and try again.';
+
+  @override
+  String get savePending => 'Saving your changes…';
+
+  @override
+  String get saveFailed =>
+      'Your latest changes have not been saved. Keep the app open and try again.';
+
+  @override
+  String get settingsReminderFailed =>
+      'Could not update your reminder. Check notification settings and try again.';
+
+  @override
+  String get actionUndo => 'Undo';
+
+  @override
+  String get noteDeleted => 'Note deleted';
+
+  @override
+  String get bookmarkDeleted => 'Bookmark removed';
+
+  @override
+  String get backupSaveFile => 'Save backup file';
+
+  @override
+  String get backupOpenFile => 'Open backup file';
+
+  @override
+  String get backupFileSaved => 'Backup file saved.';
+
+  @override
+  String get backupFileError =>
+      'Could not open or save the backup file. Please try again.';
+
+  @override
+  String backupSummary(String date, String notes, String bookmarks) {
+    return 'Backup from $date: $notes notes and $bookmarks bookmarks.';
+  }
+
+  @override
+  String get backupUnknownDate => 'unknown date';
+
+  @override
+  String get feedbackDetails => 'Include app and content details';
+
+  @override
+  String get feedbackDetailsHint => 'Your notes and answers are not included.';
 }

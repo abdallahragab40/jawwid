@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -30,22 +32,35 @@ abstract class ReminderService {
   Future<void> cancel();
 }
 
+/// Next local wall-clock occurrence, preserving the clock time across DST.
+tz.TZDateTime nextReminderTime(tz.TZDateTime now, int minutes) {
+  RangeError.checkValueInInterval(minutes, 0, 24 * 60 - 1, 'minutes');
+  tz.TZDateTime onDay(int offset) => tz.TZDateTime(
+    now.location,
+    now.year,
+    now.month,
+    now.day + offset,
+    minutes ~/ 60,
+    minutes % 60,
+  );
+  final today = onDay(0);
+  return today.isAfter(now) ? today : onDay(1);
+}
+
 class LocalReminderService implements ReminderService {
   static const _id = 1;
   static const _channelId = 'daily_reminder';
   final _plugin = FlutterLocalNotificationsPlugin();
-  bool _ready = false;
+  Future<void>? _initialization;
 
-  Future<void> _init() async {
-    if (_ready) return;
+  Future<void> _init() =>
+      _initialization ??= _initialize().catchError((Object error) {
+        _initialization = null;
+        throw error;
+      });
+
+  Future<void> _initialize() async {
     tzdata.initializeTimeZones();
-    try {
-      final zone = await FlutterTimezone.getLocalTimezone();
-      tz.setLocalLocation(tz.getLocation(zone.identifier));
-    } catch (_) {
-      // Unknown zone name: fall back to UTC; the time may be off by the
-      // zone offset, which is better than not scheduling at all.
-    }
     await _plugin.initialize(
       settings: const InitializationSettings(
         android: AndroidInitializationSettings('@mipmap/ic_launcher'),
@@ -56,7 +71,6 @@ class LocalReminderService implements ReminderService {
         ),
       ),
     );
-    _ready = true;
   }
 
   @override
@@ -84,17 +98,13 @@ class LocalReminderService implements ReminderService {
     required String channelName,
   }) async {
     await _init();
+    // Refresh for every reconciliation, including foreground entry after travel.
+    // Failure is surfaced rather than silently scheduling at the wrong UTC time.
+    final zone = await FlutterTimezone.getLocalTimezone();
+    tz.setLocalLocation(tz.getLocation(zone.identifier));
     await _plugin.cancel(id: _id);
     final now = tz.TZDateTime.now(tz.local);
-    var at = tz.TZDateTime(
-      tz.local,
-      now.year,
-      now.month,
-      now.day,
-      minutes ~/ 60,
-      minutes % 60,
-    );
-    if (!at.isAfter(now)) at = at.add(const Duration(days: 1));
+    final at = nextReminderTime(now, minutes);
     await _plugin.zonedSchedule(
       id: _id,
       title: title,
@@ -126,37 +136,90 @@ final reminderServiceProvider = Provider<ReminderService>(
   (ref) => LocalReminderService(),
 );
 
-/// Keeps the scheduled notification in line with the settings: re-schedules
-/// when the time or the language changes, cancels when turned off, and
-/// refreshes once at start-up (time zone may have changed).
-final reminderSyncProvider = Provider<void>((ref) {
-  void sync(({bool on, int minutes, AppLanguage lang}) s) {
-    final service = ref.read(reminderServiceProvider);
-    void report(Object e, StackTrace st) =>
-        debugPrint('Daily reminder could not be updated: $e');
-    if (!s.on) {
-      service.cancel().catchError(report);
-      return;
-    }
-    final l10n = lookupAppLocalizations(Locale(s.lang.code));
-    service
-        .scheduleDaily(
-          minutes: s.minutes,
-          title: Branding.name(s.lang),
-          body: l10n.reminderBody,
-          channelName: l10n.reminderChannel,
-        )
-        .catchError(report);
+typedef ReminderConfiguration = ({bool on, int minutes, AppLanguage lang});
+
+/// Reconciles one configuration at a time. Changes during an operation are
+/// coalesced and applied afterwards, so an old schedule can never win last.
+final reminderSyncProvider =
+    NotifierProvider<ReminderSyncController, AsyncValue<void>>(
+      ReminderSyncController.new,
+    );
+
+class ReminderSyncController extends Notifier<AsyncValue<void>> {
+  late ReminderService _service;
+  ReminderConfiguration? _pending;
+  bool _running = false;
+  bool _disposed = false;
+  int _revision = 0;
+
+  ReminderConfiguration _configuration() {
+    final study = ref.read(studyProvider);
+    return (
+      on: study.reminderEnabled,
+      minutes: study.reminderMinutes,
+      lang: study.language,
+    );
   }
 
-  ref.listen(
-    studyProvider.select(
-      (s) =>
-          (on: s.reminderEnabled, minutes: s.reminderMinutes, lang: s.language),
-    ),
-    (prev, next) {
-      if (prev != next) sync(next);
-    },
-    fireImmediately: true,
-  );
-});
+  @override
+  AsyncValue<void> build() {
+    _service = ref.read(reminderServiceProvider);
+    ref.onDispose(() => _disposed = true);
+    final lifecycle = AppLifecycleListener(onResume: retry);
+    ref.onDispose(lifecycle.dispose);
+    ref.listen(
+      studyProvider.select(
+        (s) => (
+          on: s.reminderEnabled,
+          minutes: s.reminderMinutes,
+          lang: s.language,
+        ),
+      ),
+      (_, next) => _request(next),
+    );
+    // Avoid changing provider state while it is being initialized.
+    scheduleMicrotask(() {
+      if (!_disposed) retry();
+    });
+    return const AsyncData(null);
+  }
+
+  void retry() {
+    if (!_disposed) _request(_configuration());
+  }
+
+  void _request(ReminderConfiguration configuration) {
+    _pending = configuration;
+    _revision++;
+    state = const AsyncLoading();
+    if (!_running) unawaited(_drain());
+  }
+
+  Future<void> _drain() async {
+    _running = true;
+    while (!_disposed && _pending != null) {
+      final configuration = _pending!;
+      final revision = _revision;
+      _pending = null;
+      try {
+        if (!configuration.on) {
+          await _service.cancel();
+        } else {
+          final l10n = lookupAppLocalizations(configuration.lang.locale);
+          await _service.scheduleDaily(
+            minutes: configuration.minutes,
+            title: Branding.name(configuration.lang),
+            body: l10n.reminderBody,
+            channelName: l10n.reminderChannel,
+          );
+        }
+        if (!_disposed && revision == _revision) state = const AsyncData(null);
+      } catch (error, stack) {
+        if (!_disposed && revision == _revision) {
+          state = AsyncError(error, stack);
+        }
+      }
+    }
+    _running = false;
+  }
+}

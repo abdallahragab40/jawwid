@@ -14,6 +14,7 @@ import '../../widgets/labels.dart';
 import '../study/study_state.dart';
 import '../../core/haptics.dart';
 import 'reader_appearance.dart';
+import 'reader_document.dart';
 
 /// Signature of a stand-in for the PDF page view (used by widget tests, where
 /// the native PDFium library is not available).
@@ -65,6 +66,8 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   bool _controls = true;
   bool _thumbs = false;
   double? _dragPage;
+  int? _pendingPage;
+  bool _retrying = false;
 
   ContentRepository get _content => ref.read(contentProvider);
   Edition get _ed => _content.editions[_edition]!;
@@ -74,15 +77,15 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback(
-      (_) => _study.recordPosition(_edition, _page),
-    );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _study.recordPosition(_edition, _page);
+    });
   }
 
   @override
   void dispose() {
     // Persist the last position immediately (it is normally debounced).
-    _study.flush();
+    _study.flush(deferStatus: true);
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     super.dispose();
   }
@@ -105,7 +108,9 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
 
   Future<void> _goTo(int page) async {
     final p = _ed.nearestContentPage(page.clamp(1, _ed.pageCount));
-    if (_controller.isReady) {
+    if (!_controller.isReady) {
+      _pendingPage = p;
+    } else {
       await _controller.goToPage(
         pageNumber: p,
         anchor: PdfPageAnchor.top,
@@ -113,6 +118,35 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
       );
     }
     _onPage(p);
+  }
+
+  Future<void> _retryDocument() async {
+    if (_retrying) return;
+    final edition = _edition;
+    final document = ref.read(readerDocumentProvider(_ed.asset));
+    setState(() {
+      _retrying = true;
+      _initialPage = _page;
+      _pendingPage = _page;
+    });
+    await document.resolveListenable().load(forceReload: true);
+    if (mounted && _edition == edition) setState(() => _retrying = false);
+  }
+
+  Future<void> _viewerReady(PdfViewerController controller) async {
+    debugActiveViewerController = controller;
+    final pending = _pendingPage;
+    if (pending != null) {
+      await controller.goToPage(
+        pageNumber: pending,
+        anchor: PdfPageAnchor.top,
+        duration: Duration.zero,
+      );
+      if (!mounted || controller != debugActiveViewerController) return;
+      _pendingPage = null;
+      _onPage(pending);
+    }
+    if (mounted) setState(() {}); // Thumbnails requested during loading.
   }
 
   void _switchEdition(String target) {
@@ -145,6 +179,8 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
       }
     }
     setState(() {
+      _pendingPage = null;
+      _retrying = false;
       _edition = target;
       _page = page!;
       _initialPage = page;
@@ -361,8 +397,8 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     final substitute = ref.watch(pageViewSubstituteProvider);
     Widget viewer = substitute != null
         ? substitute(ed, _page, _onPage, _toggleControls)
-        : PdfViewer.asset(
-            ed.asset,
+        : PdfViewer(
+            ref.watch(readerDocumentProvider(ed.asset)),
             key: ValueKey('viewer-$_edition-$_initialPage'),
             controller: _controller,
             initialPageNumber: ed.nearestContentPage(_initialPage),
@@ -380,10 +416,10 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
               horizontalCacheExtent: 0.5,
               verticalCacheExtent: 1.0,
               onViewerReady: (document, controller) {
-                debugActiveViewerController = controller;
+                _viewerReady(controller);
               },
               onPageChanged: (p) {
-                if (p == null) return;
+                if (p == null || _pendingPage != null) return;
                 debugViewerReportedPage.value = p;
                 _onPage(p);
               },
@@ -410,10 +446,30 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
               errorBannerBuilder: (ctx, error, _, _) => Center(
                 child: Padding(
                   padding: const EdgeInsets.all(24),
-                  child: Text(
-                    l10n.readerError,
-                    style: ctx.type.ui(color: look.onChrome),
-                    textAlign: TextAlign.center,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        l10n.readerError,
+                        style: ctx.type.ui(color: look.onChrome),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 16),
+                      if (_retrying)
+                        CircularProgressIndicator(color: look.onChrome)
+                      else
+                        FilledButton.icon(
+                          onPressed: _retryDocument,
+                          icon: const Icon(Icons.refresh),
+                          label: Text(l10n.startupRetry),
+                        ),
+                      TextButton(
+                        onPressed: () => Navigator.maybePop(context),
+                        child: Text(
+                          MaterialLocalizations.of(ctx).backButtonTooltip,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -440,7 +496,10 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                 editionName(l10n, _edition),
                 pageLabel,
               ),
-              child: viewer,
+              child: RepaintBoundary(
+                key: const ValueKey('reader-page-surface'),
+                child: viewer,
+              ),
             ),
           ),
           // Top controls.
@@ -496,9 +555,17 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                         ),
                         onPressed: () {
                           ref.read(hapticsProvider).toggle();
-                          ref
-                              .read(studyProvider.notifier)
-                              .toggleBookmark(_edition, _page);
+                          final controller = ref.read(studyProvider.notifier);
+                          final removed = bookmarked
+                              ? study.bookmarks.firstWhere(
+                                  (b) =>
+                                      b.edition == _edition && b.page == _page,
+                                )
+                              : null;
+                          final removedIndex = removed == null
+                              ? null
+                              : study.bookmarks.indexOf(removed);
+                          controller.toggleBookmark(_edition, _page);
                           ScaffoldMessenger.of(context)
                             ..hideCurrentSnackBar()
                             ..showSnackBar(
@@ -508,7 +575,17 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                                       ? l10n.bookmarkRemoved
                                       : l10n.bookmarkAdded,
                                 ),
-                                duration: const Duration(seconds: 2),
+                                action: removed == null
+                                    ? null
+                                    : SnackBarAction(
+                                        label: l10n.actionUndo,
+                                        onPressed: () =>
+                                            controller.restoreBookmark(
+                                              removed,
+                                              index: removedIndex,
+                                            ),
+                                      ),
+                                duration: const Duration(seconds: 4),
                               ),
                             );
                         },
@@ -864,9 +941,30 @@ class _NotesSheetState extends ConsumerState<_NotesSheet> {
                           trailing: IconButton(
                             tooltip: l10n.actionDelete,
                             icon: const Icon(Icons.delete_outline),
-                            onPressed: () => ref
-                                .read(studyProvider.notifier)
-                                .deleteNote(note.id),
+                            onPressed: () {
+                              final controller = ref.read(
+                                studyProvider.notifier,
+                              );
+                              final index = ref
+                                  .read(studyProvider)
+                                  .notes
+                                  .indexOf(note);
+                              controller.deleteNote(note.id);
+                              ScaffoldMessenger.of(context)
+                                ..hideCurrentSnackBar()
+                                ..showSnackBar(
+                                  SnackBar(
+                                    content: Text(l10n.noteDeleted),
+                                    action: SnackBarAction(
+                                      label: l10n.actionUndo,
+                                      onPressed: () => controller.restoreNote(
+                                        note,
+                                        index: index,
+                                      ),
+                                    ),
+                                  ),
+                                );
+                            },
                           ),
                         ),
                       ),

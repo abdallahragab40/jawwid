@@ -18,6 +18,7 @@ StudyState _onlySortsLeft() {
     correct: 1,
     lastCorrect: true,
     lastAt: DateTime(2026),
+    nextReviewAt: DateTime(2100),
   );
   return StudyState(
     welcomed: true,
@@ -45,11 +46,19 @@ void main() {
   final ar = lookupAppLocalizations(const Locale('ar'));
 
   testWidgets('sorting every letter into its group is correct', (tester) async {
-    await _openSort(tester);
+    final semantics = tester.ensureSemantics();
+    final q = await _openSort(tester);
     expect(find.text(ar.quizSortHint), findsOneWidget);
     await answerCurrentCorrectly(tester, AppLanguage.ar);
     expect(find.text(ar.quizFeedbackCorrect), findsOneWidget);
     expect(find.byIcon(Icons.cancel), findsNothing);
+    final letter = find.byWidgetPredicate(
+      (w) => w is Semantics && w.properties.label == q.items.first.arabic,
+    );
+    final data = tester.getSemantics(letter).getSemanticsData();
+    expect(data.value, contains(ar.quizFeedbackCorrect));
+    expect(data.value, contains(q.groups[q.items.first.group].of('ar')));
+    semantics.dispose();
   });
 
   testWidgets('a wrong placement is marked; a placed letter can be taken '
@@ -76,5 +85,14 @@ void main() {
     expect(find.text(ar.quizFeedbackIncorrect), findsOneWidget);
     final wrong = q.items.where((i) => i.group != 0).length;
     expect(find.byIcon(Icons.cancel), findsNWidgets(wrong));
+    final item = q.items.firstWhere((item) => item.group != 0);
+    final semantics = tester.widget<Semantics>(
+      find.byWidgetPredicate(
+        (widget) =>
+            widget is Semantics && widget.properties.label == item.arabic,
+      ),
+    );
+    expect(semantics.properties.value, contains(ar.quizFeedbackIncorrect));
+    expect(semantics.properties.value, contains(q.groups[item.group].of('ar')));
   });
 }

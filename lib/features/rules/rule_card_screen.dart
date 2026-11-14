@@ -40,7 +40,21 @@ class RuleCardScreen extends ConsumerWidget {
     final dark = context.isDark;
 
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.ruleCardTitle)),
+      appBar: AppBar(
+        title: Text(l10n.ruleCardTitle),
+        actions: [
+          IconButton(
+            tooltip: l10n.ruleFavorite,
+            isSelected: ref.watch(
+              studyProvider.select((s) => s.favoriteRules.contains(ruleId)),
+            ),
+            icon: const Icon(Icons.star_outline),
+            selectedIcon: const Icon(Icons.star),
+            onPressed: () =>
+                ref.read(studyProvider.notifier).toggleFavoriteRule(ruleId),
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 4, 16, 32),
         children: [
@@ -259,6 +273,12 @@ class RuleCardScreen extends ConsumerWidget {
               ],
             ],
           ),
+          if (content.rules.length >= 2)
+            TextButton.icon(
+              icon: const Icon(Icons.compare_arrows),
+              onPressed: () => openRuleComparison(context, ruleId: rule.id),
+              label: Text(l10n.ruleCompare),
+            ),
           if (content.isPreview) ...[
             const SizedBox(height: 18),
             Text(l10n.previewExplanation, style: context.type.muted(size: 12)),

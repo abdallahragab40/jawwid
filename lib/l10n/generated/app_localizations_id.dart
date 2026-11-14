@@ -388,7 +388,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get notesOpenPage => 'Buka halaman';
 
   @override
-  String get notesEmpty => 'Belum ada catatan. Tambahkan dari layar membaca.';
+  String get notesEmpty =>
+      'Belum ada catatan. Tambahkan dari daftar isi pelajaran atau pembaca buku.';
 
   @override
   String get notesTab => 'Catatan';
@@ -849,7 +850,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get aboutPrivacy =>
-      'Jawwid tidak mengumpulkan analitik penggunaan. Pengaturan, kemajuan, dan catatan disimpan di perangkat Anda dan dihapus saat aplikasi dihapus. Mengirim masukan membuka aplikasi email; tautan dukungan membuka aplikasi pembayaran atau situs eksternal. Layanan tersebut menangani informasi yang Anda kirim sesuai kebijakan privasinya sendiri.';
+      'Jawwid tidak memiliki analitik atau pelacakan. Data belajar, riwayat pencarian, favorit, dan pengaturan tetap di perangkat Anda. Anda dapat menyalin cadangan, termasuk catatan, ke papan klip dan menyimpannya di luar aplikasi; salinan tersebut tetap ada setelah aplikasi dihapus. Umpan balik membuka aplikasi email dan tautan dukungan membuka aplikasi pembayaran atau situs eksternal. Layanan tersebut menangani informasi yang Anda pilih untuk dikirim menurut kebijakan privasinya sendiri.';
 
   @override
   String get aboutQuranText => 'Teks Al-Qur’an';
@@ -945,4 +946,179 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get supportVodafone => 'Vodafone Cash';
+
+  @override
+  String get practiceLength => 'Jumlah soal';
+
+  @override
+  String get practiceDue => 'Tinjau soal terjadwal';
+
+  @override
+  String get backupTitle => 'Cadangkan dan pulihkan';
+
+  @override
+  String get backupIntro =>
+      'Simpan berkas cadangan di tempat pribadi, atau salin teks cadangan. Cadangan berisi catatan dan kemajuan Anda. Buka berkas cadangan atau tempel teksnya di bawah untuk memulihkannya.';
+
+  @override
+  String get backupCopy => 'Salin cadangan';
+
+  @override
+  String get backupRestore => 'Pulihkan cadangan';
+
+  @override
+  String get backupConfirm =>
+      'Ganti pengaturan, catatan, dan kemajuan saat ini dengan cadangan ini?';
+
+  @override
+  String get backupInvalid =>
+      'Cadangan tidak valid atau berasal dari versi yang tidak didukung.';
+
+  @override
+  String get backupRestored => 'Cadangan dipulihkan.';
+
+  @override
+  String get dailySession => 'Hari ini: sesi belajar singkat';
+
+  @override
+  String get practiceAllTopics => 'Latih semua topik';
+
+  @override
+  String get weeklyLearningGoal => 'Target belajar mingguan';
+
+  @override
+  String get weeklyLearningDays => 'Hari belajar minggu ini';
+
+  @override
+  String get practiceResume => 'Lanjutkan latihan tersimpan';
+
+  @override
+  String get searchRecent => 'Pencarian terakhir';
+
+  @override
+  String get searchClearHistory => 'Hapus riwayat pencarian';
+
+  @override
+  String get ruleFavorite => 'Simpan atau hapus favorit';
+
+  @override
+  String get ruleFavorites => 'Kaidah favorit';
+
+  @override
+  String get notesOpenSection => 'Buka bagian pelajaran';
+
+  @override
+  String get notesSaved => 'Catatan disimpan';
+
+  @override
+  String get ruleCompare => 'Bandingkan kaidah';
+
+  @override
+  String get ruleCompareFirst => 'Kaidah pertama';
+
+  @override
+  String get ruleCompareSecond => 'Kaidah kedua';
+
+  @override
+  String get ruleCompareUnavailable =>
+      'Diperlukan dua kartu kaidah yang telah ditinjau. Sementara itu, Anda dapat membaca buku asli.';
+
+  @override
+  String get learningIntent => 'Bagaimana Anda ingin belajar?';
+
+  @override
+  String get learningIntentHint =>
+      'Opsional. Anda dapat mengubahnya di Pengaturan.';
+
+  @override
+  String get learningGuided => 'Langkah demi langkah';
+
+  @override
+  String get learningRevision => 'Mengulang pelajaran';
+
+  @override
+  String get learningExplore => 'Jelajahi topik';
+
+  @override
+  String get lessonReviewOutline => 'Tinjau bagian pelajaran';
+
+  @override
+  String lessonReadingTime(String minutes) {
+    return 'Sekitar $minutes menit membaca';
+  }
+
+  @override
+  String practiceDelayedReview(String count) {
+    return 'Soal yang diingat setelah jeda: $count';
+  }
+
+  @override
+  String get startupLoading => 'Membuka materi belajar…';
+
+  @override
+  String get startupFailed =>
+      'Jawwid tidak dapat dibuka. Silakan coba lagi. Data tersimpan Anda belum direset.';
+
+  @override
+  String get startupUpdateRequired =>
+      'Data belajar disimpan oleh versi yang lebih baru. Perbarui Jawwid untuk melanjutkan.';
+
+  @override
+  String get startupRetry => 'Coba lagi';
+
+  @override
+  String get backupRecoveryIntro =>
+      'Tempel cadangan untuk memulihkan data belajar. Konfirmasi akan mengganti data tersimpan yang tidak dapat dibaca. Pengingat tetap nonaktif sampai Anda mengaktifkannya di Pengaturan.';
+
+  @override
+  String get backupWriteFailed =>
+      'Data yang dipulihkan tidak dapat disimpan. Periksa penyimpanan perangkat dan coba lagi.';
+
+  @override
+  String get savePending => 'Menyimpan perubahan…';
+
+  @override
+  String get saveFailed =>
+      'Perubahan terbaru belum tersimpan. Biarkan aplikasi terbuka dan coba lagi.';
+
+  @override
+  String get settingsReminderFailed =>
+      'Pengingat tidak dapat diperbarui. Periksa pengaturan notifikasi dan coba lagi.';
+
+  @override
+  String get actionUndo => 'Urungkan';
+
+  @override
+  String get noteDeleted => 'Catatan dihapus';
+
+  @override
+  String get bookmarkDeleted => 'Penanda dihapus';
+
+  @override
+  String get backupSaveFile => 'Simpan berkas cadangan';
+
+  @override
+  String get backupOpenFile => 'Buka berkas cadangan';
+
+  @override
+  String get backupFileSaved => 'Berkas cadangan disimpan.';
+
+  @override
+  String get backupFileError =>
+      'Berkas cadangan tidak dapat dibuka atau disimpan. Coba lagi.';
+
+  @override
+  String backupSummary(String date, String notes, String bookmarks) {
+    return 'Cadangan dari $date: $notes catatan dan $bookmarks penanda.';
+  }
+
+  @override
+  String get backupUnknownDate => 'tanggal tidak diketahui';
+
+  @override
+  String get feedbackDetails => 'Sertakan detail aplikasi dan konten';
+
+  @override
+  String get feedbackDetailsHint =>
+      'Catatan dan jawaban Anda tidak disertakan.';
 }
